@@ -1,0 +1,11 @@
+// S4 v0.0.α  ▪  ©2020▸ by Arthur A. Selimov  ▪  https://s4.mobitoon.ru
+
+@align: baseline, top, middle, bottom, text-bottom, text-top;
+
+.align- {
+    each(@align, {
+        &@{value} {
+            vertical-align: @value !important;
+        }
+    });
+}
