@@ -3,5 +3,10 @@
 @position: static, relative, absolute, fixed, sticky, -webkit-sticky;
 
 each(@position, {
-  .position-@{value} { position: @value !important; }
+    .position-@{value} { position: @value !important; }
 });
+
+.l-0 { left: 0; }
+.t-0 { top: 0; }
+.r-0 { right: 0; }
+.b-0 { bottom: 0; }

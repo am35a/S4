@@ -16,7 +16,7 @@
     }
 }
 
-@media (min-width: var(--media-breakpoint-md)) {
+@media (min-width: @media-breakpoint-md) {
     .d-md- {
         each(@display, {
             &@{value} { display: @value !important; }
@@ -24,7 +24,7 @@
     }
 }
 
-@media (min-width: var(--media-breakpoint-lg)) {
+@media (min-width: @media-breakpoint-lg) {
     .d-lg- {
         each(@display, {
             &@{value} { display: @value !important; }
@@ -32,7 +32,7 @@
     }
 }
 
-@media (min-width: var(--media-breakpoint-xl)) {
+@media (min-width: @media-breakpoint-xl) {
     .d-xl- {
         each(@display, {
             &@{value} { display: @value !important; }
