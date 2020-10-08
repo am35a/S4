@@ -1,0 +1,123 @@
+// S4 v0.0.α  ▪  ©2020▸ by Arthur A. Selimov  ▪  https://s4.mobitoon.ru
+
+// Margin
+.m {
+    each(range(0, 5), {
+        &-@{value}, &t-@{value}, &y-@{value} { margin-top: var(~"--margin-@{value}-rem") !important; }
+        &-@{value}, &r-@{value}, &x-@{value} { margin-right: var(~"--margin-@{value}-rem") !important; }
+        &-@{value}, &b-@{value}, &y-@{value} { margin-bottom: var(~"--margin-@{value}-rem") !important; }
+        &-@{value}, &l-@{value}, &x-@{value} { margin-left: var(~"--margin-@{value}-rem") !important; }
+    });
+    each(range(5), {
+        &-n@{value}, &t-n@{value}, &y-n@{value} { margin-top: calc(var(~"--margin-@{value}-rem") * -1) !important; }
+        &-n@{value}, &r-n@{value}, &x-n@{value} { margin-right: calc(var(~"--margin-@{value}-rem") * -1) !important; }
+        &-n@{value}, &b-n@{value}, &y-n@{value} { margin-bottom: calc(var(~"--margin-@{value}-rem") * -1) !important; }
+        &-n@{value}, &l-n@{value}, &x-n@{value} { margin-left: calc(var(~"--margin-@{value}-rem") * -1) !important; }
+    });
+    &-auto, &t-auto, &y-auto { margin-top: auto !important; }
+    &-auto, &r-auto, &x-auto { margin-right: auto !important; }
+    &-auto, &b-auto, &y-auto { margin-bottom: auto !important; }
+    &-auto, &l-auto, &x-auto { margin-left: auto !important; }
+
+    @media (min-width: @media-breakpoint-sm) {
+        each(range(0, 5), {
+            &-sm-@{value}, &t-sm-@{value}, &y-sm-@{value} { margin-top: var(~"--margin-@{value}-rem") !important; }
+            &-sm-@{value}, &r-sm-@{value}, &x-sm-@{value} { margin-right: var(~"--margin-@{value}-rem") !important; }
+            &-sm-@{value}, &b-sm-@{value}, &y-sm-@{value} { margin-bottom: var(~"--margin-@{value}-rem") !important; }
+            &-sm-@{value}, &l-sm-@{value}, &x-sm-@{value} { margin-left: var(~"--margin-@{value}-rem") !important; }
+        });
+
+        &-sm-auto, &t-sm-auto, &y-sm-auto { margin-top: auto !important; }
+        &-sm-auto, &r-sm-auto, &x-sm-auto { margin-right: auto !important; }
+        &-sm-auto, &b-sm-auto, &y-sm-auto { margin-bottom: auto !important; }
+        &-sm-auto, &l-sm-auto, &x-sm-auto { margin-left: auto !important; }
+    }
+
+    @media (min-width: @media-breakpoint-md) {
+        each(range(0, 5), {
+            &-md-@{value}, &t-md-@{value}, &y-md-@{value} { margin-top: var(~"--margin-@{value}-rem") !important; }
+            &-md-@{value}, &r-md-@{value}, &x-md-@{value} { margin-right: var(~"--margin-@{value}-rem") !important; }
+            &-md-@{value}, &b-md-@{value}, &y-md-@{value} { margin-bottom: var(~"--margin-@{value}-rem") !important; }
+            &-md-@{value}, &l-md-@{value}, &x-md-@{value} { margin-left: var(~"--margin-@{value}-rem") !important; }
+        });
+
+        &-md-auto, &t-md-auto, &y-md-auto { margin-top: auto !important; }
+        &-md-auto, &r-md-auto, &x-md-auto { margin-right: auto !important; }
+        &-md-auto, &b-md-auto, &y-md-auto { margin-bottom: auto !important; }
+        &-md-auto, &l-md-auto, &x-md-auto { margin-left: auto !important; }
+    }
+
+    @media (min-width: @media-breakpoint-lg) {
+        each(range(0, 5), {
+            &-lg-@{value}, &t-lg-@{value}, &y-lg-@{value} { margin-top: var(~"--margin-@{value}-rem") !important; }
+            &-lg-@{value}, &r-lg-@{value}, &x-lg-@{value} { margin-right: var(~"--margin-@{value}-rem") !important; }
+            &-lg-@{value}, &b-lg-@{value}, &y-lg-@{value} { margin-bottom: var(~"--margin-@{value}-rem") !important; }
+            &-lg-@{value}, &l-lg-@{value}, &x-lg-@{value} { margin-left: var(~"--margin-@{value}-rem") !important; }
+        });
+
+        &-lg-auto, &t-lg-auto, &y-lg-auto { margin-top: auto !important; }
+        &-lg-auto, &r-lg-auto, &x-lg-auto { margin-right: auto !important; }
+        &-lg-auto, &b-lg-auto, &y-lg-auto { margin-bottom: auto !important; }
+        &-lg-auto, &l-lg-auto, &x-lg-auto { margin-left: auto !important; }
+    }
+
+    @media (min-width: @media-breakpoint-xl) {
+        each(range(0, 5), {
+            &-xl-@{value}, &t-xl-@{value}, &y-xl-@{value} { margin-top: var(~"--margin-@{value}-rem") !important; }
+            &-xl-@{value}, &r-xl-@{value}, &x-xl-@{value} { margin-right: var(~"--margin-@{value}-rem") !important; }
+            &-xl-@{value}, &b-xl-@{value}, &y-xl-@{value} { margin-bottom: var(~"--margin-@{value}-rem") !important; }
+            &-xl-@{value}, &l-xl-@{value}, &x-xl-@{value} { margin-left: var(~"--margin-@{value}-rem") !important; }
+        });
+
+        &-xl-auto, &t-xl-auto, &y-xl-auto { margin-top: auto !important; }
+        &-xl-auto, &r-xl-auto, &x-xl-auto { margin-right: auto !important; }
+        &-xl-auto, &b-xl-auto, &y-xl-auto { margin-bottom: auto !important; }
+        &-xl-auto, &l-xl-auto, &x-xl-auto { margin-left: auto !important; }
+    }
+}
+
+// Padding
+.p {
+    each(range(0, 5), {
+        &-@{value}, &t-@{value}, &y-@{value} { padding-top: var(~"--padding-@{value}-rem") !important; }
+        &-@{value}, &r-@{value}, &x-@{value} { padding-right: var(~"--padding-@{value}-rem") !important; }
+        &-@{value}, &b-@{value}, &y-@{value} { padding-bottom: var(~"--padding-@{value}-rem") !important; }
+        &-@{value}, &l-@{value}, &x-@{value} { padding-left: var(~"--padding-@{value}-rem") !important; }
+    });
+
+    @media (min-width: @media-breakpoint-sm) {
+        each(range(0, 5), {
+            &-sm-@{value}, &t-sm-@{value}, &y-sm-@{value} { padding-top: var(~"--padding-@{value}-rem") !important; }
+            &-sm-@{value}, &r-sm-@{value}, &x-sm-@{value} { padding-right: var(~"--padding-@{value}-rem") !important; }
+            &-sm-@{value}, &b-sm-@{value}, &y-sm-@{value} { padding-bottom: var(~"--padding-@{value}-rem") !important; }
+            &-sm-@{value}, &l-sm-@{value}, &x-sm-@{value} { padding-left: var(~"--padding-@{value}-rem") !important; }
+        });
+    }
+
+    @media (min-width: @media-breakpoint-md) {
+        each(range(0, 5), {
+            &-md-@{value}, &t-md-@{value}, &y-md-@{value} { padding-top: var(~"--padding-@{value}-rem") !important; }
+            &-md-@{value}, &r-md-@{value}, &x-md-@{value} { padding-right: var(~"--padding-@{value}-rem") !important; }
+            &-md-@{value}, &b-md-@{value}, &y-md-@{value} { padding-bottom: var(~"--padding-@{value}-rem") !important; }
+            &-md-@{value}, &l-md-@{value}, &x-md-@{value} { padding-left: var(~"--padding-@{value}-rem") !important; }
+        });
+    }
+
+    @media (min-width: @media-breakpoint-lg) {
+        each(range(0, 5), {
+            &-lg-@{value}, &t-lg-@{value}, &y-lg-@{value} { padding-top: var(~"--padding-@{value}-rem") !important; }
+            &-lg-@{value}, &r-lg-@{value}, &x-lg-@{value} { padding-right: var(~"--padding-@{value}-rem") !important; }
+            &-lg-@{value}, &b-lg-@{value}, &y-lg-@{value} { padding-bottom: var(~"--padding-@{value}-rem") !important; }
+            &-lg-@{value}, &l-lg-@{value}, &x-lg-@{value} { padding-left: var(~"--padding-@{value}-rem") !important; }
+        });
+    }
+
+    @media (min-width: @media-breakpoint-xl) {
+        each(range(0, 5), {
+            &-xl-@{value}, &t-xl-@{value}, &y-xl-@{value} { padding-top: var(~"--padding-@{value}-rem") !important; }
+            &-xl-@{value}, &r-xl-@{value}, &x-xl-@{value} { padding-right: var(~"--padding-@{value}-rem") !important; }
+            &-xl-@{value}, &b-xl-@{value}, &y-xl-@{value} { padding-bottom: var(~"--padding-@{value}-rem") !important; }
+            &-xl-@{value}, &l-xl-@{value}, &x-xl-@{value} { padding-left: var(~"--padding-@{value}-rem") !important; }
+        });
+    }
+}
