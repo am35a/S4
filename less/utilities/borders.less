@@ -10,7 +10,18 @@
     &-0, &-right-0 { border-right-width: 0 !important; }
     &-0, &-bottom-0 { border-bottom-width: 0 !important; }
     &-0, &-left-0 { border-left-width: 0 !important; }
+
+    @border-rainbow: blue, indigo, purple, pink, red, orange, yellow, green, teal, cyan, white, gray, black;
+    each(@border-rainbow, {
+        &-@{value} { border-color: var(~"--@{value}") !important; }
+    });
+    
+    @border-color: primary, secondary, success, info, warning, danger, light, dark;
+    each(@border-color, {
+        &-@{value} { border-color: var(~"--@{value}") !important; }
+    });
 }
+
 
 @rounds: sm, md, lg;
 
@@ -42,48 +53,7 @@
 
     });
 }
-  
+
 .rounded-0 { border-radius: 0 !important; }
 
 .rounded-circle { border-radius: 50% !important; }
-
-
-/*
-
-  .border-primary {
-    border-color: #007bff !important;
-  }
-  
-  .border-secondary {
-    border-color: #6c757d !important;
-  }
-  
-  .border-success {
-    border-color: #28a745 !important;
-  }
-  
-  .border-info {
-    border-color: #17a2b8 !important;
-  }
-  
-  .border-warning {
-    border-color: #ffc107 !important;
-  }
-  
-  .border-danger {
-    border-color: #dc3545 !important;
-  }
-  
-  .border-light {
-    border-color: #f8f9fa !important;
-  }
-  
-  .border-dark {
-    border-color: #343a40 !important;
-  }
-  
-  .border-white {
-    border-color: #fff !important;
-  }
-  
-*/  

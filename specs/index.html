@@ -9,15 +9,15 @@
         <link rel="stylesheet/less" type="text/css" href="less/styles.less" />
         <script src="http://cdn.jsdelivr.net/npm/less" type="text/javascript"></script>
     </head>
-    <body>
-        <header class="container-fluid">
+    <body class="min-vh-100 d-flex flex-column overflow-hidden-x">
+        <header class="container-fluid bg-info">
             S4
         </header>
-        <main class="container-fluid">
-            <aside>
+        <main class="mb-auto">
+            <aside class="bg-orange">
                 aside
             </aside>
-            <div>
+            <div class="body">
                 <div class="row">
                     <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto border py-3">
                         S4 v0.0.α
@@ -25,9 +25,9 @@
                     </div>
                 </div>
             </div>
-            <footer>
-                footer
-            </footer>
         </main>
+        <footer class="container-fluid bg-secondary">
+            footer
+        </footer>
     </body>
 </html>

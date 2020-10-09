@@ -1,0 +1,32 @@
+// S4 v0.0.α  ▪  ©2020▸ by Arthur A. Selimov  ▪  https://s4.mobitoon.ru
+
+@float: none, left, right;
+.float {
+    each(@float, {
+        &-@{value} { float: @value !important; }
+    });
+
+    @media (min-width: @media-breakpoint-sm) {
+        each(@float, {
+            &-sm-@{value} { float: @value !important; }
+        });
+    }
+    
+    @media (min-width: @media-breakpoint-md) {
+        each(@float, {
+            &-md-@{value} { float: @value !important; }
+        });
+    }
+    
+    @media (min-width: @media-breakpoint-lg) {
+        each(@float, {
+            &-lg-@{value} { float: @value !important; }
+        });
+    }
+    
+    @media (min-width: @media-breakpoint-xl) {
+        each(@float, {
+            &-xl-@{value} { float: @value !important; }
+        });
+    }
+}
