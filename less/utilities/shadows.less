@@ -1,0 +1,10 @@
+// S4 v0.0.α  ▪  ©2020▸ by Arthur A. Selimov  ▪  https://s4.mobitoon.ru
+
+@shadow: sm, md, lg;
+.shadow- {
+    each(@shadow, {
+        &@{value} { box-shadow: var(~"--shadow-@{value}-horizontal") var(~"--shadow-@{value}-vertical") var(~"--shadow-@{value}-blur") var(~"--shadow-@{value}-color") !important; }
+    });
+}
+
+.shadow-none { box-shadow: none !important; }

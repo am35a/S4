@@ -1,0 +1,86 @@
+// S4 v0.0.α  ▪  ©2020▸ by Arthur A. Selimov  ▪  https://s4.mobitoon.ru
+
+.font {
+    &-weight {
+        &-lighter { font-weight: var(--font-weight-lighter) !important; }
+        &-light { font-weight: var(--font-weight-light) !important; }
+        &-normal { font-weight: var(--font-weight-normal) !important; }
+        &-bold { font-weight: var(--font-weight-bold) !important; }
+        &-bolder { font-weight: var(--font-weight-bolder) !important; }
+    }
+    &-italic { font-style: italic !important; }
+}
+
+.text {
+    &-monospace {
+        font-family: var(--font-family-monospace);
+    }
+
+    &-ellipsis,
+    &-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &-wrap { white-space: normal !important; }
+    &-nowrap { white-space: nowrap !important; }
+    
+    @text-align: left, center, right, justify;
+    each(@text-align, {
+        &-@{value} { text-align: @value !important; }
+    });
+    @media (min-width: @media-breakpoint-sm) {
+        each(@text-align, {
+            &-sm-@{value} { text-align: @value !important; }
+        });
+    }
+    @media (min-width: @media-breakpoint-md) {
+        each(@text-align, {
+            &-md-@{value} { text-align: @value !important; }
+        });
+    }
+    @media (min-width: @media-breakpoint-lg) {
+        each(@text-align, {
+            &-lg-@{value} { text-align: @value !important; }
+        });
+    }
+    @media (min-width: @media-breakpoint-xl) {
+        each(@text-align, {
+            &-xl-@{value} { text-align: @value !important; }
+        });
+    }
+
+    @text-transform: lowercase, uppercase, capitalize;
+    each(@text-align, {
+        &-@{value} { text-transform: @value !important; }
+    });
+
+    &-white { color: var(--white) !important; }
+
+    @text-color: primary, secondary, success, info, warning, danger, light, dark;
+    each(@text-color, {
+        &-@{value} { color: var(~"--@{value}") !important; }
+        &-@{value}[href]:hover, &-@{value}[href]:focus { color: var(~"--@{value}-d") !important; }
+    });
+
+    &-body { color: var(--body-color) !important; }
+
+    &-muted { color: var(--gray) !important; }
+
+    &-hide {
+        font-size: 0;
+        line-height: 0;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+    }
+
+    &-decoration-none { text-decoration: none !important; }
+
+    &-break {
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+}

@@ -23,29 +23,46 @@
     --rounded-md-rem:   calc(var(--key-rem) * 0.25);
     --rounded-lg-rem:   calc(var(--key-rem) * 0.5);
 
+    --shadow-sm-horizontal: 0;
+    --shadow-sm-vertical: calc(var(--shadow-md-vertical) *  0.5);
+    --shadow-sm-blur: calc(var(--shadow-md-blur) * 0.5);
+    --shadow-sm-color: fadeout(@black, 95);
+
+    --shadow-md-horizontal: 0;
+    --shadow-md-vertical: calc(var(--key-rem) * 0.5);
+    --shadow-md-blur: calc(var(--key-rem) * 1);
+    --shadow-md-color: fadeout(@black, 90);
+
+    --shadow-lg-horizontal: 0;
+    --shadow-lg-vertical: calc(var(--shadow-md-vertical) * 2);
+    --shadow-lg-blur: calc(var(--shadow-md-blur) * 2);
+    --shadow-lg-color: fadeout(@black, 85);
+
     /* Colors */
-    --blue:       @blue;
-    --indigo:     @indigo;
-    --purple:     @purple;
-    --pink:       @pink;
-    --red:        @red;
-    --orange:     @orange;
-    --yellow:     @yellow;
-    --green:      @green;
-    --teal:       @teal;
-    --cyan:       @cyan;
-    --white:      @white;
-    --gray:       @gray;
-    --black:      @black;
+    --blue:          @blue;
+    --indigo:        @indigo;
+    --purple:        @purple;
+    --pink:          @pink;
+    --red:           @red;
+    --orange:        @orange;
+    --yellow:        @yellow;
+    --green:         @green;
+    --teal:          @teal;
+    --cyan:          @cyan;
+    --white:         @white;
+    --gray:          @gray;
+    --black:         @black;
     /* UI colors */
-    --primary:    @primary;
-    --secondary:  @secondary;
-    --success:    @success;
-    --info:       @info;
-    --warning:    @warning;
-    --danger:     @danger;
-    --light:      @light;
-    --dark:       @dark;
+    --primary:       @primary;
+    --secondary:     @secondary;
+    --success:       @success;
+    --info:          @info;
+    --warning:       @warning;
+    --danger:        @danger;
+    --light:         @light;
+    --dark:          @dark;
+    --body-color:    @gray-900;
+    --body-bg-color: @white
 
     --primary-d:    darken(@primary, 10%);
     --secondary-d:  darken(@secondary, 10%);
@@ -59,4 +76,10 @@
     /* Fonts */
     --font-family-sans-serif: @font-family-sans-serif;
     --font-family-monospace:  @font-family-monospace;
+
+    --font-weight-lighter:    @font-weight-lighter;
+    --font-weight-light:      @font-weight-light;
+    --font-weight-normal:     @font-weight-normal;
+    --font-weight-bold:       @font-weight-bold;
+    --font-weight-bolder:     @font-weight-bolder;
 }
