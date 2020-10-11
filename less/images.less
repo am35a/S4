@@ -1,0 +1,27 @@
+// S4 v0.0.α  ▪  ©2020▸ by Arthur A. Selimov  ▪  https://s4.mobitoon.ru
+
+.img {
+    &-fluid,
+    &-thumbnail {
+        max-width: 100%;
+        height: auto;
+    }
+    &-thumbnail {
+        padding: var(--padding-1-rem);
+        background-color: var(--white);
+        // border: 1px solid var(--border-color);
+        border-radius: var(--rounded-md-rem);
+    }
+}
+  
+.figure {
+    & { display: inline-block; }
+    &-img {
+        margin-bottom: var(--margin-2-rem);
+        line-height: 1;
+    }
+    &-caption {
+        font-size: 90%;
+        color: var(--gray);
+    }
+}

@@ -52,7 +52,7 @@
     }
 
     @text-transform: lowercase, uppercase, capitalize;
-    each(@text-align, {
+    each(@text-transform, {
         &-@{value} { text-transform: @value !important; }
     });
 

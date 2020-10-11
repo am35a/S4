@@ -10,8 +10,8 @@
     --margin-4-rem:     calc(var(--key-rem) * 1.5);
     --margin-5-rem:     calc(var(--key-rem) * 3);
 
-    --padding-1-rem:    var(--margin-1-rem);
     --padding-0-rem:    var(--margin-0-rem);
+    --padding-1-rem:    var(--margin-1-rem);
     --padding-2-rem:    var(--margin-2-rem);
     --padding-3-rem:    var(--margin-3-rem);
     --padding-4-rem:    var(--margin-4-rem);
@@ -62,7 +62,7 @@
     --light:         @light;
     --dark:          @dark;
     --body-color:    @gray-900;
-    --body-bg-color: @white
+    --body-bg-color: @white;
 
     --primary-d:    darken(@primary, 10%);
     --secondary-d:  darken(@secondary, 10%);
@@ -74,6 +74,8 @@
     --dark-d:       darken(@dark, 10%);
 
     /* Fonts */
+    --font-size-rem: --key-rem;
+
     --font-family-sans-serif: @font-family-sans-serif;
     --font-family-monospace:  @font-family-monospace;
 
@@ -82,4 +84,18 @@
     --font-weight-normal:     @font-weight-normal;
     --font-weight-bold:       @font-weight-bold;
     --font-weight-bolder:     @font-weight-bolder;
+
+    --font-size-small: 80%;
+
+    --font-size-h1-rem: calc(var(--key-rem) * 2.5);
+    --font-size-h2-rem: calc(var(--key-rem) * 2.25);
+    --font-size-h3-rem: calc(var(--key-rem) * 2);
+    --font-size-h4-rem: calc(var(--key-rem) * 1.75);
+    --font-size-h5-rem: calc(var(--key-rem) * 1.5);
+    --font-size-h6-rem: calc(var(--key-rem) * 1.25);
+
+    --font-size-display1-rem: calc(var(--key-rem) * 6.5);
+    --font-size-display2-rem: calc(var(--key-rem) * 5.5);
+    --font-size-display3-rem: calc(var(--key-rem) * 4.5);
+    --font-size-display4-rem: calc(var(--key-rem) * 3.5);
 }
