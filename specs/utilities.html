@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>S4</title>
+        <link rel="stylesheet/less" type="text/css" href="../less/s4.less" />
+        <link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+        <script src="http://cdn.jsdelivr.net/npm/less" type="text/javascript"></script>
+    </head>
+    <body>
+        <header class="container-fluid">
+            ...
+        </header>
+        <main class="min-h-100">
+            <aside class="p-3">
+                <nav class="position-sticky t-0 text-nowrap">
+                    <a class="d-block text-light" href="#align">Align</a>
+                    <a class="d-block text-light" href="#background">Background</a>
+                    <a class="d-block text-light" href="#borders">Borders</a>
+                    <a class="d-block text-light" href="#clearfix">Clearfix</a>
+                    <a class="d-block text-light" href="#display">Display</a>
+                    <a class="d-block text-light" href="#float">Float</a>
+                    <a class="d-block text-light" href="#radius">Radius</a>
+                </nav>
+            </aside>
+            <div class="p-3">
+                <h1>Utilities</h1>
+                <div class="mb-3">
+                    <h2 id="align">Align</h2>
+                    <div class="mb-3">
+                        <p>For left, right, and center alignment <b>S4</b> has <code>.text-#</code> classes and for media breakpoints too <code>.text-sm-#</code>, <code>.text-md-#</code>, <code>.text-lg-#</code> and <code>.text-xl-#</code>.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.text-left</code></td>
+                                    <td><div class="text-left">left</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-center</code></td>
+                                    <td><div class="text-center">center</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.text-right</code></td>
+                                    <td><div class="text-right">right</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2 id="background">Background</h2>
+                    <div class="mb-3">
+                        <p>Background color classes list in <b>S4</b>: <code>.bg-primary</code>, <code>.bg-secondary</code>, <code>.bg-success</code>, <code>.bg-info</code>, <code>.bg-warning</code>, <code>.bg-danger</code>, <code>.bg-light</code> and <code>.bg-dark</code>.</p>
+                        <p>For buttons and <a class="bg-primary text-white" href="#">links</a> background color move to shadow when mouse <code>:hover</code> or link in <code>:focus</code>.</p>
+                        <h3>Extra colorize classes</h3>
+                        <div class="mb-3">
+                            <p><code>.bg-blue</code>, <code>.bg-indigo</code>, <code>.bg-purple</code>, <code>.bg-pink</code>, <code>.bg-red</code>, <code>.bg-orange</code>, <code>.bg-yellow</code>, <code>.bg-green</code>, <code>.bg-teal</code>, <code>.bg-cyan</code>, <code>.bg-white</code>, <code>.bg-gray</code> and <code>.bg-black</code>.</p>
+                        </div>
+                    </div>
+                    <h2 id="borders">Borders</h2>
+                    <div class="mb-3">
+                        <p>To add or remove border <b>S4</b> has <code>.border-#</code> classes.</p>
+                        <h3>Add classes</h3>
+                        <div class="mb-3">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.border</code></td>
+                                        <td><div class="border bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-left</code></td>
+                                        <td><div class="border-left bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-top</code></td>
+                                        <td><div class="border-top bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-right</code></td>
+                                        <td><div class="border-right bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-bottom</code></td>
+                                        <td><div class="border-bottom bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Remove classes</h3>
+                        <div class="mb-3">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.border-0</code></td>
+                                        <td><div class="border border-0 bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-left-0</code></td>
+                                        <td><div class="border border-left-0 bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-top-0</code></td>
+                                        <td><div class="border border-top-0 bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-right-0</code></td>
+                                        <td><div class="border border-right-0 bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-bottom-0</code></td>
+                                        <td><div class="border border-bottom-0 bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Colorize classes</h3>
+                        <div class="mb-3">
+                            <p>Default color of border is <code>currentColor</code> but <b>S4</b> has classes for colorize borders.</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>Result</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>.border-primary</code></td>
+                                        <td><div class="border border-primary bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-secondary</code></td>
+                                        <td><div class="border border-secondary bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-success</code></td>
+                                        <td><div class="border border-success bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-info</code></td>
+                                        <td><div class="border border-info bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-warning</code></td>
+                                        <td><div class="border border-warning bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-danger</code></td>
+                                        <td><div class="border border-danger bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-light</code></td>
+                                        <td><div class="border border-light bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>.border-dark</code></td>
+                                        <td><div class="border border-dark bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h4>Extra colorize classes</h4>
+                            <div class="mb-3">
+                                <p><code>.border-blue</code>, <code>.border-indigo</code>, <code>.border-purple</code>, <code>.border-pink</code>, <code>.border-red</code>, <code>.border-orange</code>, <code>.border-yellow</code>, <code>.border-green</code>, <code>.border-teal</code>, <code>.border-cyan</code>, <code>.border-white</code>, <code>.border-gray</code> and <code>.border-black</code>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="clearfix">Clearfix</h2>
+                    <div class="mb-3">
+                        <p>Use <code>.clearfix</code> class to expand container around any float elements.</p>
+                        <div class="bg-white clearfix">
+                            <button class="btn btn-secondary float-right">left right</button>
+                        </div>
+                    </div>
+                    <h2 id="display">Display</h2>
+                    <div class="mb-3">
+                        <p>Display property can change by <code>.display-none</code>, <code>.display-unset</code>, <code>.display-inline</code>, <code>.display-inline-block</code>, <code>.display-block</code>, <code>.display-flex</code>, <code>.display-inline-flex</code>, <code>.display-grid</code>, <code>.display-inline-grid</code>, <code>.display-table</code>, <code>.display-table-row</code>, <code>.display-table-cell</code>. Also all properties are responsive with classes <code>.display-sm-#</code>, <code>.display-md-#</code>, <code>.display-lg-#</code> and <code>.display-xl-#</code></p>
+                    </div>
+                    <h2 id="float">Float</h2>
+                    <div class="mb-3">
+                        <p>For toggle left, right position <b>S4</b> has <code>.float-#</code> classes and for media breakpoints too <code>.float-sm-#</code>, <code>.float-md-#</code>, <code>.float-lg-#</code> and <code>.float-xl-#</code>. <span class="text-warning">Do not forget <a href="#clearfix">clearfix</a> if container contains only float objects!</span></p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.float-left</code></td>
+                                    <td><div class="float-left">left</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.float-right</code></td>
+                                    <td><div class="float-right">right</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2 id="radius">Radius</h2>
+                    <div class="mb-3">
+                        <p>To create round corners to all of objects use <code>.rounded-#</code> classes with sizes <code>.#-sm</code>, <code>.#-md</code> or <code>.#-lg</code>. To remove rounded corners use <code>.rounded-0</code> and for create full circle <code>rounded-circle</code> classes.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.rounded-md</code></td>
+                                    <td><div class="bg-gray rounded-md" style="width: 4rem; height: 4rem;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.rounded-md-left</code></td>
+                                    <td><div class="bg-gray rounded-md-left" style="width: 4rem; height: 4rem;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.rounded-md-top</code></td>
+                                    <td><div class="bg-gray rounded-md-top" style="width: 4rem; height: 4rem;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.rounded-md-right</code></td>
+                                    <td><div class="bg-gray rounded-md-right" style="width: 4rem; height: 4rem;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.rounded-md-bottom</code></td>
+                                    <td><div class="bg-gray rounded-md-bottom" style="width: 4rem; height: 4rem;"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="small">
+            <div class="bg-light text-muted m-2 px-2 p-1 rounded-md">
+                <a href="index.html">home</a>
+            </div>
+        </footer>
+    </body>
+</html>
