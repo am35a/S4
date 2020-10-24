@@ -59,6 +59,7 @@
     --danger:        @danger;
     --light:         @light;
     --dark:          @dark;
+    --link:          var(--primary);
     
     --body-color:    @gray-900;
     --body-bg-color: @white;
@@ -72,6 +73,7 @@
     --danger-d:     darken(@danger, 10%);
     --light-d:      darken(@light, 10%);
     --dark-d:       darken(@dark, 10%);
+    --link-d:       var(--primary-d);
 
     --primary-n:    darken(@primary, 20%);
     --secondary-n:  darken(@secondary, 20%);
@@ -81,6 +83,18 @@
     --danger-n:     darken(@danger, 20%);
     --light-n:      darken(@light, 20%);
     --dark-n:       darken(@dark, 20%);
+    --link-n:       var(--primary-n);
+
+    --primary-t:    fade(@primary, 50%);
+    --secondary-t:  fade(@secondary, 50%);
+    --success-t:    fade(@success, 50%);
+    --info-t:       fade(@info, 50%);
+    --warning-t:    fade(@warning, 50%);
+    --danger-t:     fade(@danger, 50%);
+    --light-t:      fade(@light, 50%);
+    --dark-t:       fade(@dark, 50%);
+    --link-t:       var(--primary-t);
+
 
     /* Fonts */
     --font-size-rem: --key-rem;

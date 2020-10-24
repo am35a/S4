@@ -22,6 +22,12 @@
                     <a class="d-block text-light" href="#clearfix">Clearfix</a>
                     <a class="d-block text-light" href="#display">Display</a>
                     <a class="d-block text-light" href="#float">Float</a>
+                    <a class="d-block text-light" href="#overflow">Overflow</a>
+                    <a class="d-block text-light" href="#position">Position</a>
+                    <a class="d-block text-light" href="#shadows">Shadows</a>
+                    <a class="d-block text-light" href="#sizing">Sizing</a>
+                    <a class="d-block text-light" href="#spacing">Spacing</a>
+                    <a class="d-block text-light" href="#text">Text</a>
                     <a class="d-block text-light" href="#radius">Radius</a>
                 </nav>
             </aside>
@@ -216,6 +222,156 @@
                             </tbody>
                         </table>
                     </div>
+                    <h2 id="overflow">Overflow</h2>
+                    <p class="mb-3">
+                        <p>For configuring how content overflows an element <b>S4</b> has <code>.overflow-auto</code>, <code>.overflow-scroll</code>, <code>.overflow-hidden</code> classes also <code>.overflow-#-x</code> and <code>.overflow-#-y</code> has too.</p>
+                    </p>
+                    <h2 id="position">Position</h2>
+                    <div class="mb-3">
+                        <p>Positioning classes are available in <b>S4</b> as <code>.position-static</code>, <code>.position-relative</code>, <code>.position-absolute</code>, <code>.position-fixed</code> and <code>.position-sticky</code>. Also <b>S4</b> manualy can move objects into relative position (left, top, right and bottom) frame by classes <code>.l-0</code>, <code>.t-0</code>, <code>.r-0</code> and <code>.b-0</code>. </p>
+                    </div>
+                    <h2 id="shadows">Shadows</h2>
+                    <p class="mb-3">
+                        <p>To create shadow below of objects use .shadow-# classes with sizes <code>.#-sm</code>, <code>.#-md</code> or <code>.#-lg</code>. To remove shadow corners use <code>.shadow-0</code> class. <span class="text-warning">! <code>.shadow-0</code> - can remove from framework, do not use this class.</span></p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.shadow-sm</code></td>
+                                    <td><div class="shadow-sm bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.shadow-md</code></td>
+                                    <td><div class="shadow-md bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.shadow-lg</code></td>
+                                    <td><div class="shadow-lg bg-white" style="width: 4rem; height: 4rem;"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <h2 id="sizing">Sizing</h2>
+                    <div class="mb-3">
+                        <p>To make an element as wide or as tall use classes <code>.w-#</code> and <code>h-#</code>. To limit the object within full height and width, classes <code>.mw-100</code>, <code>.mh-100</code>, <code>.min-vw-100</code>, <code>.min-vh-100</code>, <code>.vw-100</code> and <code>.vh-100</code> should be used.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.w-25</code></td>
+                                    <td style="width: 4rem; height: 4rem;"><div class="w-25 bg-gray">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.w-50</code></td>
+                                    <td style="width: 4rem; height: 4rem;"><div class="w-50 bg-gray">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.w-75</code></td>
+                                    <td style="width: 4rem; height: 4rem;"><div class="w-75 bg-gray">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.w-100</code></td>
+                                    <td style="width: 4rem; height: 4rem;"><div class="w-100 bg-gray">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.h-25</code></td>
+                                    <td style="width: 4rem; height: 4rem;"><div class="h-25 bg-gray">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.h-50</code></td>
+                                    <td style="width: 4rem; height: 4rem;"><div class="h-50 bg-gray">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.h-75</code></td>
+                                    <td style="width: 4rem; height: 4rem;"><div class="h-75 bg-gray">&nbsp;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>.h-100</code></td>
+                                    <td style="width: 4rem; height: 4rem;"><div class="h-100 bg-gray">&nbsp;</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2 id="spacing">Spacing</h2>
+                    <div class="mb-3">
+                        <p>S4 include utility classes <code>.m#-#-#</code> to modify margin and <code>.p#-#-#</code> to modify padding.</p>
+                        <h3>Margin</h3>
+                        <div class="mb-3">
+                            <p>Use this patterns for margin classes:</p>
+                            <ul>
+                                The first hash can one of:
+                                <li><code>t</code> - for classes margin-top</li>
+                                <li><code>b</code> - for classes margin-bottom</li>
+                                <li><code>l</code> - for classes margin-left</li>
+                                <li><code>r</code> - for classes margin-right</li>
+                                <li><code>x</code> - for classes both margin-left and margin-right</li>
+                                <li><code>y</code> - for classes both margin-top and margin-bottom</li>
+                            </ul>
+                            <ul>
+                                The second hash can one of:
+                                <li><code>sm</code> - for breakpoint 576px</li>
+                                <li><code>md</code> - for breakpoint 768px</li>
+                                <li><code>lg</code> - for breakpoint 992px</li>
+                                <li><code>xl</code> - for breakpoint 1200px</li>
+                            </ul>
+                            <ul>
+                                The third hash can one of:
+                                <li><code>0</code> - use for killing margin</li>
+                                <li><code>1</code> - for classes .25rem</li>
+                                <li><code>2</code> - for classes .5rem</li>
+                                <li><code>3</code> - for classes 1rem</li>
+                                <li><code>4</code> - for classes 1.5rem</li>
+                                <li><code>5</code> - for classes 3rem</li>
+                                <li><code>auto</code> - for classes that set the margin to auto</li>
+                            </ul>
+                        </div>
+                        <h3>Padding</h3>
+                        <div class="mb-3">
+                            <p>Use this patterns for padding classes:</p>
+                            <ul>
+                                The first hash can one of:
+                                <li><code>t</code> - for classes padding-top</li>
+                                <li><code>b</code> - for classes padding-bottom</li>
+                                <li><code>l</code> - for classes padding-left</li>
+                                <li><code>r</code> - for classes padding-right</li>
+                                <li><code>x</code> - for classes both padding-left and padding-right</li>
+                                <li><code>y</code> - for classes both padding-top and padding-bottom</li>
+                            </ul>
+                            <ul>
+                                The second hash can one of:
+                                <li><code>sm</code> - for breakpoint 576px</li>
+                                <li><code>md</code> - for breakpoint 768px</li>
+                                <li><code>lg</code> - for breakpoint 992px</li>
+                                <li><code>xl</code> - for breakpoint 1200px</li>
+                            </ul>
+                            <ul>
+                                The third hash can one of:
+                                <li><code>0</code> - use for killing padding</li>
+                                <li><code>1</code> - for classes .25rem</li>
+                                <li><code>2</code> - for classes .5rem</li>
+                                <li><code>3</code> - for classes 1rem</li>
+                                <li><code>4</code> - for classes 1.5rem</li>
+                                <li><code>5</code> - for classes 3rem</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2 id="spacing">Text</h2>
+                    <div class="mb-3">
+                        ...
+                    </div>
+
                     <h2 id="radius">Radius</h2>
                     <div class="mb-3">
                         <p>To create round corners to all of objects use <code>.rounded-#</code> classes with sizes <code>.#-sm</code>, <code>.#-md</code> or <code>.#-lg</code>. To remove rounded corners use <code>.rounded-0</code> and for create full circle <code>rounded-circle</code> classes.</p>

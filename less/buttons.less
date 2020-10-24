@@ -4,7 +4,7 @@
     & {
         display: inline-block;
         font-weight: var(--font-weight-normal);
-        color: var(--body-color);
+        // color: var(--body-color);
         text-align: center;
         vertical-align: middle;
         -webkit-user-select: none;
@@ -20,8 +20,8 @@
         border-radius: var(--rounded-md-rem);
     }
     &:hover {
-        color: var(--body-color);
-        text-decoration: none;
+        color: var(--black);
+        // text-decoration: none;
     }
     &:focus,
     &.focus {
@@ -44,52 +44,92 @@ fieldset:disabled a.btn {
     pointer-events: none;
 }
 
-@btn-name: primary, secondary, success, danger, warning, info, light, dark;
+@btn-name: primary, secondary, success, warning, danger, info, light, dark;
 
 each(@btn-name, {
     .btn-@{value} {
         & {
-            color: var(--white);
+            color: if((@index = 4) or (@index = 7), var(--black), var(--white));
             background-color: var(~"--@{value}");
             // border-color: var(--primary);
         }
         &:hover {
-            color: var(--white);
+            color: if((@index = 4) or (@index = 7), var(--black), var(--white));
             background-color: var(~"--@{value}-d");
             // border-color: var(--primary-n);
         }
         &:focus,
         &.focus {
-            color: var(--white);
+            color: if((@index = 4) or (@index = 7), var(--black), var(--white));
             background-color: var(~"--@{value}-d");
             // border-color: var(--primary-n);
-            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+            // box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+            box-shadow: 0 0 0 0.2rem var(~"--@{value}-t");
         }
         &.disabled,
         &:disabled {
-            color: var(--white);
+            color: if((@index = 4) or (@index = 7), var(--black), var(--white));
             background-color: var(~"--@{value}");
             // border-color: var(--primary);
         }
         &:not(:disabled):not(.disabled):active,
         &:not(:disabled):not(.disabled).active {
-            color: var(--white);
+            color: if((@index = 4) or (@index = 7), var(--black), var(--white));
             background-color: var(~"--@{value}-n");
             // border-color: var(--primary-n); // -10%
         }
         &:not(:disabled):not(.disabled):active:focus,
         &:not(:disabled):not(.disabled).active:focus {
-            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+            // box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+            box-shadow: 0 0 0 0.2rem var(~"--@{value}-t");
         }
     }
-    .show > .btn-@{value}.dropdown-toggle {
+});
+
+.btn-link {
+    color: var(--link);
+    &:hover {
+        color: var(--link-d);
+        text-decoration: underline;
+    }
+    &:focus,
+    &.focus {
+      text-decoration: underline;
+    }
+}
+
+
+// .btn-link {
+//     font-weight: 400;
+//     color: #007bff;
+//     text-decoration: none;
+//   }
+  
+//   .btn-link:hover {
+//     color: #0056b3;
+//     text-decoration: underline;
+//   }
+  
+//   .btn-link:focus, .btn-link.focus {
+//     text-decoration: underline;
+//   }
+  
+//   .btn-link:disabled, .btn-link.disabled {
+//     color: #6c757d;
+//     pointer-events: none;
+//   }
+  
+
+each(@btn-name, {
+        .show > .btn-@{value}.dropdown-toggle {
         & {
-            color: var(--white);
+            color: if((@index = 4) or (@index = 7), var(--black), var(--white));
             background-color: var(~"--@{value}-n");
             // border-color: var(--primary-n); // -10%
         }
         &:focus {
-            box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+            // box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+            box-shadow: 0 0 0 0.2rem var(~"--@{value}-t");
         }
     }
 });
