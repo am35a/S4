@@ -40,9 +40,12 @@
         &-body
             display: grid
             gap: calc(var(--key-size) * 1.5)
-            margin: auto
             padding: var(--key-size) 0
             justify-content: center
+            :global(.landscape) &
+                margin: auto auto auto calc(var(--key-size) * 14)
+            :global(.portrait) &
+                margin: auto
             > *
                 max-width: calc(var(--key-size) * 16)
         &-footer
