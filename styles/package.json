@@ -1,0 +1,11 @@
+{
+    "name": "triafly-styles",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "sass --watch sass:../app/public/css --no-source-map",
+        "build": "sass --watch sass:css"
+    },
+    "devDependencies": {
+        "sass": "^1.38.0"
+    }
+}

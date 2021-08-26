@@ -1,0 +1,18 @@
+.p\:align-baseline {
+  vertical-align: baseline !important;
+}
+.p\:align-top {
+  vertical-align: top !important;
+}
+.p\:align-middle {
+  vertical-align: middle !important;
+}
+.p\:align-bottom {
+  vertical-align: bottom !important;
+}
+.p\:align-text-bottom {
+  vertical-align: text-bottom !important;
+}
+.p\:align-text-top {
+  vertical-align: text-top !important;
+}
