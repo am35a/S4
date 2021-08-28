@@ -1,15 +1,21 @@
 <script lang="ts">
-
+    import Button from "../../../../components/Button.svelte";
 </script>
 
-<div {...$$restProps}>
-    <h1>Hello!</h1>
-    <small>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</small>
+<div class="body">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores molestias veniam voluptas earum blanditiis nesciunt quas ducimus culpa harum magni sunt aperiam, corrupti deleniti voluptatum ex veritatis omnis voluptates consectetur?</p>
+    <Button class="btn btn-primary" style="margin: 1rem">Button</Button>
+    <Button class="btn btn-secondary" style="margin: 1rem">Button</Button>
+    <Button class="btn btn-info" style="margin: 1rem">Button</Button>
+    <Button class="btn btn-success" style="margin: 1rem">Button</Button>
+    <Button class="btn btn-warning" style="margin: 1rem">Button</Button>
+    <Button class="btn btn-error" style="margin: 1rem">Button</Button>
 </div>
 
 <style lang="sass">
     .body
         grid-column: 2/3
         grid-row: 2/3
-        display: grid
+        position: relative
+        overflow: auto
 </style>

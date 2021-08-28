@@ -2,13 +2,14 @@
 
 </script>
 
-<header {...$$restProps}>
+<header class="header">
     header
 </header>
 
 <style lang="sass">
-    header
+    .header
         grid-column: 1/3
         grid-row: 1/2
-        height: calc(var(--key-size) * 4)
+        height: var(--layout-header-height)
+        background-color: var(--header-bg-color)
 </style>

@@ -2,14 +2,15 @@
 
 </script>
 
-<aside {...$$restProps}>
+<aside class="aside">
     aside
 </aside>
 
 <style lang="sass">
-    aside
+    .aside
         grid-column: 1/2
         grid-row: 1/3
         display: grid
-        width: calc(var(--key-size) * 4)
+        width: var(--layout-aside-width)
+        background-color: var(--aside-bg-color)
 </style>
