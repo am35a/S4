@@ -21,15 +21,15 @@
             <button class="tf_btn tf_btn-primary" type="submit">Войти</button>
         </form>
     </div>
-    <footer class="footer"> &copy;2021 / v0.1.0 power with Svelte</footer>
+    <footer class="footer"> &copy;2021 {$app.name} / v0.1.0 power with Svelte</footer>
 </main>
 
 
 <style lang="sass">
     .signin
+        grid-column: 1/-1
+        grid-row: 1/-1
         display: grid
-        width: 100%
-        height: 100%
         background-image: url(../images/bkg-login-page.svg)
         background-position: left center
         background-repeat: no-repeat
