@@ -1,11 +1,11 @@
 <script lang="ts">
     import { user } from './store/store'
 
-    import Head from './lib/head.svelte'
-    import Body from './lib/body.svelte'
+    import Head from './lib/DocumentHead.svelte'
+    import Body from './lib/DocumentBody.svelte'
 
-    import LayoutAuthorization from './lib/layout/Authorization.svelte'
-    import LayoutMain from './lib/layout/main.svelte'
+    import LayoutSignIn from './lib/layout/signin/Index.svelte'
+    import LayoutLaborer from './lib/layout/laborer/Index.svelte'
     
 </script>
 
@@ -13,7 +13,7 @@
 <Body />
 
 {#if !$user.isAuthorized}
-    <LayoutAuthorization />
+    <LayoutSignIn />
 {:else}
-    <LayoutMain />
+    <LayoutLaborer />
 {/if}
