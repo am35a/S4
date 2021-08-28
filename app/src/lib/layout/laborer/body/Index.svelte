@@ -2,13 +2,11 @@
 
 </script>
 
-
-<!-- body	tf_layout -->
-<main>
+<div {...$$restProps}>
 	<h1>Hello!</h1>
 	<small>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</small>
-</main>
+</div>
 
-<!-- <style lang="sass">
+<style lang="sass">
 
-</style> -->
+</style>
