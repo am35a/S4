@@ -2,7 +2,13 @@ import { writable } from 'svelte/store'
 
 export let app: any = writable(
     {
-        name: 'TriaFly' as string
+        name: 'TriaFly' as string,
+        isAsideExpand: false as boolean,
+        fullscreen: false as boolean,
+        popupLoader: false as boolean,
+        popupToaster: false as boolean,
+        popupSettings: false as boolean,
+        modalLoader: false as boolean
     }
 )
 
