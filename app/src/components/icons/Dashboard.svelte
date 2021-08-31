@@ -7,13 +7,13 @@
     class:ico-sm = {size === 'sm'}
     class:ico-md = {size === 'md'}
     class:ico-lg = {size === 'lg'}
-    class:ico-home = {true}
+    class:ico-dashboard = {true}
     {...$$restProps}
 >
     {size}
 </div>
 
 <style lang="sass">
-    .ico-home
-        -webkit-mask-image: url(/icons/home.svg)
+    .ico-dashboard
+        -webkit-mask-image: url(/icons/dashboard.svg)
 </style>

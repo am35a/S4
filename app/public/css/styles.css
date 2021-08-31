@@ -303,4 +303,8 @@ progress {
   -webkit-mask-position-x: center;
   -webkit-mask-position-y: center;
   -webkit-mask-clip: content-box;
+  -webkit-mask-image: var(--ico-image);
+}
+.ico-sm {
+  height: var(--key-size);
 }
