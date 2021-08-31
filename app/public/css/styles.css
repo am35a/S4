@@ -294,3 +294,13 @@ progress {
   --aside-bg-color: #37414e;
   --header-bg-color: #d7d9dc;
 }
+
+.ico {
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position-x: center;
+  -webkit-mask-position-y: center;
+  -webkit-mask-clip: content-box;
+}

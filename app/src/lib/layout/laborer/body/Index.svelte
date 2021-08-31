@@ -18,4 +18,5 @@
         grid-row: 2/3
         position: relative
         overflow: auto
+        z-index: 1
 </style>

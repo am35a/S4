@@ -12,4 +12,5 @@
         grid-row: 1/2
         height: var(--layout-header-height)
         background-color: var(--header-bg-color)
+        z-index: 10
 </style>

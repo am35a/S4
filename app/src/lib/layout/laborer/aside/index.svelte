@@ -1,6 +1,5 @@
 <script lang="ts">
     import IconHome from '../../../../components/icons/Home.svelte'
-
 </script>
 
 <aside class="aside">
@@ -9,8 +8,9 @@
         <div class="hover"></div>
         <div class="active"></div>
         <div class="icon">
-            <svelte:component this="{IconHome}"/>
+            <svelte:component this="{IconHome}" size="sm"/>
         </div>
+        <IconHome size="sm"></IconHome>
         <div class="title"></div>
     </div>
 </aside>
@@ -22,6 +22,7 @@
         display: grid
         width: 16rem //var(--layout-aside-width)
         background-color: var(--aside-bg-color)
+        z-index: 100
         // &:hover
         //     width: calc(var(--layout-aside-width) * 8)
         .fader
