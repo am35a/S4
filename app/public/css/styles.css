@@ -312,11 +312,14 @@ progress {
   -webkit-mask-image: var(--ico-image);
 }
 .ico-sm {
+  width: var(--ico-size-sm);
   height: var(--ico-size-sm);
 }
 .ico-md {
+  width: var(--ico-size-md);
   height: var(--ico-size-md);
 }
 .ico-lg {
+  width: var(--ico-size-lg);
   height: var(--ico-size-lg);
 }

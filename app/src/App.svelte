@@ -5,7 +5,7 @@
     import Body from './lib/DocumentBody.svelte'
 
     import LayoutSignIn from './lib/layout/signin/Index.svelte'
-    import LayoutLaborer from './lib/layout/laborer/Index.svelte'
+    import LayoutLaborer from './lib/layout/laborer/Laborer.svelte'
     
 </script>
 
