@@ -1,6 +1,4 @@
 <script lang="ts">
-    import IconHome from '../../../../components/icons/Home.svelte'
-    // import IconDashboard from '../../../../components/icons/Dashboard.svelte'
     import Icon from '../../../../components/Icon.svelte'
 </script>
 
@@ -10,9 +8,8 @@
         <div class="hover"></div>
         <div class="active"></div>
         <div class="icon">
-            <svelte:component this="{IconHome}"/>
+            <svelte:component this="{Icon}" name="home" size="sm"/>
         </div>
-        <!-- <IconDashboard size="sm"/> -->
         <Icon name="dashboard" size="sm"/>
         <div class="title"></div>
     </div>
