@@ -8,9 +8,24 @@
         <div class="hover"></div>
         <div class="active"></div>
         <div class="icon">
-            <svelte:component this="{Icon}" name="home" size="sm"/>
+            <Icon name="home" size="sm"/>
         </div>
-        <Icon name="dashboard" size="sm"/>
+        <div class="title"></div>
+    </div>
+    <div class="item">
+        <div class="hover"></div>
+        <div class="active"></div>
+        <div class="icon">
+            <Icon name="dashboard" size="md"/>
+        </div>
+        <div class="title"></div>
+    </div>
+    <div class="item">
+        <div class="hover"></div>
+        <div class="active"></div>
+        <div class="icon">
+            <Icon name="help" size="lg"/>
+        </div>
         <div class="title"></div>
     </div>
 </aside>

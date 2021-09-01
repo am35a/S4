@@ -295,6 +295,12 @@ progress {
   --header-bg-color: #d7d9dc;
 }
 
+:root {
+  --ico-size-sm: calc(var(--key-size) * 1.25);
+  --ico-size-md: calc(var(--key-size) * 1.5);
+  --ico-size-lg: calc(var(--key-size) * 1.75);
+}
+
 .ico {
   width: 100%;
   height: 100%;
@@ -306,5 +312,11 @@ progress {
   -webkit-mask-image: var(--ico-image);
 }
 .ico-sm {
-  height: var(--key-size);
+  height: var(--ico-size-sm);
+}
+.ico-md {
+  height: var(--ico-size-md);
+}
+.ico-lg {
+  height: var(--ico-size-lg);
 }
