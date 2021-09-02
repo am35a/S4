@@ -15,6 +15,7 @@
         grid-column: 1/2
         grid-row: 1/3
         display: grid
+        grid-template-rows: auto max-content
         width: 16rem //var(--layout-aside-width)
         background-color: var(--aside-bg-color)
         z-index: 100

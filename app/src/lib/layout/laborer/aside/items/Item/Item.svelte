@@ -15,5 +15,18 @@
 <style lang="sass">
     .item
         display: grid
+        height: var(--layout-aside-item-height)
         color: var(--positive-color)
+        .hover
+            grid-column: 1/-1
+            grid-row: 1/-1
+        .active
+            grid-column: 1/-1
+            grid-row: 1/-1
+        .icon
+            grid-column: 1/-1
+            grid-row: 1/-1
+        .title
+            grid-column: 1/-1
+            grid-row: 1/-1
 </style>
