@@ -8,7 +8,8 @@ export let app: any = writable(
         popupLoader: false as boolean,
         popupToaster: false as boolean,
         popupSettings: false as boolean,
-        modalLoader: false as boolean
+        modalLoader: false as boolean,
+        currentSegment: 'home' as string
     }
 )
 

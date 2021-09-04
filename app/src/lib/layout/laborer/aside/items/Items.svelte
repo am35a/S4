@@ -1,7 +1,9 @@
 <script lang="ts">
+    import { app } from '../../../../../store/store'
+
     import Item from './item/Item.svelte'
 
-    export let segment = 'home' // move to store
+    // export let segment = 'home' // move to store
     const items = [
         {
             id: 1,
@@ -13,7 +15,11 @@
             id: 2,
             icon: 'dashboard',
             title: 'Dashboards',
-            segment: 'dashboard'
+            segment: 'dashboard',
+            turbo: {
+                icon: 'plus',
+                segment: 'dashboard'
+            }
         },
         {
             id: 3,
@@ -27,8 +33,11 @@
 
 <div class="items">
     {#each items as item (item.id)}
-        <!-- <Item icon={item.icon} title={item.title} active={segment === item.segment} segment={segment} /> -->
-        <Item {...item} active={segment === item.segment} segment={segment} />
+        <Item
+            {...item}
+            active={$app.currentSegment === item.segment}
+            segment={item.segment}
+        />
     {/each}
 </div>
 
