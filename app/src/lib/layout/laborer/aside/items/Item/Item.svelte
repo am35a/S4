@@ -31,8 +31,9 @@
     .item
         display: grid
         height: var(--layout-aside-item-height)
-        color: var(--positive-color)
+        color: var(--positive-color-85)
         cursor: pointer
+        transition: color 0.25s
         .hover
             grid-column: 1/-1
             grid-row: 1/-1
@@ -42,20 +43,20 @@
         .status
             grid-column: 1/-1
             grid-row: 1/-1
-            margin: auto auto auto .25rem
-            width: .25rem
-            height: calc(100% - 0.5rem)
-            border-radius: .125rem
+            margin: auto auto auto 0
+            width: 0
+            height: calc(100% - .5rem)
+            border-top-right-radius: .125rem
+            border-bottom-right-radius: .125rem
             background-color: transparent
-            transition: height .25s, background-color .25s .125s        
+            transition: width .25s, height .25s, background-color .25s
         &.active
+            color: var(--positive-color)
             .status
-                margin: auto auto auto .25rem
-                width: .25rem
-                height: 0.25rem
-                border-radius: .125rem
+                width: .375rem
+                height: .25rem
                 background-color: var(--positive-color)
-                transition: height .25s, background-color .25s
+                transition: width .25s .25s, height .25s .25s, background-color .25s .25s
         .icon
             grid-column: 1/-1
             grid-row: 1/-1
@@ -97,6 +98,7 @@
             max-width: 100%
             z-index: 1
         &:hover
+            color: var(--positive-color)
             .hover
                 margin: calc(var(--key-size) * .25)
                 border-radius: calc(var(--key-size) * .25)
