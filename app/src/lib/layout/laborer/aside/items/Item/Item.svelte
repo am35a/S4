@@ -36,7 +36,9 @@
         .hover
             grid-column: 1/-1
             grid-row: 1/-1
-            transition: background-color .25s
+            margin: 0
+            border-radius: 0
+            transition: background-color .25s, margin .25s, border-radius .25s
         .status
             grid-column: 1/-1
             grid-row: 1/-1
@@ -96,5 +98,7 @@
             z-index: 1
         &:hover
             .hover
-                background-color: var(--positive-color-25)
+                margin: calc(var(--key-size) * .25)
+                border-radius: calc(var(--key-size) * .25)
+                background-color: var(--positive-color-10)
 </style>
