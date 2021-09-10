@@ -32,7 +32,6 @@
         display: grid
         height: var(--layout-aside-item-height)
         color: var(--positive-color-85)
-        cursor: pointer
         transition: color 0.25s
         .hover
             grid-column: 1/-1
@@ -45,18 +44,11 @@
             grid-row: 1/-1
             margin: auto auto auto 0
             width: 0
-            height: calc(100% - .5rem)
+            height: calc(100% - 1rem)
             border-top-right-radius: .125rem
             border-bottom-right-radius: .125rem
             background-color: transparent
-            transition: width .25s, height .25s, background-color .25s
-        &.active
-            color: var(--positive-color)
-            .status
-                width: .375rem
-                height: .25rem
-                background-color: var(--positive-color)
-                transition: width .25s .25s, height .25s .25s, background-color .25s .25s
+            transition: width .25s, background-color .25s
         .icon
             grid-column: 1/-1
             grid-row: 1/-1
@@ -74,6 +66,7 @@
             height: 100%
             justify-items: center
             align-items: center
+            cursor: pointer
             z-index: 2
             :global(.ico)
                 transform: scale(.5)
@@ -83,19 +76,18 @@
                     transform: scale(.75)
             + .title
                 padding-right: 3rem
-    
-
         .title
             grid-column: 1/-1
             grid-row: 1/-1
             display: grid
             justify-items: start
             align-items: center
-
             padding-left: calc(var(--key-size) * 3)
             padding-right: 1rem
-            text-transform: capitalize
             max-width: 100%
+            cursor: pointer
+            text-transform: capitalize
+            user-select: none
             z-index: 1
         &:hover
             color: var(--positive-color)
@@ -103,4 +95,14 @@
                 margin: calc(var(--key-size) * .25)
                 border-radius: calc(var(--key-size) * .25)
                 background-color: var(--positive-color-10)
+        &.active
+            color: var(--positive-color)
+            .status
+                width: .375rem
+                background-color: var(--primary-color)
+                transition: width .25s .125s, background-color .25s .125s
+            .title
+                cursor: default
+                pointer-events: none
+                
 </style>
