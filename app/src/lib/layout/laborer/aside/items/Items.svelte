@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { app } from '../../../../../store/store'
+    import { app } from 'src/store/store'
 
     import Item from './item/Item.svelte'
 

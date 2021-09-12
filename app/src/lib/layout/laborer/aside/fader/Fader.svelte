@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Icon from '../../../../../components/Icon.svelte'
+    import Icon from 'src/components/Icon.svelte'
 </script>
 
 <div class="fader">
