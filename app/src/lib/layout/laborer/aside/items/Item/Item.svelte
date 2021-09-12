@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { app } from '../../../../../../store/store'
+    import { app } from 'src/store/store'
 
-    import Icon from '../../../../../../components/Icon.svelte'
+    import Icon from 'src/components/Icon.svelte'
     export let active: boolean = false
     export let icon: string = 'ghost'
     export let title: string = undefined
