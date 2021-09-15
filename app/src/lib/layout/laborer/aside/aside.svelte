@@ -1,19 +1,20 @@
 <script lang="ts">
+    import { app } from 'src/store/store'
     // import Fader from './fader/Fader.svelte'
     import Blind from './blind/Blind.svelte'
     import Items from './items/Items.svelte'
     // import Brand from './brand/Brand.svelte'
-    let mouseInside: boolean = false
+    // let expandContent: boolean = false
 </script>
 
 <aside
     class="aside"
-    class:hover={mouseInside}
-    on:mouseenter={() => mouseInside = true}
-    on:mouseleave={() => mouseInside = false}
+    class:expand={$app.isAsideExpand}
+    on:mouseenter={() => $app.isAsideExpand = true}
+    on:mouseleave={() => $app.isAsideExpand = false}
 >
     <!-- <Fader /> -->
-    <!-- <Blind asideMouseHover={mouseInside}/> -->
+    <!-- <Blind asideMouseHover={expandContent}/> -->
     <Blind/>
     <Items/>
     <!-- <Brand/> -->
@@ -42,7 +43,7 @@
             :global(.item)
                 transform: translateX(13rem)
                 transition: all 0.25s
-        &:hover
+        &.expand
             :global(.blind)
                 transform: translateX(0rem)
             :global(.items)

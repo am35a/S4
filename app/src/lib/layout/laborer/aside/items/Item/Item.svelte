@@ -7,6 +7,11 @@
     export let title: string = undefined
     export let turbo: any = undefined
     export let segment: string = undefined
+
+    function onTitleClick() {
+        $app.currentSegment = segment
+        $app.isAsideExpand = false
+    }
 </script>
 
 <div 
@@ -24,7 +29,7 @@
             <Icon name={turbo.icon}/>
         </div>
     {/if}
-    <div on:click={() => $app.currentSegment = segment} class="title">{title}</div>
+    <div on:click={onTitleClick} class="title">{title}</div>
 </div>
 
 <style lang="sass">
