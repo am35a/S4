@@ -27,21 +27,15 @@
         display: grid
         grid-template-rows: auto max-content
         width: var(--layout-aside-width)
-        // background-color: var(--aside-bg-color)
         z-index: 100
-        // transform: translateX(-13rem)
-        // transition: all .25s ease-out
-        // &:hover
-        //     transform: translateX(0rem)
-        //     width: calc(var(--layout-aside-width) * 8)
         :global(.blind)
-            transform: translateX(-13rem)
+            transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
         :global(.items)
-            transform: translateX(-13rem)
+            transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
             :global(.item)
-                transform: translateX(13rem)
+                transform: translateX(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)))
                 transition: all 0.25s
         &.expand
             :global(.blind)

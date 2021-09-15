@@ -253,9 +253,6 @@ progress {
 
 :root {
   --key-size: 1rem;
-  --layout-header-height: calc(var(--key-size) * 3);
-  --layout-aside-width: calc(var(--key-size) * 3);
-  --layout-aside-item-height: var(--layout-header-height);
   --primary-color-l1: hsla(210, 90%, 65%, 1);
   --primary-color: hsla(210, 90%, 50%, 1);
   --primary-color-d1: hsla(210, 90%, 35%, 1);

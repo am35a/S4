@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from "./header/Index.svelte"
+	import Header from "./header/Header.svelte"
 	import Aside from "./aside/Aside.svelte"
 	import Body from "./body/Index.svelte"
 </script>

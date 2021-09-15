@@ -26,3 +26,16 @@
     <link rel="stylesheet" href="/css/{deviceCSSPrefix}utilities.css"> <!-- load only appropriate styles utilities -->
     <!-- <link rel="stylesheet" href="/css/inverse-colors.css"> -->
 </svelte:head>
+
+<style lang="sass">
+    :root
+        // Header
+        --layout-header-height: calc(var(--key-size) * 3)
+        // Aside
+        --layout-aside-width: calc(var(--key-size) * 3)
+        --layout-aside-expand-width: calc(var(--key-size) * 16)
+        --layout-aside-item-height: var(--layout-header-height)
+    :global(.portrait)
+        --layout-aside-width: calc(var(--key-size) * 0)
+
+</style>
