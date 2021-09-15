@@ -1,7 +1,7 @@
 <script lang="ts">
     import { app } from 'src/store/store'
-
     import Item from './item/Item.svelte'
+
 
     // export let segment = 'home' // move to store
     const items = [
@@ -43,5 +43,8 @@
 
 <style lang="sass">
     .items
-        overflow-y: auto 
+        grid-column: 1/-1
+        grid-row: 1/2
+        overflow-x: hidden
+        overflow-y: auto
 </style>

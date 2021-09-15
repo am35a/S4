@@ -8,5 +8,7 @@
 
 <style lang="sass">
     .brand
+        grid-column: 1/-1
+        grid-row: 2/3
         display: grid
 </style>

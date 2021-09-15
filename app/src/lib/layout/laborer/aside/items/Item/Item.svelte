@@ -32,7 +32,9 @@
         display: grid
         height: var(--layout-aside-item-height)
         color: var(--positive-color-85)
-        transition: color 0.25s
+        // transition: color 0.25s
+        transition: all 0.25s
+
         .hover
             grid-column: 1/-1
             grid-row: 1/-1
