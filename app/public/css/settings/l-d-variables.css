@@ -1,0 +1,8 @@
+:root {
+    /* Header */
+    --layout-header-height: calc(var(--key-size) * 3);
+    /* Aside */
+    --layout-aside-width: calc(var(--key-size) * 16);
+    --layout-aside-expand-width: calc(var(--key-size) * 16);
+    --layout-aside-item-height: var(--layout-header-height);
+}

@@ -1,9 +1,15 @@
 <script lang="ts">
+    import { app } from 'src/store/store'
+
     import Icon from 'src/components/Icon.svelte'
 </script>
 
 <header class="header">
-    <button class="hamburger">
+    <button
+        on:click={() => $app.isAsideExpand = true}
+        class="hamburger"
+        tabindex="-1"
+    >
         <Icon name="menu" size="lg"/>
     </button>
     <div>
@@ -27,7 +33,8 @@
             display: grid
             justify-items: center
             align-items: center
-            width: 3rem
+            min-width: var(--layout-header-height)
+            width: var(--layout-aside-width)
             color: var(--positive-color)
             background-color: var(--aside-bg-color)
 </style>

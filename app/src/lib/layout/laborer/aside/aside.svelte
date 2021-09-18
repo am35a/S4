@@ -1,6 +1,6 @@
 <script lang="ts">
     import { app } from 'src/store/store'
-    // import Fader from './fader/Fader.svelte'
+    import Fader from './fader/Fader.svelte'
     import Blind from './blind/Blind.svelte'
     import Items from './items/Items.svelte'
     // import Brand from './brand/Brand.svelte'
@@ -13,7 +13,7 @@
     on:mouseenter={() => $app.isAsideExpand = true}
     on:mouseleave={() => $app.isAsideExpand = false}
 >
-    <!-- <Fader /> -->
+    <Fader/>
     <!-- <Blind asideMouseHover={expandContent}/> -->
     <Blind/>
     <Items/>

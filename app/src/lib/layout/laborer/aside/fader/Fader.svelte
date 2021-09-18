@@ -1,8 +1,13 @@
 <script lang="ts">
+    import { app } from 'src/store/store'
+
     import Icon from 'src/components/Icon.svelte'
 </script>
 
-<div class="fader">
+<div
+    on:click={() => $app.isAsideExpand = false}
+    class="fader"
+>
     <div class="close">
         <Icon name="close-o" size="lg"/>
     </div>
@@ -11,11 +16,14 @@
 <style lang="sass">
     .fader
         position: absolute
-        display: grid
+        display: none
         width: 100%
         height: 100%
-        background-color: hsl(0, 0%, 0%, .75)
+        background-color: var(--negative-color-50)
         z-index: -1
+        :global(.mobile .expand) &,
+        :global(.tablet .expand) &
+            display: grid
         .close
             display: grid
             justify-items: center
