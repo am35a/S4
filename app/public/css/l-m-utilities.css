@@ -16,3 +16,109 @@
 .l\:m\:align-text-top {
   vertical-align: text-top !important;
 }
+.l\:m\:align-content-around {
+  align-content: space-around !important;
+}
+.l\:m\:align-content-between {
+  align-content: space-between !important;
+}
+.l\:m\:align-content-center {
+  align-content: center !important;
+}
+.l\:m\:align-content-end {
+  align-content: end !important;
+}
+.l\:m\:align-content-evenly {
+  align-content: space-evenly !important;
+}
+.l\:m\:align-content-start {
+  align-content: start !important;
+}
+.l\:m\:align-content-stretch {
+  align-content: stretch !important;
+}
+.l\:m\:align-items-baseline {
+  align-items: baseline !important;
+}
+.l\:m\:align-items-center {
+  align-items: center !important;
+}
+.l\:m\:align-items-end {
+  align-items: end !important;
+}
+.l\:m\:align-items-start {
+  align-items: start !important;
+}
+.l\:m\:align-items-stretch {
+  align-items: stretch !important;
+}
+.l\:m\:align-self-baseline {
+  align-self: baseline !important;
+}
+.l\:m\:align-self-center {
+  align-self: center !important;
+}
+.l\:m\:align-self-end {
+  align-self: end !important;
+}
+.l\:m\:align-self-start {
+  align-self: start !important;
+}
+.l\:m\:align-self-stretch {
+  align-self: stretch !important;
+}
+
+.l\:m\:justify-content-around {
+  justify-content: space-around !important;
+}
+.l\:m\:justify-content-between {
+  justify-content: space-between !important;
+}
+.l\:m\:justify-content-center {
+  justify-content: center !important;
+}
+.l\:m\:justify-content-end {
+  justify-content: end !important;
+}
+.l\:m\:justify-content-evenly {
+  justify-content: space-evenly !important;
+}
+.l\:m\:justify-content-start {
+  justify-content: start !important;
+}
+.l\:m\:justify-content-stretch {
+  justify-content: stretch !important;
+}
+.l\:m\:justify-items-baseline {
+  justify-items: baseline !important;
+}
+.l\:m\:justify-items-center {
+  justify-items: center !important;
+}
+.l\:m\:justify-items-end {
+  justify-items: end !important;
+}
+.l\:m\:justify-items-stretch {
+  justify-items: stretch !important;
+}
+.l\:m\:justify-items-start {
+  justify-items: start !important;
+}
+.l\:m\:justify-self-auto {
+  justify-self: auto !important;
+}
+.l\:m\:justify-self-baseline {
+  justify-self: baseline !important;
+}
+.l\:m\:justify-self-center {
+  justify-self: center !important;
+}
+.l\:m\:justify-self-end {
+  justify-self: end !important;
+}
+.l\:m\:justify-self-start {
+  justify-self: start !important;
+}
+.l\:m\:justify-self-stretch {
+  justify-self: stretch !important;
+}

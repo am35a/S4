@@ -16,3 +16,109 @@
 .align-text-top {
   vertical-align: text-top !important;
 }
+.align-content-around {
+  align-content: space-around !important;
+}
+.align-content-between {
+  align-content: space-between !important;
+}
+.align-content-center {
+  align-content: center !important;
+}
+.align-content-end {
+  align-content: end !important;
+}
+.align-content-evenly {
+  align-content: space-evenly !important;
+}
+.align-content-start {
+  align-content: start !important;
+}
+.align-content-stretch {
+  align-content: stretch !important;
+}
+.align-items-baseline {
+  align-items: baseline !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.align-items-end {
+  align-items: end !important;
+}
+.align-items-start {
+  align-items: start !important;
+}
+.align-items-stretch {
+  align-items: stretch !important;
+}
+.align-self-baseline {
+  align-self: baseline !important;
+}
+.align-self-center {
+  align-self: center !important;
+}
+.align-self-end {
+  align-self: end !important;
+}
+.align-self-start {
+  align-self: start !important;
+}
+.align-self-stretch {
+  align-self: stretch !important;
+}
+
+.justify-content-around {
+  justify-content: space-around !important;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.justify-content-end {
+  justify-content: end !important;
+}
+.justify-content-evenly {
+  justify-content: space-evenly !important;
+}
+.justify-content-start {
+  justify-content: start !important;
+}
+.justify-content-stretch {
+  justify-content: stretch !important;
+}
+.justify-items-baseline {
+  justify-items: baseline !important;
+}
+.justify-items-center {
+  justify-items: center !important;
+}
+.justify-items-end {
+  justify-items: end !important;
+}
+.justify-items-stretch {
+  justify-items: stretch !important;
+}
+.justify-items-start {
+  justify-items: start !important;
+}
+.justify-self-auto {
+  justify-self: auto !important;
+}
+.justify-self-baseline {
+  justify-self: baseline !important;
+}
+.justify-self-center {
+  justify-self: center !important;
+}
+.justify-self-end {
+  justify-self: end !important;
+}
+.justify-self-start {
+  justify-self: start !important;
+}
+.justify-self-stretch {
+  justify-self: stretch !important;
+}
