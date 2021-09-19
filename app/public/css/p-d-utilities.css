@@ -16,3 +16,109 @@
 .p\:align-text-top {
   vertical-align: text-top !important;
 }
+.p\:align-content-around {
+  align-content: space-around !important;
+}
+.p\:align-content-between {
+  align-content: space-between !important;
+}
+.p\:align-content-center {
+  align-content: center !important;
+}
+.p\:align-content-end {
+  align-content: end !important;
+}
+.p\:align-content-evenly {
+  align-content: space-evenly !important;
+}
+.p\:align-content-start {
+  align-content: start !important;
+}
+.p\:align-content-stretch {
+  align-content: stretch !important;
+}
+.p\:align-items-baseline {
+  align-items: baseline !important;
+}
+.p\:align-items-center {
+  align-items: center !important;
+}
+.p\:align-items-end {
+  align-items: end !important;
+}
+.p\:align-items-start {
+  align-items: start !important;
+}
+.p\:align-items-stretch {
+  align-items: stretch !important;
+}
+.p\:align-self-baseline {
+  align-self: baseline !important;
+}
+.p\:align-self-center {
+  align-self: center !important;
+}
+.p\:align-self-end {
+  align-self: end !important;
+}
+.p\:align-self-start {
+  align-self: start !important;
+}
+.p\:align-self-stretch {
+  align-self: stretch !important;
+}
+
+.p\:justify-content-around {
+  justify-content: space-around !important;
+}
+.p\:justify-content-between {
+  justify-content: space-between !important;
+}
+.p\:justify-content-center {
+  justify-content: center !important;
+}
+.p\:justify-content-end {
+  justify-content: end !important;
+}
+.p\:justify-content-evenly {
+  justify-content: space-evenly !important;
+}
+.p\:justify-content-start {
+  justify-content: start !important;
+}
+.p\:justify-content-stretch {
+  justify-content: stretch !important;
+}
+.p\:justify-items-baseline {
+  justify-items: baseline !important;
+}
+.p\:justify-items-center {
+  justify-items: center !important;
+}
+.p\:justify-items-end {
+  justify-items: end !important;
+}
+.p\:justify-items-stretch {
+  justify-items: stretch !important;
+}
+.p\:justify-items-start {
+  justify-items: start !important;
+}
+.p\:justify-self-auto {
+  justify-self: auto !important;
+}
+.p\:justify-self-baseline {
+  justify-self: baseline !important;
+}
+.p\:justify-self-center {
+  justify-self: center !important;
+}
+.p\:justify-self-end {
+  justify-self: end !important;
+}
+.p\:justify-self-start {
+  justify-self: start !important;
+}
+.p\:justify-self-stretch {
+  justify-self: stretch !important;
+}
