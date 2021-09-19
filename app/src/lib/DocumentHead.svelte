@@ -23,9 +23,11 @@
 <svelte:head>
     <meta name="viewport" content="width=device-width, initial-scale={$user.settings.initialScale}">
     <title>TriaFly</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/settings/{deviceCSSPrefix}variables.css"> <!-- load only appropriate styles utilities -->
     <link rel="stylesheet" href="/css/{deviceCSSPrefix}utilities.css"> <!-- load only appropriate styles utilities -->
-    <!-- <link rel="stylesheet" href="/css/inverse-colors.css"> -->
+    <link rel='stylesheet' href='/css/settings/variables.css'>
 </svelte:head>
 
 <style lang="sass">

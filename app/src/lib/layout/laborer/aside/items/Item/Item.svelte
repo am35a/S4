@@ -36,7 +36,7 @@
     .item
         display: grid
         height: var(--layout-aside-item-height)
-        color: var(--positive-color-85)
+        color: var(--aside-item-color, currentColor)
         // transition: color 0.25s
         transition: all 0.25s
 
@@ -101,12 +101,12 @@
             .hover
                 margin: calc(var(--key-size) * .25)
                 border-radius: calc(var(--key-size) * .25)
-                background-color: var(--positive-color-10)
+                background-color: var(--aside-item-hover-color, var(--positive-color-10))
         &.active
             color: var(--positive-color)
             .status
                 width: .375rem
-                background-color: var(--primary-color)
+                background-color: var(--positive-color)
                 transition: width .25s .125s, background-color .25s .125s
             .title
                 cursor: default

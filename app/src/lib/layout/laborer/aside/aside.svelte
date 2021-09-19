@@ -27,6 +27,7 @@
         display: grid
         grid-template-rows: auto max-content
         width: var(--layout-aside-width)
+        color: var(--aside-color, var(--positive-color-80))
         z-index: 100
         :global(.blind)
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))

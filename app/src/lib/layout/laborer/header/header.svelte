@@ -1,22 +1,24 @@
 <script lang="ts">
     import { app } from 'src/store/store'
+    import Button from "src/components/Button.svelte"
 
     import Icon from 'src/components/Icon.svelte'
 </script>
 
 <header class="header">
-    <button
-        on:click={() => $app.isAsideExpand = true}
-        class="hamburger"
-        tabindex="-1"
-    >
-        <Icon name="menu" size="lg"/>
-    </button>
-    <div>
-        header
+    <div class="hamburger">
+        <button
+            on:click={() => $app.isAsideExpand = true}
+            tabindex="-1"
+        >
+            <Icon name="menu" size="lg"/>
+        </button>
+    </div>
+    <div class="title">
+        Header title
     </div>
     <div>
-
+        ...
     </div>
 </header>
 
@@ -27,14 +29,25 @@
         display: grid
         grid-template-columns: auto 1fr auto
         height: var(--layout-header-height)
-        background-color: var(--header-bg-color)
+        background-color: var(--header-bg-color, var(--secondary-color-l))
+        color: var(--header-color, var(--positive-color))
         z-index: 10
         .hamburger
             display: grid
-            justify-items: center
-            align-items: center
             min-width: var(--layout-header-height)
             width: var(--layout-aside-width)
-            color: var(--positive-color)
-            background-color: var(--aside-bg-color)
+            padding: .25rem
+            button
+                display: grid
+                justify-items: center
+                align-items: center
+                border-radius: .25rem
+                // background-color: var(--aside-bg-color, var(--secondary-color-d))
+        .title
+            display: grid
+            padding-left: .5rem 
+            align-items: center
+            font-size: large
+            font-weight: 500
+
 </style>

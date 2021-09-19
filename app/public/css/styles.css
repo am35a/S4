@@ -253,44 +253,45 @@ progress {
 
 :root {
   --key-size: 1rem;
-  --primary-color-l1: hsl(210, 90%, 65%);
+  --primary-color-l: hsl(210, 90%, 65%);
   --primary-color: hsl(210, 90%, 50%);
-  --primary-color-d1: hsl(210, 90%, 35%);
-  --secondary-color-l1: hsl(210, 10%, 65%);
+  --primary-color-d: hsl(210, 90%, 35%);
+  --secondary-color-l: hsl(210, 10%, 65%);
   --secondary-color: hsl(210, 10%, 50%);
-  --secondary-color-d1: hsl(210, 10%, 35%);
-  --info-color-l1: hsl(190, 90%, 65%);
+  --secondary-color-d: hsl(210, 10%, 35%);
+  --info-color-l: hsl(190, 90%, 65%);
   --info-color: hsl(190, 90%, 50%);
-  --info-color-d1: hsl(190, 90%, 35%);
-  --success-color-l1: hsl(120, 50%, 65%);
+  --info-color-d: hsl(190, 90%, 35%);
+  --success-color-l: hsl(120, 50%, 65%);
   --success-color: hsl(120, 50%, 50%);
-  --success-color-d1: hsl(120, 50%, 35%);
-  --warning-color-l1: hsl(40, 90%, 65%);
+  --success-color-d: hsl(120, 50%, 35%);
+  --warning-color-l: hsl(40, 90%, 65%);
   --warning-color: hsl(40, 90%, 50%);
-  --warning-color-d1: hsl(40, 90%, 35%);
-  --error-color-l1: hsl(0, 50%, 65%);
+  --warning-color-d: hsl(40, 90%, 35%);
+  --error-color-l: hsl(0, 50%, 65%);
   --error-color: hsl(0, 50%, 50%);
-  --error-color-d1: hsl(0, 50%, 35%);
+  --error-color-d: hsl(0, 50%, 35%);
   --positive-color: hsl(0, 0%, 100%);
   --positive-color-90: hsla(0, 0%, 100%, .9);
-  --positive-color-85: hsla(0, 0%, 100%, .85);
-  --positive-color-75: hsla(0, 0%, 100%, .75);
+  --positive-color-80: hsla(0, 0%, 100%, .8);
+  --positive-color-70: hsla(0, 0%, 100%, .7);
+  --positive-color-60: hsla(0, 0%, 100%, .6);
   --positive-color-50: hsla(0, 0%, 100%, .5);
-  --positive-color-25: hsla(0, 0%, 100%, .25);
-  --positive-color-15: hsla(0, 0%, 100%, .15);
+  --positive-color-40: hsla(0, 0%, 100%, .4);
+  --positive-color-30: hsla(0, 0%, 100%, .3);
+  --positive-color-20: hsla(0, 0%, 100%, .2);
   --positive-color-10: hsla(0, 0%, 100%, .1);
   --transparent-color: transparent;
   --negative-color-10: hsla(0, 0%, 0%, .1);
-  --negative-color-15: hsla(0, 0%, 0%, .15);
-  --negative-color-25: hsla(0, 0%, 0%, .25);
+  --negative-color-20: hsla(0, 0%, 0%, .2);
+  --negative-color-30: hsla(0, 0%, 0%, .3);
+  --negative-color-40: hsla(0, 0%, 0%, .4);
   --negative-color-50: hsla(0, 0%, 0%, .5);
-  --negative-color-75: hsla(0, 0%, 0%, .75);
-  --negative-color-85: hsla(0, 0%, 0%, .85);
+  --negative-color-60: hsla(0, 0%, 0%, .6);
+  --negative-color-70: hsla(0, 0%, 0%, .7);
+  --negative-color-80: hsla(0, 0%, 0%, .8);
   --negative-color-90: hsla(0, 0%, 0%, .9);
   --negative-color: hsl(0, 0%, 0%);
-  --bg-color: var(--positive-color);
-  --aside-bg-color: #37414e;
-  --header-bg-color: #d7d9dc;
 }
 
 :root {

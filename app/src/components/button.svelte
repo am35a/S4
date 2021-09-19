@@ -15,7 +15,7 @@
         padding: calc(var(--key-size) * .25) calc(var(--key-size) * .625)
         background-color: var(--negative-color-15)
         border: calc(var(--key-size) * .0625) solid transparent
-        border-radius: calc(var(--key-size) * .125)
+        border-radius: calc(var(--key-size) * .25)
         vertical-align: middle
         text-align: center
         color: var(--negative-color)
@@ -31,7 +31,7 @@
         @each $colorName in $colorsName
             &-#{$colorName}
                 &:hover
-                    background-color: var(--#{$colorName}-color-d1)
+                    background-color: var(--#{$colorName}-color-d)
                     color: var(--positive-color)
         
 </style>
