@@ -98,11 +98,11 @@
 .l\:t\:justify-items-end {
   justify-items: end !important;
 }
-.l\:t\:justify-items-stretch {
-  justify-items: stretch !important;
-}
 .l\:t\:justify-items-start {
   justify-items: start !important;
+}
+.l\:t\:justify-items-stretch {
+  justify-items: stretch !important;
 }
 .l\:t\:justify-self-auto {
   justify-self: auto !important;
