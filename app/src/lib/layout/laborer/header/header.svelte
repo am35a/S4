@@ -1,6 +1,5 @@
 <script lang="ts">
     import { app } from 'src/store/store'
-    import Button from "src/components/Button.svelte"
 
     import Icon from 'src/components/Icon.svelte'
 </script>
