@@ -1,26 +1,14 @@
 {
-    "AsideItems": {
-        {
-            "id": 1,
-            "icon": "home",
-            "title": "Home page",
-            "segment": "home"
-        },
-        {
-            "id": 2,
-            "icon": "dashboard",
-            "title": "Dashboards",
-            "segment": "dashboard",
-            "turbo": {
-                "icon": "plus",
-                "segment": "dashboard"
-            }
-       },
-       {
-            "id": 3,
-            "icon": "help",
-            "title": "Get help",
-            "segment": "help"
-        }
+  "Post": {
+    "title": { "string": {} },
+    "comments": {
+      "hasMany": "Comment"
     }
+  },
+  "Comment": {
+    "body": { "string": {} },
+    "post": {
+      "belongsTo": "Post"
+    }
+  }
 }
