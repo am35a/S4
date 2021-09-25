@@ -13,9 +13,11 @@
 	onMount(async () => {
         // https://learn.javascript.ru/fetch
 
-           const res = await fetch('https://mockend.com/am35a/mockend/posts')
-           appData = await res.json()
-           console.log(appData)
+        // const res = await fetch('https://mockend.com/am35a/mockend/posts')
+        const res = await fetch('/_api/app.json')
+        appData = await res.json()
+        console.log(appData)
+
 
         // if ($user.settings.autoSignIn) {
         //     console.log(`autoSignIn = ${$user.settings.autoSignIn}`)
