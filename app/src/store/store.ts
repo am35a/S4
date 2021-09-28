@@ -1,5 +1,18 @@
 import { writable } from 'svelte/store'
 
+export let appData: any = writable(
+    {
+        title: "Nameless",
+        logo: {
+            full: ""
+        },
+        initialScale: 1,
+        theme: "default",
+        fontFamily: "default"
+    }
+)
+export let userData: any = writable()
+
 export let app: any = writable(
     {
         name: 'TriaFly' as string,

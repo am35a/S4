@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { user } from '../store/store'
+    import { appData } from 'src/store/store'
     import device from 'current-device'
 
     // start - device and orientation
@@ -21,9 +21,8 @@
 
 <!-- Here is below only dynamic change head content -->
 <svelte:head>
-    <meta name="viewport" content="width=device-width, initial-scale={$user.settings.initialScale}">
-    <title>TriaFly</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale={$appData.initialScale}">
+    <title>{$appData.title}</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/settings/{deviceCSSPrefix}variables.css"> <!-- load only appropriate styles utilities -->
     <link rel="stylesheet" href="/css/{deviceCSSPrefix}utilities.css"> <!-- load only appropriate styles utilities -->
