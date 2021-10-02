@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { app } from 'src/store/store'
+    import { userData } from 'src/store/store'
 
     import Icon from 'src/components/Icon.svelte'
 </script>
@@ -7,7 +7,7 @@
 <header class="header">
     <div class="hamburger">
         <button
-            on:click={() => $app.isAsideExpand = true}
+            on:click={() => $userData.aside.expand = true}
             tabindex="-1"
         >
             <Icon name="menu" size="lg"/>

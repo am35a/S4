@@ -1,32 +1,36 @@
 import { writable } from 'svelte/store'
 
 export let appData = writable(
+    // below data use as default
     {
-        title: "Nameless",
+        title: 'Nameless' as string,
         logo: {
-            full: ""
+            full: '' as string
         },
-        initialScale: 1,
-        theme: "default",
-        fontFamily: "default"
+        initialScale: 1 as number,
+        theme: 'default' as string,
+        fontFamily: 'default' as string
     }
 )
 export let userData = writable(
+    // below data use as default
     {
         data: {
-            name: "",
-            surname: "",
-            patronymic: "",
-            email: ""
+            name: '' as string,
+            surname: '' as string,
+            patronymic: '' as string,
+            email: '' as string
         },
         aside: {
-            width: "max",
+            width: 'max' as string,
+            segment: 'home' as string,
+            expand: false as boolean,
             items: [
                 {
-                    id: 1,
-                    icon: "home",
-                    title: "Home page",
-                    segment: "home"
+                    id: 1 as number,
+                    icon: 'home' as string,
+                    title: 'Home page' as string,
+                    segment: 'home' as string
                 }
             ]
         }

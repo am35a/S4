@@ -1,11 +1,11 @@
 <script lang="ts">
-    import { app } from '../../../store/store'
+    import { appData } from 'src/store/store'
 </script>
 
 <main class="signin">
     <div class="body">
         <div class="logo">
-            <img class="logo-full" src="../images/logo-full.svg" alt="{$app.name}">
+            <img class="logo-full" src="../images/logo-full.svg" alt="{$appData.title}">
         </div>
         <div class="title">Демонстрационный стенд</div>
         <form class="form d-grid g-4">
@@ -21,7 +21,7 @@
             <button class="tf_btn tf_btn-primary" type="submit">Войти</button>
         </form>
     </div>
-    <footer class="footer"> &copy;2021 {$app.name} / v0.1.0 power with Svelte</footer>
+    <footer class="footer"> &copy;2021 {$appData.title} / v0.1.0 power with Svelte</footer>
 </main>
 
 

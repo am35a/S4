@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { app } from 'src/store/store'
+    import { userData } from 'src/store/store'
 
     import Icon from 'src/components/Icon.svelte'
     export let active: boolean = false
@@ -9,8 +9,8 @@
     export let segment: string = undefined
 
     function onTitleClick() {
-        $app.currentSegment = segment
-        $app.isAsideExpand = false
+        $userData.aside.segment = segment
+        $userData.aside.expand = false
     }
 </script>
 

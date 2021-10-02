@@ -9,9 +9,17 @@
     import LayoutLaborer from './lib/layout/laborer/Laborer.svelte'
     
 	onMount(async () => {
-        const res = await fetch('/_api/app.json')
+        let res = await fetch('/_api/app.json')
         if (res.ok) {
             $appData = await res.json()
+            // console.log($appData)
+        } else {
+            console.log(`Error: ${res.status}`)
+        }
+
+        res = await fetch('/_api/admin.json')
+        if (res.ok) {
+            $userData = await res.json()
             // console.log($appData)
         } else {
             console.log(`Error: ${res.status}`)

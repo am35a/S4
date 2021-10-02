@@ -6,7 +6,9 @@
         "email": ""
     },
     "aside": {
-        "width":"max",
+        "width": "max",
+        "segment": "home",
+        "expand": false,
         "items": [
             {
                 "id": 1,

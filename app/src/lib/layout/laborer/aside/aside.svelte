@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { app } from 'src/store/store'
+    import { userData } from 'src/store/store'
     import Fader from './fader/Fader.svelte'
     import Blind from './blind/Blind.svelte'
     import Items from './items/Items.svelte'
@@ -9,9 +9,9 @@
 
 <aside
     class="aside"
-    class:expand={$app.isAsideExpand}
-    on:mouseenter={() => $app.isAsideExpand = true}
-    on:mouseleave={() => $app.isAsideExpand = false}
+    class:expand={$userData.aside.expand}
+    on:mouseenter={() => $userData.aside.expand = true}
+    on:mouseleave={() => $userData.aside.expand = false}
 >
     <Fader/>
     <!-- <Blind asideMouseHover={expandContent}/> -->
