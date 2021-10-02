@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { app } from 'src/store/store'
+    import { userData, app } from 'src/store/store'
     import Item from './item/Item.svelte'
 
 
@@ -28,11 +28,10 @@
             segment: 'help'
         }
     ]
-
 </script>
 
 <div class="items">
-    {#each items as item (item.id)}
+    {#each $userData.aside.items as item (item.id)}
         <Item
             {...item}
             active={$app.currentSegment === item.segment}
