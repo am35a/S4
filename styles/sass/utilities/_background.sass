@@ -1,0 +1,19 @@
+$bg-main-colors: primary, secondary, info, success, warning, error, positive, negative, transparent
+// primary-l
+// primary-d
+// secondary-l
+// secondary-d
+// info-l
+// info-d
+// success-l
+// success-d
+// warning-l
+// warning-d
+// error-l
+// error-d
+
+@mixin deviceOrientationTypePrefixes($orientation, $type)
+    .#{$orientation}#{$type}bg
+        @each $item in $bg-main-colors
+            &-#{'' + $item}
+               background-color: var(#{'--' + $item + '-color'}) !important
