@@ -1,3 +1,7 @@
-@import utilities/_utilities
-
+@import utilities/_alignment
 @include deviceOrientationTypePrefixes("l\\:", "m\\:")
+
+// unset eviceOrientationTypePrefixes as default
+// use "l\\:", "m\\:" to activate for lamdscape/mobile
+@import utilities/_background
+@include deviceOrientationTypePrefixes("", "")

@@ -1,3 +1,7 @@
-@import utilities/_utilities
-
+@import utilities/_alignment
 @include deviceOrientationTypePrefixes("p\\:", "t\\:")
+
+// unset eviceOrientationTypePrefixes as default
+// use "p\\:", "t\\:" to activate for portrait/tablet
+@import utilities/_background
+@include deviceOrientationTypePrefixes("", "")

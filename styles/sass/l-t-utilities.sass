@@ -1,3 +1,7 @@
-@import utilities/_utilities
-
+@import utilities/_alignment
 @include deviceOrientationTypePrefixes("l\\:", "t\\:")
+
+// unset eviceOrientationTypePrefixes as default
+// use "l\\:", "t\\:" to activate for lamdscape/tablet
+@import utilities/_background
+@include deviceOrientationTypePrefixes("", "")

@@ -1,19 +1,18 @@
-$bg-main-colors: primary, secondary, info, success, warning, error, positive, negative, transparent
-// primary-l
-// primary-d
-// secondary-l
-// secondary-d
-// info-l
-// info-d
-// success-l
-// success-d
-// warning-l
-// warning-d
-// error-l
-// error-d
+$main-colors: primary, secondary, info, success, warning, error, positive, negative, transparent
+$main-extra-colors-prefs: l, d
+
+// ser false to including main extra colors
+$is-main-extra-colors: true
+
+/*
+    background section: background color of main and extra palette contained in classes
 
 @mixin deviceOrientationTypePrefixes($orientation, $type)
     .#{$orientation}#{$type}bg
-        @each $item in $bg-main-colors
+        @each $item in $main-colors
             &-#{'' + $item}
                background-color: var(#{'--' + $item + '-color'}) !important
+            @if $is-main-extra-colors and $item != transparent
+                @each $pref in $main-extra-colors-prefs
+                    &-#{'' + $item + '-' + $pref}
+                        background-color: var(#{'--' + $item + '-color-' + $pref}) !important
