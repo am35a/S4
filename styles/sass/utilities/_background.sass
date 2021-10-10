@@ -1,9 +1,14 @@
-$main-colors: primary, secondary, info, success, warning, error, positive, negative, transparent
+@use "sass:math"
+    
+$default-colors: positive, negative
+$main-colors: primary, secondary, info, success, warning, error, transparent
 $main-extra-colors-prefs: l, d
 
-// ser false to including main extra colors
+// set false to exclude default extra colors
+$is-default-extra-colors: true
+$default-extra-colors-step: 5
+// set false to exclude main extra colors
 $is-main-extra-colors: true
-
 /*
     background section: background color of main and extra palette contained in classes
 
@@ -16,3 +21,8 @@ $is-main-extra-colors: true
                 @each $pref in $main-extra-colors-prefs
                     &-#{'' + $item + '-' + $pref}
                         background-color: var(#{'--' + $item + '-color-' + $pref}) !important
+        @if $is-default-extra-colors
+            @each $item in $default-colors
+                @for $i from 0 through math.div(100, $default-extra-colors-step)
+                    &#{'-' + $item + '-' + $i * $default-extra-colors-step}
+                        background-color: var(#{'--' + $item + '-color' + '-' + $i * $default-extra-colors-step}) !important

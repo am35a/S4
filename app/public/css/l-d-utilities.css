@@ -179,24 +179,132 @@
 .bg-error-d {
   background-color: var(--error-color-d) !important;
 }
-.bg-positive {
-  background-color: var(--positive-color) !important;
-}
-.bg-positive-l {
-  background-color: var(--positive-color-l) !important;
-}
-.bg-positive-d {
-  background-color: var(--positive-color-d) !important;
-}
-.bg-negative {
-  background-color: var(--negative-color) !important;
-}
-.bg-negative-l {
-  background-color: var(--negative-color-l) !important;
-}
-.bg-negative-d {
-  background-color: var(--negative-color-d) !important;
-}
 .bg-transparent {
   background-color: var(--transparent-color) !important;
+}
+.bg-positive-0 {
+  background-color: var(--positive-color-0) !important;
+}
+.bg-positive-5 {
+  background-color: var(--positive-color-5) !important;
+}
+.bg-positive-10 {
+  background-color: var(--positive-color-10) !important;
+}
+.bg-positive-15 {
+  background-color: var(--positive-color-15) !important;
+}
+.bg-positive-20 {
+  background-color: var(--positive-color-20) !important;
+}
+.bg-positive-25 {
+  background-color: var(--positive-color-25) !important;
+}
+.bg-positive-30 {
+  background-color: var(--positive-color-30) !important;
+}
+.bg-positive-35 {
+  background-color: var(--positive-color-35) !important;
+}
+.bg-positive-40 {
+  background-color: var(--positive-color-40) !important;
+}
+.bg-positive-45 {
+  background-color: var(--positive-color-45) !important;
+}
+.bg-positive-50 {
+  background-color: var(--positive-color-50) !important;
+}
+.bg-positive-55 {
+  background-color: var(--positive-color-55) !important;
+}
+.bg-positive-60 {
+  background-color: var(--positive-color-60) !important;
+}
+.bg-positive-65 {
+  background-color: var(--positive-color-65) !important;
+}
+.bg-positive-70 {
+  background-color: var(--positive-color-70) !important;
+}
+.bg-positive-75 {
+  background-color: var(--positive-color-75) !important;
+}
+.bg-positive-80 {
+  background-color: var(--positive-color-80) !important;
+}
+.bg-positive-85 {
+  background-color: var(--positive-color-85) !important;
+}
+.bg-positive-90 {
+  background-color: var(--positive-color-90) !important;
+}
+.bg-positive-95 {
+  background-color: var(--positive-color-95) !important;
+}
+.bg-positive-100 {
+  background-color: var(--positive-color-100) !important;
+}
+.bg-negative-0 {
+  background-color: var(--negative-color-0) !important;
+}
+.bg-negative-5 {
+  background-color: var(--negative-color-5) !important;
+}
+.bg-negative-10 {
+  background-color: var(--negative-color-10) !important;
+}
+.bg-negative-15 {
+  background-color: var(--negative-color-15) !important;
+}
+.bg-negative-20 {
+  background-color: var(--negative-color-20) !important;
+}
+.bg-negative-25 {
+  background-color: var(--negative-color-25) !important;
+}
+.bg-negative-30 {
+  background-color: var(--negative-color-30) !important;
+}
+.bg-negative-35 {
+  background-color: var(--negative-color-35) !important;
+}
+.bg-negative-40 {
+  background-color: var(--negative-color-40) !important;
+}
+.bg-negative-45 {
+  background-color: var(--negative-color-45) !important;
+}
+.bg-negative-50 {
+  background-color: var(--negative-color-50) !important;
+}
+.bg-negative-55 {
+  background-color: var(--negative-color-55) !important;
+}
+.bg-negative-60 {
+  background-color: var(--negative-color-60) !important;
+}
+.bg-negative-65 {
+  background-color: var(--negative-color-65) !important;
+}
+.bg-negative-70 {
+  background-color: var(--negative-color-70) !important;
+}
+.bg-negative-75 {
+  background-color: var(--negative-color-75) !important;
+}
+.bg-negative-80 {
+  background-color: var(--negative-color-80) !important;
+}
+.bg-negative-85 {
+  background-color: var(--negative-color-85) !important;
+}
+.bg-negative-90 {
+  background-color: var(--negative-color-90) !important;
+}
+.bg-negative-95 {
+  background-color: var(--negative-color-95) !important;
+}
+.bg-negative-100 {
+  background-color: var(--negative-color-100) !important;
 }
