@@ -1,18 +1,27 @@
-h1,
-.h1
-    font-size: var(--fs-l5)
-h2,
-.h2
-    font-size: var(--fs-l4)
-h3,
-.h3
-    font-size: var(--fs-l3)
-h4,
-.h4
-    font-size: var(--fs-l2)
-h5,
-.h5
-    font-size: var(--fs-l1)
-h6,
-.h6
-    font-size: var(--fs-md)
+$font-sizes: s5, s5, s3, s2, s1, md, l1, l2, l3, l4, l5
+
+h, .h
+    &1
+        font-size: var(--fs-l5) !important
+    &2
+        font-size: var(--fs-l4) !important
+    &3
+        font-size: var(--fs-l3) !important
+    &4
+        font-size: var(--fs-l2) !important
+    &5
+        font-size: var(--fs-l1) !important
+    &6
+        font-size: var(--fs-md) !important
+
+.fs
+    @each $size in $font-sizes
+        &-#{$size}
+            font-size: var(#{'--fs-' + $size}) !important
+
+.fw
+    @for $i from 1 through 9
+        &-#{$i * 100}
+            font-weight: #{$i * 100} !important
+    &-unset
+        font-weight: unset
