@@ -253,6 +253,19 @@ progress {
 
 :root {
   --key-size: 1rem;
+  --space-size-offset: 1;
+  --font-size-offset: 1;
+  --fs-s5: calc(var(--key-size) / calc(3 * var(--font-size-offset)));
+  --fs-s4: calc(var(--key-size) / calc(2 * var(--font-size-offset)));
+  --fs-s3: calc(var(--key-size) / calc(1.5 * var(--font-size-offset)));
+  --fs-s2: calc(var(--key-size) / calc(1.25 * var(--font-size-offset)));
+  --fs-s1: calc(var(--key-size) / calc(1.125 * var(--font-size-offset)));
+  --fs-md: calc(var(--key-size) * var(--font-size-offset));
+  --fs-l1: calc(var(--key-size) * calc(1.125 * var(--font-size-offset)));
+  --fs-l2: calc(var(--key-size) * calc(1.25 * var(--font-size-offset)));
+  --fs-l3: calc(var(--key-size) * calc(1.5 * var(--font-size-offset)));
+  --fs-l4: calc(var(--key-size) * calc(2 * var(--font-size-offset)));
+  --fs-l5: calc(var(--key-size) * calc(3 * var(--font-size-offset)));
   --primary-color-l: hsl(210, 90%, 65%);
   --primary-color: hsl(210, 90%, 50%);
   --primary-color-d: hsl(210, 90%, 35%);
