@@ -3,38 +3,7 @@
 </script>
 
 <div class="body">
-    <div class="h1">header 1</div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, minus.</p>   
-    <div class="h2">header 2</div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, minus.</p>
-    <div class="h3">header 3</div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, minus.</p>
-    <div class="h4">header 4</div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, minus.</p>
-    <div class="h5">header 5</div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, minus.</p>
-    <div class="h6">header 6</div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, minus.</p>
-    <hr>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <div class="">Lorem, ipsum.</div>
-    <hr>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores molestias veniam voluptas earum blanditiis nesciunt quas ducimus culpa harum magni sunt aperiam, corrupti deleniti voluptatum ex veritatis omnis voluptates consectetur?</p>
-    <Button class="btn btn-primary" style="margin: 1rem">Button</Button>
-    <Button class="btn btn-secondary" style="margin: 1rem">Button</Button>
-    <Button class="btn btn-info" style="margin: 1rem">Button</Button>
-    <Button class="btn btn-success" style="margin: 1rem">Button</Button>
-    <Button class="btn btn-warning" style="margin: 1rem">Button</Button>
-    <Button class="btn btn-error" style="margin: 1rem">Button</Button>
+    ...
 </div>
 
 <style lang="sass">

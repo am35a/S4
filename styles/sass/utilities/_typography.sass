@@ -1,27 +1,103 @@
+@use "sass:math"
+
+@import __colors
+
 $font-sizes: s5, s5, s3, s2, s1, md, l1, l2, l3, l4, l5
+
+@mixin deviceOrientationTypePrefixes($orientation, $type)
+    .#{$orientation}#{$type}text
+        &-start
+            text-align: start !important
+        &-center
+            text-align: center !important
+        &-end
+            text-align: end !important
+        &-justify
+            text-align: justify !important
+
+        &-wrap
+            white-space: normal !important
+        &-nowrap
+            white-space: nowrap !important
+
+        @each $item in $default-colors
+            &-#{$item}
+               color: var(#{'--' + $item + '-color'}) !important
+        @each $item in $default-colors
+            @for $i from 1 through math.div(100, $default-extra-colors-step) - 1
+                &#{'-' + $item + '-' + $i * $default-extra-colors-step}
+                    color: var(#{'--' + $item + '-color' + '-' + $i * $default-extra-colors-step}) !important
+        @each $item in $accent-colors
+            &-#{$item}
+               color: var(#{'--' + $item + '-color'}) !important
+            @each $pref in $accent-extra-colors-prefs
+                &-#{$item + '-' + $pref}
+                    color: var(#{'--' + $item + '-color-' + $pref}) !important
+        &-transparent
+            color: transparent !important
 
 h, .h
     &1
         font-size: var(--fs-l5) !important
+        font-weight: 600 !important
     &2
         font-size: var(--fs-l4) !important
+        font-weight: 600 !important
     &3
         font-size: var(--fs-l3) !important
+        font-weight: 600 !important
     &4
         font-size: var(--fs-l2) !important
+        font-weight: 600 !important
     &5
         font-size: var(--fs-l1) !important
+        font-weight: 600 !important
     &6
         font-size: var(--fs-md) !important
+        font-weight: 600 !important
 
-.fs
-    @each $size in $font-sizes
-        &-#{$size}
-            font-size: var(#{'--fs-' + $size}) !important
+.f
+    &s
+        @each $size in $font-sizes
+            &-#{$size}
+                font-size: var(#{'--fs-' + $size}) !important
+    &w
+        @for $i from 1 through 9
+            &-#{$i * 100}
+                font-weight: #{$i * 100} !important
+        &-unset
+            font-weight: unset !important
 
-.fw
-    @for $i from 1 through 9
-        &-#{$i * 100}
-            font-weight: #{$i * 100} !important
-    &-unset
-        font-weight: unset
+.lh
+    &-1
+        line-height: 1 !important
+    &-sm
+        line-height: 1.25 !important
+    &-md
+        line-height: 1.5 !important
+    &-lg
+        line-height: 2 !important
+
+[lang]
+    hyphens: auto
+
+.text
+    &-hyphens
+        hyphens: auto !important
+    &-truncate
+        overflow: hidden !important
+        text-overflow: ellipsis !important
+        white-space: nowrap !important
+    &-lowercase
+        text-transform: lowercase !important
+    &-uppercase
+        text-transform: uppercase !important
+    &-capitalize
+        text-transform: capitalize !important
+    &-decoration
+        &-none
+            text-decoration: none !important
+        &-underline
+            text-decoration: underline !important
+        &-line-through
+            text-decoration: line-through !important

@@ -1,28 +1,24 @@
 @use "sass:math"
-    
-$default-colors: positive, negative
-$main-colors: primary, secondary, info, success, warning, error, transparent
-$main-extra-colors-prefs: l, d
 
-// set false to exclude default extra colors
-$is-default-extra-colors: true
-$default-extra-colors-step: 5
-// set false to exclude main extra colors
-$is-main-extra-colors: true
+@import __colors
+
 /*
-    background section: background color of main and extra palette contained in classes
+    background section: background color of accent and extra palette contained in classes
 
 @mixin deviceOrientationTypePrefixes($orientation, $type)
     .#{$orientation}#{$type}bg
-        @each $item in $main-colors
-            &-#{'' + $item}
+        @each $item in $default-colors
+            &-#{$item}
                background-color: var(#{'--' + $item + '-color'}) !important
-            @if $is-main-extra-colors and $item != transparent
-                @each $pref in $main-extra-colors-prefs
-                    &-#{'' + $item + '-' + $pref}
-                        background-color: var(#{'--' + $item + '-color-' + $pref}) !important
-        @if $is-default-extra-colors
-            @each $item in $default-colors
-                @for $i from 0 through math.div(100, $default-extra-colors-step)
-                    &#{'-' + $item + '-' + $i * $default-extra-colors-step}
-                        background-color: var(#{'--' + $item + '-color' + '-' + $i * $default-extra-colors-step}) !important
+        @each $item in $default-colors
+            @for $i from 1 through math.div(100, $default-extra-colors-step) - 1
+                &#{'-' + $item + '-' + $i * $default-extra-colors-step}
+                    background-color: var(#{'--' + $item + '-color' + '-' + $i * $default-extra-colors-step}) !important
+        @each $item in $accent-colors
+            &-#{$item}
+               background-color: var(#{'--' + $item + '-color'}) !important
+            @each $pref in $accent-extra-colors-prefs
+                &-#{$item + '-' + $pref}
+                    background-color: var(#{'--' + $item + '-color-' + $pref}) !important
+        &-transparent
+            background-color: transparent !important

@@ -124,7 +124,67 @@
   justify-self: stretch !important;
 }
 
-/*  background section: background color of main and extra palette contained in classes */
+/*  background section: background color of accent and extra palette contained in classes */
+.bg-positive {
+  background-color: var(--positive-color) !important;
+}
+.bg-negative {
+  background-color: var(--negative-color) !important;
+}
+.bg-positive-10 {
+  background-color: var(--positive-color-10) !important;
+}
+.bg-positive-20 {
+  background-color: var(--positive-color-20) !important;
+}
+.bg-positive-30 {
+  background-color: var(--positive-color-30) !important;
+}
+.bg-positive-40 {
+  background-color: var(--positive-color-40) !important;
+}
+.bg-positive-50 {
+  background-color: var(--positive-color-50) !important;
+}
+.bg-positive-60 {
+  background-color: var(--positive-color-60) !important;
+}
+.bg-positive-70 {
+  background-color: var(--positive-color-70) !important;
+}
+.bg-positive-80 {
+  background-color: var(--positive-color-80) !important;
+}
+.bg-positive-90 {
+  background-color: var(--positive-color-90) !important;
+}
+.bg-negative-10 {
+  background-color: var(--negative-color-10) !important;
+}
+.bg-negative-20 {
+  background-color: var(--negative-color-20) !important;
+}
+.bg-negative-30 {
+  background-color: var(--negative-color-30) !important;
+}
+.bg-negative-40 {
+  background-color: var(--negative-color-40) !important;
+}
+.bg-negative-50 {
+  background-color: var(--negative-color-50) !important;
+}
+.bg-negative-60 {
+  background-color: var(--negative-color-60) !important;
+}
+.bg-negative-70 {
+  background-color: var(--negative-color-70) !important;
+}
+.bg-negative-80 {
+  background-color: var(--negative-color-80) !important;
+}
+.bg-negative-90 {
+  background-color: var(--negative-color-90) !important;
+}
 .bg-primary {
   background-color: var(--primary-color) !important;
 }
@@ -180,152 +240,32 @@
   background-color: var(--error-color-d) !important;
 }
 .bg-transparent {
-  background-color: var(--transparent-color) !important;
-}
-.bg-positive-0 {
-  background-color: var(--positive-color-0) !important;
-}
-.bg-positive-5 {
-  background-color: var(--positive-color-5) !important;
-}
-.bg-positive-10 {
-  background-color: var(--positive-color-10) !important;
-}
-.bg-positive-15 {
-  background-color: var(--positive-color-15) !important;
-}
-.bg-positive-20 {
-  background-color: var(--positive-color-20) !important;
-}
-.bg-positive-25 {
-  background-color: var(--positive-color-25) !important;
-}
-.bg-positive-30 {
-  background-color: var(--positive-color-30) !important;
-}
-.bg-positive-35 {
-  background-color: var(--positive-color-35) !important;
-}
-.bg-positive-40 {
-  background-color: var(--positive-color-40) !important;
-}
-.bg-positive-45 {
-  background-color: var(--positive-color-45) !important;
-}
-.bg-positive-50 {
-  background-color: var(--positive-color-50) !important;
-}
-.bg-positive-55 {
-  background-color: var(--positive-color-55) !important;
-}
-.bg-positive-60 {
-  background-color: var(--positive-color-60) !important;
-}
-.bg-positive-65 {
-  background-color: var(--positive-color-65) !important;
-}
-.bg-positive-70 {
-  background-color: var(--positive-color-70) !important;
-}
-.bg-positive-75 {
-  background-color: var(--positive-color-75) !important;
-}
-.bg-positive-80 {
-  background-color: var(--positive-color-80) !important;
-}
-.bg-positive-85 {
-  background-color: var(--positive-color-85) !important;
-}
-.bg-positive-90 {
-  background-color: var(--positive-color-90) !important;
-}
-.bg-positive-95 {
-  background-color: var(--positive-color-95) !important;
-}
-.bg-positive-100 {
-  background-color: var(--positive-color-100) !important;
-}
-.bg-negative-0 {
-  background-color: var(--negative-color-0) !important;
-}
-.bg-negative-5 {
-  background-color: var(--negative-color-5) !important;
-}
-.bg-negative-10 {
-  background-color: var(--negative-color-10) !important;
-}
-.bg-negative-15 {
-  background-color: var(--negative-color-15) !important;
-}
-.bg-negative-20 {
-  background-color: var(--negative-color-20) !important;
-}
-.bg-negative-25 {
-  background-color: var(--negative-color-25) !important;
-}
-.bg-negative-30 {
-  background-color: var(--negative-color-30) !important;
-}
-.bg-negative-35 {
-  background-color: var(--negative-color-35) !important;
-}
-.bg-negative-40 {
-  background-color: var(--negative-color-40) !important;
-}
-.bg-negative-45 {
-  background-color: var(--negative-color-45) !important;
-}
-.bg-negative-50 {
-  background-color: var(--negative-color-50) !important;
-}
-.bg-negative-55 {
-  background-color: var(--negative-color-55) !important;
-}
-.bg-negative-60 {
-  background-color: var(--negative-color-60) !important;
-}
-.bg-negative-65 {
-  background-color: var(--negative-color-65) !important;
-}
-.bg-negative-70 {
-  background-color: var(--negative-color-70) !important;
-}
-.bg-negative-75 {
-  background-color: var(--negative-color-75) !important;
-}
-.bg-negative-80 {
-  background-color: var(--negative-color-80) !important;
-}
-.bg-negative-85 {
-  background-color: var(--negative-color-85) !important;
-}
-.bg-negative-90 {
-  background-color: var(--negative-color-90) !important;
-}
-.bg-negative-95 {
-  background-color: var(--negative-color-95) !important;
-}
-.bg-negative-100 {
-  background-color: var(--negative-color-100) !important;
+  background-color: transparent !important;
 }
 
 h1, .h1 {
   font-size: var(--fs-l5) !important;
+  font-weight: 600 !important;
 }
 h2, .h2 {
   font-size: var(--fs-l4) !important;
+  font-weight: 600 !important;
 }
 h3, .h3 {
   font-size: var(--fs-l3) !important;
+  font-weight: 600 !important;
 }
 h4, .h4 {
   font-size: var(--fs-l2) !important;
+  font-weight: 600 !important;
 }
 h5, .h5 {
   font-size: var(--fs-l1) !important;
+  font-weight: 600 !important;
 }
 h6, .h6 {
   font-size: var(--fs-md) !important;
+  font-weight: 600 !important;
 }
 
 .fs-s5 {
@@ -361,7 +301,6 @@ h6, .h6 {
 .fs-l5 {
   font-size: var(--fs-l5) !important;
 }
-
 .fw-100 {
   font-weight: 100 !important;
 }
@@ -390,5 +329,185 @@ h6, .h6 {
   font-weight: 900 !important;
 }
 .fw-unset {
-  font-weight: unset;
+  font-weight: unset !important;
+}
+
+.lh-1 {
+  line-height: 1 !important;
+}
+.lh-sm {
+  line-height: 1.25 !important;
+}
+.lh-md {
+  line-height: 1.5 !important;
+}
+.lh-lg {
+  line-height: 2 !important;
+}
+
+[lang] {
+  hyphens: auto;
+}
+
+.text-hyphens {
+  hyphens: auto !important;
+}
+.text-truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+.text-decoration-none {
+  text-decoration: none !important;
+}
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+.text-decoration-line-through {
+  text-decoration: line-through !important;
+}
+
+.l\:m\:text-start {
+  text-align: start !important;
+}
+.l\:m\:text-center {
+  text-align: center !important;
+}
+.l\:m\:text-end {
+  text-align: end !important;
+}
+.l\:m\:text-justify {
+  text-align: justify !important;
+}
+.l\:m\:text-wrap {
+  white-space: normal !important;
+}
+.l\:m\:text-nowrap {
+  white-space: nowrap !important;
+}
+.l\:m\:text-positive {
+  color: var(--positive-color) !important;
+}
+.l\:m\:text-negative {
+  color: var(--negative-color) !important;
+}
+.l\:m\:text-positive-10 {
+  color: var(--positive-color-10) !important;
+}
+.l\:m\:text-positive-20 {
+  color: var(--positive-color-20) !important;
+}
+.l\:m\:text-positive-30 {
+  color: var(--positive-color-30) !important;
+}
+.l\:m\:text-positive-40 {
+  color: var(--positive-color-40) !important;
+}
+.l\:m\:text-positive-50 {
+  color: var(--positive-color-50) !important;
+}
+.l\:m\:text-positive-60 {
+  color: var(--positive-color-60) !important;
+}
+.l\:m\:text-positive-70 {
+  color: var(--positive-color-70) !important;
+}
+.l\:m\:text-positive-80 {
+  color: var(--positive-color-80) !important;
+}
+.l\:m\:text-positive-90 {
+  color: var(--positive-color-90) !important;
+}
+.l\:m\:text-negative-10 {
+  color: var(--negative-color-10) !important;
+}
+.l\:m\:text-negative-20 {
+  color: var(--negative-color-20) !important;
+}
+.l\:m\:text-negative-30 {
+  color: var(--negative-color-30) !important;
+}
+.l\:m\:text-negative-40 {
+  color: var(--negative-color-40) !important;
+}
+.l\:m\:text-negative-50 {
+  color: var(--negative-color-50) !important;
+}
+.l\:m\:text-negative-60 {
+  color: var(--negative-color-60) !important;
+}
+.l\:m\:text-negative-70 {
+  color: var(--negative-color-70) !important;
+}
+.l\:m\:text-negative-80 {
+  color: var(--negative-color-80) !important;
+}
+.l\:m\:text-negative-90 {
+  color: var(--negative-color-90) !important;
+}
+.l\:m\:text-primary {
+  color: var(--primary-color) !important;
+}
+.l\:m\:text-primary-l {
+  color: var(--primary-color-l) !important;
+}
+.l\:m\:text-primary-d {
+  color: var(--primary-color-d) !important;
+}
+.l\:m\:text-secondary {
+  color: var(--secondary-color) !important;
+}
+.l\:m\:text-secondary-l {
+  color: var(--secondary-color-l) !important;
+}
+.l\:m\:text-secondary-d {
+  color: var(--secondary-color-d) !important;
+}
+.l\:m\:text-info {
+  color: var(--info-color) !important;
+}
+.l\:m\:text-info-l {
+  color: var(--info-color-l) !important;
+}
+.l\:m\:text-info-d {
+  color: var(--info-color-d) !important;
+}
+.l\:m\:text-success {
+  color: var(--success-color) !important;
+}
+.l\:m\:text-success-l {
+  color: var(--success-color-l) !important;
+}
+.l\:m\:text-success-d {
+  color: var(--success-color-d) !important;
+}
+.l\:m\:text-warning {
+  color: var(--warning-color) !important;
+}
+.l\:m\:text-warning-l {
+  color: var(--warning-color-l) !important;
+}
+.l\:m\:text-warning-d {
+  color: var(--warning-color-d) !important;
+}
+.l\:m\:text-error {
+  color: var(--error-color) !important;
+}
+.l\:m\:text-error-l {
+  color: var(--error-color-l) !important;
+}
+.l\:m\:text-error-d {
+  color: var(--error-color-d) !important;
+}
+.l\:m\:text-transparent {
+  color: transparent !important;
 }
