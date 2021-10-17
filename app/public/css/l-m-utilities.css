@@ -511,3 +511,47 @@ h6, .h6 {
 .l\:m\:text-transparent {
   color: transparent !important;
 }
+
+/*  display section: display variants contained in classes */
+.l\:m\:d-block-flow {
+  display: block flow !important;
+}
+.l\:m\:d-inline-flow {
+  display: inline flow !important;
+}
+.l\:m\:d-inline-flow-root {
+  display: inline flow-root !important;
+}
+.l\:m\:d-block-flex {
+  display: block flex !important;
+}
+.l\:m\:d-inline-flex {
+  display: inline flex !important;
+}
+.l\:m\:d-block-grid {
+  display: block grid !important;
+}
+.l\:m\:d-inline-grid {
+  display: inline grid !important;
+}
+.l\:m\:d-block-flow-root {
+  display: block flow-root !important;
+}
+.l\:m\:d-inherit {
+  display: inherit !important;
+}
+.l\:m\:d-initial {
+  display: initial !important;
+}
+.l\:m\:d-revert {
+  display: revert !important;
+}
+.l\:m\:d-unset {
+  display: unset !important;
+}
+.l\:m\:d-contents {
+  display: contents !important;
+}
+.l\:m\:d-none {
+  display: none !important;
+}

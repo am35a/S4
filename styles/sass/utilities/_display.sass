@@ -1,0 +1,22 @@
+// $display-legacy: block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root
+$display-modern: ( block-flow: block flow, inline-flow: inline flow, inline-flow-root: inline flow-root, block-flex: block flex, inline-flex: inline flex, block-grid: block grid, inline-grid: inline grid, block-flow-root: block flow-root )
+$display-global: inherit, initial, revert, unset
+$display-box: contents, none
+
+/*
+    display section: display variants contained in classes
+
+@mixin deviceOrientationTypePrefixes($orientation, $type)
+    .#{$orientation}#{$type}d
+        // @each $item in $display-legacy
+        //     &-#{$item}
+        //        display: #{$item} !important
+        @each $item-name, $item-value in $display-modern
+            &-#{$item-name}
+               display: #{$item-value} !important
+        @each $item in $display-global
+            &-#{$item}
+               display: #{$item} !important
+        @each $item in $display-box
+            &-#{$item}
+               display: #{$item} !important
