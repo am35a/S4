@@ -1,0 +1,43 @@
+$position-ltrb: left, top, right, bottom
+
+/*
+    position section: position type, float, ltrb and translate contained in classes
+    
+@mixin deviceOrientationTypePrefixes($orientation, $type)
+    .#{$orientation}#{$type}position
+        &-static
+            position: static !important
+        &-relative
+            position: relative !important
+        &-absolute
+            position: absolute !important
+        &-fixed
+            position: fixed !important
+        &-sticky
+            position: sticky !important
+
+    .#{$orientation}#{$type}float
+        // &-left
+        //     float: left
+        // &-right
+        //     float: right
+        &-start
+            float: start !important
+        &-end
+            float: end !important
+        &-none
+            float: none !important
+    
+    @each $item in $position-ltrb
+        .#{$orientation}#{$type}#{$item}
+            @for $i from 0 through 2
+                &-#{$i * 50}
+                    #{$item}: $i * 50% !important
+        
+    .#{$orientation}#{$type}translate
+        &-middle
+            transform: translate(-50%, -50%) !important
+            &-x
+                transform: translateX(-50%) !important
+            &-y
+                transform: translateY(-50%) !important

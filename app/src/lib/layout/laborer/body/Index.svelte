@@ -3,7 +3,7 @@
 </script>
 
 <div class="body">
-    ...
+    <Button class="btn btn-primary" style="margin: 1rem">Button</Button>
 </div>
 
 <style lang="sass">

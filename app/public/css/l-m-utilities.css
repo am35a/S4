@@ -243,6 +243,7 @@
   background-color: transparent !important;
 }
 
+/*  typography section: ... contained in classes */
 h1, .h1 {
   font-size: var(--fs-l5) !important;
   font-weight: 600 !important;
@@ -554,4 +555,81 @@ h6, .h6 {
 }
 .l\:m\:d-none {
   display: none !important;
+}
+
+/*  position section: position type, float, ltrb and translate contained in classes */
+.l\:m\:position-static {
+  position: static !important;
+}
+.l\:m\:position-relative {
+  position: relative !important;
+}
+.l\:m\:position-absolute {
+  position: absolute !important;
+}
+.l\:m\:position-fixed {
+  position: fixed !important;
+}
+.l\:m\:position-sticky {
+  position: sticky !important;
+}
+
+.l\:m\:float-start {
+  float: start !important;
+}
+.l\:m\:float-end {
+  float: end !important;
+}
+.l\:m\:float-none {
+  float: none !important;
+}
+
+.l\:m\:left-0 {
+  left: 0% !important;
+}
+.l\:m\:left-50 {
+  left: 50% !important;
+}
+.l\:m\:left-100 {
+  left: 100% !important;
+}
+
+.l\:m\:top-0 {
+  top: 0% !important;
+}
+.l\:m\:top-50 {
+  top: 50% !important;
+}
+.l\:m\:top-100 {
+  top: 100% !important;
+}
+
+.l\:m\:right-0 {
+  right: 0% !important;
+}
+.l\:m\:right-50 {
+  right: 50% !important;
+}
+.l\:m\:right-100 {
+  right: 100% !important;
+}
+
+.l\:m\:bottom-0 {
+  bottom: 0% !important;
+}
+.l\:m\:bottom-50 {
+  bottom: 50% !important;
+}
+.l\:m\:bottom-100 {
+  bottom: 100% !important;
+}
+
+.l\:m\:translate-middle {
+  transform: translate(-50%, -50%) !important;
+}
+.l\:m\:translate-middle-x {
+  transform: translateX(-50%) !important;
+}
+.l\:m\:translate-middle-y {
+  transform: translateY(-50%) !important;
 }
