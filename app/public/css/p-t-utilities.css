@@ -557,6 +557,44 @@ h6, .h6 {
   display: none !important;
 }
 
+/*  overflow section: ... contained in classes */
+.p\:t\:overflow-auto {
+  overflow: auto !important;
+}
+.p\:t\:overflow-hidden {
+  overflow: hidden !important;
+}
+.p\:t\:overflow-visible {
+  overflow: visible !important;
+}
+.p\:t\:overflow-scroll {
+  overflow: scroll !important;
+}
+.p\:t\:overflow-x-auto {
+  overflow-x: auto !important;
+}
+.p\:t\:overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+.p\:t\:overflow-x-visible {
+  overflow-x: visible !important;
+}
+.p\:t\:overflow-x-scroll {
+  overflow-x: scroll !important;
+}
+.p\:t\:overflow-y-auto {
+  overflow-y: auto !important;
+}
+.p\:t\:overflow-y-hidden {
+  overflow-y: hidden !important;
+}
+.p\:t\:overflow-y-visible {
+  overflow-y: visible !important;
+}
+.p\:t\:overflow-y-scroll {
+  overflow-y: scroll !important;
+}
+
 /*  position section: position type, float, ltrb and translate contained in classes */
 .p\:t\:position-static {
   position: static !important;
