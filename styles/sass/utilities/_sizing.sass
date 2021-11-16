@@ -1,0 +1,33 @@
+@use "sass:math"
+
+$re-sizing: none, both, horizontal, vertical
+
+$default-sizing-step: 25
+
+/*
+    sizing section: width, height, box-sizing and resize types contained in classes
+
+@mixin deviceOrientationTypePrefixes($orientation, $type)
+    .#{$orientation}#{$type}w
+        @for $i from 0 through math.div(100, $default-sizing-step)
+            &-#{$i * $default-sizing-step}
+                width: #{$i * $default-sizing-step + '%'} !important
+        &-auto
+            width: auto !important
+
+    .#{$orientation}#{$type}h
+        @for $i from 0 through math.div(100, $default-sizing-step)
+            &-#{$i * $default-sizing-step}
+                height: #{$i * $default-sizing-step + '%'} !important
+        &-auto
+            height: auto !important
+
+    .#{$orientation}#{$type}resize
+        @each $item in $re-sizing
+            &-#{$item}
+                resize: #{$item} !important
+    
+.border-box
+    box-sizing: border-box !important
+.content-box
+    box-sizing: content-box !important

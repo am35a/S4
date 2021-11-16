@@ -557,7 +557,7 @@ h6, .h6 {
   display: none !important;
 }
 
-/*  overflow section: ... contained in classes */
+/*  overflow section: overflow type and axes contained in classes */
 .p\:t\:overflow-auto {
   overflow: auto !important;
 }
