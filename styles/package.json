@@ -1,5 +1,5 @@
 {
-    "name": "triafly-styles",
+    "name": "s4-styles",
     "version": "0.0.1",
     "scripts": {
         "dev": "sass --watch sass:../app/public/css --no-source-map",
