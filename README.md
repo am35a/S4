@@ -1,5 +1,5 @@
-# TriaFly-UI
-TriaFly UI - this repo is used as a test for UI wich based on [Svelte](https://svelte.dev)/[TS](https://www.typescriptlang.org/)/[SASS](https://sass-lang.com/dart-sass) also [pnpm](https://pnpm.io/)/[Rollup](https://rollupjs.org)
+# S4 - UI Kit
+S4 - this repo is used as a researching for UI library based on [Svelte](https://svelte.dev)/[TS](https://www.typescriptlang.org/)/[SASS](https://sass-lang.com/dart-sass) also [pnpm](https://pnpm.io/)/[Rollup](https://rollupjs.org)
 
 ## Before starting dev:
 
