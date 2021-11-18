@@ -1,5 +1,5 @@
 {
-    "name": "triafly-app",
+    "name": "s4-app",
     "version": "0.0.1",
     "scripts": {
         "app": "cd app && pnpm dev",
