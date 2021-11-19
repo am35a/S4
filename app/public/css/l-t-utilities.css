@@ -731,3 +731,59 @@ h6, .h6 {
 .l\:t\:resize-vertical {
   resize: vertical !important;
 }
+
+/*  hide container if empty  */
+.empty-none:empty {
+  display: none !important;
+}
+
+.l\:t\:w-0 {
+  width: 0% !important;
+}
+.l\:t\:w-25 {
+  width: 25% !important;
+}
+.l\:t\:w-50 {
+  width: 50% !important;
+}
+.l\:t\:w-75 {
+  width: 75% !important;
+}
+.l\:t\:w-100 {
+  width: 100% !important;
+}
+.l\:t\:w-auto {
+  width: auto !important;
+}
+
+.l\:t\:h-0 {
+  height: 0% !important;
+}
+.l\:t\:h-25 {
+  height: 25% !important;
+}
+.l\:t\:h-50 {
+  height: 50% !important;
+}
+.l\:t\:h-75 {
+  height: 75% !important;
+}
+.l\:t\:h-100 {
+  height: 100% !important;
+}
+.l\:t\:h-auto {
+  height: auto !important;
+}
+
+.l\:t\:resize-none {
+  resize: none !important;
+}
+.l\:t\:resize-both {
+  resize: both !important;
+}
+.l\:t\:resize-horizontal {
+  resize: horizontal !important;
+}
+.l\:t\:resize-vertical {
+  resize: vertical !important;
+}

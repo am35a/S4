@@ -5,12 +5,12 @@ S4 - this repo is used as a researching for UI library based on [Svelte](https:/
 
 - Clone the repo
 ```bash
-git clone https://github.com/am35a/S4.git S4
+git clone https://github.com/am35a/S4.git
 ```
 
 - Use [pnpm](https://pnpm.io/) to install packages in same folders  
 
-from root folder
+from child folders
 ```bash
 cd app
 pnpm install
@@ -19,7 +19,7 @@ pnpm install
 cd styles
 pnpm install
 ```
-or globally
+or root folder
 ```bash
 pnpm install
 ```
