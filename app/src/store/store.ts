@@ -39,7 +39,7 @@ export let userData = writable(
 
 export let app: any = writable(
     {
-        name: 'TriaFly' as string,
+        name: 'S4' as string,
         isAsideExpand: false as boolean,
         fullscreen: false as boolean,
         popupLoader: false as boolean,
@@ -53,7 +53,7 @@ export let app: any = writable(
 export let user: any = writable(
     {
         isAuthorized: true as boolean, // false as default
-        email: 'test@triafly.ru' as string,
+        email: 's4@mobitoon.ru' as string,
         password: '123456' as string,
         settings: {
             isDarkTheme: true as boolean,

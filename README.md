@@ -5,7 +5,7 @@ S4 - this repo is used as a researching for UI library based on [Svelte](https:/
 
 - Clone the repo
 ```bash
-git clone https://github.com/am35a/TriaFly-UI.git triafly-ui
+git clone https://github.com/am35a/S4.git S4
 ```
 
 - Use [pnpm](https://pnpm.io/) to install packages in same folders  
