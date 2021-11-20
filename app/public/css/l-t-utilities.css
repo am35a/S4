@@ -614,11 +614,6 @@
   display: none !important;
 }
 
-/*  for all tags contained lang attribute activated hyphenation */
-[lang] {
-  hyphens: auto;
-}
-
 .t\:w-0 {
   width: 0% !important;
 }

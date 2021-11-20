@@ -1,4 +1,4 @@
-$position-ltrb: left, top, right, bottom
+$placement-directions: left, top, right, bottom
 
 /*
     position section: position type, float, ltrb and translate contained in classes
@@ -28,7 +28,7 @@ $position-ltrb: left, top, right, bottom
         &-none
             float: none !important
     
-    @each $item in $position-ltrb
+    @each $item in $placement-directions
         .#{$orientation}#{$type}#{$item}
             @for $i from 0 through 2
                 &-#{$i * 50}

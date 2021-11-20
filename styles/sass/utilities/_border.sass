@@ -1,0 +1,65 @@
+@use "sass:math"
+
+@import __variables
+
+$placement-directions: left, top, right, bottom
+
+/*
+    border section: border round, sizes, placement, color of accent and extra palette contained in classes
+
+@mixin deviceOrientationTypePrefixes($orientation, $type)
+    .#{$orientation}#{$type}border
+        border: calc(var(--key-size) * .0625) solid var(--border-color, currentColor) !important
+        @each $item in $placement-directions
+            &-#{$item}
+                border-#{$item}: calc(var(--key-size) * .0625) solid var(--border-color, currentColor) !important
+
+        &-0
+            border: 0 !important
+        @each $item in $placement-directions
+            &-#{$item}-0
+                border-#{$item}: 0 !important
+
+        @each $item in $default-colors
+            &-#{$item}
+                border-color: var(#{'--' + $item + '-color'}) !important
+        @each $item in $default-colors
+            @for $i from 1 through math.div(100, $default-extra-colors-step) - 1
+                &#{'-' + $item + '-' + $i * $default-extra-colors-step}
+                    border-color: var(#{'--' + $item + '-color' + '-' + $i * $default-extra-colors-step}) !important
+        @each $item in $accent-colors
+            &-#{$item}
+               border-color: var(#{'--' + $item + '-color'}) !important
+            @each $pref in $accent-extra-colors-prefs
+                &-#{$item + '-' + $pref}
+                    border-color: var(#{'--' + $item + '-color-' + $pref}) !important
+        &-transparent
+            border-color: transparent !important
+
+    .#{$orientation}#{$type}rounded
+        &-0
+            border-radius: 0 !important
+        &-s1
+            border-radius: var(--rounded-1, calc(var(--key-size) * .125)) !important
+        &-md
+            border-radius: var(--rounded-2, calc(var(--key-size) * .25)) !important
+        &-l1
+            border-radius: var(--rounded-3, calc(var(--key-size) * .5)) !important
+
+        &-circle
+            border-radius: 50% !important
+        &-pill
+            border-radius: 50rem !important
+
+        &-top-0
+            border-top-left-radius: 0 !important
+            border-top-right-radius: 0 !important
+        &-right-0
+            border-top-right-radius: 0 !important
+            border-bottom-right-radius: 0 !important
+        &-bottom-0
+            border-bottom-right-radius: 0 !important
+            border-bottom-left-radius: 0 !important
+        &-left-0
+            border-bottom-left-radius: 0 !important
+            border-top-left-radius: 0 !important
