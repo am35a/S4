@@ -2,6 +2,15 @@
     import { appData } from 'src/store/store'
     import device from 'current-device'
 
+    const cssMap = {
+        'l-d-': [ 'l-d-' ],
+        'p-d-': [ 'l-d-', 'p-d-' ],
+        'l-t-': [ 'l-d-', 'l-t-' ],
+        'p-t-': [ 'l-d-', 'p-d-', 'l-t-', 'p-t-' ],
+        'l-m-': [ 'l-d-', 'p-m-', 'l-m-' ],
+        'p-m-': [ 'l-d-', 'p-d-', 'p-m-' ]
+    }
+
     // start - device and orientation
     let deviceOrientation: string = device.orientation
     let deviceCSSPrefix: string = getDeviceCSSPrefix()
@@ -24,9 +33,13 @@
     <meta name="viewport" content="width=device-width, initial-scale={$appData.initialScale}">
     <title>{$appData.title}</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/settings/{deviceCSSPrefix}variables.css"> <!-- load only appropriate styles utilities -->
-    <link rel="stylesheet" href="/css/{deviceCSSPrefix}utilities.css"> <!-- load only appropriate styles utilities -->
+
     <link rel='stylesheet' href='/css/settings/variables.css'>
+    <link rel="stylesheet" href="/css/settings/{deviceCSSPrefix}variables.css"> <!-- load only appropriate styles utilities -->
+
+    {#each cssMap[deviceCSSPrefix] as item}
+        <link rel="stylesheet" href="/css/{item}utilities.css">
+    {/each}
 </svelte:head>
 
 <style lang="sass">

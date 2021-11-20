@@ -1,25 +1,28 @@
-@import utilities/_alignment
-@include deviceOrientationTypePrefixes("l\\:", "t\\:")
+// ! use "l\\:", "t\\:" to activate only for landscape/tablet
 
-// unset eviceOrientationTypePrefixes as default
-// use "l\\:", "t\\:" to activate for lamdscape/tablet
-@import utilities/_background
-@include deviceOrientationTypePrefixes("", "")
+// ("", "t\\:") activate .l-t-utilities.css rules for all tablet devices
+
+@import utilities/_alignment
+@include deviceOrientationTypePrefixes("", "t\\:")
+
+// default for all
+// @import utilities/_background
+// @include deviceOrientationTypePrefixes("", "")
 
 @import utilities/_typography
-@include deviceOrientationTypePrefixes("l\\:", "t\\:")
+@include deviceOrientationTypePrefixes("", "t\\:")
 
 @import utilities/_display
-@include deviceOrientationTypePrefixes("l\\:", "t\\:")
+@include deviceOrientationTypePrefixes("", "t\\:")
 
 @import utilities/_overflow
-@include deviceOrientationTypePrefixes("l\\:", "t\\:")
+@include deviceOrientationTypePrefixes("", "t\\:")
 
 @import utilities/_position
-@include deviceOrientationTypePrefixes("l\\:", "t\\:")
+@include deviceOrientationTypePrefixes("", "t\\:")
 
 @import utilities/_sizing
-@include deviceOrientationTypePrefixes("l\\:", "t\\:")
+@include deviceOrientationTypePrefixes("", "t\\:")
 
 @import utilities/_pseudos
-@include deviceOrientationTypePrefixes("l\\:", "t\\:")
+@include deviceOrientationTypePrefixes("", "t\\:")

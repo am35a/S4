@@ -124,259 +124,7 @@
   justify-self: stretch !important;
 }
 
-/*  background section: background color of accent and extra palette contained in classes */
-.bg-positive {
-  background-color: var(--positive-color) !important;
-}
-.bg-negative {
-  background-color: var(--negative-color) !important;
-}
-.bg-positive-10 {
-  background-color: var(--positive-color-10) !important;
-}
-.bg-positive-20 {
-  background-color: var(--positive-color-20) !important;
-}
-.bg-positive-30 {
-  background-color: var(--positive-color-30) !important;
-}
-.bg-positive-40 {
-  background-color: var(--positive-color-40) !important;
-}
-.bg-positive-50 {
-  background-color: var(--positive-color-50) !important;
-}
-.bg-positive-60 {
-  background-color: var(--positive-color-60) !important;
-}
-.bg-positive-70 {
-  background-color: var(--positive-color-70) !important;
-}
-.bg-positive-80 {
-  background-color: var(--positive-color-80) !important;
-}
-.bg-positive-90 {
-  background-color: var(--positive-color-90) !important;
-}
-.bg-negative-10 {
-  background-color: var(--negative-color-10) !important;
-}
-.bg-negative-20 {
-  background-color: var(--negative-color-20) !important;
-}
-.bg-negative-30 {
-  background-color: var(--negative-color-30) !important;
-}
-.bg-negative-40 {
-  background-color: var(--negative-color-40) !important;
-}
-.bg-negative-50 {
-  background-color: var(--negative-color-50) !important;
-}
-.bg-negative-60 {
-  background-color: var(--negative-color-60) !important;
-}
-.bg-negative-70 {
-  background-color: var(--negative-color-70) !important;
-}
-.bg-negative-80 {
-  background-color: var(--negative-color-80) !important;
-}
-.bg-negative-90 {
-  background-color: var(--negative-color-90) !important;
-}
-.bg-primary {
-  background-color: var(--primary-color) !important;
-}
-.bg-primary-l {
-  background-color: var(--primary-color-l) !important;
-}
-.bg-primary-d {
-  background-color: var(--primary-color-d) !important;
-}
-.bg-secondary {
-  background-color: var(--secondary-color) !important;
-}
-.bg-secondary-l {
-  background-color: var(--secondary-color-l) !important;
-}
-.bg-secondary-d {
-  background-color: var(--secondary-color-d) !important;
-}
-.bg-info {
-  background-color: var(--info-color) !important;
-}
-.bg-info-l {
-  background-color: var(--info-color-l) !important;
-}
-.bg-info-d {
-  background-color: var(--info-color-d) !important;
-}
-.bg-success {
-  background-color: var(--success-color) !important;
-}
-.bg-success-l {
-  background-color: var(--success-color-l) !important;
-}
-.bg-success-d {
-  background-color: var(--success-color-d) !important;
-}
-.bg-warning {
-  background-color: var(--warning-color) !important;
-}
-.bg-warning-l {
-  background-color: var(--warning-color-l) !important;
-}
-.bg-warning-d {
-  background-color: var(--warning-color-d) !important;
-}
-.bg-error {
-  background-color: var(--error-color) !important;
-}
-.bg-error-l {
-  background-color: var(--error-color-l) !important;
-}
-.bg-error-d {
-  background-color: var(--error-color-d) !important;
-}
-.bg-transparent {
-  background-color: transparent !important;
-}
-
 /*  typography section: ... contained in classes */
-h1, .h1 {
-  font-size: var(--fs-l5) !important;
-  font-weight: 600 !important;
-}
-h2, .h2 {
-  font-size: var(--fs-l4) !important;
-  font-weight: 600 !important;
-}
-h3, .h3 {
-  font-size: var(--fs-l3) !important;
-  font-weight: 600 !important;
-}
-h4, .h4 {
-  font-size: var(--fs-l2) !important;
-  font-weight: 600 !important;
-}
-h5, .h5 {
-  font-size: var(--fs-l1) !important;
-  font-weight: 600 !important;
-}
-h6, .h6 {
-  font-size: var(--fs-md) !important;
-  font-weight: 600 !important;
-}
-
-.fs-s5 {
-  font-size: var(--fs-s5) !important;
-}
-.fs-s5 {
-  font-size: var(--fs-s5) !important;
-}
-.fs-s3 {
-  font-size: var(--fs-s3) !important;
-}
-.fs-s2 {
-  font-size: var(--fs-s2) !important;
-}
-.fs-s1 {
-  font-size: var(--fs-s1) !important;
-}
-.fs-md {
-  font-size: var(--fs-md) !important;
-}
-.fs-l1 {
-  font-size: var(--fs-l1) !important;
-}
-.fs-l2 {
-  font-size: var(--fs-l2) !important;
-}
-.fs-l3 {
-  font-size: var(--fs-l3) !important;
-}
-.fs-l4 {
-  font-size: var(--fs-l4) !important;
-}
-.fs-l5 {
-  font-size: var(--fs-l5) !important;
-}
-.fw-100 {
-  font-weight: 100 !important;
-}
-.fw-200 {
-  font-weight: 200 !important;
-}
-.fw-300 {
-  font-weight: 300 !important;
-}
-.fw-400 {
-  font-weight: 400 !important;
-}
-.fw-500 {
-  font-weight: 500 !important;
-}
-.fw-600 {
-  font-weight: 600 !important;
-}
-.fw-700 {
-  font-weight: 700 !important;
-}
-.fw-800 {
-  font-weight: 800 !important;
-}
-.fw-900 {
-  font-weight: 900 !important;
-}
-.fw-unset {
-  font-weight: unset !important;
-}
-
-.lh-1 {
-  line-height: 1 !important;
-}
-.lh-sm {
-  line-height: 1.25 !important;
-}
-.lh-md {
-  line-height: 1.5 !important;
-}
-.lh-lg {
-  line-height: 2 !important;
-}
-
-[lang] {
-  hyphens: auto;
-}
-
-.text-hyphens {
-  hyphens: auto !important;
-}
-.text-truncate {
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-}
-.text-lowercase {
-  text-transform: lowercase !important;
-}
-.text-uppercase {
-  text-transform: uppercase !important;
-}
-.text-capitalize {
-  text-transform: capitalize !important;
-}
-.text-decoration-none {
-  text-decoration: none !important;
-}
-.text-decoration-underline {
-  text-decoration: underline !important;
-}
-.text-decoration-line-through {
-  text-decoration: line-through !important;
-}
-
 .p\:text-start {
   text-align: start !important;
 }
@@ -511,6 +259,135 @@ h6, .h6 {
 }
 .p\:text-transparent {
   color: transparent !important;
+}
+
+.p\:h1, h1 {
+  font-size: var(--fs-l5) !important;
+  font-weight: 600 !important;
+}
+.p\:h2, h2 {
+  font-size: var(--fs-l4) !important;
+  font-weight: 600 !important;
+}
+.p\:h3, h3 {
+  font-size: var(--fs-l3) !important;
+  font-weight: 600 !important;
+}
+.p\:h4, h4 {
+  font-size: var(--fs-l2) !important;
+  font-weight: 600 !important;
+}
+.p\:h5, h5 {
+  font-size: var(--fs-l1) !important;
+  font-weight: 600 !important;
+}
+.p\:h6, h6 {
+  font-size: var(--fs-md) !important;
+  font-weight: 600 !important;
+}
+
+.p\:fs-s5 {
+  font-size: var(--fs-s5) !important;
+}
+.p\:fs-s5 {
+  font-size: var(--fs-s5) !important;
+}
+.p\:fs-s3 {
+  font-size: var(--fs-s3) !important;
+}
+.p\:fs-s2 {
+  font-size: var(--fs-s2) !important;
+}
+.p\:fs-s1 {
+  font-size: var(--fs-s1) !important;
+}
+.p\:fs-md {
+  font-size: var(--fs-md) !important;
+}
+.p\:fs-l1 {
+  font-size: var(--fs-l1) !important;
+}
+.p\:fs-l2 {
+  font-size: var(--fs-l2) !important;
+}
+.p\:fs-l3 {
+  font-size: var(--fs-l3) !important;
+}
+.p\:fs-l4 {
+  font-size: var(--fs-l4) !important;
+}
+.p\:fs-l5 {
+  font-size: var(--fs-l5) !important;
+}
+.p\:fw-100 {
+  font-weight: 100 !important;
+}
+.p\:fw-200 {
+  font-weight: 200 !important;
+}
+.p\:fw-300 {
+  font-weight: 300 !important;
+}
+.p\:fw-400 {
+  font-weight: 400 !important;
+}
+.p\:fw-500 {
+  font-weight: 500 !important;
+}
+.p\:fw-600 {
+  font-weight: 600 !important;
+}
+.p\:fw-700 {
+  font-weight: 700 !important;
+}
+.p\:fw-800 {
+  font-weight: 800 !important;
+}
+.p\:fw-900 {
+  font-weight: 900 !important;
+}
+.p\:fw-unset {
+  font-weight: unset !important;
+}
+
+.p\:lh-1 {
+  line-height: 1 !important;
+}
+.p\:lh-sm {
+  line-height: 1.25 !important;
+}
+.p\:lh-md {
+  line-height: 1.5 !important;
+}
+.p\:lh-lg {
+  line-height: 2 !important;
+}
+
+.p\:text-hyphens {
+  hyphens: auto !important;
+}
+.p\:text-truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+.p\:text-lowercase {
+  text-transform: lowercase !important;
+}
+.p\:text-uppercase {
+  text-transform: uppercase !important;
+}
+.p\:text-capitalize {
+  text-transform: capitalize !important;
+}
+.p\:text-decoration-none {
+  text-decoration: none !important;
+}
+.p\:text-decoration-underline {
+  text-decoration: underline !important;
+}
+.p\:text-decoration-line-through {
+  text-decoration: line-through !important;
 }
 
 /*  display section: display variants contained in classes */
@@ -735,6 +612,11 @@ h6, .h6 {
 /*  hide container if empty  */
 .empty-none:empty {
   display: none !important;
+}
+
+/*  for all tags contained lang attribute activated hyphenation */
+[lang] {
+  hyphens: auto;
 }
 
 .p\:w-0 {

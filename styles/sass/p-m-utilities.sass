@@ -1,25 +1,28 @@
-@import utilities/_alignment
-@include deviceOrientationTypePrefixes("p\\:", "m\\:")
+// ! use "p\\:", "m\\:" to activate only for portrait/mobile
 
-// unset eviceOrientationTypePrefixes as default
-// use "p\\:", "m\\:" to activate for portrait/mobile
-@import utilities/_background
-@include deviceOrientationTypePrefixes("", "")
+// ("", "m\\:") activate .p-m-utilities.css rules for all mobile devices
+
+@import utilities/_alignment
+@include deviceOrientationTypePrefixes("", "m\\:")
+
+// default for all
+// @import utilities/_background
+// @include deviceOrientationTypePrefixes("", "")
 
 @import utilities/_typography
-@include deviceOrientationTypePrefixes("p\\:", "m\\:")
+@include deviceOrientationTypePrefixes("", "m\\:")
 
 @import utilities/_display
-@include deviceOrientationTypePrefixes("p\\:", "m\\:")
+@include deviceOrientationTypePrefixes("", "m\\:")
 
 @import utilities/_overflow
-@include deviceOrientationTypePrefixes("p\\:", "m\\:")
+@include deviceOrientationTypePrefixes("", "m\\:")
 
 @import utilities/_position
-@include deviceOrientationTypePrefixes("p\\:", "m\\:")
+@include deviceOrientationTypePrefixes("", "m\\:")
 
 @import utilities/_sizing
-@include deviceOrientationTypePrefixes("p\\:", "m\\:")
+@include deviceOrientationTypePrefixes("", "m\\:")
 
 @import utilities/_pseudos
-@include deviceOrientationTypePrefixes("p\\:", "m\\:")
+@include deviceOrientationTypePrefixes("", "m\\:")

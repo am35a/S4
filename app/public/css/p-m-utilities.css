@@ -1,674 +1,551 @@
 /*  alignment section: align and justify contained in classes */
-.p\:m\:align-baseline {
+.m\:align-baseline {
   vertical-align: baseline !important;
 }
-.p\:m\:align-top {
+.m\:align-top {
   vertical-align: top !important;
 }
-.p\:m\:align-middle {
+.m\:align-middle {
   vertical-align: middle !important;
 }
-.p\:m\:align-bottom {
+.m\:align-bottom {
   vertical-align: bottom !important;
 }
-.p\:m\:align-text-bottom {
+.m\:align-text-bottom {
   vertical-align: text-bottom !important;
 }
-.p\:m\:align-text-top {
+.m\:align-text-top {
   vertical-align: text-top !important;
 }
-.p\:m\:align-content-around {
+.m\:align-content-around {
   align-content: space-around !important;
 }
-.p\:m\:align-content-between {
+.m\:align-content-between {
   align-content: space-between !important;
 }
-.p\:m\:align-content-center {
+.m\:align-content-center {
   align-content: center !important;
 }
-.p\:m\:align-content-end {
+.m\:align-content-end {
   align-content: end !important;
 }
-.p\:m\:align-content-evenly {
+.m\:align-content-evenly {
   align-content: space-evenly !important;
 }
-.p\:m\:align-content-start {
+.m\:align-content-start {
   align-content: start !important;
 }
-.p\:m\:align-content-stretch {
+.m\:align-content-stretch {
   align-content: stretch !important;
 }
-.p\:m\:align-items-baseline {
+.m\:align-items-baseline {
   align-items: baseline !important;
 }
-.p\:m\:align-items-center {
+.m\:align-items-center {
   align-items: center !important;
 }
-.p\:m\:align-items-end {
+.m\:align-items-end {
   align-items: end !important;
 }
-.p\:m\:align-items-start {
+.m\:align-items-start {
   align-items: start !important;
 }
-.p\:m\:align-items-stretch {
+.m\:align-items-stretch {
   align-items: stretch !important;
 }
-.p\:m\:align-self-baseline {
+.m\:align-self-baseline {
   align-self: baseline !important;
 }
-.p\:m\:align-self-center {
+.m\:align-self-center {
   align-self: center !important;
 }
-.p\:m\:align-self-end {
+.m\:align-self-end {
   align-self: end !important;
 }
-.p\:m\:align-self-start {
+.m\:align-self-start {
   align-self: start !important;
 }
-.p\:m\:align-self-stretch {
+.m\:align-self-stretch {
   align-self: stretch !important;
 }
 
-.p\:m\:justify-content-around {
+.m\:justify-content-around {
   justify-content: space-around !important;
 }
-.p\:m\:justify-content-between {
+.m\:justify-content-between {
   justify-content: space-between !important;
 }
-.p\:m\:justify-content-center {
+.m\:justify-content-center {
   justify-content: center !important;
 }
-.p\:m\:justify-content-end {
+.m\:justify-content-end {
   justify-content: end !important;
 }
-.p\:m\:justify-content-evenly {
+.m\:justify-content-evenly {
   justify-content: space-evenly !important;
 }
-.p\:m\:justify-content-start {
+.m\:justify-content-start {
   justify-content: start !important;
 }
-.p\:m\:justify-content-stretch {
+.m\:justify-content-stretch {
   justify-content: stretch !important;
 }
-.p\:m\:justify-items-baseline {
+.m\:justify-items-baseline {
   justify-items: baseline !important;
 }
-.p\:m\:justify-items-center {
+.m\:justify-items-center {
   justify-items: center !important;
 }
-.p\:m\:justify-items-end {
+.m\:justify-items-end {
   justify-items: end !important;
 }
-.p\:m\:justify-items-start {
+.m\:justify-items-start {
   justify-items: start !important;
 }
-.p\:m\:justify-items-stretch {
+.m\:justify-items-stretch {
   justify-items: stretch !important;
 }
-.p\:m\:justify-self-auto {
+.m\:justify-self-auto {
   justify-self: auto !important;
 }
-.p\:m\:justify-self-baseline {
+.m\:justify-self-baseline {
   justify-self: baseline !important;
 }
-.p\:m\:justify-self-center {
+.m\:justify-self-center {
   justify-self: center !important;
 }
-.p\:m\:justify-self-end {
+.m\:justify-self-end {
   justify-self: end !important;
 }
-.p\:m\:justify-self-start {
+.m\:justify-self-start {
   justify-self: start !important;
 }
-.p\:m\:justify-self-stretch {
+.m\:justify-self-stretch {
   justify-self: stretch !important;
 }
 
-/*  background section: background color of accent and extra palette contained in classes */
-.bg-positive {
-  background-color: var(--positive-color) !important;
+/*  typography section: ... contained in classes */
+.m\:text-start {
+  text-align: start !important;
 }
-.bg-negative {
-  background-color: var(--negative-color) !important;
+.m\:text-center {
+  text-align: center !important;
 }
-.bg-positive-10 {
-  background-color: var(--positive-color-10) !important;
+.m\:text-end {
+  text-align: end !important;
 }
-.bg-positive-20 {
-  background-color: var(--positive-color-20) !important;
+.m\:text-justify {
+  text-align: justify !important;
 }
-.bg-positive-30 {
-  background-color: var(--positive-color-30) !important;
+.m\:text-wrap {
+  white-space: normal !important;
 }
-.bg-positive-40 {
-  background-color: var(--positive-color-40) !important;
+.m\:text-nowrap {
+  white-space: nowrap !important;
 }
-.bg-positive-50 {
-  background-color: var(--positive-color-50) !important;
+.m\:text-positive {
+  color: var(--positive-color) !important;
 }
-.bg-positive-60 {
-  background-color: var(--positive-color-60) !important;
+.m\:text-negative {
+  color: var(--negative-color) !important;
 }
-.bg-positive-70 {
-  background-color: var(--positive-color-70) !important;
+.m\:text-positive-10 {
+  color: var(--positive-color-10) !important;
 }
-.bg-positive-80 {
-  background-color: var(--positive-color-80) !important;
+.m\:text-positive-20 {
+  color: var(--positive-color-20) !important;
 }
-.bg-positive-90 {
-  background-color: var(--positive-color-90) !important;
+.m\:text-positive-30 {
+  color: var(--positive-color-30) !important;
 }
-.bg-negative-10 {
-  background-color: var(--negative-color-10) !important;
+.m\:text-positive-40 {
+  color: var(--positive-color-40) !important;
 }
-.bg-negative-20 {
-  background-color: var(--negative-color-20) !important;
+.m\:text-positive-50 {
+  color: var(--positive-color-50) !important;
 }
-.bg-negative-30 {
-  background-color: var(--negative-color-30) !important;
+.m\:text-positive-60 {
+  color: var(--positive-color-60) !important;
 }
-.bg-negative-40 {
-  background-color: var(--negative-color-40) !important;
+.m\:text-positive-70 {
+  color: var(--positive-color-70) !important;
 }
-.bg-negative-50 {
-  background-color: var(--negative-color-50) !important;
+.m\:text-positive-80 {
+  color: var(--positive-color-80) !important;
 }
-.bg-negative-60 {
-  background-color: var(--negative-color-60) !important;
+.m\:text-positive-90 {
+  color: var(--positive-color-90) !important;
 }
-.bg-negative-70 {
-  background-color: var(--negative-color-70) !important;
+.m\:text-negative-10 {
+  color: var(--negative-color-10) !important;
 }
-.bg-negative-80 {
-  background-color: var(--negative-color-80) !important;
+.m\:text-negative-20 {
+  color: var(--negative-color-20) !important;
 }
-.bg-negative-90 {
-  background-color: var(--negative-color-90) !important;
+.m\:text-negative-30 {
+  color: var(--negative-color-30) !important;
 }
-.bg-primary {
-  background-color: var(--primary-color) !important;
+.m\:text-negative-40 {
+  color: var(--negative-color-40) !important;
 }
-.bg-primary-l {
-  background-color: var(--primary-color-l) !important;
+.m\:text-negative-50 {
+  color: var(--negative-color-50) !important;
 }
-.bg-primary-d {
-  background-color: var(--primary-color-d) !important;
+.m\:text-negative-60 {
+  color: var(--negative-color-60) !important;
 }
-.bg-secondary {
-  background-color: var(--secondary-color) !important;
+.m\:text-negative-70 {
+  color: var(--negative-color-70) !important;
 }
-.bg-secondary-l {
-  background-color: var(--secondary-color-l) !important;
+.m\:text-negative-80 {
+  color: var(--negative-color-80) !important;
 }
-.bg-secondary-d {
-  background-color: var(--secondary-color-d) !important;
+.m\:text-negative-90 {
+  color: var(--negative-color-90) !important;
 }
-.bg-info {
-  background-color: var(--info-color) !important;
+.m\:text-primary {
+  color: var(--primary-color) !important;
 }
-.bg-info-l {
-  background-color: var(--info-color-l) !important;
+.m\:text-primary-l {
+  color: var(--primary-color-l) !important;
 }
-.bg-info-d {
-  background-color: var(--info-color-d) !important;
+.m\:text-primary-d {
+  color: var(--primary-color-d) !important;
 }
-.bg-success {
-  background-color: var(--success-color) !important;
+.m\:text-secondary {
+  color: var(--secondary-color) !important;
 }
-.bg-success-l {
-  background-color: var(--success-color-l) !important;
+.m\:text-secondary-l {
+  color: var(--secondary-color-l) !important;
 }
-.bg-success-d {
-  background-color: var(--success-color-d) !important;
+.m\:text-secondary-d {
+  color: var(--secondary-color-d) !important;
 }
-.bg-warning {
-  background-color: var(--warning-color) !important;
+.m\:text-info {
+  color: var(--info-color) !important;
 }
-.bg-warning-l {
-  background-color: var(--warning-color-l) !important;
+.m\:text-info-l {
+  color: var(--info-color-l) !important;
 }
-.bg-warning-d {
-  background-color: var(--warning-color-d) !important;
+.m\:text-info-d {
+  color: var(--info-color-d) !important;
 }
-.bg-error {
-  background-color: var(--error-color) !important;
+.m\:text-success {
+  color: var(--success-color) !important;
 }
-.bg-error-l {
-  background-color: var(--error-color-l) !important;
+.m\:text-success-l {
+  color: var(--success-color-l) !important;
 }
-.bg-error-d {
-  background-color: var(--error-color-d) !important;
+.m\:text-success-d {
+  color: var(--success-color-d) !important;
 }
-.bg-transparent {
-  background-color: transparent !important;
+.m\:text-warning {
+  color: var(--warning-color) !important;
+}
+.m\:text-warning-l {
+  color: var(--warning-color-l) !important;
+}
+.m\:text-warning-d {
+  color: var(--warning-color-d) !important;
+}
+.m\:text-error {
+  color: var(--error-color) !important;
+}
+.m\:text-error-l {
+  color: var(--error-color-l) !important;
+}
+.m\:text-error-d {
+  color: var(--error-color-d) !important;
+}
+.m\:text-transparent {
+  color: transparent !important;
 }
 
-/*  typography section: ... contained in classes */
-h1, .h1 {
+.m\:h1, h1 {
   font-size: var(--fs-l5) !important;
   font-weight: 600 !important;
 }
-h2, .h2 {
+.m\:h2, h2 {
   font-size: var(--fs-l4) !important;
   font-weight: 600 !important;
 }
-h3, .h3 {
+.m\:h3, h3 {
   font-size: var(--fs-l3) !important;
   font-weight: 600 !important;
 }
-h4, .h4 {
+.m\:h4, h4 {
   font-size: var(--fs-l2) !important;
   font-weight: 600 !important;
 }
-h5, .h5 {
+.m\:h5, h5 {
   font-size: var(--fs-l1) !important;
   font-weight: 600 !important;
 }
-h6, .h6 {
+.m\:h6, h6 {
   font-size: var(--fs-md) !important;
   font-weight: 600 !important;
 }
 
-.fs-s5 {
+.m\:fs-s5 {
   font-size: var(--fs-s5) !important;
 }
-.fs-s5 {
+.m\:fs-s5 {
   font-size: var(--fs-s5) !important;
 }
-.fs-s3 {
+.m\:fs-s3 {
   font-size: var(--fs-s3) !important;
 }
-.fs-s2 {
+.m\:fs-s2 {
   font-size: var(--fs-s2) !important;
 }
-.fs-s1 {
+.m\:fs-s1 {
   font-size: var(--fs-s1) !important;
 }
-.fs-md {
+.m\:fs-md {
   font-size: var(--fs-md) !important;
 }
-.fs-l1 {
+.m\:fs-l1 {
   font-size: var(--fs-l1) !important;
 }
-.fs-l2 {
+.m\:fs-l2 {
   font-size: var(--fs-l2) !important;
 }
-.fs-l3 {
+.m\:fs-l3 {
   font-size: var(--fs-l3) !important;
 }
-.fs-l4 {
+.m\:fs-l4 {
   font-size: var(--fs-l4) !important;
 }
-.fs-l5 {
+.m\:fs-l5 {
   font-size: var(--fs-l5) !important;
 }
-.fw-100 {
+.m\:fw-100 {
   font-weight: 100 !important;
 }
-.fw-200 {
+.m\:fw-200 {
   font-weight: 200 !important;
 }
-.fw-300 {
+.m\:fw-300 {
   font-weight: 300 !important;
 }
-.fw-400 {
+.m\:fw-400 {
   font-weight: 400 !important;
 }
-.fw-500 {
+.m\:fw-500 {
   font-weight: 500 !important;
 }
-.fw-600 {
+.m\:fw-600 {
   font-weight: 600 !important;
 }
-.fw-700 {
+.m\:fw-700 {
   font-weight: 700 !important;
 }
-.fw-800 {
+.m\:fw-800 {
   font-weight: 800 !important;
 }
-.fw-900 {
+.m\:fw-900 {
   font-weight: 900 !important;
 }
-.fw-unset {
+.m\:fw-unset {
   font-weight: unset !important;
 }
 
-.lh-1 {
+.m\:lh-1 {
   line-height: 1 !important;
 }
-.lh-sm {
+.m\:lh-sm {
   line-height: 1.25 !important;
 }
-.lh-md {
+.m\:lh-md {
   line-height: 1.5 !important;
 }
-.lh-lg {
+.m\:lh-lg {
   line-height: 2 !important;
 }
 
-[lang] {
-  hyphens: auto;
-}
-
-.text-hyphens {
+.m\:text-hyphens {
   hyphens: auto !important;
 }
-.text-truncate {
+.m\:text-truncate {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
 }
-.text-lowercase {
+.m\:text-lowercase {
   text-transform: lowercase !important;
 }
-.text-uppercase {
+.m\:text-uppercase {
   text-transform: uppercase !important;
 }
-.text-capitalize {
+.m\:text-capitalize {
   text-transform: capitalize !important;
 }
-.text-decoration-none {
+.m\:text-decoration-none {
   text-decoration: none !important;
 }
-.text-decoration-underline {
+.m\:text-decoration-underline {
   text-decoration: underline !important;
 }
-.text-decoration-line-through {
+.m\:text-decoration-line-through {
   text-decoration: line-through !important;
 }
 
-.p\:m\:text-start {
-  text-align: start !important;
-}
-.p\:m\:text-center {
-  text-align: center !important;
-}
-.p\:m\:text-end {
-  text-align: end !important;
-}
-.p\:m\:text-justify {
-  text-align: justify !important;
-}
-.p\:m\:text-wrap {
-  white-space: normal !important;
-}
-.p\:m\:text-nowrap {
-  white-space: nowrap !important;
-}
-.p\:m\:text-positive {
-  color: var(--positive-color) !important;
-}
-.p\:m\:text-negative {
-  color: var(--negative-color) !important;
-}
-.p\:m\:text-positive-10 {
-  color: var(--positive-color-10) !important;
-}
-.p\:m\:text-positive-20 {
-  color: var(--positive-color-20) !important;
-}
-.p\:m\:text-positive-30 {
-  color: var(--positive-color-30) !important;
-}
-.p\:m\:text-positive-40 {
-  color: var(--positive-color-40) !important;
-}
-.p\:m\:text-positive-50 {
-  color: var(--positive-color-50) !important;
-}
-.p\:m\:text-positive-60 {
-  color: var(--positive-color-60) !important;
-}
-.p\:m\:text-positive-70 {
-  color: var(--positive-color-70) !important;
-}
-.p\:m\:text-positive-80 {
-  color: var(--positive-color-80) !important;
-}
-.p\:m\:text-positive-90 {
-  color: var(--positive-color-90) !important;
-}
-.p\:m\:text-negative-10 {
-  color: var(--negative-color-10) !important;
-}
-.p\:m\:text-negative-20 {
-  color: var(--negative-color-20) !important;
-}
-.p\:m\:text-negative-30 {
-  color: var(--negative-color-30) !important;
-}
-.p\:m\:text-negative-40 {
-  color: var(--negative-color-40) !important;
-}
-.p\:m\:text-negative-50 {
-  color: var(--negative-color-50) !important;
-}
-.p\:m\:text-negative-60 {
-  color: var(--negative-color-60) !important;
-}
-.p\:m\:text-negative-70 {
-  color: var(--negative-color-70) !important;
-}
-.p\:m\:text-negative-80 {
-  color: var(--negative-color-80) !important;
-}
-.p\:m\:text-negative-90 {
-  color: var(--negative-color-90) !important;
-}
-.p\:m\:text-primary {
-  color: var(--primary-color) !important;
-}
-.p\:m\:text-primary-l {
-  color: var(--primary-color-l) !important;
-}
-.p\:m\:text-primary-d {
-  color: var(--primary-color-d) !important;
-}
-.p\:m\:text-secondary {
-  color: var(--secondary-color) !important;
-}
-.p\:m\:text-secondary-l {
-  color: var(--secondary-color-l) !important;
-}
-.p\:m\:text-secondary-d {
-  color: var(--secondary-color-d) !important;
-}
-.p\:m\:text-info {
-  color: var(--info-color) !important;
-}
-.p\:m\:text-info-l {
-  color: var(--info-color-l) !important;
-}
-.p\:m\:text-info-d {
-  color: var(--info-color-d) !important;
-}
-.p\:m\:text-success {
-  color: var(--success-color) !important;
-}
-.p\:m\:text-success-l {
-  color: var(--success-color-l) !important;
-}
-.p\:m\:text-success-d {
-  color: var(--success-color-d) !important;
-}
-.p\:m\:text-warning {
-  color: var(--warning-color) !important;
-}
-.p\:m\:text-warning-l {
-  color: var(--warning-color-l) !important;
-}
-.p\:m\:text-warning-d {
-  color: var(--warning-color-d) !important;
-}
-.p\:m\:text-error {
-  color: var(--error-color) !important;
-}
-.p\:m\:text-error-l {
-  color: var(--error-color-l) !important;
-}
-.p\:m\:text-error-d {
-  color: var(--error-color-d) !important;
-}
-.p\:m\:text-transparent {
-  color: transparent !important;
-}
-
 /*  display section: display variants contained in classes */
-.p\:m\:d-block-flow {
+.m\:d-block-flow {
   display: block flow !important;
 }
-.p\:m\:d-inline-flow {
+.m\:d-inline-flow {
   display: inline flow !important;
 }
-.p\:m\:d-inline-flow-root {
+.m\:d-inline-flow-root {
   display: inline flow-root !important;
 }
-.p\:m\:d-block-flex {
+.m\:d-block-flex {
   display: block flex !important;
 }
-.p\:m\:d-inline-flex {
+.m\:d-inline-flex {
   display: inline flex !important;
 }
-.p\:m\:d-block-grid {
+.m\:d-block-grid {
   display: block grid !important;
 }
-.p\:m\:d-inline-grid {
+.m\:d-inline-grid {
   display: inline grid !important;
 }
-.p\:m\:d-block-flow-root {
+.m\:d-block-flow-root {
   display: block flow-root !important;
 }
-.p\:m\:d-inherit {
+.m\:d-inherit {
   display: inherit !important;
 }
-.p\:m\:d-initial {
+.m\:d-initial {
   display: initial !important;
 }
-.p\:m\:d-revert {
+.m\:d-revert {
   display: revert !important;
 }
-.p\:m\:d-unset {
+.m\:d-unset {
   display: unset !important;
 }
-.p\:m\:d-contents {
+.m\:d-contents {
   display: contents !important;
 }
-.p\:m\:d-none {
+.m\:d-none {
   display: none !important;
 }
 
 /*  overflow section: overflow type and axes contained in classes */
-.p\:m\:overflow-auto {
+.m\:overflow-auto {
   overflow: auto !important;
 }
-.p\:m\:overflow-hidden {
+.m\:overflow-hidden {
   overflow: hidden !important;
 }
-.p\:m\:overflow-visible {
+.m\:overflow-visible {
   overflow: visible !important;
 }
-.p\:m\:overflow-scroll {
+.m\:overflow-scroll {
   overflow: scroll !important;
 }
-.p\:m\:overflow-x-auto {
+.m\:overflow-x-auto {
   overflow-x: auto !important;
 }
-.p\:m\:overflow-x-hidden {
+.m\:overflow-x-hidden {
   overflow-x: hidden !important;
 }
-.p\:m\:overflow-x-visible {
+.m\:overflow-x-visible {
   overflow-x: visible !important;
 }
-.p\:m\:overflow-x-scroll {
+.m\:overflow-x-scroll {
   overflow-x: scroll !important;
 }
-.p\:m\:overflow-y-auto {
+.m\:overflow-y-auto {
   overflow-y: auto !important;
 }
-.p\:m\:overflow-y-hidden {
+.m\:overflow-y-hidden {
   overflow-y: hidden !important;
 }
-.p\:m\:overflow-y-visible {
+.m\:overflow-y-visible {
   overflow-y: visible !important;
 }
-.p\:m\:overflow-y-scroll {
+.m\:overflow-y-scroll {
   overflow-y: scroll !important;
 }
 
 /*  position section: position type, float, ltrb and translate contained in classes */
-.p\:m\:position-static {
+.m\:position-static {
   position: static !important;
 }
-.p\:m\:position-relative {
+.m\:position-relative {
   position: relative !important;
 }
-.p\:m\:position-absolute {
+.m\:position-absolute {
   position: absolute !important;
 }
-.p\:m\:position-fixed {
+.m\:position-fixed {
   position: fixed !important;
 }
-.p\:m\:position-sticky {
+.m\:position-sticky {
   position: sticky !important;
 }
 
-.p\:m\:float-start {
+.m\:float-start {
   float: start !important;
 }
-.p\:m\:float-end {
+.m\:float-end {
   float: end !important;
 }
-.p\:m\:float-none {
+.m\:float-none {
   float: none !important;
 }
 
-.p\:m\:left-0 {
+.m\:left-0 {
   left: 0% !important;
 }
-.p\:m\:left-50 {
+.m\:left-50 {
   left: 50% !important;
 }
-.p\:m\:left-100 {
+.m\:left-100 {
   left: 100% !important;
 }
 
-.p\:m\:top-0 {
+.m\:top-0 {
   top: 0% !important;
 }
-.p\:m\:top-50 {
+.m\:top-50 {
   top: 50% !important;
 }
-.p\:m\:top-100 {
+.m\:top-100 {
   top: 100% !important;
 }
 
-.p\:m\:right-0 {
+.m\:right-0 {
   right: 0% !important;
 }
-.p\:m\:right-50 {
+.m\:right-50 {
   right: 50% !important;
 }
-.p\:m\:right-100 {
+.m\:right-100 {
   right: 100% !important;
 }
 
-.p\:m\:bottom-0 {
+.m\:bottom-0 {
   bottom: 0% !important;
 }
-.p\:m\:bottom-50 {
+.m\:bottom-50 {
   bottom: 50% !important;
 }
-.p\:m\:bottom-100 {
+.m\:bottom-100 {
   bottom: 100% !important;
 }
 
-.p\:m\:translate-middle {
+.m\:translate-middle {
   transform: translate(-50%, -50%) !important;
 }
-.p\:m\:translate-middle-x {
+.m\:translate-middle-x {
   transform: translateX(-50%) !important;
 }
-.p\:m\:translate-middle-y {
+.m\:translate-middle-y {
   transform: translateY(-50%) !important;
 }
 
@@ -681,54 +558,54 @@ h6, .h6 {
   box-sizing: content-box !important;
 }
 
-.p\:m\:w-0 {
+.m\:w-0 {
   width: 0% !important;
 }
-.p\:m\:w-25 {
+.m\:w-25 {
   width: 25% !important;
 }
-.p\:m\:w-50 {
+.m\:w-50 {
   width: 50% !important;
 }
-.p\:m\:w-75 {
+.m\:w-75 {
   width: 75% !important;
 }
-.p\:m\:w-100 {
+.m\:w-100 {
   width: 100% !important;
 }
-.p\:m\:w-auto {
+.m\:w-auto {
   width: auto !important;
 }
 
-.p\:m\:h-0 {
+.m\:h-0 {
   height: 0% !important;
 }
-.p\:m\:h-25 {
+.m\:h-25 {
   height: 25% !important;
 }
-.p\:m\:h-50 {
+.m\:h-50 {
   height: 50% !important;
 }
-.p\:m\:h-75 {
+.m\:h-75 {
   height: 75% !important;
 }
-.p\:m\:h-100 {
+.m\:h-100 {
   height: 100% !important;
 }
-.p\:m\:h-auto {
+.m\:h-auto {
   height: auto !important;
 }
 
-.p\:m\:resize-none {
+.m\:resize-none {
   resize: none !important;
 }
-.p\:m\:resize-both {
+.m\:resize-both {
   resize: both !important;
 }
-.p\:m\:resize-horizontal {
+.m\:resize-horizontal {
   resize: horizontal !important;
 }
-.p\:m\:resize-vertical {
+.m\:resize-vertical {
   resize: vertical !important;
 }
 
@@ -737,53 +614,58 @@ h6, .h6 {
   display: none !important;
 }
 
-.p\:m\:w-0 {
+/*  for all tags contained lang attribute activated hyphenation */
+[lang] {
+  hyphens: auto;
+}
+
+.m\:w-0 {
   width: 0% !important;
 }
-.p\:m\:w-25 {
+.m\:w-25 {
   width: 25% !important;
 }
-.p\:m\:w-50 {
+.m\:w-50 {
   width: 50% !important;
 }
-.p\:m\:w-75 {
+.m\:w-75 {
   width: 75% !important;
 }
-.p\:m\:w-100 {
+.m\:w-100 {
   width: 100% !important;
 }
-.p\:m\:w-auto {
+.m\:w-auto {
   width: auto !important;
 }
 
-.p\:m\:h-0 {
+.m\:h-0 {
   height: 0% !important;
 }
-.p\:m\:h-25 {
+.m\:h-25 {
   height: 25% !important;
 }
-.p\:m\:h-50 {
+.m\:h-50 {
   height: 50% !important;
 }
-.p\:m\:h-75 {
+.m\:h-75 {
   height: 75% !important;
 }
-.p\:m\:h-100 {
+.m\:h-100 {
   height: 100% !important;
 }
-.p\:m\:h-auto {
+.m\:h-auto {
   height: auto !important;
 }
 
-.p\:m\:resize-none {
+.m\:resize-none {
   resize: none !important;
 }
-.p\:m\:resize-both {
+.m\:resize-both {
   resize: both !important;
 }
-.p\:m\:resize-horizontal {
+.m\:resize-horizontal {
   resize: horizontal !important;
 }
-.p\:m\:resize-vertical {
+.m\:resize-vertical {
   resize: vertical !important;
 }

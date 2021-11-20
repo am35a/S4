@@ -1,10 +1,11 @@
+// ("l\\:", "m\\:") activate .l-m-utilities.css rules only for landscape orientation mobile devices
+
 @import utilities/_alignment
 @include deviceOrientationTypePrefixes("l\\:", "m\\:")
 
-// unset eviceOrientationTypePrefixes as default
-// use "l\\:", "m\\:" to activate for lamdscape/mobile
-@import utilities/_background
-@include deviceOrientationTypePrefixes("", "")
+// default for all
+// @import utilities/_background
+// @include deviceOrientationTypePrefixes("", "")
 
 @import utilities/_typography
 @include deviceOrientationTypePrefixes("l\\:", "m\\:")
