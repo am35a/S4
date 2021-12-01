@@ -7,7 +7,7 @@ $placement-directions: left, top, right, bottom
 /*
     border section: border round, sizes, placement, color of accent and extra palette contained in classes
 
-@mixin deviceOrientationTypePrefixes($orientation, $type)
+@mixin _border($orientation, $type)
     .#{$orientation}#{$type}border
         border: calc(var(--key-size) * .0625) solid var(--border-color, currentColor) !important
         @each $item in $placement-directions

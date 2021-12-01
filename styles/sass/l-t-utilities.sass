@@ -3,26 +3,29 @@
 // ("", "t\\:") activate .l-t-utilities.css rules for all tablet devices
 
 @import utilities/_alignment
-@include deviceOrientationTypePrefixes("", "t\\:")
+@include _alignment("", "t\\:")
 
 // default for all
 // @import utilities/_background
-// @include deviceOrientationTypePrefixes("", "")
+// @include _background("", "")
 
 @import utilities/_typography
-@include deviceOrientationTypePrefixes("", "t\\:")
+@include _typography("", "t\\:")
 
 @import utilities/_display
-@include deviceOrientationTypePrefixes("", "t\\:")
+@include _display("", "t\\:")
 
 @import utilities/_overflow
-@include deviceOrientationTypePrefixes("", "t\\:")
+@include _overflow("", "t\\:")
 
 @import utilities/_position
-@include deviceOrientationTypePrefixes("", "t\\:")
+@include _position("", "t\\:")
 
 @import utilities/_sizing
-@include deviceOrientationTypePrefixes("", "t\\:")
+@include _sizing("", "t\\:")
+
+@import utilities/_spacing
+@include _spacing("", "t\\:")
 
 @import utilities/_pseudos
-@include deviceOrientationTypePrefixes("", "t\\:")
+// @include _pseudos("", "t\\:")

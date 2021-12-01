@@ -1,26 +1,29 @@
 // ("l\\:", "m\\:") activate .l-m-utilities.css rules only for landscape orientation mobile devices
 
 @import utilities/_alignment
-@include deviceOrientationTypePrefixes("l\\:", "m\\:")
+@include _alignment("l\\:", "m\\:")
 
 // default for all
 // @import utilities/_background
-// @include deviceOrientationTypePrefixes("", "")
+// @include _background("", "")
 
 @import utilities/_typography
-@include deviceOrientationTypePrefixes("l\\:", "m\\:")
+@include _typography("l\\:", "m\\:")
 
 @import utilities/_display
-@include deviceOrientationTypePrefixes("l\\:", "m\\:")
+@include _display("l\\:", "m\\:")
 
 @import utilities/_overflow
-@include deviceOrientationTypePrefixes("l\\:", "m\\:")
+@include _overflow("l\\:", "m\\:")
 
 @import utilities/_position
-@include deviceOrientationTypePrefixes("l\\:", "m\\:")
+@include _position("l\\:", "m\\:")
 
 @import utilities/_sizing
-@include deviceOrientationTypePrefixes("l\\:", "m\\:")
+@include _sizing("l\\:", "m\\:")
+
+@import utilities/_spacing
+@include _spacing("l\\:", "m\\:")
 
 @import utilities/_pseudos
-@include deviceOrientationTypePrefixes("l\\:", "m\\:")
+// @include _pseudos("l\\:", "m\\:")

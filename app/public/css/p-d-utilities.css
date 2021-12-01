@@ -434,7 +434,7 @@
   display: none !important;
 }
 
-/*  overflow section: overflow type and axes contained in classes */
+/*  overflow section: overflow type and axis contained in classes */
 .p\:overflow-auto {
   overflow: auto !important;
 }
@@ -558,6 +558,44 @@
   box-sizing: content-box !important;
 }
 
+.p\:min-w-0 {
+  min-width: 0% !important;
+}
+.p\:min-w-25 {
+  min-width: 25% !important;
+}
+.p\:min-w-50 {
+  min-width: 50% !important;
+}
+.p\:min-w-75 {
+  min-width: 75% !important;
+}
+.p\:min-w-100 {
+  min-width: 100% !important;
+}
+.p\:min-w-auto {
+  min-width: auto !important;
+}
+
+.p\:min-h-0 {
+  min-height: 0% !important;
+}
+.p\:min-h-25 {
+  min-height: 25% !important;
+}
+.p\:min-h-50 {
+  min-height: 50% !important;
+}
+.p\:min-h-75 {
+  min-height: 75% !important;
+}
+.p\:min-h-100 {
+  min-height: 100% !important;
+}
+.p\:min-h-auto {
+  min-height: auto !important;
+}
+
 .p\:w-0 {
   width: 0% !important;
 }
@@ -596,6 +634,44 @@
   height: auto !important;
 }
 
+.p\:max-w-0 {
+  max-width: 0% !important;
+}
+.p\:max-w-25 {
+  max-width: 25% !important;
+}
+.p\:max-w-50 {
+  max-width: 50% !important;
+}
+.p\:max-w-75 {
+  max-width: 75% !important;
+}
+.p\:max-w-100 {
+  max-width: 100% !important;
+}
+.p\:max-w-auto {
+  max-width: auto !important;
+}
+
+.p\:max-h-0 {
+  max-height: 0% !important;
+}
+.p\:max-h-25 {
+  max-height: 25% !important;
+}
+.p\:max-h-50 {
+  max-height: 50% !important;
+}
+.p\:max-h-75 {
+  max-height: 75% !important;
+}
+.p\:max-h-100 {
+  max-height: 100% !important;
+}
+.p\:max-h-auto {
+  max-height: auto !important;
+}
+
 .p\:resize-none {
   resize: none !important;
 }
@@ -607,60 +683,121 @@
 }
 .p\:resize-vertical {
   resize: vertical !important;
+}
+
+/*  spacing section: width, height, box-sizing and resize types contained in classes */
+.p\:m-0 {
+  margin: unset !important;
+}
+.p\:m-1 {
+  margin: calc(var(--key-size) * 0.25) !important;
+}
+.p\:m-2 {
+  margin: calc(var(--key-size) * 0.5) !important;
+}
+.p\:m-3 {
+  margin: calc(var(--key-size) * 0.75) !important;
+}
+.p\:m-4 {
+  margin: calc(var(--key-size) * 1) !important;
+}
+.p\:m-5 {
+  margin: calc(var(--key-size) * 1.25) !important;
+}
+.p\:m-6 {
+  margin: calc(var(--key-size) * 1.5) !important;
+}
+.p\:m-7 {
+  margin: calc(var(--key-size) * 1.75) !important;
+}
+.p\:m-8 {
+  margin: calc(var(--key-size) * 2) !important;
+}
+.p\:m-auto {
+  margin: auto !important;
+}
+.p\:mx-0 {
+  margin-left: unset !important;
+  margin-right: unset !important;
+}
+.p\:my-0 {
+  margin-top: unset !important;
+  margin-bottom: unset !important;
+}
+.p\:mx-1 {
+  margin-left: calc(var(--key-size) * 0.25) !important;
+  margin-right: calc(var(--key-size) * 0.25) !important;
+}
+.p\:my-1 {
+  margin-top: calc(var(--key-size) * 0.25) !important;
+  margin-bottom: calc(var(--key-size) * 0.25) !important;
+}
+.p\:mx-2 {
+  margin-left: calc(var(--key-size) * 0.5) !important;
+  margin-right: calc(var(--key-size) * 0.5) !important;
+}
+.p\:my-2 {
+  margin-top: calc(var(--key-size) * 0.5) !important;
+  margin-bottom: calc(var(--key-size) * 0.5) !important;
+}
+.p\:mx-3 {
+  margin-left: calc(var(--key-size) * 0.75) !important;
+  margin-right: calc(var(--key-size) * 0.75) !important;
+}
+.p\:my-3 {
+  margin-top: calc(var(--key-size) * 0.75) !important;
+  margin-bottom: calc(var(--key-size) * 0.75) !important;
+}
+.p\:mx-4 {
+  margin-left: calc(var(--key-size) * 1) !important;
+  margin-right: calc(var(--key-size) * 1) !important;
+}
+.p\:my-4 {
+  margin-top: calc(var(--key-size) * 1) !important;
+  margin-bottom: calc(var(--key-size) * 1) !important;
+}
+.p\:mx-5 {
+  margin-left: calc(var(--key-size) * 1.25) !important;
+  margin-right: calc(var(--key-size) * 1.25) !important;
+}
+.p\:my-5 {
+  margin-top: calc(var(--key-size) * 1.25) !important;
+  margin-bottom: calc(var(--key-size) * 1.25) !important;
+}
+.p\:mx-6 {
+  margin-left: calc(var(--key-size) * 1.5) !important;
+  margin-right: calc(var(--key-size) * 1.5) !important;
+}
+.p\:my-6 {
+  margin-top: calc(var(--key-size) * 1.5) !important;
+  margin-bottom: calc(var(--key-size) * 1.5) !important;
+}
+.p\:mx-7 {
+  margin-left: calc(var(--key-size) * 1.75) !important;
+  margin-right: calc(var(--key-size) * 1.75) !important;
+}
+.p\:my-7 {
+  margin-top: calc(var(--key-size) * 1.75) !important;
+  margin-bottom: calc(var(--key-size) * 1.75) !important;
+}
+.p\:mx-8 {
+  margin-left: calc(var(--key-size) * 2) !important;
+  margin-right: calc(var(--key-size) * 2) !important;
+}
+.p\:my-8 {
+  margin-top: calc(var(--key-size) * 2) !important;
+  margin-bottom: calc(var(--key-size) * 2) !important;
+}
+.p\:mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.p\:my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
 }
 
 /*  hide container if empty  */
 .empty-none:empty {
   display: none !important;
-}
-
-.p\:w-0 {
-  width: 0% !important;
-}
-.p\:w-25 {
-  width: 25% !important;
-}
-.p\:w-50 {
-  width: 50% !important;
-}
-.p\:w-75 {
-  width: 75% !important;
-}
-.p\:w-100 {
-  width: 100% !important;
-}
-.p\:w-auto {
-  width: auto !important;
-}
-
-.p\:h-0 {
-  height: 0% !important;
-}
-.p\:h-25 {
-  height: 25% !important;
-}
-.p\:h-50 {
-  height: 50% !important;
-}
-.p\:h-75 {
-  height: 75% !important;
-}
-.p\:h-100 {
-  height: 100% !important;
-}
-.p\:h-auto {
-  height: auto !important;
-}
-
-.p\:resize-none {
-  resize: none !important;
-}
-.p\:resize-both {
-  resize: both !important;
-}
-.p\:resize-horizontal {
-  resize: horizontal !important;
-}
-.p\:resize-vertical {
-  resize: vertical !important;
 }

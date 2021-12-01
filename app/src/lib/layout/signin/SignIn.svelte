@@ -5,7 +5,7 @@
 <main class="signin">
     <div class="body">
         <div class="logo">
-            <img class="logo-full" src="../images/logo-full.svg" alt="{$appData.title}">
+            <img class="logo-full" src="../images/logo.svg" alt="{$appData.title}">
         </div>
         <div class="title">Демонстрационный стенд</div>
         <form class="form d-grid g-4">
@@ -30,10 +30,10 @@
         grid-column: 1/-1
         grid-row: 1/-1
         display: grid
-        background-image: url(../images/bkg-login-page.svg)
-        background-position: left center
-        background-repeat: no-repeat
-        background-size: cover
+        // background-image: url(../images/bkg-login-page.svg)
+        // background-position: left center
+        // background-repeat: no-repeat
+        // background-size: cover
         overflow-x: hidden
         overflow-y: auto
         .body,

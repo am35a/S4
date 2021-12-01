@@ -3,26 +3,29 @@
 // ("", "m\\:") activate .p-m-utilities.css rules for all mobile devices
 
 @import utilities/_alignment
-@include deviceOrientationTypePrefixes("", "m\\:")
+@include _alignment("", "m\\:")
 
 // default for all
 // @import utilities/_background
-// @include deviceOrientationTypePrefixes("", "")
+// @include _background("", "")
 
 @import utilities/_typography
-@include deviceOrientationTypePrefixes("", "m\\:")
+@include _typography("", "m\\:")
 
 @import utilities/_display
-@include deviceOrientationTypePrefixes("", "m\\:")
+@include _display("", "m\\:")
 
 @import utilities/_overflow
-@include deviceOrientationTypePrefixes("", "m\\:")
+@include _overflow("", "m\\:")
 
 @import utilities/_position
-@include deviceOrientationTypePrefixes("", "m\\:")
+@include _position("", "m\\:")
 
 @import utilities/_sizing
-@include deviceOrientationTypePrefixes("", "m\\:")
+@include _sizing("", "m\\:")
+
+@import utilities/_spacing
+@include _spacing("", "m\\:")
 
 @import utilities/_pseudos
-@include deviceOrientationTypePrefixes("", "m\\:")
+// @include _pseudos("", "m\\:")

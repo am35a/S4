@@ -1,26 +1,29 @@
 // ("p\\:", "t\\:") activate .p-t-utilities.css rules only for portrait orientation tablet devices
 
 @import utilities/_alignment
-@include deviceOrientationTypePrefixes("p\\:", "t\\:")
+@include _alignment("p\\:", "t\\:")
 
 // default for all
 // @import utilities/_background
-// @include deviceOrientationTypePrefixes("", "")
+// @include _background("", "")
 
 @import utilities/_typography
-@include deviceOrientationTypePrefixes("p\\:", "t\\:")
+@include _typography("p\\:", "t\\:")
 
 @import utilities/_display
-@include deviceOrientationTypePrefixes("p\\:", "t\\:")
+@include _display("p\\:", "t\\:")
 
 @import utilities/_overflow
-@include deviceOrientationTypePrefixes("p\\:", "t\\:")
+@include _overflow("p\\:", "t\\:")
 
 @import utilities/_position
-@include deviceOrientationTypePrefixes("p\\:", "t\\:")
+@include _position("p\\:", "t\\:")
 
 @import utilities/_sizing
-@include deviceOrientationTypePrefixes("p\\:", "t\\:")
+@include _sizing("p\\:", "t\\:")
+
+@import utilities/_spacing
+@include _spacing("p\\:", "t\\:")
 
 @import utilities/_pseudos
-@include deviceOrientationTypePrefixes("p\\:", "t\\:")
+// @include _pseudos("p\\:", "t\\:")

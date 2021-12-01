@@ -258,11 +258,17 @@ progress {
 }
 
 :root {
-  --key-size-d16: var(--key-size) * .0625;
-  --key-size-d8: var(--key-size) * .125;
-  --key-size-d4: var(--key-size) * .25;
-  --key-size-d2: var(--key-size) * .5;
+  --key-size-1: calc(var(--key-size) * .0625);
+  --key-size-2: calc(var(--key-size) * .125);
+  --key-size-4: calc(var(--key-size) * .25);
+  --key-size-8: calc(var(--key-size) * .5);
+  --key-size-12: calc(var(--key-size) * .75);
   --key-size: 1rem;
+  --key-size-18: calc(var(--key-size) * 1.125);
+  --key-size-20: calc(var(--key-size) * 1.25);
+  --key-size-24: calc(var(--key-size) * 1.5);
+  --key-size-28: calc(var(--key-size) * 1.75);
+  --key-size-32: calc(var(--key-size) * 2);
   --space-size-offset: 1;
   --font-size-offset: 1;
   --fs-s5: calc(var(--key-size) / calc(3 * var(--font-size-offset)));

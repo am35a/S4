@@ -1,17 +1,17 @@
 $overflow: auto, hidden, visible, scroll
-$overflow-axes: x, y
+$overflow-axis: x, y
 
 /*
-    overflow section: overflow type and axes contained in classes
+    overflow section: overflow type and axis contained in classes
 
-@mixin deviceOrientationTypePrefixes($orientation, $type)
+@mixin _overflow($orientation, $type)
     .#{$orientation}#{$type}overflow
         @each $item in $overflow
             &-#{$item}
                overflow: #{$item} !important
 
-        @each $axes in $overflow-axes
-            &-#{$axes}
+        @each $axis in $overflow-axis
+            &-#{$axis}
                 @each $item in $overflow
                     &-#{$item}
-                        overflow-#{$axes}: #{$item} !important
+                        overflow-#{$axis}: #{$item} !important

@@ -3,26 +3,29 @@
 // ("p\\:", "") activate .p-d-utilities.css rules for all portrait orientation devices
 
 @import utilities/_alignment
-@include deviceOrientationTypePrefixes("p\\:", "")
+@include _alignment("p\\:", "")
 
 // default for all
 // @import utilities/_background
-// @include deviceOrientationTypePrefixes("", "")
+// @include _background("", "")
 
 @import utilities/_typography
-@include deviceOrientationTypePrefixes("p\\:", "")
+@include _typography("p\\:", "")
 
 @import utilities/_display
-@include deviceOrientationTypePrefixes("p\\:", "")
+@include _display("p\\:", "")
 
 @import utilities/_overflow
-@include deviceOrientationTypePrefixes("p\\:", "")
+@include _overflow("p\\:", "")
 
 @import utilities/_position
-@include deviceOrientationTypePrefixes("p\\:", "")
+@include _position("p\\:", "")
 
 @import utilities/_sizing
-@include deviceOrientationTypePrefixes("p\\:", "")
+@include _sizing("p\\:", "")
+
+@import utilities/_spacing
+@include _spacing("p\\:", "")
 
 @import utilities/_pseudos
-@include deviceOrientationTypePrefixes("p\\:", "")
+// @include _pseudos("p\\:", "")

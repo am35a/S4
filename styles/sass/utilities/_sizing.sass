@@ -2,25 +2,28 @@
 
 $re-sizing: none, both, horizontal, vertical
 
+$sizing-level: min-, '', max-
+
 $default-sizing-step: 25
 
 /*
     sizing section: width, height, box-sizing and resize types contained in classes
 
-@mixin deviceOrientationTypePrefixes($orientation, $type)
-    .#{$orientation}#{$type}w
-        @for $i from 0 through math.div(100, $default-sizing-step)
-            &-#{$i * $default-sizing-step}
-                width: #{$i * $default-sizing-step + '%'} !important
-        &-auto
-            width: auto !important
+@mixin _sizing($orientation, $type)
+    @each $item in $sizing-level
+        .#{$orientation}#{$type}#{$item}w
+            @for $i from 0 through math.div(100, $default-sizing-step)
+                &-#{$i * $default-sizing-step}
+                    #{$item}width: #{$i * $default-sizing-step + '%'} !important
+            &-auto
+                #{$item}width: auto !important
 
-    .#{$orientation}#{$type}h
-        @for $i from 0 through math.div(100, $default-sizing-step)
-            &-#{$i * $default-sizing-step}
-                height: #{$i * $default-sizing-step + '%'} !important
-        &-auto
-            height: auto !important
+        .#{$orientation}#{$type}#{$item}h
+            @for $i from 0 through math.div(100, $default-sizing-step)
+                &-#{$i * $default-sizing-step}
+                    #{$item}height: #{$i * $default-sizing-step + '%'} !important
+            &-auto
+                #{$item}height: auto !important
 
     .#{$orientation}#{$type}resize
         @each $item in $re-sizing
