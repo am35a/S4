@@ -37,48 +37,47 @@
 
     // - Colors
     // - - Default colors
-    --positive-color:    hsl(0, 0%, 100%)
-    --positive-color-90: hsla(0, 0%, 100%, .9)
-    --positive-color-80: hsla(0, 0%, 100%, .8)
-    --positive-color-70: hsla(0, 0%, 100%, .7)
-    --positive-color-60: hsla(0, 0%, 100%, .6)
-    --positive-color-50: hsla(0, 0%, 100%, .5)
-    --positive-color-40: hsla(0, 0%, 100%, .4)
-    --positive-color-30: hsla(0, 0%, 100%, .3)
-    --positive-color-20: hsla(0, 0%, 100%, .2)
-    --positive-color-10: hsla(0, 0%, 100%, .1)
-    --negative-color-10: hsla(0, 0%, 0%, .1)
-    --negative-color-20: hsla(0, 0%, 0%, .2)
-    --negative-color-30: hsla(0, 0%, 0%, .3)
-    --negative-color-40: hsla(0, 0%, 0%, .4)
-    --negative-color-50: hsla(0, 0%, 0%, .5)
-    --negative-color-60: hsla(0, 0%, 0%, .6)
-    --negative-color-70: hsla(0, 0%, 0%, .7)
-    --negative-color-80: hsla(0, 0%, 0%, .8)
-    --negative-color-90: hsla(0, 0%, 0%, .9)
-    --negative-color:    hsl(0, 0%, 0%)
+    --positive-color:    hsl(0 0% 100%)
+    --positive-color-90: hsl(0 0% 100% / .9)
+    --positive-color-80: hsl(0 0% 100% / .8)
+    --positive-color-70: hsl(0 0% 100% / .7)
+    --positive-color-60: hsl(0 0% 100% / .6)
+    --positive-color-50: hsl(0 0% 100% / .5)
+    --positive-color-40: hsl(0 0% 100% / .4)
+    --positive-color-30: hsl(0 0% 100% / .3)
+    --positive-color-20: hsl(0 0% 100% / .2)
+    --positive-color-10: hsl(0 0% 100% / .1)
+    --negative-color-10: hsl(0 0% 0% / .1)
+    --negative-color-20: hsl(0 0% 0% / .2)
+    --negative-color-30: hsl(0 0% 0% / .3)
+    --negative-color-40: hsl(0 0% 0% / .4)
+    --negative-color-50: hsl(0 0% 0% / .5)
+    --negative-color-60: hsl(0 0% 0% / .6)
+    --negative-color-70: hsl(0 0% 0% / .7)
+    --negative-color-80: hsl(0 0% 0% / .8)
+    --negative-color-90: hsl(0 0% 0% / .9)
+    --negative-color:    hsl(0 0% 0%)
 
     // - - Accent colors
-    --primary-color-l:   hsl(210, 90%, 65%)
-    --primary-color:     hsl(210, 90%, 50%)
-    --primary-color-d:   hsl(210, 90%, 35%)
+    --primary-color-h: 210
+    --primary-color-s: 90%
+    --secondary-color-h: 210
+    --secondary-color-s: 10%
+    --info-color-h: 190
+    --info-color-s: 90%
+    --success-color-h: 120
+    --success-color-s: 50%
+    --warning-color-h: 40
+    --warning-color-s: 90%
+    --error-color-h: 0
+    --error-color-s: 50%
 
-    --secondary-color-l: hsl(210, 10%, 65%)
-    --secondary-color:   hsl(210, 10%, 50%)
-    --secondary-color-d: hsl(210, 10%, 35%)
+    --accent-colors-l: 50%
+    --accent-colors-l-offset: 15%
 
-    --info-color-l:      hsl(190, 90%, 65%)
-    --info-color:        hsl(190, 90%, 50%)
-    --info-color-d:      hsl(190, 90%, 35%)
-
-    --success-color-l:   hsl(120, 50%, 65%)
-    --success-color:     hsl(120, 50%, 50%)
-    --success-color-d:   hsl(120, 50%, 35%)
-
-    --warning-color-l:   hsl(40, 90%, 65%)
-    --warning-color:     hsl(40, 90%, 50%)
-    --warning-color-d:   hsl(40, 90%, 35%)
-
-    --error-color-l:     hsl(0, 50%, 65%)
-    --error-color:       hsl(0, 50%, 50%)
-    --error-color-d:     hsl(0, 50%, 35%)
+    $accentColorsNames: primary, secondary, info, success, warning, error
+    
+    @each $accentColorsName in $accentColorsNames
+        --#{$accentColorsName}-color-l: hsl(var(--#{$accentColorsName}-color-h) var(--#{$accentColorsName}-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)))
+        --#{$accentColorsName}-color: hsl(var(--#{$accentColorsName}-color-h) var(--#{$accentColorsName}-color-s) var(--accent-colors-l))
+        --#{$accentColorsName}-color-d: hsl(var(--#{$accentColorsName}-color-h) var(--#{$accentColorsName}-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)))
