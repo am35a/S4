@@ -1,38 +1,34 @@
 @use "sass:math"
 
-@import __variables
-
-$placement-directions: left, top, right, bottom
-
 /*
     border section: border round, sizes, placement, color of accent and extra palette contained in classes
 
 @mixin _border($orientation, $type)
     .#{$orientation}#{$type}border
         border: calc(var(--key-size) * .0625) solid var(--border-color, currentColor) !important
-        @each $item in $placement-directions
+        @each $item in $placementDirections
             &-#{$item}
                 border-#{$item}: calc(var(--key-size) * .0625) solid var(--border-color, currentColor) !important
 
         &-0
             border: 0 !important
-        @each $item in $placement-directions
+        @each $item in $placementDirections
             &-#{$item}-0
                 border-#{$item}: 0 !important
 
-        @each $item in $default-colors
+        @each $item in $defaultColors
             &-#{$item}
-                border-color: var(#{'--' + $item + '-color'}) !important
-        @each $item in $default-colors
-            @for $i from 1 through math.div(100, $default-extra-colors-step) - 1
-                &#{'-' + $item + '-' + $i * $default-extra-colors-step}
-                    border-color: var(#{'--' + $item + '-color' + '-' + $i * $default-extra-colors-step}) !important
-        @each $item in $accent-colors
+                border-color: var(--#{$item}-color) !important
+        @each $item in $defaultColors
+            @for $i from 1 through math.div(100, $defaultExtraColorsInterval) - 1
+                &#{'-' + $item + '-' + $i * $defaultExtraColorsInterval}
+                    border-color: var(--#{$item}-color-#{$i * $defaultExtraColorsInterval}) !important
+        @each $item in $accentColors
             &-#{$item}
-               border-color: var(#{'--' + $item + '-color'}) !important
-            @each $pref in $accent-extra-colors-prefs
+               border-color: var(--#{$item}-color) !important
+            @each $pref in $accentExtraColorsPrefs
                 &-#{$item + '-' + $pref}
-                    border-color: var(#{'--' + $item + '-color-' + $pref}) !important
+                    border-color: var(--#{$item}-color-#{$pref}) !important
         &-transparent
             border-color: transparent !important
 

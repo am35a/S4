@@ -1,5 +1,5 @@
 $overflow: auto, hidden, visible, scroll
-$overflow-axis: x, y
+$overflowAxises: x, y
 
 /*
     overflow section: overflow type and axis contained in classes
@@ -10,7 +10,7 @@ $overflow-axis: x, y
             &-#{$item}
                overflow: #{$item} !important
 
-        @each $axis in $overflow-axis
+        @each $axis in $overflowAxises
             &-#{$axis}
                 @each $item in $overflow
                     &-#{$item}

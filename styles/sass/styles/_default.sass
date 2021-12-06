@@ -75,9 +75,7 @@
     --accent-colors-l: 50%
     --accent-colors-l-offset: 15%
 
-    $accentColorsNames: primary, secondary, info, success, warning, error
-    
-    @each $accentColorsName in $accentColorsNames
-        --#{$accentColorsName}-color-l: hsl(var(--#{$accentColorsName}-color-h) var(--#{$accentColorsName}-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)))
-        --#{$accentColorsName}-color: hsl(var(--#{$accentColorsName}-color-h) var(--#{$accentColorsName}-color-s) var(--accent-colors-l))
-        --#{$accentColorsName}-color-d: hsl(var(--#{$accentColorsName}-color-h) var(--#{$accentColorsName}-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)))
+    @each $accentColor in $accentColors
+        --#{$accentColor}-color-l: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)))
+        --#{$accentColor}-color: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) var(--accent-colors-l))
+        --#{$accentColor}-color-d: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)))

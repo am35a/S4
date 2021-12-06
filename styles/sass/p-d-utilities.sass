@@ -1,3 +1,5 @@
+@import __variables
+
 // ! use "p\\:", "d\\:" to activate only for portrait/desktop
 
 // ("p\\:", "") activate .p-d-utilities.css rules for all portrait orientation devices
@@ -23,6 +25,8 @@
 
 @import utilities/_sizing
 @include _sizing("p\\:", "")
+
+// @import utilities/_shadow
 
 @import utilities/_spacing
 @include _spacing("p\\:", "")

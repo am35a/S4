@@ -1,3 +1,5 @@
+@import __variables
+
 // ("l\\:", "m\\:") activate .l-m-utilities.css rules only for landscape orientation mobile devices
 
 @import utilities/_alignment
@@ -21,6 +23,8 @@
 
 @import utilities/_sizing
 @include _sizing("l\\:", "m\\:")
+
+// @import utilities/_shadow
 
 @import utilities/_spacing
 @include _spacing("l\\:", "m\\:")

@@ -1,8 +1,8 @@
 // @use "sass:math"
 
-$spacing-step: 8
-// $spacing-axis: x, y
-$spacing-directions: l, t, r, b
+$spacingStep: 8
+// $spacingAxises: x, y
+// $spacingDirections: l, t, r, b
     
 /*
     spacing section: width, height, box-sizing and resize types contained in classes
@@ -11,9 +11,9 @@ $spacing-directions: l, t, r, b
     .#{$orientation}#{$type}m
         &-0
             margin: unset !important
-        @for $i from 1 through $spacing-step
+        @for $i from 1 through $spacingStep
             &-#{$i}
-                margin: calc(var(--key-size) * #{$i * 0.25 }) !important
+                margin: calc(var(--key-size) * #{$i * 0.25}) !important
         &-auto
             margin: auto !important
 
@@ -23,13 +23,13 @@ $spacing-directions: l, t, r, b
         &y-0
             margin-top: unset !important
             margin-bottom: unset !important
-        @for $i from 1 through $spacing-step
+        @for $i from 1 through $spacingStep
             &x-#{$i}
-                margin-left: calc(var(--key-size) * #{$i * 0.25 }) !important
-                margin-right: calc(var(--key-size) * #{$i * 0.25 }) !important
+                margin-left: calc(var(--key-size) * #{$i * 0.25}) !important
+                margin-right: calc(var(--key-size) * #{$i * 0.25}) !important
             &y-#{$i}
-                margin-top: calc(var(--key-size) * #{$i * 0.25 }) !important
-                margin-bottom: calc(var(--key-size) * #{$i * 0.25 }) !important
+                margin-top: calc(var(--key-size) * #{$i * 0.25}) !important
+                margin-bottom: calc(var(--key-size) * #{$i * 0.25}) !important
         &x-auto
             margin-left: auto !important
             margin-right: auto !important

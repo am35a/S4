@@ -1,3 +1,5 @@
+@import __variables
+
 // ("p\\:", "t\\:") activate .p-t-utilities.css rules only for portrait orientation tablet devices
 
 @import utilities/_alignment
@@ -21,6 +23,8 @@
 
 @import utilities/_sizing
 @include _sizing("p\\:", "t\\:")
+
+// @import utilities/_shadow
 
 @import utilities/_spacing
 @include _spacing("p\\:", "t\\:")

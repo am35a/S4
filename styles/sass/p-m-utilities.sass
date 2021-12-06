@@ -1,3 +1,5 @@
+@import __variables
+
 // ! use "p\\:", "m\\:" to activate only for portrait/mobile
 
 // ("", "m\\:") activate .p-m-utilities.css rules for all mobile devices
@@ -23,6 +25,8 @@
 
 @import utilities/_sizing
 @include _sizing("", "m\\:")
+
+// @import utilities/_shadow
 
 @import utilities/_spacing
 @include _spacing("", "m\\:")

@@ -1,22 +1,22 @@
-// $display-legacy: block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root
-$display-modern: ( block-flow: block flow, inline-flow: inline flow, inline-flow-root: inline flow-root, block-flex: block flex, inline-flex: inline flex, block-grid: block grid, inline-grid: inline grid, block-flow-root: block flow-root )
-$display-global: inherit, initial, revert, unset
-$display-box: contents, none
+// $displayLegacy: block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root
+$displayModern: ( block-flow: block flow, inline-flow: inline flow, inline-flow-root: inline flow-root, block-flex: block flex, inline-flex: inline flex, block-grid: block grid, inline-grid: inline grid, block-flow-root: block flow-root )
+$displayGlobal: inherit, initial, revert, unset
+$displayBox: contents, none
 
 /*
     display section: display variants contained in classes
 
 @mixin _display($orientation, $type)
     .#{$orientation}#{$type}d
-        // @each $item in $display-legacy
+        // @each $item in $displayLegacy
         //     &-#{$item}
         //        display: #{$item} !important
-        @each $item-name, $item-value in $display-modern
+        @each $item-name, $item-value in $displayModern
             &-#{$item-name}
                display: #{$item-value} !important
-        @each $item in $display-global
+        @each $item in $displayGlobal
             &-#{$item}
                display: #{$item} !important
-        @each $item in $display-box
+        @each $item in $displayBox
             &-#{$item}
                display: #{$item} !important

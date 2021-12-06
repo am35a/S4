@@ -1,12 +1,12 @@
 @use "sass:list"
 
 $align: baseline, top, middle, bottom, text-bottom, text-top
-$align-content: ( around: space-around, between: space-between, center: center, end: end, evenly: space-evenly, start: start, stretch: stretch )
-$align-items: baseline, center, end, start, stretch
-$align-self: $align-items
-$justify-content: $align-content
-$justify-items: $align-items
-$justify-self: list.join( auto, $align-self)
+$alignContent: ( around: space-around, between: space-between, center: center, end: end, evenly: space-evenly, start: start, stretch: stretch )
+$alignItems: baseline, center, end, start, stretch
+$alignSelf: $alignItems
+$justifyContent: $alignContent
+$justifyItems: $alignItems
+$justifySelf: list.join( auto, $alignSelf)
 
 /*
     alignment section: align and justify contained in classes
@@ -17,27 +17,27 @@ $justify-self: list.join( auto, $align-self)
             &-#{$item}
                vertical-align: $item !important
         
-        @each $item, $value in $align-content
+        @each $item, $value in $alignContent
             &-content-#{$item}
                 align-content: $value !important
         
-        @each $item in $align-items
+        @each $item in $alignItems
             &-items-#{$item}
                 align-items: $item !important
     
-        @each $item in $align-self
+        @each $item in $alignSelf
             &-self-#{$item}
                 align-self: $item !important
     
     .#{$orientation}#{$type}justify
-        @each $item, $value in $justify-content
+        @each $item, $value in $justifyContent
             &-content-#{$item}
                 justify-content: $value !important
     
-        @each $item in $justify-items
+        @each $item in $justifyItems
             &-items-#{$item}
                 justify-items: $item !important
     
-        @each $item in $justify-self
+        @each $item in $justifySelf
             &-self-#{$item}
                 justify-self: $item !important

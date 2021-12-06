@@ -1,24 +1,22 @@
 @use "sass:math"
 
-@import __variables
-
 /*
     background section: background color of accent and extra palette contained in classes
 
 @mixin _background($orientation, $type)
     .#{$orientation}#{$type}bg
-        @each $item in $default-colors
+        @each $item in $defaultColors
             &-#{$item}
-               background-color: var(#{'--' + $item + '-color'}) !important
-        @each $item in $default-colors
-            @for $i from 1 through math.div(100, $default-extra-colors-step) - 1
-                &#{'-' + $item + '-' + $i * $default-extra-colors-step}
-                    background-color: var(#{'--' + $item + '-color' + '-' + $i * $default-extra-colors-step}) !important
-        @each $item in $accent-colors
+               background-color: var(--#{$item}-color) !important
+        @each $item in $defaultColors
+            @for $i from 1 through math.div(100, $defaultExtraColorsInterval) - 1
+                &#{'-' + $item + '-' + $i * $defaultExtraColorsInterval}
+                    background-color: var(--#{$item}-color-#{$i * $defaultExtraColorsInterval}) !important
+        @each $item in $accentColors
             &-#{$item}
-               background-color: var(#{'--' + $item + '-color'}) !important
-            @each $pref in $accent-extra-colors-prefs
+               background-color: var(--#{$item}-color) !important
+            @each $pref in $accentExtraColorsPrefs
                 &-#{$item + '-' + $pref}
-                    background-color: var(#{'--' + $item + '-color-' + $pref}) !important
+                    background-color: var(--#{$item}-color-#{$pref}) !important
         &-transparent
             background-color: transparent !important
