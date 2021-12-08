@@ -797,6 +797,106 @@
   margin-bottom: auto !important;
 }
 
+.p\:t\:p-0 {
+  padding: unset !important;
+}
+.p\:t\:p-1 {
+  padding: calc(var(--key-size) * 0.25) !important;
+}
+.p\:t\:p-2 {
+  padding: calc(var(--key-size) * 0.5) !important;
+}
+.p\:t\:p-3 {
+  padding: calc(var(--key-size) * 0.75) !important;
+}
+.p\:t\:p-4 {
+  padding: calc(var(--key-size) * 1) !important;
+}
+.p\:t\:p-5 {
+  padding: calc(var(--key-size) * 1.25) !important;
+}
+.p\:t\:p-6 {
+  padding: calc(var(--key-size) * 1.5) !important;
+}
+.p\:t\:p-7 {
+  padding: calc(var(--key-size) * 1.75) !important;
+}
+.p\:t\:p-8 {
+  padding: calc(var(--key-size) * 2) !important;
+}
+.p\:t\:px-0 {
+  padding-left: unset !important;
+  padding-right: unset !important;
+}
+.p\:t\:py-0 {
+  padding-top: unset !important;
+  padding-bottom: unset !important;
+}
+.p\:t\:px-1 {
+  padding-left: calc(var(--key-size) * 0.25) !important;
+  padding-right: calc(var(--key-size) * 0.25) !important;
+}
+.p\:t\:py-1 {
+  padding-top: calc(var(--key-size) * 0.25) !important;
+  padding-bottom: calc(var(--key-size) * 0.25) !important;
+}
+.p\:t\:px-2 {
+  padding-left: calc(var(--key-size) * 0.5) !important;
+  padding-right: calc(var(--key-size) * 0.5) !important;
+}
+.p\:t\:py-2 {
+  padding-top: calc(var(--key-size) * 0.5) !important;
+  padding-bottom: calc(var(--key-size) * 0.5) !important;
+}
+.p\:t\:px-3 {
+  padding-left: calc(var(--key-size) * 0.75) !important;
+  padding-right: calc(var(--key-size) * 0.75) !important;
+}
+.p\:t\:py-3 {
+  padding-top: calc(var(--key-size) * 0.75) !important;
+  padding-bottom: calc(var(--key-size) * 0.75) !important;
+}
+.p\:t\:px-4 {
+  padding-left: calc(var(--key-size) * 1) !important;
+  padding-right: calc(var(--key-size) * 1) !important;
+}
+.p\:t\:py-4 {
+  padding-top: calc(var(--key-size) * 1) !important;
+  padding-bottom: calc(var(--key-size) * 1) !important;
+}
+.p\:t\:px-5 {
+  padding-left: calc(var(--key-size) * 1.25) !important;
+  padding-right: calc(var(--key-size) * 1.25) !important;
+}
+.p\:t\:py-5 {
+  padding-top: calc(var(--key-size) * 1.25) !important;
+  padding-bottom: calc(var(--key-size) * 1.25) !important;
+}
+.p\:t\:px-6 {
+  padding-left: calc(var(--key-size) * 1.5) !important;
+  padding-right: calc(var(--key-size) * 1.5) !important;
+}
+.p\:t\:py-6 {
+  padding-top: calc(var(--key-size) * 1.5) !important;
+  padding-bottom: calc(var(--key-size) * 1.5) !important;
+}
+.p\:t\:px-7 {
+  padding-left: calc(var(--key-size) * 1.75) !important;
+  padding-right: calc(var(--key-size) * 1.75) !important;
+}
+.p\:t\:py-7 {
+  padding-top: calc(var(--key-size) * 1.75) !important;
+  padding-bottom: calc(var(--key-size) * 1.75) !important;
+}
+.p\:t\:px-8 {
+  padding-left: calc(var(--key-size) * 2) !important;
+  padding-right: calc(var(--key-size) * 2) !important;
+}
+.p\:t\:py-8 {
+  padding-top: calc(var(--key-size) * 2) !important;
+  padding-bottom: calc(var(--key-size) * 2) !important;
+}
+
 /*  hide container if empty */
 .empty-none:empty {
   display: none !important;

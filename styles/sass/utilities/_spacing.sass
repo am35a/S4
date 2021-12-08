@@ -36,3 +36,24 @@ $spacingStep: 8
         &y-auto
             margin-top: auto !important
             margin-bottom: auto !important
+
+    .#{$orientation}#{$type}p
+        &-0
+            padding: unset !important
+        @for $i from 1 through $spacingStep
+            &-#{$i}
+                padding: calc(var(--key-size) * #{$i * 0.25}) !important
+
+        &x-0
+            padding-left: unset !important
+            padding-right: unset !important
+        &y-0
+            padding-top: unset !important
+            padding-bottom: unset !important
+        @for $i from 1 through $spacingStep
+            &x-#{$i}
+                padding-left: calc(var(--key-size) * #{$i * 0.25}) !important
+                padding-right: calc(var(--key-size) * #{$i * 0.25}) !important
+            &y-#{$i}
+                padding-top: calc(var(--key-size) * #{$i * 0.25}) !important
+                padding-bottom: calc(var(--key-size) * #{$i * 0.25}) !important
