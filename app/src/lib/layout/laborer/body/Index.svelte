@@ -1,9 +1,16 @@
 <script lang="ts">
     import Button from 'src/components/Button.svelte'
+
+    import Icon from 'src/components/Icon.svelte'
+    export let icon: string = 'ghost'
 </script>
 
 <div class="body">
-    <Button class="btn btn-primary" style="margin: 1rem">Button</Button>
+    <Button class="btn btn-primary m-4">Button</Button>
+    <Button class="btn"><Icon name={icon} size="sm"/> Button</Button>
+
+    <hr>
+
     <div class="h1" aria-level={1} role="heading">Colors</div>
     <div class="p-4">
         <div class="d-inline-flow-root" style="width: 2rem; height: 2rem; background-color: var(--positive-color);"></div>

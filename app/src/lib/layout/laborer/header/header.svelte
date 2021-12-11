@@ -17,7 +17,7 @@
         Header title
     </div>
     <div>
-        ...
+        <button class="btn"><Icon name="menu" size="lg"/></button>
     </div>
 </header>
 

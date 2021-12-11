@@ -391,29 +391,23 @@
 }
 
 /*  display section: display variants contained in classes */
-.t\:d-block-flow {
-  display: block flow !important;
+.t\:d-b-flow {
+  display: block flow-root !important;
 }
-.t\:d-inline-flow {
-  display: inline flow !important;
-}
-.t\:d-inline-flow-root {
+.t\:d-i-flow {
   display: inline flow-root !important;
 }
-.t\:d-block-flex {
+.t\:d-b-flex {
   display: block flex !important;
 }
-.t\:d-inline-flex {
+.t\:d-i-flex {
   display: inline flex !important;
 }
-.t\:d-block-grid {
+.t\:d-b-grid {
   display: block grid !important;
 }
-.t\:d-inline-grid {
+.t\:d-i-grid {
   display: inline grid !important;
-}
-.t\:d-block-flow-root {
-  display: block flow-root !important;
 }
 .t\:d-inherit {
   display: inherit !important;
