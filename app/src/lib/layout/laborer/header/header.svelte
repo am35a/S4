@@ -1,6 +1,7 @@
 <script lang="ts">
     import { userData } from 'src/store/store'
 
+    import Button from 'src/components/Button.svelte'
     import Icon from 'src/components/Icon.svelte'
 </script>
 
@@ -16,8 +17,10 @@
     <div class="title">
         Header title
     </div>
-    <div>
-        <button class="btn"><Icon name="menu" size="lg"/></button>
+    <div class="d-i-grid">
+        <!-- <Button class="btn btn-ico my-auto">
+            <Icon name="menu" size="lg"/>
+        </Button> -->
     </div>
 </header>
 

@@ -7,12 +7,15 @@
 </button>
 
 <style lang='sass'>
-    $colorsName: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
+    $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
 
     .btn
-        display: inline-block
+        display: inline grid
+        grid-auto-flow: column
+        grid-gap: calc(var(--key-size) * .25)
+        align-items: center
         margin: unset
-        padding: calc(var(--key-size) * .25) calc(var(--key-size) * .625)
+        padding: calc(var(--key-size) * .25) calc(var(--key-size) * .75)
         background-color: var(--negative-color-15)
         border: calc(var(--key-size) * .0625) solid transparent
         border-radius: calc(var(--key-size) * .25)
@@ -20,18 +23,31 @@
         text-align: center
         color: var(--negative-color)
         font-size: var(--key-size)
-        line-height: 1.5
+        line-height: calc(var(--key-size) * 1.5)
         text-decoration: none
         cursor: pointer
         user-select: none
-        @each $colorName in $colorsName
+        @each $colorName in $accentColors
             &-#{$colorName}
                 background-color: var(--#{$colorName}-color)
                 color: var(--positive-color)
-        @each $colorName in $colorsName
-            &-#{$colorName}
-                &:hover
+                &:hover,
+                &.active
                     background-color: var(--#{$colorName}-color-d)
                     color: var(--positive-color)
+                &:disabled
+                    background-color: var(--#{$colorName}-color-l)
+                    color: var(--positive-color-50)
+                    cursor: default
+                    &.active
+                        background-color: var(--#{$colorName}-color-d)
+        &-sm
+            font-size: calc(var(--key-size) * .875)
+            line-height: calc(var(--key-size) * 1.25)
+        &-lg
+            font-size: calc(var(--key-size) * 1.125)
+            line-height: calc(var(--key-size) * 1.75)
+        &-ico
+            padding: calc(var(--key-size) * .25)
         
 </style>
