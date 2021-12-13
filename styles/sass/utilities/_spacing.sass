@@ -57,3 +57,23 @@ $spacingStep: 8
             &y-#{$i}
                 padding-top: calc(var(--key-size) * #{$i * 0.25}) !important
                 padding-bottom: calc(var(--key-size) * #{$i * 0.25}) !important
+
+    .#{$orientation}#{$type}g
+        &-0
+            grid-gap: 0 !important
+        &-1
+            grid-gap: calc(var(--key-size) * .25) !important
+        &-2
+            grid-gap: calc(var(--key-size) * .5) !important
+        &-3
+            grid-gap: calc(var(--key-size) * .75) !important
+        &-4
+            grid-gap: var(--key-size) !important
+        &-5
+            grid-gap: calc(var(--key-size) * 1.25) !important
+        &-6
+            grid-gap: calc(var(--key-size) * 1.5) !important
+        &-7
+            grid-gap: calc(var(--key-size) * 1.75) !important
+        &-8
+            grid-gap: calc(var(--key-size) * 2) !important

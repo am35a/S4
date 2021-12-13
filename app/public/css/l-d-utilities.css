@@ -984,6 +984,34 @@
   padding-bottom: calc(var(--key-size) * 2) !important;
 }
 
+.g-0 {
+  grid-gap: 0 !important;
+}
+.g-1 {
+  grid-gap: calc(var(--key-size) * 0.25) !important;
+}
+.g-2 {
+  grid-gap: calc(var(--key-size) * 0.5) !important;
+}
+.g-3 {
+  grid-gap: calc(var(--key-size) * 0.75) !important;
+}
+.g-4 {
+  grid-gap: var(--key-size) !important;
+}
+.g-5 {
+  grid-gap: calc(var(--key-size) * 1.25) !important;
+}
+.g-6 {
+  grid-gap: calc(var(--key-size) * 1.5) !important;
+}
+.g-7 {
+  grid-gap: calc(var(--key-size) * 1.75) !important;
+}
+.g-8 {
+  grid-gap: calc(var(--key-size) * 2) !important;
+}
+
 /*  typography section: ... contained in classes */
 .text-start {
   text-align: start !important;

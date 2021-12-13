@@ -27,10 +27,13 @@
         text-decoration: none
         cursor: pointer
         user-select: none
+        outline: calc(var(--key-size) * .125) solid transparent
+        outline-offset: calc(var(--key-size) * .0625)
         @each $colorName in $accentColors
             &-#{$colorName}
                 background-color: var(--#{$colorName}-color)
                 color: var(--positive-color)
+                &:focus,
                 &:hover,
                 &.active
                     background-color: var(--#{$colorName}-color-d)
@@ -38,9 +41,31 @@
                 &:disabled
                     background-color: var(--#{$colorName}-color-l)
                     color: var(--positive-color-50)
-                    cursor: default
+                    cursor: not-allowed
                     &.active
                         background-color: var(--#{$colorName}-color-d)
+        @each $colorName in $accentColors
+            &-outline-#{$colorName}
+                border-color: var(--#{$colorName}-color)
+                color: var(--#{$colorName}-color-d)
+                &:focus,
+                &:hover,
+                &.active
+                    color: var(--positive-color)
+                    &:not(:disabled)
+                        background-color: var(--#{$colorName}-color)
+                &:disabled
+                    border-color: var(--#{$colorName}-color-l)
+                    color: var(--#{$colorName}-color-l)
+                    cursor: not-allowed
+                    &.active
+                        border-color: var(--#{$colorName}-color)
+                        background-color: var(--#{$colorName}-color)
+                        color: var(--positive-color-50)
+        &:focus
+            outline-color: var(--negative-color-20)
+        &:not(:focus):not(:disabled):hover.active
+            outline-color: var(--negative-color-40)
         &-sm
             font-size: calc(var(--key-size) * .875)
             line-height: calc(var(--key-size) * 1.25)

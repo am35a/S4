@@ -5,7 +5,7 @@
 </script>
 
 <div class="body">
-    <div class="p-4">
+    <div class="d-i-grid g-2 p-4">
         <Button class="btn btn-secondary">
             <Icon name={'ghost'} size="sm"/>
             Button
@@ -19,6 +19,24 @@
             Button
         </Button>
         <Button class="btn btn-secondary active" disabled>
+            <Icon name={'ghost'} size="sm"/>
+            Button
+        </Button>
+    </div>
+    <div class="d-i-grid g-2 p-4">
+        <Button class="btn btn-outline-secondary">
+            <Icon name={'ghost'} size="sm"/>
+            Button
+        </Button>
+        <Button class="btn btn-outline-secondary active">
+            <Icon name={'ghost'} size="sm"/>
+            Button
+        </Button>
+        <Button class="btn btn-outline-secondary" disabled>
+            <Icon name={'ghost'} size="sm"/>
+            Button
+        </Button>
+        <Button class="btn btn-outline-secondary active" disabled>
             <Icon name={'ghost'} size="sm"/>
             Button
         </Button>
