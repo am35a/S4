@@ -124,272 +124,6 @@
   justify-self: stretch !important;
 }
 
-/*  typography section: ... contained in classes */
-.l\:m\:text-start {
-  text-align: start !important;
-}
-.l\:m\:text-center {
-  text-align: center !important;
-}
-.l\:m\:text-end {
-  text-align: end !important;
-}
-.l\:m\:text-justify {
-  text-align: justify !important;
-}
-.l\:m\:text-wrap {
-  white-space: normal !important;
-}
-.l\:m\:text-nowrap {
-  white-space: nowrap !important;
-}
-.l\:m\:text-positive {
-  color: var(--positive-color) !important;
-}
-.l\:m\:text-negative {
-  color: var(--negative-color) !important;
-}
-.l\:m\:text-positive-10 {
-  color: var(--positive-color-10) !important;
-}
-.l\:m\:text-positive-20 {
-  color: var(--positive-color-20) !important;
-}
-.l\:m\:text-positive-30 {
-  color: var(--positive-color-30) !important;
-}
-.l\:m\:text-positive-40 {
-  color: var(--positive-color-40) !important;
-}
-.l\:m\:text-positive-50 {
-  color: var(--positive-color-50) !important;
-}
-.l\:m\:text-positive-60 {
-  color: var(--positive-color-60) !important;
-}
-.l\:m\:text-positive-70 {
-  color: var(--positive-color-70) !important;
-}
-.l\:m\:text-positive-80 {
-  color: var(--positive-color-80) !important;
-}
-.l\:m\:text-positive-90 {
-  color: var(--positive-color-90) !important;
-}
-.l\:m\:text-negative-10 {
-  color: var(--negative-color-10) !important;
-}
-.l\:m\:text-negative-20 {
-  color: var(--negative-color-20) !important;
-}
-.l\:m\:text-negative-30 {
-  color: var(--negative-color-30) !important;
-}
-.l\:m\:text-negative-40 {
-  color: var(--negative-color-40) !important;
-}
-.l\:m\:text-negative-50 {
-  color: var(--negative-color-50) !important;
-}
-.l\:m\:text-negative-60 {
-  color: var(--negative-color-60) !important;
-}
-.l\:m\:text-negative-70 {
-  color: var(--negative-color-70) !important;
-}
-.l\:m\:text-negative-80 {
-  color: var(--negative-color-80) !important;
-}
-.l\:m\:text-negative-90 {
-  color: var(--negative-color-90) !important;
-}
-.l\:m\:text-primary {
-  color: var(--primary-color) !important;
-}
-.l\:m\:text-primary-l {
-  color: var(--primary-color-l) !important;
-}
-.l\:m\:text-primary-d {
-  color: var(--primary-color-d) !important;
-}
-.l\:m\:text-secondary {
-  color: var(--secondary-color) !important;
-}
-.l\:m\:text-secondary-l {
-  color: var(--secondary-color-l) !important;
-}
-.l\:m\:text-secondary-d {
-  color: var(--secondary-color-d) !important;
-}
-.l\:m\:text-info {
-  color: var(--info-color) !important;
-}
-.l\:m\:text-info-l {
-  color: var(--info-color-l) !important;
-}
-.l\:m\:text-info-d {
-  color: var(--info-color-d) !important;
-}
-.l\:m\:text-success {
-  color: var(--success-color) !important;
-}
-.l\:m\:text-success-l {
-  color: var(--success-color-l) !important;
-}
-.l\:m\:text-success-d {
-  color: var(--success-color-d) !important;
-}
-.l\:m\:text-warning {
-  color: var(--warning-color) !important;
-}
-.l\:m\:text-warning-l {
-  color: var(--warning-color-l) !important;
-}
-.l\:m\:text-warning-d {
-  color: var(--warning-color-d) !important;
-}
-.l\:m\:text-error {
-  color: var(--error-color) !important;
-}
-.l\:m\:text-error-l {
-  color: var(--error-color-l) !important;
-}
-.l\:m\:text-error-d {
-  color: var(--error-color-d) !important;
-}
-.l\:m\:text-transparent {
-  color: transparent !important;
-}
-
-.l\:m\:h1, h1 {
-  font-size: var(--fs-l5) !important;
-  font-weight: 600 !important;
-}
-.l\:m\:h2, h2 {
-  font-size: var(--fs-l4) !important;
-  font-weight: 600 !important;
-}
-.l\:m\:h3, h3 {
-  font-size: var(--fs-l3) !important;
-  font-weight: 600 !important;
-}
-.l\:m\:h4, h4 {
-  font-size: var(--fs-l2) !important;
-  font-weight: 600 !important;
-}
-.l\:m\:h5, h5 {
-  font-size: var(--fs-l1) !important;
-  font-weight: 600 !important;
-}
-.l\:m\:h6, h6 {
-  font-size: var(--fs-md) !important;
-  font-weight: 600 !important;
-}
-
-.l\:m\:fs-s5 {
-  font-size: var(--fs-s5) !important;
-}
-.l\:m\:fs-s5 {
-  font-size: var(--fs-s5) !important;
-}
-.l\:m\:fs-s3 {
-  font-size: var(--fs-s3) !important;
-}
-.l\:m\:fs-s2 {
-  font-size: var(--fs-s2) !important;
-}
-.l\:m\:fs-s1 {
-  font-size: var(--fs-s1) !important;
-}
-.l\:m\:fs-md {
-  font-size: var(--fs-md) !important;
-}
-.l\:m\:fs-l1 {
-  font-size: var(--fs-l1) !important;
-}
-.l\:m\:fs-l2 {
-  font-size: var(--fs-l2) !important;
-}
-.l\:m\:fs-l3 {
-  font-size: var(--fs-l3) !important;
-}
-.l\:m\:fs-l4 {
-  font-size: var(--fs-l4) !important;
-}
-.l\:m\:fs-l5 {
-  font-size: var(--fs-l5) !important;
-}
-.l\:m\:fw-100 {
-  font-weight: 100 !important;
-}
-.l\:m\:fw-200 {
-  font-weight: 200 !important;
-}
-.l\:m\:fw-300 {
-  font-weight: 300 !important;
-}
-.l\:m\:fw-400 {
-  font-weight: 400 !important;
-}
-.l\:m\:fw-500 {
-  font-weight: 500 !important;
-}
-.l\:m\:fw-600 {
-  font-weight: 600 !important;
-}
-.l\:m\:fw-700 {
-  font-weight: 700 !important;
-}
-.l\:m\:fw-800 {
-  font-weight: 800 !important;
-}
-.l\:m\:fw-900 {
-  font-weight: 900 !important;
-}
-.l\:m\:fw-unset {
-  font-weight: unset !important;
-}
-
-.l\:m\:lh-1 {
-  line-height: 1 !important;
-}
-.l\:m\:lh-sm {
-  line-height: 1.25 !important;
-}
-.l\:m\:lh-md {
-  line-height: 1.5 !important;
-}
-.l\:m\:lh-lg {
-  line-height: 2 !important;
-}
-
-.l\:m\:text-hyphens {
-  hyphens: auto !important;
-}
-.l\:m\:text-truncate {
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-}
-.l\:m\:text-lowercase {
-  text-transform: lowercase !important;
-}
-.l\:m\:text-uppercase {
-  text-transform: uppercase !important;
-}
-.l\:m\:text-capitalize {
-  text-transform: capitalize !important;
-}
-.l\:m\:text-decoration-none {
-  text-decoration: none !important;
-}
-.l\:m\:text-decoration-underline {
-  text-decoration: underline !important;
-}
-.l\:m\:text-decoration-line-through {
-  text-decoration: line-through !important;
-}
-
 /*  display section: display variants contained in classes */
 .l\:m\:d-b-flow {
   display: block flow-root !important;
@@ -426,6 +160,46 @@
 }
 .l\:m\:d-none {
   display: none !important;
+}
+
+.l\:m\:flex-row {
+  flex-direction: row;
+}
+.l\:m\:flex-column {
+  flex-direction: column;
+}
+.l\:m\:flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.l\:m\:flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.l\:m\:flex-wrap {
+  flex-wrap: wrap;
+}
+.l\:m\:flex-nowrap {
+  flex-wrap: nowrap;
+}
+.l\:m\:flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.l\:m\:flex-fill {
+  flex: 1 1 auto;
+}
+.l\:m\:flex-equal {
+  flex: 1 1 0;
+}
+.l\:m\:flex-grow-0 {
+  flex-grow: 0;
+}
+.l\:m\:flex-grow-1 {
+  flex-grow: 1;
+}
+.l\:m\:flex-shrink-0 {
+  flex-shrink: 0;
+}
+.l\:m\:flex-shrink-1 {
+  flex-shrink: 1;
 }
 
 /*  overflow section: overflow type and axis contained in classes */
@@ -889,6 +663,272 @@
 .l\:m\:py-8 {
   padding-top: calc(var(--key-size) * 2) !important;
   padding-bottom: calc(var(--key-size) * 2) !important;
+}
+
+/*  typography section: ... contained in classes */
+.l\:m\:text-start {
+  text-align: start !important;
+}
+.l\:m\:text-center {
+  text-align: center !important;
+}
+.l\:m\:text-end {
+  text-align: end !important;
+}
+.l\:m\:text-justify {
+  text-align: justify !important;
+}
+.l\:m\:text-wrap {
+  white-space: normal !important;
+}
+.l\:m\:text-nowrap {
+  white-space: nowrap !important;
+}
+.l\:m\:text-positive {
+  color: var(--positive-color) !important;
+}
+.l\:m\:text-negative {
+  color: var(--negative-color) !important;
+}
+.l\:m\:text-positive-10 {
+  color: var(--positive-color-10) !important;
+}
+.l\:m\:text-positive-20 {
+  color: var(--positive-color-20) !important;
+}
+.l\:m\:text-positive-30 {
+  color: var(--positive-color-30) !important;
+}
+.l\:m\:text-positive-40 {
+  color: var(--positive-color-40) !important;
+}
+.l\:m\:text-positive-50 {
+  color: var(--positive-color-50) !important;
+}
+.l\:m\:text-positive-60 {
+  color: var(--positive-color-60) !important;
+}
+.l\:m\:text-positive-70 {
+  color: var(--positive-color-70) !important;
+}
+.l\:m\:text-positive-80 {
+  color: var(--positive-color-80) !important;
+}
+.l\:m\:text-positive-90 {
+  color: var(--positive-color-90) !important;
+}
+.l\:m\:text-negative-10 {
+  color: var(--negative-color-10) !important;
+}
+.l\:m\:text-negative-20 {
+  color: var(--negative-color-20) !important;
+}
+.l\:m\:text-negative-30 {
+  color: var(--negative-color-30) !important;
+}
+.l\:m\:text-negative-40 {
+  color: var(--negative-color-40) !important;
+}
+.l\:m\:text-negative-50 {
+  color: var(--negative-color-50) !important;
+}
+.l\:m\:text-negative-60 {
+  color: var(--negative-color-60) !important;
+}
+.l\:m\:text-negative-70 {
+  color: var(--negative-color-70) !important;
+}
+.l\:m\:text-negative-80 {
+  color: var(--negative-color-80) !important;
+}
+.l\:m\:text-negative-90 {
+  color: var(--negative-color-90) !important;
+}
+.l\:m\:text-primary {
+  color: var(--primary-color) !important;
+}
+.l\:m\:text-primary-l {
+  color: var(--primary-color-l) !important;
+}
+.l\:m\:text-primary-d {
+  color: var(--primary-color-d) !important;
+}
+.l\:m\:text-secondary {
+  color: var(--secondary-color) !important;
+}
+.l\:m\:text-secondary-l {
+  color: var(--secondary-color-l) !important;
+}
+.l\:m\:text-secondary-d {
+  color: var(--secondary-color-d) !important;
+}
+.l\:m\:text-info {
+  color: var(--info-color) !important;
+}
+.l\:m\:text-info-l {
+  color: var(--info-color-l) !important;
+}
+.l\:m\:text-info-d {
+  color: var(--info-color-d) !important;
+}
+.l\:m\:text-success {
+  color: var(--success-color) !important;
+}
+.l\:m\:text-success-l {
+  color: var(--success-color-l) !important;
+}
+.l\:m\:text-success-d {
+  color: var(--success-color-d) !important;
+}
+.l\:m\:text-warning {
+  color: var(--warning-color) !important;
+}
+.l\:m\:text-warning-l {
+  color: var(--warning-color-l) !important;
+}
+.l\:m\:text-warning-d {
+  color: var(--warning-color-d) !important;
+}
+.l\:m\:text-error {
+  color: var(--error-color) !important;
+}
+.l\:m\:text-error-l {
+  color: var(--error-color-l) !important;
+}
+.l\:m\:text-error-d {
+  color: var(--error-color-d) !important;
+}
+.l\:m\:text-transparent {
+  color: transparent !important;
+}
+
+.l\:m\:h1, h1 {
+  font-size: var(--fs-l5) !important;
+  font-weight: 600 !important;
+}
+.l\:m\:h2, h2 {
+  font-size: var(--fs-l4) !important;
+  font-weight: 600 !important;
+}
+.l\:m\:h3, h3 {
+  font-size: var(--fs-l3) !important;
+  font-weight: 600 !important;
+}
+.l\:m\:h4, h4 {
+  font-size: var(--fs-l2) !important;
+  font-weight: 600 !important;
+}
+.l\:m\:h5, h5 {
+  font-size: var(--fs-l1) !important;
+  font-weight: 600 !important;
+}
+.l\:m\:h6, h6 {
+  font-size: var(--fs-md) !important;
+  font-weight: 600 !important;
+}
+
+.l\:m\:fs-s5 {
+  font-size: var(--fs-s5) !important;
+}
+.l\:m\:fs-s5 {
+  font-size: var(--fs-s5) !important;
+}
+.l\:m\:fs-s3 {
+  font-size: var(--fs-s3) !important;
+}
+.l\:m\:fs-s2 {
+  font-size: var(--fs-s2) !important;
+}
+.l\:m\:fs-s1 {
+  font-size: var(--fs-s1) !important;
+}
+.l\:m\:fs-md {
+  font-size: var(--fs-md) !important;
+}
+.l\:m\:fs-l1 {
+  font-size: var(--fs-l1) !important;
+}
+.l\:m\:fs-l2 {
+  font-size: var(--fs-l2) !important;
+}
+.l\:m\:fs-l3 {
+  font-size: var(--fs-l3) !important;
+}
+.l\:m\:fs-l4 {
+  font-size: var(--fs-l4) !important;
+}
+.l\:m\:fs-l5 {
+  font-size: var(--fs-l5) !important;
+}
+.l\:m\:fw-100 {
+  font-weight: 100 !important;
+}
+.l\:m\:fw-200 {
+  font-weight: 200 !important;
+}
+.l\:m\:fw-300 {
+  font-weight: 300 !important;
+}
+.l\:m\:fw-400 {
+  font-weight: 400 !important;
+}
+.l\:m\:fw-500 {
+  font-weight: 500 !important;
+}
+.l\:m\:fw-600 {
+  font-weight: 600 !important;
+}
+.l\:m\:fw-700 {
+  font-weight: 700 !important;
+}
+.l\:m\:fw-800 {
+  font-weight: 800 !important;
+}
+.l\:m\:fw-900 {
+  font-weight: 900 !important;
+}
+.l\:m\:fw-unset {
+  font-weight: unset !important;
+}
+
+.l\:m\:lh-1 {
+  line-height: 1 !important;
+}
+.l\:m\:lh-sm {
+  line-height: 1.25 !important;
+}
+.l\:m\:lh-md {
+  line-height: 1.5 !important;
+}
+.l\:m\:lh-lg {
+  line-height: 2 !important;
+}
+
+.l\:m\:text-hyphens {
+  hyphens: auto !important;
+}
+.l\:m\:text-truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+.l\:m\:text-lowercase {
+  text-transform: lowercase !important;
+}
+.l\:m\:text-uppercase {
+  text-transform: uppercase !important;
+}
+.l\:m\:text-capitalize {
+  text-transform: capitalize !important;
+}
+.l\:m\:text-decoration-none {
+  text-decoration: none !important;
+}
+.l\:m\:text-decoration-underline {
+  text-decoration: underline !important;
+}
+.l\:m\:text-decoration-line-through {
+  text-decoration: line-through !important;
 }
 
 /*  hide container if empty */
