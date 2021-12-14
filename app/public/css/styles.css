@@ -315,7 +315,7 @@ progress {
   --error-color-h: 0;
   --error-color-s: 50%;
   --accent-colors-l: 50%;
-  --accent-colors-l-offset: 15%;
+  --accent-colors-l-offset: 20%;
   --primary-color-l: hsl(var(--primary-color-h) var(--primary-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
   --primary-color: hsl(var(--primary-color-h) var(--primary-color-s) var(--accent-colors-l));
   --primary-color-d: hsl(var(--primary-color-h) var(--primary-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));

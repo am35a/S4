@@ -24,19 +24,19 @@
         </Button>
     </div>
     <div class="d-i-grid g-2 p-4">
-        <Button class="btn btn-outline-secondary">
+        <Button class="btn btn-link-primary">
             <Icon name={'ghost'} size="sm"/>
             Button
         </Button>
-        <Button class="btn btn-outline-secondary active">
+        <Button class="btn btn-link-primary active">
             <Icon name={'ghost'} size="sm"/>
             Button
         </Button>
-        <Button class="btn btn-outline-secondary" disabled>
+        <Button class="btn btn-link-primary" disabled>
             <Icon name={'ghost'} size="sm"/>
             Button
         </Button>
-        <Button class="btn btn-outline-secondary active" disabled>
+        <Button class="btn btn-link-primary active" disabled>
             <Icon name={'ghost'} size="sm"/>
             Button
         </Button>

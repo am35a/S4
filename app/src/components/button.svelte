@@ -40,28 +40,40 @@
                     color: var(--positive-color)
                 &:disabled
                     background-color: var(--#{$colorName}-color-l)
-                    color: var(--positive-color-50)
+                    color: var(--positive-color-40)
                     cursor: not-allowed
                     &.active
                         background-color: var(--#{$colorName}-color-d)
+                        color: var(--positive-color-60)
         @each $colorName in $accentColors
-            &-outline-#{$colorName}
-                border-color: var(--#{$colorName}-color)
-                color: var(--#{$colorName}-color-d)
+            &-link-#{$colorName}
+                color: var(--#{$colorName}-color)
                 &:focus,
                 &:hover,
                 &.active
-                    color: var(--positive-color)
-                    &:not(:disabled)
-                        background-color: var(--#{$colorName}-color)
+                    color: var(--#{$colorName}-color-d)
                 &:disabled
-                    border-color: var(--#{$colorName}-color-l)
-                    color: var(--#{$colorName}-color-l)
-                    cursor: not-allowed
+                    color: var(--negative-color-20)
                     &.active
-                        border-color: var(--#{$colorName}-color)
-                        background-color: var(--#{$colorName}-color)
-                        color: var(--positive-color-50)
+                        color: var(--negative-color-40)
+        // @each $colorName in $accentColors
+        //     &-outline-#{$colorName}
+        //         border-color: var(--#{$colorName}-color)
+        //         color: var(--#{$colorName}-color-d)
+        //         &:focus,
+        //         &:hover,
+        //         &.active
+        //             color: var(--positive-color)
+        //             &:not(:disabled)
+        //                 background-color: var(--#{$colorName}-color)
+        //         &:disabled
+        //             border-color: var(--#{$colorName}-color-l)
+        //             color: var(--#{$colorName}-color-l)
+        //             cursor: not-allowed
+        //             &.active
+        //                 border-color: var(--#{$colorName}-color)
+        //                 background-color: var(--#{$colorName}-color)
+        //                 color: var(--positive-color-50)
         &:focus
             outline-color: var(--negative-color-20)
         &:not(:focus):not(:disabled):hover.active
