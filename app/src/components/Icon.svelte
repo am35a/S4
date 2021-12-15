@@ -8,6 +8,8 @@
 
         return `ico ${className} ${classSize}`
     }
+    
+    $$restProps.class = $$restProps.class ? `${$$restProps.class} ${IconClasses()}` : IconClasses()
 </script>
 
-<div class="{IconClasses()}" style="--ico-image: url(/icons/{name}.svg)"></div>
+<div {...$$restProps} style="--ico-image: url(/icons/{name}.svg)"></div>

@@ -17,7 +17,7 @@
         <Button class="btn btn-secondary" disabled>
             <Icon name={'ghost'} size="sm"/>
             Button
-        </Button>
+        </Button>        
         <Button class="btn btn-secondary active" disabled>
             <Icon name={'ghost'} size="sm"/>
             Button
@@ -25,7 +25,7 @@
     </div>
     <div class="d-i-grid g-2 p-4">
         <Button class="btn btn-link-primary">
-            <Icon name={'ghost'} size="sm"/>
+            <Icon class="text-warning ico-sm" name={'ghost'}/>
             Button
         </Button>
         <Button class="btn btn-link-primary active">
