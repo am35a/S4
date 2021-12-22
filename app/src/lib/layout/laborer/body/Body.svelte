@@ -1,10 +1,28 @@
 <script lang="ts">
+    import { path, query, hash } from 'svelte-micro';
+
+    import Home from './home/Home.svelte'
+    import Help from './help/Help.svelte'
+
     import Button from 'src/components/Button.svelte'
 
     import Icon from 'src/components/Icon.svelte'
 </script>
 
+<!-- https://www.akashmittal.com/dynamically-import-components-svelte/ -->
+<!-- https://svelte.dev/tutorial/svelte-component -->
+
 <div class="body">
+
+    <!-- {#if $path === 'home'}
+        <svelte:component this={Home}/>
+    {:else if $path === 'help'}
+        <svelte:component this={Help}/>
+    {:else}
+        404
+    {/if} -->
+
+<!--
     <div class="d-i-grid g-2 p-4">
         <Button class="btn btn-secondary">
             <Icon name="ghost" size="sm"/>
@@ -92,6 +110,7 @@
         <div class="d-i-flow" style="width: 2rem; height: 2rem; background-color: var(--error-color);"></div>
         <div class="d-i-flow" style="width: 2rem; height: 2rem; background-color: var(--error-color-d);"></div>
     </div>
+-->
 </div>
 
 <style lang="sass">

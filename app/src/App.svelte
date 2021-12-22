@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { path, query, hash } from 'svelte-micro'
+
     import { onMount } from 'svelte'
     import { appData, user, userData } from 'src/store/store'
 
@@ -25,6 +27,7 @@
             console.log(`Error: ${res.status}`)
         }
 	})
+    console.log($path, $query, $hash)
 </script>
 
 <Head />
