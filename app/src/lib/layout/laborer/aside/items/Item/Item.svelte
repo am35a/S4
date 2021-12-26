@@ -1,5 +1,8 @@
 <script lang="ts">
-    import { userData } from 'src/store/store'
+    import { onMount } from 'svelte'
+
+    import { router, pathToArray, path } from 'svelte-micro'
+    import { userData } from 'src/store/store'    
 
     import Icon from 'src/components/Icon.svelte'
     export let active: boolean = false
@@ -9,9 +12,20 @@
     export let segment: string = undefined
 
     function onTitleClick() {
+        router.push(segment)
         $userData.aside.segment = segment
         $userData.aside.expand = false
     }
+
+    onMount(async () => {
+        // let loadPath: string
+        $userData.aside.segment = pathToArray($path)[0]
+        // console.log($path)
+        // console.log(loadPath)
+    })
+
+    // $: segment
+
 </script>
 
 <div 

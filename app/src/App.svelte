@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { path, query, hash } from 'svelte-micro'
+    // import { Route } from 'svelte-micro'
 
     import { onMount } from 'svelte'
     import { appData, user, userData } from 'src/store/store'
@@ -20,6 +20,7 @@
         }
 
         res = await fetch('/_api/admin.json')
+        
         if (res.ok) {
             $userData = await res.json()
             // console.log($appData)
@@ -27,7 +28,6 @@
             console.log(`Error: ${res.status}`)
         }
 	})
-    console.log($path, $query, $hash)
 </script>
 
 <Head />
@@ -38,3 +38,22 @@
 {:else}
     <LayoutLaborer />
 {/if}
+  
+<!-- <Route>
+  
+    <Route path="/">
+      <h1>Home page</h1>
+      <p>Feel at home!</p>
+    </Route>
+  
+    <Route path="/portfolio">
+      <h1>Portfolio</h1>
+    </Route>
+  
+  
+    <Route fallback>
+      <h1>Route not found :(</h1>
+      <a href="/">Back to home</a>
+    </Route>
+</Route> -->
+  

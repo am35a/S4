@@ -7,6 +7,7 @@
     import Button from 'src/components/Button.svelte'
 
     import Icon from 'src/components/Icon.svelte'
+import App from 'src/App.svelte';
 </script>
 
 <!-- https://www.akashmittal.com/dynamically-import-components-svelte/ -->
@@ -14,13 +15,15 @@
 
 <div class="body">
 
-    <!-- {#if $path === 'home'}
+    <div><span>{$path}</span></div>
+
+    {#if $path === '/home'}
         <svelte:component this={Home}/>
-    {:else if $path === 'help'}
+    {:else if $path === '/help'}
         <svelte:component this={Help}/>
     {:else}
         404
-    {/if} -->
+    {/if}
 
 <!--
     <div class="d-i-grid g-2 p-4">

@@ -7,30 +7,30 @@
     },
     "aside": {
         "width": "max",
-        "segment": "home",
+        "segment": "/home",
         "expand": false,
         "items": [
             {
                 "id": 1,
                 "icon": "home",
                 "title": "Home page",
-                "segment": "home"
+                "segment": "/home"
             },
             {
                 "id": 2,
                 "icon": "dashboard",
                 "title": "Dashboards",
-                "segment": "dashboard",
+                "segment": "/dashboard",
                 "turbo": {
                     "icon": "plus",
-                    "segment": "dashboard"
+                    "segment": "/dashboard"
                 }
             },
             {
                 "id": 3,
                 "icon": "help",
                 "title": "Get help",
-                "segment": "help"
+                "segment": "/help"
             }
         ]
     }
