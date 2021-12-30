@@ -5,13 +5,16 @@
     import Items from './items/Items.svelte'
     // import Brand from './brand/Brand.svelte'
     // let expandContent: boolean = false
+
+    let expand: boolean = false
+
 </script>
 
 <aside
     class="aside"
-    class:expand={$userData.aside.expand}
-    on:mouseenter={() => $userData.aside.expand = true}
-    on:mouseleave={() => $userData.aside.expand = false}
+    class:expand={expand}
+    on:mouseenter={() => expand = true}
+    on:mouseleave={() => expand = false}
 >
     <Fader/>
     <!-- <Blind asideMouseHover={expandContent}/> -->

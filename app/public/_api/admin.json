@@ -18,16 +18,28 @@
             },
             {
                 "id": 2,
-                "icon": "dashboard",
-                "title": "Dashboards",
-                "segment": "/dashboard",
-                "turbo": {
-                    "icon": "plus",
-                    "segment": "/dashboard"
-                }
+                "icon": "atom",
+                "title": "Core",
+                "segment": "/core"
             },
             {
                 "id": 3,
+                "icon": "components",
+                "title": "Components",
+                "segment": "/components",
+                "turbo": {
+                    "icon": "plus",
+                    "segment": "/components"
+                }
+            },
+            {
+                "id": 4,
+                "icon": "css3",
+                "title": "Utilities",
+                "segment": "/utilities"
+            },
+            {
+                "id": 99,
                 "icon": "help",
                 "title": "Get help",
                 "segment": "/help"
