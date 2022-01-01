@@ -28,7 +28,10 @@
     // import('./help/Help.svelte').then(res => Help = res.default)
 
     // import Button from 'src/components/Button.svelte'
-    // import Icon from 'src/components/Icon.svelte'
+    import Icon from 'src/components/Icon.svelte'
+
+    $: console.log($userData.aside.items[2])
+
 </script>
 
 
@@ -40,6 +43,8 @@
 <!-- https://svelte.dev/tutorial/svelte-component -->
 
 <div class="body">
+    
+    <!-- <Icon name={$userData.aside.items[3].turbo.icon} size="lg"/> -->
 <!-- 
     <div><span>{$path}</span></div>
     <hr> -->
