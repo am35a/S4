@@ -30,7 +30,7 @@ export let userData = writable(
                     id: 1 as number,
                     icon: 'home' as string,
                     title: 'Home page' as string,
-                    segment: 'home' as string
+                    segment: '/home' as string
                 }
             ]
         }
