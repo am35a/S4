@@ -21,8 +21,8 @@
         }
     }
 
-    let promise = getData('/_api/app.json')
-    console.log(promise)
+    let promise = getData('/_api/app.js-on')
+    // console.log(promise)
 
     // promise.then((value) => {
     //     console.log(value.data)
