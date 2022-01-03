@@ -2,7 +2,7 @@
     import { onMount } from 'svelte'
 
     import { router, pathToArray, path } from 'svelte-micro'
-    import { userData } from 'src/store/store'    
+    import { asideExpand, appSegment } from 'src/store/store'    
 
     import Icon from 'src/components/Icon.svelte'
     export let active: boolean = false
@@ -13,13 +13,13 @@
 
     function onTitleClick() {
         router.push(segment)
-        $userData.aside.segment = segment
-        $userData.aside.expand = false
+        $appSegment = segment
+        $asideExpand = false
     }
 
     onMount(async () => {
         // let loadPath: string
-        $userData.aside.segment = pathToArray($path)[0]
+        $appSegment = pathToArray($path)[0]
         // console.log($path)
         // console.log(loadPath)
     })

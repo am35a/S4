@@ -347,9 +347,13 @@ progress {
   height: 100%;
   background-color: currentColor;
   mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   mask-position: center;
+  -webkit-mask-position: center;
   mask-clip: content-box;
+  -webkit-mask-clip: content-box;
   mask-image: var(--ico-image);
+  -webkit-mask-image: var(--ico-image);
 }
 .ico-sm {
   width: var(--ico-size-sm);

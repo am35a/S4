@@ -1,11 +1,11 @@
 <script lang="ts">
-    import { userData } from 'src/store/store'
+    import { asideExpand } from 'src/store/store'
 
     import Icon from 'src/components/Icon.svelte'
 </script>
 
 <div
-    on:click={() => $userData.aside.expand = false}
+    on:click={() => $asideExpand = false}
     class="fader"
 >
     <div class="close">

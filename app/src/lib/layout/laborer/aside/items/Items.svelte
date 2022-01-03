@@ -1,40 +1,13 @@
 <script lang="ts">
-    import { userData, appData } from 'src/store/store'
+    import { asideItems, appSegment } from 'src/store/store'
     import Item from './item/Item.svelte'
-
-
-    // export let segment = 'home' // move to store
-    // const items = [
-    //     {
-    //         id: 1,
-    //         icon: 'home',
-    //         title: 'Home page',
-    //         segment: 'home'
-    //     },		
-    //     {
-    //         id: 2,
-    //         icon: 'dashboard',
-    //         title: 'Dashboards',
-    //         segment: 'dashboard',
-    //         turbo: {
-    //             icon: 'plus',
-    //             segment: 'dashboard'
-    //         }
-    //     },
-    //     {
-    //         id: 3,
-    //         icon: 'help',
-    //         title: 'Get help',
-    //         segment: 'help'
-    //     }
-    // ]
 </script>
 
 <div class="items">
-    {#each $userData.aside.items as item (item.id)}
+    {#each $asideItems as item (item.id)}
         <Item
             {...item}
-            active={$userData.aside.segment === item.segment}
+            active={$appSegment === item.segment}
             segment={item.segment}
         />
     {/each}

@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store'
 
-export let appData = writable(
+export const appData = writable(
     // below data use as default
     {
         title: 'Nameless' as string,
@@ -12,6 +12,30 @@ export let appData = writable(
         fontFamily: 'default' as string
     }
 )
+
+/*
+    For Aside.svelte component
+*/
+// define aside menu width
+export const asideWidth = writable('max')
+// aside menu expander var
+export let asideExpand = writable(false)
+// aside menu route items
+export let asideItems = writable(
+    [
+        {
+            id: 1 as number,
+            icon: 'home' as string,
+            title: 'Home page' as string,
+            segment: '/home' as string
+        }
+    ]
+)
+
+// define curent route parth as segment for set to aside active items
+export let appSegment = writable('/home')
+
+
 export let userData = writable(
     // below data use as default
     {
@@ -23,7 +47,7 @@ export let userData = writable(
         },
         aside: {
             width: 'max' as string,
-            segment: 'home' as string,
+            segment: '/home' as string,
             expand: false as boolean,
             items: [
                 {

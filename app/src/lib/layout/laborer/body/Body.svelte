@@ -1,13 +1,10 @@
 <script lang="ts">
     import { Route, path, query, hash } from 'svelte-micro'
 
-    import { userData } from 'src/store/store'
+    import { asideItems } from 'src/store/store'
 
-    // console.log($userData.aside.items[1])
-    $: for (const item of $userData.aside.items) {
+    $: for (const item of $asideItems) {
         console.log( `${item.segment[1].toUpperCase()}${item.segment.slice(2)}` )
-
-        // import `${item.segment[1].toUpperCase()}${item.segment.slice(2)}` from './home/Home.svelte'
     }
 
     // const array1 = ['a', 'b', 'c'];
@@ -30,7 +27,7 @@
     // import Button from 'src/components/Button.svelte'
     import Icon from 'src/components/Icon.svelte'
 
-    $: console.log($userData.aside.items[2])
+    $: console.log($asideItems[2])
 
 </script>
 

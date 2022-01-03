@@ -2,7 +2,12 @@
     // import { Route } from 'svelte-micro'
 
     import { onMount } from 'svelte'
-    import { appData, user, userData } from 'src/store/store'
+    import {
+        appData,
+        asideExpand,
+        asideItems,
+        user
+    } from 'src/store/store'
 
     import Head from './lib/DocumentHead.svelte'
     import Body from './lib/DocumentBody.svelte'
@@ -10,51 +15,85 @@
     import LayoutSignIn from './lib/layout/signin/SignIn.svelte'
     import LayoutLaborer from './lib/layout/laborer/Laborer.svelte'
 
-    async function getData(path:string): Promise<any> {
-        let res = await fetch(path)
-        return res.ok ? {
-            data: await res.json(),
-            status: true
-        } : {
-            data : `Error: ${res.status}`,
-            status: false
-        }
-    }
+    // async function getData(path:string): Promise<any> {
+    //     let res = await fetch(path)
+    //     return res.ok ? {
+    //         data: await res.json(),
+    //         status: true
+    //     } : {
+    //         data : `Error: ${res.status}`,
+    //         status: false
+    //     }
+    // }
 
-    let promise = getData('/_api/app.js-on')
+    // let promise = getData('/_api/app.js-on')
     // console.log(promise)
 
     // promise.then((value) => {
     //     console.log(value.data)
     // })
 
-	// onMount(async () => {
-    //     let res = await fetch('/_api/app.json')
-    //     if (res.ok) {
-    //         $appData = await res.json()
-    //         // console.log($appData)
-    //     } else {
-    //         console.log(`Error: ${res.status}`)
-    //     }
+/*
 
-    //     res = await fetch('/_api/admin.json')
+Логин диктует настройки
+
+настройки приложения глобальные {
+    // настройки может менять администратор
+    заголовок
+    логотип {
+        адрес
+    }
+    initialScale
+    название темы
+    название шрифта (пока из дефолтных)
+}
+данные пользователя {
+    имя,
+    фамилия,
+    отчество,
+    почтовый адрес,
+}
+
+настройки меню приложения {
+    ширина меню
+    сегмент (он же стартовый сегмент)
+
+}
+
+*/
+	onMount(async () => {
+        let res = await fetch('/_api/app.json')
+        if (res.ok) {
+            $appData = await res.json()
+            // console.log($appData)
+        } else {
+            console.log(`Error: ${res.status}`)
+        }
+
+        res = await fetch('/_api/admin.json')
         
-    //     if (res.ok) {
-    //         $userData = await res.json()
-    //         // console.log($appData)
-    //     } else {
-    //         console.log(`Error: ${res.status}`)
-    //     }
+        let userData: any
 
-    //     console.log(getData('/_api/app.json'))
-	// })
+        if (res.ok) {
+            userData = await res.json()
+            // console.log($appData)
+        } else {
+            console.log(`Error: ${res.status}`)
+        }
+
+        $asideExpand = userData.aside.expand
+        $asideItems = userData.aside.items
+        
+
+        // console.log(getData('/_api/app.json'))
+	})
 </script>
 
 <Head />
 <Body />
 
 
-{#await promise}
+<!-- {#await promise}
 	<p>Loading data...</p>
 {:then value}
     {#if value.status}
@@ -64,13 +103,13 @@
     {/if}
 {:catch error}
 	<p>rejected - {error.message}</p>
-{/await}
+{/await} -->
 
-<!-- {#if !$user.isAuthorized}
+{#if !$user.isAuthorized}
     <LayoutSignIn />
 {:else}
     <LayoutLaborer />
-{/if} -->
+{/if}
   
 <!-- <Route>
   

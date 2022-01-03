@@ -1,20 +1,17 @@
 <script lang="ts">
-    import { userData } from 'src/store/store'
+    import { asideExpand } from 'src/store/store'
     import Fader from './fader/Fader.svelte'
     import Blind from './blind/Blind.svelte'
     import Items from './items/Items.svelte'
     // import Brand from './brand/Brand.svelte'
     // let expandContent: boolean = false
-
-    let expand: boolean = false
-
 </script>
 
 <aside
     class="aside"
-    class:expand={expand}
-    on:mouseenter={() => expand = true}
-    on:mouseleave={() => expand = false}
+    class:expand={$asideExpand}
+    on:mouseenter={() => $asideExpand = true}
+    on:mouseleave={() => $asideExpand = false}
 >
     <Fader/>
     <!-- <Blind asideMouseHover={expandContent}/> -->

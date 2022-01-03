@@ -8,7 +8,6 @@
     "aside": {
         "width": "max",
         "segment": "/home",
-        "expand": false,
         "items": [
             {
                 "id": 1,
