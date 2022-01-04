@@ -1,5 +1,6 @@
 <script lang="ts">
     import Icon from "src/components/Icon.svelte"
+    import Precode from "src/components/Precode.svelte"
 </script>
 
 <div class="h2" aria-level={2} role="heading">Icons</div>
@@ -18,3 +19,7 @@
         <Icon name="ghost" size="lg"/>
     </div>
 </div>
+
+<Precode class="d-b-grid-">
+    {`<Icon name="ghost" size="lg"/>`}
+</Precode>

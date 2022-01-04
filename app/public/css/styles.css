@@ -271,7 +271,7 @@ progress {
   --key-size-32: calc(var(--key-size) * 2);
   --space-size-offset: 1;
   --font-size-offset: 1;
-  --fs-s5: calc(var(--key-size) / calc(3 * var(--font-size-offset)));
+  --fs-s5: calc(var(--key-size) / calc(2.5 * var(--font-size-offset)));
   --fs-s4: calc(var(--key-size) / calc(2 * var(--font-size-offset)));
   --fs-s3: calc(var(--key-size) / calc(1.5 * var(--font-size-offset)));
   --fs-s2: calc(var(--key-size) / calc(1.25 * var(--font-size-offset)));
@@ -281,7 +281,7 @@ progress {
   --fs-l2: calc(var(--key-size) * calc(1.25 * var(--font-size-offset)));
   --fs-l3: calc(var(--key-size) * calc(1.5 * var(--font-size-offset)));
   --fs-l4: calc(var(--key-size) * calc(2 * var(--font-size-offset)));
-  --fs-l5: calc(var(--key-size) * calc(3 * var(--font-size-offset)));
+  --fs-l5: calc(var(--key-size) * calc(2.5 * var(--font-size-offset)));
   --positive-color: hsl(0 0% 100%);
   --positive-color-90: hsl(0 0% 100% / .9);
   --positive-color-80: hsl(0 0% 100% / .8);
@@ -334,36 +334,4 @@ progress {
   --error-color-l: hsl(var(--error-color-h) var(--error-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
   --error-color: hsl(var(--error-color-h) var(--error-color-s) var(--accent-colors-l));
   --error-color-d: hsl(var(--error-color-h) var(--error-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
-}
-
-:root {
-  --ico-size-sm: calc(var(--key-size) * 1.25);
-  --ico-size-md: calc(var(--key-size) * 1.5);
-  --ico-size-lg: calc(var(--key-size) * 1.75);
-}
-
-.ico {
-  width: 100%;
-  height: 100%;
-  background-color: currentColor;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-position: center;
-  mask-clip: content-box;
-  -webkit-mask-clip: content-box;
-  mask-image: var(--ico-image);
-  -webkit-mask-image: var(--ico-image);
-}
-.ico-sm {
-  width: var(--ico-size-sm);
-  height: var(--ico-size-sm);
-}
-.ico-md {
-  width: var(--ico-size-md);
-  height: var(--ico-size-md);
-}
-.ico-lg {
-  width: var(--ico-size-lg);
-  height: var(--ico-size-lg);
 }
