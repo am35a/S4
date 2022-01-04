@@ -17,11 +17,13 @@
     <div class="title">
         Header title
     </div>
-    <div class="d-i-grid">
-        <button>12</button>
-        <!-- <Button class="btn btn-ico my-auto">
-            <Icon name="menu" size="lg"/>
-        </Button> -->
+    <div class="d-i-grid px-2">
+        <Button
+            class="btn btn-ico my-auto"
+            on:click={() => window.open('https://github.com/am35a/S4', '_blank')}
+        >
+            <Icon name="github" size="lg"/>
+        </Button>
     </div>
 </header>
 
@@ -33,7 +35,7 @@
         grid-template-columns: auto 1fr auto
         height: var(--layout-header-height)
         background-color: var(--header-bg-color, var(--secondary-color-l))
-        color: var(--header-color, var(--positive-color))
+        color: var(--header-color, var(--negative-color))
         z-index: 10
         .hamburger
             display: grid
