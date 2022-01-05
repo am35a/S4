@@ -30,6 +30,15 @@ $spacingStep: 8
             &y-#{$i}
                 margin-top: calc(var(--key-size) * #{$i * 0.25}) !important
                 margin-bottom: calc(var(--key-size) * #{$i * 0.25}) !important
+        @for $i from 1 through $spacingStep
+            &l-#{$i}
+                margin-left: calc(var(--key-size) * #{$i * 0.25}) !important
+            &t-#{$i}
+                margin-top: calc(var(--key-size) * #{$i * 0.25}) !important
+            &r-#{$i}
+                margin-right: calc(var(--key-size) * #{$i * 0.25}) !important
+            &b-#{$i}
+                margin-bottom: calc(var(--key-size) * #{$i * 0.25}) !important
         &x-auto
             margin-left: auto !important
             margin-right: auto !important
@@ -56,6 +65,15 @@ $spacingStep: 8
                 padding-right: calc(var(--key-size) * #{$i * 0.25}) !important
             &y-#{$i}
                 padding-top: calc(var(--key-size) * #{$i * 0.25}) !important
+                padding-bottom: calc(var(--key-size) * #{$i * 0.25}) !important
+        @for $i from 1 through $spacingStep
+            &l-#{$i}
+                padding-left: calc(var(--key-size) * #{$i * 0.25}) !important
+            &t-#{$i}
+                padding-top: calc(var(--key-size) * #{$i * 0.25}) !important
+            &r-#{$i}
+                padding-right: calc(var(--key-size) * #{$i * 0.25}) !important
+            &b-#{$i}
                 padding-bottom: calc(var(--key-size) * #{$i * 0.25}) !important
 
     .#{$orientation}#{$type}g

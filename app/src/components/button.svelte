@@ -2,7 +2,11 @@
 // https://github.com/hperrin/svelte-material-ui/tree/master/packages
 </script>
 
-<button on:click {...$$restProps}>
+<button
+    class:btn={true}
+    {...$$restProps}
+    on:click
+>
     <slot></slot>
 </button>
 
