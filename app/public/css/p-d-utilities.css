@@ -338,6 +338,152 @@
   grid-row: auto;
 }
 
+.p\:col-start-1 {
+  grid-column-start: 1;
+}
+.p\:col-end-1 {
+  grid-column-end: 1;
+}
+.p\:col-start-2 {
+  grid-column-start: 2;
+}
+.p\:col-end-2 {
+  grid-column-end: 2;
+}
+.p\:col-start-3 {
+  grid-column-start: 3;
+}
+.p\:col-end-3 {
+  grid-column-end: 3;
+}
+.p\:col-start-4 {
+  grid-column-start: 4;
+}
+.p\:col-end-4 {
+  grid-column-end: 4;
+}
+.p\:col-start-5 {
+  grid-column-start: 5;
+}
+.p\:col-end-5 {
+  grid-column-end: 5;
+}
+.p\:col-start-6 {
+  grid-column-start: 6;
+}
+.p\:col-end-6 {
+  grid-column-end: 6;
+}
+.p\:col-start-7 {
+  grid-column-start: 7;
+}
+.p\:col-end-7 {
+  grid-column-end: 7;
+}
+.p\:col-start-8 {
+  grid-column-start: 8;
+}
+.p\:col-end-8 {
+  grid-column-end: 8;
+}
+.p\:col-start-9 {
+  grid-column-start: 9;
+}
+.p\:col-end-9 {
+  grid-column-end: 9;
+}
+.p\:col-start-10 {
+  grid-column-start: 10;
+}
+.p\:col-end-10 {
+  grid-column-end: 10;
+}
+.p\:col-start-11 {
+  grid-column-start: 11;
+}
+.p\:col-end-11 {
+  grid-column-end: 11;
+}
+.p\:col-start-12 {
+  grid-column-start: 12;
+}
+.p\:col-end-12 {
+  grid-column-end: 12;
+}
+
+.p\:row-start-1 {
+  grid-row-start: 1;
+}
+.p\:row-end-1 {
+  grid-row-end: 1;
+}
+.p\:row-start-2 {
+  grid-row-start: 2;
+}
+.p\:row-end-2 {
+  grid-row-end: 2;
+}
+.p\:row-start-3 {
+  grid-row-start: 3;
+}
+.p\:row-end-3 {
+  grid-row-end: 3;
+}
+.p\:row-start-4 {
+  grid-row-start: 4;
+}
+.p\:row-end-4 {
+  grid-row-end: 4;
+}
+.p\:row-start-5 {
+  grid-row-start: 5;
+}
+.p\:row-end-5 {
+  grid-row-end: 5;
+}
+.p\:row-start-6 {
+  grid-row-start: 6;
+}
+.p\:row-end-6 {
+  grid-row-end: 6;
+}
+.p\:row-start-7 {
+  grid-row-start: 7;
+}
+.p\:row-end-7 {
+  grid-row-end: 7;
+}
+.p\:row-start-8 {
+  grid-row-start: 8;
+}
+.p\:row-end-8 {
+  grid-row-end: 8;
+}
+.p\:row-start-9 {
+  grid-row-start: 9;
+}
+.p\:row-end-9 {
+  grid-row-end: 9;
+}
+.p\:row-start-10 {
+  grid-row-start: 10;
+}
+.p\:row-end-10 {
+  grid-row-end: 10;
+}
+.p\:row-start-11 {
+  grid-row-start: 11;
+}
+.p\:row-end-11 {
+  grid-row-end: 11;
+}
+.p\:row-start-12 {
+  grid-row-start: 12;
+}
+.p\:row-end-12 {
+  grid-row-end: 12;
+}
+
 .p\:flex-row {
   flex-direction: row;
 }

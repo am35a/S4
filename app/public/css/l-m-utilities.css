@@ -338,6 +338,152 @@
   grid-row: auto;
 }
 
+.l\:m\:col-start-1 {
+  grid-column-start: 1;
+}
+.l\:m\:col-end-1 {
+  grid-column-end: 1;
+}
+.l\:m\:col-start-2 {
+  grid-column-start: 2;
+}
+.l\:m\:col-end-2 {
+  grid-column-end: 2;
+}
+.l\:m\:col-start-3 {
+  grid-column-start: 3;
+}
+.l\:m\:col-end-3 {
+  grid-column-end: 3;
+}
+.l\:m\:col-start-4 {
+  grid-column-start: 4;
+}
+.l\:m\:col-end-4 {
+  grid-column-end: 4;
+}
+.l\:m\:col-start-5 {
+  grid-column-start: 5;
+}
+.l\:m\:col-end-5 {
+  grid-column-end: 5;
+}
+.l\:m\:col-start-6 {
+  grid-column-start: 6;
+}
+.l\:m\:col-end-6 {
+  grid-column-end: 6;
+}
+.l\:m\:col-start-7 {
+  grid-column-start: 7;
+}
+.l\:m\:col-end-7 {
+  grid-column-end: 7;
+}
+.l\:m\:col-start-8 {
+  grid-column-start: 8;
+}
+.l\:m\:col-end-8 {
+  grid-column-end: 8;
+}
+.l\:m\:col-start-9 {
+  grid-column-start: 9;
+}
+.l\:m\:col-end-9 {
+  grid-column-end: 9;
+}
+.l\:m\:col-start-10 {
+  grid-column-start: 10;
+}
+.l\:m\:col-end-10 {
+  grid-column-end: 10;
+}
+.l\:m\:col-start-11 {
+  grid-column-start: 11;
+}
+.l\:m\:col-end-11 {
+  grid-column-end: 11;
+}
+.l\:m\:col-start-12 {
+  grid-column-start: 12;
+}
+.l\:m\:col-end-12 {
+  grid-column-end: 12;
+}
+
+.l\:m\:row-start-1 {
+  grid-row-start: 1;
+}
+.l\:m\:row-end-1 {
+  grid-row-end: 1;
+}
+.l\:m\:row-start-2 {
+  grid-row-start: 2;
+}
+.l\:m\:row-end-2 {
+  grid-row-end: 2;
+}
+.l\:m\:row-start-3 {
+  grid-row-start: 3;
+}
+.l\:m\:row-end-3 {
+  grid-row-end: 3;
+}
+.l\:m\:row-start-4 {
+  grid-row-start: 4;
+}
+.l\:m\:row-end-4 {
+  grid-row-end: 4;
+}
+.l\:m\:row-start-5 {
+  grid-row-start: 5;
+}
+.l\:m\:row-end-5 {
+  grid-row-end: 5;
+}
+.l\:m\:row-start-6 {
+  grid-row-start: 6;
+}
+.l\:m\:row-end-6 {
+  grid-row-end: 6;
+}
+.l\:m\:row-start-7 {
+  grid-row-start: 7;
+}
+.l\:m\:row-end-7 {
+  grid-row-end: 7;
+}
+.l\:m\:row-start-8 {
+  grid-row-start: 8;
+}
+.l\:m\:row-end-8 {
+  grid-row-end: 8;
+}
+.l\:m\:row-start-9 {
+  grid-row-start: 9;
+}
+.l\:m\:row-end-9 {
+  grid-row-end: 9;
+}
+.l\:m\:row-start-10 {
+  grid-row-start: 10;
+}
+.l\:m\:row-end-10 {
+  grid-row-end: 10;
+}
+.l\:m\:row-start-11 {
+  grid-row-start: 11;
+}
+.l\:m\:row-end-11 {
+  grid-row-end: 11;
+}
+.l\:m\:row-start-12 {
+  grid-row-start: 12;
+}
+.l\:m\:row-end-12 {
+  grid-row-end: 12;
+}
+
 .l\:m\:flex-row {
   flex-direction: row;
 }
