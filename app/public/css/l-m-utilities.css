@@ -162,6 +162,182 @@
   display: none !important;
 }
 
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.cols-auto {
+  grid-auto-columns: auto;
+}
+
+.rows-auto {
+  grid-auto-rows: auto;
+}
+
+.l\:m\:cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.l\:m\:cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.l\:m\:cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.l\:m\:cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.l\:m\:cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.l\:m\:cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.l\:m\:cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.l\:m\:cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+.l\:m\:cols-9 {
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+.l\:m\:cols-10 {
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+.l\:m\:cols-11 {
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+.l\:m\:cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.l\:m\:rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+.l\:m\:rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+.l\:m\:rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+.l\:m\:rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+.l\:m\:rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+.l\:m\:rows-6 {
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+.l\:m\:rows-7 {
+  grid-template-rows: repeat(7, minmax(0, 1fr));
+}
+.l\:m\:rows-8 {
+  grid-template-rows: repeat(8, minmax(0, 1fr));
+}
+.l\:m\:rows-9 {
+  grid-template-rows: repeat(9, minmax(0, 1fr));
+}
+.l\:m\:rows-10 {
+  grid-template-rows: repeat(10, minmax(0, 1fr));
+}
+.l\:m\:rows-11 {
+  grid-template-rows: repeat(11, minmax(0, 1fr));
+}
+.l\:m\:rows-12 {
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+}
+
+.l\:m\:col-span-1 {
+  grid-column: span 1/span 1;
+}
+.l\:m\:col-span-2 {
+  grid-column: span 2/span 2;
+}
+.l\:m\:col-span-3 {
+  grid-column: span 3/span 3;
+}
+.l\:m\:col-span-4 {
+  grid-column: span 4/span 4;
+}
+.l\:m\:col-span-5 {
+  grid-column: span 5/span 5;
+}
+.l\:m\:col-span-6 {
+  grid-column: span 6/span 6;
+}
+.l\:m\:col-span-7 {
+  grid-column: span 7/span 7;
+}
+.l\:m\:col-span-8 {
+  grid-column: span 8/span 8;
+}
+.l\:m\:col-span-9 {
+  grid-column: span 9/span 9;
+}
+.l\:m\:col-span-10 {
+  grid-column: span 10/span 10;
+}
+.l\:m\:col-span-11 {
+  grid-column: span 11/span 11;
+}
+.l\:m\:col-span-12 {
+  grid-column: span 12/span 12;
+}
+.l\:m\:col-span-full {
+  grid-column: 1/-1;
+}
+.l\:m\:col-span-auto {
+  grid-column: auto;
+}
+
+.l\:m\:row-span-1 {
+  grid-row: span 1/span 1;
+}
+.l\:m\:row-span-2 {
+  grid-row: span 2/span 2;
+}
+.l\:m\:row-span-3 {
+  grid-row: span 3/span 3;
+}
+.l\:m\:row-span-4 {
+  grid-row: span 4/span 4;
+}
+.l\:m\:row-span-5 {
+  grid-row: span 5/span 5;
+}
+.l\:m\:row-span-6 {
+  grid-row: span 6/span 6;
+}
+.l\:m\:row-span-7 {
+  grid-row: span 7/span 7;
+}
+.l\:m\:row-span-8 {
+  grid-row: span 8/span 8;
+}
+.l\:m\:row-span-9 {
+  grid-row: span 9/span 9;
+}
+.l\:m\:row-span-10 {
+  grid-row: span 10/span 10;
+}
+.l\:m\:row-span-11 {
+  grid-row: span 11/span 11;
+}
+.l\:m\:row-span-12 {
+  grid-row: span 12/span 12;
+}
+.l\:m\:row-span-full {
+  grid-row: 1/-1;
+}
+.l\:m\:row-span-auto {
+  grid-row: auto;
+}
+
 .l\:m\:flex-row {
   flex-direction: row;
 }
@@ -317,7 +493,7 @@
   transform: translateY(-50%) !important;
 }
 
-/*  sizing section: width, height, box-sizing and resize types contained in classes */
+/*  sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes */
 .border-box {
   box-sizing: border-box !important;
 }
@@ -451,6 +627,43 @@
 }
 .l\:m\:resize-vertical {
   resize: vertical !important;
+}
+
+.l\:m\:aspect-1\:1 {
+  aspect-ratio: 1/1;
+}
+.l\:m\:aspect-4\:3 {
+  aspect-ratio: 4/3;
+}
+.l\:m\:aspect-3\:4 {
+  aspect-ratio: 3/4;
+}
+.l\:m\:aspect-16\:9 {
+  aspect-ratio: 16/9;
+}
+.l\:m\:aspect-9\:16 {
+  aspect-ratio: 9/16;
+}
+.l\:m\:aspect-16\:10 {
+  aspect-ratio: 16/10;
+}
+.l\:m\:aspect-10\:16 {
+  aspect-ratio: 10/16;
+}
+.l\:m\:aspect-21\:9 {
+  aspect-ratio: 21/9;
+}
+.l\:m\:aspect-9\:21 {
+  aspect-ratio: 9/21;
+}
+.l\:m\:aspect-32\:9 {
+  aspect-ratio: 32/9;
+}
+.l\:m\:aspect-9\:32 {
+  aspect-ratio: 9/32;
+}
+.l\:m\:aspect-auto {
+  aspect-ratio: auto;
 }
 
 /*  spacing section: width, height, box-sizing and resize types contained in classes */

@@ -1,13 +1,18 @@
 <script lang="ts">
-    let className: string = $$restProps.name ? `ico-${$$restProps.name}` : ''
-    let classSize: string = $$restProps.size ? `ico-${$$restProps.size}` : ''
-
-    let IconClasses = (): string => `ico ${className} ${classSize}`
-    
-    $: $$restProps.class = $$restProps.class ? `${$$restProps.class} ${IconClasses()}` : IconClasses()
+    let className: string = ''
+    let classSize: string = ''
+    $: {
+        className = $$restProps.name ? `ico-${$$restProps.name}` : ``
+        classSize = $$restProps.size ? `ico-${$$restProps.size}` : ``
+        let IconClasses = (): string => `ico ${className} ${classSize}`
+        $$restProps.class = $$restProps.class ? `${IconClasses()} ${$$restProps.class}` : IconClasses()
+        $$restProps.style=`--ico-image: url(/icons/${$$restProps.name}.svg)`
+        delete $$restProps.name
+        delete $$restProps.size
+    }
 </script>
 
-<div {...$$restProps} style="--ico-image: url(/icons/{$$restProps.name}.svg)"></div>
+<div {...$$restProps}></div>
 
 <style lang="sass">
     :root
@@ -27,7 +32,6 @@
         -webkit-mask-clip: content-box
         mask-image: var(--ico-image)
         -webkit-mask-image: var(--ico-image)
-
         &-sm
             width: var(--ico-size-sm)
             height: var(--ico-size-sm) // --sm-size = --key-size * 1 сделать как у font-size

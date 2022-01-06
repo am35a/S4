@@ -21,4 +21,6 @@
             display: inline grid
             padding-left: calc(var(--key-size) * .25)
             padding-right: calc(var(--key-size) * .25)
+        code
+            overflow: auto
 </style>

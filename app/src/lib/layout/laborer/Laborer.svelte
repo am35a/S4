@@ -18,4 +18,5 @@
         display: grid
         grid-template-columns: min-content 1fr
         grid-template-rows: min-content 1fr
+        overflow: auto
 </style>

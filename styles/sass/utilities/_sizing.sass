@@ -3,9 +3,10 @@
 $sizingLocations: none, both, horizontal, vertical
 $sizingLevels: min-, '', max-
 $defaultSizingStep: 25
+$defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9, 9 32)
 
 /*
-    sizing section: width, height, box-sizing and resize types contained in classes
+    sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes
 
 @mixin _sizing($orientation, $type)
     @each $item in $sizingLevels
@@ -27,6 +28,13 @@ $defaultSizingStep: 25
         @each $item in $sizingLocations
             &-#{$item}
                 resize: #{$item} !important
+
+    .#{$orientation}#{$type}aspect
+        @each $v, $h in $defaultAspectRatio
+            &-#{$v}#{'\\:'}#{$h}
+                aspect-ratio: #{$v + '/' + $h}
+        &-auto
+            aspect-ratio: auto
     
 .border-box
     box-sizing: border-box !important

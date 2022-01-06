@@ -1,15 +1,30 @@
-// @mixin _flex($orientation, $type)
-    // .#{$orientation}#{$type}
+@mixin _grid($orientation, $type)
+    .#{$orientation}#{$type}cols
+        @for $i from 1 through 12
+            &-#{$i}
+                grid-template-columns: repeat($i, minmax(0, 1fr))
+    .#{$orientation}#{$type}rows
+        @for $i from 1 through 12
+            &-#{$i}
+                grid-template-rows: repeat($i, minmax(0, 1fr))
 
-.col-span-full
-    grid-column: 1 / -1
-.col-span-auto
-    grid-column: auto
+    .#{$orientation}#{$type}col-span
+        @for $i from 1 through 12
+            &-#{$i}
+                grid-column: span $i / span $i
+        &-full
+            grid-column: 1 / -1
+        &-auto
+            grid-column: auto
 
-.row-span-full
-    grid-row: 1 / -1
-.row-span-auto
-    grid-row: auto
+    .#{$orientation}#{$type}row-span
+        @for $i from 1 through 12
+            &-#{$i}
+                grid-row: span $i / span $i
+        &-full
+            grid-row: 1 / -1
+        &-auto
+            grid-row: auto
 
 .grid-flow-col
     grid-auto-flow: column
