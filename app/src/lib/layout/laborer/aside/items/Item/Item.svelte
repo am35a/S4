@@ -5,11 +5,14 @@
     import { asideExpand, appSegment } from 'src/store/store'    
 
     import Icon from 'src/components/Icon.svelte'
+    // import Subitem from './subitem/Subitem.svelte'
+
     export let active: boolean = false
     export let icon: string = 'ghost'
     export let title: string = undefined
-    export let turbo: any = undefined
+    export let action: any = undefined
     export let segment: string = undefined
+    // export let items: any = undefined
 
     function onTitleClick() {
         router.push(segment)
@@ -38,18 +41,19 @@
     <div class="icon">
         <Icon name={icon} size="lg"/>
     </div>
-    {#if turbo}
-        <div class="turbo">
-            <Icon name={turbo.icon}/>
+    {#if action}
+        <div class="action">
+            <Icon name={action.icon}/>
         </div>
     {/if}
-    <div on:click={onTitleClick} class="title">{title}</div>
+    <button on:click={onTitleClick} class="title">{title}</button>
 </div>
+<!-- <Subitem /> -->
 
 <style lang="sass">
     .item
         display: grid
-        height: var(--layout-aside-item-height)
+        // height: var(--layout-aside-item-height)
         color: var(--aside-item-color)
         // transition: color 0.25s
         transition: all 0.25s
@@ -64,6 +68,7 @@
         .status
             grid-column: 1/-1
             grid-row: 1/-1
+            height: var(--layout-aside-item-height)
             margin: auto auto auto 0
             width: 0
             height: calc(100% - var(--key-size))
@@ -80,7 +85,7 @@
             align-items: center
             color: var(--aside-item-icon-color)
             z-index: 0
-        .turbo
+        .action
             grid-column: 1/-1
             grid-row: 1/-1
             display: grid
@@ -89,7 +94,7 @@
             height: 100%
             justify-items: center
             align-items: center
-            color: var(--aside-item-turbo-color)
+            color: var(--aside-item-action-color)
             cursor: pointer
             z-index: 2
             :global(.ico)
@@ -104,6 +109,7 @@
             grid-column: 1/-1
             grid-row: 1/-1
             display: grid
+            height: var(--layout-aside-item-height)
             justify-items: start
             align-items: center
             padding-left: calc(var(--key-size) * 3)

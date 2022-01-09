@@ -16,6 +16,7 @@
     import Home from './home/Home.svelte'
     import Core from './core/Core.svelte'
     import Components from './components/Components.svelte'
+        import Icons from './components/icons/Icons.svelte'
     import Utilities from './utilities/Utilities.svelte'
     import Layout from './layout/Layout.svelte'
     import Help from './help/Help.svelte'
@@ -58,6 +59,9 @@
         </Route>
         <Route path="/components">
             <svelte:component this={Components}/>
+            <Route path="/icons">
+                <svelte:component this={Icons}/>
+            </Route>
         </Route>
         <Route path="/utilities">
             <svelte:component this={Utilities}/>
