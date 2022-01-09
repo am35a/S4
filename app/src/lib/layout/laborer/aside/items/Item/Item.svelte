@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte'
+    import { fade } from 'svelte/transition'
 
     import { router, pathToArray, path } from 'svelte-micro'
     import { asideExpand, appSegment } from 'src/store/store'
@@ -12,7 +13,10 @@
     export let title: string = undefined
     export let action: any = undefined
     export let segment: string = undefined
+
     export let items: any = undefined
+
+    export let submenu: boolean = items ? false : true
 
     function onTitleClick() {
         router.push(segment)
@@ -46,10 +50,17 @@
     {...$$restProps}
 >
     <button
-        class="title" on:click={onTitleClick} disabled={active}>{title}</button>
+        class="title"
+        on:click={onTitleClick}
+        disabled={active}
+    >{title}</button>
     {#if action}
         <button class="action" on:click={onActionClick} tabindex={-1}>
             <Icon name={action.icon}/>
+        </button>
+    {:else if items}
+        <button class="action" on:click={() => submenu = !submenu} tabindex={-1}>
+            <Icon name={submenu ? 'selector-minimize' : 'selector-maximize'}/>
         </button>
     {/if}
     <div class="backdrop"></div>
@@ -57,9 +68,20 @@
     <div class="icon">
         <Icon name={icon} size="lg"/>
     </div>
-    <!-- <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    </div> -->
+    {#if items}
+        <div
+            class:d-none = {!submenu}
+            class="submenu"
+        >
+            {#each items as item}
+                <svelte:self
+                    {...item}
+                    active={$appSegment === item.segment}
+                    segment={item.segment}
+                />
+            {/each}
+        </div>
+    {/if}
 </div>
 
 <style lang="sass">
@@ -69,6 +91,8 @@
         &.has-submenu
             .title
                 padding-right: 3rem
+        &.has-submenu
+            background-color: var(--negative-color-10)
         .title
             grid-column: 1/-1
             grid-row: 1/-1
