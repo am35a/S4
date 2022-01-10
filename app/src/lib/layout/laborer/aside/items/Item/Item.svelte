@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from 'svelte'
-    import { fade } from 'svelte/transition'
 
     import { router, pathToArray, path } from 'svelte-micro'
     import { asideExpand, appSegment } from 'src/store/store'
@@ -9,7 +8,7 @@
     // import Subitem from './subitem/Subitem.svelte'
 
     export let active: boolean = false
-    export let icon: string = 'ghost'
+    export let icon: string = undefined
     export let title: string = undefined
     export let action: any = undefined
     export let segment: string = undefined
@@ -42,7 +41,6 @@
 
 </script>
 
-<!-- class:active = {active} -->
 <div 
     class:item = {true}
     class:has-action = {action}
@@ -66,7 +64,11 @@
     <div class="backdrop"></div>
     <div class="status"></div>
     <div class="icon">
-        <Icon name={icon} size="lg"/>
+        {#if icon}
+            <Icon name={icon} size="lg"/>
+        {:else}
+            <div class="fw-600">{title.slice(0, 2).toLocaleUpperCase()}</div>
+        {/if}
     </div>
     {#if items}
         <div
@@ -177,5 +179,6 @@
             justify-items: center
             align-items: center
             color: var(--aside-item-icon-color)
+            cursor: default
             z-index: 0
 </style>

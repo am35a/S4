@@ -29,13 +29,11 @@
                 "items": [
                     {
                         "id": 30,
-                        "icon": "ghost",
                         "title": "Buttons",
                         "segment": "/components/buttons"
                     },
                     {
                         "id": 31,
-                        "icon": "ghost",
                         "title": "Icons",
                         "segment": "/components/icons"
                     }

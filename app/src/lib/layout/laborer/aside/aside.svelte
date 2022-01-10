@@ -32,7 +32,8 @@
         :global(.blind)
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
-        :global(.items)
+        :global(.items),
+        :global(.submenu)
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
             :global(.item)
@@ -41,7 +42,8 @@
         &.expand
             :global(.blind)
                 transform: translateX(0rem)
-            :global(.items)
+            :global(.items),
+            :global(.submenu)
                 transform: translateX(0rem)
                 :global(.item)
                     transform: translateX(0rem)
