@@ -43,7 +43,74 @@
                 "id": 4,
                 "icon": "css3",
                 "title": "Utilities",
-                "segment": "/utilities"
+                "segment": "/utilities",
+                "items": [
+                    {
+                        "id": 40,
+                        "title": "Alignment",
+                        "segment": "/utilities/alignment"
+                    },
+                    {
+                        "id": 41,
+                        "title": "Background",
+                        "segment": "/utilities/background"
+                    },
+                    {
+                        "id": 42,
+                        "title": "Border",
+                        "segment": "/utilities/border"
+                    },
+                    {
+                        "id": 43,
+                        "title": "Display",
+                        "segment": "/utilities/display"
+                    },
+                    {
+                        "id": 44,
+                        "title": "Flex",
+                        "segment": "/utilities/flex"
+                    },
+                    {
+                        "id": 45,
+                        "title": "Grid",
+                        "segment": "/utilities/grid"
+                     },
+                    {
+                        "id": 46,
+                        "title": "Overflow",
+                        "segment": "/utilities/overflow"
+                    },
+                    {
+                        "id": 47,
+                        "title": "Position",
+                        "segment": "/utilities/position"
+                    },
+                    {
+                        "id": 48,
+                        "title": "Pseudos",
+                        "segment": "/utilities/pseudos"
+                    },
+                    {
+                        "id": 49,
+                        "title": "Shadow",
+                        "segment": "/utilities/shadow"
+                    },
+                    {
+                        "id": 50,
+                        "title": "Sizing",
+                        "segment": "/utilities/sizing"
+                    },
+                    {
+                        "id": 51,
+                        "title": "sSacing",
+                        "segment": "/utilities/spacing"
+                    },
+                    {
+                        "id": 52,
+                        "title": "Typography",
+                        "segment": "/utilities/typography"
+                    }
+                ]
             },
             {
                 "id": 98,

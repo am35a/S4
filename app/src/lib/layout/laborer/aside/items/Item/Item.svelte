@@ -5,7 +5,6 @@
     import { asideExpand, appSegment } from 'src/store/store'
 
     import Icon from 'src/components/Icon.svelte'
-    // import Subitem from './subitem/Subitem.svelte'
 
     export let active: boolean = false
     export let icon: string = undefined
@@ -54,20 +53,20 @@
     >{title}</button>
     {#if action}
         <button class="action" on:click={onActionClick} tabindex={-1}>
-            <Icon name={action.icon}/>
+            <Icon class="m-auto" name={action.icon}/>
         </button>
     {:else if items}
         <button class="action" on:click={() => submenu = !submenu} tabindex={-1}>
-            <Icon name={submenu ? 'selector-minimize' : 'selector-maximize'}/>
+            <Icon class="m-auto" name={submenu ? 'selector-minimize' : 'selector-maximize'}/>
         </button>
     {/if}
     <div class="backdrop"></div>
     <div class="status"></div>
     <div class="icon">
         {#if icon}
-            <Icon name={icon} size="lg"/>
+            <Icon class="m-auto" name={icon} size="lg"/>
         {:else}
-            <div class="fw-600">{title.slice(0, 2).toLocaleUpperCase()}</div>
+            <div class="m-auto fw-600">{title.slice(0, 2).toLocaleUpperCase()}</div>
         {/if}
     </div>
     {#if items}
@@ -124,6 +123,8 @@
                 cursor: default !important
                 pointer-events: none
                 color: var(--aside-item-active-color, var(--positive-color))
+                ~ *:not(.submenu)
+                    color: var(--aside-item-active-color, var(--positive-color))
                 ~ .status
                     width: .375rem
                     background: var(--aside-item-active-status-bg, var(--positive-color))
@@ -135,8 +136,6 @@
             margin: 0 0 0 auto
             width: calc(var(--key-size) * 3)
             height: 100%
-            justify-items: center
-            align-items: center
             color: var(--aside-item-action-color)
             cursor: pointer
             z-index: 2
@@ -176,8 +175,6 @@
             grid-row: 1/-1
             display: grid
             width: calc(var(--key-size) * 3)
-            justify-items: center
-            align-items: center
             color: var(--aside-item-icon-color)
             cursor: default
             z-index: 0

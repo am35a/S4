@@ -16,8 +16,12 @@
     import Home from './home/Home.svelte'
     import Core from './core/Core.svelte'
     import Components from './components/Components.svelte'
+        import Buttons from './components/buttons/Buttons.svelte'
         import Icons from './components/icons/Icons.svelte'
     import Utilities from './utilities/Utilities.svelte'
+        // import Alignment from './utilities/alignment/Alignment.svelte'
+        // ...
+        // import Typography from './utilities/typography/Typography.svelte'
     import Layout from './layout/Layout.svelte'
     import Help from './help/Help.svelte'
 
@@ -27,6 +31,7 @@
 
     // import Button from 'src/components/Button.svelte'
     import Icon from 'src/components/Icon.svelte'
+import App from 'src/App.svelte';
 
     $: console.log($asideItems[2])
 
@@ -59,6 +64,9 @@
         </Route>
         <Route path="/components">
             <svelte:component this={Components}/>
+            <Route path="/buttons">
+                <svelte:component this={Buttons}/>
+            </Route>
             <Route path="/icons">
                 <svelte:component this={Icons}/>
             </Route>
