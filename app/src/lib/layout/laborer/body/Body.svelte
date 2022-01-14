@@ -31,7 +31,6 @@
 
     // import Button from 'src/components/Button.svelte'
     import Icon from 'src/components/Icon.svelte'
-import App from 'src/App.svelte';
 
     $: console.log($asideItems[2])
 
