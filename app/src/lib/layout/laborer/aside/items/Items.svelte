@@ -1,6 +1,9 @@
 <script lang="ts">
+    import { path } from 'svelte-micro'
     import { asideItems, appSegment } from 'src/store/store'
     import Item from './item/Item.svelte'
+
+    $: $appSegment = $path //for browser backward and forward buttons
 </script>
 
 <div class="items">

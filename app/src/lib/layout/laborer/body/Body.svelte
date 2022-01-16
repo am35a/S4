@@ -3,21 +3,17 @@
 
     import { asideItems } from 'src/store/store'
 
-    $: for (const item of $asideItems) {
-        console.log( `${item.segment[1].toUpperCase()}${item.segment.slice(2)}` )
-    }
-
-    // const array1 = ['a', 'b', 'c'];
-    // for (const element of array1) {
-    //     console.log(element);
+    // let asideRoute = [
+	// 	{comp: () => import('./home/Home.svelte')}
+    // ]
+    // $: for (const [index, item] of $asideItems.entries()) {
+    //     asideRoute[index] = {comp: () => import(`.${item.segment}/${item.segment[1].toUpperCase()}${item.segment.slice(2)}.svelte`)}
     // }
-
+    // $: console.log(JSON.stringify(asideRoute))
 
     import Home from './home/Home.svelte'
     import Core from './core/Core.svelte'
     import Components from './components/Components.svelte'
-        import Buttons from './components/buttons/Buttons.svelte'
-        import Icons from './components/icons/Icons.svelte'
     import Utilities from './utilities/Utilities.svelte'
         // import Alignment from './utilities/alignment/Alignment.svelte'
         // ...
@@ -25,24 +21,8 @@
     import Layout from './layout/Layout.svelte'
     import Help from './help/Help.svelte'
 
-    
-    // let Help
-    // import('./help/Help.svelte').then(res => Help = res.default)
-
-    // import Button from 'src/components/Button.svelte'
-    import Icon from 'src/components/Icon.svelte'
-
-    $: console.log($asideItems[2])
-
+    // $: console.log($asideItems[2])
 </script>
-
-
-<!-- !!! https://svelte.dev/repl/5d0bb97b35f84cd59373277f0638a75d?version=3.23.1 -->
-
-<!-- https://svelte.dev/repl/ec6f6b61329f4f43ae049464d73d8158?version=3.23.1 -->
-
-<!-- https://www.akashmittal.com/dynamically-import-components-svelte/ -->
-<!-- https://svelte.dev/tutorial/svelte-component -->
 
 <div class="body">
     
@@ -50,9 +30,6 @@
 <!-- 
     <div><span>{$path}</span></div>
     <hr> -->
-
-    <!-- <Button on:click={() => console.log($userData.aside.items[1])}>111111</Button> -->
-    <!-- <Button on:click={() => $userData.data.name = 'Tester'}>111111</Button> -->
 
     <Route>
         <Route path={"/home"}>
@@ -63,12 +40,6 @@
         </Route>
         <Route path="/components">
             <svelte:component this={Components}/>
-            <Route path="/buttons">
-                <svelte:component this={Buttons}/>
-            </Route>
-            <Route path="/icons">
-                <svelte:component this={Icons}/>
-            </Route>
         </Route>
         <Route path="/utilities">
             <svelte:component this={Utilities}/>

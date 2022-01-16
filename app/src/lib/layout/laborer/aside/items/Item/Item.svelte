@@ -30,10 +30,7 @@
 
 
     onMount(async () => {
-        // let loadPath: string
         $appSegment = pathToArray($path)[0]
-        // console.log($path)
-        // console.log(loadPath)
     })
 
     // $: segment
