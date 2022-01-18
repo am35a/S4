@@ -428,23 +428,29 @@
 }
 
 /*  display section: display variants contained in classes */
-.d-b-flow {
-  display: block flow-root !important;
+.d-block {
+  display: block !important;
 }
-.d-i-flow {
-  display: inline flow-root !important;
+.d-inline {
+  display: inline !important;
 }
-.d-b-flex {
-  display: block flex !important;
+.d-inline-block {
+  display: inline-block !important;
 }
-.d-i-flex {
-  display: inline flex !important;
+.d-flex {
+  display: flex !important;
 }
-.d-b-grid {
-  display: block grid !important;
+.d-inline-flex {
+  display: inline-flex !important;
 }
-.d-i-grid {
-  display: inline grid !important;
+.d-grid {
+  display: grid !important;
+}
+.d-inline-grid {
+  display: inline-grid !important;
+}
+.d-flow-root {
+  display: flow-root !important;
 }
 .d-inherit {
   display: inherit !important;

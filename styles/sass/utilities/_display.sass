@@ -1,6 +1,5 @@
-// $displayLegacy: block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root
-//$displayModern: ( block-flow-root: block flow-root, inline-flow-root: inline flow-root, block-flex: block flex, inline-flex: inline flex, block-grid: block grid, inline-grid: inline grid )
-$displayModern: ( b-flow: block flow-root, i-flow: inline flow-root, b-flex: block flex, i-flex: inline flex, b-grid: block grid, i-grid: inline grid )
+$displayLegacy: block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root
+// $displayModern: ( b-flow: block flow-root, i-flow: inline flow-root, b-flex: block flex, i-flex: inline flex, b-grid: block grid, i-grid: inline grid )
 $displayGlobal: inherit, initial, revert, unset
 $displayBox: contents, none
 
@@ -9,12 +8,12 @@ $displayBox: contents, none
 
 @mixin _display($orientation, $type)
     .#{$orientation}#{$type}d
-        // @each $item in $displayLegacy
-        //     &-#{$item}
-        //        display: #{$item} !important
-        @each $item-name, $item-value in $displayModern
-            &-#{$item-name}
-               display: #{$item-value} !important
+        @each $item in $displayLegacy
+            &-#{$item}
+               display: #{$item} !important
+        // @each $item-name, $item-value in $displayModern
+        //     &-#{$item-name}
+        //        display: #{$item-value} !important
         @each $item in $displayGlobal
             &-#{$item}
                display: #{$item} !important

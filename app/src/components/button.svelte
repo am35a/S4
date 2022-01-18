@@ -14,7 +14,7 @@
     $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
 
     .btn
-        display: inline grid
+        display: inline-grid
         grid-auto-flow: column
         grid-gap: calc(var(--key-size) * .25)
         align-items: center

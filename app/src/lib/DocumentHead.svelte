@@ -40,6 +40,28 @@
     {#each cssMap[deviceCSSPrefix] as item}
         <link rel="stylesheet" href="/css/{item}utilities.css">
     {/each}
+    <style>
+        * {
+            scrollbar-width: none;
+        }
+
+        *:hover {
+            scrollbar-width: thin;
+            scrollbar-color: var(--positive-color-50) var(--negative-color-50);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px!important;
+            height: 8px!important;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: var(--secondary-color);
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--secondary-color-d);
+        }
+
+    </style>
 </svelte:head>
 
 <style lang="sass">

@@ -15,12 +15,12 @@
         font-size: var(--fs-md)
         border-radius: var(--rounded-2, calc(var(--key-size) * .25))
         &:not(.inline)
-            display: block grid
+            display: grid
             padding: var(--key-size)
             code
                 overflow: auto
         &.inline
-            display: inline grid
+            display: inline-grid
             padding-left: calc(var(--key-size) * .25)
             padding-right: calc(var(--key-size) * .25)
 </style>
