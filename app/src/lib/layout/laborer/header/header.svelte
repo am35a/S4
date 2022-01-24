@@ -17,7 +17,7 @@
     <div class="title">
         Header title
     </div>
-    <div class="d-i-grid px-2">
+    <div class="d-inline-grid px-2">
         <Button
             class="btn btn-ico my-auto"
             on:click={() => window.open('https://github.com/am35a/S4', '_blank')}

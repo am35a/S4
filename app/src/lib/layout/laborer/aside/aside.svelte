@@ -29,6 +29,12 @@
         width: var(--layout-aside-width)
         color: var(--aside-color, var(--positive-color-80))
         z-index: 100
+        :global(:not(:hover))
+            scrollbar-width: none
+            &::-webkit-scrollbar
+                width: 0 !important
+                height: 0 !important
+
         :global(.blind)
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s

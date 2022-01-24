@@ -15,13 +15,13 @@
 
 <section>
     <div class="h2" aria-level={2} role="heading">Icons</div>
-    <div class="d-b-grid cols-2">
+    <div class="d-grid cols-2 p:cols-1">
         <p>Lightweight responsive vector icons with cache available.</p>
-        <div class="d-b-grid g-2 p-2 bg-positive rounded-md">
+        <div class="d-grid g-2 p-2 bg-positive rounded-md">
             <div style="min-height: calc(var(--key-size) * 10)">
                 <Icon name="ghost" size={iconSize}/>
             </div>
-            <div class="d-i-flex flex-nowrap g-2">
+            <div class="d-inline-flex flex-nowrap g-2">
                 {#each Object.entries(iconSizeArr) as [key, value]}
                     <Button
                         class="btn-secondary {iconSize === value ? 'active' : ''}"
