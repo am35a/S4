@@ -24,15 +24,6 @@ html {
   vertical-align: inherit;
 }
 
-* {
-  scrollbar-width: thin;
-}
-
-::-webkit-scrollbar {
-  width: 8px !important;
-  height: 8px !important;
-}
-
 body {
   position: relative;
   height: 100%;

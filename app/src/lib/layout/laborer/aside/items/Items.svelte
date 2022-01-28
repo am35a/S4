@@ -22,4 +22,7 @@
         grid-row: 1/2
         overflow-x: hidden
         overflow-y: auto
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display: none
 </style>

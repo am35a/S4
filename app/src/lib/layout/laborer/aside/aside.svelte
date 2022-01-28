@@ -3,7 +3,7 @@
     import Fader from './fader/Fader.svelte'
     import Blind from './blind/Blind.svelte'
     import Items from './items/Items.svelte'
-    // import Brand from './brand/Brand.svelte'
+    import Brand from './brand/Brand.svelte'
     // let expandContent: boolean = false
 </script>
 
@@ -17,7 +17,7 @@
     <!-- <Blind asideMouseHover={expandContent}/> -->
     <Blind/>
     <Items/>
-    <!-- <Brand/> -->
+    <Brand/>
 </aside>
 
 <style lang="sass">
@@ -29,13 +29,10 @@
         width: var(--layout-aside-width)
         color: var(--aside-color, var(--positive-color-80))
         z-index: 100
-        :global(:not(:hover))
-            scrollbar-width: none
-            &::-webkit-scrollbar
-                width: 0 !important
-                height: 0 !important
-
         :global(.blind)
+            transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
+            transition: all 0.25s
+        :global(.brand)
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
         :global(.items),
@@ -47,6 +44,8 @@
                 transition: all 0.25s
         &.expand
             :global(.blind)
+                transform: translateX(0rem)
+            :global(.brand)
                 transform: translateX(0rem)
             :global(.items),
             :global(.submenu)
