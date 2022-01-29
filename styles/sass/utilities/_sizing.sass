@@ -16,6 +16,10 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
                     #{$item}width: #{$i * $defaultSizingStep + '%'} !important
             &-auto
                 #{$item}width: auto !important
+            &-min
+                #{$item}width: min-content !important
+            &-max
+                #{$item}width: max-content !important
 
         .#{$orientation}#{$type}#{$item}h
             @for $i from 0 through math.div(100, $defaultSizingStep)

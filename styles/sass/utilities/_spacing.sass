@@ -23,6 +23,12 @@ $spacingStep: 8
         &y-0
             margin-top: unset !important
             margin-bottom: unset !important
+        &x-auto
+            margin-left: auto !important
+            margin-right: auto !important
+        &y-auto
+            margin-top: auto !important
+            margin-bottom: auto !important
         @for $i from 1 through $spacingStep
             &x-#{$i}
                 margin-left: calc(var(--key-size) * #{$i * 0.25}) !important
@@ -39,11 +45,13 @@ $spacingStep: 8
                 margin-right: calc(var(--key-size) * #{$i * 0.25}) !important
             &b-#{$i}
                 margin-bottom: calc(var(--key-size) * #{$i * 0.25}) !important
-        &x-auto
+        &l-auto
             margin-left: auto !important
-            margin-right: auto !important
-        &y-auto
+        &t-auto
             margin-top: auto !important
+        &r-auto
+            margin-right: auto !important
+        &b-auto
             margin-bottom: auto !important
 
     .#{$orientation}#{$type}p
@@ -75,6 +83,14 @@ $spacingStep: 8
                 padding-right: calc(var(--key-size) * #{$i * 0.25}) !important
             &b-#{$i}
                 padding-bottom: calc(var(--key-size) * #{$i * 0.25}) !important
+        &x-0
+            padding-left: unset !important
+        &t-0
+            padding-top: unset !important
+        &r-0
+            padding-right: unset !important
+        &b-0
+            padding-bottom: unset !important
 
     .#{$orientation}#{$type}g
         &-0

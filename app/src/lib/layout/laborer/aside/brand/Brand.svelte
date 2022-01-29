@@ -4,7 +4,7 @@
 </script>
 
 <div class="brand">
-    <Button class="btn btn-ico btn-secondary">
+    <Button class="btn btn-ico text-positive">
         <Icon name="ghost" size="lg"/>
     </Button>
 </div>

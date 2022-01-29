@@ -6,6 +6,7 @@
     class:btn={true}
     {...$$restProps}
     on:click
+    type="button"
 >
     <slot></slot>
 </button>
@@ -50,7 +51,7 @@
                         background-color: var(--#{$colorName}-color-d)
                         color: var(--positive-color-60)
         @each $colorName in $accentColors
-            &-link-#{$colorName}
+            &-alt-#{$colorName}
                 color: var(--#{$colorName}-color)
                 &:focus,
                 &:hover,
