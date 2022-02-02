@@ -672,6 +672,9 @@
 .p\:min-w-auto {
   min-width: auto !important;
 }
+.p\:min-w-fit {
+  min-width: fit-content !important;
+}
 .p\:min-w-min {
   min-width: min-content !important;
 }
@@ -716,6 +719,9 @@
 .p\:w-auto {
   width: auto !important;
 }
+.p\:w-fit {
+  width: fit-content !important;
+}
 .p\:w-min {
   width: min-content !important;
 }
@@ -759,6 +765,9 @@
 }
 .p\:max-w-auto {
   max-width: auto !important;
+}
+.p\:max-w-fit {
+  max-width: fit-content !important;
 }
 .p\:max-w-min {
   max-width: min-content !important;

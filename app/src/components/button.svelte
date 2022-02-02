@@ -34,6 +34,9 @@
         user-select: none
         outline: calc(var(--key-size) * .125) solid transparent
         outline-offset: calc(var(--key-size) * .0625)
+        // :global(.ico)
+        //     aspect-ratio: 1
+        //     width: auto
         @each $colorName in $accentColors
             &-#{$colorName}
                 background-color: var(--#{$colorName}-color)

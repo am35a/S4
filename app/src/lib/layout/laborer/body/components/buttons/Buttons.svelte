@@ -17,13 +17,13 @@
 
 <section>
     <div class="h2" aria-level={2} role="heading">Buttons</div>
-    <div class="d-grid g-4">
-        <div class="h3" aria-level={3} role="heading">Типы</div>
-        <p>Кнопки S4 имею два основных типа, от которых можно получить совершенно совершенно разные типы.</p>
+    <div class="d-grid">
+        <div class="h3" aria-level={3} role="heading">Внешний вид</div>
+        <p>Кнопки S4 имею два основных вида - стандартный и альтернативный. От этих видов можно получить любой другой вид кнопок.</p>
         <div class="d-grid g-2 overflow-x-auto">
             <div class="h4" aria-level={4} role="heading">Standard</div>
-            <div class="d-grid grid-flow-col g-2 text-nowrap w-max justify-items-start">
-                <div class="d-grid rows-5 g-2">
+            <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit justify-items-start overflow-x-auto rounded-md">
+                <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bg-positive rounded-md">
                     <div class="fw-600 fs-s2 d-grid">
                         <span class="row-span-full col-span-full mt-auto mr-auto">State</span>
                         <div class="row-span-full col-span-full m-auto">\</div>
@@ -51,10 +51,10 @@
             </Precode>
         </div>
 
-        <div class="d-grid g-2 overflow-x-auto">
+        <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Alternative</div>
-            <div class="d-grid grid-flow-col g-2 text-nowrap w-max justify-items-start">
-                <div class="d-grid rows-5 g-2">
+            <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit justify-items-start overflow-x-auto rounded-md">
+                <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bg-positive rounded-md">
                     <div class="fw-600 fs-s2 d-grid">
                         <span class="row-span-full col-span-full mt-auto mr-auto">State</span>
                         <div class="row-span-full col-span-full m-auto">\</div>
@@ -81,6 +81,21 @@
                 }
             </Precode>
         </div>
+    </div>
+
+    <div>
+
+        <button style="display: inline-flex;height: 30px;grid-auto-flow: column;">
+            <div class="bg-success" style="height: 100%;/*! width: 10px; */aspect-ratio: 1;"></div>
+            text
+        </button>
+        <!-- <img src="http://localhost:5000/icons/ghost.svg"> -->
+        <p>Альтернативная <Icon name="ghost"/> с обводкой</p>
+        <Button class="btn-alt-primary border" type="button">Primary</Button>
+        <Button class="btn-sm btn-alt-primary border" type="button"><Icon name="ghost"/>Primary</Button>
+        <Button class="btn-alt-primary border" type="button"><Icon name="ghost"/>Primary</Button>
+        <Button class="btn-lg btn-alt-primary border" type="button"><Icon name="ghost"/>Primary</Button>
+
     </div>
     
 </section>

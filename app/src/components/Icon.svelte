@@ -21,8 +21,10 @@
         --ico-size-lg: calc(var(--key-size) * 1.75)
 
     .ico
-        width: 100%
-        height: 100%
+        display: inline-block
+        width: 1em
+        height: 1em
+        vertical-align: middle
         background-color: currentColor
         mask-repeat: no-repeat
         -webkit-mask-repeat: no-repeat
@@ -32,6 +34,9 @@
         -webkit-mask-clip: content-box
         mask-image: var(--ico-image)
         -webkit-mask-image: var(--ico-image)
+        &-100
+            width: 100%
+            height: 100%
         &-sm
             width: var(--ico-size-sm)
             height: var(--ico-size-sm) // --sm-size = --key-size * 1 сделать как у font-size

@@ -50,11 +50,11 @@
     >{title}</button>
     {#if action}
         <button class="action" on:click={onActionClick} tabindex={-1}>
-            <Icon class="m-auto" name={action.icon}/>
+            <Icon class="m-auto" name={action.icon} size="100"/>
         </button>
     {:else if items}
         <button class="action" on:click={() => submenu = !submenu} tabindex={-1}>
-            <Icon class="m-auto" name={submenu ? 'selector-minimize' : 'selector-maximize'}/>
+            <Icon class="m-auto" name={submenu ? 'selector-minimize' : 'selector-maximize'} size="100"/>
         </button>
     {/if}
     <div class="backdrop"></div>
