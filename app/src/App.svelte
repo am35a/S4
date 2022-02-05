@@ -9,6 +9,7 @@
         user
     } from 'src/store/store'
 
+    import Window from './lib/DocumentWindow.svelte'
     import Head from './lib/DocumentHead.svelte'
     import Body from './lib/DocumentBody.svelte'
 
@@ -89,6 +90,7 @@
 	})
 </script>
 
+<Window />
 <Head />
 <Body />
 

@@ -4,9 +4,11 @@
     // $user.isAuthorized ?
     //     document.body.classList.add('tf_laborer') :
     //     document.body.classList.add('tf_signin')
+
+    // let innerHTML: HTMLBodyElement
 </script>
 
-<svelte:body/>
+<svelte:body />
 
 <style lang="sass" global>
     body

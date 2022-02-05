@@ -392,6 +392,9 @@
   border-color: transparent !important;
 }
 
+.rounded {
+  border-radius: var(--rounded-2, calc(var(--key-size) * 0.25)) !important;
+}
 .rounded-0 {
   border-radius: 0 !important;
 }

@@ -1,12 +1,14 @@
 <script lang='ts'>
 // https://github.com/hperrin/svelte-material-ui/tree/master/packages
+
+    if ($$restProps.type != 'reset' && $$restProps.type != 'submit')
+        $$restProps.type = 'button'
 </script>
 
 <button
     class:btn={true}
     {...$$restProps}
     on:click
-    type="button"
 >
     <slot></slot>
 </button>
@@ -18,6 +20,7 @@
         display: inline-grid
         grid-auto-flow: column
         grid-gap: calc(var(--key-size) * .25)
+        justify-content: center
         align-items: center
         margin: unset
         padding: calc(var(--key-size) * .25) calc(var(--key-size) * .75)
@@ -34,9 +37,6 @@
         user-select: none
         outline: calc(var(--key-size) * .125) solid transparent
         outline-offset: calc(var(--key-size) * .0625)
-        // :global(.ico)
-        //     aspect-ratio: 1
-        //     width: auto
         @each $colorName in $accentColors
             &-#{$colorName}
                 background-color: var(--#{$colorName}-color)
@@ -64,24 +64,6 @@
                     color: var(--negative-color-20)
                     &.active
                         color: var(--negative-color-40)
-        // @each $colorName in $accentColors
-        //     &-outline-#{$colorName}
-        //         border-color: var(--#{$colorName}-color)
-        //         color: var(--#{$colorName}-color-d)
-        //         &:focus,
-        //         &:hover,
-        //         &.active
-        //             color: var(--positive-color)
-        //             &:not(:disabled)
-        //                 background-color: var(--#{$colorName}-color)
-        //         &:disabled
-        //             border-color: var(--#{$colorName}-color-l)
-        //             color: var(--#{$colorName}-color-l)
-        //             cursor: not-allowed
-        //             &.active
-        //                 border-color: var(--#{$colorName}-color)
-        //                 background-color: var(--#{$colorName}-color)
-        //                 color: var(--positive-color-50)
         &:focus
             outline-color: var(--negative-color-20)
         &:not(:focus):not(:disabled):hover.active
@@ -92,7 +74,20 @@
         &-lg
             font-size: calc(var(--key-size) * 1.125)
             line-height: calc(var(--key-size) * 1.75)
+        // &-ico
+        //     padding: calc(calc(calc(calc(var(--key-size) * 1.5) - 1em) / 2) + calc(var(--key-size) * .25))
+        //     &.btn-sm
+        //         padding: calc(calc(calc(calc(var(--key-size) * 1.25) - 1em) / 2) + calc(var(--key-size) * .25))
+        //     &.btn-lg
+        //         padding: calc(calc(calc(calc(var(--key-size) * 1.75) - 1em) / 2) + calc(var(--key-size) * .25))
         &-ico
+            min-width: calc(var(--key-size) * 2.125)
+            min-height: calc(var(--key-size) * 2.125)
             padding: calc(var(--key-size) * .25)
-        
+            &.btn-sm
+                min-width: calc(var(--key-size) * 1.875)
+                min-height: calc(var(--key-size) * 1.875)
+            &.btn-lg
+                min-width: calc(var(--key-size) * 2.375)
+                min-height: calc(var(--key-size) * 2.375)
 </style>

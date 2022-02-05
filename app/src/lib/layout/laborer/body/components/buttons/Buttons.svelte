@@ -9,17 +9,15 @@
         info: 'Info',
         success: 'Success',
         warning: 'Warning',
-        error: 'Error',
-        positive: 'Positive',
-        negative: 'Negative'
+        error: 'Error'
     }
 </script>
 
 <section>
     <div class="h2" aria-level={2} role="heading">Buttons</div>
     <div class="d-grid">
-        <div class="h3" aria-level={3} role="heading">Внешний вид</div>
-        <p>Кнопки S4 имею два основных вида - стандартный и альтернативный. От этих видов можно получить любой другой вид кнопок.</p>
+        <div class="h3" aria-level={3} role="heading">Views</div>
+        <p>S4 buttons have two main views - standard and alternative. From these views, you can get any other kind of buttons.</p>
         <div class="d-grid g-2 overflow-x-auto">
             <div class="h4" aria-level={4} role="heading">Standard</div>
             <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit justify-items-start overflow-x-auto rounded-md">
@@ -83,19 +81,82 @@
         </div>
     </div>
 
-    <div>
+    <div class="d-grid g-2">
+        <div class="h4" aria-level={4} role="heading">Type</div>
+        <div>
+            <Button class="btn-primary" type="submit">Submit</Button>
+            <Button class="btn-primary" type="reset">Reset</Button>
+        </div>
+        <Precode>
+            {
+`...`
+            }
+        </Precode>
+    </div>
+    
+    <div class="d-grid g-2">
+        <div class="h4" aria-level={4} role="heading">Size</div>
+        <div>
+            <Button class="btn-primary btn-sm">Small</Button>
+            <Button class="btn-primary">Medium</Button>
+            <Button class="btn-primary btn-lg">Large</Button>
+        </div>
+        <Precode>
+            {
+`...`
+            }
+        </Precode>
+    </div>
 
-        <button style="display: inline-flex;height: 30px;grid-auto-flow: column;">
-            <div class="bg-success" style="height: 100%;/*! width: 10px; */aspect-ratio: 1;"></div>
-            text
-        </button>
-        <!-- <img src="http://localhost:5000/icons/ghost.svg"> -->
-        <p>Альтернативная <Icon name="ghost"/> с обводкой</p>
-        <Button class="btn-alt-primary border" type="button">Primary</Button>
-        <Button class="btn-sm btn-alt-primary border" type="button"><Icon name="ghost"/>Primary</Button>
-        <Button class="btn-alt-primary border" type="button"><Icon name="ghost"/>Primary</Button>
-        <Button class="btn-lg btn-alt-primary border" type="button"><Icon name="ghost"/>Primary</Button>
+    <div class="d-grid g-2">
+        <div class="h4" aria-level={4} role="heading">With icon</div>
+        <div>
+            <Button class="btn-primary"><Icon name="ghost"/>On the left</Button>
+            <Button class="btn-primary">On the right<Icon name="ghost"/></Button>
+        </div>
+        <Precode>
+            {
+`...`
+            }
+        </Precode>
+    </div>
 
+    <div class="d-grid g-2">
+        <div class="h4" aria-level={4} role="heading">Icon</div>
+        <div>
+            <Button class="btn-primary btn-ico btn-sm"><Icon name="ghost"/></Button>
+            <Button class="btn-primary btn-ico"><Icon name="ghost"/></Button>
+            <Button class="btn-primary btn-ico btn-lg"><Icon name="ghost"/></Button>
+        </div>
+        <Precode>
+            {
+`...`
+            }
+        </Precode>
+    </div>
+
+    <div class="d-grid g-2">
+        <div class="h4" aria-level={4} role="heading">Border</div>
+        <div>
+            <Button class="btn-alt-primary border">Primary</Button>
+        </div>
+        <Precode>
+            {
+`...`
+            }
+        </Precode>
+    </div>
+
+    <div class="d-grid g-2">
+        <div class="h4" aria-level={4} role="heading">Style mixed</div>
+        <div>
+            <Button class="btn-alt-primary border-warning bg-positive"><Icon class="text-success" name="ghost"/>On the left</Button>
+        </div>
+        <Precode>
+            {
+`...`
+            }
+        </Precode>
     </div>
     
 </section>
