@@ -8,9 +8,9 @@
         auto: '',
         small: 'sm',
         medium: 'md',
-        large: 'lg'
+        large: 'lg',
+        full: '100'
     }
-
 </script>
 
 <section>

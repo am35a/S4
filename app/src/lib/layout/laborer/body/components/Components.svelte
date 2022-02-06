@@ -2,6 +2,7 @@
     import { Route, path, query, hash } from 'svelte-micro'
 
     import Buttons from './buttons/Buttons.svelte'
+    import ButtonsGroup from './buttons-group/ButtonsGroup.svelte'
     import Icons from './icons/Icons.svelte'
 </script>
 
@@ -9,6 +10,9 @@
 
 <Route path="/buttons">
     <svelte:component this={Buttons}/>
+</Route>
+<Route path="/buttons-group">
+    <svelte:component this={ButtonsGroup}/>
 </Route>
 <Route path="/icons">
     <svelte:component this={Icons}/>

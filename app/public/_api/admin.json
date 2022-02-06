@@ -33,6 +33,11 @@
                         "segment": "/components/buttons"
                     },
                     {
+                        "id": 30,
+                        "title": "Buttons group",
+                        "segment": "/components/buttons-group"
+                    },
+                    {
                         "id": 31,
                         "title": "Icons",
                         "segment": "/components/icons"
