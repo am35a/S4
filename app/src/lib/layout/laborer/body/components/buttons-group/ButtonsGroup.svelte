@@ -10,9 +10,18 @@
     <div class="d-grid g-2">
         <div>
             <ButtonGroup>
-                <Button class="btn-primary">Primary</Button>
-                <Button class="btn-primary">Primary</Button>
-                <Button class="btn-primary">Primary</Button>
+                <Button class="btn-primary">Default</Button>
+                <Button class="btn-primary active">Active</Button>
+                <Button class="btn-primary" disabled>Disabled</Button>
+                <Button class="btn-primary active" disabled>Disabled</Button>
+            </ButtonGroup>
+        </div>
+        <div>
+            <ButtonGroup>
+                <Button class="btn-alt-primary border">Default</Button>
+                <Button class="btn-alt-primary border active">Active</Button>
+                <Button class="btn-alt-primary border" disabled>Disabled</Button>
+                <Button class="btn-alt-primary border active" disabled>Disabled</Button>
             </ButtonGroup>
         </div>
         <Precode>

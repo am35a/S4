@@ -82,7 +82,7 @@
     {/if}
 </div>
 
-<style lang="sass">
+<style lang="sass" global>
     .item
         display: grid
         &.has-action,
@@ -136,14 +136,14 @@
             color: var(--aside-item-action-color)
             cursor: pointer
             z-index: 2
-            :global(.ico)
-                transform: scale(.5)
+            .ico
+                transform: scale(.375)
                 transition: transform .25s
             // &:focus,
             &:hover
                 color: var(--positive-color)
-                :global(.ico)
-                    transform: scale(.625)
+                .ico
+                    transform: scale(.5)
                 ~ .backdrop
                     margin: calc(var(--key-size) * .5)
                     margin-left: calc(100% - calc(var(--key-size) * 3 - calc(var(--key-size) * .5)))

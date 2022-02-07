@@ -1,6 +1,6 @@
 <div class="blind"></div>
 
-<style lang="sass">
+<style lang="sass" global>
     .blind
         grid-column: 1/-1
         grid-row: 1/-1

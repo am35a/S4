@@ -11,7 +11,7 @@
             on:click={() => $asideExpand = true}
             tabindex="-1"
         >
-            <Icon name="menu" size="lg"/>
+            <Icon name="menu" size="md"/>
         </button>
     </div>
     <div class="title">
@@ -22,12 +22,12 @@
             class="btn btn-ico my-auto"
             on:click={() => window.open('https://github.com/am35a/S4', '_blank')}
         >
-            <Icon name="github" size="lg"/>
+            <Icon name="github" size="md"/>
         </Button>
     </div>
 </header>
 
-<style lang="sass">
+<style lang="sass" global>
     .header
         grid-column: 1/3
         grid-row: 1/2

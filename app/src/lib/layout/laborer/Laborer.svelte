@@ -11,7 +11,7 @@
     <!--Modal /-->
 </main>
 
-<style lang="sass">
+<style lang="sass" global>
     .laborer
         grid-column: 1/-1
         grid-row: 1/-1

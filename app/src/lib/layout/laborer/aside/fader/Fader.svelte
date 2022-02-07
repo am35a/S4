@@ -13,7 +13,7 @@
     </div>
 </div>
 
-<style lang="sass">
+<style lang="sass" global>
     .fader
         position: absolute
         display: none
@@ -21,8 +21,8 @@
         height: 100%
         background-color: var(--negative-color-50)
         z-index: -1
-        :global(.mobile .expand) &,
-        :global(.tablet .expand) &
+        .mobile .expand &,
+        .tablet .expand &
             display: grid
         .close
             display: grid

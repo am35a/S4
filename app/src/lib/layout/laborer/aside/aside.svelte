@@ -20,7 +20,7 @@
     <Brand/>
 </aside>
 
-<style lang="sass">
+<style lang="sass" global>
     .aside
         grid-column: 1/2
         grid-row: 1/3
@@ -29,27 +29,27 @@
         width: var(--layout-aside-width)
         color: var(--aside-color, var(--positive-color-80))
         z-index: 100
-        :global(.blind)
+        .blind
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
-        :global(.brand)
+        .brand
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
-        :global(.items),
-        :global(.submenu)
+        .items,
+        .submenu
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
-            :global(.item)
+            .item
                 transform: translateX(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)))
                 transition: all 0.25s
         &.expand
-            :global(.blind)
+            .blind
                 transform: translateX(0rem)
-            :global(.brand)
+            .brand
                 transform: translateX(0rem)
-            :global(.items),
-            :global(.submenu)
+            .items,
+            .submenu
                 transform: translateX(0rem)
-                :global(.item)
+                .item
                     transform: translateX(0rem)
 </style>

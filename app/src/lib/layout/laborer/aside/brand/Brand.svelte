@@ -9,7 +9,7 @@
     </Button>
 </div>
 
-<style lang="sass">
+<style lang="sass" global>
     .brand
         grid-column: 1/-1
         grid-row: 2/3
