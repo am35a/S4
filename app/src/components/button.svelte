@@ -37,15 +37,6 @@
         user-select: none
         outline: calc(var(--key-size) * .125) solid transparent
         outline-offset: calc(var(--key-size) * .0625)
-        // &:focus,
-        // &:hover,
-        // &.active
-        //     background-color: var(--positive-color-70)
-        // &:disabled
-        //     background-color: var(--positive-color-30)
-        //     cursor: not-allowed
-        //     &.active
-        //         background-color: var(--positive-color-70)
         @each $colorName in $accentColors
             &-#{$colorName}
                 background-color: var(--#{$colorName}-color)
@@ -58,21 +49,35 @@
                 &:disabled
                     background-color: var(--#{$colorName}-color-l)
                     color: var(--positive-color-40)
-                    cursor: not-allowed
                     &.active
                         background-color: var(--#{$colorName}-color-d)
                         color: var(--positive-color-60)
-        // &-alt
-        //     background-color: transparent
-        //     &:focus,
-        //     &:hover,
-        //     &.active
-        //         background-color: var(--positive-color-50)
-        //     &:disabled
-        //         background-color: var(--positive-color-30)
-        //         cursor: not-allowed
-        //         &.active
-        //             background-color: var(--positive-color-750)
+        &-positive
+            background-color: var(--positive-color)
+            color: var(--negative-color)
+            &:focus,
+            &:hover,
+            &.active
+                background-color: var(--positive-color-d)
+            &:disabled
+                background-color: var(--positive-color-l)
+                color: var(--negative-color-40)
+                &.active
+                    background-color: var(--positive-color-d)
+                    color: var(--negative-color-60)
+        &-negative
+            background-color: var(--negative-color)
+            color: var(--positive-color)
+            &:focus,
+            &:hover,
+            &.active
+                background-color: var(--negative-color-d)
+            &:disabled
+                background-color: var(--negative-color-l)
+                color: var(--positive-color-40)
+                &.active
+                    background-color: var(--negative-color-d)
+                    color: var(--positive-color-60)
         @each $colorName in $accentColors
             &-alt-#{$colorName}
                 color: var(--#{$colorName}-color)
@@ -84,6 +89,29 @@
                     color: var(--negative-color-20)
                     &.active
                         color: var(--negative-color-40)
+        &-alt-positive
+            color: var(--positive-color)
+            &:focus,
+            &:hover,
+            &.active
+                color: var(--positive-color-60)
+            &:disabled
+                color: var(--positive-color-20)
+                &.active
+                    color: var(--positive-color-40)
+        &-alt-negative
+            color: var(--negative-color)
+            &:focus,
+            &:hover,
+            &.active
+                color: var(--negative-color-60)
+            &:disabled
+                color: var(--negative-color-20)
+                &.active
+                    color: var(--negative-color-40)
+
+        &:disabled
+            cursor: not-allowed
         &:focus
             outline-color: var(--negative-color-20)
         &:not(:focus):not(:disabled):hover.active

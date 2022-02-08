@@ -14,13 +14,13 @@
         <div class="">
             <hr class="my-4">
             <Button
-                class="btn btn-sm"
+                class="btn btn-sm btn-success"
                 on:click={() => isAlert = false}
             >
                 <Icon name="close-o"/> Close
             </Button>
             <Button
-                class="btn btn-sm btn-alt"
+                class="btn btn-sm btn-alt-success bg-positive"
                 on:click={() => isAlert = false}
             >
                 <Icon name="close-o"/> Close

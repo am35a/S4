@@ -339,4 +339,8 @@ progress {
   --error-color-l: hsl(var(--error-color-h) var(--error-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
   --error-color: hsl(var(--error-color-h) var(--error-color-s) var(--accent-colors-l));
   --error-color-d: hsl(var(--error-color-h) var(--error-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
+  --positive-color-l: var(--positive-color);
+  --positive-color-d: var(--positive-color-80);
+  --negative-color-l: var(--negative-color);
+  --negative-color-d: hsl(0 0% 20%);
 }

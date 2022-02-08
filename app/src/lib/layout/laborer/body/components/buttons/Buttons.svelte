@@ -9,12 +9,16 @@
         info: 'Info',
         success: 'Success',
         warning: 'Warning',
-        error: 'Error'
+        error: 'Error',
+        positive: 'Positive',
+        negative: 'Negative'
     }
 </script>
 
 <section>
     <div class="h2" aria-level={2} role="heading">Buttons</div>
+    <!-- <Button class="btn btn-sm"><Icon name="close-o"/> Close</Button>
+    <Button class="btn btn-alt btn-sm"><Icon name="close-o"/> Close</Button> -->
     <div class="d-grid">
         <div class="h3" aria-level={3} role="heading">Views</div>
         <p>S4 buttons have two main views - standard and alternative. From these views, you can get any other kind of buttons.</p>
