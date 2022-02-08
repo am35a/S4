@@ -1,6 +1,7 @@
 <script lang="ts">
     import { Route, path, query, hash } from 'svelte-micro'
 
+    import Alerts from './alerts/Alerts.svelte'
     import Buttons from './buttons/Buttons.svelte'
     import ButtonsGroup from './buttons-group/ButtonsGroup.svelte'
     import Icons from './icons/Icons.svelte'
@@ -8,6 +9,9 @@
 
 <div class="h1" aria-level={1} role="heading">Components</div>
 
+<Route path="/alerts">
+    <svelte:component this={Alerts}/>
+</Route>
 <Route path="/buttons">
     <svelte:component this={Buttons}/>
 </Route>

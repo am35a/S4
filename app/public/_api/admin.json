@@ -29,16 +29,21 @@
                 "items": [
                     {
                         "id": 30,
+                        "title": "Alerts",
+                        "segment": "/components/alerts"
+                    },
+                    {
+                        "id": 31,
                         "title": "Buttons",
                         "segment": "/components/buttons"
                     },
                     {
-                        "id": 30,
+                        "id": 32,
                         "title": "Buttons group",
                         "segment": "/components/buttons-group"
                     },
                     {
-                        "id": 31,
+                        "id": 33,
                         "title": "Icons",
                         "segment": "/components/icons"
                     }

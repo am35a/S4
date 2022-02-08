@@ -35,6 +35,11 @@ hr {
   overflow: visible;
   height: 0;
   color: inherit;
+  border-color: currentColor;
+  border-style: solid;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
 }
 
 details,

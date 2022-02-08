@@ -24,12 +24,12 @@
         align-items: center
         margin: unset
         padding: calc(var(--key-size) * .25) calc(var(--key-size) * .75)
-        background-color: var(--negative-color-15)
+        background-color: transparent
         border: calc(var(--key-size) * .0625) solid transparent
         border-radius: calc(var(--key-size) * .25)
         vertical-align: middle
         text-align: center
-        color: var(--negative-color)
+        color: currentColor
         font-size: var(--key-size)
         line-height: calc(var(--key-size) * 1.5)
         text-decoration: none
@@ -37,6 +37,15 @@
         user-select: none
         outline: calc(var(--key-size) * .125) solid transparent
         outline-offset: calc(var(--key-size) * .0625)
+        // &:focus,
+        // &:hover,
+        // &.active
+        //     background-color: var(--positive-color-70)
+        // &:disabled
+        //     background-color: var(--positive-color-30)
+        //     cursor: not-allowed
+        //     &.active
+        //         background-color: var(--positive-color-70)
         @each $colorName in $accentColors
             &-#{$colorName}
                 background-color: var(--#{$colorName}-color)
@@ -53,6 +62,17 @@
                     &.active
                         background-color: var(--#{$colorName}-color-d)
                         color: var(--positive-color-60)
+        // &-alt
+        //     background-color: transparent
+        //     &:focus,
+        //     &:hover,
+        //     &.active
+        //         background-color: var(--positive-color-50)
+        //     &:disabled
+        //         background-color: var(--positive-color-30)
+        //         cursor: not-allowed
+        //         &.active
+        //             background-color: var(--positive-color-750)
         @each $colorName in $accentColors
             &-alt-#{$colorName}
                 color: var(--#{$colorName}-color)
