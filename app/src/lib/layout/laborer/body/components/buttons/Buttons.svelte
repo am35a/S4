@@ -9,9 +9,7 @@
         info: 'Info',
         success: 'Success',
         warning: 'Warning',
-        error: 'Error',
-        positive: 'Positive',
-        negative: 'Negative'
+        error: 'Error'
     }
 </script>
 
