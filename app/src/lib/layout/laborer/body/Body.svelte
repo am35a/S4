@@ -84,7 +84,7 @@
     </div>
     <div class="d-inline-grid g-2 p-4">
         <Button class="btn btn-link-primary">
-            <Icon class="text-warning ico-sm" name="ghost"/>
+            <Icon class="color-warning ico-sm" name="ghost"/>
             Button
         </Button>
         <Button class="btn btn-link-primary active">

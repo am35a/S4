@@ -1320,121 +1320,148 @@
 .t\:text-nowrap {
   white-space: nowrap !important;
 }
-.t\:text-positive {
+.t\:text-hyphens {
+  hyphens: auto !important;
+}
+.t\:text-lowercase {
+  text-transform: lowercase !important;
+}
+.t\:text-uppercase {
+  text-transform: uppercase !important;
+}
+.t\:text-capitalize {
+  text-transform: capitalize !important;
+}
+.t\:text-decoration-none {
+  text-decoration: none !important;
+}
+.t\:text-decoration-underline {
+  text-decoration: underline !important;
+}
+.t\:text-decoration-line-through {
+  text-decoration: line-through !important;
+}
+.t\:text-truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.t\:color-positive {
   color: var(--positive-color) !important;
 }
-.t\:text-negative {
+.t\:color-negative {
   color: var(--negative-color) !important;
 }
-.t\:text-positive-10 {
+.t\:color-positive-10 {
   color: var(--positive-color-10) !important;
 }
-.t\:text-positive-20 {
+.t\:color-positive-20 {
   color: var(--positive-color-20) !important;
 }
-.t\:text-positive-30 {
+.t\:color-positive-30 {
   color: var(--positive-color-30) !important;
 }
-.t\:text-positive-40 {
+.t\:color-positive-40 {
   color: var(--positive-color-40) !important;
 }
-.t\:text-positive-50 {
+.t\:color-positive-50 {
   color: var(--positive-color-50) !important;
 }
-.t\:text-positive-60 {
+.t\:color-positive-60 {
   color: var(--positive-color-60) !important;
 }
-.t\:text-positive-70 {
+.t\:color-positive-70 {
   color: var(--positive-color-70) !important;
 }
-.t\:text-positive-80 {
+.t\:color-positive-80 {
   color: var(--positive-color-80) !important;
 }
-.t\:text-positive-90 {
+.t\:color-positive-90 {
   color: var(--positive-color-90) !important;
 }
-.t\:text-negative-10 {
+.t\:color-negative-10 {
   color: var(--negative-color-10) !important;
 }
-.t\:text-negative-20 {
+.t\:color-negative-20 {
   color: var(--negative-color-20) !important;
 }
-.t\:text-negative-30 {
+.t\:color-negative-30 {
   color: var(--negative-color-30) !important;
 }
-.t\:text-negative-40 {
+.t\:color-negative-40 {
   color: var(--negative-color-40) !important;
 }
-.t\:text-negative-50 {
+.t\:color-negative-50 {
   color: var(--negative-color-50) !important;
 }
-.t\:text-negative-60 {
+.t\:color-negative-60 {
   color: var(--negative-color-60) !important;
 }
-.t\:text-negative-70 {
+.t\:color-negative-70 {
   color: var(--negative-color-70) !important;
 }
-.t\:text-negative-80 {
+.t\:color-negative-80 {
   color: var(--negative-color-80) !important;
 }
-.t\:text-negative-90 {
+.t\:color-negative-90 {
   color: var(--negative-color-90) !important;
 }
-.t\:text-primary {
+.t\:color-primary {
   color: var(--primary-color) !important;
 }
-.t\:text-primary-l {
+.t\:color-primary-l {
   color: var(--primary-color-l) !important;
 }
-.t\:text-primary-d {
+.t\:color-primary-d {
   color: var(--primary-color-d) !important;
 }
-.t\:text-secondary {
+.t\:color-secondary {
   color: var(--secondary-color) !important;
 }
-.t\:text-secondary-l {
+.t\:color-secondary-l {
   color: var(--secondary-color-l) !important;
 }
-.t\:text-secondary-d {
+.t\:color-secondary-d {
   color: var(--secondary-color-d) !important;
 }
-.t\:text-info {
+.t\:color-info {
   color: var(--info-color) !important;
 }
-.t\:text-info-l {
+.t\:color-info-l {
   color: var(--info-color-l) !important;
 }
-.t\:text-info-d {
+.t\:color-info-d {
   color: var(--info-color-d) !important;
 }
-.t\:text-success {
+.t\:color-success {
   color: var(--success-color) !important;
 }
-.t\:text-success-l {
+.t\:color-success-l {
   color: var(--success-color-l) !important;
 }
-.t\:text-success-d {
+.t\:color-success-d {
   color: var(--success-color-d) !important;
 }
-.t\:text-warning {
+.t\:color-warning {
   color: var(--warning-color) !important;
 }
-.t\:text-warning-l {
+.t\:color-warning-l {
   color: var(--warning-color-l) !important;
 }
-.t\:text-warning-d {
+.t\:color-warning-d {
   color: var(--warning-color-d) !important;
 }
-.t\:text-error {
+.t\:color-error {
   color: var(--error-color) !important;
 }
-.t\:text-error-l {
+.t\:color-error-l {
   color: var(--error-color-l) !important;
 }
-.t\:text-error-d {
+.t\:color-error-d {
   color: var(--error-color-d) !important;
 }
-.t\:text-transparent {
+.t\:color-transparent {
   color: transparent !important;
 }
 
@@ -1538,33 +1565,6 @@
 }
 .t\:lh-lg {
   line-height: 2 !important;
-}
-
-.t\:text-hyphens {
-  hyphens: auto !important;
-}
-.t\:text-truncate {
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-}
-.t\:text-lowercase {
-  text-transform: lowercase !important;
-}
-.t\:text-uppercase {
-  text-transform: uppercase !important;
-}
-.t\:text-capitalize {
-  text-transform: capitalize !important;
-}
-.t\:text-decoration-none {
-  text-decoration: none !important;
-}
-.t\:text-decoration-underline {
-  text-decoration: underline !important;
-}
-.t\:text-decoration-line-through {
-  text-decoration: line-through !important;
 }
 
 /*  hide container if empty */

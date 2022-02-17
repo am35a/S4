@@ -4,6 +4,7 @@
     import Alerts from './alerts/Alerts.svelte'
     import Buttons from './buttons/Buttons.svelte'
     import ButtonsGroup from './buttons-group/ButtonsGroup.svelte'
+    import Details from './details/Details.svelte'
     import Icons from './icons/Icons.svelte'
 </script>
 
@@ -17,6 +18,9 @@
 </Route>
 <Route path="/buttons-group">
     <svelte:component this={ButtonsGroup}/>
+</Route>
+<Route path="/details">
+    <svelte:component this={Details}/>
 </Route>
 <Route path="/icons">
     <svelte:component this={Icons}/>

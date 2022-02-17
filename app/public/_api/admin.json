@@ -44,6 +44,11 @@
                     },
                     {
                         "id": 33,
+                        "title": "Details",
+                        "segment": "/components/details"
+                    },
+                    {
+                        "id": 34,
                         "title": "Icons",
                         "segment": "/components/icons"
                     }

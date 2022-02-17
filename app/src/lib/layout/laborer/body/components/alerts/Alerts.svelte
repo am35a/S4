@@ -65,10 +65,10 @@
             <Alert class="alert-warning border bg-transparent alert-closable">
                 Transparent background
             </Alert>
-            <Alert class="border bg-transparent text-success">
+            <Alert class="border bg-transparent color-success">
                 Text color
             </Alert>
-            <Alert class="bg-error text-positive">
+            <Alert class="bg-error color-positive">
                 Text and background color
             </Alert>
             <Precode>

@@ -4,7 +4,7 @@
 </script>
 
 <div class="brand">
-    <Button class="btn btn-ico text-positive">
+    <Button class="btn btn-ico color-positive">
         <Icon name="ghost" size="lg"/>
     </Button>
 </div>

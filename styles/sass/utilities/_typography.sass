@@ -15,12 +15,31 @@ $fontSizes: s5, s5, s3, s2, s1, md, l1, l2, l3, l4, l5
             text-align: end !important
         &-justify
             text-align: justify !important
-
         &-wrap
             white-space: normal !important
         &-nowrap
             white-space: nowrap !important
+        &-hyphens
+            hyphens: auto !important
+        &-lowercase
+            text-transform: lowercase !important
+        &-uppercase
+            text-transform: uppercase !important
+        &-capitalize
+            text-transform: capitalize !important
+        &-decoration
+            &-none
+                text-decoration: none !important
+            &-underline
+                text-decoration: underline !important
+            &-line-through
+                text-decoration: line-through !important
+        &-truncate
+            overflow: hidden !important
+            text-overflow: ellipsis !important
+            white-space: nowrap !important
 
+    .#{$orientation}#{$type}color
         @each $item in $defaultColors
             &-#{$item}
                color: var(--#{$item}-color) !important
@@ -78,24 +97,3 @@ $fontSizes: s5, s5, s3, s2, s1, md, l1, l2, l3, l4, l5
             line-height: 1.5 !important
         &-lg
             line-height: 2 !important
-
-    .#{$orientation}#{$type}text
-        &-hyphens
-            hyphens: auto !important
-        &-truncate
-            overflow: hidden !important
-            text-overflow: ellipsis !important
-            white-space: nowrap !important
-        &-lowercase
-            text-transform: lowercase !important
-        &-uppercase
-            text-transform: uppercase !important
-        &-capitalize
-            text-transform: capitalize !important
-        &-decoration
-            &-none
-                text-decoration: none !important
-            &-underline
-                text-decoration: underline !important
-            &-line-through
-                text-decoration: line-through !important

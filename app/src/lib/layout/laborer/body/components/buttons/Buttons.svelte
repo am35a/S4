@@ -152,7 +152,7 @@
     <div class="d-grid g-2">
         <div class="h4" aria-level={4} role="heading">Style mixed</div>
         <div>
-            <Button class="btn-alt-primary border-warning bg-positive"><Icon class="text-success" name="ghost"/>On the left</Button>
+            <Button class="btn-alt-primary border-warning bg-positive"><Icon class="color-success" name="ghost"/>On the left</Button>
         </div>
         <Precode>
             {
