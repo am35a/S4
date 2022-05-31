@@ -99,9 +99,13 @@
     <div class="d-grid g-2">
         <div class="h4" aria-level={4} role="heading">Size</div>
         <div>
+            <Button class="btn-primary btn-xxs">Smallest</Button>
+            <Button class="btn-primary btn-xs">Smaller</Button>
             <Button class="btn-primary btn-sm">Small</Button>
-            <Button class="btn-primary">Medium</Button>
+            <Button class="btn-primary btn-md">Medium</Button>
             <Button class="btn-primary btn-lg">Large</Button>
+            <Button class="btn-primary btn-xl">Larger</Button>
+            <Button class="btn-primary btn-xxl">Largest</Button>
         </div>
         <Precode>
             {
@@ -126,9 +130,13 @@
     <div class="d-grid g-2">
         <div class="h4" aria-level={4} role="heading">Icon</div>
         <div>
+            <Button class="btn-primary btn-ico btn-xxs"><Icon name="ghost"/></Button>
+            <Button class="btn-primary btn-ico btn-xs"><Icon name="ghost"/></Button>
             <Button class="btn-primary btn-ico btn-sm"><Icon name="ghost"/></Button>
             <Button class="btn-primary btn-ico"><Icon name="ghost"/></Button>
             <Button class="btn-primary btn-ico btn-lg"><Icon name="ghost"/></Button>
+            <Button class="btn-primary btn-ico btn-xl"><Icon name="ghost"/></Button>
+            <Button class="btn-primary btn-ico btn-xxl"><Icon name="ghost"/></Button>
         </div>
         <Precode>
             {

@@ -398,13 +398,13 @@
 .rounded-0 {
   border-radius: 0 !important;
 }
-.rounded-s1 {
+.rounded-sm {
   border-radius: var(--rounded-1, calc(var(--key-size) * 0.125)) !important;
 }
 .rounded-md {
   border-radius: var(--rounded-2, calc(var(--key-size) * 0.25)) !important;
 }
-.rounded-l1 {
+.rounded-lg {
   border-radius: var(--rounded-3, calc(var(--key-size) * 0.5)) !important;
 }
 .rounded-circle {
@@ -1788,23 +1788,23 @@
 }
 
 .h1, h1 {
-  font-size: var(--fs-l5) !important;
+  font-size: calc(var(--fs-md) * 3) !important;
   font-weight: 600 !important;
 }
 .h2, h2 {
-  font-size: var(--fs-l4) !important;
+  font-size: calc(var(--fs-md) * 2.5) !important;
   font-weight: 600 !important;
 }
 .h3, h3 {
-  font-size: var(--fs-l3) !important;
+  font-size: calc(var(--fs-md) * 2) !important;
   font-weight: 600 !important;
 }
 .h4, h4 {
-  font-size: var(--fs-l2) !important;
+  font-size: calc(var(--fs-md) * 1.5) !important;
   font-weight: 600 !important;
 }
 .h5, h5 {
-  font-size: var(--fs-l1) !important;
+  font-size: calc(var(--fs-md) * 1.25) !important;
   font-weight: 600 !important;
 }
 .h6, h6 {
@@ -1812,38 +1812,29 @@
   font-weight: 600 !important;
 }
 
-.fs-s5 {
-  font-size: var(--fs-s5) !important;
+.fs-xxs {
+  font-size: var(--fs-xxs) !important;
 }
-.fs-s5 {
-  font-size: var(--fs-s5) !important;
+.fs-xs {
+  font-size: var(--fs-xs) !important;
 }
-.fs-s3 {
-  font-size: var(--fs-s3) !important;
-}
-.fs-s2 {
-  font-size: var(--fs-s2) !important;
-}
-.fs-s1 {
-  font-size: var(--fs-s1) !important;
+.fs-sm {
+  font-size: var(--fs-sm) !important;
 }
 .fs-md {
   font-size: var(--fs-md) !important;
 }
-.fs-l1 {
-  font-size: var(--fs-l1) !important;
+.fs-lg {
+  font-size: var(--fs-lg) !important;
 }
-.fs-l2 {
-  font-size: var(--fs-l2) !important;
+.fs-xl {
+  font-size: var(--fs-xl) !important;
 }
-.fs-l3 {
-  font-size: var(--fs-l3) !important;
+.fs-xxl {
+  font-size: var(--fs-xxl) !important;
 }
-.fs-l4 {
-  font-size: var(--fs-l4) !important;
-}
-.fs-l5 {
-  font-size: var(--fs-l5) !important;
+.fs-xxxl {
+  font-size: var(--fs-xxxl) !important;
 }
 .fw-100 {
   font-weight: 100 !important;

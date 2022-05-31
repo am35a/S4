@@ -4,7 +4,7 @@
     .blind
         grid-column: 1/-1
         grid-row: 1/-1
-        width: 16rem
+        width: var(--layout-aside-blind-width, calc(var(--key-size) * 16))
         background-color: var(--aside-bg-color, var(--secondary-color-d))
         z-index: -1
 </style>

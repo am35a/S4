@@ -1,39 +1,43 @@
 :root
     // - Sizes
     // - - Global
-    --key-size-1:  calc(var(--key-size) * .0625)
-
-    --key-size-2:  calc(var(--key-size) * .125)
-    --key-size-4:  calc(var(--key-size) * .25)
-    --key-size-8:  calc(var(--key-size) * .5)
-    --key-size-12: calc(var(--key-size) * .75)
-    // --key-size-14: calc(var(--key-size) * .875)
-
-    --key-size: 1rem
-
-    --key-size-18: calc(var(--key-size) * 1.125)
-    --key-size-20: calc(var(--key-size) * 1.25)
-    --key-size-24: calc(var(--key-size) * 1.5)
-    --key-size-28: calc(var(--key-size) * 1.75)
-
-    --key-size-32: calc(var(--key-size) * 2)
-
+    --key-size: 16rem
 
     // - - Offsets
     --space-size-offset: 1
     --font-size-offset: 1
     // - - Fonts
-    --fs-s5: calc(var(--key-size) / calc(2.5 * var(--font-size-offset)))
-    --fs-s4: calc(var(--key-size) / calc(2 * var(--font-size-offset)))
-    --fs-s3: calc(var(--key-size) / calc(1.5 * var(--font-size-offset)))
-    --fs-s2: calc(var(--key-size) / calc(1.25 * var(--font-size-offset)))
-    --fs-s1: calc(var(--key-size) / calc(1.125 * var(--font-size-offset)))
-    --fs-md: calc(var(--key-size) * var(--font-size-offset))
-    --fs-l1: calc(var(--key-size) * calc(1.125 * var(--font-size-offset)))
-    --fs-l2: calc(var(--key-size) * calc(1.25 * var(--font-size-offset)))
-    --fs-l3: calc(var(--key-size) * calc(1.5 * var(--font-size-offset)))
-    --fs-l4: calc(var(--key-size) * calc(2 * var(--font-size-offset)))
-    --fs-l5: calc(var(--key-size) * calc(2.5 * var(--font-size-offset)))
+    // --fs-s5: calc(var(--key-size) / calc(2.5 * var(--font-size-offset)))
+    // --fs-s4: calc(var(--key-size) / calc(2 * var(--font-size-offset)))
+    // --fs-s3: calc(var(--key-size) / calc(1.5 * var(--font-size-offset)))
+    // --fs-s2: calc(var(--key-size) / calc(1.25 * var(--font-size-offset)))
+    // --fs-s1: calc(var(--key-size) / calc(1.125 * var(--font-size-offset)))
+    // --fs-md: calc(var(--key-size) * var(--font-size-offset))
+    // --fs-l1: calc(var(--key-size) * calc(1.125 * var(--font-size-offset)))
+    // --fs-l2: calc(var(--key-size) * calc(1.25 * var(--font-size-offset)))
+    // --fs-l3: calc(var(--key-size) * calc(1.5 * var(--font-size-offset)))
+    // --fs-l4: calc(var(--key-size) * calc(2 * var(--font-size-offset)))
+    // --fs-l5: calc(var(--key-size) * calc(2.5 * var(--font-size-offset)))
+    
+    // - Font size
+        // https://developer.mozilla.org/ru/docs/Web/CSS/font-size
+    // - - Reset
+    --fs-xxs:  calc(var(--key-size) * 0.625)
+    // xx-small
+    --fs-xs:   calc(var(--key-size) * 0.75)
+    // x-small
+    --fs-sm:   calc(var(--key-size) * 0.875)
+    // small = smaller by initial
+    --fs-md:   var(--key-size)
+    // medium
+    --fs-lg:   calc(var(--key-size) * 1.125)
+    // large = larger by initial
+    --fs-xl:   calc(var(--key-size) * 1.25)
+    // x-large
+    --fs-xxl:  calc(var(--key-size) * 1.375)
+    // xx-large
+    --fs-xxxl: calc(var(--key-size) * 1.5)
+    // xxx-large
 
     // - Colors
     // - - Default colors
