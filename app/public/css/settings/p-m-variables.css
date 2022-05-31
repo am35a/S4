@@ -4,5 +4,6 @@
     /* Aside */
     --layout-aside-width: calc(var(--key-size) * 0);
     --layout-aside-expand-width: calc(var(--key-size) * 16);
+    --layout-aside-blind-width: var(--layout-aside-expand-width);
     --layout-aside-item-height: var(--layout-header-height);
 }

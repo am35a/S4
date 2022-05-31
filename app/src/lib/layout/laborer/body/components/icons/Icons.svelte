@@ -16,7 +16,9 @@
 <section>
     <div class="h2" aria-level={2} role="heading">Icons</div>
     <div class="d-grid cols-2 p:cols-1">
-        <p>Lightweight responsive vector icons with cache available.</p>
+        <p>
+            <span>Lightweight <Icon name="ghost"/> responsive vector icons with cache available.</span>
+        </p>
         <div class="d-grid g-2 p-2 bg-positive rounded-md">
             <div style="min-height: calc(var(--key-size) * 10)">
                 <Icon name="ghost" size={iconSize}/>

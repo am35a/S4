@@ -1,6 +1,8 @@
 @use "sass:math"
 
-$fontSizes: s5, s5, s3, s2, s1, md, l1, l2, l3, l4, l5
+// $fontSizes: s5, s5, s3, s2, s1, md, l1, l2, l3, l4, l5
+// $fontSizes: s3, s2, s1, md, l1, l2, l3
+$fontSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
 
 /*
     typography section: ... contained in classes
@@ -58,19 +60,19 @@ $fontSizes: s5, s5, s3, s2, s1, md, l1, l2, l3, l4, l5
 
     .#{$orientation}#{$type}h, h
         &1
-            font-size: var(--fs-l5) !important
+            font-size: calc(var(--fs-md) * 3) !important
             font-weight: 600 !important
         &2
-            font-size: var(--fs-l4) !important
+            font-size: calc(var(--fs-md) * 2.5) !important
             font-weight: 600 !important
         &3
-            font-size: var(--fs-l3) !important
+            font-size: calc(var(--fs-md) * 2) !important
             font-weight: 600 !important
         &4
-            font-size: var(--fs-l2) !important
+            font-size: calc(var(--fs-md) * 1.5) !important
             font-weight: 600 !important
         &5
-            font-size: var(--fs-l1) !important
+            font-size: calc(var(--fs-md) * 1.25) !important
             font-weight: 600 !important
         &6
             font-size: var(--fs-md) !important

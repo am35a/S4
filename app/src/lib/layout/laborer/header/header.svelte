@@ -41,18 +41,18 @@
             display: grid
             min-width: var(--layout-header-height)
             width: var(--layout-aside-width)
-            padding: .25rem
+            padding: calc(var(--key-size) * 0.25)
             button
                 display: grid
                 justify-items: center
                 align-items: center
-                border-radius: .25rem
+                border-radius: var(--rounded-2, calc(var(--key-size) * .25))
                 // background-color: var(--aside-bg-color, var(--secondary-color-d))
         .title
             display: grid
-            padding-left: .5rem 
+            padding-left: calc(var(--key-size) * 0.5)
             align-items: center
-            font-size: large
+            font-size: var(--fs-lg, large)
             font-weight: 500
 
 </style>

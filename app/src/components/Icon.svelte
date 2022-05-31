@@ -12,7 +12,7 @@
     }
 </script>
 
-<div {...$$restProps}></div>
+<span {...$$restProps}></span>
 
 <style lang="sass">
     :root
@@ -22,9 +22,13 @@
 
     .ico
         display: inline-block
-        width: 1em
-        height: 1em
-        vertical-align: middle
+        // width: calc(2.5rem + 2ex + 2.5rem)
+        width: calc(0.25em + 2ex + 0.25em)
+        // height: calc(2.5rem + 2ex + 2.5rem)
+        height: calc(0.25em + 2ex + 0.25em)
+        // width: 1em
+        // height: 1em
+        vertical-align: bottom
         background-color: currentColor
         mask-repeat: no-repeat
         -webkit-mask-repeat: no-repeat
@@ -37,13 +41,22 @@
         &-100
             width: 100%
             height: 100%
+        &-xs
+            width: var(--fs-xs)
+            height: var(--fs-xs)
         &-sm
-            width: var(--ico-size-sm)
-            height: var(--ico-size-sm) // --sm-size = --key-size * 1 сделать как у font-size
+            width: var(--fs-sm)
+            height: var(--fs-sm)
+            // width: var(--ico-size-sm)
+            // height: var(--ico-size-sm) // --sm-size = --key-size * 1 сделать как у font-size
         &-md
-            width: var(--ico-size-md)
-            height: var(--ico-size-md)
+            width: var(--fs-md)
+            height: var(--fs-md)
+            // width: var(--ico-size-md)
+            // height: var(--ico-size-md)
         &-lg
-            width: var(--ico-size-lg)
-            height: var(--ico-size-lg)
+            width: var(--fs-lg)
+            height: var(--fs-lg)
+            // width: var(--ico-size-lg)
+            // height: var(--ico-size-lg)
 </style>
