@@ -1545,17 +1545,32 @@
   font-weight: unset !important;
 }
 
-.l\:m\:lh-1 {
-  line-height: 1 !important;
+.l\:m\:lh-none {
+  line-height: 0 !important;
+}
+.l\:m\:lh-xxs {
+  line-height: 0.25 !important;
+}
+.l\:m\:lh-xs {
+  line-height: 0.5 !important;
 }
 .l\:m\:lh-sm {
-  line-height: 1.25 !important;
+  line-height: 1 !important;
 }
 .l\:m\:lh-md {
   line-height: 1.5 !important;
 }
 .l\:m\:lh-lg {
   line-height: 2 !important;
+}
+.l\:m\:lh-xl {
+  line-height: 2 !important;
+}
+.l\:m\:lh-xxl {
+  line-height: 2.5 !important;
+}
+.l\:m\:lh-xxxl {
+  line-height: 3 !important;
 }
 
 /*  hide container if empty */
