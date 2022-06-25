@@ -1545,14 +1545,8 @@
   font-weight: unset !important;
 }
 
-.p\:t\:lh-none {
+.p\:t\:lh-0 {
   line-height: 0 !important;
-}
-.p\:t\:lh-xxs {
-  line-height: 0.25 !important;
-}
-.p\:t\:lh-xs {
-  line-height: 0.5 !important;
 }
 .p\:t\:lh-sm {
   line-height: 1 !important;
@@ -1563,14 +1557,11 @@
 .p\:t\:lh-lg {
   line-height: 2 !important;
 }
-.p\:t\:lh-xl {
-  line-height: 2 !important;
+.p\:t\:lh-unset {
+  line-height: unset !important;
 }
-.p\:t\:lh-xxl {
-  line-height: 2.5 !important;
-}
-.p\:t\:lh-xxxl {
-  line-height: 3 !important;
+.p\:t\:lh-normal {
+  line-height: normal !important;
 }
 
 /*  hide container if empty */
