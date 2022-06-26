@@ -2,8 +2,8 @@
     import Precode from "src/components/Precode.svelte"
     import Button from "src/components/Button.svelte"
 
-    let iconSize:string = ''
-    let iconSizeArr = {
+    let alignValue:string = ''
+    let alignValueArr = {
         auto: '',
         none: '0',
         one: '1',
@@ -21,15 +21,15 @@
         <p>Use values "top", "middle" and "bottom" for vertical alignmet into table sells.</p>
         <div class="d-grid g-2 p-2 bg-positive rounded-md">
             <div class="d-inline-flex flex-wrap g-2">
-                {#each Object.entries(iconSizeArr) as [key, value]}
+                {#each Object.entries(alignValueArr) as [key, value]}
                     <Button
-                        class="btn-secondary {iconSize === value ? 'active' : ''}"
-                        on:click = {() => iconSize = value}
-                        disabled={iconSize === value}
+                        class="btn-secondary {alignValue === value ? 'active' : ''}"
+                        on:click = {() => alignValue = value}
+                        disabled={alignValue === value}
                     >{key}</Button>
                 {/each}
             </div>
-            <div class="d-grid g-2 overflow-x-auto" style="line-height: {iconSize};">
+            <div class="d-grid g-2 overflow-x-auto" style="line-height: {alignValue};">
                 <div class="col-span-full row-span-full my-auto border-bottom border-top border-secondary">&nbsp;<!-- base line indicator--></div>
                 <div class="col-span-full row-span-full my-auto border-bottom"><!-- base line indicator--></div>
                 <div class="col-span-full row-span-full">
