@@ -1873,6 +1873,9 @@
   font-weight: unset !important;
 }
 
+.lh {
+  line-height: var(--lh);
+}
 .lh-0 {
   line-height: 0 !important;
 }

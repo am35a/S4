@@ -1551,6 +1551,9 @@
   font-weight: unset !important;
 }
 
+.p\:t\:lh {
+  line-height: var(--lh);
+}
 .p\:t\:lh-0 {
   line-height: 0 !important;
 }

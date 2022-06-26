@@ -56,9 +56,9 @@
             <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit justify-items-start overflow-x-auto rounded-md">
                 <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bg-positive rounded-md">
                     <div class="fw-600 fs-s2 d-grid">
-                        <span class="row-span-full col-span-full mt-auto mr-auto">State</span>
+                        <div class="row-span-full col-span-full mt-auto mr-auto fs-xs">State</div>
                         <div class="row-span-full col-span-full m-auto">\</div>
-                        <span class="row-span-full col-span-full ml-auto mb-auto">Color</span>
+                        <div class="row-span-full col-span-full ml-auto mb-auto fs-xs">Color</div>
                     </div>
                     <div class="fw-600 my-auto ml-auto">Default</div>
                     <div class="fw-600 my-auto ml-auto">Active</div>

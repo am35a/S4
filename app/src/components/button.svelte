@@ -31,7 +31,7 @@
             vertical-align: middle
             text-align: center
             color: currentColor
-            font-size: 1em
+            // font-size: var(--key-size)
             line-height: calc(0.25em + 2ex + 0.25em)
             text-decoration: none
             cursor: pointer

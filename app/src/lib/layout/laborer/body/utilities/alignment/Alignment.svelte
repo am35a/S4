@@ -5,7 +5,7 @@
     let alignValue:string = ''
     let alignValueArr = {
         auto: '',
-        none: '0',
+        zero: '0',
         one: '1',
         two: '2',
         three: '3',
@@ -29,10 +29,10 @@
                     >{key}</Button>
                 {/each}
             </div>
-            <div class="d-grid g-2 overflow-x-auto" style="--lh: {alignValue};">
-                <div class="col-span-full row-span-full my-auto border-bottom border-top border-secondary">&nbsp;<!-- base line indicator--></div>
-                <div class="col-span-full row-span-full my-auto border-bottom"><!-- base line indicator--></div>
-                <div class="col-span-full row-span-full">
+            <div class="d-grid g-2" style="--lh: {alignValue};">
+                <div class="lh col-span-full row-span-full my-auto border-bottom border-top border-secondary">&nbsp;<!-- base line indicator--></div>
+                <div class="lh col-span-full row-span-full my-auto border-bottom"><!-- base line indicator--></div>
+                <div class="lh col-span-full row-span-full py-4">
                     <span class="bg-primary px-1 rounded align-baseline">Baseline</span>
                     <span class="bg-primary px-1 rounded align-sub">Sub</span>
                     <span class="bg-primary px-1 rounded align-super">Super</span>
@@ -43,6 +43,14 @@
                     <span class="bg-primary px-1 rounded align-text-top">Text top</span>
                 </div>
             </div>
+            <table style="height: 64rem;">
+                <tr>
+                    <td class="align-baseline">Baseline</td>
+                    <td class="align-top">Top</td>
+                    <td class="align-middle">Middle</td>
+                    <td class="align-bottom">Bottom</td>
+                </tr>
+            </table>
             <Precode>
                 {
 `<span class="align-baseline">Baseline</span>

@@ -12,7 +12,7 @@
     }
 </script>
 
-<span {...$$restProps}></span>
+<span {...$$restProps}>&nbsp;</span>
 
 <style lang="sass">
     :root
@@ -25,10 +25,10 @@
         // width: calc(2.5rem + 2ex + 2.5rem)
         width: calc(0.25em + 2ex + 0.25em)
         // height: calc(2.5rem + 2ex + 2.5rem)
-        height: calc(0.25em + 2ex + 0.25em)
+        // height: calc(0.25em + 2ex + 0.25em)
         // width: 1em
         // height: 1em
-        vertical-align: middle
+        // vertical-align: middle
         background-color: currentColor
         mask-repeat: no-repeat
         -webkit-mask-repeat: no-repeat
