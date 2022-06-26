@@ -28,7 +28,7 @@
         height: calc(0.25em + 2ex + 0.25em)
         // width: 1em
         // height: 1em
-        vertical-align: bottom
+        vertical-align: middle
         background-color: currentColor
         mask-repeat: no-repeat
         -webkit-mask-repeat: no-repeat

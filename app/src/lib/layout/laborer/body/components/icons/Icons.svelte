@@ -23,7 +23,7 @@
             <div style="min-height: calc(var(--key-size) * 10)">
                 <Icon name="ghost" size={iconSize}/>
             </div>
-            <div class="d-inline-flex flex-nowrap g-2">
+            <div class="d-inline-flex flex-wrap g-2">
                 {#each Object.entries(iconSizeArr) as [key, value]}
                     <Button
                         class="btn-secondary {iconSize === value ? 'active' : ''}"

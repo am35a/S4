@@ -2,6 +2,12 @@
 .p\:align-baseline {
   vertical-align: baseline !important;
 }
+.p\:align-sub {
+  vertical-align: sub !important;
+}
+.p\:align-super {
+  vertical-align: super !important;
+}
 .p\:align-top {
   vertical-align: top !important;
 }

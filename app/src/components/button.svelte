@@ -1,9 +1,9 @@
 <script lang='ts'>
     // https://github.com/hperrin/svelte-material-ui/tree/master/packages
     
-        if ($$restProps.type != 'reset' && $$restProps.type != 'submit')
-            $$restProps.type = 'button'
-    </script>
+    if ($$restProps.type != 'reset' && $$restProps.type != 'submit')
+        $$restProps.type = 'button'
+</script>
     
     <button
         class:btn={true}

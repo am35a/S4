@@ -2,6 +2,12 @@
 .m\:align-baseline {
   vertical-align: baseline !important;
 }
+.m\:align-sub {
+  vertical-align: sub !important;
+}
+.m\:align-super {
+  vertical-align: super !important;
+}
 .m\:align-top {
   vertical-align: top !important;
 }

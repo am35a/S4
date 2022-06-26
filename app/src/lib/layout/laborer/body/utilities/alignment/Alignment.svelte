@@ -1,5 +1,16 @@
 <script lang="ts">
     import Precode from "src/components/Precode.svelte"
+    import Button from "src/components/Button.svelte"
+
+    let iconSize:string = ''
+    let iconSizeArr = {
+        auto: '',
+        none: '0',
+        one: '1',
+        two: '2',
+        three: '3',
+        four: '4'
+    }
 
 </script>
 
@@ -7,27 +18,43 @@
     <div class="h2" aria-level={2} role="heading">Alignment</div>
     <div class="d-grid">
         <div class="h3" aria-level={3} role="heading">Vertical alignment</div>
-        <p>...</p>
-        <div class="d-grid g-2 overflow-x-auto">
-            <div class="col-span-full row-span-full my-auto border-bottom border-secondary"><!-- base line indicator--></div>
-            <div class="col-span-full row-span-full lh-lg">
-                <span class="bg-positive px-1 rounded align-baseline">baseline</span>
-                <span class="bg-positive px-1 rounded align-top">top</span>
-                <span class="bg-positive px-1 rounded align-middle">middle</span>
-                <span class="bg-positive px-1 rounded align-bottom">bottom</span>
-                <span class="bg-positive px-1 rounded align-text-bottom">text-bottom</span>
-                <span class="bg-positive px-1 rounded align-text-top">text-top</span>
+        <p>Use values "top", "middle" and "bottom" for vertical alignmet into table sells.</p>
+        <div class="d-grid g-2 p-2 bg-positive rounded-md">
+            <div class="d-inline-flex flex-wrap g-2">
+                {#each Object.entries(iconSizeArr) as [key, value]}
+                    <Button
+                        class="btn-secondary {iconSize === value ? 'active' : ''}"
+                        on:click = {() => iconSize = value}
+                        disabled={iconSize === value}
+                    >{key}</Button>
+                {/each}
             </div>
+            <div class="d-grid g-2 overflow-x-auto" style="line-height: {iconSize};">
+                <div class="col-span-full row-span-full my-auto border-bottom border-top border-secondary">&nbsp;<!-- base line indicator--></div>
+                <div class="col-span-full row-span-full my-auto border-bottom"><!-- base line indicator--></div>
+                <div class="col-span-full row-span-full">
+                    <span class="bg-primary px-1 rounded align-baseline">Baseline</span>
+                    <span class="bg-primary px-1 rounded align-sub">Sub</span>
+                    <span class="bg-primary px-1 rounded align-super">Super</span>
+                    <span class="bg-primary px-1 rounded align-top">Top</span>
+                    <span class="bg-primary px-1 rounded align-middle">Middle</span>
+                    <span class="bg-primary px-1 rounded align-bottom">Bottom</span>
+                    <span class="bg-primary px-1 rounded align-text-bottom">Text bottom</span>
+                    <span class="bg-primary px-1 rounded align-text-top">Text top</span>
+                </div>
+            </div>
+            <Precode>
+                {
+`<span class="align-baseline">Baseline</span>
+<span class="align-sub">Sub</span>
+<span class="align-super">Super</span>
+<span class="align-top">Top</span>
+<span class="align-middle">Middle</span>
+<span class="align-bottom">Bottom</span>
+<span class="align-text-bottom">Text bottom</span>
+<span class="align-text-top">Text top</span>`
+                }
+            </Precode>
         </div>
-        <Precode>
-            {
-`<span class="align-baseline">baseline</span>
-<span class="align-top">top</span>
-<span class="align-middle">middle</span>
-<span class="align-bottom">bottom</span>
-<span class="align-text-bottom">text-bottom</span>
-<span class="align-text-top">text-top</span>`
-            }
-        </Precode>
     </div>
 </section>

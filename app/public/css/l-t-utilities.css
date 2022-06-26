@@ -2,6 +2,12 @@
 .t\:align-baseline {
   vertical-align: baseline !important;
 }
+.t\:align-sub {
+  vertical-align: sub !important;
+}
+.t\:align-super {
+  vertical-align: super !important;
+}
 .t\:align-top {
   vertical-align: top !important;
 }
