@@ -12,22 +12,22 @@
         <div class="d-grid g-2 overflow-x-auto">
             <div class="d-grid g-2 cols-2">
                 <Alert class="alert-primary">
-                    Alert success message with <a href={'#'}>link</a>
+                    Alert primary message with <a href={'#'}>link</a>
                 </Alert>
                 <Alert class="alert-secondary">
-                    Alert success message with <a href={'#'}>link</a>
+                    Alert secondary message with <a href={'#'}>link</a>
                 </Alert>
                 <Alert class="alert-info">
-                    Alert success message with <a href={'#'}>link</a>
+                    Alert info message with <a href={'#'}>link</a>
                 </Alert>
                 <Alert class="alert-success">
                     Alert success message with <a href={'#'}>link</a>
                 </Alert>
                 <Alert class="alert-warning">
-                    Alert success message with <a href={'#'}>link</a>
+                    Alert warning message with <a href={'#'}>link</a>
                 </Alert>
                 <Alert class="alert-error">
-                    Alert success message with <a href={'#'}>link</a>
+                    Alert error message with <a href={'#'}>link</a>
                 </Alert>
             </div>
             <Precode>
