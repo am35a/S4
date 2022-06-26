@@ -29,7 +29,7 @@
                     >{key}</Button>
                 {/each}
             </div>
-            <div class="d-grid g-2 overflow-x-auto" style="line-height: {alignValue};">
+            <div class="d-grid g-2 overflow-x-auto" style="--lh: {alignValue};">
                 <div class="col-span-full row-span-full my-auto border-bottom border-top border-secondary">&nbsp;<!-- base line indicator--></div>
                 <div class="col-span-full row-span-full my-auto border-bottom"><!-- base line indicator--></div>
                 <div class="col-span-full row-span-full">

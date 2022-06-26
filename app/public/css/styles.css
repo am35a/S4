@@ -17,6 +17,7 @@ html {
   margin: 0;
   box-sizing: inherit;
   background-repeat: no-repeat;
+  line-height: var(--lh, normal);
 }
 
 ::before,
@@ -266,6 +267,7 @@ progress {
   --key-size: 16rem;
   --space-size-offset: 1;
   --font-size-offset: 1;
+  --lh: 1.5;
   --fs-xxs: calc(var(--key-size) * 0.625);
   --fs-xs: calc(var(--key-size) * 0.75);
   --fs-sm: calc(var(--key-size) * 0.875);
