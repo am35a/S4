@@ -137,13 +137,13 @@
             cursor: pointer
             z-index: 2
             .ico
-                transform: scale(.375)
+                transform: scale(.75)
                 transition: transform .25s
             // &:focus,
             &:hover
                 color: var(--positive-color)
                 .ico
-                    transform: scale(.5)
+                    transform: scale(1)
                 ~ .backdrop
                     margin: calc(var(--key-size) * .5)
                     margin-left: calc(100% - calc(var(--key-size) * 3 - calc(var(--key-size) * .5)))

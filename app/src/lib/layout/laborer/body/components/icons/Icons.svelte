@@ -5,11 +5,16 @@
 
     let iconSize:string = ''
     let iconSizeArr = {
-        auto: '',
-        small: 'sm',
-        medium: 'md',
-        large: 'lg',
-        full: '100'
+        'auto': '',
+        'xx-small': 'fs-xxs',
+        'x-small': 'fs-xs',
+        'small': 'fs-sm',
+        'medium': 'fs-md',
+        'large': 'fs-lg',
+        'x-large': 'fs-xl',
+        'xx-large': 'fs-xxl',
+        'xxx-large': 'fs-xxxl',
+        'full': 'w-100 h-100'
     }
 </script>
 
@@ -17,11 +22,13 @@
     <div class="h2" aria-level={2} role="heading">Icons</div>
     <div class="d-grid cols-2 p:cols-1">
         <p>
-            <span>Lightweight <Icon name="ghost"/> responsive vector icons with cache available.</span>
+            Lightweight <Icon name="ghost"/> responsive vector icons with cache available.
+            <br>
+            The  icon sizes directly depend on the font size and the container in which the icon is placed.            
         </p>
         <div class="d-grid g-2 p-2 bg-positive rounded-md">
             <div style="min-height: calc(var(--key-size) * 10)">
-                <Icon name="ghost" size={iconSize}/>
+                <Icon class={iconSize} name="ghost"/>
             </div>
             <div class="d-inline-flex flex-wrap g-2">
                 {#each Object.entries(iconSizeArr) as [key, value]}
@@ -37,8 +44,8 @@
 `<Icon name="ghost" ${iconSize ? `size="${iconSize}" ` : ``}/>
 
 // It is valid syntax of Icon component but not recommended for use
-<Icon ${iconSize ? `class="ico-${iconSize}" ` : ``}name="ghost" />
-<Icon class="ico-ghost${iconSize ? ` ico-${iconSize}` : ``}" />`
+<Icon ${iconSize ? `class="${iconSize}" ` : ``}name="ghost" />
+<Icon class="ico-ghost${iconSize ? ` ${iconSize}` : ``}" />`
                 }
             </Precode>
         </div>

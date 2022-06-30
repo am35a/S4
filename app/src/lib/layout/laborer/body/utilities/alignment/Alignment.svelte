@@ -2,8 +2,8 @@
     import Precode from "src/components/Precode.svelte"
     import Button from "src/components/Button.svelte"
 
-    let alignValue:string = ''
-    let alignValueArr = {
+    let verticalAlign:string = ''
+    let verticalAlignArr = {
         auto: '',
         zero: '0',
         one: '1',
@@ -21,15 +21,15 @@
         <p>Use values "top", "middle" and "bottom" for vertical alignmet into table sells.</p>
         <div class="d-grid g-2 p-2 bg-positive rounded-md">
             <div class="d-inline-flex flex-wrap g-2">
-                {#each Object.entries(alignValueArr) as [key, value]}
+                {#each Object.entries(verticalAlignArr) as [key, value]}
                     <Button
-                        class="btn-secondary {alignValue === value ? 'active' : ''}"
-                        on:click = {() => alignValue = value}
-                        disabled={alignValue === value}
+                        class="btn-secondary {verticalAlign === value ? 'active' : ''}"
+                        on:click = {() => verticalAlign = value}
+                        disabled={verticalAlign === value}
                     >{key}</Button>
                 {/each}
             </div>
-            <div class="d-grid g-2" style="--lh: {alignValue};">
+            <div class="d-grid g-2" style="--lh: {verticalAlign}">
                 <div class="lh col-span-full row-span-full my-auto border-bottom border-top border-secondary">&nbsp;<!-- base line indicator--></div>
                 <div class="lh col-span-full row-span-full my-auto border-bottom"><!-- base line indicator--></div>
                 <div class="lh col-span-full row-span-full py-4">
@@ -63,6 +63,13 @@
 <span class="align-text-top">Text top</span>`
                 }
             </Precode>
+        </div>
+        <div class="d-grid">
+            <div class="h3" aria-level={3} role="heading">Justify</div>
+            <p>...</p>
+            <div class="d-grid g-2 p-2 bg-positive rounded-md">
+
+            </div>
         </div>
     </div>
 </section>
