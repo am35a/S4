@@ -20,7 +20,7 @@
         <div class="h3" aria-level={3} role="heading">Vertical alignment</div>
         <div class="d-grid">
             <div class="h4" aria-level={4} role="heading">Inline container</div>
-            <p>...</p>
+            <p>The <b>vertical-align-...</b> properties sets vertical alignment of an <b>inline</b>, <b>inline-block</b> elements.</p>
             <div class="d-grid g-2 p-2 bg-positive rounded-md">
                 <div class="d-inline-flex flex-wrap g-2">
                     {#each Object.entries(verticalAlignArr) as [key, value]}
@@ -90,8 +90,7 @@
         <div class="h3" aria-level={3} role="heading">Justify</div>
         <div class="grid">
             <div class="h4" aria-level={4} role="heading">Content</div>
-            <p>...</p>
-            <p class="color-info">The properties works only for flexbox and grid containers!</p>
+            <p>The <b>justify-content-...</b> properties defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.</p>
             <div class="d-grid g-2 p-2 bg-positive rounded-md">
                 <div class="d-grid g-4">
                     <div class="d-flex g-2 bg-negative-10 p-2 justify-content-start">
@@ -125,15 +124,49 @@
                         <div class="bg-negative-10 p-2">three</div>
                     </div>
                 </div>
+                <Precode>
+                    {
+`<div class="d-flex justify-content-start">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-flex justify-content-end">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-flex justify-content-center">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-flex justify-content-between">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-flex justify-content-around">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-flex justify-content-evenly">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>`
+                    }
+                </Precode>
             </div>
         </div>
         <div class="grid">
             <div class="h4" aria-level={4} role="heading">Items</div>
-            <p>...</p>
-            <p class="color-warning">The properties works only for grid container!</p>
+            <p>The <b>justify-items-...</b> property work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.</p>
+            <p class="color-warning">The properties works only for <b>grid</b> container!</p>
             <div class="d-grid g-2 p-2 bg-positive rounded-md">
                 <div class="d-grid g-4">
-                    <div class="d-grid cols-2 g-2 bg-error p-2 justify-items-baseline">
+                    <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-items-start">
                         <div class="bg-negative-10 p-2">one</div>
                         <div class="bg-negative-10 p-2">two</div>
                         <div class="bg-negative-10 p-2">three</div>
@@ -148,23 +181,42 @@
                         <div class="bg-negative-10 p-2">two</div>
                         <div class="bg-negative-10 p-2">three</div>
                     </div>
-                    <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-items-start">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
-                    </div>
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-items-stretch">
                         <div class="bg-negative-10 p-2">one</div>
                         <div class="bg-negative-10 p-2">two</div>
                         <div class="bg-negative-10 p-2">three</div>
                     </div>
                 </div>
+                <Precode>
+                    {
+`<div class="d-grid cols-2 justify-items-start">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-grid cols-2 justify-items-end">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-grid cols-2 justify-items-center">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-grid cols-2 justify-items-stretch">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</div>`
+                    }
+                </Precode>
             </div>
         </div>
         <div class="grid">
             <div class="h4" aria-level={4} role="heading">Self</div>
-            <p>The justify-self-... utilities sets the way a box is justified inside its alignment container along the appropriate axis.</p>
-            <p class="color-warning">The properties works only for grid container!</p>
+            <p>The <b>justify-self-...</b> utilities sets the way a box is justified inside its alignment container along the appropriate axis.</p>
+            <p class="color-warning">The properties works only for <b>grid</b> container!</p>
             <div class="d-grid g-2 p-2 bg-positive rounded-md">
                 <div class="d-grid g-4">
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2">
@@ -188,6 +240,30 @@
                         <div class="bg-negative-10 p-2">three</div>
                     </div>
                 </div>
+                <Precode>
+                    {
+`<div class="d-grid cols-2">
+    <div class="justify-self-start">one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-grid cols-2">
+    <div class="justify-self-center">one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-grid cols-2">
+    <div class="justify-self-end">one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-grid cols-2">
+    <div class="justify-self-stretch">one</div>
+    <div>two</div>
+    <div>three</div>
+</div>`
+                    }
+                </Precode>                
             </div>
         </div>
     </div>
