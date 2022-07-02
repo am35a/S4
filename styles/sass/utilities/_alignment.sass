@@ -1,4 +1,4 @@
-@use "sass:list"
+// @use "sass:list"
 
 $align: baseline, sub, super, top, middle, bottom, text-bottom, text-top
 $alignContent: ( around: space-around, between: space-between, center: center, end: end, evenly: space-evenly, start: start, stretch: stretch )
@@ -6,7 +6,8 @@ $alignItems: baseline, center, end, start, stretch
 $alignSelf: $alignItems
 $justifyContent: $alignContent
 $justifyItems: $alignItems
-$justifySelf: list.join( auto, $alignSelf)
+// $justifySelf: list.join( auto, $alignSelf)
+$justifySelf: center, end, start, stretch
 
 /*
     alignment section: align and justify contained in classes

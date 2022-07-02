@@ -111,12 +111,6 @@
 .m\:justify-items-stretch {
   justify-items: stretch !important;
 }
-.m\:justify-self-auto {
-  justify-self: auto !important;
-}
-.m\:justify-self-baseline {
-  justify-self: baseline !important;
-}
 .m\:justify-self-center {
   justify-self: center !important;
 }
