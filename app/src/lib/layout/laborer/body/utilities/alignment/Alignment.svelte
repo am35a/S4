@@ -67,9 +67,9 @@
                 </svelte:fragment>
             </Details>
         </div>
-        <div class="d-grid">
+        <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Table cells container</div>
-            <p>Use values "top", "middle" and "bottom" for vertical alignmet into table sells.</p>
+            <b>Use values <b>top</b>, <b>middle</b> and <b>bottom</b> for vertical alignmet into table sells.</b>
             <div class="d-grid g-2 p-2 bg-positive rounded-md">
                 <table style="height: 64rem;">
                     <tr>
@@ -79,8 +79,14 @@
                         <td class="border align-bottom">Bottom</td>
                     </tr>
                 </table>
-                <Precode>
-                    {
+            </div>
+            <Details>
+                <svelte:fragment slot="title">
+                    Code example
+                </svelte:fragment>
+                <svelte:fragment slot="body">
+                    <Precode class="rounded-top-0">
+                        {
 `<table>
     <tr>
         <td class="border align-baseline">Baseline</td>
@@ -89,51 +95,58 @@
         <td class="border align-bottom">Bottom</td>
     </tr>
 </table>`
-                    }
-                </Precode>
-            </div>
+                        }
+                    </Precode>
+                </svelte:fragment>
+            </Details>
         </div>
     </div>
-    <div class="d-grid">
+    <div class="d-grid g-2">
         <div class="h3" aria-level={3} role="heading">Justify</div>
-        <div class="grid">
+        <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Content</div>
             <p>The <b>justify-content-...</b> properties defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.</p>
             <div class="d-grid g-2 p-2 bg-positive rounded-md">
-                <div class="d-grid g-4">
+                <div class="d-grid g-2">
                     <div class="d-flex g-2 bg-negative-10 p-2 justify-content-start">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-flex g-2 bg-negative-10 p-2 justify-content-end">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-flex g-2 bg-negative-10 p-2 justify-content-center">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-flex g-2 bg-negative-10 p-2 justify-content-between">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-flex g-2 bg-negative-10 p-2 justify-content-around">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-flex g-2 bg-negative-10 p-2 justify-content-evenly">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                 </div>
-                <Precode>
-                    {
+            </div>
+            <Details>
+                <svelte:fragment slot="title">
+                    Code example
+                </svelte:fragment>
+                <svelte:fragment slot="body">
+                    <Precode class="rounded-top-0">
+                        {
 `<div class="d-flex justify-content-start">
     <div>one</div>
     <div>two</div>
@@ -164,39 +177,46 @@
     <div>two</div>
     <div>three</div>
 </div>`
-                    }
-                </Precode>
-            </div>
+                        }
+                    </Precode>
+                </svelte:fragment>
+            </Details>
         </div>
-        <div class="grid">
+        <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Items</div>
             <p>The <b>justify-items-...</b> property work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.</p>
             <p class="color-warning">The properties works only for <b>grid</b> container!</p>
             <div class="d-grid g-2 p-2 bg-positive rounded-md">
-                <div class="d-grid g-4">
+                <div class="d-grid g-2">
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-items-start">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-items-center">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-items-end">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-items-stretch">
-                        <div class="bg-negative-10 p-2">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                 </div>
-                <Precode>
-                    {
+            </div>
+            <Details>
+                <svelte:fragment slot="title">
+                    Code example
+                </svelte:fragment>
+                <svelte:fragment slot="body">
+                    <Precode class="rounded-top-0">
+                        {
 `<div class="d-grid cols-2 justify-items-start">
     <div>one</div>
     <div>two</div>
@@ -217,39 +237,46 @@
     <div>two</div>
     <div>three</div>
 </div>`
-                    }
-                </Precode>
-            </div>
+                        }
+                    </Precode>
+                </svelte:fragment>
+            </Details>
         </div>
-        <div class="grid">
+        <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Self</div>
             <p>The <b>justify-self-...</b> utilities sets the way a box is justified inside its alignment container along the appropriate axis.</p>
             <p class="color-warning">The properties works only for <b>grid</b> container!</p>
             <div class="d-grid g-2 p-2 bg-positive rounded-md">
-                <div class="d-grid g-4">
+                <div class="d-grid g-2">
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2">
-                        <div class="bg-negative-10 p-2 justify-self-start">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1 justify-self-start">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2">
-                        <div class="bg-negative-10 p-2 justify-self-center">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1 justify-self-center">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2">
-                        <div class="bg-negative-10 p-2 justify-self-end">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1 justify-self-end">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                     <div class="d-grid cols-2 g-2 bg-negative-10 p-2">
-                        <div class="bg-negative-10 p-2 justify-self-stretch">one</div>
-                        <div class="bg-negative-10 p-2">two</div>
-                        <div class="bg-negative-10 p-2">three</div>
+                        <div class="bg-negative-10 px-2 py-1 justify-self-stretch">one</div>
+                        <div class="bg-negative-10 px-2 py-1">two</div>
+                        <div class="bg-negative-10 px-2 py-1">three</div>
                     </div>
                 </div>
-                <Precode>
-                    {
+            </div>
+            <Details>
+                <svelte:fragment slot="title">
+                    Code example
+                </svelte:fragment>
+                <svelte:fragment slot="body">
+                    <Precode class="rounded-top-0">
+                        {
 `<div class="d-grid cols-2">
     <div class="justify-self-start">one</div>
     <div>two</div>
@@ -270,9 +297,11 @@
     <div>two</div>
     <div>three</div>
 </div>`
-                    }
-                </Precode>                
-            </div>
+                        }
+                    </Precode>
+                </svelte:fragment>
+            </Details>
+            
         </div>
     </div>
 </section>
