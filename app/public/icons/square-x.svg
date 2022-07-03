@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	viewBox="2 2 20 20"
+	stroke-width="1.5"
+	stroke="currentColor"
+	fill="none"
+	stroke-linecap="round"
+	stroke-linejoin="round"
+>
+	<title>Square x</title>
+  	<rect x="4" y="4" width="16" height="16" rx="2" />
+  	<path d="M10 10l4 4m0 -4l-4 4" />
+</svg>

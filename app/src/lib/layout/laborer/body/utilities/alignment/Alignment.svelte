@@ -1,6 +1,7 @@
 <script lang="ts">
     import Precode from "src/components/Precode.svelte"
     import Button from "src/components/Button.svelte"
+    import Details from "src/components/Details.svelte"
 
     let verticalAlign:string = ''
     let verticalAlignArr = {
@@ -14,11 +15,11 @@
 
 </script>
 
-<section>
+<section class="d-grid g-2">
     <div class="h2" aria-level={2} role="heading">Alignment</div>
-    <div class="d-grid">
+    <div class="d-grid g-2">
         <div class="h3" aria-level={3} role="heading">Vertical alignment</div>
-        <div class="d-grid">
+        <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Inline container</div>
             <p>The <b>vertical-align-...</b> properties sets vertical alignment of an <b>inline</b>, <b>inline-block</b> elements.</p>
             <div class="d-grid g-2 p-2 bg-positive rounded-md">
@@ -45,8 +46,14 @@
                         <span class="bg-primary px-1 rounded align-text-top">Text top</span>
                     </div>
                 </div>
-                <Precode>
-                    {
+            </div>
+            <Details>
+                <svelte:fragment slot="title">
+                    Code example
+                </svelte:fragment>
+                <svelte:fragment slot="body">
+                    <Precode class="rounded-top-0">
+                        {
 `<span class="align-baseline">Baseline</span>
 <span class="align-sub">Sub</span>
 <span class="align-super">Super</span>
@@ -55,9 +62,10 @@
 <span class="align-bottom">Bottom</span>
 <span class="align-text-bottom">Text bottom</span>
 <span class="align-text-top">Text top</span>`
-                    }
-                </Precode>
-            </div>
+                        }
+                    </Precode>
+                </svelte:fragment>
+            </Details>
         </div>
         <div class="d-grid">
             <div class="h4" aria-level={4} role="heading">Table cells container</div>

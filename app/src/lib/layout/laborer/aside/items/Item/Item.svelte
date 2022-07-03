@@ -123,7 +123,7 @@
                 ~ *:not(.submenu)
                     color: var(--aside-item-active-color, var(--positive-color))
                 ~ .status
-                    width: .375rem
+                    width: calc(var(--key-size) * .375)
                     background: var(--aside-item-active-status-bg, var(--positive-color))
                     transition: width .25s .125s, background .25s .125s
         .action
