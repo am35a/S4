@@ -2,11 +2,11 @@
     .#{$orientation}#{$type}cols
         @for $i from 1 through 12
             &-#{$i}
-                grid-template-columns: repeat($i, minmax(var(--cols-min, 0), var(--cols-max, 1fr)))
+                grid-template-columns: repeat(var(--cols-repeat, $i), minmax(var(--cols-min, 0), var(--cols-max, 1fr)))
     .#{$orientation}#{$type}rows
         @for $i from 1 through 12
             &-#{$i}
-                grid-template-rows: repeat($i, minmax(var(--rows-min, 0), var(--rows-max, 1fr)))
+                grid-template-rows: repeat(var(--cols-repeat, $i), minmax(var(--rows-min, 0), var(--rows-max, 1fr)))
 
     .#{$orientation}#{$type}col-span
         @for $i from 1 through 12
