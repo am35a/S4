@@ -2,7 +2,10 @@
     <div class="h2" aria-level={2} role="heading">Typography</div>
     <div class="d-grid g-2">
         <div class="h3" aria-level={3} role="heading">Typography</div>
-        <div class="d-inline-grid cols-2 g-2 justify-self-start align-items-center">
+        <div
+            class="d-inline-grid cols g-2 justify-self-start align-items-center"
+            style="--cols-tl: auto auto;"
+        >
             <div>Heading</div><div>Example</div>
             <code>&lt;h1&gt;&lt;/h1&gt;</code><h1>Heading - 1</h1>
             <code>&lt;h2&gt;&lt;/h2&gt;</code><h2>Heading - 2</h2>

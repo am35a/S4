@@ -174,85 +174,91 @@
 }
 
 .cols-auto {
-  grid-auto-columns: auto;
+  grid-auto-columns: var(--cols-auto, auto);
 }
 
 .rows-auto {
-  grid-auto-rows: auto;
+  grid-auto-rows: var(--rows-auto, auto);
 }
 
+.l\:m\:cols {
+  grid-template-columns: var(--cols-tl, unset);
+}
 .l\:m\:cols-1 {
-  grid-template-columns: repeat(var(--cols-repeat, 1), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(1, 1fr);
 }
 .l\:m\:cols-2 {
-  grid-template-columns: repeat(var(--cols-repeat, 2), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(2, 1fr);
 }
 .l\:m\:cols-3 {
-  grid-template-columns: repeat(var(--cols-repeat, 3), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(3, 1fr);
 }
 .l\:m\:cols-4 {
-  grid-template-columns: repeat(var(--cols-repeat, 4), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(4, 1fr);
 }
 .l\:m\:cols-5 {
-  grid-template-columns: repeat(var(--cols-repeat, 5), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(5, 1fr);
 }
 .l\:m\:cols-6 {
-  grid-template-columns: repeat(var(--cols-repeat, 6), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(6, 1fr);
 }
 .l\:m\:cols-7 {
-  grid-template-columns: repeat(var(--cols-repeat, 7), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(7, 1fr);
 }
 .l\:m\:cols-8 {
-  grid-template-columns: repeat(var(--cols-repeat, 8), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(8, 1fr);
 }
 .l\:m\:cols-9 {
-  grid-template-columns: repeat(var(--cols-repeat, 9), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(9, 1fr);
 }
 .l\:m\:cols-10 {
-  grid-template-columns: repeat(var(--cols-repeat, 10), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(10, 1fr);
 }
 .l\:m\:cols-11 {
-  grid-template-columns: repeat(var(--cols-repeat, 11), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(11, 1fr);
 }
 .l\:m\:cols-12 {
-  grid-template-columns: repeat(var(--cols-repeat, 12), minmax(var(--cols-min, 0), var(--cols-max, 1fr)));
+  grid-template-columns: repeat(12, 1fr);
 }
 
+.l\:m\:rows {
+  grid-template-rows: var(--rows-tl, unset);
+}
 .l\:m\:rows-1 {
-  grid-template-rows: repeat(var(--cols-repeat, 1), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(1, 1fr);
 }
 .l\:m\:rows-2 {
-  grid-template-rows: repeat(var(--cols-repeat, 2), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(2, 1fr);
 }
 .l\:m\:rows-3 {
-  grid-template-rows: repeat(var(--cols-repeat, 3), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(3, 1fr);
 }
 .l\:m\:rows-4 {
-  grid-template-rows: repeat(var(--cols-repeat, 4), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(4, 1fr);
 }
 .l\:m\:rows-5 {
-  grid-template-rows: repeat(var(--cols-repeat, 5), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(5, 1fr);
 }
 .l\:m\:rows-6 {
-  grid-template-rows: repeat(var(--cols-repeat, 6), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(6, 1fr);
 }
 .l\:m\:rows-7 {
-  grid-template-rows: repeat(var(--cols-repeat, 7), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(7, 1fr);
 }
 .l\:m\:rows-8 {
-  grid-template-rows: repeat(var(--cols-repeat, 8), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(8, 1fr);
 }
 .l\:m\:rows-9 {
-  grid-template-rows: repeat(var(--cols-repeat, 9), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(9, 1fr);
 }
 .l\:m\:rows-10 {
-  grid-template-rows: repeat(var(--cols-repeat, 10), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(10, 1fr);
 }
 .l\:m\:rows-11 {
-  grid-template-rows: repeat(var(--cols-repeat, 11), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(11, 1fr);
 }
 .l\:m\:rows-12 {
-  grid-template-rows: repeat(var(--cols-repeat, 12), minmax(var(--rows-min, 0), var(--rows-max, 1fr)));
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .l\:m\:col-span-1 {
