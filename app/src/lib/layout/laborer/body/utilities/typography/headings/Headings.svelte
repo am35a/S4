@@ -2,7 +2,7 @@
     import Heading from 'src/components/Heading.svelte'
 </script>
 <div class="d-grid g-2">
-    <Heading level={3}>Headings</Heading>
+    <Heading class="h3">Headings</Heading>
     <div
         class="d-inline-grid cols g-2 justify-self-start align-items-center"
         style="--cols-tl: auto auto;"

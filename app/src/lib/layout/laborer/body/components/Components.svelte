@@ -5,6 +5,7 @@
     import Buttons from './buttons/Buttons.svelte'
     import ButtonsGroup from './buttons-group/ButtonsGroup.svelte'
     import Details from './details/Details.svelte'
+    import Heading from './heading/Heading.svelte'
     import Icons from './icons/Icons.svelte'
 </script>
 
@@ -21,6 +22,9 @@
 </Route>
 <Route path="/details">
     <svelte:component this={Details}/>
+</Route>
+<Route path="/heading">
+    <svelte:component this={Heading}/>
 </Route>
 <Route path="/icons">
     <svelte:component this={Icons}/>
