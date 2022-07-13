@@ -11,15 +11,16 @@
     // }
     // $: console.log(JSON.stringify(asideRoute))
 
-    import Home from './home/Home.svelte'
-    import Core from './core/Core.svelte'
-    import Components from './components/Components.svelte'
-    import Utilities from './utilities/Utilities.svelte'
+    import PageHome from './home/Home.svelte'
+    import PageCore from './core/Core.svelte'
+    import PageColors from './colors/Colors.svelte'
+    import PageComponents from './components/Components.svelte'
+    import PageUtilities from './utilities/Utilities.svelte'
         // import Alignment from './utilities/alignment/Alignment.svelte'
         // ...
         // import Typography from './utilities/typography/Typography.svelte'
-    import Layout from './layout/Layout.svelte'
-    import Help from './help/Help.svelte'
+    import PageLayout from './layout/Layout.svelte'
+    import PageHelp from './help/Help.svelte'
 
     // $: console.log($asideItems[2])
 </script>
@@ -33,22 +34,25 @@
 
     <Route>
         <Route path={"/home"}>
-            <svelte:component this={Home}/>
+            <svelte:component this={PageHome}/>
         </Route>
         <Route path="/core">
-            <svelte:component this={Core}/>
+            <svelte:component this={PageCore}/>
+        </Route>
+        <Route path="/colors">
+            <svelte:component this={PageColors}/>
         </Route>
         <Route path="/components">
-            <svelte:component this={Components}/>
+            <svelte:component this={PageComponents}/>
         </Route>
         <Route path="/utilities">
-            <svelte:component this={Utilities}/>
+            <svelte:component this={PageUtilities}/>
         </Route>
         <Route path="/layout">
-            <svelte:component this={Layout}/>
+            <svelte:component this={PageLayout}/>
         </Route>
         <Route path="/help">
-            <svelte:component this={Help}/>
+            <svelte:component this={PageHelp}/>
         </Route>
         <Route fallback>
             404

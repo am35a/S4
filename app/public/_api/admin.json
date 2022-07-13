@@ -23,6 +23,12 @@
             },
             {
                 "id": 3,
+                "icon": "color",
+                "title": "Colors",
+                "segment": "/colors"
+            },
+            {
+                "id": 4,
                 "icon": "components",
                 "title": "Components",
                 "segment": "/components",
@@ -60,7 +66,7 @@
                 ]
             },
             {
-                "id": 4,
+                "id": 5,
                 "icon": "css3",
                 "title": "Utilities",
                 "segment": "/utilities",
