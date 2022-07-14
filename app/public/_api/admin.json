@@ -23,8 +23,8 @@
             },
             {
                 "id": 3,
-                "icon": "color",
-                "title": "Colors",
+                "icon": "palette",
+                "title": "Color palette",
                 "segment": "/colors"
             },
             {

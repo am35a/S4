@@ -5,11 +5,10 @@
     import PageButtons from './buttons/Buttons.svelte'
     import PageButtonsGroup from './buttons-group/ButtonsGroup.svelte'
     import PageDetails from './details/Details.svelte'
-    import PageHeading from './heading/Heading.svelte'
     import PageIcons from './icons/Icons.svelte'
 </script>
 
-<div class="h1" aria-level={1} role="heading">Components</div>
+<h1>Components</h1>
 
 <Route path="/alerts">
     <svelte:component this={PageAlerts}/>
@@ -22,9 +21,6 @@
 </Route>
 <Route path="/details">
     <svelte:component this={PageDetails}/>
-</Route>
-<Route path="/heading">
-    <svelte:component this={PageHeading}/>
 </Route>
 <Route path="/icons">
     <svelte:component this={PageIcons}/>

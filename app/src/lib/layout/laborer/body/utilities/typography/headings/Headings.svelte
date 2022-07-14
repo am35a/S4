@@ -1,8 +1,5 @@
-<script lang="ts">
-    import Heading from 'src/components/Heading.svelte'
-</script>
 <div class="d-grid g-2">
-    <Heading class="h3">Headings</Heading>
+    <h3>Headings</h3>
     <div
         class="d-inline-grid cols g-2 justify-self-start align-items-center"
         style="--cols-tl: auto auto;"
