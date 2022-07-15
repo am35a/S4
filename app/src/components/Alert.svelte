@@ -12,7 +12,7 @@
     >
         {#if $$restProps.class.includes('alert-closable')}
             <Button
-                class="btn-close"
+                class="btn-close fs-xs"
                 on:click={() => isAlert = false}
                 title="Close alert"
             ><Icon name="close"/></Button>
