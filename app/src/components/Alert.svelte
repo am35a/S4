@@ -37,6 +37,11 @@
                 background-color: var(--#{$colorName}-color-l)
                 color: var(--#{$colorName}-color-d)
                 font-weight: 500
+        @each $colorName in $accentColors
+            &-alt-#{$colorName}
+                border-color: var(--#{$colorName}-color)
+                color: var(--#{$colorName}-color-d)
+                font-weight: 500
         &:not(&-closable)
             .btn-close
                 display: none

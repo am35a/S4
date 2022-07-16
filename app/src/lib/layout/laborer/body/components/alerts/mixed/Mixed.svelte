@@ -1,28 +1,47 @@
 <script lang="ts">
-    import Alert from "src/components/Alert.svelte"
-    import Precode from "src/components/Precode.svelte"
+    import Alert from 'src/components/Alert.svelte'
+    import Precode from 'src/components/Precode.svelte'
+    import Details from 'src/components/Details.svelte'
 </script>
 
-<div class="d-grid">
+<div class="d-grid g-2">
     <h3>Style mixed</h3>
     <p>...</p>
-    <div class="d-grid g-2 overflow-x-auto">
+    <div class="d-grid g-2 cols-2 p-2 bg-positive rounded-md">
         <Alert class="alert-primary border">
-            Border
+            Alert component with border
         </Alert>
         <Alert class="alert-warning border bg-transparent alert-closable">
-            Transparent background
+            Transparent background for alert
         </Alert>
         <Alert class="border bg-transparent color-success">
-            Text color
+            Change the text color with killing background color
         </Alert>
         <Alert class="bg-error color-positive">
-            Text and background color
+            Set custom text and background color
         </Alert>
-        <Precode>
-            {
-`...`
-            }
-        </Precode>
     </div>
+    <Details>
+        <svelte:fragment slot="title">
+            Code example
+        </svelte:fragment>
+        <svelte:fragment slot="body">
+            <Precode class="rounded-top-0">
+                {
+`<Alert class="alert-primary border">
+    Alert component with border
+</Alert>
+<Alert class="alert-warning border bg-transparent alert-closable">
+    Transparent background for alert
+</Alert>
+<Alert class="border bg-transparent color-success">
+    Change the text color with killing background color
+</Alert>
+<Alert class="bg-error color-positive">
+    Set custom text and background color
+</Alert>`
+                }
+            </Precode>
+        </svelte:fragment>
+    </Details>
 </div>
