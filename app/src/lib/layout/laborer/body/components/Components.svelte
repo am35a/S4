@@ -1,29 +1,29 @@
 <script lang="ts">
     import { Route, path, query, hash } from 'svelte-micro'
 
-    import PageAlerts from './alerts/Alerts.svelte'
-    import PageButtons from './buttons/Buttons.svelte'
-    import PageButtonsGroup from './buttons-group/ButtonsGroup.svelte'
-    import PageDetails from './details/Details.svelte'
-    import PageIcons from './icons/Icons.svelte'
+    import ArticleAlerts from './alerts/Alerts.svelte'
+    import ArticleButtons from './buttons/Buttons.svelte'
+    import ArticleButtonsGroup from './buttons-group/ButtonsGroup.svelte'
+    import ArticleDetails from './details/Details.svelte'
+    import ArticleIcons from './icons/Icons.svelte'
 </script>
 
 <h1>Components</h1>
 
 <Route path="/alerts">
-    <svelte:component this={PageAlerts}/>
+    <svelte:component this={ArticleAlerts}/>
 </Route>
 <Route path="/buttons">
-    <svelte:component this={PageButtons}/>
+    <svelte:component this={ArticleButtons}/>
 </Route>
 <Route path="/buttons-group">
-    <svelte:component this={PageButtonsGroup}/>
+    <svelte:component this={ArticleButtonsGroup}/>
 </Route>
 <Route path="/details">
-    <svelte:component this={PageDetails}/>
+    <svelte:component this={ArticleDetails}/>
 </Route>
 <Route path="/icons">
-    <svelte:component this={PageIcons}/>
+    <svelte:component this={ArticleIcons}/>
 </Route>
 <Route fallback>
     404

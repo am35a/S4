@@ -1,12 +1,12 @@
 <script lang="ts">
-    import BlockDefault from './default/Default.svelte'
-    import BlockCloseble from './closeble/Closeble.svelte'
-    import BlockMixed from './mixed/Mixed.svelte'
+    import SectionDefault from './default/Default.svelte'
+    import SectionCloseble from './closeble/Closeble.svelte'
+    import SectionMixed from './mixed/Mixed.svelte'
 </script>
 
-<section class="d-grid g-4">
+<article class="d-grid g-4">
     <h2>Alerts</h2>
-    <BlockDefault />
-    <BlockCloseble />
-    <BlockMixed />
-</section>
+    <SectionDefault />
+    <SectionCloseble />
+    <SectionMixed />
+</article>

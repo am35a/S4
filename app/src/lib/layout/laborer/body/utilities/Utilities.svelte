@@ -1,62 +1,62 @@
 <script lang="ts">
     import { Route, path, query, hash } from 'svelte-micro'
 
-    import PageAlignment from './alignment/Alignment.svelte'
-    import PageBackground from './background/Background.svelte'
-    import PageBorder from './border/Border.svelte'
-    import PageDisplay from './display/Display.svelte'
-    import PageFlex from './Flex/flex.svelte'
-    import PageGrid from './Grid/grid.svelte'
-    import PageOverflow from './overflow/Overflow.svelte'
-    import PagePosition from './position/Position.svelte'
-    import PagePseudos from './pseudos/Pseudos.svelte'
-    import PageShadow from './shadow/Shadow.svelte'
-    import PageSizing from './sizing/Sizing.svelte'
-    import PageSpacing from './spacing/Spacing.svelte'
-    import PageTypography from './typography/Typography.svelte'
+    import ArticleAlignment from './alignment/Alignment.svelte'
+    import ArticleBackground from './background/Background.svelte'
+    import ArticleBorder from './border/Border.svelte'
+    import ArticleDisplay from './display/Display.svelte'
+    import ArticleFlex from './Flex/flex.svelte'
+    import ArticleGrid from './Grid/grid.svelte'
+    import ArticleOverflow from './overflow/Overflow.svelte'
+    import ArticlePosition from './position/Position.svelte'
+    import ArticlePseudos from './pseudos/Pseudos.svelte'
+    import ArticleShadow from './shadow/Shadow.svelte'
+    import ArticleSizing from './sizing/Sizing.svelte'
+    import ArticleSpacing from './spacing/Spacing.svelte'
+    import ArticleTypography from './typography/Typography.svelte'
 
 </script>
 
 <div class="h1" aria-level={1} role="heading">Utilities</div>
 
 <Route path="/alignment">
-    <svelte:component this={PageAlignment}/>
+    <svelte:component this={ArticleAlignment}/>
 </Route>
 <Route path="/background">
-    <svelte:component this={PageBackground}/>
+    <svelte:component this={ArticleBackground}/>
 </Route>
 <Route path="/border">
-    <svelte:component this={PageBorder}/>
+    <svelte:component this={ArticleBorder}/>
 </Route>
 <Route path="/display">
-    <svelte:component this={PageDisplay}/>
+    <svelte:component this={ArticleDisplay}/>
 </Route>
 <Route path="/flex">
-    <svelte:component this={PageFlex}/>
+    <svelte:component this={ArticleFlex}/>
 </Route>
 <Route path="/grid">
-    <svelte:component this={PageGrid}/>
+    <svelte:component this={ArticleGrid}/>
 </Route>
 <Route path="/overflow">
-    <svelte:component this={PageOverflow}/>
+    <svelte:component this={ArticleOverflow}/>
 </Route>
 <Route path="/position">
-    <svelte:component this={PagePosition}/>
+    <svelte:component this={ArticlePosition}/>
 </Route>
 <Route path="/pseudos">
-    <svelte:component this={PagePseudos}/>
+    <svelte:component this={ArticlePseudos}/>
 </Route>
 <Route path="/shadow">
-    <svelte:component this={PageShadow}/>
+    <svelte:component this={ArticleShadow}/>
 </Route>
 <Route path="/sizing">
-    <svelte:component this={PageSizing}/>
+    <svelte:component this={ArticleSizing}/>
 </Route>
 <Route path="/spacing">
-    <svelte:component this={PageSpacing}/>
+    <svelte:component this={ArticleSpacing}/>
 </Route>
 <Route path="/typography">
-    <svelte:component this={PageTypography}/>
+    <svelte:component this={ArticleTypography}/>
 </Route>
 <Route fallback>
     404
