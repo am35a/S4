@@ -3,6 +3,7 @@
     import SectionJustifyContent from './justifycontent/JustifyContent.svelte'
     import SectionJustifyItems from './justifyitems/JustifyItems.svelte'
     import SectionJustifySelf from './justifyself/JustifySelf.svelte'
+    import SectionAlignItems from './alignitems/AlignItems.svelte'
     import SectionAlignSelf from './alignself/AlignSelf.svelte'
 
 </script>
@@ -13,5 +14,6 @@
     <SectionJustifyContent />
     <SectionJustifyItems />
     <SectionJustifySelf />
+    <SectionAlignItems />
     <SectionAlignSelf />
 </article>
