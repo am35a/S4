@@ -14,14 +14,16 @@
 
 <section class="d-grid g-4">
     <h3>Align items</h3>
-    <p>The <b>align-items-...</b>...</p>
+    <p>
+        The <b>align-items-...</b>...
+    </p>
     <div class="d-grid g-2 p-2 bg-positive rounded-md">
         <div class="d-flex g-2">
             {#each Object.entries(containerTypesObj) as [key, value]}
                 <Button
                     class="btn-secondary {containerType === value ? 'active' : ''}"
                     on:click = {() => containerType = value}
-                    disabled={containerType === value}
+                    disabled = {containerType === value}
                 >{key}</Button>
             {/each}
         </div>
