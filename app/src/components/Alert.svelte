@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Icon from 'src/components/Icon.svelte'
-    import Button from 'src/components/Button.svelte'
+    import Icon from 'component/Icon.svelte'
+    import Button from 'component/Button.svelte'
 
     let isAlert: boolean = true
 </script>

@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Icon from "src/components/Icon.svelte"
-    import Button from "src/components/Button.svelte"
-    import Precode from "src/components/Precode.svelte"
+    import Icon from "component/Icon.svelte"
+    import Button from "component/Button.svelte"
+    import Precode from "component/Precode.svelte"
 
     let buttonsName = {
         primary: 'Primary',

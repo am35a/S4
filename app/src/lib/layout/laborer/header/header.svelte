@@ -1,8 +1,8 @@
 <script lang="ts">
     import { asideExpand } from 'src/store/store'
 
-    import Button from 'src/components/Button.svelte'
-    import Icon from 'src/components/Icon.svelte'
+    import Button from 'component/Button.svelte'
+    import Icon from 'component/Icon.svelte'
 </script>
 
 <header class="header">

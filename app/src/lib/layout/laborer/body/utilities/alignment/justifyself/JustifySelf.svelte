@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Precode from "src/components/Precode.svelte"
-    import Details from "src/components/Details.svelte"
+    import Precode from "component/Precode.svelte"
+    import Details from "component/Details.svelte"
 </script>
 
 <section class="d-grid g-4">

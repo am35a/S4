@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Icon from "src/components/Icon.svelte"
-    import Precode from "src/components/Precode.svelte"
-    import Button from "src/components/Button.svelte"
+    import Icon from "component/Icon.svelte"
+    import Precode from "component/Precode.svelte"
+    import Button from "component/Button.svelte"
 
     let iconSize:string = ''
     let iconSizeArr = {

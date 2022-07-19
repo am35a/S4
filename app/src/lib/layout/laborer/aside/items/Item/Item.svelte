@@ -4,7 +4,7 @@
     import { router, pathToArray, path } from 'svelte-micro'
     import { asideExpand, appSegment } from 'src/store/store'
 
-    import Icon from 'src/components/Icon.svelte'
+    import Icon from 'component/Icon.svelte'
 
     export let active: boolean = false
     export let icon: string = undefined

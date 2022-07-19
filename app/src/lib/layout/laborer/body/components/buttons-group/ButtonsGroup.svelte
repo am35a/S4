@@ -1,8 +1,8 @@
 <script lang="ts">
-    import Icon from "src/components/Icon.svelte"
-    import Button from "src/components/Button.svelte"
-    import ButtonGroup from "src/components/ButtonGroup.svelte"
-    import Precode from "src/components/Precode.svelte"
+    import Icon from "component/Icon.svelte"
+    import Button from "component/Button.svelte"
+    import ButtonGroup from "component/ButtonGroup.svelte"
+    import Precode from "component/Precode.svelte"
 </script>
 
 <section>

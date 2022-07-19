@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Precode from "src/components/Precode.svelte"
-    import Button from "src/components/Button.svelte"
-    import Details from "src/components/Details.svelte"
+    import Precode from "component/Precode.svelte"
+    import Button from "component/Button.svelte"
+    import Details from "component/Details.svelte"
 
     let verticalAlign:string = ''
     let verticalAlignArr = {

@@ -1,7 +1,7 @@
 <script lang="ts">
     import { asideExpand } from 'src/store/store'
 
-    import Icon from 'src/components/Icon.svelte'
+    import Icon from 'component/Icon.svelte'
 </script>
 
 <div

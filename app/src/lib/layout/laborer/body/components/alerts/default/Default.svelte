@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Alert from 'src/components/Alert.svelte'
-    import Precode from 'src/components/Precode.svelte'
-    import Details from 'src/components/Details.svelte'
+    import Alert from 'component/Alert.svelte'
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
 </script>
 
 <section class="d-grid g-2">
