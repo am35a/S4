@@ -11,7 +11,7 @@
         The <b>justify-self-...</b> utilities sets the way a box is justified inside its alignment container along the appropriate axis.
     </p>
     <div class="alert alert-warning justify-self-start">
-        The properties works only for <b>grid</b> container!
+        The properties works only for <b>grid</b> containers!
     </div>
     <div class="d-grid g-2 p-2 bg-positive rounded-md">
         <div class="d-grid g-2">
@@ -33,7 +33,7 @@
                 {#each justifySelfArr as item }
 {`
 <div class="d-grid">
-    <div justify-self-${item}>one</div>
+    <div class="justify-self-${item}">one</div>
     <div>two</div>
     <div>three</div>
 </div>
