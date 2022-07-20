@@ -32,7 +32,7 @@
             <Precode class="rounded-top-0">
                 {#each justifyItemsArr as item }
 {`
-<div class="d-grid justify-self-${item}">
+<div class="d-grid justify-items-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>
