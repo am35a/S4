@@ -1,6 +1,13 @@
 <script lang="ts">
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
+    import Button from 'component/Button.svelte'
+
+    let containerTypeArr = {
+        'inline-grid': 'd-inline-grid',
+        'flex': 'd-flex'
+    }
+    let containerType:string = containerTypeArr['flex']
 
     let justifyContentArr = [ 'center', 'end', 'start', 'stretch', 'between', 'around', 'evenly' ]
 </script>
@@ -11,9 +18,18 @@
         The <b>justify-content-...</b> properties defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded-md">
+        <div class="d-flex g-2">
+            {#each Object.entries(containerTypeArr) as [key, value]}
+                <Button
+                    class="btn-secondary {containerType === value ? 'active' : ''}"
+                    on:click = {() => containerType = value}
+                    disabled={containerType === value}
+                >{key}</Button>
+            {/each}
+        </div>
         <div class="d-grid g-2">
             {#each justifyContentArr as item }
-                <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-content-{item}">
+                <div class="{containerType} g-2 bg-negative-10 p-2 justify-content-{item}">
                     <div class="bg-negative-10 px-2 py-1">one</div>
                     <div class="bg-negative-10 px-2 py-1">two</div>
                     <div class="bg-negative-10 px-2 py-1">three</div>
@@ -29,7 +45,7 @@
             <Precode class="rounded-top-0">
                 {#each justifyContentArr as item }
 {`
-<div class="d-grid justify-content-${item}">
+<div class="d-flex justify-content-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>
