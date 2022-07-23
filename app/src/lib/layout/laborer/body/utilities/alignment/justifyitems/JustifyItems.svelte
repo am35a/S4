@@ -2,13 +2,13 @@
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
 
-    let justifyItemsArr = [ 'center', 'end', 'start', 'stretch' ]
+    let justifyItemsArr: string[] = [ 'center', 'end', 'start', 'stretch' ]
 </script>
 
 <section class="d-grid g-4">
-    <h3>Justify items</h3>
+    <h3 id="JustifyItems">Justify items</h3>
     <p>
-        The <b>justify-items-...</b> property work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.
+        The <b>justify-items-...</b> classes work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.
     </p>
     <div class="alert alert-warning justify-self-start">
         The properties works only for <b>grid</b> containers!
@@ -31,13 +31,14 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {#each justifyItemsArr as item }
-{`
-<div class="d-grid justify-items-${item}">
+                    {
+`<div class="d-grid justify-items-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>
 </div>
-`}
+`
+                    }
                 {/each}
             </Precode>
         </svelte:fragment>

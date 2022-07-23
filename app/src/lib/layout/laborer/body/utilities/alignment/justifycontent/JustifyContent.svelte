@@ -3,23 +3,23 @@
     import Details from 'component/Details.svelte'
     import Button from 'component/Button.svelte'
 
-    let containerTypeArr = {
+    let containerTypeObj = {
         'inline-grid': 'd-inline-grid',
         'flex': 'd-flex'
     }
-    let containerType:string = containerTypeArr['flex']
+    let containerType:string = containerTypeObj['flex']
 
     let justifyContentArr = [ 'center', 'end', 'start', 'stretch', 'between', 'around', 'evenly' ]
 </script>
 
-<section class="d-grid g-4">
-    <h3>Justify content</h3>
+<section class="d-grid g-2">
+    <h3 class="JustifyContent">Justify content</h3>
     <p>
-        The <b>justify-content-...</b> properties defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
+        The <b>justify-content-...</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded-md">
         <div class="d-flex g-2">
-            {#each Object.entries(containerTypeArr) as [key, value]}
+            {#each Object.entries(containerTypeObj) as [key, value]}
                 <Button
                     class="btn-secondary {containerType === value ? 'active' : ''}"
                     on:click = {() => containerType = value}
@@ -44,13 +44,14 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {#each justifyContentArr as item }
-{`
-<div class="d-flex justify-content-${item}">
+                    {
+`<div class="d-flex justify-content-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>
 </div>
-`}
+`
+                    }
                 {/each}
             </Precode>
         </svelte:fragment>

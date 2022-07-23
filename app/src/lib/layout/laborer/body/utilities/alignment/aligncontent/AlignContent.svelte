@@ -1,21 +1,21 @@
 <script lang="ts">
-    import Precode from "component/Precode.svelte"
-    import Details from "component/Details.svelte"
-    import Button from "component/Button.svelte"
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
+    import Button from 'component/Button.svelte'
     
     let containerTypesObj = {
         grid: 'd-grid cols-2',
         flex: 'd-flex flex-wrap'
     }
-    let containerType:string = containerTypesObj.grid
+    let containerType: string = containerTypesObj.grid
 
-    let alignContentArr = [ 'start', 'end', 'stretch', 'around', 'between', 'evenly' ]
+    let alignContentArr: string[] = [ 'start', 'end', 'stretch', 'around', 'between', 'evenly' ]
 </script>
 
-<section class="d-grid g-4">
-    <h3>Align content</h3>
+<section class="d-grid g-2">
+    <h3 id="AlignContent">Align content</h3>
     <p>
-        The <b>align-content-...</b> sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
+        The <b>align-content-...</b> classes sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded-md">
         <div class="d-flex g-2">
@@ -62,13 +62,14 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {#each alignContentArr as item }
-{`
-<div class="${containerType} align-content-${item}">
+                    {
+`<div class="${containerType} align-content-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>
 </div>
-`}
+`
+                    }
                 {/each}
             </Precode>
         </svelte:fragment>

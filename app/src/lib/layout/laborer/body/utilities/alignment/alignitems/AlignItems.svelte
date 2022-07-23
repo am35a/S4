@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Precode from "component/Precode.svelte"
-    import Details from "component/Details.svelte"
-    import Button from "component/Button.svelte"
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
+    import Button from 'component/Button.svelte'
     
     let containerTypesObj = {
         grid: 'd-grid cols-2',
@@ -9,13 +9,13 @@
     }
     let containerType:string = containerTypesObj.grid
 
-    let alignItemsArr = [ 'baseline', 'center', 'end', 'start', 'stretch' ]
+    let alignItemsArr: string[] = [ 'baseline', 'center', 'end', 'start', 'stretch' ]
 </script>
 
-<section class="d-grid g-4">
-    <h3>Align items</h3>
+<section class="d-grid g-2">
+    <h3 id="AlignItems">Align items</h3>
     <p>
-        The <b>align-items-...</b>...
+        The <b>align-items-...</b> classes sets the <b>align-self-</b> classes value on all direct children as a group.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded-md">
         <div class="d-flex g-2">
@@ -44,13 +44,14 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {#each alignItemsArr as item }
-{`
-<div class="${containerType} align-items-${item}">
+                    {
+`<div class="${containerType} align-items-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>
 </div>
-`}
+`
+                    }
                 {/each}
             </Precode>
         </svelte:fragment>

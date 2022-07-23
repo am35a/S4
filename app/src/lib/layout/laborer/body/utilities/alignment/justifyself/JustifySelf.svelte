@@ -2,11 +2,11 @@
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
 
-    let justifySelfArr = [ 'center', 'end', 'start', 'stretch' ]
+    let justifySelfArr: string[] = [ 'center', 'end', 'start', 'stretch' ]
 </script>
 
-<section class="d-grid g-4">
-    <h3>Justify self</h3>
+<section class="d-grid g-2">
+    <h3 id="JustifySelf">Justify self</h3>
     <p>
         The <b>justify-self-...</b> utilities sets the way a box is justified inside its alignment container along the appropriate axis.
     </p>
@@ -31,13 +31,14 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {#each justifySelfArr as item }
-{`
-<div class="d-grid">
+                    {
+`<div class="d-grid">
     <div class="justify-self-${item}">one</div>
     <div>two</div>
     <div>three</div>
 </div>
-`}
+`
+                    }
                 {/each}
             </Precode>
         </svelte:fragment>
