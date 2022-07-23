@@ -1,43 +1,40 @@
 <script lang="ts">
-    import Precode from "component/Precode.svelte"
-    import Details from "component/Details.svelte"
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
+    import Button from 'component/Button.svelte'
+
+    let containerTypeArr = {
+        'inline-grid': 'd-inline-grid',
+        'flex': 'd-flex'
+    }
+    let containerType:string = containerTypeArr['flex']
+
+    let justifyContentArr = [ 'center', 'end', 'start', 'stretch', 'between', 'around', 'evenly' ]
 </script>
 
 <section class="d-grid g-4">
     <h3>Justify content</h3>
-    <p>The <b>justify-content-...</b> properties defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.</p>
+    <p>
+        The <b>justify-content-...</b> properties defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
+    </p>
     <div class="d-grid g-2 p-2 bg-positive rounded-md">
+        <div class="d-flex g-2">
+            {#each Object.entries(containerTypeArr) as [key, value]}
+                <Button
+                    class="btn-secondary {containerType === value ? 'active' : ''}"
+                    on:click = {() => containerType = value}
+                    disabled={containerType === value}
+                >{key}</Button>
+            {/each}
+        </div>
         <div class="d-grid g-2">
-            <div class="d-flex g-2 bg-negative-10 p-2 justify-content-start">
-                <div class="bg-negative-10 px-2 py-1">one</div>
-                <div class="bg-negative-10 px-2 py-1">two</div>
-                <div class="bg-negative-10 px-2 py-1">three</div>
-            </div>
-            <div class="d-flex g-2 bg-negative-10 p-2 justify-content-end">
-                <div class="bg-negative-10 px-2 py-1">one</div>
-                <div class="bg-negative-10 px-2 py-1">two</div>
-                <div class="bg-negative-10 px-2 py-1">three</div>
-            </div>
-            <div class="d-flex g-2 bg-negative-10 p-2 justify-content-center">
-                <div class="bg-negative-10 px-2 py-1">one</div>
-                <div class="bg-negative-10 px-2 py-1">two</div>
-                <div class="bg-negative-10 px-2 py-1">three</div>
-            </div>
-            <div class="d-flex g-2 bg-negative-10 p-2 justify-content-between">
-                <div class="bg-negative-10 px-2 py-1">one</div>
-                <div class="bg-negative-10 px-2 py-1">two</div>
-                <div class="bg-negative-10 px-2 py-1">three</div>
-            </div>
-            <div class="d-flex g-2 bg-negative-10 p-2 justify-content-around">
-                <div class="bg-negative-10 px-2 py-1">one</div>
-                <div class="bg-negative-10 px-2 py-1">two</div>
-                <div class="bg-negative-10 px-2 py-1">three</div>
-            </div>
-            <div class="d-flex g-2 bg-negative-10 p-2 justify-content-evenly">
-                <div class="bg-negative-10 px-2 py-1">one</div>
-                <div class="bg-negative-10 px-2 py-1">two</div>
-                <div class="bg-negative-10 px-2 py-1">three</div>
-            </div>
+            {#each justifyContentArr as item }
+                <div class="{containerType} g-2 bg-negative-10 p-2 justify-content-{item}">
+                    <div class="bg-negative-10 px-2 py-1">one</div>
+                    <div class="bg-negative-10 px-2 py-1">two</div>
+                    <div class="bg-negative-10 px-2 py-1">three</div>
+                </div>
+            {/each}
         </div>
     </div>
     <Details>
@@ -46,43 +43,15 @@
         </svelte:fragment>
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
-                {
-`<div class="d-flex justify-content-start">
+                {#each justifyContentArr as item }
+{`
+<div class="d-flex justify-content-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>
 </div>
-
-<div class="d-flex justify-content-end">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
-</div>
-
-<div class="d-flex justify-content-center">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
-</div>
-
-<div class="d-flex justify-content-between">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
-</div>
-
-<div class="d-flex justify-content-around">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
-</div>
-
-<div class="d-flex justify-content-evenly">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
-</div>`
-                }
+`}
+                {/each}
             </Precode>
         </svelte:fragment>
     </Details>

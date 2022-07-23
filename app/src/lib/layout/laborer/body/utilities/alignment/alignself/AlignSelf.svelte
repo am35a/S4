@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Precode from "component/Precode.svelte"
-    import Details from "component/Details.svelte"
-    import Button from "component/Button.svelte"
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
+    import Button from 'component/Button.svelte'
 
     let containerTypeArr = {
         grid: 'd-grid cols-2',
