@@ -17,7 +17,7 @@
 
 </script>
 
-<div class="h1" aria-level={1} role="heading">Utilities</div>
+<h1>Utilities</h1>
 
 <Route path="/alignment">
     <svelte:component this={ArticleAlignment}/>
