@@ -2,7 +2,7 @@
     import { Route, path, query, hash } from 'svelte-micro'
 
     import ArticleAlignment from './alignment/Alignment.svelte'
-    import ArticleBackground from './background/Background.svelte'
+    import ArticleColors from './colors/Colors.svelte'
     import ArticleBorder from './border/Border.svelte'
     import ArticleDisplay from './display/Display.svelte'
     import ArticleFlex from './Flex/flex.svelte'
@@ -22,8 +22,8 @@
 <Route path="/alignment">
     <svelte:component this={ArticleAlignment}/>
 </Route>
-<Route path="/background">
-    <svelte:component this={ArticleBackground}/>
+<Route path="/colors">
+    <svelte:component this={ArticleColors}/>
 </Route>
 <Route path="/border">
     <svelte:component this={ArticleBorder}/>
