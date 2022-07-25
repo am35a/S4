@@ -3,7 +3,7 @@
 
     import ArticleAlerts from './alerts/Alerts.svelte'
     import ArticleButtons from './buttons/Buttons.svelte'
-    import ArticleButtonsGroup from './buttons-group/ButtonsGroup.svelte'
+    import ArticleButtonsGroup from './buttonsgroup/ButtonsGroup.svelte'
     import ArticleDetails from './details/Details.svelte'
     import ArticleIcons from './icons/Icons.svelte'
 </script>
@@ -16,7 +16,7 @@
 <Route path="/buttons">
     <svelte:component this={ArticleButtons}/>
 </Route>
-<Route path="/buttons-group">
+<Route path="/buttonsgroup">
     <svelte:component this={ArticleButtonsGroup}/>
 </Route>
 <Route path="/details">
