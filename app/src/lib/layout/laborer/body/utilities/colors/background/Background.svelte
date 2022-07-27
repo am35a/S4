@@ -3,6 +3,9 @@
     import Details from 'component/Details.svelte'
     import Button from 'component/Button.svelte'
 
+    let defaultColorsArr: string[] = [ 'positive', 'negative' ]
+    let defaultExtraColorsInterval: number = null
+
     let accentColorsArr: string[] = [ 'primary', 'secondary', 'info', 'success', 'warning', 'error' ]
 
     let accentExtraColorsObj = {
@@ -15,6 +18,47 @@
 
 <section class="d-grid g-2">
     <h3 id="BackgroundColor">Background color</h3>
+    <p>
+        ...
+    </p>
+    <div class="d-grid g-2 p-2 bg-positive- border border-positive rounded-md">
+        <div class="d-flex g-2">
+            <Button
+                class="btn-secondary {defaultExtraColorsInterval ? 'active' : ''}"
+                on:click = {() => defaultExtraColorsInterval ? defaultExtraColorsInterval = null : defaultExtraColorsInterval = 10 }
+            >
+                default extra colors {defaultExtraColorsInterval ? 'hide' : 'show'}
+            </Button>
+        </div>
+        <div class="d-grid g-2 cols-2">
+            <div class="bg-transparent col-span-2 p-4 color-{defaultColorsArr[1]}">bg-transparent</div>
+            <div class="d-grid g-2">
+                {#if defaultExtraColorsInterval}
+                    {#each Array(9) as _, i}
+                        <div class="bg-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 color-{defaultColorsArr[1]}">
+                            bg-{defaultColorsArr[0]}-{(i + 1) * 10}
+                        </div>
+                    {/each}
+                {/if}
+                <div class="bg-{defaultColorsArr[0]} p-4 color-{defaultColorsArr[1]}">
+                    bg-{defaultColorsArr[0]}
+                </div>
+            </div>
+            <div class="d-grid g-2">
+                {#if defaultExtraColorsInterval}
+                    {#each Array(9) as _, i}
+                        <div class="bg-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 color-{defaultColorsArr[0]}">
+                            bg-{defaultColorsArr[0]}-{(i + 1) * 10}
+                        </div>
+                    {/each}
+                {/if}
+                <div class="bg-{defaultColorsArr[1]} p-4 color-{defaultColorsArr[0]}">
+                    bg-{defaultColorsArr[1]}
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <p>
         ...
     </p>
@@ -31,7 +75,8 @@
         <div class="d-grid g-2 cols-2">
             {#each accentColorsArr as item }
                 <div class="bg-{item}{accentExtraColor} p-4 color-positive">
-                    {item} {Object.keys(accentExtraColorsObj).find(key => accentExtraColorsObj[key] === accentExtraColor)} color
+                    <!-- {item} {Object.keys(accentExtraColorsObj).find(key => accentExtraColorsObj[key] === accentExtraColor)} color -->
+                    bg-{item}{accentExtraColor}
                 </div>
             {/each}
         </div>
