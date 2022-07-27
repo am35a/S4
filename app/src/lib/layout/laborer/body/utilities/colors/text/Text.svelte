@@ -17,11 +17,11 @@
 </script>
 
 <section class="d-grid g-2">
-    <h3 id="BackgroundColor">Background color</h3>
+    <h3 id="Color">Text color</h3>
     <p>
         ...
     </p>
-    <div class="d-grid g-2 p-2 bg-positive border border-positive rounded-md">
+    <div class="d-grid g-2 p-2 bg-positive rounded-md">
         <div class="d-flex g-2">
             <Button
                 class="btn-secondary {defaultExtraColorsInterval ? 'active' : ''}"
@@ -31,29 +31,29 @@
             </Button>
         </div>
         <div class="d-grid g-2 cols-2">
-            <div class="bg-transparent col-span-2 p-4 color-{defaultColorsArr[1]}">bg-transparent</div>
+            <div class="col-span-2 p-4 color-transparent">color-transparent</div>
             <div class="d-grid g-2 bg-negative">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
-                        <div class="bg-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 color-{defaultColorsArr[1]}">
-                            bg-{defaultColorsArr[0]}-{(i + 1) * 10}
+                        <div class="color-{defaultColorsArr[0]}-{(i + 1) * 10} p-4">
+                            color-{defaultColorsArr[0]}-{(i + 1) * 10}
                         </div>
                     {/each}
                 {/if}
-                <div class="bg-{defaultColorsArr[0]} p-4 color-{defaultColorsArr[1]}">
-                    bg-{defaultColorsArr[0]}
+                <div class="color-{defaultColorsArr[0]} p-4">
+                    color-{defaultColorsArr[0]}
                 </div>
             </div>
             <div class="d-grid g-2">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
-                        <div class="bg-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 color-{defaultColorsArr[0]}">
-                            bg-{defaultColorsArr[0]}-{(i + 1) * 10}
+                        <div class="color-{defaultColorsArr[1]}-{(i + 1) * 10} p-4">
+                            color-{defaultColorsArr[0]}-{(i + 1) * 10}
                         </div>
                     {/each}
                 {/if}
-                <div class="bg-{defaultColorsArr[1]} p-4 color-{defaultColorsArr[0]}">
-                    bg-{defaultColorsArr[1]}
+                <div class="color-{defaultColorsArr[1]} p-4">
+                    color-{defaultColorsArr[1]}
                 </div>
             </div>
         </div>
