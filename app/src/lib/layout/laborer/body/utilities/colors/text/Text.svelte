@@ -13,13 +13,12 @@
         default: '',
         dark: '-d'
     }
-    let accentExtraColor: string = accentExtraColorsObj.default
 </script>
 
 <section class="d-grid g-2">
     <h3 id="Color">Text color</h3>
     <p>
-        ...
+        ... Use <b>color-transparent</b> class to make color or other dependencies transparent.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded-md">
         <div class="d-flex g-2">
@@ -63,21 +62,11 @@
         ...
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded-md">
-        <div class="d-flex g-2">
-            {#each Object.entries(accentExtraColorsObj) as [key, value]}
-                <Button
-                    class="btn-secondary {accentExtraColor === value ? 'active' : ''}"
-                    on:click = {() => accentExtraColor = value}
-                    disabled = {accentExtraColor === value}
-                >{key}</Button>
-            {/each}
-        </div>
-        <div class="d-grid g-2 cols-2">
+        <div class="d-grid g-2 cols-3">
             {#each accentColorsArr as item }
-                <div class="bg-{item}{accentExtraColor} p-4 color-positive">
-                    <!-- {item} {Object.keys(accentExtraColorsObj).find(key => accentExtraColorsObj[key] === accentExtraColor)} color -->
-                    bg-{item}{accentExtraColor}
-                </div>
+                {#each Object.entries(accentExtraColorsObj) as [key, value]}
+                    <span class="color-{item}{value}">color-{item}{value}</span>
+                {/each}
             {/each}
         </div>
     </div>
@@ -88,12 +77,11 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {#each accentColorsArr as item }
-                    {
-`<div class="bg-${item}${accentExtraColor} p-4 color-positive">
-    ${item}${accentExtraColor} color
-</div>
-`
-                    }
+                    {#each Object.entries(accentExtraColorsObj) as [key, value]}
+                        {
+`<span class="color-${item}${value}">color-${item}${value}</span>
+`                        }
+                    {/each}
                 {/each}
             </Precode>
         </svelte:fragment>
