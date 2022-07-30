@@ -5,10 +5,10 @@
 
 @mixin _border($orientation, $type)
     .#{$orientation}#{$type}border
-        border: calc(var(--key-size) * .0625) solid var(--border-color, currentColor) !important
+        border: .0625em solid var(--border-color, currentColor) !important
         @each $item in $placementDirections
             &-#{$item}
-                border-#{$item}: calc(var(--key-size) * .0625) solid var(--border-color, currentColor) !important
+                border-#{$item}: .0625em solid var(--border-color, currentColor) !important
 
         &-0
             border: 0 !important
@@ -33,15 +33,15 @@
             border-color: transparent !important
 
     .#{$orientation}#{$type}rounded
-        border-radius: var(--rounded-2, calc(var(--key-size) * .25)) !important
+        border-radius: var(--rounded-2, .25em) !important
         &-0
             border-radius: 0 !important
         &-sm
-            border-radius: var(--rounded-1, calc(var(--key-size) * .125)) !important
+            border-radius: var(--rounded-1, .125em) !important
         &-md
-            border-radius: var(--rounded-2, calc(var(--key-size) * .25)) !important
+            border-radius: var(--rounded-2, .25em) !important
         &-lg
-            border-radius: var(--rounded-3, calc(var(--key-size) * .5)) !important
+            border-radius: var(--rounded-3, .5em) !important
 
         &-circle
             border-radius: 50% !important

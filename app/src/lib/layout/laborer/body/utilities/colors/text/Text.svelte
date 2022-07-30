@@ -30,7 +30,6 @@
             </Button>
         </div>
         <div class="d-grid g-2 cols-2">
-            <div class="col-span-2 p-4 color-transparent">color-transparent</div>
             <div class="d-grid g-2 bg-negative">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
