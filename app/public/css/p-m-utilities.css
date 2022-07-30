@@ -1276,6 +1276,13 @@
   padding-bottom: unset !important;
 }
 
+.m\:space-wrap {
+  white-space: normal !important;
+}
+.m\:space-nowrap {
+  white-space: nowrap !important;
+}
+
 .m\:g-0 {
   grid-gap: 0 !important;
 }
@@ -1316,12 +1323,6 @@
 }
 .m\:text-justify {
   text-align: justify !important;
-}
-.m\:text-wrap {
-  white-space: normal !important;
-}
-.m\:text-nowrap {
-  white-space: nowrap !important;
 }
 .m\:text-hyphens {
   hyphens: auto !important;

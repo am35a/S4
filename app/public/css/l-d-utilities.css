@@ -1598,6 +1598,13 @@
   padding-bottom: unset !important;
 }
 
+.space-wrap {
+  white-space: normal !important;
+}
+.space-nowrap {
+  white-space: nowrap !important;
+}
+
 .g-0 {
   grid-gap: 0 !important;
 }
@@ -1638,12 +1645,6 @@
 }
 .text-justify {
   text-align: justify !important;
-}
-.text-wrap {
-  white-space: normal !important;
-}
-.text-nowrap {
-  white-space: nowrap !important;
 }
 .text-hyphens {
   hyphens: auto !important;
