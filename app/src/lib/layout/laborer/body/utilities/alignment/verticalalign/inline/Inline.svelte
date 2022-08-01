@@ -39,7 +39,7 @@
                 >lh-{key}</Button>
             {/each}
         </div>
-        <div class="d-grid g-2" style="--lh: {lineHeight}">
+        <div class="d-grid g-2 space-nowrap overflow-x-auto" style="--lh: {lineHeight}">
             <div class="lh col-span-full row-span-full my-auto border-bottom border-top color-negative-10">&nbsp;<!-- base line indicator--></div>
             <div class="lh col-span-full row-span-full my-auto border-bottom color-negative-20"><!-- base line indicator--></div>
             <div class="lh col-span-full row-span-full py-4">
