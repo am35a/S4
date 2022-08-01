@@ -28,7 +28,7 @@
 
     .alert
         position: relative
-        grid-gap: var(--key-size)
+        grid-gap: 1em
         padding: .75em
         border-radius: .25em
         border: .0625em solid transparent

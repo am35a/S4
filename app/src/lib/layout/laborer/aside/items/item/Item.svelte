@@ -98,7 +98,7 @@
             height: var(--layout-aside-item-height)
             justify-items: start
             align-items: center
-            padding-left: calc(var(--key-size) * 3)
+            padding-left: 3em
             padding-right: 1rem
             max-width: 100%
             color: var(--aside-item-title-color)
@@ -111,8 +111,8 @@
                 &:hover
                     color: var(--positive-color)
                     ~ .backdrop
-                        margin: calc(var(--key-size) * .25)
-                        border-radius: calc(var(--key-size) * .25)
+                        margin: .25em
+                        border-radius: .25em
                         background: var(--aside-item-backdrop--hover-bg, var(--positive-color-10))
                     ~ .icon
                         color: var(--positive-color)
@@ -123,7 +123,7 @@
                 ~ *:not(.submenu)
                     color: var(--aside-item-active-color, var(--positive-color))
                 ~ .status
-                    width: calc(var(--key-size) * .375)
+                    width: .375em
                     background: var(--aside-item-active-status-bg, var(--positive-color))
                     transition: width .25s .125s, background .25s .125s
         .action
@@ -131,7 +131,7 @@
             grid-row: 1/-1
             display: grid
             margin: 0 0 0 auto
-            width: calc(var(--key-size) * 3)
+            width: 3em
             height: 100%
             color: var(--aside-item-action-color)
             cursor: pointer
@@ -145,9 +145,9 @@
                 .ico
                     transform: scale(1)
                 ~ .backdrop
-                    margin: calc(var(--key-size) * .5)
-                    margin-left: calc(100% - calc(var(--key-size) * 3 - calc(var(--key-size) * .5)))
-                    border-radius: calc(var(--key-size) * .25)
+                    margin: .5em
+                    margin-left: calc(100% - (3em - .5em))
+                    border-radius: .25em
                     background: var(--aside-item-backdrop--hover-bg, var(--positive-color-10))
         .backdrop
             grid-column: 1/-1
@@ -162,16 +162,16 @@
             height: var(--layout-aside-item-height)
             margin: auto auto auto 0
             width: 0
-            height: calc(100% - var(--key-size))
-            border-top-right-radius: calc(var(--key-size) * .125)
-            border-bottom-right-radius: calc(var(--key-size) * .125)
+            height: calc(100% - 1em)
+            border-top-right-radius: .125em
+            border-bottom-right-radius: .125em
             background: var(--aside-item-status-bg)
             transition: width .25s, background .25s
         .icon
             grid-column: 1/-1
             grid-row: 1/-1
             display: grid
-            width: calc(var(--key-size) * 3)
+            width: 3em
             color: var(--aside-item-icon-color)
             cursor: default
             z-index: 0
