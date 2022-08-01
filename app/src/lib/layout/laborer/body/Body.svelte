@@ -163,7 +163,7 @@
         grid-column: 2/3
         grid-row: 2/3
         position: relative
-        padding: calc(var(--key-size) * .5)
+        padding: .5em
         overflow: auto
         z-index: 1
 </style>

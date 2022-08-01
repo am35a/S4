@@ -1,6 +1,6 @@
 <script lang="ts">
     import SectionBackground from './background/Background.svelte'
-    import SectionColor from './text/Text.svelte'
+    import SectionColor from './color/Color.svelte'
 </script>
 
 <article class="d-grid g-2">

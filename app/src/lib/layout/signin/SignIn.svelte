@@ -42,14 +42,14 @@
             grid-row: 1/-1
         .body
             display: grid
-            gap: calc(var(--key-size) * 1.5)
-            margin: auto auto auto calc(var(--key-size) * 14)
-            padding: var(--key-size) 0
+            gap: 1.5em
+            margin: auto auto auto 14em
+            padding: 1em 0
             justify-content: center
             > *
-                max-width: calc(var(--key-size) * 16)
+                max-width: 16em
         .footer
-            margin: auto auto var(--key-size) var(--key-size)
+            margin: auto auto 1em 1em
             font-size: x-small
             color: var(--negative-color-25)
 

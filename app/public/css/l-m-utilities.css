@@ -853,28 +853,28 @@
   margin: unset !important;
 }
 .l\:m\:m-1 {
-  margin: calc(var(--key-size) * 0.25) !important;
+  margin: 0.25em !important;
 }
 .l\:m\:m-2 {
-  margin: calc(var(--key-size) * 0.5) !important;
+  margin: 0.5em !important;
 }
 .l\:m\:m-3 {
-  margin: calc(var(--key-size) * 0.75) !important;
+  margin: 0.75em !important;
 }
 .l\:m\:m-4 {
-  margin: calc(var(--key-size) * 1) !important;
+  margin: 1em !important;
 }
 .l\:m\:m-5 {
-  margin: calc(var(--key-size) * 1.25) !important;
+  margin: 1.25em !important;
 }
 .l\:m\:m-6 {
-  margin: calc(var(--key-size) * 1.5) !important;
+  margin: 1.5em !important;
 }
 .l\:m\:m-7 {
-  margin: calc(var(--key-size) * 1.75) !important;
+  margin: 1.75em !important;
 }
 .l\:m\:m-8 {
-  margin: calc(var(--key-size) * 2) !important;
+  margin: 2em !important;
 }
 .l\:m\:m-auto {
   margin: auto !important;
@@ -896,164 +896,164 @@
   margin-bottom: auto !important;
 }
 .l\:m\:mx-1 {
-  margin-left: calc(var(--key-size) * 0.25) !important;
-  margin-right: calc(var(--key-size) * 0.25) !important;
+  margin-left: 0.25em !important;
+  margin-right: 0.25em !important;
 }
 .l\:m\:my-1 {
-  margin-top: calc(var(--key-size) * 0.25) !important;
-  margin-bottom: calc(var(--key-size) * 0.25) !important;
+  margin-top: 0.25em !important;
+  margin-bottom: 0.25em !important;
 }
 .l\:m\:mx-2 {
-  margin-left: calc(var(--key-size) * 0.5) !important;
-  margin-right: calc(var(--key-size) * 0.5) !important;
+  margin-left: 0.5em !important;
+  margin-right: 0.5em !important;
 }
 .l\:m\:my-2 {
-  margin-top: calc(var(--key-size) * 0.5) !important;
-  margin-bottom: calc(var(--key-size) * 0.5) !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
 }
 .l\:m\:mx-3 {
-  margin-left: calc(var(--key-size) * 0.75) !important;
-  margin-right: calc(var(--key-size) * 0.75) !important;
+  margin-left: 0.75em !important;
+  margin-right: 0.75em !important;
 }
 .l\:m\:my-3 {
-  margin-top: calc(var(--key-size) * 0.75) !important;
-  margin-bottom: calc(var(--key-size) * 0.75) !important;
+  margin-top: 0.75em !important;
+  margin-bottom: 0.75em !important;
 }
 .l\:m\:mx-4 {
-  margin-left: calc(var(--key-size) * 1) !important;
-  margin-right: calc(var(--key-size) * 1) !important;
+  margin-left: 1em !important;
+  margin-right: 1em !important;
 }
 .l\:m\:my-4 {
-  margin-top: calc(var(--key-size) * 1) !important;
-  margin-bottom: calc(var(--key-size) * 1) !important;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
 }
 .l\:m\:mx-5 {
-  margin-left: calc(var(--key-size) * 1.25) !important;
-  margin-right: calc(var(--key-size) * 1.25) !important;
+  margin-left: 1.25em !important;
+  margin-right: 1.25em !important;
 }
 .l\:m\:my-5 {
-  margin-top: calc(var(--key-size) * 1.25) !important;
-  margin-bottom: calc(var(--key-size) * 1.25) !important;
+  margin-top: 1.25em !important;
+  margin-bottom: 1.25em !important;
 }
 .l\:m\:mx-6 {
-  margin-left: calc(var(--key-size) * 1.5) !important;
-  margin-right: calc(var(--key-size) * 1.5) !important;
+  margin-left: 1.5em !important;
+  margin-right: 1.5em !important;
 }
 .l\:m\:my-6 {
-  margin-top: calc(var(--key-size) * 1.5) !important;
-  margin-bottom: calc(var(--key-size) * 1.5) !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 1.5em !important;
 }
 .l\:m\:mx-7 {
-  margin-left: calc(var(--key-size) * 1.75) !important;
-  margin-right: calc(var(--key-size) * 1.75) !important;
+  margin-left: 1.75em !important;
+  margin-right: 1.75em !important;
 }
 .l\:m\:my-7 {
-  margin-top: calc(var(--key-size) * 1.75) !important;
-  margin-bottom: calc(var(--key-size) * 1.75) !important;
+  margin-top: 1.75em !important;
+  margin-bottom: 1.75em !important;
 }
 .l\:m\:mx-8 {
-  margin-left: calc(var(--key-size) * 2) !important;
-  margin-right: calc(var(--key-size) * 2) !important;
+  margin-left: 2em !important;
+  margin-right: 2em !important;
 }
 .l\:m\:my-8 {
-  margin-top: calc(var(--key-size) * 2) !important;
-  margin-bottom: calc(var(--key-size) * 2) !important;
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
 }
 .l\:m\:ml-1 {
-  margin-left: calc(var(--key-size) * 0.25) !important;
+  margin-left: 0.25em !important;
 }
 .l\:m\:mt-1 {
-  margin-top: calc(var(--key-size) * 0.25) !important;
+  margin-top: 0.25em !important;
 }
 .l\:m\:mr-1 {
-  margin-right: calc(var(--key-size) * 0.25) !important;
+  margin-right: 0.25em !important;
 }
 .l\:m\:mb-1 {
-  margin-bottom: calc(var(--key-size) * 0.25) !important;
+  margin-bottom: 0.25em !important;
 }
 .l\:m\:ml-2 {
-  margin-left: calc(var(--key-size) * 0.5) !important;
+  margin-left: 0.5em !important;
 }
 .l\:m\:mt-2 {
-  margin-top: calc(var(--key-size) * 0.5) !important;
+  margin-top: 0.5em !important;
 }
 .l\:m\:mr-2 {
-  margin-right: calc(var(--key-size) * 0.5) !important;
+  margin-right: 0.5em !important;
 }
 .l\:m\:mb-2 {
-  margin-bottom: calc(var(--key-size) * 0.5) !important;
+  margin-bottom: 0.5em !important;
 }
 .l\:m\:ml-3 {
-  margin-left: calc(var(--key-size) * 0.75) !important;
+  margin-left: 0.75em !important;
 }
 .l\:m\:mt-3 {
-  margin-top: calc(var(--key-size) * 0.75) !important;
+  margin-top: 0.75em !important;
 }
 .l\:m\:mr-3 {
-  margin-right: calc(var(--key-size) * 0.75) !important;
+  margin-right: 0.75em !important;
 }
 .l\:m\:mb-3 {
-  margin-bottom: calc(var(--key-size) * 0.75) !important;
+  margin-bottom: 0.75em !important;
 }
 .l\:m\:ml-4 {
-  margin-left: calc(var(--key-size) * 1) !important;
+  margin-left: 1em !important;
 }
 .l\:m\:mt-4 {
-  margin-top: calc(var(--key-size) * 1) !important;
+  margin-top: 1em !important;
 }
 .l\:m\:mr-4 {
-  margin-right: calc(var(--key-size) * 1) !important;
+  margin-right: 1em !important;
 }
 .l\:m\:mb-4 {
-  margin-bottom: calc(var(--key-size) * 1) !important;
+  margin-bottom: 1em !important;
 }
 .l\:m\:ml-5 {
-  margin-left: calc(var(--key-size) * 1.25) !important;
+  margin-left: 1.25em !important;
 }
 .l\:m\:mt-5 {
-  margin-top: calc(var(--key-size) * 1.25) !important;
+  margin-top: 1.25em !important;
 }
 .l\:m\:mr-5 {
-  margin-right: calc(var(--key-size) * 1.25) !important;
+  margin-right: 1.25em !important;
 }
 .l\:m\:mb-5 {
-  margin-bottom: calc(var(--key-size) * 1.25) !important;
+  margin-bottom: 1.25em !important;
 }
 .l\:m\:ml-6 {
-  margin-left: calc(var(--key-size) * 1.5) !important;
+  margin-left: 1.5em !important;
 }
 .l\:m\:mt-6 {
-  margin-top: calc(var(--key-size) * 1.5) !important;
+  margin-top: 1.5em !important;
 }
 .l\:m\:mr-6 {
-  margin-right: calc(var(--key-size) * 1.5) !important;
+  margin-right: 1.5em !important;
 }
 .l\:m\:mb-6 {
-  margin-bottom: calc(var(--key-size) * 1.5) !important;
+  margin-bottom: 1.5em !important;
 }
 .l\:m\:ml-7 {
-  margin-left: calc(var(--key-size) * 1.75) !important;
+  margin-left: 1.75em !important;
 }
 .l\:m\:mt-7 {
-  margin-top: calc(var(--key-size) * 1.75) !important;
+  margin-top: 1.75em !important;
 }
 .l\:m\:mr-7 {
-  margin-right: calc(var(--key-size) * 1.75) !important;
+  margin-right: 1.75em !important;
 }
 .l\:m\:mb-7 {
-  margin-bottom: calc(var(--key-size) * 1.75) !important;
+  margin-bottom: 1.75em !important;
 }
 .l\:m\:ml-8 {
-  margin-left: calc(var(--key-size) * 2) !important;
+  margin-left: 2em !important;
 }
 .l\:m\:mt-8 {
-  margin-top: calc(var(--key-size) * 2) !important;
+  margin-top: 2em !important;
 }
 .l\:m\:mr-8 {
-  margin-right: calc(var(--key-size) * 2) !important;
+  margin-right: 2em !important;
 }
 .l\:m\:mb-8 {
-  margin-bottom: calc(var(--key-size) * 2) !important;
+  margin-bottom: 2em !important;
 }
 .l\:m\:ml-auto {
   margin-left: auto !important;
@@ -1072,28 +1072,28 @@
   padding: unset !important;
 }
 .l\:m\:p-1 {
-  padding: calc(var(--key-size) * 0.25) !important;
+  padding: 0.25em !important;
 }
 .l\:m\:p-2 {
-  padding: calc(var(--key-size) * 0.5) !important;
+  padding: 0.5em !important;
 }
 .l\:m\:p-3 {
-  padding: calc(var(--key-size) * 0.75) !important;
+  padding: 0.75em !important;
 }
 .l\:m\:p-4 {
-  padding: calc(var(--key-size) * 1) !important;
+  padding: 1em !important;
 }
 .l\:m\:p-5 {
-  padding: calc(var(--key-size) * 1.25) !important;
+  padding: 1.25em !important;
 }
 .l\:m\:p-6 {
-  padding: calc(var(--key-size) * 1.5) !important;
+  padding: 1.5em !important;
 }
 .l\:m\:p-7 {
-  padding: calc(var(--key-size) * 1.75) !important;
+  padding: 1.75em !important;
 }
 .l\:m\:p-8 {
-  padding: calc(var(--key-size) * 2) !important;
+  padding: 2em !important;
 }
 .l\:m\:px-0 {
   padding-left: unset !important;
@@ -1104,164 +1104,164 @@
   padding-bottom: unset !important;
 }
 .l\:m\:px-1 {
-  padding-left: calc(var(--key-size) * 0.25) !important;
-  padding-right: calc(var(--key-size) * 0.25) !important;
+  padding-left: 0.25em !important;
+  padding-right: 0.25em !important;
 }
 .l\:m\:py-1 {
-  padding-top: calc(var(--key-size) * 0.25) !important;
-  padding-bottom: calc(var(--key-size) * 0.25) !important;
+  padding-top: 0.25em !important;
+  padding-bottom: 0.25em !important;
 }
 .l\:m\:px-2 {
-  padding-left: calc(var(--key-size) * 0.5) !important;
-  padding-right: calc(var(--key-size) * 0.5) !important;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
 }
 .l\:m\:py-2 {
-  padding-top: calc(var(--key-size) * 0.5) !important;
-  padding-bottom: calc(var(--key-size) * 0.5) !important;
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
 }
 .l\:m\:px-3 {
-  padding-left: calc(var(--key-size) * 0.75) !important;
-  padding-right: calc(var(--key-size) * 0.75) !important;
+  padding-left: 0.75em !important;
+  padding-right: 0.75em !important;
 }
 .l\:m\:py-3 {
-  padding-top: calc(var(--key-size) * 0.75) !important;
-  padding-bottom: calc(var(--key-size) * 0.75) !important;
+  padding-top: 0.75em !important;
+  padding-bottom: 0.75em !important;
 }
 .l\:m\:px-4 {
-  padding-left: calc(var(--key-size) * 1) !important;
-  padding-right: calc(var(--key-size) * 1) !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
 }
 .l\:m\:py-4 {
-  padding-top: calc(var(--key-size) * 1) !important;
-  padding-bottom: calc(var(--key-size) * 1) !important;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
 }
 .l\:m\:px-5 {
-  padding-left: calc(var(--key-size) * 1.25) !important;
-  padding-right: calc(var(--key-size) * 1.25) !important;
+  padding-left: 1.25em !important;
+  padding-right: 1.25em !important;
 }
 .l\:m\:py-5 {
-  padding-top: calc(var(--key-size) * 1.25) !important;
-  padding-bottom: calc(var(--key-size) * 1.25) !important;
+  padding-top: 1.25em !important;
+  padding-bottom: 1.25em !important;
 }
 .l\:m\:px-6 {
-  padding-left: calc(var(--key-size) * 1.5) !important;
-  padding-right: calc(var(--key-size) * 1.5) !important;
+  padding-left: 1.5em !important;
+  padding-right: 1.5em !important;
 }
 .l\:m\:py-6 {
-  padding-top: calc(var(--key-size) * 1.5) !important;
-  padding-bottom: calc(var(--key-size) * 1.5) !important;
+  padding-top: 1.5em !important;
+  padding-bottom: 1.5em !important;
 }
 .l\:m\:px-7 {
-  padding-left: calc(var(--key-size) * 1.75) !important;
-  padding-right: calc(var(--key-size) * 1.75) !important;
+  padding-left: 1.75em !important;
+  padding-right: 1.75em !important;
 }
 .l\:m\:py-7 {
-  padding-top: calc(var(--key-size) * 1.75) !important;
-  padding-bottom: calc(var(--key-size) * 1.75) !important;
+  padding-top: 1.75em !important;
+  padding-bottom: 1.75em !important;
 }
 .l\:m\:px-8 {
-  padding-left: calc(var(--key-size) * 2) !important;
-  padding-right: calc(var(--key-size) * 2) !important;
+  padding-left: 2em !important;
+  padding-right: 2em !important;
 }
 .l\:m\:py-8 {
-  padding-top: calc(var(--key-size) * 2) !important;
-  padding-bottom: calc(var(--key-size) * 2) !important;
+  padding-top: 2em !important;
+  padding-bottom: 2em !important;
 }
 .l\:m\:pl-1 {
-  padding-left: calc(var(--key-size) * 0.25) !important;
+  padding-left: 0.25em !important;
 }
 .l\:m\:pt-1 {
-  padding-top: calc(var(--key-size) * 0.25) !important;
+  padding-top: 0.25em !important;
 }
 .l\:m\:pr-1 {
-  padding-right: calc(var(--key-size) * 0.25) !important;
+  padding-right: 0.25em !important;
 }
 .l\:m\:pb-1 {
-  padding-bottom: calc(var(--key-size) * 0.25) !important;
+  padding-bottom: 0.25em !important;
 }
 .l\:m\:pl-2 {
-  padding-left: calc(var(--key-size) * 0.5) !important;
+  padding-left: 0.5em !important;
 }
 .l\:m\:pt-2 {
-  padding-top: calc(var(--key-size) * 0.5) !important;
+  padding-top: 0.5em !important;
 }
 .l\:m\:pr-2 {
-  padding-right: calc(var(--key-size) * 0.5) !important;
+  padding-right: 0.5em !important;
 }
 .l\:m\:pb-2 {
-  padding-bottom: calc(var(--key-size) * 0.5) !important;
+  padding-bottom: 0.5em !important;
 }
 .l\:m\:pl-3 {
-  padding-left: calc(var(--key-size) * 0.75) !important;
+  padding-left: 0.75em !important;
 }
 .l\:m\:pt-3 {
-  padding-top: calc(var(--key-size) * 0.75) !important;
+  padding-top: 0.75em !important;
 }
 .l\:m\:pr-3 {
-  padding-right: calc(var(--key-size) * 0.75) !important;
+  padding-right: 0.75em !important;
 }
 .l\:m\:pb-3 {
-  padding-bottom: calc(var(--key-size) * 0.75) !important;
+  padding-bottom: 0.75em !important;
 }
 .l\:m\:pl-4 {
-  padding-left: calc(var(--key-size) * 1) !important;
+  padding-left: 1em !important;
 }
 .l\:m\:pt-4 {
-  padding-top: calc(var(--key-size) * 1) !important;
+  padding-top: 1em !important;
 }
 .l\:m\:pr-4 {
-  padding-right: calc(var(--key-size) * 1) !important;
+  padding-right: 1em !important;
 }
 .l\:m\:pb-4 {
-  padding-bottom: calc(var(--key-size) * 1) !important;
+  padding-bottom: 1em !important;
 }
 .l\:m\:pl-5 {
-  padding-left: calc(var(--key-size) * 1.25) !important;
+  padding-left: 1.25em !important;
 }
 .l\:m\:pt-5 {
-  padding-top: calc(var(--key-size) * 1.25) !important;
+  padding-top: 1.25em !important;
 }
 .l\:m\:pr-5 {
-  padding-right: calc(var(--key-size) * 1.25) !important;
+  padding-right: 1.25em !important;
 }
 .l\:m\:pb-5 {
-  padding-bottom: calc(var(--key-size) * 1.25) !important;
+  padding-bottom: 1.25em !important;
 }
 .l\:m\:pl-6 {
-  padding-left: calc(var(--key-size) * 1.5) !important;
+  padding-left: 1.5em !important;
 }
 .l\:m\:pt-6 {
-  padding-top: calc(var(--key-size) * 1.5) !important;
+  padding-top: 1.5em !important;
 }
 .l\:m\:pr-6 {
-  padding-right: calc(var(--key-size) * 1.5) !important;
+  padding-right: 1.5em !important;
 }
 .l\:m\:pb-6 {
-  padding-bottom: calc(var(--key-size) * 1.5) !important;
+  padding-bottom: 1.5em !important;
 }
 .l\:m\:pl-7 {
-  padding-left: calc(var(--key-size) * 1.75) !important;
+  padding-left: 1.75em !important;
 }
 .l\:m\:pt-7 {
-  padding-top: calc(var(--key-size) * 1.75) !important;
+  padding-top: 1.75em !important;
 }
 .l\:m\:pr-7 {
-  padding-right: calc(var(--key-size) * 1.75) !important;
+  padding-right: 1.75em !important;
 }
 .l\:m\:pb-7 {
-  padding-bottom: calc(var(--key-size) * 1.75) !important;
+  padding-bottom: 1.75em !important;
 }
 .l\:m\:pl-8 {
-  padding-left: calc(var(--key-size) * 2) !important;
+  padding-left: 2em !important;
 }
 .l\:m\:pt-8 {
-  padding-top: calc(var(--key-size) * 2) !important;
+  padding-top: 2em !important;
 }
 .l\:m\:pr-8 {
-  padding-right: calc(var(--key-size) * 2) !important;
+  padding-right: 2em !important;
 }
 .l\:m\:pb-8 {
-  padding-bottom: calc(var(--key-size) * 2) !important;
+  padding-bottom: 2em !important;
 }
 .l\:m\:px-0 {
   padding-left: unset !important;
@@ -1276,32 +1276,39 @@
   padding-bottom: unset !important;
 }
 
+.l\:m\:space-wrap {
+  white-space: normal !important;
+}
+.l\:m\:space-nowrap {
+  white-space: nowrap !important;
+}
+
 .l\:m\:g-0 {
   grid-gap: 0 !important;
 }
 .l\:m\:g-1 {
-  grid-gap: calc(var(--key-size) * 0.25) !important;
+  grid-gap: 0.25em !important;
 }
 .l\:m\:g-2 {
-  grid-gap: calc(var(--key-size) * 0.5) !important;
+  grid-gap: 0.5em !important;
 }
 .l\:m\:g-3 {
-  grid-gap: calc(var(--key-size) * 0.75) !important;
+  grid-gap: 0.75em !important;
 }
 .l\:m\:g-4 {
-  grid-gap: var(--key-size) !important;
+  grid-gap: 1em !important;
 }
 .l\:m\:g-5 {
-  grid-gap: calc(var(--key-size) * 1.25) !important;
+  grid-gap: 1.25em !important;
 }
 .l\:m\:g-6 {
-  grid-gap: calc(var(--key-size) * 1.5) !important;
+  grid-gap: 1.5em !important;
 }
 .l\:m\:g-7 {
-  grid-gap: calc(var(--key-size) * 1.75) !important;
+  grid-gap: 1.75em !important;
 }
 .l\:m\:g-8 {
-  grid-gap: calc(var(--key-size) * 2) !important;
+  grid-gap: 2em !important;
 }
 
 /*  typography section: ... contained in classes */
@@ -1316,12 +1323,6 @@
 }
 .l\:m\:text-justify {
   text-align: justify !important;
-}
-.l\:m\:text-wrap {
-  white-space: normal !important;
-}
-.l\:m\:text-nowrap {
-  white-space: nowrap !important;
 }
 .l\:m\:text-hyphens {
   hyphens: auto !important;

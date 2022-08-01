@@ -19,7 +19,7 @@
         display: none
         width: 100%
         height: 100%
-        background-color: var(--negative-color-50)
+        background-color: var(--negative-color-90)
         z-index: -1
         .mobile .expand &,
         .tablet .expand &

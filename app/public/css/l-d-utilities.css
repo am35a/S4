@@ -242,19 +242,19 @@
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */
 .border {
-  border: calc(var(--key-size) * 0.0625) solid var(--border-color, currentColor) !important;
+  border: 0.0625em solid var(--border-color, currentColor) !important;
 }
 .border-left {
-  border-left: calc(var(--key-size) * 0.0625) solid var(--border-color, currentColor) !important;
+  border-left: 0.0625em solid var(--border-color, currentColor) !important;
 }
 .border-top {
-  border-top: calc(var(--key-size) * 0.0625) solid var(--border-color, currentColor) !important;
+  border-top: 0.0625em solid var(--border-color, currentColor) !important;
 }
 .border-right {
-  border-right: calc(var(--key-size) * 0.0625) solid var(--border-color, currentColor) !important;
+  border-right: 0.0625em solid var(--border-color, currentColor) !important;
 }
 .border-bottom {
-  border-bottom: calc(var(--key-size) * 0.0625) solid var(--border-color, currentColor) !important;
+  border-bottom: 0.0625em solid var(--border-color, currentColor) !important;
 }
 .border-0 {
   border: 0 !important;
@@ -390,19 +390,19 @@
 }
 
 .rounded {
-  border-radius: var(--rounded-2, calc(var(--key-size) * 0.25)) !important;
+  border-radius: var(--rounded-2, 0.25em) !important;
 }
 .rounded-0 {
   border-radius: 0 !important;
 }
 .rounded-sm {
-  border-radius: var(--rounded-1, calc(var(--key-size) * 0.125)) !important;
+  border-radius: var(--rounded-1, 0.125em) !important;
 }
 .rounded-md {
-  border-radius: var(--rounded-2, calc(var(--key-size) * 0.25)) !important;
+  border-radius: var(--rounded-2, 0.25em) !important;
 }
 .rounded-lg {
-  border-radius: var(--rounded-3, calc(var(--key-size) * 0.5)) !important;
+  border-radius: var(--rounded-3, 0.5em) !important;
 }
 .rounded-circle {
   border-radius: 50% !important;
@@ -1155,19 +1155,19 @@
 }
 
 .shadow {
-  box-shadow: 0 calc(var(--key-size) * 0.25) calc(var(--key-size) * 0.5) var(--negative-color-10) !important;
+  box-shadow: 0 0.25em 0.5em var(--negative-color-10) !important;
 }
 .shadow-0 {
   box-shadow: none !important;
 }
 .shadow-1, .shadow-sm {
-  box-shadow: 0 calc(var(--key-size) * 0.125) calc(var(--key-size) * 0.25) var(--negative-color-10) !important;
+  box-shadow: 0 0.125em 0.25em var(--negative-color-10) !important;
 }
 .shadow-2, .shadow-md {
-  box-shadow: 0 calc(var(--key-size) * 0.25) calc(var(--key-size) * 0.5) var(--negative-color-10) !important;
+  box-shadow: 0 0.25em 0.5em var(--negative-color-10) !important;
 }
 .shadow-3, .shadow-lg {
-  box-shadow: 0 calc(var(--key-size) * 0.5) calc(var(--key-size) * 0.75) var(--negative-color-10) !important;
+  box-shadow: 0 0.5em 0.75em var(--negative-color-10) !important;
 }
 
 /*  spacing section: width, height, box-sizing and resize types contained in classes */
@@ -1175,28 +1175,28 @@
   margin: unset !important;
 }
 .m-1 {
-  margin: calc(var(--key-size) * 0.25) !important;
+  margin: 0.25em !important;
 }
 .m-2 {
-  margin: calc(var(--key-size) * 0.5) !important;
+  margin: 0.5em !important;
 }
 .m-3 {
-  margin: calc(var(--key-size) * 0.75) !important;
+  margin: 0.75em !important;
 }
 .m-4 {
-  margin: calc(var(--key-size) * 1) !important;
+  margin: 1em !important;
 }
 .m-5 {
-  margin: calc(var(--key-size) * 1.25) !important;
+  margin: 1.25em !important;
 }
 .m-6 {
-  margin: calc(var(--key-size) * 1.5) !important;
+  margin: 1.5em !important;
 }
 .m-7 {
-  margin: calc(var(--key-size) * 1.75) !important;
+  margin: 1.75em !important;
 }
 .m-8 {
-  margin: calc(var(--key-size) * 2) !important;
+  margin: 2em !important;
 }
 .m-auto {
   margin: auto !important;
@@ -1218,164 +1218,164 @@
   margin-bottom: auto !important;
 }
 .mx-1 {
-  margin-left: calc(var(--key-size) * 0.25) !important;
-  margin-right: calc(var(--key-size) * 0.25) !important;
+  margin-left: 0.25em !important;
+  margin-right: 0.25em !important;
 }
 .my-1 {
-  margin-top: calc(var(--key-size) * 0.25) !important;
-  margin-bottom: calc(var(--key-size) * 0.25) !important;
+  margin-top: 0.25em !important;
+  margin-bottom: 0.25em !important;
 }
 .mx-2 {
-  margin-left: calc(var(--key-size) * 0.5) !important;
-  margin-right: calc(var(--key-size) * 0.5) !important;
+  margin-left: 0.5em !important;
+  margin-right: 0.5em !important;
 }
 .my-2 {
-  margin-top: calc(var(--key-size) * 0.5) !important;
-  margin-bottom: calc(var(--key-size) * 0.5) !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
 }
 .mx-3 {
-  margin-left: calc(var(--key-size) * 0.75) !important;
-  margin-right: calc(var(--key-size) * 0.75) !important;
+  margin-left: 0.75em !important;
+  margin-right: 0.75em !important;
 }
 .my-3 {
-  margin-top: calc(var(--key-size) * 0.75) !important;
-  margin-bottom: calc(var(--key-size) * 0.75) !important;
+  margin-top: 0.75em !important;
+  margin-bottom: 0.75em !important;
 }
 .mx-4 {
-  margin-left: calc(var(--key-size) * 1) !important;
-  margin-right: calc(var(--key-size) * 1) !important;
+  margin-left: 1em !important;
+  margin-right: 1em !important;
 }
 .my-4 {
-  margin-top: calc(var(--key-size) * 1) !important;
-  margin-bottom: calc(var(--key-size) * 1) !important;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
 }
 .mx-5 {
-  margin-left: calc(var(--key-size) * 1.25) !important;
-  margin-right: calc(var(--key-size) * 1.25) !important;
+  margin-left: 1.25em !important;
+  margin-right: 1.25em !important;
 }
 .my-5 {
-  margin-top: calc(var(--key-size) * 1.25) !important;
-  margin-bottom: calc(var(--key-size) * 1.25) !important;
+  margin-top: 1.25em !important;
+  margin-bottom: 1.25em !important;
 }
 .mx-6 {
-  margin-left: calc(var(--key-size) * 1.5) !important;
-  margin-right: calc(var(--key-size) * 1.5) !important;
+  margin-left: 1.5em !important;
+  margin-right: 1.5em !important;
 }
 .my-6 {
-  margin-top: calc(var(--key-size) * 1.5) !important;
-  margin-bottom: calc(var(--key-size) * 1.5) !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 1.5em !important;
 }
 .mx-7 {
-  margin-left: calc(var(--key-size) * 1.75) !important;
-  margin-right: calc(var(--key-size) * 1.75) !important;
+  margin-left: 1.75em !important;
+  margin-right: 1.75em !important;
 }
 .my-7 {
-  margin-top: calc(var(--key-size) * 1.75) !important;
-  margin-bottom: calc(var(--key-size) * 1.75) !important;
+  margin-top: 1.75em !important;
+  margin-bottom: 1.75em !important;
 }
 .mx-8 {
-  margin-left: calc(var(--key-size) * 2) !important;
-  margin-right: calc(var(--key-size) * 2) !important;
+  margin-left: 2em !important;
+  margin-right: 2em !important;
 }
 .my-8 {
-  margin-top: calc(var(--key-size) * 2) !important;
-  margin-bottom: calc(var(--key-size) * 2) !important;
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
 }
 .ml-1 {
-  margin-left: calc(var(--key-size) * 0.25) !important;
+  margin-left: 0.25em !important;
 }
 .mt-1 {
-  margin-top: calc(var(--key-size) * 0.25) !important;
+  margin-top: 0.25em !important;
 }
 .mr-1 {
-  margin-right: calc(var(--key-size) * 0.25) !important;
+  margin-right: 0.25em !important;
 }
 .mb-1 {
-  margin-bottom: calc(var(--key-size) * 0.25) !important;
+  margin-bottom: 0.25em !important;
 }
 .ml-2 {
-  margin-left: calc(var(--key-size) * 0.5) !important;
+  margin-left: 0.5em !important;
 }
 .mt-2 {
-  margin-top: calc(var(--key-size) * 0.5) !important;
+  margin-top: 0.5em !important;
 }
 .mr-2 {
-  margin-right: calc(var(--key-size) * 0.5) !important;
+  margin-right: 0.5em !important;
 }
 .mb-2 {
-  margin-bottom: calc(var(--key-size) * 0.5) !important;
+  margin-bottom: 0.5em !important;
 }
 .ml-3 {
-  margin-left: calc(var(--key-size) * 0.75) !important;
+  margin-left: 0.75em !important;
 }
 .mt-3 {
-  margin-top: calc(var(--key-size) * 0.75) !important;
+  margin-top: 0.75em !important;
 }
 .mr-3 {
-  margin-right: calc(var(--key-size) * 0.75) !important;
+  margin-right: 0.75em !important;
 }
 .mb-3 {
-  margin-bottom: calc(var(--key-size) * 0.75) !important;
+  margin-bottom: 0.75em !important;
 }
 .ml-4 {
-  margin-left: calc(var(--key-size) * 1) !important;
+  margin-left: 1em !important;
 }
 .mt-4 {
-  margin-top: calc(var(--key-size) * 1) !important;
+  margin-top: 1em !important;
 }
 .mr-4 {
-  margin-right: calc(var(--key-size) * 1) !important;
+  margin-right: 1em !important;
 }
 .mb-4 {
-  margin-bottom: calc(var(--key-size) * 1) !important;
+  margin-bottom: 1em !important;
 }
 .ml-5 {
-  margin-left: calc(var(--key-size) * 1.25) !important;
+  margin-left: 1.25em !important;
 }
 .mt-5 {
-  margin-top: calc(var(--key-size) * 1.25) !important;
+  margin-top: 1.25em !important;
 }
 .mr-5 {
-  margin-right: calc(var(--key-size) * 1.25) !important;
+  margin-right: 1.25em !important;
 }
 .mb-5 {
-  margin-bottom: calc(var(--key-size) * 1.25) !important;
+  margin-bottom: 1.25em !important;
 }
 .ml-6 {
-  margin-left: calc(var(--key-size) * 1.5) !important;
+  margin-left: 1.5em !important;
 }
 .mt-6 {
-  margin-top: calc(var(--key-size) * 1.5) !important;
+  margin-top: 1.5em !important;
 }
 .mr-6 {
-  margin-right: calc(var(--key-size) * 1.5) !important;
+  margin-right: 1.5em !important;
 }
 .mb-6 {
-  margin-bottom: calc(var(--key-size) * 1.5) !important;
+  margin-bottom: 1.5em !important;
 }
 .ml-7 {
-  margin-left: calc(var(--key-size) * 1.75) !important;
+  margin-left: 1.75em !important;
 }
 .mt-7 {
-  margin-top: calc(var(--key-size) * 1.75) !important;
+  margin-top: 1.75em !important;
 }
 .mr-7 {
-  margin-right: calc(var(--key-size) * 1.75) !important;
+  margin-right: 1.75em !important;
 }
 .mb-7 {
-  margin-bottom: calc(var(--key-size) * 1.75) !important;
+  margin-bottom: 1.75em !important;
 }
 .ml-8 {
-  margin-left: calc(var(--key-size) * 2) !important;
+  margin-left: 2em !important;
 }
 .mt-8 {
-  margin-top: calc(var(--key-size) * 2) !important;
+  margin-top: 2em !important;
 }
 .mr-8 {
-  margin-right: calc(var(--key-size) * 2) !important;
+  margin-right: 2em !important;
 }
 .mb-8 {
-  margin-bottom: calc(var(--key-size) * 2) !important;
+  margin-bottom: 2em !important;
 }
 .ml-auto {
   margin-left: auto !important;
@@ -1394,28 +1394,28 @@
   padding: unset !important;
 }
 .p-1 {
-  padding: calc(var(--key-size) * 0.25) !important;
+  padding: 0.25em !important;
 }
 .p-2 {
-  padding: calc(var(--key-size) * 0.5) !important;
+  padding: 0.5em !important;
 }
 .p-3 {
-  padding: calc(var(--key-size) * 0.75) !important;
+  padding: 0.75em !important;
 }
 .p-4 {
-  padding: calc(var(--key-size) * 1) !important;
+  padding: 1em !important;
 }
 .p-5 {
-  padding: calc(var(--key-size) * 1.25) !important;
+  padding: 1.25em !important;
 }
 .p-6 {
-  padding: calc(var(--key-size) * 1.5) !important;
+  padding: 1.5em !important;
 }
 .p-7 {
-  padding: calc(var(--key-size) * 1.75) !important;
+  padding: 1.75em !important;
 }
 .p-8 {
-  padding: calc(var(--key-size) * 2) !important;
+  padding: 2em !important;
 }
 .px-0 {
   padding-left: unset !important;
@@ -1426,164 +1426,164 @@
   padding-bottom: unset !important;
 }
 .px-1 {
-  padding-left: calc(var(--key-size) * 0.25) !important;
-  padding-right: calc(var(--key-size) * 0.25) !important;
+  padding-left: 0.25em !important;
+  padding-right: 0.25em !important;
 }
 .py-1 {
-  padding-top: calc(var(--key-size) * 0.25) !important;
-  padding-bottom: calc(var(--key-size) * 0.25) !important;
+  padding-top: 0.25em !important;
+  padding-bottom: 0.25em !important;
 }
 .px-2 {
-  padding-left: calc(var(--key-size) * 0.5) !important;
-  padding-right: calc(var(--key-size) * 0.5) !important;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
 }
 .py-2 {
-  padding-top: calc(var(--key-size) * 0.5) !important;
-  padding-bottom: calc(var(--key-size) * 0.5) !important;
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
 }
 .px-3 {
-  padding-left: calc(var(--key-size) * 0.75) !important;
-  padding-right: calc(var(--key-size) * 0.75) !important;
+  padding-left: 0.75em !important;
+  padding-right: 0.75em !important;
 }
 .py-3 {
-  padding-top: calc(var(--key-size) * 0.75) !important;
-  padding-bottom: calc(var(--key-size) * 0.75) !important;
+  padding-top: 0.75em !important;
+  padding-bottom: 0.75em !important;
 }
 .px-4 {
-  padding-left: calc(var(--key-size) * 1) !important;
-  padding-right: calc(var(--key-size) * 1) !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
 }
 .py-4 {
-  padding-top: calc(var(--key-size) * 1) !important;
-  padding-bottom: calc(var(--key-size) * 1) !important;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
 }
 .px-5 {
-  padding-left: calc(var(--key-size) * 1.25) !important;
-  padding-right: calc(var(--key-size) * 1.25) !important;
+  padding-left: 1.25em !important;
+  padding-right: 1.25em !important;
 }
 .py-5 {
-  padding-top: calc(var(--key-size) * 1.25) !important;
-  padding-bottom: calc(var(--key-size) * 1.25) !important;
+  padding-top: 1.25em !important;
+  padding-bottom: 1.25em !important;
 }
 .px-6 {
-  padding-left: calc(var(--key-size) * 1.5) !important;
-  padding-right: calc(var(--key-size) * 1.5) !important;
+  padding-left: 1.5em !important;
+  padding-right: 1.5em !important;
 }
 .py-6 {
-  padding-top: calc(var(--key-size) * 1.5) !important;
-  padding-bottom: calc(var(--key-size) * 1.5) !important;
+  padding-top: 1.5em !important;
+  padding-bottom: 1.5em !important;
 }
 .px-7 {
-  padding-left: calc(var(--key-size) * 1.75) !important;
-  padding-right: calc(var(--key-size) * 1.75) !important;
+  padding-left: 1.75em !important;
+  padding-right: 1.75em !important;
 }
 .py-7 {
-  padding-top: calc(var(--key-size) * 1.75) !important;
-  padding-bottom: calc(var(--key-size) * 1.75) !important;
+  padding-top: 1.75em !important;
+  padding-bottom: 1.75em !important;
 }
 .px-8 {
-  padding-left: calc(var(--key-size) * 2) !important;
-  padding-right: calc(var(--key-size) * 2) !important;
+  padding-left: 2em !important;
+  padding-right: 2em !important;
 }
 .py-8 {
-  padding-top: calc(var(--key-size) * 2) !important;
-  padding-bottom: calc(var(--key-size) * 2) !important;
+  padding-top: 2em !important;
+  padding-bottom: 2em !important;
 }
 .pl-1 {
-  padding-left: calc(var(--key-size) * 0.25) !important;
+  padding-left: 0.25em !important;
 }
 .pt-1 {
-  padding-top: calc(var(--key-size) * 0.25) !important;
+  padding-top: 0.25em !important;
 }
 .pr-1 {
-  padding-right: calc(var(--key-size) * 0.25) !important;
+  padding-right: 0.25em !important;
 }
 .pb-1 {
-  padding-bottom: calc(var(--key-size) * 0.25) !important;
+  padding-bottom: 0.25em !important;
 }
 .pl-2 {
-  padding-left: calc(var(--key-size) * 0.5) !important;
+  padding-left: 0.5em !important;
 }
 .pt-2 {
-  padding-top: calc(var(--key-size) * 0.5) !important;
+  padding-top: 0.5em !important;
 }
 .pr-2 {
-  padding-right: calc(var(--key-size) * 0.5) !important;
+  padding-right: 0.5em !important;
 }
 .pb-2 {
-  padding-bottom: calc(var(--key-size) * 0.5) !important;
+  padding-bottom: 0.5em !important;
 }
 .pl-3 {
-  padding-left: calc(var(--key-size) * 0.75) !important;
+  padding-left: 0.75em !important;
 }
 .pt-3 {
-  padding-top: calc(var(--key-size) * 0.75) !important;
+  padding-top: 0.75em !important;
 }
 .pr-3 {
-  padding-right: calc(var(--key-size) * 0.75) !important;
+  padding-right: 0.75em !important;
 }
 .pb-3 {
-  padding-bottom: calc(var(--key-size) * 0.75) !important;
+  padding-bottom: 0.75em !important;
 }
 .pl-4 {
-  padding-left: calc(var(--key-size) * 1) !important;
+  padding-left: 1em !important;
 }
 .pt-4 {
-  padding-top: calc(var(--key-size) * 1) !important;
+  padding-top: 1em !important;
 }
 .pr-4 {
-  padding-right: calc(var(--key-size) * 1) !important;
+  padding-right: 1em !important;
 }
 .pb-4 {
-  padding-bottom: calc(var(--key-size) * 1) !important;
+  padding-bottom: 1em !important;
 }
 .pl-5 {
-  padding-left: calc(var(--key-size) * 1.25) !important;
+  padding-left: 1.25em !important;
 }
 .pt-5 {
-  padding-top: calc(var(--key-size) * 1.25) !important;
+  padding-top: 1.25em !important;
 }
 .pr-5 {
-  padding-right: calc(var(--key-size) * 1.25) !important;
+  padding-right: 1.25em !important;
 }
 .pb-5 {
-  padding-bottom: calc(var(--key-size) * 1.25) !important;
+  padding-bottom: 1.25em !important;
 }
 .pl-6 {
-  padding-left: calc(var(--key-size) * 1.5) !important;
+  padding-left: 1.5em !important;
 }
 .pt-6 {
-  padding-top: calc(var(--key-size) * 1.5) !important;
+  padding-top: 1.5em !important;
 }
 .pr-6 {
-  padding-right: calc(var(--key-size) * 1.5) !important;
+  padding-right: 1.5em !important;
 }
 .pb-6 {
-  padding-bottom: calc(var(--key-size) * 1.5) !important;
+  padding-bottom: 1.5em !important;
 }
 .pl-7 {
-  padding-left: calc(var(--key-size) * 1.75) !important;
+  padding-left: 1.75em !important;
 }
 .pt-7 {
-  padding-top: calc(var(--key-size) * 1.75) !important;
+  padding-top: 1.75em !important;
 }
 .pr-7 {
-  padding-right: calc(var(--key-size) * 1.75) !important;
+  padding-right: 1.75em !important;
 }
 .pb-7 {
-  padding-bottom: calc(var(--key-size) * 1.75) !important;
+  padding-bottom: 1.75em !important;
 }
 .pl-8 {
-  padding-left: calc(var(--key-size) * 2) !important;
+  padding-left: 2em !important;
 }
 .pt-8 {
-  padding-top: calc(var(--key-size) * 2) !important;
+  padding-top: 2em !important;
 }
 .pr-8 {
-  padding-right: calc(var(--key-size) * 2) !important;
+  padding-right: 2em !important;
 }
 .pb-8 {
-  padding-bottom: calc(var(--key-size) * 2) !important;
+  padding-bottom: 2em !important;
 }
 .px-0 {
   padding-left: unset !important;
@@ -1598,32 +1598,39 @@
   padding-bottom: unset !important;
 }
 
+.space-wrap {
+  white-space: normal !important;
+}
+.space-nowrap {
+  white-space: nowrap !important;
+}
+
 .g-0 {
   grid-gap: 0 !important;
 }
 .g-1 {
-  grid-gap: calc(var(--key-size) * 0.25) !important;
+  grid-gap: 0.25em !important;
 }
 .g-2 {
-  grid-gap: calc(var(--key-size) * 0.5) !important;
+  grid-gap: 0.5em !important;
 }
 .g-3 {
-  grid-gap: calc(var(--key-size) * 0.75) !important;
+  grid-gap: 0.75em !important;
 }
 .g-4 {
-  grid-gap: var(--key-size) !important;
+  grid-gap: 1em !important;
 }
 .g-5 {
-  grid-gap: calc(var(--key-size) * 1.25) !important;
+  grid-gap: 1.25em !important;
 }
 .g-6 {
-  grid-gap: calc(var(--key-size) * 1.5) !important;
+  grid-gap: 1.5em !important;
 }
 .g-7 {
-  grid-gap: calc(var(--key-size) * 1.75) !important;
+  grid-gap: 1.75em !important;
 }
 .g-8 {
-  grid-gap: calc(var(--key-size) * 2) !important;
+  grid-gap: 2em !important;
 }
 
 /*  typography section: ... contained in classes */
@@ -1638,12 +1645,6 @@
 }
 .text-justify {
   text-align: justify !important;
-}
-.text-wrap {
-  white-space: normal !important;
-}
-.text-nowrap {
-  white-space: nowrap !important;
 }
 .text-hyphens {
   hyphens: auto !important;
