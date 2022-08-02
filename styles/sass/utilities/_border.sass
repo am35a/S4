@@ -2,6 +2,7 @@
 
 /*
     border section: border round, sizes, placement, color of accent and extra palette contained in classes
+$borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
 
 @mixin _border($orientation, $type)
     .#{$orientation}#{$type}border
@@ -33,20 +34,25 @@
             border-color: transparent !important
 
     .#{$orientation}#{$type}rounded
-        border-radius: var(--rounded-2, .25em) !important
+        border-radius: var(--rounded) !important
+        
         &-0
             border-radius: 0 !important
+        &-xs
+            border-radius: var(--rounded-xs) !important
         &-sm
-            border-radius: var(--rounded-1, .125em) !important
+            border-radius: var(--rounded-sm) !important
         &-md
-            border-radius: var(--rounded-2, .25em) !important
+            border-radius: var(--rounded-md) !important
         &-lg
-            border-radius: var(--rounded-3, .5em) !important
+            border-radius: var(--rounded-lg) !important
+        &-xl
+            border-radius: var(--rounded-xl) !important
 
         &-circle
             border-radius: 50% !important
         &-pill
-            border-radius: 2em !important
+            border-radius: 4em !important
 
         &-top-0
             border-top-left-radius: 0 !important

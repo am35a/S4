@@ -390,25 +390,31 @@
 }
 
 .rounded {
-  border-radius: var(--rounded-2, 0.25em) !important;
+  border-radius: var(--rounded) !important;
 }
 .rounded-0 {
   border-radius: 0 !important;
 }
+.rounded-xs {
+  border-radius: var(--rounded-xs) !important;
+}
 .rounded-sm {
-  border-radius: var(--rounded-1, 0.125em) !important;
+  border-radius: var(--rounded-sm) !important;
 }
 .rounded-md {
-  border-radius: var(--rounded-2, 0.25em) !important;
+  border-radius: var(--rounded-md) !important;
 }
 .rounded-lg {
-  border-radius: var(--rounded-3, 0.5em) !important;
+  border-radius: var(--rounded-lg) !important;
+}
+.rounded-xl {
+  border-radius: var(--rounded-xl) !important;
 }
 .rounded-circle {
   border-radius: 50% !important;
 }
 .rounded-pill {
-  border-radius: 2em !important;
+  border-radius: 4em !important;
 }
 .rounded-top-0 {
   border-top-left-radius: 0 !important;
