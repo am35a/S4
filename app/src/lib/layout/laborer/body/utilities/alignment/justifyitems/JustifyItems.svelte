@@ -13,7 +13,7 @@
     <div class="alert alert-warning justify-self-start">
         The properties works only for <b>grid</b> containers!
     </div>
-    <div class="d-grid g-2 p-2 bg-positive rounded-md">
+    <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-grid g-2">
             {#each justifyItemsArr as item }
                 <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-items-{item}">

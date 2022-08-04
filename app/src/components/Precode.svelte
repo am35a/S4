@@ -13,7 +13,7 @@
         background-color: var(--negative-color)
         color: var(--success-color)
         font-size: var(--fs-md)
-        border-radius: .25em
+        border-radius: var(--rounded)
         &:not(.inline)
             display: grid
             padding: 1em

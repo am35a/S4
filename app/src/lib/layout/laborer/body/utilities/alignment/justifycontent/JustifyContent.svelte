@@ -17,7 +17,7 @@
     <p>
         The <b>justify-content-...</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive rounded-md">
+    <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex g-2">
             {#each Object.entries(containerTypeObj) as [key, value]}
                 <Button

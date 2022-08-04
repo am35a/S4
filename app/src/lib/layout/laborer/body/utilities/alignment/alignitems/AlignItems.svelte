@@ -17,7 +17,7 @@
     <p>
         The <b>align-items-...</b> classes sets the <b>align-self-</b> classes value on all direct children as a group.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive rounded-md">
+    <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex g-2">
             {#each Object.entries(containerTypesObj) as [key, value]}
                 <Button

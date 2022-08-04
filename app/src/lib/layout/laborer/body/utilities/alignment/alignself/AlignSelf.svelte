@@ -17,7 +17,7 @@
     <p>
         The <b>align-self-...</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>align-items-</b> classes value.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive rounded-md">
+    <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex g-2">
             {#each Object.entries(containerTypeObj) as [key, value]}
                 <Button

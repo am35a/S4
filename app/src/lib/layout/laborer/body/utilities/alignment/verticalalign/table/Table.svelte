@@ -8,7 +8,7 @@
     <p>
         Use values <b>top</b>, <b>middle</b> and <b>bottom</b> for vertical alignmet into table sells.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive rounded-md">
+    <div class="d-grid g-2 p-2 bg-positive rounded">
         <table style="height: 64rem;">
             <tr>
                 <td class="bg-negative-10 align-baseline">Baseline</td>

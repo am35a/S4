@@ -5,7 +5,7 @@
 
 <div class="d-grid g-2">
     <h3 id="BorderRadius">Border radius</h3>
-    <div class="d-grid g-2 p-2 bg-positive rounded-md">        
+    <div class="d-grid g-2 p-2 bg-positive rounded">        
         <div class="d-flex flex-wrap g-4">
             <div class="bg-background border p-2 rounded-0">rounded-0</div>
             <div class="bg-background border p-2 rounded-xxs">rounded-xxs</div>

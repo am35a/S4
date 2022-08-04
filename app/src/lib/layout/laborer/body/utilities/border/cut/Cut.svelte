@@ -5,7 +5,7 @@
 
 <div class="d-grid g-2">
     <h3 id="CutBorder">Cut border</h3>
-    <div class="d-grid g-2 p-2 bg-positive rounded-md">
+    <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex flex-wrap g-4">
             <div class="bg-negative-10 p-6 border border-0"></div>
             <div class="bg-negative-10 p-6 border border-top-0"></div>

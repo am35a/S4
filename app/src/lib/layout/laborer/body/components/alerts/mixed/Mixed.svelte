@@ -7,7 +7,7 @@
 <div class="d-grid g-2">
     <h3>Style mixed</h3>
     <p>...</p>
-    <div class="d-grid g-2 cols-2 p-2 bg-positive rounded-md">
+    <div class="d-grid g-2 cols-2 p-2 bg-positive rounded">
         <Alert class="alert-primary border">
             Alert component with border
         </Alert>

@@ -7,7 +7,7 @@
 <section class="d-grid g-2">
     <h3>Default</h3>
     <p>S4 alerts default views.</p>
-    <div class="d-grid g-2 cols-2 p-2 bg-positive rounded-md">
+    <div class="d-grid g-2 cols-2 p-2 bg-positive rounded">
         <Alert class="alert-primary">
             Alert primary message with <a href={'#'}>link</a>
         </Alert>
