@@ -36,19 +36,12 @@ $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
     .#{$orientation}#{$type}rounded
         border-radius: var(--rounded) !important
         
+        @each $size in $borderRadiusSizes
+            &-#{$size}
+                border-radius: var(--rounded-#{$size}) !important
+
         &-0
             border-radius: 0 !important
-        &-xs
-            border-radius: var(--rounded-xs) !important
-        &-sm
-            border-radius: var(--rounded-sm) !important
-        &-md
-            border-radius: var(--rounded-md) !important
-        &-lg
-            border-radius: var(--rounded-lg) !important
-        &-xl
-            border-radius: var(--rounded-xl) !important
-
         &-circle
             border-radius: 50% !important
         &-pill

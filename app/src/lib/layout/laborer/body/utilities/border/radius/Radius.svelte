@@ -6,25 +6,29 @@
 <div class="d-grid g-2">
     <h3 id="BorderRadius">Border radius</h3>
     <div class="d-grid g-2 p-2 bg-positive rounded">        
-        <div class="d-flex flex-wrap g-4">
-            <div class="bg-background border p-2 rounded-0">rounded-0</div>
-            <div class="bg-background border p-2 rounded-xxs">rounded-xxs</div>
-            <div class="bg-background border p-2 rounded-xs">rounded-xs</div>
-            <div class="bg-background border p-2 rounded-sm">rounded-sm</div>
-            <div class="bg-background border p-2 rounded-md">rounded-md</div>
-            <div class="bg-background border p-2 rounded-lg">rounded-lg</div>
-            <div class="bg-background border p-2 rounded-xl">rounded-xl</div>
-            <div class="bg-background border p-2 rounded-xxl">rounded-xxl</div>
+        <div class="d-flex flex-wrap g-2">
+            <div class="bg-negative-10 border p-4 rounded-0">rounded-0</div>
+            <div class="bg-negative-10 border p-4 rounded-xxs">rounded-xxs</div>
+            <div class="bg-negative-10 border p-4 rounded-xs">rounded-xs</div>
+            <div class="bg-negative-10 border p-4 rounded-sm">rounded-sm</div>
+            <div class="bg-negative-10 border p-4 rounded-md">rounded-md</div>
+            <div class="bg-negative-10 border p-4 rounded-lg">rounded-lg</div>
+            <div class="bg-negative-10 border p-4 rounded-xl">rounded-xl</div>
+            <div class="bg-negative-10 border p-4 rounded-xxl">rounded-xxl</div>
+        </div>
+        <div class="d-flex flex-wrap g-2">
+            <div>
+                <div class="bg-negative-10 border p-7 rounded-circle"></div>
+            </div>
+            <div>
+                <div class="bg-negative-10 border p-4 rounded-pill">rounded-pill</div>
+            </div>
         </div>
         <div class="d-flex flex-wrap g-4">
-            <div class="bg-background border p-5 rounded-circle"></div>
-            <div class="bg-background border p-5 rounded-pill" style="width: 16em;"></div>
-        </div>
-        <div class="d-flex flex-wrap g-4">
-            <div class="bg-background border p-5 rounded-circle rounded-left-0"></div>
-            <div class="bg-background border p-5 rounded-circle rounded-top-0"></div>
-            <div class="bg-background border p-5 rounded-circle rounded-right-0"></div>
-            <div class="bg-background border p-5 rounded-circle rounded-bottom-0"></div>
+            <div class="bg-negative-10 border p-7 rounded-circle rounded-left-0"></div>
+            <div class="bg-negative-10 border p-7 rounded-circle rounded-top-0"></div>
+            <div class="bg-negative-10 border p-7 rounded-circle rounded-right-0"></div>
+            <div class="bg-negative-10 border p-7 rounded-circle rounded-bottom-0"></div>
         </div>
     </div>
     <Details>
