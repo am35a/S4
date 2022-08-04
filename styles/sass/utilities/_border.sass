@@ -40,22 +40,28 @@ $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
             &-#{$size}
                 border-radius: var(--rounded-#{$size}) !important
 
-        &-0
-            border-radius: 0 !important
         &-circle
             border-radius: 50% !important
         &-pill
             border-radius: 4em !important
 
-        &-top-0
+        &-0,
+        &-top-0,
+        &-left-0,
+        &-top-left-0
             border-top-left-radius: 0 !important
+        &-0,
+        &-top-0,
+        &-right-0,
+        &-top-right-0
             border-top-right-radius: 0 !important
-        &-right-0
-            border-top-right-radius: 0 !important
+        &-0,
+        &-bottom-0,
+        &-right-0,
+        &-bottom-right-0
             border-bottom-right-radius: 0 !important
-        &-bottom-0
-            border-bottom-right-radius: 0 !important
+        &-0,
+        &-bottom-0,
+        &-left-0,
+        &-bottom-left-0
             border-bottom-left-radius: 0 !important
-        &-left-0
-            border-bottom-left-radius: 0 !important
-            border-top-left-radius: 0 !important

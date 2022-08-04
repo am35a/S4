@@ -4,7 +4,7 @@
 </script>
 
 <div class="d-grid g-2">
-    <h3 id="AddBorder">Add border</h3>
+    <h3 id="AddBorderWith">Add border</h3>
     <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex flex-wrap g-4">
             <div class="bg-negative-10 p-6 border"></div>
