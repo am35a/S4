@@ -2,7 +2,7 @@
 
 /*
     border section: border round, sizes, placement, color of accent and extra palette contained in classes
-$borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
+$borderRadiusSizes: sss, ss, s, m, l, ll, lll, llll
 
 @mixin _border($orientation, $type)
     .#{$orientation}#{$type}border
@@ -33,35 +33,29 @@ $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
         &-transparent
             border-color: transparent !important
 
-    .#{$orientation}#{$type}rounded
-        border-radius: var(--rounded) !important
-        
+    .#{$orientation}#{$type}b
+        &r
+            border-radius: var(--br) !important
         @each $size in $borderRadiusSizes
-            &-#{$size}
-                border-radius: var(--rounded-#{$size}) !important
-
-        &-circle
+            &r-#{$size}
+                border-radius: var(--br-#{$size}) !important
+        &r-c
             border-radius: 50% !important
-        &-pill
+        &r-p
             border-radius: 4em !important
-
-        &-0,
-        &-top-0,
-        &-left-0,
-        &-top-left-0
+        &r-0,
+        &tr-0, &lr-0,
+        &tlr-0, &ltr-0
             border-top-left-radius: 0 !important
-        &-0,
-        &-top-0,
-        &-right-0,
-        &-top-right-0
+        &r-0,
+        &tr-0, &rr-0,
+        &trr-0, &rtr-0
             border-top-right-radius: 0 !important
-        &-0,
-        &-bottom-0,
-        &-right-0,
-        &-bottom-right-0
+        &r-0,
+        &br-0, &rr-0,
+        &brr-0, &rbr-0
             border-bottom-right-radius: 0 !important
-        &-0,
-        &-bottom-0,
-        &-left-0,
-        &-bottom-left-0
+        &r-0,
+        &br-0, &lr-0,
+        &blr-0, &lbr-0
             border-bottom-left-radius: 0 !important

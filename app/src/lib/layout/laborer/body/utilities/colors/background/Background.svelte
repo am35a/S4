@@ -20,7 +20,7 @@
         The classes from <b>bg-...-10</b> to <b>bg-...-90</b> make color transparent in percentage which point in the end of.
         Using <b>bg-transparent</b> class make background transparent.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive border border-positive rounded">
+    <div class="d-grid g-2 p-2 bg-positive border border-positive br">
         <div class="d-flex g-2">
             <Button
                 class="btn-secondary {defaultExtraColorsInterval ? 'active' : ''}"
@@ -60,7 +60,7 @@
     <p>
         The <b>bg-...-l</b> and <b>bg-...-d</b> classes set light or dark shades for accent background colors.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bg-positive br">
         <div class="d-flex g-2">
             {#each Object.entries(accentExtraColorsObj) as [key, value]}
                 <Button

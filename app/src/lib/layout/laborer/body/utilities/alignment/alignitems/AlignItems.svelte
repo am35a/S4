@@ -15,9 +15,9 @@
 <section class="d-grid g-2">
     <h3 id="AlignItems">Align items</h3>
     <p>
-        The <b>ai-...</b> classes sets the <b>as-</b> classes value on all direct children as a group.
+        The <b>ai-...</b> classes sets the <b>as-...</b> classes value on all direct children as a group.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bg-positive br">
         <div class="d-flex g-2">
             {#each Object.entries(containerTypesObj) as [key, value]}
                 <Button
@@ -42,7 +42,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="btr-0">
                 {#each alignItemsArr as item }
                     {
 `<div class="${containerType} ai-${item}">

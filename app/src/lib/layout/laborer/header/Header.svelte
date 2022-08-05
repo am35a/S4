@@ -46,7 +46,7 @@
                 display: grid
                 justify-items: center
                 align-items: center
-                border-radius: var(--rounded-2, .25em)
+                border-radius: var(--br-2, .25em)
                 // background-color: var(--aside-bg-color, var(--secondary-color-d))
         .title
             display: grid

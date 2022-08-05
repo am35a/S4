@@ -13,7 +13,7 @@
     <div class="alert alert-warning js-start">
         The properties works only for <b>grid</b> containers!
     </div>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bg-positive br">
         <div class="d-grid g-2">
             {#each justifyItemsArr as item }
                 <div class="d-grid cols-2 g-2 bg-negative-10 p-2 ji-{item}">
@@ -29,7 +29,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="btr-0">
                 {#each justifyItemsArr as item }
                     {
 `<div class="d-grid ji-${item}">

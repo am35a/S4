@@ -8,12 +8,12 @@
 <section class="d-grid g-2">
     <h3 id="JustifySelf">Justify self</h3>
     <p>
-        The <b>js-...</b> utilities sets the way a box is justified inside its alignment container along the appropriate axis.
+        The <b>js-...</b> classes sets the way a box is justified inside its alignment container along the appropriate axis.
     </p>
     <div class="alert alert-warning js-start">
         The properties works only for <b>grid</b> containers!
     </div>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bg-positive br">
         <div class="d-grid g-2">
             {#each justifySelfArr as item }
                 <div class="d-grid cols-2 g-2 bg-negative-10 p-2">
@@ -29,7 +29,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="btr-0">
                 {#each justifySelfArr as item }
                     {
 `<div class="d-grid">

@@ -5,7 +5,7 @@
 
 <div class="d-grid g-2">
     <h3 id="AddBorderWith">Add border</h3>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bg-positive br">
         <div class="d-flex flex-wrap g-2">
             <div class="bg-negative-10 p-4 border">border</div>
             <div class="bg-negative-10 p-4 border-top">border-top</div>
@@ -19,7 +19,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="btr-0">
                 {
 `<div class="border"></div>
 <div class="border-top"></div>

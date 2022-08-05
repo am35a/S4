@@ -8,7 +8,7 @@
     <p>
         Use values <b>top</b>, <b>middle</b> and <b>bottom</b> for vertical alignmet into table sells.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bg-positive br">
         <table style="height: 64rem;">
             <tr>
                 <td class="bg-negative-10 va-baseline">Baseline</td>
@@ -23,7 +23,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="btr-0">
                 {
 `<table>
     <tr>

@@ -7,7 +7,7 @@
 <div class="d-grid g-2">
     <h3>Style mixed</h3>
     <p>...</p>
-    <div class="d-grid g-2 cols-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 cols-2 p-2 bg-positive br">
         <Alert class="alert-primary border">
             Alert component with border
         </Alert>
@@ -26,7 +26,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="btr-0">
                 {
 `<Alert class="alert-primary border">
     Alert component with border

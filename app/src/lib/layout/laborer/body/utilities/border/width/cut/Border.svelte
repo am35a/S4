@@ -11,7 +11,7 @@
     <div class="alert alert-warning js-start">
         Pay attention the <b>border-...-0</b> classes remove the border by remove border width that resizing the container! If you need to keep the size of the container as before use <b>bg-transparent</b>.
     </div>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bg-positive br">
         <div class="d-flex flex-wrap g-4">
             <div class="bg-negative-10 p-4 border border-0">border-0</div>
             <div class="bg-negative-10 p-4 border border-top-0">border-top-0</div>
@@ -25,7 +25,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="btr-0">
                 {
 `<div class="border-0"></div>
 <div class="border border-top-0"></div>
