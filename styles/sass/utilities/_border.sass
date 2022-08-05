@@ -5,33 +5,35 @@
 $borderRadiusSizes: sss, ss, s, m, l, ll, lll, llll
 
 @mixin _border($orientation, $type)
-    .#{$orientation}#{$type}border
-        border: .0625em solid var(--border-color, currentColor) !important
-        @each $item in $placementDirections
-            &-#{$item}
-                border-#{$item}: .0625em solid var(--border-color, currentColor) !important
+    .#{$orientation}#{$type}b
+        border: .0625em solid var(--bc, currentColor) !important
+        @each $item, $value in $placementDirections2
+            &#{$item}
+                border-#{$value}: .0625em solid var(--bc, currentColor) !important
 
         &-0
             border: 0 !important
-        @each $item in $placementDirections
-            &-#{$item}-0
-                border-#{$item}: 0 !important
+        @each $item, $value in $placementDirections2
+            &#{$item}-0
+                border-#{$value}: 0 !important
 
         @each $item in $defaultColors
-            &-#{$item}
+            &c-#{$item}
                 border-color: var(--#{$item}-color) !important
         @each $item in $defaultColors
             @for $i from 1 through math.div(100, $defaultExtraColorsInterval) - 1
-                &#{'-' + $item + '-' + $i * $defaultExtraColorsInterval}
+                &c-#{$item + '-' + $i * $defaultExtraColorsInterval}
                     border-color: var(--#{$item}-color-#{$i * $defaultExtraColorsInterval}) !important
         @each $item in $accentColors
-            &-#{$item}
+            &c-#{$item}
                border-color: var(--#{$item}-color) !important
             @each $pref in $accentExtraColorsPrefs
-                &-#{$item + '-' + $pref}
+                &c-#{$item + '-' + $pref}
                     border-color: var(--#{$item}-color-#{$pref}) !important
-        &-transparent
-            border-color: transparent !important
+        @each $item, $value in $placementDirections2
+            &-transparent,
+            &#{$item}c-transparent
+                border-#{$value}-color: transparent !important
 
     .#{$orientation}#{$type}b
         &r
