@@ -242,35 +242,140 @@
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */
-.b {
-  border: 0.0625em solid var(--bc, currentColor) !important;
+.bw, .blw {
+  border-left-width: var(--bw) !important;
 }
-.bl {
-  border-left: 0.0625em solid var(--bc, currentColor) !important;
+.bw-0, .blw-0 {
+  border-left-width: 0 !important;
 }
-.bt {
-  border-top: 0.0625em solid var(--bc, currentColor) !important;
+.bw-sss, .blw-sss {
+  border-left-width: var(--bw-sss) !important;
 }
-.br {
-  border-right: 0.0625em solid var(--bc, currentColor) !important;
+.bw-ss, .blw-ss {
+  border-left-width: var(--bw-ss) !important;
 }
-.bb {
-  border-bottom: 0.0625em solid var(--bc, currentColor) !important;
+.bw-s, .blw-s {
+  border-left-width: var(--bw-s) !important;
 }
-.b-0 {
-  border: 0 !important;
+.bw-m, .blw-m {
+  border-left-width: var(--bw-m) !important;
 }
-.bl-0 {
-  border-left: 0 !important;
+.bw-l, .blw-l {
+  border-left-width: var(--bw-l) !important;
 }
-.bt-0 {
-  border-top: 0 !important;
+.bw-ll, .blw-ll {
+  border-left-width: var(--bw-ll) !important;
 }
-.br-0 {
-  border-right: 0 !important;
+.bw-lll, .blw-lll {
+  border-left-width: var(--bw-lll) !important;
 }
-.bb-0 {
-  border-bottom: 0 !important;
+.bw-llll, .blw-llll {
+  border-left-width: var(--bw-llll) !important;
+}
+.bs, .bls {
+  border-left-style: var(--bs, solid) !important;
+}
+.bw, .btw {
+  border-top-width: var(--bw) !important;
+}
+.bw-0, .btw-0 {
+  border-top-width: 0 !important;
+}
+.bw-sss, .btw-sss {
+  border-top-width: var(--bw-sss) !important;
+}
+.bw-ss, .btw-ss {
+  border-top-width: var(--bw-ss) !important;
+}
+.bw-s, .btw-s {
+  border-top-width: var(--bw-s) !important;
+}
+.bw-m, .btw-m {
+  border-top-width: var(--bw-m) !important;
+}
+.bw-l, .btw-l {
+  border-top-width: var(--bw-l) !important;
+}
+.bw-ll, .btw-ll {
+  border-top-width: var(--bw-ll) !important;
+}
+.bw-lll, .btw-lll {
+  border-top-width: var(--bw-lll) !important;
+}
+.bw-llll, .btw-llll {
+  border-top-width: var(--bw-llll) !important;
+}
+.bs, .bts {
+  border-top-style: var(--bs, solid) !important;
+}
+.bw, .brw {
+  border-right-width: var(--bw) !important;
+}
+.bw-0, .brw-0 {
+  border-right-width: 0 !important;
+}
+.bw-sss, .brw-sss {
+  border-right-width: var(--bw-sss) !important;
+}
+.bw-ss, .brw-ss {
+  border-right-width: var(--bw-ss) !important;
+}
+.bw-s, .brw-s {
+  border-right-width: var(--bw-s) !important;
+}
+.bw-m, .brw-m {
+  border-right-width: var(--bw-m) !important;
+}
+.bw-l, .brw-l {
+  border-right-width: var(--bw-l) !important;
+}
+.bw-ll, .brw-ll {
+  border-right-width: var(--bw-ll) !important;
+}
+.bw-lll, .brw-lll {
+  border-right-width: var(--bw-lll) !important;
+}
+.bw-llll, .brw-llll {
+  border-right-width: var(--bw-llll) !important;
+}
+.bs, .brs {
+  border-right-style: var(--bs, solid) !important;
+}
+.bw, .bbw {
+  border-bottom-width: var(--bw) !important;
+}
+.bw-0, .bbw-0 {
+  border-bottom-width: 0 !important;
+}
+.bw-sss, .bbw-sss {
+  border-bottom-width: var(--bw-sss) !important;
+}
+.bw-ss, .bbw-ss {
+  border-bottom-width: var(--bw-ss) !important;
+}
+.bw-s, .bbw-s {
+  border-bottom-width: var(--bw-s) !important;
+}
+.bw-m, .bbw-m {
+  border-bottom-width: var(--bw-m) !important;
+}
+.bw-l, .bbw-l {
+  border-bottom-width: var(--bw-l) !important;
+}
+.bw-ll, .bbw-ll {
+  border-bottom-width: var(--bw-ll) !important;
+}
+.bw-lll, .bbw-lll {
+  border-bottom-width: var(--bw-lll) !important;
+}
+.bw-llll, .bbw-llll {
+  border-bottom-width: var(--bw-llll) !important;
+}
+.bs, .bbs {
+  border-bottom-style: var(--bs, solid) !important;
+}
+.bc {
+  border-color: currentColor;
 }
 .bc-positive {
   border-color: var(--positive-color) !important;
@@ -386,19 +491,18 @@
 .bc-error-d {
   border-color: var(--error-color-d) !important;
 }
-.b-transparent, .blc-transparent {
+.bc-transparent, .blc-transparent {
   border-left-color: transparent !important;
 }
-.b-transparent, .btc-transparent {
+.bc-transparent, .btc-transparent {
   border-top-color: transparent !important;
 }
-.b-transparent, .brc-transparent {
+.bc-transparent, .brc-transparent {
   border-right-color: transparent !important;
 }
-.b-transparent, .bbc-transparent {
+.bc-transparent, .bbc-transparent {
   border-bottom-color: transparent !important;
 }
-
 .br {
   border-radius: var(--br) !important;
 }

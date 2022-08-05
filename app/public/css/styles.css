@@ -285,6 +285,15 @@ progress {
   --br-ll: 1.5em;
   --br-lll: 2em;
   --br-llll: 3em;
+  --bw: var(--br-sss);
+  --bw-sss: .0625em;
+  --bw-ss: .125em;
+  --bw-s: .1875em;
+  --bw-m: .25em;
+  --bw-l: .3125em;
+  --bw-ll: .375em;
+  --bw-lll: .4375em;
+  --bw-llll: .5em;
   --positive-color: hsl(0 0% 100%);
   --positive-color-90: hsl(0 0% 100% / .9);
   --positive-color-80: hsl(0 0% 100% / .8);

@@ -2,21 +2,38 @@
 
 /*
     border section: border round, sizes, placement, color of accent and extra palette contained in classes
-$borderRadiusSizes: sss, ss, s, m, l, ll, lll, llll
+$borderSizes: sss, ss, s, m, l, ll, lll, llll
 
 @mixin _border($orientation, $type)
+    // .#{$orientation}#{$type}b
+    //     &-init
+    //         border: var(--bw) var(--bs, solid) var(--bc, currentColor) !important
+    //     @each $item, $value in $placementDirections2
+    //         &#{$item}-init
+    //             border-#{$value}: var(--bw) var(--bs, solid) var(--bc, currentColor) !important
     .#{$orientation}#{$type}b
-        border: .0625em solid var(--bc, currentColor) !important
         @each $item, $value in $placementDirections2
-            &#{$item}
-                border-#{$value}: .0625em solid var(--bc, currentColor) !important
+            &w,
+            &#{$item}w
+                border-#{$value}-width: var(--bw) !important
+                &-0
+                    border-#{$value}-width: 0 !important
+                @each $size in $borderSizes
+                    &-#{$size}
+                        border-#{$value}-width: var(--bw-#{$size}) !important    
 
-        &-0
-            border: 0 !important
-        @each $item, $value in $placementDirections2
-            &#{$item}-0
-                border-#{$value}: 0 !important
+            &s,
+            &#{$item}s
+                border-#{$value}-style: var(--bs, solid) !important
+            // &-solid
+            //     border-style: solid !important
+            // &-dotted
+            //     border-style: dotted !important
+            // &-dashed
+            //     border-style: dashed !important
 
+        &c
+            border-color: currentColor
         @each $item in $defaultColors
             &c-#{$item}
                 border-color: var(--#{$item}-color) !important
@@ -31,14 +48,13 @@ $borderRadiusSizes: sss, ss, s, m, l, ll, lll, llll
                 &c-#{$item + '-' + $pref}
                     border-color: var(--#{$item}-color-#{$pref}) !important
         @each $item, $value in $placementDirections2
-            &-transparent,
+            &c-transparent,
             &#{$item}c-transparent
                 border-#{$value}-color: transparent !important
 
-    .#{$orientation}#{$type}b
         &r
             border-radius: var(--br) !important
-        @each $size in $borderRadiusSizes
+        @each $size in $borderSizes
             &r-#{$size}
                 border-radius: var(--br-#{$size}) !important
         &r-c

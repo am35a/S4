@@ -13,11 +13,11 @@
     </div>
     <div class="d-grid g-2 p-2 bg-positive br">
         <div class="d-flex flex-wrap g-4">
-            <div class="bg-negative-10 p-4 border border-0">border-0</div>
-            <div class="bg-negative-10 p-4 border border-top-0">border-top-0</div>
-            <div class="bg-negative-10 p-4 border border-right-0">border-right-0</div>
-            <div class="bg-negative-10 p-4 border border-bottom-0">border-bottom-0</div>
-            <div class="bg-negative-10 p-4 border border-left-0">border-left-0</div>
+            <div class="bg-negative-10 p-4 bw bs bw-0">border-0</div>
+            <div class="bg-negative-10 p-4 bw bs btw-0">border-top-0</div>
+            <div class="bg-negative-10 p-4 bw bs brw-0">border-right-0</div>
+            <div class="bg-negative-10 p-4 bw bs bbw-0">border-bottom-0</div>
+            <div class="bg-negative-10 p-4 bw bs blw-0">border-left-0</div>
         </div>
     </div>
     <Details>
