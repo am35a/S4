@@ -4,9 +4,9 @@
 </script>
 
 <div class="d-grid g-2">
-    <h3 id="CutBorderRadius">Cut radius</h3>
+    <h4 id="CutBorderRadius">Cut radius</h4>
     <p>
-        rounded-0
+        To remove round of corners use <b>rounded-0</b> class and for accurate manipulations use <b>rounded-...-0</b>.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex flex-wrap g-2">
@@ -29,7 +29,16 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {
-`
+`<div class="rounded-lg rounded-left-0">rounded-left-0</div>
+<div class="rounded-lg rounded-top-0">rounded-top-0</div>
+<div class="rounded-lg rounded-right-0">rounded-right-0</div>
+<div class="rounded-lg rounded-bottom-0">rounded-bottom-0</div>
+
+<div class="rounded-lg rounded-top-left-0">rounded-top-left-0</div>
+<div class="rounded-lg rounded-top-right-0">rounded-top-right-0</div>
+<div class="rounded-lg rounded-bottom-right-0">rounded-bottom-right-0</div>
+<div class="rounded-lg rounded-bottom-left-0">rounded-bottom-left-0</div>
+
 `
                 }
             </Precode>
