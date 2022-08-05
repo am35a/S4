@@ -1,7 +1,7 @@
 <div class="d-grid g-2">
     <h3>Headings</h3>
     <div
-        class="d-inline-grid cols g-2 justify-self-start align-items-center"
+        class="d-inline-grid cols g-2 js-start ai-center"
         style="--cols-tl: auto auto;"
     >
         <div>Heading</div><div>Example</div>

@@ -15,7 +15,7 @@
 <section id="containerType" class="d-grid g-2">
     <h3 id="AlignSelf">Align self</h3>
     <p>
-        The <b>align-self-...</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>align-items-</b> classes value.
+        The <b>as-...</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>ai-</b> classes value.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex g-2">
@@ -30,7 +30,7 @@
         <div class="d-grid g-2">
             {#each alignSelfArr as item }
                 <div class="{containerType} g-2 bg-negative-10 p-2" style="height: 160rem;">
-                    <div class="bg-negative-10 px-2 py-1 align-self-{item}">one</div>
+                    <div class="bg-negative-10 px-2 py-1 as-{item}">one</div>
                     <div class="bg-negative-10 px-2 py-1">two</div>
                     <div class="bg-negative-10 px-2 py-1">three</div>
                 </div>
@@ -46,7 +46,7 @@
                 {#each alignSelfArr as item }
                     {
 `<div class="${containerType}">
-    <div class="align-self-${item}">one</div>
+    <div class="as-${item}">one</div>
     <div>two</div>
     <div>three</div>
 </div>

@@ -13,21 +13,21 @@
         4: '4'
     }
     let verticalAlignObj = {
-        'align-baseline': 'Baseline',
-        'align-sub': 'Sub',
-        'align-super': 'Super',
-        'align-top': 'Top',
-        'align-middle': 'Middle',
-        'align-bottom': 'Bottom',
-        'align-text-bottom': 'Text bottom',
-        'align-text-top': 'Text top'
+        'va-baseline': 'Baseline',
+        'va-sub': 'Sub',
+        'va-super': 'Super',
+        'va-top': 'Top',
+        'va-middle': 'Middle',
+        'va-bottom': 'Bottom',
+        'va-text-bottom': 'Text bottom',
+        'va-text-top': 'Text top'
     }
 </script>
 
 <div class="d-grid g-2">
     <h4>Inline container</h4>
     <p>
-        The <b>vertical-align-...</b> styles sets vertical alignment of an <b>inline</b>, <b>inline-block</b> elements.
+        The <b>va-...</b> styles sets vertical alignment of an <b>inline</b>, <b>inline-block</b> elements.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-inline-flex flex-wrap g-2">

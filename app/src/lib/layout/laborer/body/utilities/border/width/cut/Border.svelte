@@ -8,7 +8,7 @@
     <p>
         ...
     </p>
-    <div class="alert alert-warning justify-self-start">
+    <div class="alert alert-warning js-start">
         Pay attention the <b>border-...-0</b> classes remove the border by remove border width that resizing the container! If you need to keep the size of the container as before use <b>bg-transparent</b>.
     </div>
     <div class="d-grid g-2 p-2 bg-positive rounded">

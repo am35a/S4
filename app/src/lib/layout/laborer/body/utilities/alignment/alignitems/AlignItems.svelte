@@ -15,7 +15,7 @@
 <section class="d-grid g-2">
     <h3 id="AlignItems">Align items</h3>
     <p>
-        The <b>align-items-...</b> classes sets the <b>align-self-</b> classes value on all direct children as a group.
+        The <b>ai-...</b> classes sets the <b>as-</b> classes value on all direct children as a group.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex g-2">
@@ -29,7 +29,7 @@
         </div>
         <div class="d-grid g-2">
             {#each alignItemsArr as item }
-                <div class="{containerType} g-2 bg-negative-10 p-2 align-items-{item}" style="height: 160rem;">
+                <div class="{containerType} g-2 bg-negative-10 p-2 ai-{item}" style="height: 160rem;">
                     <div class="bg-negative-10 px-2 py-1">one</div>
                     <div class="bg-negative-10 px-2 py-1">two</div>
                     <div class="bg-negative-10 px-2 py-1">three</div>
@@ -45,7 +45,7 @@
             <Precode class="rounded-top-0">
                 {#each alignItemsArr as item }
                     {
-`<div class="${containerType} align-items-${item}">
+`<div class="${containerType} ai-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>

@@ -8,15 +8,15 @@
 <section class="d-grid g-4">
     <h3 id="JustifyItems">Justify items</h3>
     <p>
-        The <b>justify-items-...</b> classes work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.
+        The <b>ji-...</b> classes work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.
     </p>
-    <div class="alert alert-warning justify-self-start">
+    <div class="alert alert-warning js-start">
         The properties works only for <b>grid</b> containers!
     </div>
     <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-grid g-2">
             {#each justifyItemsArr as item }
-                <div class="d-grid cols-2 g-2 bg-negative-10 p-2 justify-items-{item}">
+                <div class="d-grid cols-2 g-2 bg-negative-10 p-2 ji-{item}">
                     <div class="bg-negative-10 px-2 py-1">one</div>
                     <div class="bg-negative-10 px-2 py-1">two</div>
                     <div class="bg-negative-10 px-2 py-1">three</div>
@@ -32,7 +32,7 @@
             <Precode class="rounded-top-0">
                 {#each justifyItemsArr as item }
                     {
-`<div class="d-grid justify-items-${item}">
+`<div class="d-grid ji-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>

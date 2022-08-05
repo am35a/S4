@@ -11,10 +11,10 @@
     <div class="d-grid g-2 p-2 bg-positive rounded">
         <table style="height: 64rem;">
             <tr>
-                <td class="bg-negative-10 align-baseline">Baseline</td>
-                <td class="bg-negative-10 align-top">Top</td>
-                <td class="bg-negative-10 align-middle">Middle</td>
-                <td class="bg-negative-10 align-bottom">Bottom</td>
+                <td class="bg-negative-10 va-baseline">Baseline</td>
+                <td class="bg-negative-10 va-top">Top</td>
+                <td class="bg-negative-10 va-middle">Middle</td>
+                <td class="bg-negative-10 va-bottom">Bottom</td>
             </tr>
         </table>
     </div>
@@ -27,10 +27,10 @@
                 {
 `<table>
     <tr>
-        <td class="border align-baseline">Baseline</td>
-        <td class="border align-top">Top</td>
-        <td class="border align-middle">Middle</td>
-        <td class="border align-bottom">Bottom</td>
+        <td class="border va-baseline">Baseline</td>
+        <td class="border va-top">Top</td>
+        <td class="border va-middle">Middle</td>
+        <td class="border va-bottom">Bottom</td>
     </tr>
 </table>
 `

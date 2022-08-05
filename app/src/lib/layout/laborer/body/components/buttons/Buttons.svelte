@@ -22,7 +22,7 @@
         <p>S4 buttons have two main views - standard and alternative. From these views, you can get any other kind of buttons.</p>
         <div class="d-grid g-2 overflow-x-auto">
             <div class="h4" aria-level={4} role="heading">Standard</div>
-            <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit justify-items-start overflow-x-auto rounded">
+            <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start overflow-x-auto rounded">
                 <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bg-positive rounded">
                     <div class="fw-600 fs-s2 d-grid">
                         <div class="row-span-full col-span-full mt-auto mr-auto fs-xs">State</div>
@@ -53,7 +53,7 @@
 
         <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Alternative</div>
-            <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit justify-items-start overflow-x-auto rounded">
+            <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start overflow-x-auto rounded">
                 <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bg-positive rounded">
                     <div class="fw-600 fs-s2 d-grid">
                         <div class="row-span-full col-span-full mt-auto mr-auto fs-xs">State</div>
