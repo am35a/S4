@@ -1,123 +1,124 @@
 /*  alignment section: align and justify contained in classes */
-.m\:align-baseline {
+.m\:va-baseline {
   vertical-align: baseline !important;
 }
-.m\:align-sub {
+.m\:va-sub {
   vertical-align: sub !important;
 }
-.m\:align-super {
+.m\:va-super {
   vertical-align: super !important;
 }
-.m\:align-top {
+.m\:va-top {
   vertical-align: top !important;
 }
-.m\:align-middle {
+.m\:va-middle {
   vertical-align: middle !important;
 }
-.m\:align-bottom {
+.m\:va-bottom {
   vertical-align: bottom !important;
 }
-.m\:align-text-bottom {
+.m\:va-text-bottom {
   vertical-align: text-bottom !important;
 }
-.m\:align-text-top {
+.m\:va-text-top {
   vertical-align: text-top !important;
 }
-.m\:align-content-around {
+
+.m\:ac-around {
   align-content: space-around !important;
 }
-.m\:align-content-between {
+.m\:ac-between {
   align-content: space-between !important;
 }
-.m\:align-content-center {
+.m\:ac-center {
   align-content: center !important;
 }
-.m\:align-content-end {
+.m\:ac-end {
   align-content: end !important;
 }
-.m\:align-content-evenly {
+.m\:ac-evenly {
   align-content: space-evenly !important;
 }
-.m\:align-content-start {
+.m\:ac-start {
   align-content: start !important;
 }
-.m\:align-content-stretch {
+.m\:ac-stretch {
   align-content: stretch !important;
 }
-.m\:align-items-baseline {
+.m\:ai-baseline {
   align-items: baseline !important;
 }
-.m\:align-items-center {
+.m\:ai-center {
   align-items: center !important;
 }
-.m\:align-items-end {
+.m\:ai-end {
   align-items: end !important;
 }
-.m\:align-items-start {
+.m\:ai-start {
   align-items: start !important;
 }
-.m\:align-items-stretch {
+.m\:ai-stretch {
   align-items: stretch !important;
 }
-.m\:align-self-baseline {
+.m\:as-baseline {
   align-self: baseline !important;
 }
-.m\:align-self-center {
+.m\:as-center {
   align-self: center !important;
 }
-.m\:align-self-end {
+.m\:as-end {
   align-self: end !important;
 }
-.m\:align-self-start {
+.m\:as-start {
   align-self: start !important;
 }
-.m\:align-self-stretch {
+.m\:as-stretch {
   align-self: stretch !important;
 }
 
-.m\:justify-content-around {
+.m\:jc-around {
   justify-content: space-around !important;
 }
-.m\:justify-content-between {
+.m\:jc-between {
   justify-content: space-between !important;
 }
-.m\:justify-content-center {
+.m\:jc-center {
   justify-content: center !important;
 }
-.m\:justify-content-end {
+.m\:jc-end {
   justify-content: end !important;
 }
-.m\:justify-content-evenly {
+.m\:jc-evenly {
   justify-content: space-evenly !important;
 }
-.m\:justify-content-start {
+.m\:jc-start {
   justify-content: start !important;
 }
-.m\:justify-content-stretch {
+.m\:jc-stretch {
   justify-content: stretch !important;
 }
-.m\:justify-items-center {
+.m\:ji-center {
   justify-items: center !important;
 }
-.m\:justify-items-end {
+.m\:ji-end {
   justify-items: end !important;
 }
-.m\:justify-items-start {
+.m\:ji-start {
   justify-items: start !important;
 }
-.m\:justify-items-stretch {
+.m\:ji-stretch {
   justify-items: stretch !important;
 }
-.m\:justify-self-center {
+.m\:js-center {
   justify-self: center !important;
 }
-.m\:justify-self-end {
+.m\:js-end {
   justify-self: end !important;
 }
-.m\:justify-self-start {
+.m\:js-start {
   justify-self: start !important;
 }
-.m\:justify-self-stretch {
+.m\:js-stretch {
   justify-self: stretch !important;
 }
 

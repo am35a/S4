@@ -1,123 +1,124 @@
 /*  alignment section: align and justify contained in classes */
-.align-baseline {
+.va-baseline {
   vertical-align: baseline !important;
 }
-.align-sub {
+.va-sub {
   vertical-align: sub !important;
 }
-.align-super {
+.va-super {
   vertical-align: super !important;
 }
-.align-top {
+.va-top {
   vertical-align: top !important;
 }
-.align-middle {
+.va-middle {
   vertical-align: middle !important;
 }
-.align-bottom {
+.va-bottom {
   vertical-align: bottom !important;
 }
-.align-text-bottom {
+.va-text-bottom {
   vertical-align: text-bottom !important;
 }
-.align-text-top {
+.va-text-top {
   vertical-align: text-top !important;
 }
-.align-content-around {
+
+.ac-around {
   align-content: space-around !important;
 }
-.align-content-between {
+.ac-between {
   align-content: space-between !important;
 }
-.align-content-center {
+.ac-center {
   align-content: center !important;
 }
-.align-content-end {
+.ac-end {
   align-content: end !important;
 }
-.align-content-evenly {
+.ac-evenly {
   align-content: space-evenly !important;
 }
-.align-content-start {
+.ac-start {
   align-content: start !important;
 }
-.align-content-stretch {
+.ac-stretch {
   align-content: stretch !important;
 }
-.align-items-baseline {
+.ai-baseline {
   align-items: baseline !important;
 }
-.align-items-center {
+.ai-center {
   align-items: center !important;
 }
-.align-items-end {
+.ai-end {
   align-items: end !important;
 }
-.align-items-start {
+.ai-start {
   align-items: start !important;
 }
-.align-items-stretch {
+.ai-stretch {
   align-items: stretch !important;
 }
-.align-self-baseline {
+.as-baseline {
   align-self: baseline !important;
 }
-.align-self-center {
+.as-center {
   align-self: center !important;
 }
-.align-self-end {
+.as-end {
   align-self: end !important;
 }
-.align-self-start {
+.as-start {
   align-self: start !important;
 }
-.align-self-stretch {
+.as-stretch {
   align-self: stretch !important;
 }
 
-.justify-content-around {
+.jc-around {
   justify-content: space-around !important;
 }
-.justify-content-between {
+.jc-between {
   justify-content: space-between !important;
 }
-.justify-content-center {
+.jc-center {
   justify-content: center !important;
 }
-.justify-content-end {
+.jc-end {
   justify-content: end !important;
 }
-.justify-content-evenly {
+.jc-evenly {
   justify-content: space-evenly !important;
 }
-.justify-content-start {
+.jc-start {
   justify-content: start !important;
 }
-.justify-content-stretch {
+.jc-stretch {
   justify-content: stretch !important;
 }
-.justify-items-center {
+.ji-center {
   justify-items: center !important;
 }
-.justify-items-end {
+.ji-end {
   justify-items: end !important;
 }
-.justify-items-start {
+.ji-start {
   justify-items: start !important;
 }
-.justify-items-stretch {
+.ji-stretch {
   justify-items: stretch !important;
 }
-.justify-self-center {
+.js-center {
   justify-self: center !important;
 }
-.justify-self-end {
+.js-end {
   justify-self: end !important;
 }
-.justify-self-start {
+.js-start {
   justify-self: start !important;
 }
-.justify-self-stretch {
+.js-stretch {
   justify-self: stretch !important;
 }
 

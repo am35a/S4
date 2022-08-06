@@ -15,7 +15,7 @@
 <section class="d-grid g-2">
     <h3 id="AlignContent">Align content</h3>
     <p>
-        The <b>align-content-...</b> classes sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
+        The <b>ac-...</b> classes sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex g-2">
@@ -29,7 +29,7 @@
         </div>
         <div class="d-grid g-2">
             {#each alignContentArr as item }
-                <div class="{containerType} g-2 bg-negative-10 p-2 align-content-{item}" style="height: 160rem;">
+                <div class="{containerType} g-2 bg-negative-10 p-2 ac-{item}" style="height: 160rem;">
                     <div class="bg-negative-10 px-2 py-1">one</div>
                     <div class="bg-negative-10 px-2 py-1">two</div>
                     <div class="bg-negative-10 px-2 py-1">three</div>
@@ -63,7 +63,7 @@
             <Precode class="rounded-top-0">
                 {#each alignContentArr as item }
                     {
-`<div class="${containerType} align-content-${item}">
+`<div class="${containerType} ac-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>

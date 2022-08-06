@@ -15,7 +15,7 @@
 <section class="d-grid g-2">
     <h3 class="JustifyContent">Justify content</h3>
     <p>
-        The <b>justify-content-...</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
+        The <b>jc-...</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
     </p>
     <div class="d-grid g-2 p-2 bg-positive rounded">
         <div class="d-flex g-2">
@@ -29,7 +29,7 @@
         </div>
         <div class="d-grid g-2">
             {#each justifyContentArr as item }
-                <div class="{containerType} g-2 bg-negative-10 p-2 justify-content-{item}">
+                <div class="{containerType} g-2 bg-negative-10 p-2 jc-{item}">
                     <div class="bg-negative-10 px-2 py-1">one</div>
                     <div class="bg-negative-10 px-2 py-1">two</div>
                     <div class="bg-negative-10 px-2 py-1">three</div>
@@ -45,7 +45,7 @@
             <Precode class="rounded-top-0">
                 {#each justifyContentArr as item }
                     {
-`<div class="d-flex justify-content-${item}">
+`<div class="d-flex jc-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>

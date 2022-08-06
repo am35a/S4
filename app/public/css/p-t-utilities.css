@@ -1,123 +1,124 @@
 /*  alignment section: align and justify contained in classes */
-.p\:t\:align-baseline {
+.p\:t\:va-baseline {
   vertical-align: baseline !important;
 }
-.p\:t\:align-sub {
+.p\:t\:va-sub {
   vertical-align: sub !important;
 }
-.p\:t\:align-super {
+.p\:t\:va-super {
   vertical-align: super !important;
 }
-.p\:t\:align-top {
+.p\:t\:va-top {
   vertical-align: top !important;
 }
-.p\:t\:align-middle {
+.p\:t\:va-middle {
   vertical-align: middle !important;
 }
-.p\:t\:align-bottom {
+.p\:t\:va-bottom {
   vertical-align: bottom !important;
 }
-.p\:t\:align-text-bottom {
+.p\:t\:va-text-bottom {
   vertical-align: text-bottom !important;
 }
-.p\:t\:align-text-top {
+.p\:t\:va-text-top {
   vertical-align: text-top !important;
 }
-.p\:t\:align-content-around {
+
+.p\:t\:ac-around {
   align-content: space-around !important;
 }
-.p\:t\:align-content-between {
+.p\:t\:ac-between {
   align-content: space-between !important;
 }
-.p\:t\:align-content-center {
+.p\:t\:ac-center {
   align-content: center !important;
 }
-.p\:t\:align-content-end {
+.p\:t\:ac-end {
   align-content: end !important;
 }
-.p\:t\:align-content-evenly {
+.p\:t\:ac-evenly {
   align-content: space-evenly !important;
 }
-.p\:t\:align-content-start {
+.p\:t\:ac-start {
   align-content: start !important;
 }
-.p\:t\:align-content-stretch {
+.p\:t\:ac-stretch {
   align-content: stretch !important;
 }
-.p\:t\:align-items-baseline {
+.p\:t\:ai-baseline {
   align-items: baseline !important;
 }
-.p\:t\:align-items-center {
+.p\:t\:ai-center {
   align-items: center !important;
 }
-.p\:t\:align-items-end {
+.p\:t\:ai-end {
   align-items: end !important;
 }
-.p\:t\:align-items-start {
+.p\:t\:ai-start {
   align-items: start !important;
 }
-.p\:t\:align-items-stretch {
+.p\:t\:ai-stretch {
   align-items: stretch !important;
 }
-.p\:t\:align-self-baseline {
+.p\:t\:as-baseline {
   align-self: baseline !important;
 }
-.p\:t\:align-self-center {
+.p\:t\:as-center {
   align-self: center !important;
 }
-.p\:t\:align-self-end {
+.p\:t\:as-end {
   align-self: end !important;
 }
-.p\:t\:align-self-start {
+.p\:t\:as-start {
   align-self: start !important;
 }
-.p\:t\:align-self-stretch {
+.p\:t\:as-stretch {
   align-self: stretch !important;
 }
 
-.p\:t\:justify-content-around {
+.p\:t\:jc-around {
   justify-content: space-around !important;
 }
-.p\:t\:justify-content-between {
+.p\:t\:jc-between {
   justify-content: space-between !important;
 }
-.p\:t\:justify-content-center {
+.p\:t\:jc-center {
   justify-content: center !important;
 }
-.p\:t\:justify-content-end {
+.p\:t\:jc-end {
   justify-content: end !important;
 }
-.p\:t\:justify-content-evenly {
+.p\:t\:jc-evenly {
   justify-content: space-evenly !important;
 }
-.p\:t\:justify-content-start {
+.p\:t\:jc-start {
   justify-content: start !important;
 }
-.p\:t\:justify-content-stretch {
+.p\:t\:jc-stretch {
   justify-content: stretch !important;
 }
-.p\:t\:justify-items-center {
+.p\:t\:ji-center {
   justify-items: center !important;
 }
-.p\:t\:justify-items-end {
+.p\:t\:ji-end {
   justify-items: end !important;
 }
-.p\:t\:justify-items-start {
+.p\:t\:ji-start {
   justify-items: start !important;
 }
-.p\:t\:justify-items-stretch {
+.p\:t\:ji-stretch {
   justify-items: stretch !important;
 }
-.p\:t\:justify-self-center {
+.p\:t\:js-center {
   justify-self: center !important;
 }
-.p\:t\:justify-self-end {
+.p\:t\:js-end {
   justify-self: end !important;
 }
-.p\:t\:justify-self-start {
+.p\:t\:js-start {
   justify-self: start !important;
 }
-.p\:t\:justify-self-stretch {
+.p\:t\:js-stretch {
   justify-self: stretch !important;
 }
 

@@ -13,14 +13,14 @@
         4: '4'
     }
     let verticalAlignObj = {
-        'align-baseline': 'Baseline',
-        'align-sub': 'Sub',
-        'align-super': 'Super',
-        'align-top': 'Top',
-        'align-middle': 'Middle',
-        'align-bottom': 'Bottom',
-        'align-text-bottom': 'Text bottom',
-        'align-text-top': 'Text top'
+        'va-baseline': 'Baseline',
+        'va-sub': 'Sub',
+        'va-super': 'Super',
+        'va-top': 'Top',
+        'va-middle': 'Middle',
+        'va-bottom': 'Bottom',
+        'va-text-bottom': 'Text bottom',
+        'va-text-top': 'Text top'
     }
 </script>
 
