@@ -12,14 +12,14 @@
         Pay attention the <b>border-...-0</b> classes remove the border by remove border width that resizing the container! If you need to keep the size of the container as before use <b>bg-transparent</b>.
     </div>
     <div class="d-grid g-2 p-2 bg-positive br">
-        <div class="d-flex flex-wrap g-2">
+        <div class="d-grid cols-4 g-2">
             <div class="bg-negative-10 p-4 b bs-none">bs-none</div>
         </div>
-        <div class="d-flex flex-wrap g-2">
+        <div class="d-grid cols-4 g-2">
             <div class="bg-negative-10 p-4 b bxs-none">bxs-none</div>
             <div class="bg-negative-10 p-4 b bys-none">bys-none</div>
         </div>
-        <div class="d-flex flex-wrap g-2">
+        <div class="d-grid cols-4 g-2">
             <div class="bg-negative-10 p-4 b bls-none">bls-none</div>
             <div class="bg-negative-10 p-4 b bts-none">bts-none</div>
             <div class="bg-negative-10 p-4 b brs-none">brs-none</div>
