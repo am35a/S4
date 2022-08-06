@@ -3,34 +3,56 @@
 /*
     border section: border round, sizes, placement, color of accent and extra palette contained in classes
 $borderSizes: sss, ss, s, m, l, ll, lll, llll
+$borderStyles: none, solid, dotted, dashed, double
 
 @mixin _border($orientation, $type)
-    // .#{$orientation}#{$type}b
-    //     &-init
-    //         border: var(--bw) var(--bs, solid) var(--bc, currentColor) !important
-    //     @each $item, $value in $placementDirections2
-    //         &#{$item}-init
-    //             border-#{$value}: var(--bw) var(--bs, solid) var(--bc, currentColor) !important
-    .#{$orientation}#{$type}b
-        @each $item, $value in $placementDirections2
-            &w,
-            &#{$item}w
-                border-#{$value}-width: var(--bw) !important
-                &-0
-                    border-#{$value}-width: 0 !important
-                @each $size in $borderSizes
-                    &-#{$size}
-                        border-#{$value}-width: var(--bw-#{$size}) !important    
 
-            &s,
-            &#{$item}s
-                border-#{$value}-style: var(--bs, solid) !important
-            // &-solid
-            //     border-style: solid !important
-            // &-dotted
-            //     border-style: dotted !important
-            // &-dashed
-            //     border-style: dashed !important
+    .#{$orientation}#{$type}b
+        border: var(--bw) var(--bs, solid) var(--bc, currentColor) !important
+        &x, &l
+            border-left: var(--bw) var(--bs, solid) var(--bc, currentColor) !important
+        &y, &t
+            border-top: var(--bw) var(--bs, solid) var(--bc, currentColor) !important
+        &x, &r
+            border-right: var(--bw) var(--bs, solid) var(--bc, currentColor) !important
+        &y, &b
+            border-bottom: var(--bw) var(--bs, solid) var(--bc, currentColor) !important
+
+        @each $width in $borderSizes
+            &x-#{$width}, &l-#{$width},
+            &w-#{$width},
+            &xw-#{$width}, &lw-#{$width}
+                border-left-width: #{$width} !important
+            &y-#{$width}, &t-#{$width},
+            &w-#{$width},
+            &yw-#{$width}, &tw-#{$width}
+                border-top-width: #{$width} !important
+            &x-#{$width}, &r-#{$width},
+            &w-#{$width},
+            &xw-#{$width}, &rw-#{$width}
+                border-right-width: #{$width} !important
+            &y-#{$width}, &b-#{$width},
+            &w-#{$width},
+            &yw-#{$width}, &bw-#{$width}
+                border-bottom-width: #{$width} !important
+
+        @each $style in $borderStyles
+            &x-#{$style}, &l-#{$style},
+            &s-#{$style},
+            &xs-#{$style}, &ls-#{$style}
+                border-left-style: #{$style} !important
+            &y-#{$style}, &t-#{$style},
+            &s-#{$style},
+            &ys-#{$style}, &ts-#{$style}
+                border-top-style: #{$style} !important
+            &x-#{$style}, &r-#{$style},
+            &s-#{$style},
+            &xs-#{$style}, &rs-#{$style}
+                border-right-style: #{$style} !important
+            &y-#{$style}, &b-#{$style},
+            &s-#{$style},
+            &ys-#{$style}, &bs-#{$style}
+                border-bottom-style: #{$style} !important
 
         &c
             border-color: currentColor

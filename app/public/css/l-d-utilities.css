@@ -242,137 +242,176 @@
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */
-.bw, .blw {
-  border-left-width: var(--bw) !important;
+.b {
+  border: var(--bw) var(--bs, solid) var(--bc, currentColor) !important;
 }
-.bw-0, .blw-0 {
-  border-left-width: 0 !important;
+.bx, .bl {
+  border-left: var(--bw) var(--bs, solid) var(--bc, currentColor) !important;
 }
-.bw-sss, .blw-sss {
-  border-left-width: var(--bw-sss) !important;
+.by, .bt {
+  border-top: var(--bw) var(--bs, solid) var(--bc, currentColor) !important;
 }
-.bw-ss, .blw-ss {
-  border-left-width: var(--bw-ss) !important;
+.bx, .br {
+  border-right: var(--bw) var(--bs, solid) var(--bc, currentColor) !important;
 }
-.bw-s, .blw-s {
-  border-left-width: var(--bw-s) !important;
+.by, .bb {
+  border-bottom: var(--bw) var(--bs, solid) var(--bc, currentColor) !important;
 }
-.bw-m, .blw-m {
-  border-left-width: var(--bw-m) !important;
+.bx-sss, .bl-sss, .bw-sss, .bxw-sss, .blw-sss {
+  border-left-width: sss !important;
 }
-.bw-l, .blw-l {
-  border-left-width: var(--bw-l) !important;
+.by-sss, .bt-sss, .bw-sss, .byw-sss, .btw-sss {
+  border-top-width: sss !important;
 }
-.bw-ll, .blw-ll {
-  border-left-width: var(--bw-ll) !important;
+.bx-sss, .br-sss, .bw-sss, .bxw-sss, .brw-sss {
+  border-right-width: sss !important;
 }
-.bw-lll, .blw-lll {
-  border-left-width: var(--bw-lll) !important;
+.by-sss, .bb-sss, .bw-sss, .byw-sss, .bbw-sss {
+  border-bottom-width: sss !important;
 }
-.bw-llll, .blw-llll {
-  border-left-width: var(--bw-llll) !important;
+.bx-ss, .bl-ss, .bw-ss, .bxw-ss, .blw-ss {
+  border-left-width: ss !important;
 }
-.bs, .bls {
-  border-left-style: var(--bs, solid) !important;
+.by-ss, .bt-ss, .bw-ss, .byw-ss, .btw-ss {
+  border-top-width: ss !important;
 }
-.bw, .btw {
-  border-top-width: var(--bw) !important;
+.bx-ss, .br-ss, .bw-ss, .bxw-ss, .brw-ss {
+  border-right-width: ss !important;
 }
-.bw-0, .btw-0 {
-  border-top-width: 0 !important;
+.by-ss, .bb-ss, .bw-ss, .byw-ss, .bbw-ss {
+  border-bottom-width: ss !important;
 }
-.bw-sss, .btw-sss {
-  border-top-width: var(--bw-sss) !important;
+.bx-s, .bl-s, .bw-s, .bxw-s, .blw-s {
+  border-left-width: s !important;
 }
-.bw-ss, .btw-ss {
-  border-top-width: var(--bw-ss) !important;
+.by-s, .bt-s, .bw-s, .byw-s, .btw-s {
+  border-top-width: s !important;
 }
-.bw-s, .btw-s {
-  border-top-width: var(--bw-s) !important;
+.bx-s, .br-s, .bw-s, .bxw-s, .brw-s {
+  border-right-width: s !important;
 }
-.bw-m, .btw-m {
-  border-top-width: var(--bw-m) !important;
+.by-s, .bb-s, .bw-s, .byw-s, .bbw-s {
+  border-bottom-width: s !important;
 }
-.bw-l, .btw-l {
-  border-top-width: var(--bw-l) !important;
+.bx-m, .bl-m, .bw-m, .bxw-m, .blw-m {
+  border-left-width: m !important;
 }
-.bw-ll, .btw-ll {
-  border-top-width: var(--bw-ll) !important;
+.by-m, .bt-m, .bw-m, .byw-m, .btw-m {
+  border-top-width: m !important;
 }
-.bw-lll, .btw-lll {
-  border-top-width: var(--bw-lll) !important;
+.bx-m, .br-m, .bw-m, .bxw-m, .brw-m {
+  border-right-width: m !important;
 }
-.bw-llll, .btw-llll {
-  border-top-width: var(--bw-llll) !important;
+.by-m, .bb-m, .bw-m, .byw-m, .bbw-m {
+  border-bottom-width: m !important;
 }
-.bs, .bts {
-  border-top-style: var(--bs, solid) !important;
+.bx-l, .bl-l, .bw-l, .bxw-l, .blw-l {
+  border-left-width: l !important;
 }
-.bw, .brw {
-  border-right-width: var(--bw) !important;
+.by-l, .bt-l, .bw-l, .byw-l, .btw-l {
+  border-top-width: l !important;
 }
-.bw-0, .brw-0 {
-  border-right-width: 0 !important;
+.bx-l, .br-l, .bw-l, .bxw-l, .brw-l {
+  border-right-width: l !important;
 }
-.bw-sss, .brw-sss {
-  border-right-width: var(--bw-sss) !important;
+.by-l, .bb-l, .bw-l, .byw-l, .bbw-l {
+  border-bottom-width: l !important;
 }
-.bw-ss, .brw-ss {
-  border-right-width: var(--bw-ss) !important;
+.bx-ll, .bl-ll, .bw-ll, .bxw-ll, .blw-ll {
+  border-left-width: ll !important;
 }
-.bw-s, .brw-s {
-  border-right-width: var(--bw-s) !important;
+.by-ll, .bt-ll, .bw-ll, .byw-ll, .btw-ll {
+  border-top-width: ll !important;
 }
-.bw-m, .brw-m {
-  border-right-width: var(--bw-m) !important;
+.bx-ll, .br-ll, .bw-ll, .bxw-ll, .brw-ll {
+  border-right-width: ll !important;
 }
-.bw-l, .brw-l {
-  border-right-width: var(--bw-l) !important;
+.by-ll, .bb-ll, .bw-ll, .byw-ll, .bbw-ll {
+  border-bottom-width: ll !important;
 }
-.bw-ll, .brw-ll {
-  border-right-width: var(--bw-ll) !important;
+.bx-lll, .bl-lll, .bw-lll, .bxw-lll, .blw-lll {
+  border-left-width: lll !important;
 }
-.bw-lll, .brw-lll {
-  border-right-width: var(--bw-lll) !important;
+.by-lll, .bt-lll, .bw-lll, .byw-lll, .btw-lll {
+  border-top-width: lll !important;
 }
-.bw-llll, .brw-llll {
-  border-right-width: var(--bw-llll) !important;
+.bx-lll, .br-lll, .bw-lll, .bxw-lll, .brw-lll {
+  border-right-width: lll !important;
 }
-.bs, .brs {
-  border-right-style: var(--bs, solid) !important;
+.by-lll, .bb-lll, .bw-lll, .byw-lll, .bbw-lll {
+  border-bottom-width: lll !important;
 }
-.bw, .bbw {
-  border-bottom-width: var(--bw) !important;
+.bx-llll, .bl-llll, .bw-llll, .bxw-llll, .blw-llll {
+  border-left-width: llll !important;
 }
-.bw-0, .bbw-0 {
-  border-bottom-width: 0 !important;
+.by-llll, .bt-llll, .bw-llll, .byw-llll, .btw-llll {
+  border-top-width: llll !important;
 }
-.bw-sss, .bbw-sss {
-  border-bottom-width: var(--bw-sss) !important;
+.bx-llll, .br-llll, .bw-llll, .bxw-llll, .brw-llll {
+  border-right-width: llll !important;
 }
-.bw-ss, .bbw-ss {
-  border-bottom-width: var(--bw-ss) !important;
+.by-llll, .bb-llll, .bw-llll, .byw-llll, .bbw-llll {
+  border-bottom-width: llll !important;
 }
-.bw-s, .bbw-s {
-  border-bottom-width: var(--bw-s) !important;
+.bx-none, .bl-none, .bs-none, .bxs-none, .bls-none {
+  border-left-style: none !important;
 }
-.bw-m, .bbw-m {
-  border-bottom-width: var(--bw-m) !important;
+.by-none, .bt-none, .bs-none, .bys-none, .bts-none {
+  border-top-style: none !important;
 }
-.bw-l, .bbw-l {
-  border-bottom-width: var(--bw-l) !important;
+.bx-none, .br-none, .bs-none, .bxs-none, .brs-none {
+  border-right-style: none !important;
 }
-.bw-ll, .bbw-ll {
-  border-bottom-width: var(--bw-ll) !important;
+.by-none, .bb-none, .bs-none, .bys-none, .bbs-none {
+  border-bottom-style: none !important;
 }
-.bw-lll, .bbw-lll {
-  border-bottom-width: var(--bw-lll) !important;
+.bx-solid, .bl-solid, .bs-solid, .bxs-solid, .bls-solid {
+  border-left-style: solid !important;
 }
-.bw-llll, .bbw-llll {
-  border-bottom-width: var(--bw-llll) !important;
+.by-solid, .bt-solid, .bs-solid, .bys-solid, .bts-solid {
+  border-top-style: solid !important;
 }
-.bs, .bbs {
-  border-bottom-style: var(--bs, solid) !important;
+.bx-solid, .br-solid, .bs-solid, .bxs-solid, .brs-solid {
+  border-right-style: solid !important;
+}
+.by-solid, .bb-solid, .bs-solid, .bys-solid, .bbs-solid {
+  border-bottom-style: solid !important;
+}
+.bx-dotted, .bl-dotted, .bs-dotted, .bxs-dotted, .bls-dotted {
+  border-left-style: dotted !important;
+}
+.by-dotted, .bt-dotted, .bs-dotted, .bys-dotted, .bts-dotted {
+  border-top-style: dotted !important;
+}
+.bx-dotted, .br-dotted, .bs-dotted, .bxs-dotted, .brs-dotted {
+  border-right-style: dotted !important;
+}
+.by-dotted, .bb-dotted, .bs-dotted, .bys-dotted, .bbs-dotted {
+  border-bottom-style: dotted !important;
+}
+.bx-dashed, .bl-dashed, .bs-dashed, .bxs-dashed, .bls-dashed {
+  border-left-style: dashed !important;
+}
+.by-dashed, .bt-dashed, .bs-dashed, .bys-dashed, .bts-dashed {
+  border-top-style: dashed !important;
+}
+.bx-dashed, .br-dashed, .bs-dashed, .bxs-dashed, .brs-dashed {
+  border-right-style: dashed !important;
+}
+.by-dashed, .bb-dashed, .bs-dashed, .bys-dashed, .bbs-dashed {
+  border-bottom-style: dashed !important;
+}
+.bx-double, .bl-double, .bs-double, .bxs-double, .bls-double {
+  border-left-style: double !important;
+}
+.by-double, .bt-double, .bs-double, .bys-double, .bts-double {
+  border-top-style: double !important;
+}
+.bx-double, .br-double, .bs-double, .bxs-double, .brs-double {
+  border-right-style: double !important;
+}
+.by-double, .bb-double, .bs-double, .bys-double, .bbs-double {
+  border-bottom-style: double !important;
 }
 .bc {
   border-color: currentColor;

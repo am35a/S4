@@ -7,11 +7,17 @@
     <h3 id="AddBorderWith">Add border</h3>
     <div class="d-grid g-2 p-2 bg-positive br">
         <div class="d-flex flex-wrap g-2">
-            <div class="bg-negative-10 p-4 bw bs">border</div>
-            <div class="bg-negative-10 p-4 btw bts">border-top</div>
-            <div class="bg-negative-10 p-4 brw brs">border-right</div>
-            <div class="bg-negative-10 p-4 bbw bbs">border-bottom</div>
-            <div class="bg-negative-10 p-4 blw bls">border-left</div>
+            <div class="bg-negative-10 p-4 b">b</div>
+        </div>
+        <div class="d-flex flex-wrap g-2">
+            <div class="bg-negative-10 p-4 bx">bx</div>
+            <div class="bg-negative-10 p-4 by">by</div>
+        </div>
+        <div class="d-flex flex-wrap g-2">
+            <div class="bg-negative-10 p-4 bl">bl</div>
+            <div class="bg-negative-10 p-4 bt">bt</div>
+            <div class="bg-negative-10 p-4 br">br</div>
+            <div class="bg-negative-10 p-4 bb">bb</div>
         </div>
     </div>
     <Details>
