@@ -14,32 +14,33 @@ $justifySelf: center, end, start, stretch
     alignment section: align and justify contained in classes
 
 @mixin _alignment($orientation, $type)
-    .#{$orientation}#{$type}align
+    .#{$orientation}#{$type}va
         @each $item in $align
             &-#{$item}
                vertical-align: $item !important
-        
+
+    .#{$orientation}#{$type}a
         @each $item, $value in $alignContent
-            &-content-#{$item}
+            &c-#{$item}
                 align-content: $value !important
         
         @each $item in $alignItems
-            &-items-#{$item}
+            &i-#{$item}
                 align-items: $item !important
     
         @each $item in $alignSelf
-            &-self-#{$item}
+            &s-#{$item}
                 align-self: $item !important
     
-    .#{$orientation}#{$type}justify
+    .#{$orientation}#{$type}j
         @each $item, $value in $justifyContent
-            &-content-#{$item}
+            &c-#{$item}
                 justify-content: $value !important
     
         @each $item in $justifyItems
-            &-items-#{$item}
+            &i-#{$item}
                 justify-items: $item !important
     
         @each $item in $justifySelf
-            &-self-#{$item}
+            &s-#{$item}
                 justify-self: $item !important
