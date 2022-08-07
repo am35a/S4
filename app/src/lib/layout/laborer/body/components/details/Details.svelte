@@ -12,7 +12,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </svelte:fragment>
             <svelte:fragment slot="body">
-                <div class="bg-positive">
+                <div class="bgc-positive">
                     <hr class="mx-2 border-secondary">
                     <div class="p-4">
                         Eligendi quibusdam ut labore ex eius? Corrupti voluptates dicta ducimus mollitia. Reprehenderit debitis reiciendis, facere voluptatum odio neque perspiciatis laboriosam ullam laudantium repellat, qui quod sit alias voluptas impedit illum.

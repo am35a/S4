@@ -5,18 +5,22 @@
 
 @mixin _background($orientation, $type)
     .#{$orientation}#{$type}bg
-        @each $item in $defaultColors
-            &-#{$item}
-               background-color: var(--#{$item}-color) !important
-        @each $item in $defaultColors
-            @for $i from 1 through math.div(100, $defaultExtraColorsInterval) - 1
-                &#{'-' + $item + '-' + $i * $defaultExtraColorsInterval}
-                    background-color: var(--#{$item}-color-#{$i * $defaultExtraColorsInterval}) !important
-        @each $item in $accentColors
-            &-#{$item}
-               background-color: var(--#{$item}-color) !important
-            @each $pref in $accentExtraColorsPrefs
-                &-#{$item + '-' + $pref}
-                    background-color: var(--#{$item}-color-#{$pref}) !important
-        &-transparent
-            background-color: transparent !important
+        &c
+            @each $item in $defaultColors
+                &-#{$item}
+                    background-color: var(--#{$item}-color) !important
+            @each $item in $defaultColors
+                @for $i from 1 through math.div(100, $defaultExtraColorsInterval) - 1
+                    &#{'-' + $item + '-' + $i * $defaultExtraColorsInterval}
+                        background-color: var(--#{$item}-color-#{$i * $defaultExtraColorsInterval}) !important
+            @each $item in $accentColors
+                &-#{$item}
+                    background-color: var(--#{$item}-color) !important
+                @each $pref in $accentExtraColorsPrefs
+                    &-#{$item + '-' + $pref}
+                        background-color: var(--#{$item}-color-#{$pref}) !important
+            &-transparent
+                background-color: transparent !important
+
+        &i
+          background-image: var(--bgi)

@@ -24,7 +24,7 @@
     <p>
         The classes from <b>color-...-10</b> to <b>color-...-90</b> make color transparent in percentage which point in the end of.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bgc-positive rounded">
         <div class="d-flex g-2">
             <Button
                 class="btn-secondary {defaultExtraColorsInterval ? 'active' : ''}"
@@ -34,7 +34,7 @@
             </Button>
         </div>
         <div class="d-grid g-2 cols-2">
-            <div class="d-flex flex-column-reverse g-2 bg-negative">
+            <div class="d-flex flex-column-reverse g-2 bgc-negative">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
                         <div class="color-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 text-center">
@@ -64,7 +64,7 @@
     <p>
         The <b>color-...-l</b> and <b>color-...-d</b> classes set light or dark shades for accent colors.
     </p>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bgc-positive rounded">
         <div class="d-grid g-2 cols-3">
             {#each accentColorsArr as item }
                 {#each Object.entries(accentExtraColorsObj) as [key, value]}

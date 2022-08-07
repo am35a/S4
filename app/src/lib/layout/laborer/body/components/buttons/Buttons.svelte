@@ -23,7 +23,7 @@
         <div class="d-grid g-2 overflow-x-auto">
             <div class="h4" aria-level={4} role="heading">Standard</div>
             <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start overflow-x-auto rounded">
-                <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bg-positive rounded">
+                <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bgc-positive rounded">
                     <div class="fw-600 fs-s2 d-grid">
                         <div class="row-span-full col-span-full mt-auto mr-auto fs-xs">State</div>
                         <div class="row-span-full col-span-full m-auto">\</div>
@@ -54,7 +54,7 @@
         <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Alternative</div>
             <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start overflow-x-auto rounded">
-                <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bg-positive rounded">
+                <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bgc-positive rounded">
                     <div class="fw-600 fs-s2 d-grid">
                         <div class="row-span-full col-span-full mt-auto mr-auto fs-xs">State</div>
                         <div class="row-span-full col-span-full m-auto">\</div>
@@ -160,7 +160,7 @@
     <div class="d-grid g-2">
         <div class="h4" aria-level={4} role="heading">Style mixed</div>
         <div>
-            <Button class="btn-alt-primary border-warning bg-positive"><Icon class="color-success" name="ghost"/>On the left</Button>
+            <Button class="btn-alt-primary border-warning bgc-positive"><Icon class="color-success" name="ghost"/>On the left</Button>
         </div>
         <Precode>
             {

@@ -13,13 +13,13 @@
     <div class="alert alert-warning js-start">
         The properties works only for <b>grid</b> containers!
     </div>
-    <div class="d-grid g-2 p-2 bg-positive rounded">
+    <div class="d-grid g-2 p-2 bgc-positive rounded">
         <div class="d-grid g-2">
             {#each justifyItemsArr as item }
-                <div class="d-grid cols-2 g-2 bg-negative-10 p-2 ji-{item}">
-                    <div class="bg-negative-10 px-2 py-1">one</div>
-                    <div class="bg-negative-10 px-2 py-1">two</div>
-                    <div class="bg-negative-10 px-2 py-1">three</div>
+                <div class="d-grid cols-2 g-2 bgc-negative-10 p-2 ji-{item}">
+                    <div class="bgc-negative-10 px-2 py-1">one</div>
+                    <div class="bgc-negative-10 px-2 py-1">two</div>
+                    <div class="bgc-negative-10 px-2 py-1">three</div>
                 </div>
             {/each}
         </div>

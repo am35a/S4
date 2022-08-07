@@ -26,7 +26,7 @@
             <br>
             The  icon sizes directly depend on the font size and the container in which the icon is placed.            
         </p>
-        <div class="d-grid g-2 p-2 bg-positive rounded">
+        <div class="d-grid g-2 p-2 bgc-positive rounded">
             <div style="min-height: 10em">
                 <Icon class={iconSize} name="ghost"/>
             </div>

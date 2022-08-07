@@ -41,7 +41,7 @@ import ColorBox from './colorbox/ColorBox.svelte'
 </div>
 <div class="d-flex flex-wrap g-2">
     {#each Object.entries(colorPaletteObj.accent.colors) as [key, value]}
-        <div class="d-grid ji-center p-4 bg-positive rounded flex-equal">
+        <div class="d-grid ji-center p-4 bgc-positive rounded flex-equal">
             <div>
                 <div class="text-center fw-600">{key}</div>
                 hsl({value.h} {value.s} {value.l})
