@@ -192,6 +192,9 @@
 .bgc-primary-d {
   background-color: var(--primary-color-d) !important;
 }
+.bgc-primary-m {
+  background-color: var(--primary-color-m) !important;
+}
 .bgc-secondary {
   background-color: var(--secondary-color) !important;
 }
@@ -200,6 +203,9 @@
 }
 .bgc-secondary-d {
   background-color: var(--secondary-color-d) !important;
+}
+.bgc-secondary-m {
+  background-color: var(--secondary-color-m) !important;
 }
 .bgc-info {
   background-color: var(--info-color) !important;
@@ -210,6 +216,9 @@
 .bgc-info-d {
   background-color: var(--info-color-d) !important;
 }
+.bgc-info-m {
+  background-color: var(--info-color-m) !important;
+}
 .bgc-success {
   background-color: var(--success-color) !important;
 }
@@ -218,6 +227,9 @@
 }
 .bgc-success-d {
   background-color: var(--success-color-d) !important;
+}
+.bgc-success-m {
+  background-color: var(--success-color-m) !important;
 }
 .bgc-warning {
   background-color: var(--warning-color) !important;
@@ -228,6 +240,9 @@
 .bgc-warning-d {
   background-color: var(--warning-color-d) !important;
 }
+.bgc-warning-m {
+  background-color: var(--warning-color-m) !important;
+}
 .bgc-error {
   background-color: var(--error-color) !important;
 }
@@ -236,6 +251,9 @@
 }
 .bgc-error-d {
   background-color: var(--error-color-d) !important;
+}
+.bgc-error-m {
+  background-color: var(--error-color-m) !important;
 }
 .bgc-transparent {
   background-color: transparent !important;
@@ -419,6 +437,9 @@
 .border-primary-d {
   border-color: var(--primary-color-d) !important;
 }
+.border-primary-m {
+  border-color: var(--primary-color-m) !important;
+}
 .border-secondary {
   border-color: var(--secondary-color) !important;
 }
@@ -427,6 +448,9 @@
 }
 .border-secondary-d {
   border-color: var(--secondary-color-d) !important;
+}
+.border-secondary-m {
+  border-color: var(--secondary-color-m) !important;
 }
 .border-info {
   border-color: var(--info-color) !important;
@@ -437,6 +461,9 @@
 .border-info-d {
   border-color: var(--info-color-d) !important;
 }
+.border-info-m {
+  border-color: var(--info-color-m) !important;
+}
 .border-success {
   border-color: var(--success-color) !important;
 }
@@ -445,6 +472,9 @@
 }
 .border-success-d {
   border-color: var(--success-color-d) !important;
+}
+.border-success-m {
+  border-color: var(--success-color-m) !important;
 }
 .border-warning {
   border-color: var(--warning-color) !important;
@@ -455,6 +485,9 @@
 .border-warning-d {
   border-color: var(--warning-color-d) !important;
 }
+.border-warning-m {
+  border-color: var(--warning-color-m) !important;
+}
 .border-error {
   border-color: var(--error-color) !important;
 }
@@ -463,6 +496,9 @@
 }
 .border-error-d {
   border-color: var(--error-color-d) !important;
+}
+.border-error-m {
+  border-color: var(--error-color-m) !important;
 }
 .border-transparent {
   border-color: transparent !important;
@@ -1829,6 +1865,9 @@
 .color-primary-d {
   color: var(--primary-color-d) !important;
 }
+.color-primary-m {
+  color: var(--primary-color-m) !important;
+}
 .color-secondary {
   color: var(--secondary-color) !important;
 }
@@ -1837,6 +1876,9 @@
 }
 .color-secondary-d {
   color: var(--secondary-color-d) !important;
+}
+.color-secondary-m {
+  color: var(--secondary-color-m) !important;
 }
 .color-info {
   color: var(--info-color) !important;
@@ -1847,6 +1889,9 @@
 .color-info-d {
   color: var(--info-color-d) !important;
 }
+.color-info-m {
+  color: var(--info-color-m) !important;
+}
 .color-success {
   color: var(--success-color) !important;
 }
@@ -1855,6 +1900,9 @@
 }
 .color-success-d {
   color: var(--success-color-d) !important;
+}
+.color-success-m {
+  color: var(--success-color-m) !important;
 }
 .color-warning {
   color: var(--warning-color) !important;
@@ -1865,6 +1913,9 @@
 .color-warning-d {
   color: var(--warning-color-d) !important;
 }
+.color-warning-m {
+  color: var(--warning-color-m) !important;
+}
 .color-error {
   color: var(--error-color) !important;
 }
@@ -1873,6 +1924,9 @@
 }
 .color-error-d {
   color: var(--error-color-d) !important;
+}
+.color-error-m {
+  color: var(--error-color-m) !important;
 }
 .color-transparent {
   color: transparent !important;

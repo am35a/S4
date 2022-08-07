@@ -1,6 +1,6 @@
 <script lang="ts">
     import Alert from 'src/components/Alert.svelte'
-import ColorBox from './colorbox/ColorBox.svelte'
+    import ColorBox from './colorbox/ColorBox.svelte'
 
     let colorPaletteObj = {
         default: {
@@ -10,8 +10,8 @@ import ColorBox from './colorbox/ColorBox.svelte'
         },
         accent: {
             settings: {
-                offset: 20,
-                mute: .4
+                offset: 15,
+                mute: .3
             },
             colors: {
                 primary: { h: 210, s: 90, l: 50 },
@@ -34,7 +34,7 @@ import ColorBox from './colorbox/ColorBox.svelte'
     Settings:
 </div>
 <div>
-    offset {20} mute {0.4}
+    offset {colorPaletteObj.accent.settings.offset} mute {colorPaletteObj.accent.settings.mute}
 </div>
 <div>
     Colors

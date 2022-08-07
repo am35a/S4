@@ -11,7 +11,8 @@
     let accentExtraColorsObj = {
         light: '-l',
         default: '',
-        dark: '-d'
+        dark: '-d',
+        mute: '-m'
     }
 </script>
 
@@ -65,7 +66,7 @@
         The <b>color-...-l</b> and <b>color-...-d</b> classes set light or dark shades for accent colors.
     </p>
     <div class="d-grid g-2 p-2 bgc-positive rounded">
-        <div class="d-grid g-2 cols-3">
+        <div class="d-grid g-2 cols-4">
             {#each accentColorsArr as item }
                 {#each Object.entries(accentExtraColorsObj) as [key, value]}
                     <span class="color-{item}{value}">color-{item}{value}</span>

@@ -3,6 +3,7 @@
 
     import ArticleAlignment from './alignment/Alignment.svelte'
     import ArticleColors from './colors/Colors.svelte'
+    import ArticleBackground from './background/Background.svelte'
     import ArticleBorder from './border/Border.svelte'
     import ArticleDisplay from './display/Display.svelte'
     import ArticleFlex from './flex/Flex.svelte'
@@ -24,6 +25,9 @@
 </Route>
 <Route path="/colors">
     <svelte:component this={ArticleColors}/>
+</Route>
+<Route path="/background">
+    <svelte:component this={ArticleBackground}/>
 </Route>
 <Route path="/border">
     <svelte:component this={ArticleBorder}/>

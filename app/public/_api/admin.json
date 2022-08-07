@@ -77,9 +77,14 @@
                         "segment": "/utilities/alignment"
                     },
                     {
-                        "id": 41,
+                        "id": 414,
                         "title": "Colors",
                         "segment": "/utilities/colors"
+                    },
+                    {
+                        "id": 41,
+                        "title": "Background",
+                        "segment": "/utilities/background"
                     },
                     {
                         "id": 42,
