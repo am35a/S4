@@ -34,7 +34,7 @@
         display: grid
         grid-template-columns: auto 1fr auto
         height: var(--layout-header-height)
-        background-color: var(--header-bgs, var(--secondary-color-l))
+        background-color: var(--header-bgc, var(--secondary-color-l))
         color: var(--header-color, var(--negative-color))
         z-index: 10
         .hamburger
@@ -47,7 +47,7 @@
                 justify-items: center
                 align-items: center
                 border-radius: var(--rounded-2, .25em)
-                // background-color: var(--aside-bgs, var(--secondary-color-d))
+                // background-color: var(--aside-bgc, var(--secondary-color-d))
         .title
             display: grid
             padding-left: 0.5em
