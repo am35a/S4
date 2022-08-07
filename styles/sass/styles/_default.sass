@@ -84,7 +84,10 @@
     --accent-colors-l: 50%
     --accent-colors-l-offset: 20%
 
+    --mute-color-alfa: 0.4
+
     @each $accentColor in $accentColors
         --#{$accentColor}-color-l: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)))
         --#{$accentColor}-color: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) var(--accent-colors-l))
         --#{$accentColor}-color-d: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)))
+        --#{$accentColor}-color-m: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) var(--accent-colors-l) / var(--mute-color-alfa))
