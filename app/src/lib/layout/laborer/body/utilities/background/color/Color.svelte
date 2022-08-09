@@ -60,6 +60,7 @@
     
     <p>
         The <b>bgc-...-l</b> and <b>bgc-...-d</b> classes set light or dark shades for accent background colors.
+        Light transparency able by mute color with class names <b>bgc-...-m</b>.
     </p>
     <div class="d-grid g-2 p-2 bgc-positive rounded">
         <div class="d-flex g-2">
