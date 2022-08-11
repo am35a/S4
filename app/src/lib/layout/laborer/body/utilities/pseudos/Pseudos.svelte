@@ -1,3 +1,9 @@
+<script lang="ts">
+    import Empty from './empty/Empty.svelte'
+</script>
+
 <section>
-    <div class="h2" aria-level={2} role="heading">Pseudos</div>
+    <h2>Pseudos</h2>
+
+    <Empty />
 </section>
