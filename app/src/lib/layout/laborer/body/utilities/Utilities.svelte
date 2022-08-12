@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Route, path, query, hash } from 'svelte-micro'
+    import { Route, pathToArray, path, query, hash } from 'svelte-micro'
 
     import ArticleAlignment from './alignment/Alignment.svelte'
     import ArticleColors from './colors/Colors.svelte'
@@ -16,9 +16,15 @@
     import ArticleSpacing from './spacing/Spacing.svelte'
     import ArticleTypography from './typography/Typography.svelte'
 
+    export let jumpTo: string = ''
 </script>
 
 <h1>Utilities</h1>
+{#if pathToArray($path).length === 1 && pathToArray($path)[0] === jumpTo}
+    <div>
+        Here will be the utilities description.
+    </div>
+{/if}
 
 <Route path="/alignment">
     <svelte:component this={ArticleAlignment}/>

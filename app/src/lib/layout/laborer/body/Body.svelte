@@ -46,7 +46,7 @@
             <svelte:component this={PageComponents}/>
         </Route>
         <Route path="/utilities">
-            <svelte:component this={PageUtilities}/>
+            <svelte:component this={PageUtilities} jumpTo={"/utilities"}/>
         </Route>
         <Route path="/layout">
             <svelte:component this={PageLayout}/>
