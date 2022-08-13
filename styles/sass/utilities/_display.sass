@@ -1,22 +1,31 @@
-$displayLegacy: block, inline, inline-block, flex, inline-flex, grid, inline-grid, flow-root
-// $displayModern: ( b-flow: block flow-root, i-flow: inline flow-root, b-flex: block flex, i-flex: inline flex, b-grid: block grid, i-grid: inline grid )
+$displayOutside: inline, block
+$displayInside: flow-root, flex, grid
+// $displayInside: ... table
+// $displayListItem: list-item
+// $displayInternal: table-row-group, table-footer-group, table-row, table-cell
+$displayLegacy: inline-block, inline-flex, inline-grid
+//$displayLegacy: ... inline-table ...
 $displayGlobal: inherit, initial, revert, unset
 $displayBox: contents, none
+
+// $displayModern: ( b-flow: block flow-root, i-flow: inline flow-root, b-flex: block flex, i-flex: inline flex, b-grid: block grid, i-grid: inline grid )
+
+$displayList: join( $displayOutside, $displayInside )
+// $displayList: join( $displayList, $displayListItem )
+// $displayList: join( $displayList, $displayInternal )
+$displayList: join( $displayList, $displayLegacy )
+$displayList: join( $displayList, $displayGlobal )
+$displayList: join( $displayList, $displayBox )
 
 /*
     display section: display variants contained in classes
 
 @mixin _display($orientation, $type)
     .#{$orientation}#{$type}d
-        @each $item in $displayLegacy
+        @each $item in $displayList
             &-#{$item}
                display: #{$item} !important
+
         // @each $item-name, $item-value in $displayModern
         //     &-#{$item-name}
         //        display: #{$item-value} !important
-        @each $item in $displayGlobal
-            &-#{$item}
-               display: #{$item} !important
-        @each $item in $displayBox
-            &-#{$item}
-               display: #{$item} !important
