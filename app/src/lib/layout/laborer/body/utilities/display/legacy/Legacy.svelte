@@ -1,5 +1,7 @@
 <script lang="ts">
     import Button from 'component/Button.svelte'
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
 
     let displayLegacyArr: string[] = ['inline-block', 'inline-flex', 'inline-grid']
     let displayLegacy: string = displayLegacyArr[0]
@@ -8,7 +10,7 @@
 <section>
     <h3 id="displayLegacy">Legacy</h3>
     <p>
-        ...
+        From CSS 2 the legasy display values welcome still here and set control element of their both side. Equared to two modern two words value: "inline-flex" = "inline flex" and ect.
     </p>
     <div class="d-grid g-2 p-2 bgc-positive rounded">
         <div class="d-flex g-2">
@@ -27,4 +29,20 @@
             </div>
         </div>
     </div>
+    <Details>
+        <svelte:fragment slot="title">
+            Code example
+        </svelte:fragment>
+        <svelte:fragment slot="body">
+            <Precode class="rounded-top-0">
+                {
+`<div class="d-${displayLegacy}">
+    <span>span</span>
+    <div>div</div>
+</div>
+`
+                }
+            </Precode>
+        </svelte:fragment>
+    </Details>
 </section>

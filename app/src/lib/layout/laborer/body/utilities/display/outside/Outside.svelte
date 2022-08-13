@@ -1,11 +1,13 @@
 <script lang="ts">
     import Button from 'component/Button.svelte'
+    import Precode from "component/Precode.svelte"
+    import Details from "component/Details.svelte"
 
     let displayOutsideArr: string[] = ['inline', 'block']
     let displayOutside: string = displayOutsideArr[0]
 </script>
 
-<section>
+<section class="d-grid g-2">
     <h3 id="displayOutside">Outside</h3>
     <p>
         These display values override the outside behavior of the elements.
@@ -27,4 +29,20 @@
             </div>
         </div>
     </div>
+    <Details>
+        <svelte:fragment slot="title">
+            Code example
+        </svelte:fragment>
+        <svelte:fragment slot="body">
+            <Precode class="rounded-top-0">
+                {
+`<div>
+    <span class="d-${displayOutside}">span</span>
+    <div class="d-${displayOutside}">div</div>
+</div>
+`
+                }
+            </Precode>
+        </svelte:fragment>
+    </Details>
 </section>
