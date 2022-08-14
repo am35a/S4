@@ -479,43 +479,43 @@
   grid-row-end: 12;
 }
 
-.t\:flex-row {
+.t\:f-row {
   flex-direction: row;
 }
-.t\:flex-column {
+.t\:f-column {
   flex-direction: column;
 }
-.t\:flex-row-reverse {
+.t\:f-row-reverse {
   flex-direction: row-reverse;
 }
-.t\:flex-column-reverse {
+.t\:f-column-reverse {
   flex-direction: column-reverse;
 }
-.t\:flex-wrap {
+.t\:f-wrap {
   flex-wrap: wrap;
 }
-.t\:flex-nowrap {
+.t\:f-nowrap {
   flex-wrap: nowrap;
 }
-.t\:flex-wrap-reverse {
+.t\:f-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
-.t\:flex-fill {
+.t\:f-fill {
   flex: 1 1 auto;
 }
-.t\:flex-equal {
+.t\:f-equal {
   flex: 1 1 0;
 }
-.t\:flex-grow-0 {
+.t\:f-grow-0 {
   flex-grow: 0;
 }
-.t\:flex-grow-1 {
+.t\:f-grow-1 {
   flex-grow: 1;
 }
-.t\:flex-shrink-0 {
+.t\:f-shrink-0 {
   flex-shrink: 0;
 }
-.t\:flex-shrink-1 {
+.t\:f-shrink-1 {
   flex-shrink: 1;
 }
 

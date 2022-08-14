@@ -12,7 +12,7 @@
         Pay attention the <b>border-...-0</b> classes remove the border by remove border width that resizing the container! If you need to keep the size of the container as before use <b>bgc-transparent</b>.
     </div>
     <div class="d-grid g-2 p-2 bgc-positive rounded">
-        <div class="d-flex flex-wrap g-4">
+        <div class="d-flex f-wrap g-4">
             <div class="bgc-negative-10 p-4 border border-0">border-0</div>
             <div class="bgc-negative-10 p-4 border border-top-0">border-top-0</div>
             <div class="bgc-negative-10 p-4 border border-right-0">border-right-0</div>

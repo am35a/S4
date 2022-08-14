@@ -30,7 +30,7 @@
         The <b>vertical-align-...</b> styles sets vertical alignment of an <b>inline</b>, <b>inline-block</b> elements.
     </p>
     <div class="d-grid g-2 p-2 bgc-positive rounded">
-        <div class="d-inline-flex flex-wrap g-2">
+        <div class="d-inline-flex f-wrap g-2">
             {#each Object.entries(lineHeightObj) as [key, value]}
                 <Button
                     class="btn-secondary {lineHeight === value ? 'active' : ''}"

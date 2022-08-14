@@ -907,43 +907,43 @@
   grid-row-end: 12;
 }
 
-.flex-row {
+.f-row {
   flex-direction: row;
 }
-.flex-column {
+.f-column {
   flex-direction: column;
 }
-.flex-row-reverse {
+.f-row-reverse {
   flex-direction: row-reverse;
 }
-.flex-column-reverse {
+.f-column-reverse {
   flex-direction: column-reverse;
 }
-.flex-wrap {
+.f-wrap {
   flex-wrap: wrap;
 }
-.flex-nowrap {
+.f-nowrap {
   flex-wrap: nowrap;
 }
-.flex-wrap-reverse {
+.f-wrap-reverse {
   flex-wrap: wrap-reverse;
 }
-.flex-fill {
+.f-fill {
   flex: 1 1 auto;
 }
-.flex-equal {
+.f-equal {
   flex: 1 1 0;
 }
-.flex-grow-0 {
+.f-grow-0 {
   flex-grow: 0;
 }
-.flex-grow-1 {
+.f-grow-1 {
   flex-grow: 1;
 }
-.flex-shrink-0 {
+.f-shrink-0 {
   flex-shrink: 0;
 }
-.flex-shrink-1 {
+.f-shrink-1 {
   flex-shrink: 1;
 }
 
