@@ -1,3 +1,7 @@
-<section>
-    <div class="h2" aria-level={2} role="heading">Flex</div>
-</section>
+<script lang="ts">
+    import SectionDisplay from './display/Display.svelte'
+</script>
+<article>
+    <h2 id="flex">Flex</h2>
+    <SectionDisplay />
+</article>

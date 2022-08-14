@@ -6,7 +6,7 @@
     let displayNone: boolean = false
 </script>
 
-<section>
+<section class="d-grid g-2">
     <h3 id="displayBox">Box</h3>
     <p>
         Using a d-none class make an element as removed from DOM tree.

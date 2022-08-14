@@ -3,7 +3,7 @@
     import SectionInside from './inside/Inside.svelte'
     // import SectionListItem from './listitem/ListItem.svelte'
     import SectionLegacy from './legacy/Legacy.svelte'
-    import SectionGlobal from './global/Global.svelte'
+    // import SectionGlobal from './global/Global.svelte'
     import SectionBox from './box/Box.svelte'
 
 </script>

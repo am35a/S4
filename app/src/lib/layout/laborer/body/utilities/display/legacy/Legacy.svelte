@@ -7,7 +7,7 @@
     let displayLegacy: string = displayLegacyArr[0]
 </script>
 
-<section>
+<section class="d-grid g-2">
     <h3 id="displayLegacy">Legacy</h3>
     <p>
         From CSS 2 the legasy display values welcome still here and set control element of their both side. Equared to two modern two words value: "inline-flex" = "inline flex" and ect.
