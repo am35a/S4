@@ -14,6 +14,6 @@
     <SectionInside />
     <!-- <SectionListItem /> -->
     <SectionLegacy />
-    <SectionGlobal />
+    <!-- <SectionGlobal /> -->
     <SectionBox />
 </article>

@@ -147,21 +147,6 @@
 .m\:d-inline-grid {
   display: inline-grid !important;
 }
-.m\:d-inherit {
-  display: inherit !important;
-}
-.m\:d-initial {
-  display: initial !important;
-}
-.m\:d-revert {
-  display: revert !important;
-}
-.m\:d-unset {
-  display: unset !important;
-}
-.m\:d-contents {
-  display: contents !important;
-}
 .m\:d-none {
   display: none !important;
 }

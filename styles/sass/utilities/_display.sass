@@ -5,8 +5,9 @@ $displayInside: flow-root, flex, grid
 // $displayInternal: table-row-group, table-footer-group, table-row, table-cell
 $displayLegacy: inline-block, inline-flex, inline-grid
 //$displayLegacy: ... inline-table ...
-$displayGlobal: inherit, initial, revert, unset
-$displayBox: contents, none
+// $displayGlobal: inherit, initial, revert, unset
+$displayBox: none
+// $displayBox: contents ...
 
 // $displayModern: ( b-flow: block flow-root, i-flow: inline flow-root, b-flex: block flex, i-flex: inline flex, b-grid: block grid, i-grid: inline grid )
 
@@ -14,7 +15,7 @@ $displayList: join( $displayOutside, $displayInside )
 // $displayList: join( $displayList, $displayListItem )
 // $displayList: join( $displayList, $displayInternal )
 $displayList: join( $displayList, $displayLegacy )
-$displayList: join( $displayList, $displayGlobal )
+// $displayList: join( $displayList, $displayGlobal )
 $displayList: join( $displayList, $displayBox )
 
 /*
