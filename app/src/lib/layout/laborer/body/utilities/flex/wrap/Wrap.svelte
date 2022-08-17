@@ -3,25 +3,25 @@
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
 
-    let displayWrapArr: string[] = ['nowrap', 'wrap', 'wrap-reverse']
-    let displayWrap: string = displayWrapArr[0]
+    let flexWrapArr: string[] = ['nowrap', 'wrap', 'wrap-reverse']
+    let flexWrap: string = flexWrapArr[0]
 </script>
 <section class="d-grid g-2">
-    <h3 id="wrapFlex">Wrap</h3>
+    <h3 id="flexWrap">Wrap</h3>
     <p>
-        ...
+        Change wrap items with <b>f-nowrap</b>, <b>f-wrap<b>, <b>f-wrap-reverse</b> classes in a flex container.
     </p>
     <div class="d-grid g-2 p-2 bgc-positive rounded">
         <div class="d-flex g-2">
-            {#each displayWrapArr as values }
+            {#each flexWrapArr as values }
                 <Button
-                    class="btn-secondary {displayWrap === values ? 'active' : ''}"
-                    on:click = {() => displayWrap = values}
-                    disabled = {displayWrap === values}
+                    class="btn-secondary {flexWrap === values ? 'active' : ''}"
+                    on:click = {() => flexWrap = values}
+                    disabled = {flexWrap === values}
                 >d-{values}</Button>
             {/each}
         </div>
-        <div class="d-flex f-{displayWrap} g-2 bgc-negative-10 p-4 overflow-x-hidden space-nowrap">
+        <div class="d-flex f-{flexWrap} g-2 bgc-negative-10 p-4 overflow-x-hidden space-nowrap">
             <div class="bgc-negative-10 px-2 py-1">one</div>
             <div class="bgc-negative-10 px-2 py-1">two</div>
             <div class="bgc-negative-10 px-2 py-1">three</div>

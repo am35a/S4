@@ -504,7 +504,7 @@
   flex: 1 1 auto;
 }
 .l\:m\:f-equal {
-  flex: 1 1 0;
+  flex: 1 1 100%;
 }
 .l\:m\:f-grow-0 {
   flex-grow: 0;
