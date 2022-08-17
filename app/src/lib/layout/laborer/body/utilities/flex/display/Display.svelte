@@ -32,7 +32,7 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {
-` <div class="d-${displayFlex}">...</div>
+`<div class="d-${displayFlex}">...</div>
 `
                 }
             </Precode>
