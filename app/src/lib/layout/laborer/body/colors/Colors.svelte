@@ -39,14 +39,14 @@
 <div>
     Colors
 </div>
-<div class="d-flex f-wrap g-2">
+<div class="d-flex fw-wrap g-2">
     {#each Object.entries(colorPaletteObj.accent.colors) as [key, value]}
         <div class="d-grid ji-center p-4 bgc-positive rounded f-equal">
             <div>
                 <div class="text-center fw-600">{key}</div>
                 hsl({value.h} {value.s} {value.l})
             </div>
-            <div class="d-flex f-nowrap ji-center">
+            <div class="d-flex fw-nowrap ji-center">
                 <div class="space-nowrap as-end">
                     <div class="text-center fw-600">{key}-l</div>
                     hsl({value.h} {value.s} {value.l + colorPaletteObj.accent.settings.offset})

@@ -17,7 +17,7 @@ $justifySelf: center, end, start, stretch
     .#{$orientation}#{$type}va
         @each $item in $align
             &-#{$item}
-               vertical-align: $item !important
+                vertical-align: $item !important
 
     .#{$orientation}#{$type}a
         @each $item, $value in $alignContent

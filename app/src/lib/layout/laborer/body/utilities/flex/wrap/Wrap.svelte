@@ -9,7 +9,7 @@
 <section class="d-grid g-2">
     <h3 id="flexWrap">Wrap</h3>
     <p>
-        Change wrap items with <b>f-nowrap</b>, <b>f-wrap<b>, <b>f-wrap-reverse</b> classes in a flex container.
+        Change wrap items with <b>fw-nowrap</b>, <b>fw-wrap<b>, <b>fw-wrap-reverse</b> classes in a flex container.
     </p>
     <div class="d-grid g-2 p-2 bgc-positive rounded">
         <div class="d-flex g-2">

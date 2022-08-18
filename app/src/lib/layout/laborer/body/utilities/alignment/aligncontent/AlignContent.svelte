@@ -5,7 +5,7 @@
     
     let containerTypesObj = {
         grid: 'd-grid cols-2',
-        flex: 'd-flex f-wrap'
+        flex: 'd-flex fw-wrap'
     }
     let containerType: string = containerTypesObj.grid
 

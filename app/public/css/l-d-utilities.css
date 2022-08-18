@@ -907,44 +907,57 @@
   grid-row-end: 12;
 }
 
-.f-row {
-  flex-direction: row;
-}
-.f-column {
-  flex-direction: column;
-}
-.f-row-reverse {
-  flex-direction: row-reverse;
-}
-.f-column-reverse {
-  flex-direction: column-reverse;
-}
-.f-wrap {
-  flex-wrap: wrap;
-}
-.f-nowrap {
-  flex-wrap: nowrap;
-}
-.f-wrap-reverse {
-  flex-wrap: wrap-reverse;
-}
+/*  flex section: fill, equal and other sets to flex container items */
 .f-fill {
-  flex: 1 1 auto;
+  flex: 1 1 auto !important;
 }
 .f-equal {
-  flex: 1 1 100%;
+  flex: 1 1 100% !important;
 }
-.f-grow-0 {
-  flex-grow: 0;
+.fd-row {
+  flex-direction: row !important;
 }
-.f-grow-1 {
-  flex-grow: 1;
+.fd-row-reverse {
+  flex-direction: row-reverse !important;
 }
-.f-shrink-0 {
-  flex-shrink: 0;
+.fd-column {
+  flex-direction: column !important;
 }
-.f-shrink-1 {
-  flex-shrink: 1;
+.fd-column-reverse {
+  flex-direction: column-reverse !important;
+}
+.fw-wrap {
+  flex-wrap: wrap !important;
+}
+.fw-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
+.fw-nowrap {
+  flex-wrap: nowrap !important;
+}
+.fb-auto {
+  flex-basis: auto !important;
+}
+.fb-fill {
+  flex-basis: fill !important;
+}
+.fb-max-content {
+  flex-basis: max-content !important;
+}
+.fb-min-content {
+  flex-basis: min-content !important;
+}
+.fb-fit-content {
+  flex-basis: fit-content !important;
+}
+.fb-unset {
+  flex-basis: unset !important;
+}
+.fg {
+  flex-grow: var(--fg, 1) !important;
+}
+.fs {
+  flex-shrink: var(--fs, 1) !important;
 }
 
 /*  overflow section: overflow type and axis contained in classes */

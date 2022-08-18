@@ -479,44 +479,57 @@
   grid-row-end: 12;
 }
 
-.l\:m\:f-row {
-  flex-direction: row;
-}
-.l\:m\:f-column {
-  flex-direction: column;
-}
-.l\:m\:f-row-reverse {
-  flex-direction: row-reverse;
-}
-.l\:m\:f-column-reverse {
-  flex-direction: column-reverse;
-}
-.l\:m\:f-wrap {
-  flex-wrap: wrap;
-}
-.l\:m\:f-nowrap {
-  flex-wrap: nowrap;
-}
-.l\:m\:f-wrap-reverse {
-  flex-wrap: wrap-reverse;
-}
+/*  flex section: fill, equal and other sets to flex container items */
 .l\:m\:f-fill {
-  flex: 1 1 auto;
+  flex: 1 1 auto !important;
 }
 .l\:m\:f-equal {
-  flex: 1 1 100%;
+  flex: 1 1 100% !important;
 }
-.l\:m\:f-grow-0 {
-  flex-grow: 0;
+.l\:m\:fd-row {
+  flex-direction: row !important;
 }
-.l\:m\:f-grow-1 {
-  flex-grow: 1;
+.l\:m\:fd-row-reverse {
+  flex-direction: row-reverse !important;
 }
-.l\:m\:f-shrink-0 {
-  flex-shrink: 0;
+.l\:m\:fd-column {
+  flex-direction: column !important;
 }
-.l\:m\:f-shrink-1 {
-  flex-shrink: 1;
+.l\:m\:fd-column-reverse {
+  flex-direction: column-reverse !important;
+}
+.l\:m\:fw-wrap {
+  flex-wrap: wrap !important;
+}
+.l\:m\:fw-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
+.l\:m\:fw-nowrap {
+  flex-wrap: nowrap !important;
+}
+.l\:m\:fb-auto {
+  flex-basis: auto !important;
+}
+.l\:m\:fb-fill {
+  flex-basis: fill !important;
+}
+.l\:m\:fb-max-content {
+  flex-basis: max-content !important;
+}
+.l\:m\:fb-min-content {
+  flex-basis: min-content !important;
+}
+.l\:m\:fb-fit-content {
+  flex-basis: fit-content !important;
+}
+.l\:m\:fb-unset {
+  flex-basis: unset !important;
+}
+.l\:m\:fg {
+  flex-grow: var(--fg, 1) !important;
+}
+.l\:m\:fs {
+  flex-shrink: var(--fs, 1) !important;
 }
 
 /*  overflow section: overflow type and axis contained in classes */

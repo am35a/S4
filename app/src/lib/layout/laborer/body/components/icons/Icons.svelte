@@ -30,7 +30,7 @@
             <div style="min-height: 10em">
                 <Icon class={iconSize} name="ghost"/>
             </div>
-            <div class="d-inline-flex f-wrap g-2">
+            <div class="d-inline-flex fw-wrap g-2">
                 {#each Object.entries(iconSizeArr) as [key, value]}
                     <Button
                         class="btn-secondary {iconSize === value ? 'active' : ''}"

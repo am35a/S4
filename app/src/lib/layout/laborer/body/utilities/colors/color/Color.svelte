@@ -35,7 +35,7 @@
             </Button>
         </div>
         <div class="d-grid g-2 cols-2">
-            <div class="d-flex f-column-reverse g-2 bgc-negative">
+            <div class="d-flex fd-column-reverse g-2 bgc-negative">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
                         <div class="color-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 text-center">
@@ -47,7 +47,7 @@
                     color-{defaultColorsArr[0]}
                 </div>
             </div>
-            <div class="d-flex f-column-reverse g-2">
+            <div class="d-flex fd-column-reverse g-2">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
                         <div class="color-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 text-center">

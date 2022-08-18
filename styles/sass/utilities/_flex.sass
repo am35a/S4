@@ -1,31 +1,30 @@
+$directions: row, row-reverse, column, column-reverse
+$wraps: wrap, wrap-reverse, nowrap
+$basis: auto, fill, max-content, min-content, fit-content, unset
+
+/*
+    flex section: fill, equal and other sets to flex container items
+
 @mixin _flex($orientation, $type)
     .#{$orientation}#{$type}f
-        &-row
-            flex-direction: row
-        &-column
-            flex-direction: column
-        &-row-reverse
-            flex-direction: row-reverse
-        &-column-reverse
-            flex-direction: column-reverse
-        &-wrap
-            flex-wrap: wrap
-        &-nowrap
-            flex-wrap: nowrap
-        &-wrap-reverse
-            flex-wrap: wrap-reverse
-
         &-fill
-            flex: 1 1 auto
+            flex: 1 1 auto !important
         &-equal
-            flex: 1 1 100%
+            flex: 1 1 100% !important
 
-        &-grow-0
-            flex-grow: 0
-        &-grow-1
-            flex-grow: 1
+        @each $item in $directions
+            &d-#{$item}
+                flex-direction: $item !important
 
-        &-shrink-0
-            flex-shrink: 0
-        &-shrink-1
-            flex-shrink: 1
+        @each $item in $wraps
+            &w-#{$item}
+                flex-wrap: $item !important
+
+        @each $item in $basis
+            &b-#{$item}
+                flex-basis: $item !important
+
+        &g
+            flex-grow: var(--fg, 1) !important
+        &s
+            flex-shrink: var(--fs, 1) !important

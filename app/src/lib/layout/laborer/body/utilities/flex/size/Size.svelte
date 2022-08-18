@@ -30,18 +30,18 @@
             <div class="bgc-negative-10 px-2 py-1 f-equal">equal three</div>
         </div>
         <div class="d-flex g-2 bgc-negative-10 p-4">
-            <div class="bgc-negative-10 px-2 py-1 f-grow-1">grow-1 one</div>
+            <div class="bgc-negative-10 px-2 py-1 fg">grow-1 one</div>
             <div class="bgc-negative-10 px-2 py-1">simple two</div>
             <div class="bgc-negative-10 px-2 py-1">simple three</div>
         </div>
         <div class="d-flex g-2 bgc-negative-10 p-4">
             <div class="bgc-negative-10 px-2 py-1 w-100">w-100 one</div>
-            <div class="bgc-negative-10 px-2 py-1 f-shrink-0">shrink-0 two</div>
+            <div class="bgc-negative-10 px-2 py-1 fs">shrink-0 two</div>
             <div class="bgc-negative-10 px-2 py-1">simple three</div>
         </div>
         <div class="d-flex g-2 bgc-negative-10 p-4">
             <div class="bgc-negative-10 px-2 py-1 w-100">w-100 one</div>
-            <div class="bgc-negative-10 px-2 py-1 f-shrink-1">shrink-1 two</div>
+            <div class="bgc-negative-10 px-2 py-1 fs">shrink-1 two</div>
             <div class="bgc-negative-10 px-2 py-1">simple three</div>
         </div>
     </div>
@@ -73,18 +73,18 @@
     <div class="f-equal">equal three</div>
 </div>
 <div class="d-flex">
-    <div class="f-grow-1">grow-1 one</div>
+    <div class="fg">grow-1 one</div>
     <div>simple two</div>
     <div>simple three</div>
 </div>
 <div class="d-flex">
     <div class="w-100">w-100 one</div>
-    <div class="f-shrink-0">shrink-0 two</div>
+    <div class="fs">shrink-0 two</div>
     <div>simple three</div>
 </div>
 <div class="d-flex">
     <div class="w-100">w-100 one</div>
-    <div class="f-shrink-1">shrink-1 two</div>
+    <div class="fs">shrink-1 two</div>
     <div>simple three</div>
 </div>
 `
