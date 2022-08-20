@@ -6,6 +6,7 @@
     let flexWrapArr: string[] = ['nowrap', 'wrap', 'wrap-reverse']
     let flexWrap: string = flexWrapArr[0]
 </script>
+
 <section class="d-grid g-2">
     <h3 id="flexWrap">Wrap</h3>
     <p>

@@ -480,6 +480,9 @@
 }
 
 /*  flex section: fill, equal and other sets to flex container items */
+.m\:f-none {
+  flex: 0 0 auto !important;
+}
 .m\:f-fill {
   flex: 1 1 auto !important;
 }
@@ -507,9 +510,6 @@
 .m\:fw-nowrap {
   flex-wrap: nowrap !important;
 }
-.m\:fb-auto {
-  flex-basis: auto !important;
-}
 .m\:fb-fill {
   flex-basis: fill !important;
 }
@@ -522,11 +522,17 @@
 .m\:fb-fit-content {
   flex-basis: fit-content !important;
 }
-.m\:fb-unset {
-  flex-basis: unset !important;
+.m\:fb {
+  flex-basis: var(--fb, auto) !important;
+}
+.m\:fb-100 {
+  flex-basis: 100% !important;
 }
 .m\:fg {
   flex-grow: var(--fg, 1) !important;
+}
+.m\:fg-0 {
+  flex-grow: 0 !important;
 }
 .m\:fs {
   flex-shrink: var(--fs, 1) !important;

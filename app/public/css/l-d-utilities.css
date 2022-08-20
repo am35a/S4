@@ -908,6 +908,9 @@
 }
 
 /*  flex section: fill, equal and other sets to flex container items */
+.f-none {
+  flex: 0 0 auto !important;
+}
 .f-fill {
   flex: 1 1 auto !important;
 }
@@ -935,9 +938,6 @@
 .fw-nowrap {
   flex-wrap: nowrap !important;
 }
-.fb-auto {
-  flex-basis: auto !important;
-}
 .fb-fill {
   flex-basis: fill !important;
 }
@@ -950,11 +950,17 @@
 .fb-fit-content {
   flex-basis: fit-content !important;
 }
-.fb-unset {
-  flex-basis: unset !important;
+.fb {
+  flex-basis: var(--fb, auto) !important;
+}
+.fb-100 {
+  flex-basis: 100% !important;
 }
 .fg {
   flex-grow: var(--fg, 1) !important;
+}
+.fg-0 {
+  flex-grow: 0 !important;
 }
 .fs {
   flex-shrink: var(--fs, 1) !important;
