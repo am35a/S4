@@ -19,7 +19,7 @@
                     class="btn-secondary {flexWrap === values ? 'active' : ''}"
                     on:click = {() => flexWrap = values}
                     disabled = {flexWrap === values}
-                >d-{values}</Button>
+                >fw-{values}</Button>
             {/each}
         </div>
         <div class="d-flex fw-{flexWrap} g-2 bgc-negative-10 p-4 overflow-x-hidden space-nowrap">

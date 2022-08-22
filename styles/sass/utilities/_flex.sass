@@ -17,14 +17,7 @@ $basis: (fill: fill, max: max-content, min: min-content, fit: fit-content, 100: 
                 flex-wrap: $item !important
 
         flex: var(--fg, 0) var(--fs, 1) var(--fb, auto) !important
-        // &-none
-        //     flex: 0 0 auto !important
-        // &-fill
-        //     flex: 1 1 auto !important
-        // &-equal
-        //     flex: 1 1 100% !important
 
         @each $item, $value in $basis
             &b-#{$item}
                 flex-basis: var(--fb, $value) !important
-
