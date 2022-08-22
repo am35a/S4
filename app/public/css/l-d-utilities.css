@@ -908,14 +908,8 @@
 }
 
 /*  flex section: fill, equal and other sets to flex container items */
-.f-none {
-  flex: 0 0 auto !important;
-}
-.f-fill {
-  flex: 1 1 auto !important;
-}
-.f-equal {
-  flex: 1 1 100% !important;
+.f {
+  flex: var(--fg, 0) var(--fs, 1) var(--fb, auto) !important;
 }
 .fd-row {
   flex-direction: row !important;
@@ -939,31 +933,19 @@
   flex-wrap: nowrap !important;
 }
 .fb-fill {
-  flex-basis: fill !important;
+  flex-basis: var(--fb, fill) !important;
 }
-.fb-max-content {
-  flex-basis: max-content !important;
+.fb-max {
+  flex-basis: var(--fb, max-content) !important;
 }
-.fb-min-content {
-  flex-basis: min-content !important;
+.fb-min {
+  flex-basis: var(--fb, min-content) !important;
 }
-.fb-fit-content {
-  flex-basis: fit-content !important;
-}
-.fb {
-  flex-basis: var(--fb, auto) !important;
+.fb-fit {
+  flex-basis: var(--fb, fit-content) !important;
 }
 .fb-100 {
-  flex-basis: 100% !important;
-}
-.fg {
-  flex-grow: var(--fg, 1) !important;
-}
-.fg-0 {
-  flex-grow: 0 !important;
-}
-.fs {
-  flex-shrink: var(--fs, 1) !important;
+  flex-basis: var(--fb, 100%) !important;
 }
 
 /*  overflow section: overflow type and axis contained in classes */
@@ -1793,6 +1775,9 @@
 }
 .text-decoration-line-through {
   text-decoration: line-through !important;
+}
+.text-no-select {
+  user-select: none;
 }
 .text-truncate {
   overflow: hidden !important;

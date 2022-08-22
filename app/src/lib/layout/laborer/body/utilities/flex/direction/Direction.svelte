@@ -8,11 +8,11 @@
 <section class="d-grid g-2">
     <h3 id="flexDirection">Direction</h3>
     <p>
-        ...
+        The <b>fd-...</b> styles sets direction of an elements into flex container.
     </p>
     <div class="d-grid g-2 p-2 bgc-positive rounded">
         {#each flexDirectionsArr as direction }
-            <div class="d-flex f-{direction} g-2 bgc-negative-10 p-2">
+            <div class="d-flex fd-{direction} g-2 bgc-negative-10 p-2">
                 <div class="bgc-negative-10 px-2 py-1">one</div>
                 <div class="bgc-negative-10 px-2 py-1">two</div>
                 <div class="bgc-negative-10 px-2 py-1">three</div>
@@ -27,7 +27,7 @@
             <Precode class="rounded-top-0">
                 {#each flexDirectionsArr as direction }
                     {
-`<div class="d-flex f-${direction}">
+`<div class="d-flex fd-${direction}">
     <div>one</div>
     <div>two</div>
     <div>three</div>

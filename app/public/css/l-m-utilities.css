@@ -480,14 +480,8 @@
 }
 
 /*  flex section: fill, equal and other sets to flex container items */
-.l\:m\:f-none {
-  flex: 0 0 auto !important;
-}
-.l\:m\:f-fill {
-  flex: 1 1 auto !important;
-}
-.l\:m\:f-equal {
-  flex: 1 1 100% !important;
+.l\:m\:f {
+  flex: var(--fg, 0) var(--fs, 1) var(--fb, auto) !important;
 }
 .l\:m\:fd-row {
   flex-direction: row !important;
@@ -511,31 +505,19 @@
   flex-wrap: nowrap !important;
 }
 .l\:m\:fb-fill {
-  flex-basis: fill !important;
+  flex-basis: var(--fb, fill) !important;
 }
-.l\:m\:fb-max-content {
-  flex-basis: max-content !important;
+.l\:m\:fb-max {
+  flex-basis: var(--fb, max-content) !important;
 }
-.l\:m\:fb-min-content {
-  flex-basis: min-content !important;
+.l\:m\:fb-min {
+  flex-basis: var(--fb, min-content) !important;
 }
-.l\:m\:fb-fit-content {
-  flex-basis: fit-content !important;
-}
-.l\:m\:fb {
-  flex-basis: var(--fb, auto) !important;
+.l\:m\:fb-fit {
+  flex-basis: var(--fb, fit-content) !important;
 }
 .l\:m\:fb-100 {
-  flex-basis: 100% !important;
-}
-.l\:m\:fg {
-  flex-grow: var(--fg, 1) !important;
-}
-.l\:m\:fg-0 {
-  flex-grow: 0 !important;
-}
-.l\:m\:fs {
-  flex-shrink: var(--fs, 1) !important;
+  flex-basis: var(--fb, 100%) !important;
 }
 
 /*  overflow section: overflow type and axis contained in classes */
@@ -1349,6 +1331,9 @@
 }
 .l\:m\:text-decoration-line-through {
   text-decoration: line-through !important;
+}
+.l\:m\:text-no-select {
+  user-select: none;
 }
 .l\:m\:text-truncate {
   overflow: hidden !important;
