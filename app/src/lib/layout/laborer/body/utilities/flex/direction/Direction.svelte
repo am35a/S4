@@ -25,7 +25,7 @@
         </svelte:fragment>
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
-                {#each flexDirectionsArr as direction }
+                {#each flexDirectionsArr as direction}
                     {
 `<div class="d-flex fd-${direction}">
     <div>one</div>
