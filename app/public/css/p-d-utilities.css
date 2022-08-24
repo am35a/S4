@@ -521,40 +521,40 @@
 }
 
 /*  overflow section: overflow type and axis contained in classes */
-.p\:overflow-auto {
+.p\:o-auto {
   overflow: auto !important;
 }
-.p\:overflow-hidden {
+.p\:o-hidden {
   overflow: hidden !important;
 }
-.p\:overflow-visible {
+.p\:o-visible {
   overflow: visible !important;
 }
-.p\:overflow-scroll {
+.p\:o-scroll {
   overflow: scroll !important;
 }
-.p\:overflow-x-auto {
+.p\:ox-auto {
   overflow-x: auto !important;
 }
-.p\:overflow-x-hidden {
+.p\:ox-hidden {
   overflow-x: hidden !important;
 }
-.p\:overflow-x-visible {
+.p\:ox-visible {
   overflow-x: visible !important;
 }
-.p\:overflow-x-scroll {
+.p\:ox-scroll {
   overflow-x: scroll !important;
 }
-.p\:overflow-y-auto {
+.p\:oy-auto {
   overflow-y: auto !important;
 }
-.p\:overflow-y-hidden {
+.p\:oy-hidden {
   overflow-y: hidden !important;
 }
-.p\:overflow-y-visible {
+.p\:oy-visible {
   overflow-y: visible !important;
 }
-.p\:overflow-y-scroll {
+.p\:oy-scroll {
   overflow-y: scroll !important;
 }
 

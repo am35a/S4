@@ -1,9 +1,8 @@
 <script lang="ts">
-    import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
 
-    let containerClasses: string = 'overflow-hidden fw-wrap'    
+    let containerClasses: string = 'o-hidden fw-wrap'    
     let containerWidth: number = 100
 </script>
 

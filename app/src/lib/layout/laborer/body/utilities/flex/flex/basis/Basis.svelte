@@ -6,6 +6,7 @@
     let flexBasisArr: string[] = ['100', 'fill', 'max', 'min', 'fit']
     let flexBasis: string = flexBasisArr[0]
 
+    let containerClasses: string = ''    
     let containerWidth: number = 100
 </script>
 
@@ -14,12 +15,21 @@
     <p>
         ...
     </p>
-    <div class="d-grid">
-        <label for="containerWidth">Container width {containerWidth}%:</label>
-        <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={containerWidth}>
-    </div>
-
+    
     <div class="d-grid g-2 p-2 bgc-positive rounded">
+        <div class="d-grid">
+            <label for="containerClasses">Container classes:</label>
+            <input
+                id="containerClasses"
+                class="border"
+                bind:value={containerClasses}
+                type="text"
+            >
+        </div>
+        <div class="d-grid">
+            <label for="containerWidth">Container width {containerWidth}%:</label>
+            <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={containerWidth}>
+        </div>
         <div class="d-flex g-2">
             {#each flexBasisArr as values }
                 <Button
@@ -29,11 +39,11 @@
                 >fb-{values}</Button>
             {/each}
         </div>
-        <!-- <div class="d-flex g-2 bgc-negative-10 p-4">
+        <div class="d-flex g-2 bgc-negative-10 p-4" style="width: {containerWidth}%;">
             <div class="fb-{flexBasis} bgc-negative-10 px-2 py-1">fb-{flexBasis} one</div>
-            <div class="fg bgc-negative-10 px-2 py-1">simple two</div>
-            <div class="fg bgc-negative-10 px-2 py-1">simple three</div>
-        </div> -->
+            <div class="bgc-negative-10 px-2 py-1">simple two</div>
+            <div class="bgc-negative-10 px-2 py-1">simple three</div>
+        </div>
         <div class="d-flex g-2 bgc-negative-10 p-4" style="width: {containerWidth}%;">
             <div class="f bgc-negative-10 px-2 py-1" style="--fb: 100%;">100% one</div>
             <div class="bgc-negative-10 px-2 py-1">two</div>
@@ -46,8 +56,40 @@
         </div>
         <div class="d-flex g-2 bgc-negative-10 p-4" style="width: {containerWidth}%;">
             <div class="f bgc-negative-10 px-2 py-1" style="--fb: 25%">fb 25% one</div>
-            <div class="bgc-negative-10 px-2 py-1">two</div>
-            <div class="bgc-negative-10 px-2 py-1">three</div>
+            <div class="bgc-negative-10 px-2 py-1">simple two</div>
+            <div class="bgc-negative-10 px-2 py-1">simple three</div>
         </div>
     </div>
+    <Details>
+        <svelte:fragment slot="title">
+            Code example
+        </svelte:fragment>
+        <svelte:fragment slot="body">
+            <Precode class="rounded-top-0">
+                {
+`<div class="d-flex">
+    <div class="fb-${flexBasis}">fb-{flexBasis} one</div>
+    <div>simple two</div>
+    <div>simple three</div>
+</div>
+<div class="d-flex">
+    <div class="f" style="--fb: 100%;">100% one</div>
+    <div>two</div>
+    <div>three</div>
+</div>
+<div class="d-flex">
+    <div class="f" style="--fb: 100%;">equal one</div>
+    <div class="f" style="--fb: 100%;">equal two</div>
+    <div class="f" style="--fb: 100%;">equal three</div>
+</div>
+<div class="d-flex">
+    <div class="f" style="--fb: 25%">fb 25% one</div>
+    <div>simple two</div>
+    <div>simple three</div>
+</div>
+`
+                }
+            </Precode>
+        </svelte:fragment>
+    </Details>
 </div>

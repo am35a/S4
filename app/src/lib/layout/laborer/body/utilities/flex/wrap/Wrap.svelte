@@ -22,7 +22,7 @@
                 >fw-{values}</Button>
             {/each}
         </div>
-        <div class="d-flex fw-{flexWrap} g-2 bgc-negative-10 p-4 overflow-x-hidden space-nowrap">
+        <div class="d-flex fw-{flexWrap} g-2 bgc-negative-10 p-4 ox-hidden space-nowrap">
             <div class="bgc-negative-10 px-2 py-1">one</div>
             <div class="bgc-negative-10 px-2 py-1">two</div>
             <div class="bgc-negative-10 px-2 py-1">three</div>
