@@ -19,10 +19,15 @@
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1; --fs: 1; --fb: 250rem;">two</div>
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 2; --fs: 2; --fb: 250rem;">three</div>
         </div>
-        <div class="d-flex g-2 bgc-negative-10 p-4">
+        <div class="d-flex g-2 bgc-negative-10 p-4" style="width: {containerWidth}%;">
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1; --fb: 0; ">equal one</div>
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1; --fb: 0; ">equal two</div>
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1; --fb: 0; ">equal three</div>
+        </div>
+        <div class="d-flex g-2 bgc-negative-10 p-4" style="width: {containerWidth}%;">
+            <div class="bgc-negative-10 px-2 py-1 w-100">w-100 one</div>
+            <div class="bgc-negative-10 px-2 py-1 f" style="--fs: 0;">shrink-1 two</div>
+            <div class="bgc-negative-10 px-2 py-1">simple three</div>
         </div>
 
         <!-- <div class="d-flex g-2 bgc-negative-10 p-4">

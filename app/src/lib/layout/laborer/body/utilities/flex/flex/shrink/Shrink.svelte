@@ -9,7 +9,7 @@
 <div class="d-grid g-2">
     <h4 id="flexShrink">Shrink</h4>
     <p>
-        <!-- The <b>f-[fill/equal/grow-(0/1)/shrink-(0/1)]</b> classes sets size of items in flex container. -->
+        The shrink set up avaliable after add <b>f</b> class to elements into flex container. Use variable <b>--fs</b> to manage flex shrink.
     </p>
     <div class="d-grid g-2 p-2 bgc-positive rounded">
         <div class="d-grid">

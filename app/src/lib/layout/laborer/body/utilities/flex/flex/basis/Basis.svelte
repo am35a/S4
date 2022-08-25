@@ -13,9 +13,8 @@
 <div class="d-grid g-2">
     <h4 id="flexBasis">Basis</h4>
     <p>
-        ...
+        The basis set up avaliable after add <b>f</b> class to elements into flex container. Use variable <b>--fb</b> to manage flex basis.
     </p>
-    
     <div class="d-grid g-2 p-2 bgc-positive rounded">
         <div class="d-grid">
             <label for="containerClasses">Container classes:</label>
