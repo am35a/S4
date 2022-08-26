@@ -56,7 +56,11 @@ $fontSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
         &-transparent
             color: transparent !important
 
-    .#{$orientation}#{$type}h, h
+    #{$orientation}#{$type}h, .#{$orientation}#{$type}h
+        &1, &2, &3, &4, &5, &6
+            margin-bottom: .25em
+        &2, &3, &4, &5, &6
+            margin-top: .5em
         &1
             font-size: calc(var(--fs-md) * 3) !important
             font-weight: 600 !important
@@ -75,6 +79,9 @@ $fontSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
         &6
             font-size: var(--fs-md) !important
             font-weight: 600 !important
+
+    #{$orientation}#{$type}p
+        margin-bottom: .5em
 
     .#{$orientation}#{$type}f
         &s

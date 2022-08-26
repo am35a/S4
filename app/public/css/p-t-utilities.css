@@ -1477,29 +1477,39 @@
   color: transparent !important;
 }
 
-.p\:t\:h1, h1 {
+p\:t\:h1, p\:t\:h2, p\:t\:h3, p\:t\:h4, p\:t\:h5, p\:t\:h6, .p\:t\:h1, .p\:t\:h2, .p\:t\:h3, .p\:t\:h4, .p\:t\:h5, .p\:t\:h6 {
+  margin-bottom: 0.25em;
+}
+p\:t\:h2, p\:t\:h3, p\:t\:h4, p\:t\:h5, p\:t\:h6, .p\:t\:h2, .p\:t\:h3, .p\:t\:h4, .p\:t\:h5, .p\:t\:h6 {
+  margin-top: 0.5em;
+}
+p\:t\:h1, .p\:t\:h1 {
   font-size: calc(var(--fs-md) * 3) !important;
   font-weight: 600 !important;
 }
-.p\:t\:h2, h2 {
+p\:t\:h2, .p\:t\:h2 {
   font-size: calc(var(--fs-md) * 2.5) !important;
   font-weight: 600 !important;
 }
-.p\:t\:h3, h3 {
+p\:t\:h3, .p\:t\:h3 {
   font-size: calc(var(--fs-md) * 2) !important;
   font-weight: 600 !important;
 }
-.p\:t\:h4, h4 {
+p\:t\:h4, .p\:t\:h4 {
   font-size: calc(var(--fs-md) * 1.5) !important;
   font-weight: 600 !important;
 }
-.p\:t\:h5, h5 {
+p\:t\:h5, .p\:t\:h5 {
   font-size: calc(var(--fs-md) * 1.25) !important;
   font-weight: 600 !important;
 }
-.p\:t\:h6, h6 {
+p\:t\:h6, .p\:t\:h6 {
   font-size: var(--fs-md) !important;
   font-weight: 600 !important;
+}
+
+p\:t\:p {
+  margin-bottom: 0.5em;
 }
 
 .p\:t\:fs-xxs {

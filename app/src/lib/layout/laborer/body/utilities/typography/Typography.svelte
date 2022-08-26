@@ -1,13 +1,13 @@
 <script lang="ts">
-    import Headings from './headings/Headings.svelte'
+    import SectionHeadings from './headings/Headings.svelte'
 </script>
 
-<section>
-    <div class="h2" aria-level={2} role="heading">Typography</div>
-    <Headings/>
+<article class="d-grid">
+    <h2>Typography</h2>
+    <SectionHeadings/>
 
-    <small>one small</small>
+    <!-- <small>one small</small>
     <small><small>bouble small</small></small>
-    <small><small><small>triple small</small></small></small>
+    <small><small><small>triple small</small></small></small> -->
 
-</section>
+</article>

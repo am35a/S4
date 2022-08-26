@@ -4,10 +4,12 @@
     import Details from 'component/Details.svelte'
 </script>
 
-<div class="d-grid g-2">
+<section>
     <h3>Style mixed</h3>
-    <p>...</p>
-    <div class="d-grid g-2 cols-2 p-2 bgc-positive rounded">
+    <p>
+        ...
+    </p>
+    <div class="d-grid g-4 cols-2 p-4 mb-4 ai-start bgc-positive rounded">
         <Alert class="alert-primary border">
             Alert component with border
         </Alert>
@@ -44,4 +46,4 @@
             </Precode>
         </svelte:fragment>
     </Details>
-</div>
+</section>

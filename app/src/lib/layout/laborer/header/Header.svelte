@@ -50,7 +50,7 @@
                 // background-color: var(--aside-bgc, var(--secondary-color-d))
         .title
             display: grid
-            padding-left: 0.5em
+            padding-left: 1em
             align-items: center
             font-size: var(--fs-lg, large)
             font-weight: 500

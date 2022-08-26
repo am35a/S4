@@ -4,10 +4,12 @@
     import Details from 'component/Details.svelte'
 </script>
 
-<section class="d-grid g-2">
-    <h3>Default</h3>
-    <p>S4 alerts default views.</p>
-    <div class="d-grid g-2 cols-2 p-2 bgc-positive rounded">
+<section>
+    <h3 id="default">Default</h3>
+    <p>
+        S4 alerts default views.
+    </p>
+    <div class="d-grid g-4 cols-2 ai-start p-4 mb-4 bgc-positive rounded">
         <Alert class="alert-primary">
             Alert primary message with <a href={'#'}>link</a>
         </Alert>
