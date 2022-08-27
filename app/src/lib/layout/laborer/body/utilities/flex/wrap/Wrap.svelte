@@ -7,12 +7,12 @@
     let flexWrap: string = flexWrapArr[0]
 </script>
 
-<section class="d-grid g-2">
+<section>
     <h3 id="flexWrap">Wrap</h3>
     <p>
         Change wrap items with <b>fw-...</b> classes in a flex container.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
         <div class="d-flex g-2">
             {#each flexWrapArr as values }
                 <Button
@@ -22,7 +22,7 @@
                 >fw-{values}</Button>
             {/each}
         </div>
-        <div class="d-flex fw-{flexWrap} g-2 bgc-negative-10 p-4 ox-hidden space-nowrap">
+        <div class="d-flex fw-{flexWrap} g-4 bgc-negative-10 p-4 ox-hidden space-nowrap">
             <div class="bgc-negative-10 px-2 py-1">one</div>
             <div class="bgc-negative-10 px-2 py-1">two</div>
             <div class="bgc-negative-10 px-2 py-1">three</div>
@@ -59,5 +59,4 @@
             </Precode>
         </svelte:fragment>
     </Details>
-
 </section>

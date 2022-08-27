@@ -8,8 +8,8 @@
     import SectionAttachment from './attachment/Attachment.svelte'
 </script>
 
-<article class="d-grid g-2">
-    <h2 id="Background">Background</h2>
+<article>
+    <h2 id="background">Background</h2>
     <SectionColor />
     <SectionImage />
     <SectionAttachment />

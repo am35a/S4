@@ -6,7 +6,7 @@
 </script>
 
 <section>
-    <h3 id="JustifySelf">Justify self</h3>
+    <h3 id="justifySelf">Justify self</h3>
     <p>
         The <b>js-...</b> utilities sets the way a box is justified inside its alignment container along the appropriate axis.
     </p>

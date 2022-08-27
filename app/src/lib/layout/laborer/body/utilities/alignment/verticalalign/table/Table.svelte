@@ -4,7 +4,7 @@
 </script>
 
 <div>
-    <h4>Table cells container</h4>
+    <h4 id="alignTable">Table cells container</h4>
     <p>
         Use values <b>top</b>, <b>middle</b> and <b>bottom</b> for vertical alignmet into table sells.
     </p>

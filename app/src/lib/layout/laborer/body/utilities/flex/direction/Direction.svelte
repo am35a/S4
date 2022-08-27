@@ -5,14 +5,14 @@
     let flexDirectionsArr: string[] = ['row', 'row-reverse', 'column', 'column-reverse']
 </script>
 
-<section class="d-grid g-2">
+<section>
     <h3 id="flexDirection">Direction</h3>
     <p>
         The <b>fd-...</b> styles sets direction of an elements into flex container.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
         {#each flexDirectionsArr as direction }
-            <div class="d-flex fd-{direction} g-2 bgc-negative-10 p-2">
+            <div class="d-flex fd-{direction} g-4 bgc-negative-10 p-4">
                 <div class="bgc-negative-10 px-2 py-1">one</div>
                 <div class="bgc-negative-10 px-2 py-1">two</div>
                 <div class="bgc-negative-10 px-2 py-1">three</div>

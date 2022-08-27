@@ -25,12 +25,12 @@
 </script>
 
 <div>
-    <h4>Inline container</h4>
+    <h4 id="alignBlock">Inline container</h4>
     <p>
         The <b>vertical-align-...</b> styles sets vertical alignment of an <b>inline</b>, <b>inline-block</b> elements.
     </p>
     <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
-        <div class="d-inline-flex fw-wrap g-4">
+        <div class="d-inline-flex fw-wrap g-2">
             {#each Object.entries(lineHeightObj) as [key, value]}
                 <Button
                     class="btn-secondary {lineHeight === value ? 'active' : ''}"

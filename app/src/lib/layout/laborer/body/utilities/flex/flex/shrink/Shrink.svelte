@@ -6,31 +6,33 @@
     let containerWidth: number = 100
 </script>
 
-<div class="d-grid g-2">
+<div>
     <h4 id="flexShrink">Shrink</h4>
     <p>
         The shrink set up avaliable after add <b>f</b> class to elements into flex container. Use variable <b>--fs</b> to manage flex shrink.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
-        <div class="d-grid">
-            <label for="containerClasses">Container classes:</label>
-            <input
-                id="containerClasses"
-                class="border"
-                bind:value={containerClasses}
-                type="text"
-            >
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+        <div class="d-grid g-2">
+            <div class="d-grid">
+                <label for="containerClasses">Container classes:</label>
+                <input
+                    id="containerClasses"
+                    class="border"
+                    bind:value={containerClasses}
+                    type="text"
+                >
+            </div>
+            <div class="d-grid">
+                <label for="containerWidth">Container width {containerWidth}%:</label>
+                <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={containerWidth}>
+            </div>
         </div>
-        <div class="d-grid">
-            <label for="containerWidth">Container width {containerWidth}%:</label>
-            <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={containerWidth}>
-        </div>
-        <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-4 ox-hidden" style="width: {containerWidth}%;">
+        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4 ox-hidden" style="width: {containerWidth}%;">
             <div class="bgc-negative-10 px-2 py-1">one</div>
             <div class="f bgc-negative-10 px-2 py-1" style="--fs: 1; width: 250rem;">two</div>
             <div class="bgc-negative-10 px-2 py-1">three</div>
         </div>
-        <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-4 ox-hidden" style="width: {containerWidth}%;">
+        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4 ox-hidden" style="width: {containerWidth}%;">
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1">one</div>
             <div class="bgc-negative-10 px-2 py-1" style="width: 150rem;">two</div>
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1">three</div>

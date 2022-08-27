@@ -2,7 +2,7 @@
     import SectionHeadings from './headings/Headings.svelte'
 </script>
 
-<article class="d-grid">
+<article>
     <h2>Typography</h2>
     <SectionHeadings/>
 

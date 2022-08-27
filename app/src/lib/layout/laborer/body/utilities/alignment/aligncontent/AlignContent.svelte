@@ -13,12 +13,12 @@
 </script>
 
 <section>
-    <h3 id="AlignContent">Align content</h3>
+    <h3 id="alignContent">Align content</h3>
     <p>
         The <b>ac-...</b> classes sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
     </p>
     <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
-        <div class="d-flex g-4">
+        <div class="d-flex g-2">
             {#each Object.entries(containerTypesObj) as [key, value]}
                 <Button
                     class="btn-secondary {containerType === value ? 'active' : ''}"

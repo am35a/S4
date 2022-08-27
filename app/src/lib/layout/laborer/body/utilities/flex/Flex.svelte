@@ -3,19 +3,12 @@
     import SectionDirection from './direction/Direction.svelte'
     import SectionWrap from './wrap/Wrap.svelte'
     import SectionFlex from './flex/Flex.svelte'
-
-    // import SectionGrow from './grow/Grow.svelte'
-    // import SectionShrink from './shrink/Shrink.svelte'
-    // import SectionBasis from './basis/Basis.svelte'
 </script>
 
-<article class="d-grid g-2">
+<article>
     <h2 id="flex">Flex</h2>
     <SectionDisplay />
     <SectionDirection />
     <SectionWrap />
     <SectionFlex />
-    <!-- <SectionGrow />
-    <SectionShrink />
-    <SectionBasis /> -->
 </article>

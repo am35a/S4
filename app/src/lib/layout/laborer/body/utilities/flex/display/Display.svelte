@@ -6,12 +6,13 @@
     let displayFlexArr: string[] = ['inline-flex', 'flex']
     let displayFlex: string = displayFlexArr[0]
 </script>
-<section class="d-grid g-2">
+
+<section>
     <h3 id="displayFlex">Display</h3>
     <p>
         Create the flex container to start. Choose one of behaviors: <b>inline-flex</b> or <b>flex</b>.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
         <div class="d-flex g-2">
             {#each displayFlexArr as values }
                 <Button

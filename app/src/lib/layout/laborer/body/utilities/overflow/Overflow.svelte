@@ -1,3 +1,26 @@
+<script lang="ts">
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
+</script>
 <section>
-    <div class="h2" aria-level={2} role="heading">Overflow</div>
+    <h2>Overflow</h2>
+    <p>
+        ...
+    </p>
+    <div class="d-grid g-2 p-2 bgc-positive rounded">
+        ...
+    </div>
+    <Details>
+        <svelte:fragment slot="title">
+            Code example
+        </svelte:fragment>
+        <svelte:fragment slot="body">
+            <Precode class="rounded-top-0">
+                {
+`...
+`
+                }
+            </Precode>
+        </svelte:fragment>
+    </Details>
 </section>

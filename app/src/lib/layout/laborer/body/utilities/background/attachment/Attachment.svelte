@@ -2,8 +2,8 @@
 
 </script>
 
-<section class="d-grid g-2">
-    <h3 id="BackgroundAttachment">Attachment</h3>
+<section>
+    <h3 id="attachment">Attachment</h3>
     <p>
         ...
     </p>

@@ -13,12 +13,12 @@
 </script>
 
 <section>
-    <h3 class="JustifyContent">Justify content</h3>
+    <h3 class="justifyContent">Justify content</h3>
     <p>
         The <b>jc-...</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
     </p>
     <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
-        <div class="d-flex g-4">
+        <div class="d-flex g-2">
             {#each Object.entries(containerTypeObj) as [key, value]}
                 <Button
                     class="btn-secondary {containerType === value ? 'active' : ''}"

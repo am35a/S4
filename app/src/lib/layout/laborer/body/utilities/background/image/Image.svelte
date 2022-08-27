@@ -2,8 +2,8 @@
 
 </script>
 
-<section class="d-grid g-2">
-    <h3 id="BackgroundImage">Image</h3>
+<section>
+    <h3 id="backgroundImage">Image</h3>
     <p>
         ...
     </p>

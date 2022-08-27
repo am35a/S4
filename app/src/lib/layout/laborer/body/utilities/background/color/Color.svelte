@@ -15,14 +15,14 @@
     let accentExtraColor: string = accentExtraColorsObj.default
 </script>
 
-<section class="d-grid g-2">
-    <h3 id="BackgroundColor">Color</h3>
+<section>
+    <h3 id="backgroundColor">Color</h3>
     <p>
         The classes from <b>bgc-...-10</b> to <b>bgc-...-90</b> make color transparent in percentage which point in the end of.
         Using <b>bgc-transparent</b> class make background transparent.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
-        <div class="d-flex g-2">
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+        <div class="d-flex g-4">
             <Button
                 class="btn-secondary {defaultExtraColorsInterval ? 'active' : ''}"
                 on:click = {() => defaultExtraColorsInterval ? defaultExtraColorsInterval = null : defaultExtraColorsInterval = 10 }
@@ -30,7 +30,7 @@
                 default extra colors {defaultExtraColorsInterval ? 'hide' : 'show'}
             </Button>
         </div>
-        <div class="d-grid g-2 cols-2">
+        <div class="d-grid g-4 cols-2">
             <div class="d-flex fd-column-reverse g-2 bgc-negative">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
@@ -43,7 +43,7 @@
                     bgc-{defaultColorsArr[0]}
                 </div>
             </div>
-            <div class="d-flex fd-column-reverse g-2">
+            <div class="d-flex fd-column-reverse g-4">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
                         <div class="bgc-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 color-{defaultColorsArr[0]} ta-center">
@@ -62,8 +62,8 @@
         The <b>bgc-...-l</b> and <b>bgc-...-d</b> classes set light or dark shades for accent background colors.
         Light transparency able by mute color with class names <b>bgc-...-m</b>.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
-        <div class="d-flex g-2">
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+        <div class="d-flex g-4">
             {#each Object.entries(accentExtraColorsObj) as [key, value]}
                 <Button
                     class="btn-secondary {accentExtraColor === value ? 'active' : ''}"
@@ -72,7 +72,7 @@
                 >{key}</Button>
             {/each}
         </div>
-        <div class="d-grid g-2 cols-2">
+        <div class="d-grid g-4 cols-2">
             {#each accentColorsArr as item }
                 <div class="bgc-{item}{accentExtraColor} p-4 color-positive">
                     <!-- {item} {Object.keys(accentExtraColorsObj).find(key => accentExtraColorsObj[key] === accentExtraColor)} color -->

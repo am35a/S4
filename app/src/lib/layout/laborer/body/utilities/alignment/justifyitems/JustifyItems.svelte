@@ -6,7 +6,7 @@
 </script>
 
 <section>
-    <h3 id="JustifyItems">Justify items</h3>
+    <h3 id="justifyItems">Justify items</h3>
     <p>
         The <b>ji-...</b> classes work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.
     </p>

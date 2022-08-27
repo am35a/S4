@@ -9,7 +9,7 @@
 </script>
 
 <article>
-    <h2 id="Alignment">Alignment</h2>
+    <h2 id="alignment">Alignment</h2>
     <SectionVerticalAlign />
     <SectionJustifyContent />
     <SectionJustifyItems />

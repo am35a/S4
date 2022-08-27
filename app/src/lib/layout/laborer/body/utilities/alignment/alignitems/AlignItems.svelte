@@ -13,12 +13,12 @@
 </script>
 
 <section>
-    <h3 id="AlignItems">Align items</h3>
+    <h3 id="alignItems">Align items</h3>
     <p>
         The <b>ai-...</b> classes sets the <b>as-</b> classes value on all direct children as a group.
     </p>
     <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
-        <div class="d-flex g-4">
+        <div class="d-flex g-2">
             {#each Object.entries(containerTypesObj) as [key, value]}
                 <Button
                     class="btn-secondary {containerType === value ? 'active' : ''}"
