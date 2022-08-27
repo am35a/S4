@@ -43,12 +43,12 @@
     {#each Object.entries(colorPaletteObj.accent.colors) as [key, value]}
         <div class="d-grid ji-center p-4 bgc-positive rounded f-equal">
             <div>
-                <div class="text-center fw-600">{key}</div>
+                <div class="ta-center fw-600">{key}</div>
                 hsl({value.h} {value.s} {value.l})
             </div>
             <div class="d-flex fw-nowrap ji-center">
                 <div class="space-nowrap as-end">
-                    <div class="text-center fw-600">{key}-l</div>
+                    <div class="ta-center fw-600">{key}-l</div>
                     hsl({value.h} {value.s} {value.l + colorPaletteObj.accent.settings.offset})
                 </div>
                 <div class="col-span-2 d-grid">
@@ -58,7 +58,7 @@
                     />
                 </div>
                 <div class="space-nowrap as-end">
-                    <div class="text-center fw-600">{key}-d</div>
+                    <div class="ta-center fw-600">{key}-d</div>
                     hsl({value.h} {value.s} {value.l  - colorPaletteObj.accent.settings.offset})
                 </div>
             </div>

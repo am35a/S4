@@ -1743,43 +1743,42 @@
 }
 
 /*  typography section: ... contained in classes */
-.text-start {
+.ta-start {
   text-align: start !important;
 }
-.text-center {
+.ta-center {
   text-align: center !important;
 }
-.text-end {
+.ta-end {
   text-align: end !important;
 }
-.text-justify {
+.ta-justify {
   text-align: justify !important;
 }
-.text-hyphens {
-  hyphens: auto !important;
-}
-.text-lowercase {
+.tt-lowercase {
   text-transform: lowercase !important;
 }
-.text-uppercase {
+.tt-uppercase {
   text-transform: uppercase !important;
 }
-.text-capitalize {
+.tt-capitalize {
   text-transform: capitalize !important;
 }
-.text-decoration-none {
+.tt-none {
   text-decoration: none !important;
 }
-.text-decoration-underline {
+.tt-underline {
   text-decoration: underline !important;
 }
-.text-decoration-line-through {
+.tt-line-through {
   text-decoration: line-through !important;
 }
-.text-no-select {
-  user-select: none;
+
+.us-none {
+  user-select: none !important;
 }
-.text-truncate {
+
+.truncate {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
@@ -1922,34 +1921,30 @@
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.375em;
+  font-weight: 600;
+  line-height: 1.125;
 }
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
-  margin-top: 0.5em;
+  margin-top: 0.625em;
 }
 h1, .h1 {
-  font-size: calc(var(--fs-md) * 3) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 3);
 }
 h2, .h2 {
-  font-size: calc(var(--fs-md) * 2.5) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 2.5);
 }
 h3, .h3 {
-  font-size: calc(var(--fs-md) * 2) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 2);
 }
 h4, .h4 {
-  font-size: calc(var(--fs-md) * 1.5) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 1.5);
 }
 h5, .h5 {
-  font-size: calc(var(--fs-md) * 1.25) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 1.25);
 }
 h6, .h6 {
-  font-size: var(--fs-md) !important;
-  font-weight: 600 !important;
+  font-size: var(--fs-md);
 }
 
 p {

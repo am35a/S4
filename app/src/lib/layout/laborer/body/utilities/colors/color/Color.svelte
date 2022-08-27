@@ -38,24 +38,24 @@
             <div class="d-flex fd-column-reverse g-2 bgc-negative">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
-                        <div class="color-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 text-center">
+                        <div class="color-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 ta-center">
                             color-{defaultColorsArr[0]}-{(i + 1) * 10}
                         </div>
                     {/each}
                 {/if}
-                <div class="color-{defaultColorsArr[0]} p-4 text-center">
+                <div class="color-{defaultColorsArr[0]} p-4 ta-center">
                     color-{defaultColorsArr[0]}
                 </div>
             </div>
             <div class="d-flex fd-column-reverse g-2">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
-                        <div class="color-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 text-center">
+                        <div class="color-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 ta-center">
                             color-{defaultColorsArr[0]}-{(i + 1) * 10}
                         </div>
                     {/each}
                 {/if}
-                <div class="color-{defaultColorsArr[1]} p-4 text-center">
+                <div class="color-{defaultColorsArr[1]} p-4 ta-center">
                     color-{defaultColorsArr[1]}
                 </div>
             </div>

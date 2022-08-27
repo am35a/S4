@@ -1299,43 +1299,42 @@
 }
 
 /*  typography section: ... contained in classes */
-.p\:text-start {
+.p\:ta-start {
   text-align: start !important;
 }
-.p\:text-center {
+.p\:ta-center {
   text-align: center !important;
 }
-.p\:text-end {
+.p\:ta-end {
   text-align: end !important;
 }
-.p\:text-justify {
+.p\:ta-justify {
   text-align: justify !important;
 }
-.p\:text-hyphens {
-  hyphens: auto !important;
-}
-.p\:text-lowercase {
+.p\:tt-lowercase {
   text-transform: lowercase !important;
 }
-.p\:text-uppercase {
+.p\:tt-uppercase {
   text-transform: uppercase !important;
 }
-.p\:text-capitalize {
+.p\:tt-capitalize {
   text-transform: capitalize !important;
 }
-.p\:text-decoration-none {
+.p\:tt-none {
   text-decoration: none !important;
 }
-.p\:text-decoration-underline {
+.p\:tt-underline {
   text-decoration: underline !important;
 }
-.p\:text-decoration-line-through {
+.p\:tt-line-through {
   text-decoration: line-through !important;
 }
-.p\:text-no-select {
-  user-select: none;
+
+.p\:us-none {
+  user-select: none !important;
 }
-.p\:text-truncate {
+
+.p\:truncate {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
@@ -1478,34 +1477,30 @@
 }
 
 p\:h1, p\:h2, p\:h3, p\:h4, p\:h5, p\:h6, .p\:h1, .p\:h2, .p\:h3, .p\:h4, .p\:h5, .p\:h6 {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.375em;
+  font-weight: 600;
+  line-height: 1.125;
 }
 p\:h2, p\:h3, p\:h4, p\:h5, p\:h6, .p\:h2, .p\:h3, .p\:h4, .p\:h5, .p\:h6 {
-  margin-top: 0.5em;
+  margin-top: 0.625em;
 }
 p\:h1, .p\:h1 {
-  font-size: calc(var(--fs-md) * 3) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 3);
 }
 p\:h2, .p\:h2 {
-  font-size: calc(var(--fs-md) * 2.5) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 2.5);
 }
 p\:h3, .p\:h3 {
-  font-size: calc(var(--fs-md) * 2) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 2);
 }
 p\:h4, .p\:h4 {
-  font-size: calc(var(--fs-md) * 1.5) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 1.5);
 }
 p\:h5, .p\:h5 {
-  font-size: calc(var(--fs-md) * 1.25) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 1.25);
 }
 p\:h6, .p\:h6 {
-  font-size: var(--fs-md) !important;
-  font-weight: 600 !important;
+  font-size: var(--fs-md);
 }
 
 p\:p {

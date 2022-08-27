@@ -3,38 +3,29 @@
 // $fontSizes: s5, s5, s3, s2, s1, md, l1, l2, l3, l4, l5
 // $fontSizes: s3, s2, s1, md, l1, l2, l3
 $fontSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
+$textAligns: start, center, end, justify
+$textTransforms: lowercase, uppercase, capitalize
+$textDecorations: none, underline, line-through
 
 /*
     typography section: ... contained in classes
 
 @mixin _typography($orientation, $type)
-    .#{$orientation}#{$type}text
-        &-start
-            text-align: start !important
-        &-center
-            text-align: center !important
-        &-end
-            text-align: end !important
-        &-justify
-            text-align: justify !important
-        &-hyphens
-            hyphens: auto !important
-        &-lowercase
-            text-transform: lowercase !important
-        &-uppercase
-            text-transform: uppercase !important
-        &-capitalize
-            text-transform: capitalize !important
-        &-decoration
-            &-none
-                text-decoration: none !important
-            &-underline
-                text-decoration: underline !important
-            &-line-through
-                text-decoration: line-through !important
-        &-no-select
-            user-select: none
-        &-truncate
+    .#{$orientation}#{$type}t
+        @each $item in $textAligns
+            &a-#{$item}
+               text-align: #{$item} !important
+        @each $item in $textTransforms
+            &t-#{$item}
+               text-transform: #{$item} !important
+        @each $item in $textDecorations
+            &t-#{$item}
+                text-decoration: #{$item} !important
+
+    .#{$orientation}#{$type}us-none
+            user-select: none !important
+
+    .#{$orientation}#{$type}truncate
             overflow: hidden !important
             text-overflow: ellipsis !important
             white-space: nowrap !important
@@ -58,27 +49,23 @@ $fontSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
 
     #{$orientation}#{$type}h, .#{$orientation}#{$type}h
         &1, &2, &3, &4, &5, &6
-            margin-bottom: .25em
+            margin-bottom: .375em
+            font-weight: 600
+            line-height: 1.125
         &2, &3, &4, &5, &6
-            margin-top: .5em
+            margin-top: .625em
         &1
-            font-size: calc(var(--fs-md) * 3) !important
-            font-weight: 600 !important
+            font-size: calc(var(--fs-md) * 3)
         &2
-            font-size: calc(var(--fs-md) * 2.5) !important
-            font-weight: 600 !important
+            font-size: calc(var(--fs-md) * 2.5)
         &3
-            font-size: calc(var(--fs-md) * 2) !important
-            font-weight: 600 !important
+            font-size: calc(var(--fs-md) * 2)
         &4
-            font-size: calc(var(--fs-md) * 1.5) !important
-            font-weight: 600 !important
+            font-size: calc(var(--fs-md) * 1.5)
         &5
-            font-size: calc(var(--fs-md) * 1.25) !important
-            font-weight: 600 !important
+            font-size: calc(var(--fs-md) * 1.25)
         &6
-            font-size: var(--fs-md) !important
-            font-weight: 600 !important
+            font-size: var(--fs-md)
 
     #{$orientation}#{$type}p
         margin-bottom: .5em

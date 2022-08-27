@@ -12,13 +12,13 @@
     let alignContentArr: string[] = [ 'start', 'end', 'stretch', 'around', 'between', 'evenly' ]
 </script>
 
-<section class="d-grid g-2">
+<section>
     <h3 id="AlignContent">Align content</h3>
     <p>
         The <b>ac-...</b> classes sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
-        <div class="d-flex g-2">
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+        <div class="d-flex g-4">
             {#each Object.entries(containerTypesObj) as [key, value]}
                 <Button
                     class="btn-secondary {containerType === value ? 'active' : ''}"
@@ -27,7 +27,7 @@
                 >{key}</Button>
             {/each}
         </div>
-        <div class="d-grid g-2">
+        <div class="d-grid g-4">
             {#each alignContentArr as item }
                 <div class="{containerType} g-2 bgc-negative-10 p-2 ac-{item}" style="height: 160rem;">
                     <div class="bgc-negative-10 px-2 py-1">one</div>

@@ -3,12 +3,12 @@
     import Details from "component/Details.svelte"
 </script>
 
-<div class="d-grid g-2">
+<div>
     <h4>Table cells container</h4>
     <p>
         Use values <b>top</b>, <b>middle</b> and <b>bottom</b> for vertical alignmet into table sells.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
         <table style="height: 64rem;">
             <tr>
                 <td class="bgc-negative-10 va-baseline">Baseline</td>

@@ -8,7 +8,7 @@
     import SectionAlignSelf from './alignself/AlignSelf.svelte'
 </script>
 
-<article class="d-grid g-2">
+<article>
     <h2 id="Alignment">Alignment</h2>
     <SectionVerticalAlign />
     <SectionJustifyContent />

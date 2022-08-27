@@ -5,7 +5,7 @@
     let justifyItemsArr: string[] = [ 'center', 'end', 'start', 'stretch' ]
 </script>
 
-<section class="d-grid g-4">
+<section>
     <h3 id="JustifyItems">Justify items</h3>
     <p>
         The <b>ji-...</b> classes work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.
@@ -13,8 +13,8 @@
     <div class="alert alert-warning js-start">
         The properties works only for <b>grid</b> containers!
     </div>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
-        <div class="d-grid g-2">
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+        <div class="d-grid g-4">
             {#each justifyItemsArr as item }
                 <div class="d-grid cols-2 g-2 bgc-negative-10 p-2 ji-{item}">
                     <div class="bgc-negative-10 px-2 py-1">one</div>

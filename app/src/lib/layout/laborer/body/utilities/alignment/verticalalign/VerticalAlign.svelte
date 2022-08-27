@@ -3,7 +3,7 @@
     import Table from './table/Table.svelte'
 </script>
 
-<section class="d-grid g-2">
+<section>
     <h3 id="VerticalAlignment">Vertical alignment</h3>
     <Inline />
     <Table />

@@ -1299,43 +1299,42 @@
 }
 
 /*  typography section: ... contained in classes */
-.l\:m\:text-start {
+.l\:m\:ta-start {
   text-align: start !important;
 }
-.l\:m\:text-center {
+.l\:m\:ta-center {
   text-align: center !important;
 }
-.l\:m\:text-end {
+.l\:m\:ta-end {
   text-align: end !important;
 }
-.l\:m\:text-justify {
+.l\:m\:ta-justify {
   text-align: justify !important;
 }
-.l\:m\:text-hyphens {
-  hyphens: auto !important;
-}
-.l\:m\:text-lowercase {
+.l\:m\:tt-lowercase {
   text-transform: lowercase !important;
 }
-.l\:m\:text-uppercase {
+.l\:m\:tt-uppercase {
   text-transform: uppercase !important;
 }
-.l\:m\:text-capitalize {
+.l\:m\:tt-capitalize {
   text-transform: capitalize !important;
 }
-.l\:m\:text-decoration-none {
+.l\:m\:tt-none {
   text-decoration: none !important;
 }
-.l\:m\:text-decoration-underline {
+.l\:m\:tt-underline {
   text-decoration: underline !important;
 }
-.l\:m\:text-decoration-line-through {
+.l\:m\:tt-line-through {
   text-decoration: line-through !important;
 }
-.l\:m\:text-no-select {
-  user-select: none;
+
+.l\:m\:us-none {
+  user-select: none !important;
 }
-.l\:m\:text-truncate {
+
+.l\:m\:truncate {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
@@ -1478,34 +1477,30 @@
 }
 
 l\:m\:h1, l\:m\:h2, l\:m\:h3, l\:m\:h4, l\:m\:h5, l\:m\:h6, .l\:m\:h1, .l\:m\:h2, .l\:m\:h3, .l\:m\:h4, .l\:m\:h5, .l\:m\:h6 {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.375em;
+  font-weight: 600;
+  line-height: 1.125;
 }
 l\:m\:h2, l\:m\:h3, l\:m\:h4, l\:m\:h5, l\:m\:h6, .l\:m\:h2, .l\:m\:h3, .l\:m\:h4, .l\:m\:h5, .l\:m\:h6 {
-  margin-top: 0.5em;
+  margin-top: 0.625em;
 }
 l\:m\:h1, .l\:m\:h1 {
-  font-size: calc(var(--fs-md) * 3) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 3);
 }
 l\:m\:h2, .l\:m\:h2 {
-  font-size: calc(var(--fs-md) * 2.5) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 2.5);
 }
 l\:m\:h3, .l\:m\:h3 {
-  font-size: calc(var(--fs-md) * 2) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 2);
 }
 l\:m\:h4, .l\:m\:h4 {
-  font-size: calc(var(--fs-md) * 1.5) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 1.5);
 }
 l\:m\:h5, .l\:m\:h5 {
-  font-size: calc(var(--fs-md) * 1.25) !important;
-  font-weight: 600 !important;
+  font-size: calc(var(--fs-md) * 1.25);
 }
 l\:m\:h6, .l\:m\:h6 {
-  font-size: var(--fs-md) !important;
-  font-weight: 600 !important;
+  font-size: var(--fs-md);
 }
 
 l\:m\:p {
