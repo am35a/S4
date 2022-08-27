@@ -20,6 +20,7 @@
     $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
 
     .dtl
+        margin-bottom: 1em
         border-radius: .25em
         summary
             display: flex

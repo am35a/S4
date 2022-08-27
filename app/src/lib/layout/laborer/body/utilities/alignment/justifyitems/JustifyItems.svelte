@@ -10,7 +10,7 @@
     <p>
         The <b>ji-...</b> classes work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.
     </p>
-    <div class="alert alert-warning js-start">
+    <div class="alert alert-warning">
         The properties works only for <b>grid</b> containers!
     </div>
     <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">

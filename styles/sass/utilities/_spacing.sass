@@ -98,22 +98,18 @@ $spacingStep: 8
         &-nowrap
             white-space: nowrap !important
 
-    .#{$orientation}#{$type}g
+    .#{$orientation}#{$type}g,
+    .#{$orientation}#{$type}cg
         &-0
-            grid-gap: 0 !important
-        &-1
-            grid-gap: .25em !important
-        &-2
-            grid-gap: .5em !important
-        &-3
-            grid-gap: .75em !important
-        &-4
-            grid-gap: 1em !important
-        &-5
-            grid-gap: 1.25em !important
-        &-6
-            grid-gap: 1.5em !important
-        &-7
-            grid-gap: 1.75em !important
-        &-8
-            grid-gap: 2em !important
+            column-gap: unset !important
+        @for $i from 1 through $spacingStep
+            &-#{$i}
+                column-gap: #{$i * .25} !important
+
+    .#{$orientation}#{$type}g,
+    .#{$orientation}#{$type}rg
+        &-0
+            row-gap: unset !important
+        @for $i from 1 through $spacingStep
+            &-#{$i}
+                row-gap: #{$i * .25} !important
