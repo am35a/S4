@@ -104,7 +104,7 @@ $spacingStep: 8
             column-gap: unset !important
         @for $i from 1 through $spacingStep
             &-#{$i}
-                column-gap: #{$i * .25} !important
+                column-gap: #{$i * .25}em !important
 
     .#{$orientation}#{$type}g,
     .#{$orientation}#{$type}rg
@@ -112,4 +112,4 @@ $spacingStep: 8
             row-gap: unset !important
         @for $i from 1 through $spacingStep
             &-#{$i}
-                row-gap: #{$i * .25} !important
+                row-gap: #{$i * .25}em !important

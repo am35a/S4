@@ -1720,35 +1720,35 @@
 }
 .g-1,
 .cg-1 {
-  column-gap: 0.25 !important;
+  column-gap: 0.25em !important;
 }
 .g-2,
 .cg-2 {
-  column-gap: 0.5 !important;
+  column-gap: 0.5em !important;
 }
 .g-3,
 .cg-3 {
-  column-gap: 0.75 !important;
+  column-gap: 0.75em !important;
 }
 .g-4,
 .cg-4 {
-  column-gap: 1 !important;
+  column-gap: 1em !important;
 }
 .g-5,
 .cg-5 {
-  column-gap: 1.25 !important;
+  column-gap: 1.25em !important;
 }
 .g-6,
 .cg-6 {
-  column-gap: 1.5 !important;
+  column-gap: 1.5em !important;
 }
 .g-7,
 .cg-7 {
-  column-gap: 1.75 !important;
+  column-gap: 1.75em !important;
 }
 .g-8,
 .cg-8 {
-  column-gap: 2 !important;
+  column-gap: 2em !important;
 }
 
 .g-0,
@@ -1757,35 +1757,35 @@
 }
 .g-1,
 .rg-1 {
-  row-gap: 0.25 !important;
+  row-gap: 0.25em !important;
 }
 .g-2,
 .rg-2 {
-  row-gap: 0.5 !important;
+  row-gap: 0.5em !important;
 }
 .g-3,
 .rg-3 {
-  row-gap: 0.75 !important;
+  row-gap: 0.75em !important;
 }
 .g-4,
 .rg-4 {
-  row-gap: 1 !important;
+  row-gap: 1em !important;
 }
 .g-5,
 .rg-5 {
-  row-gap: 1.25 !important;
+  row-gap: 1.25em !important;
 }
 .g-6,
 .rg-6 {
-  row-gap: 1.5 !important;
+  row-gap: 1.5em !important;
 }
 .g-7,
 .rg-7 {
-  row-gap: 1.75 !important;
+  row-gap: 1.75em !important;
 }
 .g-8,
 .rg-8 {
-  row-gap: 2 !important;
+  row-gap: 2em !important;
 }
 
 /*  typography section: ... contained in classes */
