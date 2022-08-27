@@ -3,9 +3,9 @@
     import Details from 'component/Details.svelte'
 </script>
 
-<div class="d-grid g-2">
-    <h3 id="AddBorderWith">Add border</h3>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
+<div>
+    <h3 id="add">Add border</h3>
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
         <div class="d-flex fw-wrap g-2">
             <div class="bgc-negative-10 p-4 border">border</div>
             <div class="bgc-negative-10 p-4 border-top">border-top</div>

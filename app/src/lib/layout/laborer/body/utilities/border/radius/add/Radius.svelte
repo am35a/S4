@@ -5,18 +5,18 @@
     let borderRadiusSizesArr: string[] = [ 'xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl' ]
 </script>
 
-<div class="d-grid g-2">
-    <h4 id="AddBorderRadius">Add radius</h4>
+<div>
+    <h4 id="add">Add radius</h4>
     <p>
         To add the default radius use the <b>rounded</b> class. For different round corners use the <b>rounded-...</b> classes.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
+    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
         <div class="d-flex fw-wrap g-2">
             {#each borderRadiusSizesArr as item }
                 <div class="bgc-negative-10 p-5 rounded-{item}">rounded-{item}</div>
             {/each}
         </div>
-        <div class="d-flex fw-wrap g-2">
+        <div class="d-flex fw-wrap g-4">
             <div>
                 <div class="bgc-negative-10 p-8 rounded-circle"></div>
             </div>

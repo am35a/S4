@@ -3,8 +3,8 @@
     import Cut from './cut/Border.svelte'
 </script>
 
-<section class="d-grid g-2">
-    <h3 id="BorderWidth">Width</h3>
+<section>
+    <h3 id="borderWidth">Width</h3>
     <Add />
     <Cut />
 </section>

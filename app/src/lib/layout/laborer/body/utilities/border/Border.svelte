@@ -3,8 +3,8 @@
     import SectionWidth from './width/Width.svelte'
 </script>
 
-<article class="d-grid g-2">
-    <h2 id="Border">Border</h2>
+<article>
+    <h2 id="border">Border</h2>
     <SectionRadius />
     <SectionWidth />
 </article>
