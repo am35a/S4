@@ -17,11 +17,11 @@
 <section>
     <h3 id="color">Color sets</h3>
     <p>
-        The <b>color-...</b> classes allow you to set default colors for text, strokes, and other default states which use <b>currentColor</b> value.
-        Use <b>color-transparent</b> class to make color or other dependencies transparent.
+        The <b>c-...</b> classes allow you to set default colors for text, strokes, and other default states which use <b>currentColor</b> value.
+        Use <b>c-transparent</b> class to make color or other dependencies transparent.
     </p>
     <p>
-        The classes from <b>color-...-10</b> to <b>color-...-90</b> make color transparent in percentage which point in the end of.
+        The classes from <b>c-...-10</b> to <b>c-...-90</b> make color transparent in percentage which point in the end of.
     </p>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-flex g-2">
@@ -60,7 +60,7 @@
         </div>
     </div>    
     <p>
-        The <b>color-...-l</b> and <b>color-...-d</b> classes set light or dark shades for accent colors.
+        The <b>c-...-l</b> and <b>c-...-d</b> classes set light or dark shades for accent colors.
     </p>
     <div class="d-grid g-3 cols-4 mb-4 p-3 bgc-positive rounded">
         {#each accentColorsArr as item }

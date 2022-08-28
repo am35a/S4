@@ -35,8 +35,8 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {
-`<Alert class="${alertClasses}">
-    ...
+`<Alert${alertClasses ? ' class="' + alertClasses + '"' : '' }>
+    The ${alertClasses ? 'custom' : 'clear'} alert component <a href={'#'}>link</a>
 </Alert>
 `
                 }

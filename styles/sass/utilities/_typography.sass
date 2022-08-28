@@ -30,7 +30,7 @@ $textDecorations: none, underline, line-through
             text-overflow: ellipsis !important
             white-space: nowrap !important
 
-    .#{$orientation}#{$type}color
+    .#{$orientation}#{$type}c
         @each $item in $defaultColors
             &-#{$item}
                color: var(--#{$item}-color) !important

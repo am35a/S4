@@ -73,7 +73,7 @@
         </div>
         <div class="d-grid g-3 cols-2">
             {#each accentColorsArr as item }
-                <div class="bgc-{item}{accentExtraColor} p-4 color-positive">
+                <div class="bgc-{item}{accentExtraColor} p-4 c-positive">
                     <!-- {item} {Object.keys(accentExtraColorsObj).find(key => accentExtraColorsObj[key] === accentExtraColor)} color -->
                     bgc-{item}{accentExtraColor}
                 </div>

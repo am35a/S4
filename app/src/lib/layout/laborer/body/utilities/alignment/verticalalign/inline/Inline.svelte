@@ -40,8 +40,8 @@
             {/each}
         </div>
         <div class="d-grid space-nowrap ox-auto" style="--lh: {lineHeight}">
-            <div class="lh col-span-full row-span-full my-auto border-bottom border-top color-negative-10">&nbsp;<!-- base line indicator--></div>
-            <div class="lh col-span-full row-span-full my-auto border-bottom color-negative-20"><!-- base line indicator--></div>
+            <div class="lh col-span-full row-span-full my-auto border-bottom border-top c-negative-10">&nbsp;<!-- base line indicator--></div>
+            <div class="lh col-span-full row-span-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
             <div class="lh col-span-full row-span-full py-4">
                 {#each Object.entries(verticalAlignObj) as [key, value]}
                     <span class="bgc-negative-10 px-1 mr-1 rounded {key}">{value}</span>

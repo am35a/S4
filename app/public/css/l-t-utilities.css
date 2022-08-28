@@ -1398,139 +1398,139 @@
   white-space: nowrap !important;
 }
 
-.t\:color-positive {
+.t\:c-positive {
   color: var(--positive-color) !important;
 }
-.t\:color-negative {
+.t\:c-negative {
   color: var(--negative-color) !important;
 }
-.t\:color-positive-10 {
+.t\:c-positive-10 {
   color: var(--positive-color-10) !important;
 }
-.t\:color-positive-20 {
+.t\:c-positive-20 {
   color: var(--positive-color-20) !important;
 }
-.t\:color-positive-30 {
+.t\:c-positive-30 {
   color: var(--positive-color-30) !important;
 }
-.t\:color-positive-40 {
+.t\:c-positive-40 {
   color: var(--positive-color-40) !important;
 }
-.t\:color-positive-50 {
+.t\:c-positive-50 {
   color: var(--positive-color-50) !important;
 }
-.t\:color-positive-60 {
+.t\:c-positive-60 {
   color: var(--positive-color-60) !important;
 }
-.t\:color-positive-70 {
+.t\:c-positive-70 {
   color: var(--positive-color-70) !important;
 }
-.t\:color-positive-80 {
+.t\:c-positive-80 {
   color: var(--positive-color-80) !important;
 }
-.t\:color-positive-90 {
+.t\:c-positive-90 {
   color: var(--positive-color-90) !important;
 }
-.t\:color-negative-10 {
+.t\:c-negative-10 {
   color: var(--negative-color-10) !important;
 }
-.t\:color-negative-20 {
+.t\:c-negative-20 {
   color: var(--negative-color-20) !important;
 }
-.t\:color-negative-30 {
+.t\:c-negative-30 {
   color: var(--negative-color-30) !important;
 }
-.t\:color-negative-40 {
+.t\:c-negative-40 {
   color: var(--negative-color-40) !important;
 }
-.t\:color-negative-50 {
+.t\:c-negative-50 {
   color: var(--negative-color-50) !important;
 }
-.t\:color-negative-60 {
+.t\:c-negative-60 {
   color: var(--negative-color-60) !important;
 }
-.t\:color-negative-70 {
+.t\:c-negative-70 {
   color: var(--negative-color-70) !important;
 }
-.t\:color-negative-80 {
+.t\:c-negative-80 {
   color: var(--negative-color-80) !important;
 }
-.t\:color-negative-90 {
+.t\:c-negative-90 {
   color: var(--negative-color-90) !important;
 }
-.t\:color-primary {
+.t\:c-primary {
   color: var(--primary-color) !important;
 }
-.t\:color-primary-l {
+.t\:c-primary-l {
   color: var(--primary-color-l) !important;
 }
-.t\:color-primary-d {
+.t\:c-primary-d {
   color: var(--primary-color-d) !important;
 }
-.t\:color-primary-m {
+.t\:c-primary-m {
   color: var(--primary-color-m) !important;
 }
-.t\:color-secondary {
+.t\:c-secondary {
   color: var(--secondary-color) !important;
 }
-.t\:color-secondary-l {
+.t\:c-secondary-l {
   color: var(--secondary-color-l) !important;
 }
-.t\:color-secondary-d {
+.t\:c-secondary-d {
   color: var(--secondary-color-d) !important;
 }
-.t\:color-secondary-m {
+.t\:c-secondary-m {
   color: var(--secondary-color-m) !important;
 }
-.t\:color-info {
+.t\:c-info {
   color: var(--info-color) !important;
 }
-.t\:color-info-l {
+.t\:c-info-l {
   color: var(--info-color-l) !important;
 }
-.t\:color-info-d {
+.t\:c-info-d {
   color: var(--info-color-d) !important;
 }
-.t\:color-info-m {
+.t\:c-info-m {
   color: var(--info-color-m) !important;
 }
-.t\:color-success {
+.t\:c-success {
   color: var(--success-color) !important;
 }
-.t\:color-success-l {
+.t\:c-success-l {
   color: var(--success-color-l) !important;
 }
-.t\:color-success-d {
+.t\:c-success-d {
   color: var(--success-color-d) !important;
 }
-.t\:color-success-m {
+.t\:c-success-m {
   color: var(--success-color-m) !important;
 }
-.t\:color-warning {
+.t\:c-warning {
   color: var(--warning-color) !important;
 }
-.t\:color-warning-l {
+.t\:c-warning-l {
   color: var(--warning-color-l) !important;
 }
-.t\:color-warning-d {
+.t\:c-warning-d {
   color: var(--warning-color-d) !important;
 }
-.t\:color-warning-m {
+.t\:c-warning-m {
   color: var(--warning-color-m) !important;
 }
-.t\:color-error {
+.t\:c-error {
   color: var(--error-color) !important;
 }
-.t\:color-error-l {
+.t\:c-error-l {
   color: var(--error-color-l) !important;
 }
-.t\:color-error-d {
+.t\:c-error-d {
   color: var(--error-color-d) !important;
 }
-.t\:color-error-m {
+.t\:c-error-m {
   color: var(--error-color-m) !important;
 }
-.t\:color-transparent {
+.t\:c-transparent {
   color: transparent !important;
 }
 
