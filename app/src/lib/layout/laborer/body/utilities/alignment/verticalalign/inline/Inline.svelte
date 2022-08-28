@@ -29,7 +29,7 @@
     <p>
         The <b>vertical-align-...</b> styles sets vertical alignment of an <b>inline</b>, <b>inline-block</b> elements.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-inline-flex fw-wrap g-2">
             {#each Object.entries(lineHeightObj) as [key, value]}
                 <Button
@@ -39,7 +39,7 @@
                 >lh-{key}</Button>
             {/each}
         </div>
-        <div class="d-grid g-4 space-nowrap ox-auto" style="--lh: {lineHeight}">
+        <div class="d-grid space-nowrap ox-auto" style="--lh: {lineHeight}">
             <div class="lh col-span-full row-span-full my-auto border-bottom border-top color-negative-10">&nbsp;<!-- base line indicator--></div>
             <div class="lh col-span-full row-span-full my-auto border-bottom color-negative-20"><!-- base line indicator--></div>
             <div class="lh col-span-full row-span-full py-4">

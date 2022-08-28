@@ -10,7 +10,7 @@
     <p>
         The <b>fd-...</b> styles sets direction of an elements into flex container.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         {#each flexDirectionsArr as direction }
             <div class="d-flex fd-{direction} g-4 bgc-negative-10 p-4">
                 <div class="bgc-negative-10 px-2 py-1">one</div>

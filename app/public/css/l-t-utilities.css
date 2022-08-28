@@ -874,14 +874,6 @@
   margin-top: unset !important;
   margin-bottom: unset !important;
 }
-.t\:mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-.t\:my-auto {
-  margin-top: auto !important;
-  margin-bottom: auto !important;
-}
 .t\:mx-1 {
   margin-left: 0.25em !important;
   margin-right: 0.25em !important;
@@ -945,6 +937,26 @@
 .t\:my-8 {
   margin-top: 2em !important;
   margin-bottom: 2em !important;
+}
+.t\:mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.t\:my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+.t\:ml-0 {
+  margin-left: unset !important;
+}
+.t\:mt-0 {
+  margin-top: unset !important;
+}
+.t\:mr-0 {
+  margin-right: unset !important;
+}
+.t\:mb-0 {
+  margin-bottom: unset !important;
 }
 .t\:ml-1 {
   margin-left: 0.25em !important;

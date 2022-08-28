@@ -2,15 +2,26 @@
     import Icon from 'component/Icon.svelte'
     import Button from 'component/Button.svelte'
 
+    let classesList: string = 'alert'
     let isAlert: boolean = true
+
+    $: {
+        if($$restProps.class !== undefined) {
+            classesList = $$restProps.class
+            
+            if(![...classesList].includes('alert'))
+                classesList = `alert ${classesList}`
+        }
+        $$restProps.class = classesList
+    }
 </script>
 
 {#if isAlert}
     <div
-        class:alert={true}
+        class:alert={alert}
         {...$$restProps}
     >
-        {#if $$restProps.class.includes('alert-closable')}
+        {#if classesList.includes('alert-closable')}
             <Button
                 class="btn-close fs-xs"
                 on:click={() => isAlert = false}
@@ -20,8 +31,6 @@
         <slot></slot>
     </div>
 {/if}
-
-<!-- https://www.youtube.com/watch?v=8-shf8rZcXU -->
 
 <style lang="sass" global>
     $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
@@ -33,14 +42,10 @@
         padding: .75em
         border-radius: .25em
         border: .0625em solid transparent
+        // font-size: var(--fs-md)
         @each $colorName in $accentColors
             &-#{$colorName}
-                background-color: var(--#{$colorName}-color-l)
-                color: var(--#{$colorName}-color-d)
-                font-weight: 500
-        @each $colorName in $accentColors
-            &-alt-#{$colorName}
-                border-color: var(--#{$colorName}-color)
+                background-color: var(--#{$colorName}-color-m)
                 color: var(--#{$colorName}-color-d)
                 font-weight: 500
         &:not(&-closable)
@@ -56,5 +61,4 @@
                 padding: .125em
                 &:hover
                     background-color: var(--positive-color-50)
-
 </style>

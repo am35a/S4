@@ -1,6 +1,4 @@
 <script lang="ts">
-    import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
     import Button from 'component/Button.svelte'
 
     let defaultColorsArr: string[] = [ 'positive', 'negative' ]
@@ -16,8 +14,8 @@
     }
 </script>
 
-<section class="d-grid g-2">
-    <h3 id="Color">Color sets</h3>
+<section>
+    <h3 id="color">Color sets</h3>
     <p>
         The <b>color-...</b> classes allow you to set default colors for text, strokes, and other default states which use <b>currentColor</b> value.
         Use <b>color-transparent</b> class to make color or other dependencies transparent.
@@ -25,7 +23,7 @@
     <p>
         The classes from <b>color-...-10</b> to <b>color-...-90</b> make color transparent in percentage which point in the end of.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-flex g-2">
             <Button
                 class="btn-secondary {defaultExtraColorsInterval ? 'active' : ''}"
@@ -34,7 +32,7 @@
                 default extra colors {defaultExtraColorsInterval ? 'hide' : 'show'}
             </Button>
         </div>
-        <div class="d-grid g-2 cols-2">
+        <div class="d-grid g-3 cols-2">
             <div class="d-flex fd-column-reverse g-2 bgc-negative">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}
@@ -60,18 +58,15 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>    
     <p>
         The <b>color-...-l</b> and <b>color-...-d</b> classes set light or dark shades for accent colors.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive rounded">
-        <div class="d-grid g-2 cols-4">
-            {#each accentColorsArr as item }
-                {#each Object.entries(accentExtraColorsObj) as [key, value]}
-                    <span class="color-{item}{value}">color-{item}{value}</span>
-                {/each}
+    <div class="d-grid g-3 cols-4 mb-4 p-3 bgc-positive rounded">
+        {#each accentColorsArr as item }
+            {#each Object.entries(accentExtraColorsObj) as [key, value]}
+                <span class="color-{item}{value}">color-{item}{value}</span>
             {/each}
-        </div>
+        {/each}
     </div>
 </section>

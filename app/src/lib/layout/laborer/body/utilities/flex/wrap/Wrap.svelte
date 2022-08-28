@@ -12,7 +12,7 @@
     <p>
         Change wrap items with <b>fw-...</b> classes in a flex container.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-flex g-2">
             {#each flexWrapArr as values }
                 <Button

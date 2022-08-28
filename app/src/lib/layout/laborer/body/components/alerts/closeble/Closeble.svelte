@@ -7,10 +7,10 @@
 <section>
     <h3 id="closeble">Closeble</h3>
     <p>
-        To add a close button for killing an alerts add the "alert-closable" class name.
+        To add the close button for killing an alerts add the <b>alert-closable</b> class name.
     </p>
-    <div class="d-grid g-4 p-4 mb-4 bgc-positive rounded">
-        <Alert class="alert-primary alert-closable">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
+        <Alert class="alert-primary alert-closable mb-0">
             Click the close icon in the top right corner to destroy the block of alert message.
         </Alert>
     </div>

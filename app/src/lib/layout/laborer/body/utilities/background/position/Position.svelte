@@ -7,7 +7,7 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-4 mb-4 p-4 cols-3 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 cols-3 bgc-positive rounded">
         {#each bgPositionsArr as position }
             <div class="bgi bgc-negative-10 bgp-{position} p-8" style="--bgi: url(http://placekitten.com/32/32)"></div>
         {/each}

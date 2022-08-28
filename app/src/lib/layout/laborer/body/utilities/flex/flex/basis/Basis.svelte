@@ -6,7 +6,7 @@
     let flexBasisArr: string[] = ['100', 'fill', 'max', 'min', 'fit']
     let flexBasis: string = flexBasisArr[0]
 
-    let containerClasses: string = ''    
+    let containerClasses: string = ''
     let containerWidth: number = 100
 </script>
 
@@ -15,7 +15,7 @@
     <p>
         The basis set up avaliable after add <b>f</b> class to elements into flex container. Use variable <b>--fb</b> to manage flex basis.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-grid g-2">
             <div class="d-grid">
                 <label for="containerClasses">Container classes:</label>

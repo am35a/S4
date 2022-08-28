@@ -2,26 +2,31 @@
     import Alert from 'component/Alert.svelte'
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
+
+    let alertClasses: string = ''
 </script>
 
 <section>
-    <h3>Style mixed</h3>
+    <h3 id="mixed">Style mixed</h3>
     <p>
-        ...
+        <b>Alert</b> can be differently customized. It is enough to create an empty <b>Alert</b> component and start filling the class tag with a necessary utilities classes.
     </p>
-    <div class="d-grid g-4 cols-2 p-4 mb-4 ai-start bgc-positive rounded">
-        <Alert class="alert-primary border">
-            Alert component with border
-        </Alert>
-        <Alert class="alert-warning border bgc-transparent alert-closable">
-            Transparent background for alert
-        </Alert>
-        <Alert class="border bgc-transparent color-success">
-            Change the text color with killing background color
-        </Alert>
-        <Alert class="bgc-error color-positive">
-            Set custom text and background color
-        </Alert>
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
+        <div class="d-grid">
+            <label for="containerClasses">Container classes:</label>
+            <input
+                id="containerClasses"
+                class="border"
+                bind:value={alertClasses}
+                type="text"
+                placeholder="type classes"
+            >
+        </div>
+        <div>
+            <Alert class="mb-0 {alertClasses}">
+                The {alertClasses ? 'custom' : 'clear'} alert component <a href={'#'}>link</a>
+            </Alert>
+        </div>
     </div>
     <Details>
         <svelte:fragment slot="title">
@@ -30,18 +35,10 @@
         <svelte:fragment slot="body">
             <Precode class="rounded-top-0">
                 {
-`<Alert class="alert-primary border">
-    Alert component with border
+`<Alert class="${alertClasses}">
+    ...
 </Alert>
-<Alert class="alert-warning border bgc-transparent alert-closable">
-    Transparent background for alert
-</Alert>
-<Alert class="border bgc-transparent color-success">
-    Change the text color with killing background color
-</Alert>
-<Alert class="bgc-error color-positive">
-    Set custom text and background color
-</Alert>`
+`
                 }
             </Precode>
         </svelte:fragment>

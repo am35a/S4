@@ -11,7 +11,7 @@
     <p>
         The grow set up avaliable after add <b>f</b> class to elements into flex container. Use variable <b>--fg</b> to manage flex grow.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-grid g-2">
             <div class="d-grid">
                 <label for="containerClasses">Container classes:</label>

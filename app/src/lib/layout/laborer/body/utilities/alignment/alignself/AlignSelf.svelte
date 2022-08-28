@@ -17,7 +17,7 @@
     <p>
         The <b>as-...</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>ai-</b> classes value.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-flex g-2">
             {#each Object.entries(containerTypeObj) as [key, value]}
                 <Button
@@ -27,7 +27,7 @@
                 >{key}</Button>
             {/each}
         </div>
-        <div class="d-grid g-4">
+        <div class="d-grid g-3">
             {#each alignSelfArr as item }
                 <div class="{containerType} g-2 bgc-negative-10 p-2" style="height: 160rem;">
                     <div class="bgc-negative-10 px-2 py-1 as-{item}">one</div>

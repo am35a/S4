@@ -10,7 +10,7 @@
     <p>
         To add the default radius use the <b>rounded</b> class. For different round corners use the <b>rounded-...</b> classes.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-flex fw-wrap g-2">
             {#each borderRadiusSizesArr as item }
                 <div class="bgc-negative-10 p-5 rounded-{item}">rounded-{item}</div>

@@ -9,23 +9,23 @@
     <p>
         S4 alerts default views.
     </p>
-    <div class="d-grid g-4 cols-2 ai-start p-4 mb-4 bgc-positive rounded">
-        <Alert class="alert-primary">
+    <div class="d-grid g-3 cols-2 ai-start mb-4 p-3 bgc-positive rounded">
+        <Alert class="alert-primary mb-0">
             Alert primary message with <a href={'#'}>link</a>
         </Alert>
-        <Alert class="alert-secondary">
+        <Alert class="alert-secondary mb-0">
             Alert secondary message with <a href={'#'}>link</a>
         </Alert>
-        <Alert class="alert-info">
+        <Alert class="alert-info mb-0">
             Alert info message with <a href={'#'}>link</a>
         </Alert>
-        <Alert class="alert-success">
+        <Alert class="alert-success mb-0">
             Alert success message with <a href={'#'}>link</a>
         </Alert>
-        <Alert class="alert-warning">
+        <Alert class="alert-warning mb-0">
             Alert warning message with <a href={'#'}>link</a>
         </Alert>
-        <Alert class="alert-error">
+        <Alert class="alert-error mb-0">
             Alert error message with <a href={'#'}>link</a>
         </Alert>
     </div>

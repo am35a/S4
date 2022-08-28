@@ -8,7 +8,7 @@
     <p>
         To remove round of corners use <b>rounded-0</b> class and for accurate manipulations use <b>rounded-...-0</b>.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-flex fw-wrap g-4">
             <div class="bgc-negative-10 p-4 rounded-lg rounded-left-0">rounded-left-0</div>
             <div class="bgc-negative-10 p-4 rounded-lg rounded-top-0">rounded-top-0</div>

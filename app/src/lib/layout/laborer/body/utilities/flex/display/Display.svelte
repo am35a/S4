@@ -12,7 +12,7 @@
     <p>
         Create the flex container to start. Choose one of behaviors: <b>inline-flex</b> or <b>flex</b>.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-flex g-2">
             {#each displayFlexArr as values }
                 <Button

@@ -23,12 +23,6 @@ $spacingStep: 8
         &y-0
             margin-top: unset !important
             margin-bottom: unset !important
-        &x-auto
-            margin-left: auto !important
-            margin-right: auto !important
-        &y-auto
-            margin-top: auto !important
-            margin-bottom: auto !important
         @for $i from 1 through $spacingStep
             &x-#{$i}
                 margin-left: #{$i * .25}em !important
@@ -36,6 +30,21 @@ $spacingStep: 8
             &y-#{$i}
                 margin-top: #{$i * .25}em !important
                 margin-bottom: #{$i * .25}em !important
+        &x-auto
+            margin-left: auto !important
+            margin-right: auto !important
+        &y-auto
+            margin-top: auto !important
+            margin-bottom: auto !important
+        
+        &l-0
+            margin-left: unset !important
+        &t-0
+            margin-top: unset !important
+        &r-0
+            margin-right: unset !important
+        &b-0
+            margin-bottom: unset !important
         @for $i from 1 through $spacingStep
             &l-#{$i}
                 margin-left: #{$i * .25}em !important

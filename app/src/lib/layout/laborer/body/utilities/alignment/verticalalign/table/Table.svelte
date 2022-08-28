@@ -8,7 +8,7 @@
     <p>
         Use values <b>top</b>, <b>middle</b> and <b>bottom</b> for vertical alignmet into table sells.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <table style="height: 64rem;">
             <tr>
                 <td class="bgc-negative-10 va-baseline">Baseline</td>
@@ -27,10 +27,10 @@
                 {
 `<table>
     <tr>
-        <td class="border va-baseline">Baseline</td>
-        <td class="border va-top">Top</td>
-        <td class="border va-middle">Middle</td>
-        <td class="border va-bottom">Bottom</td>
+        <td class="va-baseline">Baseline</td>
+        <td class="va-top">Top</td>
+        <td class="va-middle">Middle</td>
+        <td class="va-bottom">Bottom</td>
     </tr>
 </table>
 `

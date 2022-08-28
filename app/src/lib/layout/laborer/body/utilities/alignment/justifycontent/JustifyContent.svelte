@@ -17,7 +17,7 @@
     <p>
         The <b>jc-...</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-flex g-2">
             {#each Object.entries(containerTypeObj) as [key, value]}
                 <Button
@@ -27,7 +27,7 @@
                 >{key}</Button>
             {/each}
         </div>
-        <div class="d-grid g-4">
+        <div class="d-grid g-3">
             {#each justifyContentArr as item }
                 <div class="{containerType} g-2 bgc-negative-10 p-2 jc-{item}">
                     <div class="bgc-negative-10 px-2 py-1">one</div>

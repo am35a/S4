@@ -13,16 +13,14 @@
     <div class="alert alert-warning js-start">
         The properties works only for <b>grid</b> containers!
     </div>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
-        <div class="d-grid g-4">
-            {#each justifySelfArr as item }
-                <div class="d-grid cols-2 g-2 bgc-negative-10 p-2">
-                    <div class="bgc-negative-10 px-2 py-1 js-{item}">one</div>
-                    <div class="bgc-negative-10 px-2 py-1">two</div>
-                    <div class="bgc-negative-10 px-2 py-1">three</div>
-                </div>
-            {/each}
-        </div>
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
+        {#each justifySelfArr as item }
+            <div class="d-grid cols-2 g-2 bgc-negative-10 p-2">
+                <div class="bgc-negative-10 px-2 py-1 js-{item}">one</div>
+                <div class="bgc-negative-10 px-2 py-1">two</div>
+                <div class="bgc-negative-10 px-2 py-1">three</div>
+            </div>
+        {/each}
     </div>
     <Details>
         <svelte:fragment slot="title">

@@ -30,7 +30,7 @@
             // border: .0625em solid currentColor
             border-top-left-radius: .25em
             border-top-right-radius: .25em
-            font-size: var(--fs-lg)
+            // font-size: var(--fs-md)
             list-style: none
             cursor: pointer
             user-select: none

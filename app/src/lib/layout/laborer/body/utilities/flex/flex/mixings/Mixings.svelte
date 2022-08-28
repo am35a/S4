@@ -10,7 +10,7 @@
     <p>
         The mixing examples.
     </p>
-    <div class="d-grid g-4 mb-4 p-4 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
         <div class="d-grid">
             <label for="containerWidth">Container width {containerWidth}%:</label>
             <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={containerWidth}>
