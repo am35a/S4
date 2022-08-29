@@ -21,6 +21,16 @@
         Use <b>c-transparent</b> class to make color or other dependencies transparent.
     </p>
     <p>
+        The <b>c-...-l</b> and <b>c-...-d</b> classes set light or dark shades for accent colors.
+    </p>
+    <div class="d-grid g-3 cols-4 mb-4 p-3 bgc-positive rounded">
+        {#each accentColorsArr as item }
+            {#each Object.entries(accentExtraColorsObj) as [key, value]}
+                <span class="color-{item}{value}">color-{item}{value}</span>
+            {/each}
+        {/each}
+    </div>
+    <p>
         The classes from <b>c-...-10</b> to <b>c-...-90</b> make color transparent in percentage which point in the end of.
     </p>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
@@ -58,15 +68,5 @@
                 </div>
             </div>
         </div>
-    </div>    
-    <p>
-        The <b>c-...-l</b> and <b>c-...-d</b> classes set light or dark shades for accent colors.
-    </p>
-    <div class="d-grid g-3 cols-4 mb-4 p-3 bgc-positive rounded">
-        {#each accentColorsArr as item }
-            {#each Object.entries(accentExtraColorsObj) as [key, value]}
-                <span class="color-{item}{value}">color-{item}{value}</span>
-            {/each}
-        {/each}
     </div>
 </section>
