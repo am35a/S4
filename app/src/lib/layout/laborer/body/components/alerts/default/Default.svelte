@@ -9,7 +9,7 @@
     <p>
         S4 alerts default views.
     </p>
-    <div class="d-grid g-3 cols-2 ai-start mb-4 p-3 bgc-positive rounded">
+    <div class="d-grid g-3 cols-2 ai-start mb-4 p-3 bgc-positive br">
         <Alert class="alert-primary mb-0">
             Alert primary message with <a href={'#'}>link</a>
         </Alert>
@@ -34,7 +34,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="br-top-0">
                 {
 `<Alert class="alert-primary">
     Alert primary message with <a href={'#'}>link</a>

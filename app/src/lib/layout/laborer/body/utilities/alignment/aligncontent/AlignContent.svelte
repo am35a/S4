@@ -17,7 +17,7 @@
     <p>
         The <b>ac-...</b> classes sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="d-flex g-2">
             {#each Object.entries(containerTypesObj) as [key, value]}
                 <Button
@@ -58,7 +58,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="br-top-0">
                 {#each alignContentArr as item }
                     {
 `<div class="${containerType} ac-${item}">

@@ -15,7 +15,7 @@
     <p>
         The basis set up avaliable after add <b>f</b> class to elements into flex container. Use variable <b>--fb</b> to manage flex basis.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="d-grid g-2">
             <div class="d-grid">
                 <label for="containerClasses">Container classes:</label>
@@ -66,7 +66,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="br-top-0">
                 {
 `<div class="d-flex">
     <div class="fb-${flexBasis}">fb-{flexBasis} one</div>

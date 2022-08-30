@@ -29,7 +29,7 @@
     <p>
         The <b>vertical-align-...</b> styles sets vertical alignment of an <b>inline</b>, <b>inline-block</b> elements.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="d-inline-flex fw-wrap g-2">
             {#each Object.entries(lineHeightObj) as [key, value]}
                 <Button
@@ -44,7 +44,7 @@
             <div class="lh col-span-full row-span-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
             <div class="lh col-span-full row-span-full py-4">
                 {#each Object.entries(verticalAlignObj) as [key, value]}
-                    <span class="bgc-negative-10 px-1 mr-1 rounded {key}">{value}</span>
+                    <span class="bgc-negative-10 px-1 mr-1 br {key}">{value}</span>
                 {/each}
             </div>
         </div>
@@ -54,7 +54,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="br-top-0">
                 {#each Object.entries(verticalAlignObj) as [key, value]}
                     {
 `<span class="${key}">${value}</span>

@@ -10,7 +10,7 @@
     <p>
         The mixing examples.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="d-grid">
             <label for="containerWidth">Container width {containerWidth}%:</label>
             <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={containerWidth}>
@@ -35,7 +35,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="br-top-0">
                 {
 `
 `

@@ -17,7 +17,7 @@
     <p>
         The <b>as-...</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>ai-</b> classes value.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive rounded">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="d-flex g-2">
             {#each Object.entries(containerTypeObj) as [key, value]}
                 <Button
@@ -42,7 +42,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="rounded-top-0">
+            <Precode class="br-top-0">
                 {#each alignSelfArr as item }
                     {
 `<div class="${containerType}">

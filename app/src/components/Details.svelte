@@ -28,8 +28,8 @@
             padding: .75em
             background-color: var(--positive-color)
             // border: .0625em solid currentColor
-            border-top-left-radius: .25em
-            border-top-right-radius: .25em
+            border-top-left-radius: var(--br, .5em)
+            border-top-right-radius: var(--br, .5em)
             // font-size: var(--fs-md)
             list-style: none
             cursor: pointer
@@ -38,8 +38,8 @@
             outline-offset: .0625em
         &:not([open])
             summary
-                border-bottom-left-radius: .25em
-                border-bottom-right-radius: .25em
+                border-bottom-left-radius: var(--br, .5em)
+                border-bottom-right-radius: var(--br, .5em)
                 &:hover,
                 &:focus
                     outline-color: var(--negative-color-20)

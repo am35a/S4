@@ -33,12 +33,12 @@ $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
         &-transparent
             border-color: transparent !important
 
-    .#{$orientation}#{$type}rounded
-        border-radius: var(--rounded) !important
+    .#{$orientation}#{$type}br
+        border-radius: var(--br) !important
         
         @each $size in $borderRadiusSizes
             &-#{$size}
-                border-radius: var(--rounded-#{$size}) !important
+                border-radius: var(--br-#{$size}) !important
 
         &-circle
             border-radius: 50% !important

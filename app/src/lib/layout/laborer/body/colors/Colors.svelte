@@ -41,7 +41,7 @@
 </div>
 <div class="d-flex fw-wrap g-2">
     {#each Object.entries(colorPaletteObj.accent.colors) as [key, value]}
-        <div class="d-grid ji-center p-4 bgc-positive rounded f-equal">
+        <div class="d-grid ji-center p-4 bgc-positive br f-equal">
             <div>
                 <div class="ta-center fw-600">{key}</div>
                 hsl({value.h} {value.s} {value.l})
