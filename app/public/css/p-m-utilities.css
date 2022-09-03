@@ -520,7 +520,7 @@
   flex-basis: var(--fb, 100%) !important;
 }
 
-/*  position section: position type, float, ltrb and translate contained in classes */
+/*  float section: float contained in classes */
 .m\:f-start {
   float: inline-start !important;
 }
@@ -570,19 +570,19 @@
 }
 
 /*  position section: position, ltrb and translate contained in classes */
-.m\:position-static {
+.m\:p-static {
   position: static !important;
 }
-.m\:position-relative {
+.m\:p-relative {
   position: relative !important;
 }
-.m\:position-absolute {
+.m\:p-absolute {
   position: absolute !important;
 }
-.m\:position-fixed {
+.m\:p-fixed {
   position: fixed !important;
 }
-.m\:position-sticky {
+.m\:p-sticky {
   position: sticky !important;
 }
 

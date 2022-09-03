@@ -23,7 +23,7 @@
         <div class="d-grid g-2 ox-auto">
             <div class="h4" aria-level={4} role="heading">Standard</div>
             <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start ox-auto br">
-                <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bgc-positive br">
+                <div class="d-grid rows-5 g-2 px-2 p-sticky left-0 bgc-positive br">
                     <div class="fw-600 fs-s2 d-grid">
                         <div class="row-span-full col-span-full mt-auto mr-auto fs-xs">State</div>
                         <div class="row-span-full col-span-full m-auto">\</div>
@@ -54,7 +54,7 @@
         <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Alternative</div>
             <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start ox-auto br">
-                <div class="d-grid rows-5 g-2 px-2 position-sticky left-0 bgc-positive br">
+                <div class="d-grid rows-5 g-2 px-2 p-sticky left-0 bgc-positive br">
                     <div class="fw-600 fs-s2 d-grid">
                         <div class="row-span-full col-span-full mt-auto mr-auto fs-xs">State</div>
                         <div class="row-span-full col-span-full m-auto">\</div>
