@@ -32,7 +32,7 @@
         <svelte:fragment slot="body">
             <Precode class="br-top-0">
                 {
-`...
+`<div class="o-${overflowProperty}>...</div>
 `
                 }
             </Precode>

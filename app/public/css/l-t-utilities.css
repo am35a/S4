@@ -520,6 +520,17 @@
   flex-basis: var(--fb, 100%) !important;
 }
 
+/*  position section: position type, float, ltrb and translate contained in classes */
+.t\:f-start {
+  float: inline-start !important;
+}
+.t\:f-end {
+  float: inline-end !important;
+}
+.t\:f-none {
+  float: none !important;
+}
+
 /*  overflow section: overflow type and axis contained in classes */
 .t\:o-auto {
   overflow: auto !important;
@@ -558,7 +569,7 @@
   overflow-y: scroll !important;
 }
 
-/*  position section: position type, float, ltrb and translate contained in classes */
+/*  position section: position, ltrb and translate contained in classes */
 .t\:position-static {
   position: static !important;
 }
@@ -573,66 +584,6 @@
 }
 .t\:position-sticky {
   position: sticky !important;
-}
-
-.t\:float-start {
-  float: start !important;
-}
-.t\:float-end {
-  float: end !important;
-}
-.t\:float-none {
-  float: none !important;
-}
-
-.t\:left-0 {
-  left: 0% !important;
-}
-.t\:left-50 {
-  left: 50% !important;
-}
-.t\:left-100 {
-  left: 100% !important;
-}
-
-.t\:top-0 {
-  top: 0% !important;
-}
-.t\:top-50 {
-  top: 50% !important;
-}
-.t\:top-100 {
-  top: 100% !important;
-}
-
-.t\:right-0 {
-  right: 0% !important;
-}
-.t\:right-50 {
-  right: 50% !important;
-}
-.t\:right-100 {
-  right: 100% !important;
-}
-
-.t\:bottom-0 {
-  bottom: 0% !important;
-}
-.t\:bottom-50 {
-  bottom: 50% !important;
-}
-.t\:bottom-100 {
-  bottom: 100% !important;
-}
-
-.t\:translate-middle {
-  transform: translate(-50%, -50%) !important;
-}
-.t\:translate-middle-x {
-  transform: translateX(-50%) !important;
-}
-.t\:translate-middle-y {
-  transform: translateY(-50%) !important;
 }
 
 /*  sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes */

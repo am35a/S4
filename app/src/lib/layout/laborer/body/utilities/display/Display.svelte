@@ -8,7 +8,7 @@
 
 </script>
 
-<article class="d-grid g-2">
+<article>
     <h2 id="display">Display</h2>
     <SectionOutside />
     <SectionInside />

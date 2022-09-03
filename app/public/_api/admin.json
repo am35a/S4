@@ -102,6 +102,11 @@
                         "segment": "/utilities/flex"
                     },
                     {
+                        "id": 44,
+                        "title": "Float",
+                        "segment": "/utilities/float"
+                    },
+                    {
                         "id": 45,
                         "title": "Grid",
                         "segment": "/utilities/grid"

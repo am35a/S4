@@ -7,6 +7,7 @@
     import ArticleBorder from './border/Border.svelte'
     import ArticleDisplay from './display/Display.svelte'
     import ArticleFlex from './flex/Flex.svelte'
+    import ArticleFloat from './float/Float.svelte'
     import ArticleGrid from './grid/Grid.svelte'
     import ArticleOverflow from './overflow/Overflow.svelte'
     import ArticlePosition from './position/Position.svelte'
@@ -43,6 +44,9 @@
 </Route>
 <Route path="/flex">
     <svelte:component this={ArticleFlex}/>
+</Route>
+<Route path="/float">
+    <svelte:component this={ArticleFloat}/>
 </Route>
 <Route path="/grid">
     <svelte:component this={ArticleGrid}/>
