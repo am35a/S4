@@ -1,7 +1,7 @@
 <article>
     <h2>Shadow</h2>
     <p>
-        ...
+        To add shadows to elements use <b>s-...</b> classes. To remove use <b>s-none</b> class.
     </p>
     <div class="d-grid g-3 cols-2 mb-4 p-3 bgc-positive br">
         <div class="bgc-positive p-2 rounded s-xxs">
