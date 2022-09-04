@@ -1,10 +1,8 @@
-.shadow
-    box-shadow: 0 .25em .5em var(--negative-color-10) !important
-    &-0
+$shadowSizes: (xxs: .0625, xs: .125, sm: .25, md: .5, lg: .75, xl: 1, xxl: 1.25, xxxl: 1.5)
+
+.s
+    @each $item, $value in $shadowSizes
+        &-#{$item}
+            box-shadow: 0 #{$value}em #{$value * 2}em var(--negative-color-10) !important
+    &-none
         box-shadow: none !important
-    &-1, &-sm
-        box-shadow: 0 .125em .25em var(--negative-color-10) !important
-    &-2, &-md
-        box-shadow: 0 .25em .5em var(--negative-color-10) !important
-    &-3, &-lg
-        box-shadow: 0 .5em .75em var(--negative-color-10) !important
