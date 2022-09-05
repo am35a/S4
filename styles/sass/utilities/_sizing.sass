@@ -9,26 +9,59 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
     sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes
 
 @mixin _sizing($orientation, $type)
-    @each $item in $sizingLevels
-        .#{$orientation}#{$type}#{$item}w
-            @for $i from 0 through math.div(100, $defaultSizingStep)
-                &-#{$i * $defaultSizingStep}
-                    #{$item}width: #{$i * $defaultSizingStep + '%'} !important
-            &-auto
-                #{$item}width: auto !important
-            &-fit
-                #{$item}width: fit-content !important
-            &-min
-                #{$item}width: min-content !important
-            &-max
-                #{$item}width: max-content !important
+    .#{$orientation}#{$type}w
+        width: var(--w) !important
+        &-auto
+            width: auto !important
+        &-fit
+            width: fit-content !important
+        &-min
+            width: min-content !important
+        &-max
+            width: max-content !important
 
-        .#{$orientation}#{$type}#{$item}h
-            @for $i from 0 through math.div(100, $defaultSizingStep)
-                &-#{$i * $defaultSizingStep}
-                    #{$item}height: #{$i * $defaultSizingStep + '%'} !important
-            &-auto
-                #{$item}height: auto !important
+    .#{$orientation}#{$type}mnw
+        width: var(--w) !important
+        &-auto
+            min-width: auto !important
+        &-fit
+            min-width: fit-content !important
+        &-min
+            min-width: min-content !important
+        &-max
+            min-width: max-content !important
+
+    .#{$orientation}#{$type}mxw
+        width: var(--w) !important
+        &-auto
+            max-width: auto !important
+        &-fit
+            max-width: fit-content !important
+        &-min
+            max-width: min-content !important
+        &-max
+            max-width: max-content !important
+
+    // @each $item in $sizingLevels
+    //     .#{$orientation}#{$type}#{$item}w
+    //         @for $i from 0 through math.div(100, $defaultSizingStep)
+    //             &-#{$i * $defaultSizingStep}
+    //                 #{$item}width: #{$i * $defaultSizingStep + '%'} !important
+    //         &-auto
+    //             #{$item}width: auto !important
+    //         &-fit
+    //             #{$item}width: fit-content !important
+    //         &-min
+    //             #{$item}width: min-content !important
+    //         &-max
+    //             #{$item}width: max-content !important
+
+    //     .#{$orientation}#{$type}#{$item}h
+    //         @for $i from 0 through math.div(100, $defaultSizingStep)
+    //             &-#{$i * $defaultSizingStep}
+    //                 #{$item}height: #{$i * $defaultSizingStep + '%'} !important
+    //         &-auto
+    //             #{$item}height: auto !important
 
     .#{$orientation}#{$type}resize
         @each $item in $sizingLocations
