@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Icon from "component/Icon.svelte"
-    import Button from "component/Button.svelte"
+    import Icon from 'component/Icon.svelte'
+    import Button from 'component/Button.svelte'
 </script>
 
 <div class="brand">

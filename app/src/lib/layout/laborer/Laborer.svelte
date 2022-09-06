@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Header from "./header/Header.svelte"
-	import Aside from "./aside/Aside.svelte"
-	import Body from "./body/Body.svelte"
+	import Header from './header/Header.svelte'
+	import Aside from './aside/Aside.svelte'
+	import Body from './body/Body.svelte'
 </script>
 
 <main class="laborer">

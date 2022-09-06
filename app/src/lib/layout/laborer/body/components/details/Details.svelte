@@ -1,7 +1,7 @@
 <script lang="ts">
-    // import Icon from "component/Icon.svelte"
-    import Details from "component/Details.svelte"
-    // import Precode from "component/Precode.svelte"
+    // import Icon from 'component/Icon.svelte'
+    import Details from 'component/Details.svelte'
+    // import Precode from 'component/Precode.svelte'
 </script>
 
 <section>

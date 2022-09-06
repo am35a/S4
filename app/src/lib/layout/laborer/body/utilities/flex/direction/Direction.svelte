@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Precode from "component/Precode.svelte"
-    import Details from "component/Details.svelte"
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
 
     let flexDirectionsArr: string[] = ['row', 'row-reverse', 'column', 'column-reverse']
 </script>

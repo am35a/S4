@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Precode from "component/Precode.svelte"
-    import Details from "component/Details.svelte"
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
 
     let shadowSizesArr: string[] = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl']
 </script>

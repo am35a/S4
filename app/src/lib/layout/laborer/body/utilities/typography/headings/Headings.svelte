@@ -1,5 +1,9 @@
-<section class="d-grid g-2">
-    <h3>Headings</h3>
+<script>
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
+</script>
+<section>
+    <h3 id="headings">Headings</h3>
     <!-- <div
         class="d-inline-grid cols g-2 js-start ai-center"
         style="--cols-tl: auto auto;"
@@ -27,5 +31,17 @@
         <h6>Heading - 6</h6>
         Fugiat doloribus laborum reprehenderit itaque quibusdam necessitatibus dolorem sed vel libero amet. Voluptates aut facere, illum nam voluptatibus quam soluta nesciunt maxime, minus dolor rerum maiores ex minima tempore autem.
     </div>
-
+    <Details>
+        <svelte:fragment slot="title">
+            Code example
+        </svelte:fragment>
+        <svelte:fragment slot="body">
+            <Precode class="br-top-0">
+                {
+`...
+`
+                }
+            </Precode>
+        </svelte:fragment>
+    </Details>
 </section>

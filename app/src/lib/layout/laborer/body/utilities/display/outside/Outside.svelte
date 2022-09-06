@@ -1,7 +1,7 @@
 <script lang="ts">
     import Button from 'component/Button.svelte'
-    import Precode from "component/Precode.svelte"
-    import Details from "component/Details.svelte"
+    import Precode from 'component/Precode.svelte'
+    import Details from 'component/Details.svelte'
 
     let displayOutsideArr: string[] = ['inline', 'block']
     let displayOutside: string = displayOutsideArr[0]
