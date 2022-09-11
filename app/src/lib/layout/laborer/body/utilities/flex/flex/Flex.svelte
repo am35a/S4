@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Precode from 'component/Precode.svelte'
+    
     import Grow from './grow/Grow.svelte'
     import Shrink from './shrink/Shrink.svelte'
     import Basis from './basis/Basis.svelte'
