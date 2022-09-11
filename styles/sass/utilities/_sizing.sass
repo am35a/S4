@@ -1,7 +1,6 @@
 @use "sass:math"
 
 $sizingLocations: none, both, horizontal, vertical
-// $sizingLevels: (min: min-, '': '', max: max-)
 $defaultSizingStep: 25
 $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9, 9 32)
 
@@ -9,18 +8,6 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
     sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes
 
 @mixin _sizing($orientation, $type)
-    // @each $item, $value in $sizingLevels
-    //     .#{$orientation}#{$type}#{$item}w
-    //         #{$value}width: var(--#{$item}w, auto) !important
-    //         @for $i from 0 through math.div(100, $defaultSizingStep)
-    //             &-#{$i * $defaultSizingStep}
-    //                 #{$value}width: #{$i * $defaultSizingStep + '%'} !important
-    //         &-fit
-    //             #{$value}width: fit-content !important
-    //         &-min
-    //             #{$value}width: min-content !important
-    //         &-max
-    //             #{$value}width: max-content !important
 
     .#{$orientation}#{$type}mw
         min-width: var(--mw, auto) !important
@@ -33,7 +20,6 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
             min-width: min-content !important
         &-max
             min-width: max-content !important
-
     .#{$orientation}#{$type}w
         width: var(--w, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
@@ -45,7 +31,6 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
             width: min-content !important
         &-max
             width: max-content !important
-
     .#{$orientation}#{$type}wm
         max-width: var(--wm, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
@@ -58,13 +43,40 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
         &-max
             max-width: max-content !important
 
-    //     .#{$orientation}#{$type}#{$item}h
-    //         @for $i from 0 through math.div(100, $defaultSizingStep)
-    //             &-#{$i * $defaultSizingStep}
-    //                 #{$item}height: #{$i * $defaultSizingStep + '%'} !important
-    //         &-auto
-    //             #{$item}height: auto !important
-
+    .#{$orientation}#{$type}mh
+        min-height: var(--mh, auto) !important
+        @for $i from 0 through math.div(100, $defaultSizingStep)
+            &-#{$i * $defaultSizingStep}
+                min-height: #{$i * $defaultSizingStep + '%'} !important
+        &-fit
+            min-height: fit-content !important
+        &-min
+            min-height: min-content !important
+        &-max
+            min-height: max-content !important
+    .#{$orientation}#{$type}h
+        height: var(--h, auto) !important
+        @for $i from 0 through math.div(100, $defaultSizingStep)
+            &-#{$i * $defaultSizingStep}
+                height: #{$i * $defaultSizingStep + '%'} !important
+        &-fit
+            height: fit-content !important
+        &-min
+            height: min-content !important
+        &-max
+            height: max-content !important
+    .#{$orientation}#{$type}wm
+        max-height: var(--hm, auto) !important
+        @for $i from 0 through math.div(100, $defaultSizingStep)
+            &-#{$i * $defaultSizingStep}
+                max-height: #{$i * $defaultSizingStep + '%'} !important
+        &-fit
+            max-height: fit-content !important
+        &-min
+            max-height: min-content !important
+        &-max
+            max-height: max-content !important
+    
     .#{$orientation}#{$type}resize
         @each $item in $sizingLocations
             &-#{$item}
