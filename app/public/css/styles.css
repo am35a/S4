@@ -145,9 +145,12 @@ input {
   -webkit-appearance: none;
 }
 
+[type=range][orient=vertical] {
+  -webkit-appearance: slider-vertical;
+}
+
 textarea {
   overflow: auto;
-  resize: vertical;
 }
 
 button,

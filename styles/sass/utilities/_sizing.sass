@@ -65,7 +65,7 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
             height: min-content !important
         &-max
             height: max-content !important
-    .#{$orientation}#{$type}wm
+    .#{$orientation}#{$type}hm
         max-height: var(--hm, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
             &-#{$i * $defaultSizingStep}
@@ -77,7 +77,7 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
         &-max
             max-height: max-content !important
     
-    .#{$orientation}#{$type}resize
+    .#{$orientation}#{$type}rs
         @each $item in $sizingLocations
             &-#{$item}
                 resize: #{$item} !important

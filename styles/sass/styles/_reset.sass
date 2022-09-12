@@ -120,9 +120,11 @@ input
 [type='search']::-webkit-search-decoration
     -webkit-appearance: none                    /* Remove the inner padding in Chrome and Safari on macOS */
 
+[type='range'][orient='vertical']
+    -webkit-appearance: slider-vertical
+    
 textarea
     overflow: auto                              /* Internet Explorer 11+ */
-    resize: vertical                            /* Specify textarea resizability */
 
 button,
 input,
