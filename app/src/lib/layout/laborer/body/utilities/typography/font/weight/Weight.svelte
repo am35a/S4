@@ -8,16 +8,23 @@
     <p>
         ...
     </p>
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+        {#each {length: 9} as _, i}
+            <div class="fw-{i + 1}00">fw-{i + 1}00</div>
+        {/each}
+    </div>
     <Details>
         <svelte:fragment slot="title">
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
             <Precode class="br-top-0">
-                {
-`...
+                {#each {length: 9} as _, i}
+                    {
+`<div class="fw-${i + 1}00">fw-${i + 1}00</div>
 `
-                }
+                    }
+                {/each}
             </Precode>
         </svelte:fragment>
     </Details>
