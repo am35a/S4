@@ -72,6 +72,7 @@ $textDecorations: none, underline, line-through
 
     .#{$orientation}#{$type}f
         &s
+            font-size: var(--fs)
             @each $size in $fontSizes
                 &-#{$size}
                     font-size: var(--fs-#{$size}) !important

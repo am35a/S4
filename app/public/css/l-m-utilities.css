@@ -1543,6 +1543,9 @@ l\:m\:p {
   margin-bottom: 0.5em;
 }
 
+.l\:m\:fs {
+  font-size: var(--fs);
+}
 .l\:m\:fs-xxs {
   font-size: var(--fs-xxs) !important;
 }

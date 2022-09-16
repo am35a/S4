@@ -1999,6 +1999,9 @@ p {
   margin-bottom: 0.5em;
 }
 
+.fs {
+  font-size: var(--fs);
+}
 .fs-xxs {
   font-size: var(--fs-xxs) !important;
 }
