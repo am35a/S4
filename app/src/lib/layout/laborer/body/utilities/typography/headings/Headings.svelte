@@ -17,19 +17,15 @@
         <code>&lt;h6&gt;&lt;/h6&gt;</code><h6>Heading - 6</h6>
     </div> -->
 
-    <div>
-        <h1>Heading - 1</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores natus libero dolorem magnam ipsa sed eveniet nihil quidem, explicabo minus enim sit rem voluptates, tempore nulla dolorum nobis beatae.
-        <h2>Heading - 2</h2>
-        Molestias reiciendis dolor facere ipsa, maiores quisquam quia possimus officia dolores a, exercitationem aut quasi optio provident. Officia pariatur dolorum, facere, laborum eveniet, alias magni rerum autem consequatur vero amet?
-        <h3>Heading - 3</h3>
-        Atque at maiores minus. Alias placeat consequatur fugit sapiente! Atque aperiam fugit molestias illo possimus, ullam explicabo pariatur at, ut temporibus fugiat ipsum corrupti suscipit commodi necessitatibus culpa itaque repellat?
-        <h4>Heading - 4</h4>
-        Dicta, perspiciatis officia corporis eaque velit ex, adipisci nobis inventore, ducimus accusamus exercitationem rerum esse. Est facilis reiciendis natus delectus fugiat nostrum. Nulla cum beatae aspernatur facere. Omnis, totam quis?
-        <h5>Heading - 5</h5>
-        Aspernatur laudantium molestiae illum minima ad porro doloribus aperiam mollitia ipsa itaque voluptate distinctio dolor voluptas rerum consequuntur, sequi reiciendis animi ducimus commodi facilis nemo! Provident corporis id aliquam vitae!
-        <h6>Heading - 6</h6>
-        Fugiat doloribus laborum reprehenderit itaque quibusdam necessitatibus dolorem sed vel libero amet. Voluptates aut facere, illum nam voluptatibus quam soluta nesciunt maxime, minus dolor rerum maiores ex minima tempore autem.
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+        <div>
+            <div class="h1">Heading - 1</div>
+            <div class="h2">Heading - 2</div>
+            <div class="h3">Heading - 3</div>
+            <div class="h4">Heading - 4</div>
+            <div class="h5">Heading - 5</div>
+            <div class="h6">Heading - 6</div>
+        </div>
     </div>
     <Details>
         <svelte:fragment slot="title">
@@ -37,10 +33,13 @@
         </svelte:fragment>
         <svelte:fragment slot="body">
             <Precode class="br-top-0">
-                {
-`...
+                {#each {length: 6} as _, i}
+                    {
+`<h${i + 1}>Heading - ${i + 1}<h${i + 1}>
+<div class="h${i + 1}" aria-level="${i + 1}">Heading - ${i + 1}</div>
 `
-                }
+                    }
+                {/each}
             </Precode>
         </svelte:fragment>
     </Details>
