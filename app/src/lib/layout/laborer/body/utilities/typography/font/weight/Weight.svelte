@@ -6,7 +6,7 @@
 <div>
     <h4 id="weight">Weight</h4>
     <p>
-        ...
+        To set a font weight have to use the <b>fw-...</b> classes.
     </p>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         {#each {length: 9} as _, i}
