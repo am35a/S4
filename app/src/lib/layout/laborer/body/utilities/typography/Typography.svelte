@@ -1,7 +1,7 @@
 <script lang="ts">
     import SectionHeadings from './headings/Headings.svelte'
     import SectionFont from './font/Font.svelte'
-    import SectionLineHeight from './lineheigh/Lineheight.svelte'
+    import SectionLineHeight from './lineheight/Lineheight.svelte'
 </script>
 
 <article>

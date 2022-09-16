@@ -33,8 +33,19 @@
         </svelte:fragment>
         <svelte:fragment slot="body">
             <Precode class="br-top-0">
+                {#each fontSizeArr as item }
+                    {
+`<div class="fs-${item}">fs-${item}</div>
+`
+                    }
+                {/each}
                 {
-`...
+`
+<div class="fs" style="--fs: 2em">fs 2em </div>
+
+<small>small</small>
+<small><small>bouble small</small></small>
+<small><small><small>triple small</small></small></small>
 `
                 }
             </Precode>
