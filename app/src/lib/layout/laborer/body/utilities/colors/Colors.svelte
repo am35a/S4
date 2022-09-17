@@ -32,7 +32,7 @@
         <div class="d-flex fd-column-reverse g-2">
             {#each Array(9) as _, i}
                 <div class="c-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 ta-center">
-                    c-{defaultColorsArr[0]}-{(i + 1) * 10}
+                    c-{defaultColorsArr[1]}-{(i + 1) * 10}
                 </div>
             {/each}
             <div class="c-{defaultColorsArr[1]} p-4 ta-center">
