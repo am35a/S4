@@ -521,6 +521,12 @@
 }
 
 /*  float section: float contained in classes */
+.m\:f-left {
+  float: left !important;
+}
+.m\:f-right {
+  float: right !important;
+}
 .m\:f-start {
   float: inline-start !important;
 }

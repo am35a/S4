@@ -949,6 +949,12 @@
 }
 
 /*  float section: float contained in classes */
+.f-left {
+  float: left !important;
+}
+.f-right {
+  float: right !important;
+}
 .f-start {
   float: inline-start !important;
 }
