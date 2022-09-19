@@ -1613,14 +1613,29 @@ p\:t\:p {
 .p\:t\:lh-0 {
   line-height: 0 !important;
 }
+.p\:t\:lh-xxs {
+  line-height: var(--lh-xxs) !important;
+}
+.p\:t\:lh-xs {
+  line-height: var(--lh-xs) !important;
+}
 .p\:t\:lh-sm {
-  line-height: 1 !important;
+  line-height: var(--lh-sm) !important;
 }
 .p\:t\:lh-md {
-  line-height: 1.5 !important;
+  line-height: var(--lh) !important;
 }
 .p\:t\:lh-lg {
-  line-height: 2 !important;
+  line-height: var(--lh-lg) !important;
+}
+.p\:t\:lh-xl {
+  line-height: var(--lh-xl) !important;
+}
+.p\:t\:lh-xxl {
+  line-height: var(--lh-xxl) !important;
+}
+.p\:t\:lh-xxxl {
+  line-height: var(--lh-xxxl) !important;
 }
 .p\:t\:lh-unset {
   line-height: unset !important;

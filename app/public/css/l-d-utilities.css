@@ -2069,14 +2069,29 @@ p {
 .lh-0 {
   line-height: 0 !important;
 }
+.lh-xxs {
+  line-height: var(--lh-xxs) !important;
+}
+.lh-xs {
+  line-height: var(--lh-xs) !important;
+}
 .lh-sm {
-  line-height: 1 !important;
+  line-height: var(--lh-sm) !important;
 }
 .lh-md {
-  line-height: 1.5 !important;
+  line-height: var(--lh) !important;
 }
 .lh-lg {
-  line-height: 2 !important;
+  line-height: var(--lh-lg) !important;
+}
+.lh-xl {
+  line-height: var(--lh-xl) !important;
+}
+.lh-xxl {
+  line-height: var(--lh-xxl) !important;
+}
+.lh-xxxl {
+  line-height: var(--lh-xxxl) !important;
 }
 .lh-unset {
   line-height: unset !important;

@@ -270,7 +270,14 @@ progress {
   --key-size: 16rem;
   --space-size-offset: 1;
   --font-size-offset: 1;
+  --lh-xxs: 1;
+  --lh-xs: 1.125;
+  --lh-sm: 1.25;
   --lh: 1.5;
+  --lh-lg: 1.75;
+  --lh-xl: 2;
+  --lh-xxl: 2.5;
+  --lh-xxxl: 3;
   --fs-xxs: 0.625em;
   --fs-xs: 0.75em;
   --fs-sm: 0.875em;
