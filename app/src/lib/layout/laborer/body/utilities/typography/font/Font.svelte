@@ -1,6 +1,6 @@
 <script lang="ts">
     import Size from './size/Size.svelte'
-    import Weight from './weight/Weight.svelte'
+    import Weight from './Eight/Eight.svelte'
 </script>
 
 <section>
