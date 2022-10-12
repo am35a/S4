@@ -37,7 +37,20 @@
         <svelte:fragment slot="body">
             <Precode class="br-top-0">
                 {
-`
+`<div class="d-flex">
+    <div class="f" style="--fg: 1; --fs: 1; --fb: 250rem;">two</div>
+    <div class="f" style="--fg: 2; --fs: 2; --fb: 250rem;">three</div>
+</div>
+<div class="d-flex">
+    <div class="f" style="--fg: 1; --fb: 0; ">equal one</div>
+    <div class="f" style="--fg: 1; --fb: 0; ">equal two</div>
+    <div class="f" style="--fg: 1; --fb: 0; ">equal three</div>
+</div>
+<div class="d-flex">
+    <div class="w-100">w-100 one</div>
+    <div class="f" style="--fs: 0;">shrink-1 two</div>
+    <div>simple three</div>
+</div>
 `
                 }
             </Precode>
