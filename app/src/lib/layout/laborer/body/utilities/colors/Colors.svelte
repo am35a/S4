@@ -42,6 +42,7 @@
     </div>    
     <p>
         The <b>c-...-l</b> and <b>c-...-d</b> classes set light or dark shades for accent colors.
+        The <b>c-...-m</b> classes set partly transparent (mute) colors.
     </p>
     <div class="d-grid g-3 cols-4 mb-4 p-3 bgc-positive br">
         {#each accentColorsArr as item }
