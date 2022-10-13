@@ -9,7 +9,7 @@
         Use <b>f-...</b> classes to floats any element across any breakpoint.
     </p>
     <div class="alert alert-warning js-start">
-        * Pay attention the <b>f-start</b> and <b>f-start</b> classes do not support by invalid browsers like Chrome or Safari.
+        * Pay attention the <b>f-start</b> and <b>f-end</b> classes do not support by invalid browsers like Chrome or Safari.
     </div>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="bgc-negative-10 p-2">
