@@ -504,6 +504,12 @@
 .t\:fw-nowrap {
   flex-wrap: nowrap !important;
 }
+.t\:fg {
+  flex-grow: var(--fg, 1);
+}
+.t\:fs {
+  flex-shrink: var(--fs, 0);
+}
 .t\:fb-fill {
   flex-basis: var(--fb, fill) !important;
 }

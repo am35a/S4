@@ -15,8 +15,12 @@ $basis: (fill: fill, max: max-content, min: min-content, fit: fit-content, 100: 
         @each $item in $wraps
             &w-#{$item}
                 flex-wrap: $item !important
-
+                
         flex: var(--fg, 0) var(--fs, 1) var(--fb, auto) !important
+        &g
+            flex-grow: var(--fg, 1)
+        &s
+            flex-shrink: var(--fs, 0)
 
         @each $item, $value in $basis
             &b-#{$item}

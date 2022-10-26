@@ -932,6 +932,12 @@
 .fw-nowrap {
   flex-wrap: nowrap !important;
 }
+.fg {
+  flex-grow: var(--fg, 1);
+}
+.fs {
+  flex-shrink: var(--fs, 0);
+}
 .fb-fill {
   flex-basis: var(--fb, fill) !important;
 }

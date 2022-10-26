@@ -9,8 +9,11 @@
 <div>
     <h4 id="flexShrink">Shrink</h4>
     <p>
-        The shrink set up avaliable after add <b>f</b> class to elements into flex container. Use variable <b>--fs</b> to manage flex shrink.
+        The shrink set up avaliable after add <b>fs</b> or <b>f</b> classes to elements into flex container. Use variable <b>--fs</b> to manage flex shrink.
     </p>
+    <div class="alert alert-info">
+        Default variable of flex-shrink is 1. Class <b>fs</b> convert variable to 0.  
+    </div>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="d-grid g-2">
             <div class="d-grid">

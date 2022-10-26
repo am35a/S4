@@ -3,7 +3,7 @@
     "logo": {
         "full": ""
     },
-    "initialScale": 2,
+    "initialScale": 0.90,
     "theme": "default",
     "fontFamily": "Roboto"
 }

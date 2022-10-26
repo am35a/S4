@@ -6,7 +6,7 @@
 
 <div
     on:click={() => $asideExpand = false}
-    class="fader"
+    class="fader" aria-hidden="true" role="button"
 >
     <div class="close">
         <Icon name="close-o" size="lg"/>
@@ -15,15 +15,15 @@
 
 <style lang="sass" global>
     .fader
-        position: absolute
         display: none
-        width: 100%
-        height: 100%
-        background-color: var(--negative-color-90)
-        z-index: -1
         .mobile .expand &,
         .tablet .expand &
+            position: absolute
             display: grid
+            width: 100%
+            height: 100%
+            background-color: var(--negative-color-90)
+            z-index: -1
         .close
             display: grid
             justify-items: center
