@@ -27,31 +27,31 @@
                 >{key}</Button>
             {/each}
         </div>
-            {#each alignContentArr as item }
-                <div class="{containerType} g-2 bgc-negative-10 p-2 ac-{item}" style="height: 160rem;">
-                    <div class="bgc-negative-10 px-2 py-1">one</div>
-                    <div class="bgc-negative-10 px-2 py-1">two</div>
-                    <div class="bgc-negative-10 px-2 py-1">three</div>
-                    {#if containerType.includes('d-flex')}
-                        <div class="bgc-negative-10 px-2 py-1">four</div>
-                        <div class="bgc-negative-10 px-2 py-1">five</div>
-                        <div class="bgc-negative-10 px-2 py-1">six</div>
-                        <div class="bgc-negative-10 px-2 py-1">seven</div>
-                        <div class="bgc-negative-10 px-2 py-1">eight</div>
-                        <div class="bgc-negative-10 px-2 py-1">nine</div>
-                        <div class="bgc-negative-10 px-2 py-1">ten</div>
-                        <div class="bgc-negative-10 px-2 py-1">eleven</div>
-                        <div class="bgc-negative-10 px-2 py-1">twelve</div>
-                        <div class="bgc-negative-10 px-2 py-1">thirteen</div>
-                        <div class="bgc-negative-10 px-2 py-1">fourteen</div>
-                        <div class="bgc-negative-10 px-2 py-1">fifteen</div>
-                        <div class="bgc-negative-10 px-2 py-1">sixteen</div>
-                        <div class="bgc-negative-10 px-2 py-1">seventeen</div>
-                        <div class="bgc-negative-10 px-2 py-1">eighteen</div>
-                        <div class="bgc-negative-10 px-2 py-1">nineteen</div>
-                    {/if}
-                </div>
-            {/each}
+        {#each alignContentArr as item }
+            <div class="{containerType} g-2 bgc-negative-10 p-2 ac-{item}" style="height: 160rem;">
+                <div class="bgc-negative-10 px-2 py-1">one</div>
+                <div class="bgc-negative-10 px-2 py-1">two</div>
+                <div class="bgc-negative-10 px-2 py-1">three</div>
+                {#if containerType.includes('d-flex')}
+                    <div class="bgc-negative-10 px-2 py-1">four</div>
+                    <div class="bgc-negative-10 px-2 py-1">five</div>
+                    <div class="bgc-negative-10 px-2 py-1">six</div>
+                    <div class="bgc-negative-10 px-2 py-1">seven</div>
+                    <div class="bgc-negative-10 px-2 py-1">eight</div>
+                    <div class="bgc-negative-10 px-2 py-1">nine</div>
+                    <div class="bgc-negative-10 px-2 py-1">ten</div>
+                    <div class="bgc-negative-10 px-2 py-1">eleven</div>
+                    <div class="bgc-negative-10 px-2 py-1">twelve</div>
+                    <div class="bgc-negative-10 px-2 py-1">thirteen</div>
+                    <div class="bgc-negative-10 px-2 py-1">fourteen</div>
+                    <div class="bgc-negative-10 px-2 py-1">fifteen</div>
+                    <div class="bgc-negative-10 px-2 py-1">sixteen</div>
+                    <div class="bgc-negative-10 px-2 py-1">seventeen</div>
+                    <div class="bgc-negative-10 px-2 py-1">eighteen</div>
+                    <div class="bgc-negative-10 px-2 py-1">nineteen</div>
+                {/if}
+            </div>
+        {/each}
     </div>
     <Details>
         <svelte:fragment slot="title">
