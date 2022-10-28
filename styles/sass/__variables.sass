@@ -6,12 +6,19 @@ $accentExtraColorsPrefs: l, d, m
 
 $placementDirections: left, top, right, bottom
 
-// $is-rtl: false
-// @if $is-rtl
-//     $startDirection: right
-//     $endDirection: left
-// @else 
-//     $startDirection: left
-//     $endDirection: right
-$startDirection: left
-$endDirection: right
+$is-rtl: false
+
+@function startDirection()
+    $startDirection: left
+    @if $is-rtl
+        $startDirection: right
+    @return $startDirection
+
+@function endDirection()
+    $endDirection: right
+    @if $is-rtl
+        $endDirection: left
+    @return $endDirection
+
+$startDirection: startDirection()
+$endDirection: endDirection()
