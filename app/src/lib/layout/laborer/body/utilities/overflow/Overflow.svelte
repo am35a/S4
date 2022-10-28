@@ -9,7 +9,7 @@
 <section>
     <h2 class="overflow">Overflow</h2>
     <p>
-        ...
+        The overflow property allow to clip content, set render scrollbars or how to just display content when it overflows its block level container.
     </p>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="d-flex g-2">
