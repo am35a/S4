@@ -7,9 +7,9 @@
         'all': '-',
         'x axis': 'x-',
         'y axis': 'y-',
-        'left': 'l-',
+        'start': 's-',
         'top': 't-',
-        'right': 'r-',
+        'end': 'e-',
         'bottom': 'b-',
     }
     let marginProperty: string = marginPropertyObj['all']
@@ -21,7 +21,6 @@
         The <b>m</b> classes are used to set the margin.
         The prefix <b>x</b>, <b>y</b> after <b>m</b> sets the axios value and <b>l</b>, <b>t</b>, <b>r</b> and <b>b</b> the direction value.
         To disable margin use the <b>m...-0</b> classes.
-        Full list of the width classes:
     </p>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="d-flex g-2">
@@ -48,7 +47,8 @@
         <svelte:fragment slot="body">
             <Precode class="br-top-0">
                 {
-`...`
+`<div class="m${marginProperty}#">...</div>
+`
                 }
             </Precode>
         </svelte:fragment>
