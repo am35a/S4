@@ -25,14 +25,14 @@
             <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start ox-auto br">
                 <div class="d-grid rows-5 g-2 px-2 p-sticky left-0 bgc-positive br">
                     <div class="fw-600 fs-s2 d-grid">
-                        <div class="row-span-full col-span-full mt-auto mr-auto fs-xs">State</div>
+                        <div class="row-span-full col-span-full mt-auto me-auto fs-xs">State</div>
                         <div class="row-span-full col-span-full m-auto">\</div>
-                        <div class="row-span-full col-span-full ml-auto mb-auto fs-xs">Color</div>
+                        <div class="row-span-full col-span-full ms-auto mb-auto fs-xs">Color</div>
                     </div>
-                    <div class="fw-600 my-auto ml-auto">Default</div>
-                    <div class="fw-600 my-auto ml-auto">Active</div>
-                    <div class="fw-600 my-auto ml-auto">Disabled</div>
-                    <div class="fw-600 my-auto ml-auto">Act + Dis</div>
+                    <div class="fw-600 my-auto ms-auto">Default</div>
+                    <div class="fw-600 my-auto ms-auto">Active</div>
+                    <div class="fw-600 my-auto ms-auto">Disabled</div>
+                    <div class="fw-600 my-auto ms-auto">Act + Dis</div>
                 </div>
                 {#each Object.entries(buttonsName) as [key, value]}
                     <div class="d-grid rows-5 g-2">
@@ -56,14 +56,14 @@
             <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start ox-auto br">
                 <div class="d-grid rows-5 g-2 px-2 p-sticky left-0 bgc-positive br">
                     <div class="fw-600 fs-s2 d-grid">
-                        <div class="row-span-full col-span-full mt-auto mr-auto fs-xs">State</div>
+                        <div class="row-span-full col-span-full mt-auto me-auto fs-xs">State</div>
                         <div class="row-span-full col-span-full m-auto">\</div>
-                        <div class="row-span-full col-span-full ml-auto mb-auto fs-xs">Color</div>
+                        <div class="row-span-full col-span-full ms-auto mb-auto fs-xs">Color</div>
                     </div>
-                    <div class="fw-600 my-auto ml-auto">Default</div>
-                    <div class="fw-600 my-auto ml-auto">Active</div>
-                    <div class="fw-600 my-auto ml-auto">Disabled</div>
-                    <div class="fw-600 my-auto ml-auto">Act + Dis</div>
+                    <div class="fw-600 my-auto ms-auto">Default</div>
+                    <div class="fw-600 my-auto ms-auto">Active</div>
+                    <div class="fw-600 my-auto ms-auto">Disabled</div>
+                    <div class="fw-600 my-auto ms-auto">Act + Dis</div>
                 </div>
                 {#each Object.entries(buttonsName) as [key, value]}
                     <div class="d-grid rows-5 g-2">

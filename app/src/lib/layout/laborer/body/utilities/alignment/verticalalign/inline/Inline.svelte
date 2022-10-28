@@ -44,7 +44,7 @@
             <div class="lh col-span-full row-span-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
             <div class="lh col-span-full row-span-full py-4">
                 {#each Object.entries(verticalAlignObj) as [key, value]}
-                    <span class="bgc-negative-10 px-1 mr-1 br {key}">{value}</span>
+                    <span class="bgc-negative-10 px-1 me-1 br {key}">{value}</span>
                 {/each}
             </div>
         </div>

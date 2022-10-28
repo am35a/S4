@@ -37,28 +37,28 @@ $spacingStep: 8
             margin-top: auto !important
             margin-bottom: auto !important
         
-        &l-0
+        &s-0
             margin-#{$startDirection}: unset !important
         &t-0
             margin-top: unset !important
-        &r-0
+        &e-0
             margin-#{$endDirection}: unset !important
         &b-0
             margin-bottom: unset !important
         @for $i from 1 through $spacingStep
-            &l-#{$i}
+            &s-#{$i}
                 margin-#{$startDirection}: #{$i * .25}em !important
             &t-#{$i}
                 margin-top: #{$i * .25}em !important
-            &r-#{$i}
+            &e-#{$i}
                 margin-#{$endDirection}: #{$i * .25}em !important
             &b-#{$i}
                 margin-bottom: #{$i * .25}em !important
-        &l-auto
+        &s-auto
             margin-#{$startDirection}: auto !important
         &t-auto
             margin-top: auto !important
-        &r-auto
+        &e-auto
             margin-#{$endDirection}: auto !important
         &b-auto
             margin-bottom: auto !important
@@ -84,11 +84,11 @@ $spacingStep: 8
                 padding-top: #{$i * .25}em !important
                 padding-bottom: #{$i * .25}em !important
         @for $i from 1 through $spacingStep
-            &l-#{$i}
+            &s-#{$i}
                 padding-#{$startDirection}: #{$i * .25}em !important
             &t-#{$i}
                 padding-top: #{$i * .25}em !important
-            &r-#{$i}
+            &e-#{$i}
                 padding-#{$endDirection}: #{$i * .25}em !important
             &b-#{$i}
                 padding-bottom: #{$i * .25}em !important
@@ -96,7 +96,7 @@ $spacingStep: 8
             padding-#{$startDirection}: unset !important
         &t-0
             padding-top: unset !important
-        &r-0
+        &e-0
             padding-#{$endDirection}: unset !important
         &b-0
             padding-bottom: unset !important

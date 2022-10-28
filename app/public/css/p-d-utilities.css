@@ -936,121 +936,121 @@
   margin-top: auto !important;
   margin-bottom: auto !important;
 }
-.p\:ml-0 {
+.p\:ms-0 {
   margin-left: unset !important;
 }
 .p\:mt-0 {
   margin-top: unset !important;
 }
-.p\:mr-0 {
+.p\:me-0 {
   margin-right: unset !important;
 }
 .p\:mb-0 {
   margin-bottom: unset !important;
 }
-.p\:ml-1 {
+.p\:ms-1 {
   margin-left: 0.25em !important;
 }
 .p\:mt-1 {
   margin-top: 0.25em !important;
 }
-.p\:mr-1 {
+.p\:me-1 {
   margin-right: 0.25em !important;
 }
 .p\:mb-1 {
   margin-bottom: 0.25em !important;
 }
-.p\:ml-2 {
+.p\:ms-2 {
   margin-left: 0.5em !important;
 }
 .p\:mt-2 {
   margin-top: 0.5em !important;
 }
-.p\:mr-2 {
+.p\:me-2 {
   margin-right: 0.5em !important;
 }
 .p\:mb-2 {
   margin-bottom: 0.5em !important;
 }
-.p\:ml-3 {
+.p\:ms-3 {
   margin-left: 0.75em !important;
 }
 .p\:mt-3 {
   margin-top: 0.75em !important;
 }
-.p\:mr-3 {
+.p\:me-3 {
   margin-right: 0.75em !important;
 }
 .p\:mb-3 {
   margin-bottom: 0.75em !important;
 }
-.p\:ml-4 {
+.p\:ms-4 {
   margin-left: 1em !important;
 }
 .p\:mt-4 {
   margin-top: 1em !important;
 }
-.p\:mr-4 {
+.p\:me-4 {
   margin-right: 1em !important;
 }
 .p\:mb-4 {
   margin-bottom: 1em !important;
 }
-.p\:ml-5 {
+.p\:ms-5 {
   margin-left: 1.25em !important;
 }
 .p\:mt-5 {
   margin-top: 1.25em !important;
 }
-.p\:mr-5 {
+.p\:me-5 {
   margin-right: 1.25em !important;
 }
 .p\:mb-5 {
   margin-bottom: 1.25em !important;
 }
-.p\:ml-6 {
+.p\:ms-6 {
   margin-left: 1.5em !important;
 }
 .p\:mt-6 {
   margin-top: 1.5em !important;
 }
-.p\:mr-6 {
+.p\:me-6 {
   margin-right: 1.5em !important;
 }
 .p\:mb-6 {
   margin-bottom: 1.5em !important;
 }
-.p\:ml-7 {
+.p\:ms-7 {
   margin-left: 1.75em !important;
 }
 .p\:mt-7 {
   margin-top: 1.75em !important;
 }
-.p\:mr-7 {
+.p\:me-7 {
   margin-right: 1.75em !important;
 }
 .p\:mb-7 {
   margin-bottom: 1.75em !important;
 }
-.p\:ml-8 {
+.p\:ms-8 {
   margin-left: 2em !important;
 }
 .p\:mt-8 {
   margin-top: 2em !important;
 }
-.p\:mr-8 {
+.p\:me-8 {
   margin-right: 2em !important;
 }
 .p\:mb-8 {
   margin-bottom: 2em !important;
 }
-.p\:ml-auto {
+.p\:ms-auto {
   margin-left: auto !important;
 }
 .p\:mt-auto {
   margin-top: auto !important;
 }
-.p\:mr-auto {
+.p\:me-auto {
   margin-right: auto !important;
 }
 .p\:mb-auto {
@@ -1156,97 +1156,97 @@
   padding-top: 2em !important;
   padding-bottom: 2em !important;
 }
-.p\:pl-1 {
+.p\:ps-1 {
   padding-left: 0.25em !important;
 }
 .p\:pt-1 {
   padding-top: 0.25em !important;
 }
-.p\:pr-1 {
+.p\:pe-1 {
   padding-right: 0.25em !important;
 }
 .p\:pb-1 {
   padding-bottom: 0.25em !important;
 }
-.p\:pl-2 {
+.p\:ps-2 {
   padding-left: 0.5em !important;
 }
 .p\:pt-2 {
   padding-top: 0.5em !important;
 }
-.p\:pr-2 {
+.p\:pe-2 {
   padding-right: 0.5em !important;
 }
 .p\:pb-2 {
   padding-bottom: 0.5em !important;
 }
-.p\:pl-3 {
+.p\:ps-3 {
   padding-left: 0.75em !important;
 }
 .p\:pt-3 {
   padding-top: 0.75em !important;
 }
-.p\:pr-3 {
+.p\:pe-3 {
   padding-right: 0.75em !important;
 }
 .p\:pb-3 {
   padding-bottom: 0.75em !important;
 }
-.p\:pl-4 {
+.p\:ps-4 {
   padding-left: 1em !important;
 }
 .p\:pt-4 {
   padding-top: 1em !important;
 }
-.p\:pr-4 {
+.p\:pe-4 {
   padding-right: 1em !important;
 }
 .p\:pb-4 {
   padding-bottom: 1em !important;
 }
-.p\:pl-5 {
+.p\:ps-5 {
   padding-left: 1.25em !important;
 }
 .p\:pt-5 {
   padding-top: 1.25em !important;
 }
-.p\:pr-5 {
+.p\:pe-5 {
   padding-right: 1.25em !important;
 }
 .p\:pb-5 {
   padding-bottom: 1.25em !important;
 }
-.p\:pl-6 {
+.p\:ps-6 {
   padding-left: 1.5em !important;
 }
 .p\:pt-6 {
   padding-top: 1.5em !important;
 }
-.p\:pr-6 {
+.p\:pe-6 {
   padding-right: 1.5em !important;
 }
 .p\:pb-6 {
   padding-bottom: 1.5em !important;
 }
-.p\:pl-7 {
+.p\:ps-7 {
   padding-left: 1.75em !important;
 }
 .p\:pt-7 {
   padding-top: 1.75em !important;
 }
-.p\:pr-7 {
+.p\:pe-7 {
   padding-right: 1.75em !important;
 }
 .p\:pb-7 {
   padding-bottom: 1.75em !important;
 }
-.p\:pl-8 {
+.p\:ps-8 {
   padding-left: 2em !important;
 }
 .p\:pt-8 {
   padding-top: 2em !important;
 }
-.p\:pr-8 {
+.p\:pe-8 {
   padding-right: 2em !important;
 }
 .p\:pb-8 {
@@ -1258,7 +1258,7 @@
 .p\:pt-0 {
   padding-top: unset !important;
 }
-.p\:pr-0 {
+.p\:pe-0 {
   padding-right: unset !important;
 }
 .p\:pb-0 {
