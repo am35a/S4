@@ -39,8 +39,10 @@
 
 <div 
     class:item = {true}
+    class:active = {active}
     class:has-action = {action}
     class:has-submenu = {items}
+    class:show-submenu = {items && submenu}
     {...$$restProps}
 >
     <button
@@ -67,18 +69,13 @@
         {/if}
     </div>
     {#if items}
-        <div
-            class:d-none = {!submenu}
-            class="submenu"
-        >
-            {#each items as item}
-                <svelte:self
-                    {...item}
-                    active={$appSegment === item.segment}
-                    segment={item.segment}
-                />
-            {/each}
-        </div>
+        {#each items as item}
+            <svelte:self
+                {...item}
+                active={$appSegment === item.segment}
+                segment={item.segment}
+            />
+        {/each}
     {/if}
 </div>
 
@@ -90,7 +87,13 @@
             .title
                 padding-right: 3rem
         &.has-submenu
-            background-color: var(--negative-color-10)
+            &.show-submenu
+                background-color: var(--aside-submenu-bgc, var(--negative-color-10))
+            &:not(.show-submenu)
+                .item.active
+                    background-color: var(--aside-submenu-bgc, var(--negative-color-10))
+                .item:not(.active)
+                    display: none
         .title
             grid-column: 1/-1
             grid-row: 1/-1

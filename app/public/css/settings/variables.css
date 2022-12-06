@@ -9,4 +9,14 @@
     --aside-bgc: hsl(230 10% 20%);
     --aside-color: hsl(230 10% 80%); */
 
+    
+    /* --body-bgc: hsl(215, 25%, 95%); */
+    --body-color: hsl(215, 25%, 10%);
+
+    --header-bgc: hsl(215, 25%, 15%);
+    --header-color: var(--positive-color-80);
+    
+    --aside-bgc: hsl(215, 25%, 10%);
+    --aside-submenu-bgc: hsl(215, 25%, 15%);
+
 }
