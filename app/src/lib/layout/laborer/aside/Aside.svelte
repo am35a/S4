@@ -29,27 +29,25 @@
         width: var(--layout-aside-width)
         color: var(--aside-color, var(--positive-color-80))
         z-index: 100
-        .blind
+        > .blind
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
-        .brand
+        > .brand
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
-        .items,
-        .submenu
+        > .items
             transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
             transition: all 0.25s
-            .item
+            > .item
                 transform: translateX(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)))
                 transition: all 0.25s
         &.expand
-            .blind
+            > .blind
                 transform: translateX(0rem)
-            .brand
+            > .brand
                 transform: translateX(0rem)
-            .items,
-            .submenu
+            > .items
                 transform: translateX(0rem)
-                .item
+                > .item
                     transform: translateX(0rem)
 </style>
