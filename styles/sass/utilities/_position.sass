@@ -14,11 +14,11 @@
         &-sticky
             position: sticky !important
 
-    // @each $item in $placementDirections
-    //     .#{$orientation}#{$type}#{$item}
-    //         @for $i from 0 through 2
-    //             &-#{$i * 50}
-    //                 #{$item}: $i * 50% !important
+    @each $item, $value in $placementPositions
+        .#{$orientation}#{$type}#{$item}
+            @for $i from 0 through 2
+                &-#{$i * 50}
+                    #{$value}: $i * 50% !important
         
     // .#{$orientation}#{$type}translate
     //     &-middle

@@ -17,7 +17,7 @@
     <div class="title">
         Header title
     </div>
-    <div class="d-inline-grid px-2">
+    <div class="pouch">
         <Button
             class="btn btn-ico my-auto"
             on:click={() => window.open('https://github.com/am35a/S4', '_blank')}
@@ -33,7 +33,7 @@
         grid-row: 1/2
         display: grid
         grid-template-columns: auto 1fr auto
-        height: var(--layout-header-height)
+        min-height: var(--layout-header-height)
         background-color: var(--header-bgc, var(--secondary-color-l))
         color: var(--header-color, var(--negative-color))
         z-index: 10
@@ -54,5 +54,9 @@
             align-items: center
             font-size: var(--fs-lg, large)
             font-weight: 500
+        .pouch
+            display: inline-grid
+            padding-left: 0.5em
+            padding-right: 0.5em
 
 </style>

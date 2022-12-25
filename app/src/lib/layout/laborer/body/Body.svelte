@@ -33,7 +33,7 @@
     <hr> -->
 
     <Route>
-        <Route path={"/home"}>
+        <Route path={'/home' || '/' || ''}>
             <svelte:component this={PageHome}/>
         </Route>
         <Route path="/core">
@@ -46,7 +46,7 @@
             <svelte:component this={PageComponents}/>
         </Route>
         <Route path="/utilities">
-            <svelte:component this={PageUtilities} jumpTo={"/utilities"}/>
+            <svelte:component this={PageUtilities} jumpTo={'/utilities'}/>
         </Route>
         <Route path="/layout">
             <svelte:component this={PageLayout}/>

@@ -598,6 +598,46 @@
   position: sticky !important;
 }
 
+.p\:t\:l-0 {
+  left: 0% !important;
+}
+.p\:t\:l-50 {
+  left: 50% !important;
+}
+.p\:t\:l-100 {
+  left: 100% !important;
+}
+
+.p\:t\:t-0 {
+  top: 0% !important;
+}
+.p\:t\:t-50 {
+  top: 50% !important;
+}
+.p\:t\:t-100 {
+  top: 100% !important;
+}
+
+.p\:t\:r-0 {
+  right: 0% !important;
+}
+.p\:t\:r-50 {
+  right: 50% !important;
+}
+.p\:t\:r-100 {
+  right: 100% !important;
+}
+
+.p\:t\:b-0 {
+  bottom: 0% !important;
+}
+.p\:t\:b-50 {
+  bottom: 50% !important;
+}
+.p\:t\:b-100 {
+  bottom: 100% !important;
+}
+
 /*  sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes */
 .border-box {
   box-sizing: border-box !important;
