@@ -1,6 +1,5 @@
 <script lang="ts">
-    // import { Route } from 'svelte-micro'
-
+    import { path, router } from 'svelte-micro'
     import { onMount } from 'svelte'
     import {
         appData,
@@ -85,8 +84,9 @@
         $asideExpand = userData.aside.expand
         $asideItems = userData.aside.items
         
-
         // console.log(getData('/_api/app.json'))
+
+        router.replace($path === '/' && $user.isAuthorized ? '/home' : '/login')
 	})
 </script>
 

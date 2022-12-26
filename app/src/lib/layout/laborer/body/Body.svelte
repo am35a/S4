@@ -33,7 +33,7 @@
     <hr> -->
 
     <Route>
-        <Route path={'/home' || '/' || ''}>
+        <Route path={'/home'}>
             <svelte:component this={PageHome}/>
         </Route>
         <Route path="/core">
