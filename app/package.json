@@ -2,6 +2,20 @@
     "name": "s4-app",
     "version": "0.0.1",
     "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/am35a/S4.git"
+    },
+    "keywords": [
+        "UI",
+        "framework"
+    ],
+    "author": "Arthur Selimov",
+    "license": "...",
+    "bugs": {
+        "url": "https://github.com/am35a/S4/issues"
+    },
+    "homepage": "https://s4-am35a.vercel.app",
     "scripts": {
         "build": "rollup -c",
         "dev": "rollup -c -w",
