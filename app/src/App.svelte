@@ -86,7 +86,8 @@
         
         // console.log(getData('/_api/app.json'))
 
-        router.replace($path === '/' && $user.isAuthorized ? '/home' : '/login')
+        // router.replace($path === '/' && $user.isAuthorized ? '/home' : '/login')
+        router.replace($path === '/' ? '/home' : '')
 	})
 </script>
 

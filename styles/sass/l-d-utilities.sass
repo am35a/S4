@@ -1,48 +1,9 @@
 @import __variables
 
-// ! use "l\\:", "d\\:" to activate only for landscape/desktop
+// // ! use "l\\:", "d\\:" to activate only for landscape/desktop
 
-// ("", "") activate .l-p-utilities.css rules for all device types and orientations
+// // ("", "") activate .l-p-utilities.css rules for all device types and orientations
 
-@import utilities/_alignment
-@include _alignment("", "")
-
-@import utilities/_background
-@include _background("", "")
-
-@import utilities/_border
-@include _border("", "")
-
-@import utilities/_display
-@include _display("", "")
-
-@import utilities/_grid
-@include _grid("", "")
-
-@import utilities/_flex
-@include _flex("", "")
-
-@import utilities/_float
-@include _float("", "")
-
-@import utilities/_levels
-
-@import utilities/_overflow
-@include _overflow("", "")
-
-@import utilities/_position
-@include _position("", "")
-
-@import utilities/_sizing
-@include _sizing("", "")
-
-@import utilities/_shadow
-
-@import utilities/_spacing
-@include _spacing("", "")
-
-@import utilities/_typography
-@include _typography("", "")
-
-@import utilities/_pseudos
-// @include _pseudos("", "")
+$orientation: ""
+$type: ""
+@import utilities

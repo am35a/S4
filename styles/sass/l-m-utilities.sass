@@ -2,43 +2,46 @@
 
 // ("l\\:", "m\\:") activate .l-m-utilities.css rules only for landscape orientation mobile devices
 
+$l-m-orientation: "l\\:"
+$l-m-device: "m\\:"
+
 @import utilities/_alignment
-@include _alignment("l\\:", "m\\:")
+@include _alignment($l-m-orientation, $l-m-device)
 
 // default for all
-// @import utilities/_background
-// @include _background("", "")
+@import utilities/_background
+@include _background($l-m-orientation, $l-m-device)
 
 @import utilities/_display
-@include _display("l\\:", "m\\:")
+@include _display($l-m-orientation, $l-m-device)
 
 @import utilities/_grid
-@include _grid("l\\:", "m\\:")
+@include _grid($l-m-orientation, $l-m-device)
 
 @import utilities/_flex
-@include _flex("l\\:", "m\\:")
+@include _flex($l-m-orientation, $l-m-device)
 
 @import utilities/_float
-@include _float("l\\:", "m\\:")
+@include _float($l-m-orientation, $l-m-device)
 
 // @import utilities/_levels
 
 @import utilities/_overflow
-@include _overflow("l\\:", "m\\:")
+@include _overflow($l-m-orientation, $l-m-device)
 
 @import utilities/_position
-@include _position("l\\:", "m\\:")
+@include _position($l-m-orientation, $l-m-device)
 
 @import utilities/_sizing
-@include _sizing("l\\:", "m\\:")
+@include _sizing($l-m-orientation, $l-m-device)
 
 // @import utilities/_shadow
 
 @import utilities/_spacing
-@include _spacing("l\\:", "m\\:")
+@include _spacing($l-m-orientation, $l-m-device)
 
 @import utilities/_typography
-@include _typography("l\\:", "m\\:")
+@include _typography($l-m-orientation, $l-m-device)
 
 @import utilities/_pseudos
-// @include _pseudos("l\\:", "m\\:")
+// @include _pseudos($l-m-orientation, $l-m-device)

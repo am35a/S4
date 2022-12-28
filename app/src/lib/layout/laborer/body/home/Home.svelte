@@ -2,7 +2,12 @@
 
 </script>
 
-<div class="h1" aria-level={1} role="heading">Home</div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, suscipit laboriosam, tenetur, animi nobis modi illo labore consequatur fuga commodi fugit qui quo repudiandae libero nihil maiores voluptatum! Incidunt, aliquid.</p>
-<p>Odio sequi molestiae quam aperiam enim doloremque? Magni saepe deleniti culpa, nesciunt maiores eos at dolore deserunt odit ratione et enim optio obcaecati sit repellat dicta! Possimus explicabo repellendus dolores.</p>
-<p>Eveniet esse, beatae ad accusantium, eligendi odio quisquam perferendis sapiente aliquid harum necessitatibus blanditiis iure? Iste laborum laudantium molestiae obcaecati totam nihil. Eos fugit laudantium ea ex aspernatur numquam maxime.</p>
+<h1>S4</h1>
+<div class="d-inline-grid g-4">
+    <div class="fs" style="--fs: 32rem;">
+        The originality - less JS more CSS!
+    </div>
+    <div>
+        The modern, simple and responsive lightweight CSS pattern with UI library based on <a href="https://svelte.dev" target={'_blank'}>Svelte</a> which easier to create high-loaded applications.
+    </div>
+</div>
