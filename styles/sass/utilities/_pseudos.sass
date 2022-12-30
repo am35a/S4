@@ -1,5 +1,5 @@
-/*
-    hide container if empty
+@mixin _pseudos($orientation, $type)
 
-.empty-none:empty
-    display: none !important
+    // hide container if empty
+    .#{$orientation}#{$type}empty-none:empty
+        display: none !important

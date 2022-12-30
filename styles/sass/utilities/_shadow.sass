@@ -1,8 +1,9 @@
 $shadowSizes: (xxs: .0625, xs: .125, sm: .25, md: .5, lg: .75, xl: 1, xxl: 1.25, xxxl: 1.5)
 
-.s
-    @each $item, $value in $shadowSizes
-        &-#{$item}
-            box-shadow: 0 #{$value}em #{$value * 2}em var(--negative-color-10) !important
-    &-none
-        box-shadow: none !important
+@mixin _shadow($orientation, $type)
+    .#{$orientation}#{$type}s
+        @each $item, $value in $shadowSizes
+            &-#{$item}
+                box-shadow: 0 #{$value}em #{$value * 2}em var(--negative-color-10) !important
+        &-none
+            box-shadow: none !important

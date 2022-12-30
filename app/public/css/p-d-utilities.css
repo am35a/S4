@@ -122,6 +122,222 @@
   justify-self: stretch !important;
 }
 
+/*  background section: background color of accent and extra palette contained in classes */
+.p\:bgc-positive {
+  background-color: var(--positive-color) !important;
+}
+.p\:bgc-negative {
+  background-color: var(--negative-color) !important;
+}
+.p\:bgc-positive-10 {
+  background-color: var(--positive-color-10) !important;
+}
+.p\:bgc-positive-20 {
+  background-color: var(--positive-color-20) !important;
+}
+.p\:bgc-positive-30 {
+  background-color: var(--positive-color-30) !important;
+}
+.p\:bgc-positive-40 {
+  background-color: var(--positive-color-40) !important;
+}
+.p\:bgc-positive-50 {
+  background-color: var(--positive-color-50) !important;
+}
+.p\:bgc-positive-60 {
+  background-color: var(--positive-color-60) !important;
+}
+.p\:bgc-positive-70 {
+  background-color: var(--positive-color-70) !important;
+}
+.p\:bgc-positive-80 {
+  background-color: var(--positive-color-80) !important;
+}
+.p\:bgc-positive-90 {
+  background-color: var(--positive-color-90) !important;
+}
+.p\:bgc-negative-10 {
+  background-color: var(--negative-color-10) !important;
+}
+.p\:bgc-negative-20 {
+  background-color: var(--negative-color-20) !important;
+}
+.p\:bgc-negative-30 {
+  background-color: var(--negative-color-30) !important;
+}
+.p\:bgc-negative-40 {
+  background-color: var(--negative-color-40) !important;
+}
+.p\:bgc-negative-50 {
+  background-color: var(--negative-color-50) !important;
+}
+.p\:bgc-negative-60 {
+  background-color: var(--negative-color-60) !important;
+}
+.p\:bgc-negative-70 {
+  background-color: var(--negative-color-70) !important;
+}
+.p\:bgc-negative-80 {
+  background-color: var(--negative-color-80) !important;
+}
+.p\:bgc-negative-90 {
+  background-color: var(--negative-color-90) !important;
+}
+.p\:bgc-primary {
+  background-color: var(--primary-color) !important;
+}
+.p\:bgc-primary-l {
+  background-color: var(--primary-color-l) !important;
+}
+.p\:bgc-primary-d {
+  background-color: var(--primary-color-d) !important;
+}
+.p\:bgc-primary-m {
+  background-color: var(--primary-color-m) !important;
+}
+.p\:bgc-secondary {
+  background-color: var(--secondary-color) !important;
+}
+.p\:bgc-secondary-l {
+  background-color: var(--secondary-color-l) !important;
+}
+.p\:bgc-secondary-d {
+  background-color: var(--secondary-color-d) !important;
+}
+.p\:bgc-secondary-m {
+  background-color: var(--secondary-color-m) !important;
+}
+.p\:bgc-info {
+  background-color: var(--info-color) !important;
+}
+.p\:bgc-info-l {
+  background-color: var(--info-color-l) !important;
+}
+.p\:bgc-info-d {
+  background-color: var(--info-color-d) !important;
+}
+.p\:bgc-info-m {
+  background-color: var(--info-color-m) !important;
+}
+.p\:bgc-success {
+  background-color: var(--success-color) !important;
+}
+.p\:bgc-success-l {
+  background-color: var(--success-color-l) !important;
+}
+.p\:bgc-success-d {
+  background-color: var(--success-color-d) !important;
+}
+.p\:bgc-success-m {
+  background-color: var(--success-color-m) !important;
+}
+.p\:bgc-warning {
+  background-color: var(--warning-color) !important;
+}
+.p\:bgc-warning-l {
+  background-color: var(--warning-color-l) !important;
+}
+.p\:bgc-warning-d {
+  background-color: var(--warning-color-d) !important;
+}
+.p\:bgc-warning-m {
+  background-color: var(--warning-color-m) !important;
+}
+.p\:bgc-error {
+  background-color: var(--error-color) !important;
+}
+.p\:bgc-error-l {
+  background-color: var(--error-color-l) !important;
+}
+.p\:bgc-error-d {
+  background-color: var(--error-color-d) !important;
+}
+.p\:bgc-error-m {
+  background-color: var(--error-color-m) !important;
+}
+.p\:bgc-transparent {
+  background-color: transparent !important;
+}
+.p\:bgi {
+  background-image: var(--bgi);
+}
+.p\:bgo-border {
+  background-origin: border-box;
+}
+.p\:bgo-padding {
+  background-origin: padding-box;
+}
+.p\:bgo-content {
+  background-origin: content-box;
+}
+.p\:bgp {
+  background-position: var(--bgp);
+}
+.p\:bgp-left {
+  background-position: var(--bgp, 0% 50%);
+}
+.p\:bgp-top-left, .p\:bgp-left-top {
+  background-position: var(--bgp, 0% 0%);
+}
+.p\:bgp-top {
+  background-position: var(--bgp, 50% 0%);
+}
+.p\:bgp-top-right, .p\:bgp-right-top {
+  background-position: var(--bgp, 100% 0%);
+}
+.p\:bgp-righ {
+  background-position: var(--bgp, 100% 50%);
+}
+.p\:bgp-bottom-right, .p\:bgp-right-bottom {
+  background-position: var(--bgp, 100% 100%);
+}
+.p\:bgp-bottom {
+  background-position: var(--bgp, 50% 100%);
+}
+.p\:bgp-bottom-left, .p\:bgp-left-bottom {
+  background-position: var(--bgp, 0% 100%);
+}
+.p\:bgp-center {
+  background-position: var(--bgp, 50% 50%);
+}
+.p\:bgr {
+  background-repeat: var(--bgr, repeat);
+}
+.p\:bgr-no {
+  background-repeat: var(--bgr, no-repeat);
+}
+.p\:bgr-x {
+  background-repeat: var(--bgr, repeat-x);
+}
+.p\:bgr-y {
+  background-repeat: var(--bgr, repeat-y);
+}
+.p\:bgr-space {
+  background-repeat: var(--bgr, space);
+}
+.p\:bgr-round {
+  background-repeat: var(--bgr, round);
+}
+.p\:bgs {
+  background-size: var(--bgs, auto);
+}
+.p\:bgs-cover {
+  background-size: var(--bgs, cover);
+}
+.p\:bgs-contain {
+  background-size: var(--bgs, contain);
+}
+.p\:bga-scroll {
+  background-attachment: scroll;
+}
+.p\:bga-fixed {
+  background-attachment: fixed;
+}
+.p\:bga-local {
+  background-attachment: local;
+}
+
+/*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */
 /*  display section: display variants contained in classes */
 .p\:d-inline {
   display: inline !important;
@@ -543,6 +759,7 @@
   float: none !important;
 }
 
+/*  levels section: z-index */
 /*  overflow section: overflow type and axis contained in classes */
 .p\:o-auto {
   overflow: auto !important;
@@ -1688,9 +1905,4 @@ p\:p {
 }
 .p\:lh-normal {
   line-height: normal !important;
-}
-
-/*  hide container if empty */
-.empty-none:empty {
-  display: none !important;
 }

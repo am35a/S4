@@ -3,44 +3,24 @@
 // ! use "p\\:", "m\\:" to activate only for portrait/mobile
 
 // ("", "m\\:") activate .p-m-utilities.css rules for all mobile devices
+    
+$orientation: ""
+$type: "m\\:"
 
-@import utilities/_alignment
-@include _alignment("", "m\\:")
+$alignment:  ("include": true,  "orientation": $orientation, "type": $type)
+$background: ("include": true,  "orientation": $orientation, "type": $type)
+$border:     ("include": false, "orientation": "",           "type": "")
+$display:    ("include": true,  "orientation": $orientation, "type": $type)
+$grid:       ("include": true,  "orientation": $orientation, "type": $type)
+$flex:       ("include": true,  "orientation": $orientation, "type": $type)
+$float:      ("include": true,  "orientation": $orientation, "type": $type)
+$levels:     ("include": false, "orientation": "",           "type": "")
+$overflow:   ("include": true,  "orientation": $orientation, "type": $type)
+$position:   ("include": true,  "orientation": $orientation, "type": $type)
+$sizing:     ("include": true,  "orientation": $orientation, "type": $type)
+$shadow:     ("include": false, "orientation": "",           "type": "")
+$spacing:    ("include": true,  "orientation": $orientation, "type": $type)
+$typography: ("include": true,  "orientation": $orientation, "type": $type)
+$pseudos:    ("include": false, "orientation": "",           "type": "")
 
-// default for all
-// @import utilities/_background
-// @include _background("", "")
-
-@import utilities/_display
-@include _display("", "m\\:")
-
-@import utilities/_grid
-@include _grid("", "m\\:")
-
-@import utilities/_flex
-@include _flex("", "m\\:")
-
-@import utilities/_float
-@include _float("", "m\\:")
-
-// @import utilities/_levels
-
-@import utilities/_overflow
-@include _overflow("", "m\\:")
-
-@import utilities/_position
-@include _position("", "m\\:")
-
-@import utilities/_sizing
-@include _sizing("", "m\\:")
-
-// @import utilities/_shadow
-
-@import utilities/_spacing
-@include _spacing("", "m\\:")
-
-@import utilities/_typography
-@include _typography("", "m\\:")
-
-@import utilities/_pseudos
-// @include _pseudos("", "m\\:")
+@import utilities

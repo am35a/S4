@@ -1,4 +1,4 @@
-$overflow: auto, hidden, visible, scroll
+$overflowProps: auto, hidden, visible, scroll
 $overflowAxises: x, y
 
 /*
@@ -6,12 +6,12 @@ $overflowAxises: x, y
 
 @mixin _overflow($orientation, $type)
     .#{$orientation}#{$type}o
-        @each $item in $overflow
+        @each $item in $overflowProps
             &-#{$item}
                overflow: #{$item} !important
 
         @each $axis in $overflowAxises
             &#{$axis}
-                @each $item in $overflow
+                @each $item in $overflowProps
                     &-#{$item}
                         overflow-#{$axis}: #{$item} !important

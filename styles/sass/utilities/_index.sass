@@ -1,41 +1,61 @@
+@use "sass:map"
+
+// $alignment: ("include": true, "orientation": $orientation, "type": $type)
+
 @import _alignment
-@include _alignment($orientation, $type)
+@if map.get($alignment, "include")
+    @include _alignment(map.get($alignment, "orientation"), map.get($alignment, "type"))
 
 @import _background
-@include _background($orientation, $type)
+@if map.get($background, "include")
+    @include _background(map.get($background, "orientation"), map.get($background, "type"))
 
 @import _border
-@include _border($orientation, $type)
+@if map.get($border, "include")
+    @include _border(map.get($border, "orientation"), map.get($border, "type"))
 
 @import _display
-@include _display($orientation, $type)
+@if map.get($display, "include")
+    @include _display(map.get($display, "orientation"), map.get($display, "type"))
 
 @import _grid
-@include _grid($orientation, $type)
+@if map.get($grid, "include")
+    @include _grid(map.get($grid, "orientation"), map.get($grid, "type"))
 
 @import _flex
-@include _flex($orientation, $type)
+@if map.get($flex, "include")
+    @include _flex(map.get($flex, "orientation"), map.get($flex, "type"))
 
 @import _float
-@include _float($orientation, $type)
+@if map.get($float, "include")
+    @include _float(map.get($float, "orientation"), map.get($float, "type"))
 
 @import _levels
+@if map.get($levels, "include")
+    @include _levels(map.get($levels, "orientation"), map.get($levels, "type"))
 
 @import _overflow
-@include _overflow($orientation, $type)
+@if map.get($overflow, "include")
+    @include _overflow(map.get($overflow, "orientation"), map.get($overflow, "type"))
 
 @import _position
-@include _position($orientation, $type)
+@if map.get($position, "include")
+    @include _position(map.get($position, "orientation"), map.get($position, "type"))
 
 @import _sizing
-@include _sizing($orientation, $type)
+@if map.get($sizing, "include")
+    @include _sizing(map.get($sizing, "orientation"), map.get($sizing, "type"))
 
 @import _shadow
+@if map.get($shadow, "include")
+    @include _shadow(map.get($shadow, "orientation"), map.get($shadow, "type"))
 
 @import _spacing
-@include _spacing($orientation, $type)
+@if map.get($spacing, "include")
+    @include _spacing(map.get($spacing, "orientation"), map.get($spacing, "type"))
 
 @import _typography
-@include _typography($orientation, $type)
+@if map.get($typography, "include")
+    @include _typography(map.get($typography, "orientation"), map.get($typography, "type"))
 
 @import _pseudos

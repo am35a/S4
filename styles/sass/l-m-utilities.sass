@@ -2,46 +2,23 @@
 
 // ("l\\:", "m\\:") activate .l-m-utilities.css rules only for landscape orientation mobile devices
 
-$l-m-orientation: "l\\:"
-$l-m-device: "m\\:"
+$orientation: "l\\:"
+$type: "m\\:"
 
-@import utilities/_alignment
-@include _alignment($l-m-orientation, $l-m-device)
+$alignment:  ("include": true,  "orientation": $orientation, "type": $type)
+$background: ("include": true,  "orientation": $orientation, "type": $type)
+$border:     ("include": false, "orientation": "",           "type": "")
+$display:    ("include": true,  "orientation": $orientation, "type": $type)
+$grid:       ("include": true,  "orientation": $orientation, "type": $type)
+$flex:       ("include": true,  "orientation": $orientation, "type": $type)
+$float:      ("include": true,  "orientation": $orientation, "type": $type)
+$levels:     ("include": false, "orientation": "",           "type": "")
+$overflow:   ("include": true,  "orientation": $orientation, "type": $type)
+$position:   ("include": true,  "orientation": $orientation, "type": $type)
+$sizing:     ("include": true,  "orientation": $orientation, "type": $type)
+$shadow:     ("include": false, "orientation": "",           "type": "")
+$spacing:    ("include": true,  "orientation": $orientation, "type": $type)
+$typography: ("include": true,  "orientation": $orientation, "type": $type)
+$pseudos:    ("include": false, "orientation": "",           "type": "")
 
-// default for all
-@import utilities/_background
-@include _background($l-m-orientation, $l-m-device)
-
-@import utilities/_display
-@include _display($l-m-orientation, $l-m-device)
-
-@import utilities/_grid
-@include _grid($l-m-orientation, $l-m-device)
-
-@import utilities/_flex
-@include _flex($l-m-orientation, $l-m-device)
-
-@import utilities/_float
-@include _float($l-m-orientation, $l-m-device)
-
-// @import utilities/_levels
-
-@import utilities/_overflow
-@include _overflow($l-m-orientation, $l-m-device)
-
-@import utilities/_position
-@include _position($l-m-orientation, $l-m-device)
-
-@import utilities/_sizing
-@include _sizing($l-m-orientation, $l-m-device)
-
-// @import utilities/_shadow
-
-@import utilities/_spacing
-@include _spacing($l-m-orientation, $l-m-device)
-
-@import utilities/_typography
-@include _typography($l-m-orientation, $l-m-device)
-
-@import utilities/_pseudos
-// @include _pseudos($l-m-orientation, $l-m-device)
+@import utilities

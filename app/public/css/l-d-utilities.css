@@ -2183,8 +2183,3 @@ p {
 .lh-normal {
   line-height: normal !important;
 }
-
-/*  hide container if empty */
-.empty-none:empty {
-  display: none !important;
-}

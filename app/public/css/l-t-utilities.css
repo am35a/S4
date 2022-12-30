@@ -122,6 +122,222 @@
   justify-self: stretch !important;
 }
 
+/*  background section: background color of accent and extra palette contained in classes */
+.t\:bgc-positive {
+  background-color: var(--positive-color) !important;
+}
+.t\:bgc-negative {
+  background-color: var(--negative-color) !important;
+}
+.t\:bgc-positive-10 {
+  background-color: var(--positive-color-10) !important;
+}
+.t\:bgc-positive-20 {
+  background-color: var(--positive-color-20) !important;
+}
+.t\:bgc-positive-30 {
+  background-color: var(--positive-color-30) !important;
+}
+.t\:bgc-positive-40 {
+  background-color: var(--positive-color-40) !important;
+}
+.t\:bgc-positive-50 {
+  background-color: var(--positive-color-50) !important;
+}
+.t\:bgc-positive-60 {
+  background-color: var(--positive-color-60) !important;
+}
+.t\:bgc-positive-70 {
+  background-color: var(--positive-color-70) !important;
+}
+.t\:bgc-positive-80 {
+  background-color: var(--positive-color-80) !important;
+}
+.t\:bgc-positive-90 {
+  background-color: var(--positive-color-90) !important;
+}
+.t\:bgc-negative-10 {
+  background-color: var(--negative-color-10) !important;
+}
+.t\:bgc-negative-20 {
+  background-color: var(--negative-color-20) !important;
+}
+.t\:bgc-negative-30 {
+  background-color: var(--negative-color-30) !important;
+}
+.t\:bgc-negative-40 {
+  background-color: var(--negative-color-40) !important;
+}
+.t\:bgc-negative-50 {
+  background-color: var(--negative-color-50) !important;
+}
+.t\:bgc-negative-60 {
+  background-color: var(--negative-color-60) !important;
+}
+.t\:bgc-negative-70 {
+  background-color: var(--negative-color-70) !important;
+}
+.t\:bgc-negative-80 {
+  background-color: var(--negative-color-80) !important;
+}
+.t\:bgc-negative-90 {
+  background-color: var(--negative-color-90) !important;
+}
+.t\:bgc-primary {
+  background-color: var(--primary-color) !important;
+}
+.t\:bgc-primary-l {
+  background-color: var(--primary-color-l) !important;
+}
+.t\:bgc-primary-d {
+  background-color: var(--primary-color-d) !important;
+}
+.t\:bgc-primary-m {
+  background-color: var(--primary-color-m) !important;
+}
+.t\:bgc-secondary {
+  background-color: var(--secondary-color) !important;
+}
+.t\:bgc-secondary-l {
+  background-color: var(--secondary-color-l) !important;
+}
+.t\:bgc-secondary-d {
+  background-color: var(--secondary-color-d) !important;
+}
+.t\:bgc-secondary-m {
+  background-color: var(--secondary-color-m) !important;
+}
+.t\:bgc-info {
+  background-color: var(--info-color) !important;
+}
+.t\:bgc-info-l {
+  background-color: var(--info-color-l) !important;
+}
+.t\:bgc-info-d {
+  background-color: var(--info-color-d) !important;
+}
+.t\:bgc-info-m {
+  background-color: var(--info-color-m) !important;
+}
+.t\:bgc-success {
+  background-color: var(--success-color) !important;
+}
+.t\:bgc-success-l {
+  background-color: var(--success-color-l) !important;
+}
+.t\:bgc-success-d {
+  background-color: var(--success-color-d) !important;
+}
+.t\:bgc-success-m {
+  background-color: var(--success-color-m) !important;
+}
+.t\:bgc-warning {
+  background-color: var(--warning-color) !important;
+}
+.t\:bgc-warning-l {
+  background-color: var(--warning-color-l) !important;
+}
+.t\:bgc-warning-d {
+  background-color: var(--warning-color-d) !important;
+}
+.t\:bgc-warning-m {
+  background-color: var(--warning-color-m) !important;
+}
+.t\:bgc-error {
+  background-color: var(--error-color) !important;
+}
+.t\:bgc-error-l {
+  background-color: var(--error-color-l) !important;
+}
+.t\:bgc-error-d {
+  background-color: var(--error-color-d) !important;
+}
+.t\:bgc-error-m {
+  background-color: var(--error-color-m) !important;
+}
+.t\:bgc-transparent {
+  background-color: transparent !important;
+}
+.t\:bgi {
+  background-image: var(--bgi);
+}
+.t\:bgo-border {
+  background-origin: border-box;
+}
+.t\:bgo-padding {
+  background-origin: padding-box;
+}
+.t\:bgo-content {
+  background-origin: content-box;
+}
+.t\:bgp {
+  background-position: var(--bgp);
+}
+.t\:bgp-left {
+  background-position: var(--bgp, 0% 50%);
+}
+.t\:bgp-top-left, .t\:bgp-left-top {
+  background-position: var(--bgp, 0% 0%);
+}
+.t\:bgp-top {
+  background-position: var(--bgp, 50% 0%);
+}
+.t\:bgp-top-right, .t\:bgp-right-top {
+  background-position: var(--bgp, 100% 0%);
+}
+.t\:bgp-righ {
+  background-position: var(--bgp, 100% 50%);
+}
+.t\:bgp-bottom-right, .t\:bgp-right-bottom {
+  background-position: var(--bgp, 100% 100%);
+}
+.t\:bgp-bottom {
+  background-position: var(--bgp, 50% 100%);
+}
+.t\:bgp-bottom-left, .t\:bgp-left-bottom {
+  background-position: var(--bgp, 0% 100%);
+}
+.t\:bgp-center {
+  background-position: var(--bgp, 50% 50%);
+}
+.t\:bgr {
+  background-repeat: var(--bgr, repeat);
+}
+.t\:bgr-no {
+  background-repeat: var(--bgr, no-repeat);
+}
+.t\:bgr-x {
+  background-repeat: var(--bgr, repeat-x);
+}
+.t\:bgr-y {
+  background-repeat: var(--bgr, repeat-y);
+}
+.t\:bgr-space {
+  background-repeat: var(--bgr, space);
+}
+.t\:bgr-round {
+  background-repeat: var(--bgr, round);
+}
+.t\:bgs {
+  background-size: var(--bgs, auto);
+}
+.t\:bgs-cover {
+  background-size: var(--bgs, cover);
+}
+.t\:bgs-contain {
+  background-size: var(--bgs, contain);
+}
+.t\:bga-scroll {
+  background-attachment: scroll;
+}
+.t\:bga-fixed {
+  background-attachment: fixed;
+}
+.t\:bga-local {
+  background-attachment: local;
+}
+
+/*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */
 /*  display section: display variants contained in classes */
 .t\:d-inline {
   display: inline !important;
@@ -543,6 +759,7 @@
   float: none !important;
 }
 
+/*  levels section: z-index */
 /*  overflow section: overflow type and axis contained in classes */
 .t\:o-auto {
   overflow: auto !important;
@@ -1688,9 +1905,4 @@ t\:p {
 }
 .t\:lh-normal {
   line-height: normal !important;
-}
-
-/*  hide container if empty */
-.empty-none:empty {
-  display: none !important;
 }

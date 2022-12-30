@@ -337,6 +337,7 @@
   background-attachment: local;
 }
 
+/*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */
 /*  display section: display variants contained in classes */
 .l\:m\:d-inline {
   display: inline !important;
@@ -758,6 +759,7 @@
   float: none !important;
 }
 
+/*  levels section: z-index */
 /*  overflow section: overflow type and axis contained in classes */
 .l\:m\:o-auto {
   overflow: auto !important;
@@ -1903,9 +1905,4 @@ l\:m\:p {
 }
 .l\:m\:lh-normal {
   line-height: normal !important;
-}
-
-/*  hide container if empty */
-.empty-none:empty {
-  display: none !important;
 }

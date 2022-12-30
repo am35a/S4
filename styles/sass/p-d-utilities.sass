@@ -4,43 +4,23 @@
 
 // ("p\\:", "") activate .p-d-utilities.css rules for all portrait orientation devices
 
-@import utilities/_alignment
-@include _alignment("p\\:", "")
+$orientation: "p\\:"
+$type: ""
 
-// default for all
-// @import utilities/_background
-// @include _background("", "")
+$alignment:  ("include": true,  "orientation": $orientation, "type": $type)
+$background: ("include": true,  "orientation": $orientation, "type": $type)
+$border:     ("include": false, "orientation": "",           "type": "")
+$display:    ("include": true,  "orientation": $orientation, "type": $type)
+$grid:       ("include": true,  "orientation": $orientation, "type": $type)
+$flex:       ("include": true,  "orientation": $orientation, "type": $type)
+$float:      ("include": true,  "orientation": $orientation, "type": $type)
+$levels:     ("include": false, "orientation": "",           "type": "")
+$overflow:   ("include": true,  "orientation": $orientation, "type": $type)
+$position:   ("include": true,  "orientation": $orientation, "type": $type)
+$sizing:     ("include": true,  "orientation": $orientation, "type": $type)
+$shadow:     ("include": false, "orientation": "",           "type": "")
+$spacing:    ("include": true,  "orientation": $orientation, "type": $type)
+$typography: ("include": true,  "orientation": $orientation, "type": $type)
+$pseudos:    ("include": false, "orientation": "",           "type": "")
 
-@import utilities/_display
-@include _display("p\\:", "")
-
-@import utilities/_grid
-@include _grid("p\\:", "")
-
-@import utilities/_flex
-@include _flex("p\\:", "")
-
-@import utilities/_float
-@include _float("p\\:", "")
-
-// @import utilities/_levels
-
-@import utilities/_overflow
-@include _overflow("p\\:", "")
-
-@import utilities/_position
-@include _position("p\\:", "")
-
-@import utilities/_sizing
-@include _sizing("p\\:", "")
-
-// @import utilities/_shadow
-
-@import utilities/_spacing
-@include _spacing("p\\:", "")
-
-@import utilities/_typography
-@include _typography("p\\:", "")
-
-@import utilities/_pseudos
-// @include _pseudos("p\\:", "")
+@import utilities

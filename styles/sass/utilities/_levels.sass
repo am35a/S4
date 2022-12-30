@@ -1,9 +1,10 @@
 /*
     levels section: z-index
 
-.z
-    &-n
-        z-index: -1 !important
-    @for $i from 0 through 10
-        &-#{$i}
-            z-index: $i !important
+@mixin _levels($orientation, $type)
+    .#{$orientation}#{$type}z
+        &-n
+            z-index: -1 !important
+        @for $i from 0 through 10
+            &-#{$i}
+                z-index: $i !important

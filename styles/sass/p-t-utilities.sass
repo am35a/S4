@@ -2,43 +2,23 @@
 
 // ("p\\:", "t\\:") activate .p-t-utilities.css rules only for portrait orientation tablet devices
 
-@import utilities/_alignment
-@include _alignment("p\\:", "t\\:")
+$orientation: "p\\:"
+$type: "t\\:"
 
-// default for all
-// @import utilities/_background
-// @include _background("", "")
+$alignment:  ("include": true,  "orientation": $orientation, "type": $type)
+$background: ("include": true,  "orientation": $orientation, "type": $type)
+$border:     ("include": false, "orientation": "",           "type": "")
+$display:    ("include": true,  "orientation": $orientation, "type": $type)
+$grid:       ("include": true,  "orientation": $orientation, "type": $type)
+$flex:       ("include": true,  "orientation": $orientation, "type": $type)
+$float:      ("include": true,  "orientation": $orientation, "type": $type)
+$levels:     ("include": false, "orientation": "",           "type": "")
+$overflow:   ("include": true,  "orientation": $orientation, "type": $type)
+$position:   ("include": true,  "orientation": $orientation, "type": $type)
+$sizing:     ("include": true,  "orientation": $orientation, "type": $type)
+$shadow:     ("include": false, "orientation": "",           "type": "")
+$spacing:    ("include": true,  "orientation": $orientation, "type": $type)
+$typography: ("include": true,  "orientation": $orientation, "type": $type)
+$pseudos:    ("include": false, "orientation": "",           "type": "")
 
-@import utilities/_display
-@include _display("p\\:", "t\\:")
-
-@import utilities/_grid
-@include _grid("p\\:", "t\\:")
-
-@import utilities/_flex
-@include _flex("p\\:", "t\\:")
-
-@import utilities/_float
-@include _float("p\\:", "t\\:")
-
-// @import utilities/_levels
-
-@import utilities/_overflow
-@include _overflow("p\\:", "t\\:")
-
-@import utilities/_position
-@include _position("p\\:", "t\\:")
-
-@import utilities/_sizing
-@include _sizing("p\\:", "t\\:")
-
-// @import utilities/_shadow
-
-@import utilities/_spacing
-@include _spacing("p\\:", "t\\:")
-
-@import utilities/_typography
-@include _typography("p\\:", "t\\:")
-
-@import utilities/_pseudos
-// @include _pseudos("p\\:", "t\\:")
+@import utilities
