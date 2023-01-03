@@ -32,12 +32,12 @@
         </div>
         <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4 ox-hidden" style="width: {containerWidth}%;">
             <div class="bgc-negative-10 px-2 py-1">one</div>
-            <div class="f bgc-negative-10 px-2 py-1" style="--fs: 1; width: 250rem;">two</div>
+            <div class="f bgc-negative-10 px-2 py-1" style="--fs: 1; width: 25em;">two</div>
             <div class="bgc-negative-10 px-2 py-1">three</div>
         </div>
         <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4 ox-hidden" style="width: {containerWidth}%;">
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1">one</div>
-            <div class="bgc-negative-10 px-2 py-1" style="width: 150rem;">two</div>
+            <div class="bgc-negative-10 px-2 py-1" style="width: 15em;">two</div>
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1">three</div>
         </div>
     </div>
@@ -50,12 +50,12 @@
                 {
 `<div class="d-flex ox-hidden">
     <div>one</div>
-    <div class="f" style="--fs: 1; width: 250rem;">two</div>
+    <div class="f" style="--fs: 1; width: 25em;">two</div>
     <div>three</div>
 </div>
 <div class="d-flex ox-hidden">
     <div class="f" style="--fg: 1">one</div>
-    <div style="width: 150rem;">two</div>
+    <div style="width: 15em;">two</div>
     <div class="f" style="--fg: 1">three</div>
 </div>
 `

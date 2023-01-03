@@ -28,7 +28,7 @@
             {/each}
         </div>
         {#each alignContentArr as item }
-            <div class="{containerType} g-2 bgc-negative-10 p-2 ac-{item}" style="height: 160rem;">
+            <div class="{containerType} g-2 bgc-negative-10 p-2 ac-{item}" style="height: 16em;">
                 <div class="bgc-negative-10 px-2 py-1">one</div>
                 <div class="bgc-negative-10 px-2 py-1">two</div>
                 <div class="bgc-negative-10 px-2 py-1">three</div>

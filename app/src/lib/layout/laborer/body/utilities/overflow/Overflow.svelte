@@ -21,7 +21,7 @@
                 >o-{values}</Button>
             {/each}
         </div>
-        <div class="o-{overflowProperty} mx-auto bgc-negative-10 p-2" style="width: 240rem; height: 160rem;">
+        <div class="o-{overflowProperty} mx-auto bgc-negative-10 p-2" style="width: 24em; height: 16em;">
             The Delta S4 competed in the World Rally Championship in 1985 and 1986, until Group B class was disbanded and the cars were eventually banned from competition completely by European sanctioning body FIA. The car replaced, and was an evolution of the 037.
         </div>
     </div>

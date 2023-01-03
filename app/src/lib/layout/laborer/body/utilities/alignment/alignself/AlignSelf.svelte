@@ -29,7 +29,7 @@
         </div>
         <div class="d-grid g-3">
             {#each alignSelfArr as item }
-                <div class="{containerType} g-2 bgc-negative-10 p-2" style="height: 160rem;">
+                <div class="{containerType} g-2 bgc-negative-10 p-2" style="height: 16em;">
                     <div class="bgc-negative-10 px-2 py-1 as-{item}">one</div>
                     <div class="bgc-negative-10 px-2 py-1">two</div>
                     <div class="bgc-negative-10 px-2 py-1">three</div>
