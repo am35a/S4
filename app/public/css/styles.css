@@ -1,3 +1,103 @@
+:root {
+  --size-1: .25em;
+  --size-2: .5em;
+  --size-3: .75em;
+  --size-4: 1em;
+  --size-5: 1.25em;
+  --size-6: 1.5em;
+  --size-7: 1.75em;
+  --size-8: 2em;
+  --font-size: 1em;
+  --line-hight: var(--size-6);
+  --fs-xxs: 0.625em;
+  --fs-xs: 0.75em;
+  --fs-sm: 0.875em;
+  --fs-md: var(--font-size);
+  --fs-lg: 1.125em;
+  --fs-xl: 1.25em;
+  --fs-xxl: 1.375em;
+  --fs-xxxl: 1.5em;
+  --key-size: 1em;
+  --space-size-offset: 1;
+  --font-size-offset: 1;
+  --lh-xxs: 1;
+  --lh-xs: 1.125;
+  --lh-sm: 1.25;
+  --lh: 1.5;
+  --lh-lg: 1.75;
+  --lh-xl: 2;
+  --lh-xxl: 2.5;
+  --lh-xxxl: 3;
+  --br: var(--br-sm);
+  --br-xxs: 0.0625em;
+  --br-xs: 0.125em;
+  --br-sm: 0.25em;
+  --br-md: 0.5em;
+  --br-lg: 0.75em;
+  --br-xl: 1em;
+  --br-xxl: 1.25em;
+  --br-xxxl: 1.5em;
+  --positive-color: hsl(0 0% 100%);
+  --positive-color-90: hsl(0 0% 100% / .9);
+  --positive-color-80: hsl(0 0% 100% / .8);
+  --positive-color-70: hsl(0 0% 100% / .7);
+  --positive-color-60: hsl(0 0% 100% / .6);
+  --positive-color-50: hsl(0 0% 100% / .5);
+  --positive-color-40: hsl(0 0% 100% / .4);
+  --positive-color-30: hsl(0 0% 100% / .3);
+  --positive-color-20: hsl(0 0% 100% / .2);
+  --positive-color-10: hsl(0 0% 100% / .1);
+  --negative-color-10: hsl(0 0% 0% / .1);
+  --negative-color-20: hsl(0 0% 0% / .2);
+  --negative-color-30: hsl(0 0% 0% / .3);
+  --negative-color-40: hsl(0 0% 0% / .4);
+  --negative-color-50: hsl(0 0% 0% / .5);
+  --negative-color-60: hsl(0 0% 0% / .6);
+  --negative-color-70: hsl(0 0% 0% / .7);
+  --negative-color-80: hsl(0 0% 0% / .8);
+  --negative-color-90: hsl(0 0% 0% / .9);
+  --negative-color: hsl(0 0% 0%);
+  --primary-color-h: 210;
+  --primary-color-s: 90%;
+  --secondary-color-h: 210;
+  --secondary-color-s: 10%;
+  --info-color-h: 190;
+  --info-color-s: 90%;
+  --success-color-h: 120;
+  --success-color-s: 50%;
+  --warning-color-h: 40;
+  --warning-color-s: 90%;
+  --error-color-h: 0;
+  --error-color-s: 50%;
+  --accent-colors-l: 50%;
+  --accent-colors-l-offset: 15%;
+  --mute-color-alfa: 0.3;
+  --primary-color-l: hsl(var(--primary-color-h) var(--primary-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
+  --primary-color: hsl(var(--primary-color-h) var(--primary-color-s) var(--accent-colors-l));
+  --primary-color-d: hsl(var(--primary-color-h) var(--primary-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
+  --primary-color-m: hsla(var(--primary-color-h) var(--primary-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
+  --secondary-color-l: hsl(var(--secondary-color-h) var(--secondary-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
+  --secondary-color: hsl(var(--secondary-color-h) var(--secondary-color-s) var(--accent-colors-l));
+  --secondary-color-d: hsl(var(--secondary-color-h) var(--secondary-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
+  --secondary-color-m: hsla(var(--secondary-color-h) var(--secondary-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
+  --info-color-l: hsl(var(--info-color-h) var(--info-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
+  --info-color: hsl(var(--info-color-h) var(--info-color-s) var(--accent-colors-l));
+  --info-color-d: hsl(var(--info-color-h) var(--info-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
+  --info-color-m: hsla(var(--info-color-h) var(--info-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
+  --success-color-l: hsl(var(--success-color-h) var(--success-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
+  --success-color: hsl(var(--success-color-h) var(--success-color-s) var(--accent-colors-l));
+  --success-color-d: hsl(var(--success-color-h) var(--success-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
+  --success-color-m: hsla(var(--success-color-h) var(--success-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
+  --warning-color-l: hsl(var(--warning-color-h) var(--warning-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
+  --warning-color: hsl(var(--warning-color-h) var(--warning-color-s) var(--accent-colors-l));
+  --warning-color-d: hsl(var(--warning-color-h) var(--warning-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
+  --warning-color-m: hsla(var(--warning-color-h) var(--warning-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
+  --error-color-l: hsl(var(--error-color-h) var(--error-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
+  --error-color: hsl(var(--error-color-h) var(--error-color-s) var(--accent-colors-l));
+  --error-color-d: hsl(var(--error-color-h) var(--error-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
+  --error-color-m: hsla(var(--error-color-h) var(--error-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
+}
+
 html {
   position: relative;
   height: 100%;
@@ -6,8 +106,9 @@ html {
   word-break: normal;
   -moz-tab-size: 4;
   tab-size: 4;
-  font-size: 100%;
+  font-size: var(--font-size, 100%);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: var(--line-hight, 1em);
 }
 
 *,
@@ -28,8 +129,6 @@ html {
 body {
   position: relative;
   height: 100%;
-  line-height: var(--lh, normal);
-  font-size: var(--fs-md);
 }
 
 hr {
@@ -78,7 +177,7 @@ samp {
 }
 
 pre {
-  font-size: 1em;
+  font-size: inherit;
 }
 
 b,
@@ -264,94 +363,4 @@ progress {
 /* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
 [aria-disabled=true] {
   cursor: default;
-}
-
-:root {
-  --key-size: 1em;
-  --space-size-offset: 1;
-  --font-size-offset: 1;
-  --lh-xxs: 1;
-  --lh-xs: 1.125;
-  --lh-sm: 1.25;
-  --lh: 1.5;
-  --lh-lg: 1.75;
-  --lh-xl: 2;
-  --lh-xxl: 2.5;
-  --lh-xxxl: 3;
-  --fs-xxs: 0.625em;
-  --fs-xs: 0.75em;
-  --fs-sm: 0.875em;
-  --fs-md: var(--key-size);
-  --fs-lg: 1.125em;
-  --fs-xl: 1.25em;
-  --fs-xxl: 1.375em;
-  --fs-xxxl: 1.5em;
-  --br: var(--br-sm);
-  --br-xxs: 0.0625em;
-  --br-xs: 0.125em;
-  --br-sm: 0.25em;
-  --br-md: 0.5em;
-  --br-lg: 0.75em;
-  --br-xl: 1em;
-  --br-xxl: 1.25em;
-  --br-xxxl: 1.5em;
-  --positive-color: hsl(0 0% 100%);
-  --positive-color-90: hsl(0 0% 100% / .9);
-  --positive-color-80: hsl(0 0% 100% / .8);
-  --positive-color-70: hsl(0 0% 100% / .7);
-  --positive-color-60: hsl(0 0% 100% / .6);
-  --positive-color-50: hsl(0 0% 100% / .5);
-  --positive-color-40: hsl(0 0% 100% / .4);
-  --positive-color-30: hsl(0 0% 100% / .3);
-  --positive-color-20: hsl(0 0% 100% / .2);
-  --positive-color-10: hsl(0 0% 100% / .1);
-  --negative-color-10: hsl(0 0% 0% / .1);
-  --negative-color-20: hsl(0 0% 0% / .2);
-  --negative-color-30: hsl(0 0% 0% / .3);
-  --negative-color-40: hsl(0 0% 0% / .4);
-  --negative-color-50: hsl(0 0% 0% / .5);
-  --negative-color-60: hsl(0 0% 0% / .6);
-  --negative-color-70: hsl(0 0% 0% / .7);
-  --negative-color-80: hsl(0 0% 0% / .8);
-  --negative-color-90: hsl(0 0% 0% / .9);
-  --negative-color: hsl(0 0% 0%);
-  --primary-color-h: 210;
-  --primary-color-s: 90%;
-  --secondary-color-h: 210;
-  --secondary-color-s: 10%;
-  --info-color-h: 190;
-  --info-color-s: 90%;
-  --success-color-h: 120;
-  --success-color-s: 50%;
-  --warning-color-h: 40;
-  --warning-color-s: 90%;
-  --error-color-h: 0;
-  --error-color-s: 50%;
-  --accent-colors-l: 50%;
-  --accent-colors-l-offset: 15%;
-  --mute-color-alfa: 0.3;
-  --primary-color-l: hsl(var(--primary-color-h) var(--primary-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
-  --primary-color: hsl(var(--primary-color-h) var(--primary-color-s) var(--accent-colors-l));
-  --primary-color-d: hsl(var(--primary-color-h) var(--primary-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
-  --primary-color-m: hsla(var(--primary-color-h) var(--primary-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
-  --secondary-color-l: hsl(var(--secondary-color-h) var(--secondary-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
-  --secondary-color: hsl(var(--secondary-color-h) var(--secondary-color-s) var(--accent-colors-l));
-  --secondary-color-d: hsl(var(--secondary-color-h) var(--secondary-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
-  --secondary-color-m: hsla(var(--secondary-color-h) var(--secondary-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
-  --info-color-l: hsl(var(--info-color-h) var(--info-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
-  --info-color: hsl(var(--info-color-h) var(--info-color-s) var(--accent-colors-l));
-  --info-color-d: hsl(var(--info-color-h) var(--info-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
-  --info-color-m: hsla(var(--info-color-h) var(--info-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
-  --success-color-l: hsl(var(--success-color-h) var(--success-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
-  --success-color: hsl(var(--success-color-h) var(--success-color-s) var(--accent-colors-l));
-  --success-color-d: hsl(var(--success-color-h) var(--success-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
-  --success-color-m: hsla(var(--success-color-h) var(--success-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
-  --warning-color-l: hsl(var(--warning-color-h) var(--warning-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
-  --warning-color: hsl(var(--warning-color-h) var(--warning-color-s) var(--accent-colors-l));
-  --warning-color-d: hsl(var(--warning-color-h) var(--warning-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
-  --warning-color-m: hsla(var(--warning-color-h) var(--warning-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
-  --error-color-l: hsl(var(--error-color-h) var(--error-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)));
-  --error-color: hsl(var(--error-color-h) var(--error-color-s) var(--accent-colors-l));
-  --error-color-d: hsl(var(--error-color-h) var(--error-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)));
-  --error-color-m: hsla(var(--error-color-h) var(--error-color-s) var(--accent-colors-l) / var(--mute-color-alfa));
 }
