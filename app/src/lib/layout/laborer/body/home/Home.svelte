@@ -4,7 +4,7 @@
 
 <h1>S4</h1>
 <div class="d-inline-grid g-4">
-    <div class="fs" style="--fs: 32rem;">
+    <div class="fs" style="--fs: 3em;">
         The originality - less JS more CSS!
     </div>
     <div>

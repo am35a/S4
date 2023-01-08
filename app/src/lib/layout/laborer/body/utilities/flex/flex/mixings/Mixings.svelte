@@ -16,8 +16,8 @@
             <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={containerWidth}>
         </div>
         <div class="d-flex g-4 bgc-negative-10 p-4 ox-hidden" style="width: {containerWidth}%;">
-            <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1; --fs: 1; --fb: 250rem;">two</div>
-            <div class="f bgc-negative-10 px-2 py-1" style="--fg: 2; --fs: 2; --fb: 250rem;">three</div>
+            <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1; --fs: 1; --fb: 25em;">two</div>
+            <div class="f bgc-negative-10 px-2 py-1" style="--fg: 2; --fs: 2; --fb: 25em;">three</div>
         </div>
         <div class="d-flex g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
             <div class="f bgc-negative-10 px-2 py-1" style="--fg: 1; --fb: 0; ">equal one</div>
@@ -38,8 +38,8 @@
             <Precode class="br-top-0">
                 {
 `<div class="d-flex">
-    <div class="f" style="--fg: 1; --fs: 1; --fb: 250rem;">two</div>
-    <div class="f" style="--fg: 2; --fs: 2; --fb: 250rem;">three</div>
+    <div class="f" style="--fg: 1; --fs: 1; --fb: 25em;">two</div>
+    <div class="f" style="--fg: 2; --fs: 2; --fb: 25em;">three</div>
 </div>
 <div class="d-flex">
     <div class="f" style="--fg: 1; --fb: 0; ">equal one</div>

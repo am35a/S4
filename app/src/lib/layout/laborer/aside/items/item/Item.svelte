@@ -85,7 +85,7 @@
         &.has-action,
         &.has-submenu
             .title
-                padding-right: 3rem
+                padding-right: 3em
         &.has-submenu
             &.show-submenu
                 background-color: var(--aside-submenu-bgc, var(--negative-color-10))
@@ -102,7 +102,7 @@
             justify-items: start
             align-items: center
             padding-left: 3em
-            padding-right: 1rem
+            padding-right: 1em
             max-width: 100%
             color: var(--aside-item-title-color)
             cursor: pointer

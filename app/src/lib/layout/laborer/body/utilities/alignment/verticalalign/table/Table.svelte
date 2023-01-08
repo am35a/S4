@@ -9,7 +9,7 @@
         Use values <b>top</b>, <b>middle</b> and <b>bottom</b> for vertical alignmet into table sells.
     </p>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        <table style="height: 64rem;">
+        <table style="height: 6em;">
             <tr>
                 <td class="bgc-negative-10 va-baseline">Baseline</td>
                 <td class="bgc-negative-10 va-top">Top</td>

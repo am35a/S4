@@ -24,20 +24,19 @@
             justify-content: center
             align-items: center
             margin: unset
-            padding: .25em .75em
+            padding: var(--size-2) var(--size-3)
             background-color: transparent
-            border: .0625em solid transparent
-            border-radius: .25em
+            border: none
+            border-radius: var(--size-1)
             vertical-align: middle
             text-align: center
             color: currentColor
-            // font-size: 1em
-            line-height: calc(0.25em + 2ex + 0.25em)
+            line-height: 1
             text-decoration: none
             cursor: pointer
             user-select: none
-            outline: .125em solid transparent
-            outline-offset: .0625em
+            outline: calc(var(--size-1) / 2) solid transparent
+            outline-offset: calc(var(--size-1) / 4)                    
             @each $colorName in $accentColors
                 &-#{$colorName}
                     background-color: var(--#{$colorName}-color)

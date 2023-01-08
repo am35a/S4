@@ -43,11 +43,11 @@
                 transition: all 0.25s
         &.expand
             > .blind
-                transform: translateX(0rem)
+                transform: translateX(0)
             > .brand
-                transform: translateX(0rem)
+                transform: translateX(0)
             > .items
-                transform: translateX(0rem)
+                transform: translateX(0)
                 > .item
-                    transform: translateX(0rem)
+                    transform: translateX(0)
 </style>
