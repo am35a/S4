@@ -4,7 +4,7 @@
     import Button from 'component/Button.svelte'
 
     let iconSize:string = ''
-    let iconSizeArr = {
+    let iconSizeObj = {
         'auto': '',
         'xx-small': 'fs-xxs',
         'x-small': 'fs-xs',
@@ -31,7 +31,7 @@
                 <Icon class={iconSize} name="ghost"/>
             </div>
             <div class="d-inline-flex fw-wrap g-2">
-                {#each Object.entries(iconSizeArr) as [key, value]}
+                {#each Object.entries(iconSizeObj) as [key, value]}
                     <Button
                         class="btn-secondary {iconSize === value ? 'active' : ''}"
                         on:click = {() => iconSize = value}

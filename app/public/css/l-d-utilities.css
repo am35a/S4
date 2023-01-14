@@ -2090,7 +2090,7 @@ p {
 }
 
 .fs {
-  font-size: var(--fs);
+  font-size: var(--fs) !important;
 }
 .fs-xxs {
   font-size: var(--fs-xxs) !important;
@@ -2148,14 +2148,17 @@ p {
 }
 
 .lh {
-  line-height: var(--lh);
+  line-height: var(--lh) !important;
 }
 .lh-0 {
   line-height: 0 !important;
 }
-.lh-unset {
-  line-height: unset !important;
+.lh-1 {
+  line-height: 1 !important;
 }
 .lh-normal {
   line-height: normal !important;
+}
+.lh-unset {
+  line-height: unset !important;
 }

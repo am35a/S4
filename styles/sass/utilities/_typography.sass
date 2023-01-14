@@ -72,7 +72,7 @@ $textDecorations: none, underline, line-through
 
     .#{$orientation}#{$type}f
         &s
-            font-size: var(--fs)
+            font-size: var(--fs) !important
             @each $size in $fontSizes
                 &-#{$size}
                     font-size: var(--fs-#{$size}) !important
@@ -84,10 +84,12 @@ $textDecorations: none, underline, line-through
                 font-weight: unset !important
 
     .#{$orientation}#{$type}lh
-        line-height: var(--lh)
+        line-height: var(--lh) !important
         &-0
             line-height: 0 !important
-        &-unset
-            line-height: unset !important
+        &-1
+            line-height: 1 !important
         &-normal
             line-height: normal !important
+        &-unset
+            line-height: unset !important

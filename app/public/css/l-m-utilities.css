@@ -1599,7 +1599,7 @@ l\:m\:p {
 }
 
 .l\:m\:fs {
-  font-size: var(--fs);
+  font-size: var(--fs) !important;
 }
 .l\:m\:fs-xxs {
   font-size: var(--fs-xxs) !important;
@@ -1657,14 +1657,17 @@ l\:m\:p {
 }
 
 .l\:m\:lh {
-  line-height: var(--lh);
+  line-height: var(--lh) !important;
 }
 .l\:m\:lh-0 {
   line-height: 0 !important;
 }
-.l\:m\:lh-unset {
-  line-height: unset !important;
+.l\:m\:lh-1 {
+  line-height: 1 !important;
 }
 .l\:m\:lh-normal {
   line-height: normal !important;
+}
+.l\:m\:lh-unset {
+  line-height: unset !important;
 }
