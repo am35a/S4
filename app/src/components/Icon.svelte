@@ -13,13 +13,13 @@
     }
 </script>
 
-<span {...$$restProps}>&nbsp;</span> <!-- &nbsp; -->
+<span {...$$restProps}>&nbsp;</span>
 
 <style lang="sass">
     .ico
         display: inline-block
-        min-width: calc(0.25em + 2ex + 0.25em)
-        min-height: calc(0.25em + 2ex + 0.25em)
+        min-width: var(--line-hight, 1.5em)
+        min-height: var(--line-hight, 1.5em)
         background-color: currentColor
         mask-repeat: no-repeat
         -webkit-mask-repeat: no-repeat

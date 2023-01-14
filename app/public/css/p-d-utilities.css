@@ -1662,30 +1662,6 @@ p\:p {
 .p\:lh-0 {
   line-height: 0 !important;
 }
-.p\:lh-xxs {
-  line-height: var(--lh-xxs) !important;
-}
-.p\:lh-xs {
-  line-height: var(--lh-xs) !important;
-}
-.p\:lh-sm {
-  line-height: var(--lh-sm) !important;
-}
-.p\:lh-md {
-  line-height: var(--lh) !important;
-}
-.p\:lh-lg {
-  line-height: var(--lh-lg) !important;
-}
-.p\:lh-xl {
-  line-height: var(--lh-xl) !important;
-}
-.p\:lh-xxl {
-  line-height: var(--lh-xxl) !important;
-}
-.p\:lh-xxxl {
-  line-height: var(--lh-xxxl) !important;
-}
 .p\:lh-unset {
   line-height: unset !important;
 }

@@ -20,18 +20,18 @@
         .btn
             display: inline-grid
             grid-auto-flow: column
-            grid-gap: .25em
+            grid-gap: var(--size-1)
             justify-content: center
             align-items: center
             margin: unset
-            padding: var(--size-2) var(--size-3)
+            padding: var(--size-1) var(--size-3)
             background-color: transparent
             border: none
             border-radius: var(--size-1)
             vertical-align: middle
             text-align: center
             color: currentColor
-            line-height: 1
+            line-height: var(--line-hight)
             text-decoration: none
             cursor: pointer
             user-select: none

@@ -52,18 +52,18 @@
     >{title}</button>
     {#if action}
         <button class="action" on:click={onActionClick} tabindex={-1}>
-            <Icon class="m-auto" name={action.icon} size="100"/>
+            <Icon class="m-auto fs-lg" name={action.icon}/>
         </button>
     {:else if items}
         <button class="action" on:click={() => submenu = !submenu} tabindex={-1}>
-            <Icon class="m-auto" name={submenu ? 'selector-minimize' : 'selector-maximize'} size="100"/>
+            <Icon class="m-auto fs-lg" name={submenu ? 'selector-minimize' : 'selector-maximize'}/>
         </button>
     {/if}
     <div class="backdrop"></div>
     <div class="status"></div>
     <div class="icon">
         {#if icon}
-            <Icon class="m-auto" name={icon} size="lg"/>
+            <Icon class="m-auto fs-xl" name={icon}/>
         {:else}
             <div class="m-auto fw-600">{title.slice(0, 2).toLocaleUpperCase()}</div>
         {/if}

@@ -41,10 +41,7 @@
             </div>
             <Precode>
                 {
-`<Icon name="ghost" ${iconSize ? `size="${iconSize}" ` : ``}/>
-
-// It is valid syntax of Icon component but not recommended for use
-<Icon ${iconSize ? `class="${iconSize}" ` : ``}name="ghost" />
+`<Icon ${iconSize ? `class="${iconSize}" ` : ``}name="ghost" />
 <Icon class="ico-ghost${iconSize ? ` ${iconSize}` : ``}" />`
                 }
             </Precode>

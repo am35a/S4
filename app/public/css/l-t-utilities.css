@@ -1662,30 +1662,6 @@ t\:p {
 .t\:lh-0 {
   line-height: 0 !important;
 }
-.t\:lh-xxs {
-  line-height: var(--lh-xxs) !important;
-}
-.t\:lh-xs {
-  line-height: var(--lh-xs) !important;
-}
-.t\:lh-sm {
-  line-height: var(--lh-sm) !important;
-}
-.t\:lh-md {
-  line-height: var(--lh) !important;
-}
-.t\:lh-lg {
-  line-height: var(--lh-lg) !important;
-}
-.t\:lh-xl {
-  line-height: var(--lh-xl) !important;
-}
-.t\:lh-xxl {
-  line-height: var(--lh-xxl) !important;
-}
-.t\:lh-xxxl {
-  line-height: var(--lh-xxxl) !important;
-}
 .t\:lh-unset {
   line-height: unset !important;
 }

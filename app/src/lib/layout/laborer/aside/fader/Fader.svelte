@@ -9,7 +9,7 @@
     class="fader" aria-hidden="true" role="button"
 >
     <div class="close">
-        <Icon name="close-o" size="lg"/>
+        <Icon class="fs-xl" name="close-o"/>
     </div>
 </div>
 
