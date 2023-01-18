@@ -5,12 +5,10 @@
 
     let lineHeight:string = ''
     let lineHeightObj = {
-        auto: '',
-        0: '0',
-        1: '1',
-        2: '2',
-        3: '3',
-        4: '4'
+        'auto': '',
+        'lh-0': '0',
+        'lh-1': '1',
+        '--lh-4': '4'
     }
     let verticalAlignObj = {
         'va-baseline': 'Baseline',
@@ -36,7 +34,7 @@
                     class="btn-secondary {lineHeight === value ? 'active' : ''}"
                     on:click = {() => lineHeight = value}
                     disabled={lineHeight === value}
-                >lh-{key}</Button>
+                >{key}</Button>
             {/each}
         </div>
         <div class="d-grid space-nowrap ox-auto" style="--lh: {lineHeight}">

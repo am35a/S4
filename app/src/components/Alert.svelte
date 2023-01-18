@@ -37,12 +37,10 @@
 
     .alert
         position: relative
-        grid-gap: 1em
-        margin-bottom: 1em
-        padding: .75em
-        border-radius: .25em
-        border: .0625em solid transparent
-        // font-size: var(--fs-md)
+        grid-gap: var(--size-4)
+        margin-bottom: var(--size-4)
+        padding: var(--size-3)
+        border-radius: var(--size-1)
         @each $colorName in $accentColors
             &-#{$colorName}
                 background-color: var(--#{$colorName}-color-m)
@@ -52,13 +50,14 @@
             .btn-close
                 display: none
         &-closable
+            padding-right: var(--size-6)
             .btn-close
                 position: absolute
                 top: 0
                 right: 0
-                margin-top: .25em
-                margin-right: .25em
-                padding: .125em
+                padding: var(--size-1)
+                border-top-left-radius: 0
+                border-bottom-right-radius: 0
                 &:hover
                     background-color: var(--positive-color-50)
 </style>
