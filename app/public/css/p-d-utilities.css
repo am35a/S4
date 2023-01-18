@@ -1568,34 +1568,34 @@
 }
 
 p\:h1, p\:h2, p\:h3, p\:h4, p\:h5, p\:h6, .p\:h1, .p\:h2, .p\:h3, .p\:h4, .p\:h5, .p\:h6 {
-  margin-bottom: 0.375em;
-  font-weight: 600;
-  line-height: 1.125;
+  margin-bottom: var(--size-1) !important;
+  font-weight: 600 !important;
+  line-height: var(--size-5) !important;
 }
 p\:h2, p\:h3, p\:h4, p\:h5, p\:h6, .p\:h2, .p\:h3, .p\:h4, .p\:h5, .p\:h6 {
-  margin-top: 0.625em;
+  margin-top: var(--size-2) !important;
 }
 p\:h1, .p\:h1 {
-  font-size: calc(var(--fs-md) * 3);
+  font-size: var(--fs-h1) !important;
 }
 p\:h2, .p\:h2 {
-  font-size: calc(var(--fs-md) * 2.5);
+  font-size: var(--fs-h2) !important;
 }
 p\:h3, .p\:h3 {
-  font-size: calc(var(--fs-md) * 2);
+  font-size: var(--fs-h3) !important;
 }
 p\:h4, .p\:h4 {
-  font-size: calc(var(--fs-md) * 1.5);
+  font-size: var(--fs-h4) !important;
 }
 p\:h5, .p\:h5 {
-  font-size: calc(var(--fs-md) * 1.25);
+  font-size: var(--fs-h5) !important;
 }
 p\:h6, .p\:h6 {
-  font-size: var(--fs-md);
+  font-size: var(--fs-h6) !important;
 }
 
 p\:p {
-  margin-bottom: 0.5em;
+  margin-bottom: var(--size-2) !important;
 }
 
 .p\:fs {

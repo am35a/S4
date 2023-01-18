@@ -22,9 +22,9 @@
 
 <h1>Utilities</h1>
 {#if pathToArray($path).length === 1 && pathToArray($path)[0] === jumpTo}
-    <div>
+    <p>
         Here will be the utilities description.
-    </div>
+    </p>
 {/if}
 
 <Route path="/alignment">

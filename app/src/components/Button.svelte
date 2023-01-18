@@ -31,7 +31,7 @@
             vertical-align: middle
             text-align: center
             color: currentColor
-            line-height: var(--line-hight)
+            line-height: var(--lh)
             text-decoration: none
             cursor: pointer
             user-select: none

@@ -8,7 +8,7 @@
 <article>
     <h2 id="shadow">Shadow</h2>
     <p>
-        To add shadows to elements use <b>s-...</b> classes. To remove use <b>s-none</b> class.
+        To add shadows to elements use <b>s-...</b> classes. The <b>s-none</b> class remove shadow.
     </p>
     <div class="d-grid g-3 cols-2 mb-4 p-3 bgc-positive br o-hidden">
         {#each shadowSizesArr as size}
@@ -25,7 +25,7 @@
             <Precode class="br-top-0">
                 {#each shadowSizesArr as size}
                     {
-`<div class="bgc-positive p-2 rounded s-${size}">...</div>
+`<div class="bgc-positive p-2 s-${size}">...</div>
 `
                     }
                 {/each}

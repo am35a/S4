@@ -18,8 +18,8 @@
 <style lang="sass">
     .ico
         display: inline-block
-        min-width: var(--line-hight, 1.5em)
-        min-height: var(--line-hight, 1.5em)
+        min-width: calc(var(--lh) * 1em)
+        min-height: calc(var(--lh) * 1em)
         background-color: currentColor
         mask-repeat: no-repeat
         -webkit-mask-repeat: no-repeat

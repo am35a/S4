@@ -22,20 +22,20 @@
         <p>S4 buttons have two main views - standard and alternative. From these views, you can get any other kind of buttons.</p>
         <div class="d-grid g-2 ox-auto">
             <div class="h4" aria-level={4} role="heading">Standard</div>
-            <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start ox-auto br">
+            <div class="d-inline-grid grid-flow-col g-2 text-nowrap wm-fit ji-start ox-auto br">
                 <div class="d-grid rows-5 g-2 px-2 p-sticky left-0 bgc-positive br">
                     <div class="fw-600 fs-s2 d-grid">
                         <div class="row-span-full col-span-full mt-auto me-auto fs-xs">State</div>
                         <div class="row-span-full col-span-full m-auto">\</div>
                         <div class="row-span-full col-span-full ms-auto mb-auto fs-xs">Color</div>
                     </div>
-                    <div class="fw-600 my-auto ms-auto">Default</div>
-                    <div class="fw-600 my-auto ms-auto">Active</div>
-                    <div class="fw-600 my-auto ms-auto">Disabled</div>
-                    <div class="fw-600 my-auto ms-auto">Act + Dis</div>
+                    <div class="fw-600 my-auto ta-end">Default</div>
+                    <div class="fw-600 my-auto ta-end">Active</div>
+                    <div class="fw-600 my-auto ta-end">Disabled</div>
+                    <div class="fw-600 my-auto ta-end">Act + Dis</div>
                 </div>
                 {#each Object.entries(buttonsName) as [key, value]}
-                    <div class="d-grid rows-5 g-2">
+                    <div class="d-grid rows-5 g-2 ai-center">
                         <div class="fw-600 m-auto">{value}</div>
                         <Button class="btn-{key}">{value}</Button>
                         <Button class="btn-{key} active">{value}</Button>
@@ -53,20 +53,20 @@
 
         <div class="d-grid g-2">
             <div class="h4" aria-level={4} role="heading">Alternative</div>
-            <div class="d-inline-grid grid-flow-col g-2 text-nowrap max-w-fit ji-start ox-auto br">
+            <div class="d-inline-grid grid-flow-col g-2 text-nowrap wm-fit ji-start ox-auto br">
                 <div class="d-grid rows-5 g-2 px-2 p-sticky left-0 bgc-positive br">
                     <div class="fw-600 fs-s2 d-grid">
                         <div class="row-span-full col-span-full mt-auto me-auto fs-xs">State</div>
                         <div class="row-span-full col-span-full m-auto">\</div>
                         <div class="row-span-full col-span-full ms-auto mb-auto fs-xs">Color</div>
                     </div>
-                    <div class="fw-600 my-auto ms-auto">Default</div>
-                    <div class="fw-600 my-auto ms-auto">Active</div>
-                    <div class="fw-600 my-auto ms-auto">Disabled</div>
-                    <div class="fw-600 my-auto ms-auto">Act + Dis</div>
+                    <div class="fw-600 my-auto ta-end">Default</div>
+                    <div class="fw-600 my-auto ta-end">Active</div>
+                    <div class="fw-600 my-auto ta-end">Disabled</div>
+                    <div class="fw-600 my-auto ta-end">Act + Dis</div>
                 </div>
                 {#each Object.entries(buttonsName) as [key, value]}
-                    <div class="d-grid rows-5 g-2">
+                    <div class="d-grid rows-5 g-2 ai-center">
                         <div class="fw-600 m-auto">{value}</div>
                         <Button class="btn-alt-{key}">{value}</Button>
                         <Button class="btn-alt-{key} active">{value}</Button>
