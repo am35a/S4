@@ -16,6 +16,7 @@
     import PageColors from './colors/Colors.svelte'
     import PageComponents from './components/Components.svelte'
     import PageUtilities from './utilities/Utilities.svelte'
+    import PageUi from './ui/Ui.svelte'
         // import Alignment from './utilities/alignment/Alignment.svelte'
         // ...
         // import Typography from './utilities/typography/Typography.svelte'
@@ -47,6 +48,9 @@
         </Route>
         <Route path="/utilities">
             <svelte:component this={PageUtilities} jumpTo={'/utilities'}/>
+        </Route>
+        <Route path="/ui">
+            <svelte:component this={PageUi} jumpTo={'/ui'}/>
         </Route>
         <Route path="/layout">
             <svelte:component this={PageLayout}/>

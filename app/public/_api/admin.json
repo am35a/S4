@@ -17,7 +17,7 @@
             },
             {
                 "id": 2,
-                "icon": "atom",
+                "icon": "core",
                 "title": "Core",
                 "segment": "/core"
             },
@@ -145,6 +145,24 @@
                         "id": 514,
                         "title": "Typography",
                         "segment": "/utilities/typography"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "icon": "atom",
+                "title": "UI Overview",
+                "segment": "/ui",
+                "items": [
+                    {
+                        "id": 600,
+                        "title": "CSS Supported",
+                        "segment": "/ui/css"
+                    },
+                    {
+                        "id": 601,
+                        "title": "Only for Svelte",
+                        "segment": "/ui/svelte"
                     }
                 ]
             },
