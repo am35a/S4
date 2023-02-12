@@ -41,14 +41,14 @@
 </div>
 <div class="d-flex fw-wrap g-2">
     {#each Object.entries(colorPaletteObj.accent.colors) as [key, value]}
-        <div class="d-grid ji-center p-4 bgc-positive br f-equal">
+        <div class="d-grid ji-center p-4 bgc-positive br f" style="--fg: 1; --fb: 0;">
             <div>
                 <div class="ta-center fw-600">{key}</div>
                 hsl({value.h} {value.s} {value.l})
             </div>
             <div class="d-flex fw-nowrap ji-center">
                 <div class="space-nowrap as-end">
-                    <div class="ta-center fw-600">{key}-l</div>
+                    <div class="ta-center fw-600">light</div>
                     hsl({value.h} {value.s} {value.l + colorPaletteObj.accent.settings.offset})
                 </div>
                 <div class="col-span-2 d-grid">
@@ -58,9 +58,13 @@
                     />
                 </div>
                 <div class="space-nowrap as-end">
-                    <div class="ta-center fw-600">{key}-d</div>
+                    <div class="ta-center fw-600">dark</div>
                     hsl({value.h} {value.s} {value.l  - colorPaletteObj.accent.settings.offset})
                 </div>
+            </div>
+            <div>
+                <div class="ta-center fw-600">mute</div>
+                hsl({value.h} {value.s} {value.l} / {colorPaletteObj.accent.settings.mute})
             </div>
         </div>
     {/each}
