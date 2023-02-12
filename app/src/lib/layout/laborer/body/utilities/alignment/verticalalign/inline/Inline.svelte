@@ -37,7 +37,7 @@
                 >{key}</Button>
             {/each}
         </div>
-        <div class="d-grid space-nowrap ox-auto" style="--lh: {lineHeight}">
+        <div class="d-grid ws-nowrap ox-auto" style="--lh: {lineHeight}">
             <div class="lh col-span-full row-span-full my-auto border-bottom border-top c-negative-10">&nbsp;<!-- base line indicator--></div>
             <div class="lh col-span-full row-span-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
             <div class="lh col-span-full row-span-full py-4">

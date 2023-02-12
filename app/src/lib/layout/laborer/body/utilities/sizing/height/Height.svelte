@@ -39,7 +39,7 @@
             <div>
                 <input class="h-100" type="range" name="containerHeight" orient="vertical" min={0} max={100} step={1} bind:value={height}>
             </div>
-            <div class="bgc-negative-10 ta-center mt-auto mx-auto px-1 space-nowrap w-fit h d-flex ai-end" style="--h: {height}%">--h: {height}%</div>
+            <div class="bgc-negative-10 ta-center mt-auto mx-auto px-1 ws-nowrap w-fit h d-flex ai-end" style="--h: {height}%">--h: {height}%</div>
         </div>
     </div>
     <Details>

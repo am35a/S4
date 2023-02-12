@@ -47,7 +47,7 @@
                 hsl({value.h} {value.s} {value.l})
             </div>
             <div class="d-flex fw-nowrap ji-center">
-                <div class="space-nowrap as-end">
+                <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600">light</div>
                     hsl({value.h} {value.s} {value.l + colorPaletteObj.accent.settings.offset})
                 </div>
@@ -57,7 +57,7 @@
                         {...colorPaletteObj.accent.settings}
                     />
                 </div>
-                <div class="space-nowrap as-end">
+                <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600">dark</div>
                     hsl({value.h} {value.s} {value.l  - colorPaletteObj.accent.settings.offset})
                 </div>

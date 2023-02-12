@@ -1308,10 +1308,10 @@
   padding-bottom: unset !important;
 }
 
-.p\:t\:space-wrap {
+.p\:t\:ws-normal {
   white-space: normal !important;
 }
-.p\:t\:space-nowrap {
+.p\:t\:ws-nowrap {
   white-space: nowrap !important;
 }
 

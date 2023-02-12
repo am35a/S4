@@ -1799,10 +1799,10 @@
   padding-bottom: unset !important;
 }
 
-.space-wrap {
+.ws-normal {
   white-space: normal !important;
 }
-.space-nowrap {
+.ws-nowrap {
   white-space: nowrap !important;
 }
 
