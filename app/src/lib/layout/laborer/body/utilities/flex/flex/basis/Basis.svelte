@@ -40,22 +40,22 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
+        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
             <div class="fb-{flexBasis} bgc-negative-10 px-2 py-1">fb-{flexBasis} one</div>
             <div class="bgc-negative-10 px-2 py-1">simple two</div>
             <div class="bgc-negative-10 px-2 py-1">simple three</div>
         </div>
-        <div class="d-flex g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
+        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
             <div class="f bgc-negative-10 px-2 py-1" style="--fb: 100%;">100% one</div>
             <div class="bgc-negative-10 px-2 py-1">two</div>
             <div class="bgc-negative-10 px-2 py-1">three</div>
         </div>
-        <div class="d-flex g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
+        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
             <div class="f bgc-negative-10 px-2 py-1" style="--fb: 100%;">equal one</div>
             <div class="f bgc-negative-10 px-2 py-1" style="--fb: 100%;">equal two</div>
             <div class="f bgc-negative-10 px-2 py-1" style="--fb: 100%;">equal three</div>
         </div>
-        <div class="d-flex g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
+        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
             <div class="f bgc-negative-10 px-2 py-1" style="--fb: 25%">fb 25% one</div>
             <div class="bgc-negative-10 px-2 py-1">simple two</div>
             <div class="bgc-negative-10 px-2 py-1">simple three</div>
