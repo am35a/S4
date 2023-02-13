@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { asideExpand } from 'src/store/store'
+    import { asideExpand, appSegment } from 'src/store/store'
 
     import Button from 'component/Button.svelte'
     import Icon from 'component/Icon.svelte'
@@ -15,7 +15,7 @@
         </button>
     </div>
     <div class="title">
-        Header title
+        {$appSegment}
     </div>
     <div class="pouch">
         <Button

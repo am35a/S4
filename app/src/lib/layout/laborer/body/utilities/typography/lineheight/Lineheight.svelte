@@ -32,7 +32,7 @@
         <svelte:fragment slot="body">
             <Precode class="br-top-0">
                 {
-`...
+`<div class="lh-${lineHeight}">Lorem ipsum, dolor sit amet consectetur adipi...</div>
 `
                 }
             </Precode>
