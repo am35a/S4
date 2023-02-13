@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte'
 
-    import { router, pathToArray, path } from 'svelte-micro'
+    import { router, getPathSegments, path } from 'svelte-micro'
     import { asideExpand, appSegment } from 'src/store/store'
 
     import Icon from 'component/Icon.svelte'
@@ -30,7 +30,7 @@
 
 
     onMount(async () => {
-        $appSegment = pathToArray($path)[0]
+        $appSegment = getPathSegments($path)[0]
     })
 
     // $: segment

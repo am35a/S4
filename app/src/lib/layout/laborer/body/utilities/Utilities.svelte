@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Route, pathToArray, path, query, hash } from 'svelte-micro'
+    import { Route, getPathSegments, path, query, hash } from 'svelte-micro'
 
     import ArticleAlignment from './alignment/Alignment.svelte'
     import ArticleColors from './colors/Colors.svelte'
@@ -21,7 +21,7 @@
 </script>
 
 <h1>Utilities</h1>
-{#if pathToArray($path).length === 1 && pathToArray($path)[0] === jumpTo}
+{#if getPathSegments($path).length === 1 && getPathSegments($path)[0] === jumpTo}
     <p>
         Here will be the utilities description.
     </p>
