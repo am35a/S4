@@ -1308,13 +1308,6 @@
   padding-bottom: unset !important;
 }
 
-.l\:m\:ws-normal {
-  white-space: normal !important;
-}
-.l\:m\:ws-nowrap {
-  white-space: nowrap !important;
-}
-
 .l\:m\:g-0,
 .l\:m\:cg-0 {
   column-gap: unset !important;
@@ -1670,4 +1663,23 @@ l\:m\:p {
 }
 .l\:m\:lh-unset {
   line-height: unset !important;
+}
+
+.l\:m\:ws-normal {
+  white-space: normal !important;
+}
+.l\:m\:ws-nowrap {
+  white-space: nowrap !important;
+}
+.l\:m\:ws-pre {
+  white-space: pre !important;
+}
+.l\:m\:ws-pre-wrap {
+  white-space: pre-wrap !important;
+}
+.l\:m\:ws-pre-line {
+  white-space: pre-line !important;
+}
+.l\:m\:ws-break-spaces {
+  white-space: break-spaces !important;
 }

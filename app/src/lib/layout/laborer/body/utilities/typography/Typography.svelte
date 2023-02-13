@@ -2,6 +2,7 @@
     import SectionHeadings from './headings/Headings.svelte'
     import SectionFont from './font/Font.svelte'
     import SectionLineHeight from './lineheight/Lineheight.svelte'
+    import SectionWhiteSpace from './whitespace/Whitespace.svelte'
 </script>
 
 <article>
@@ -9,4 +10,5 @@
     <SectionHeadings />
     <SectionFont />
     <SectionLineHeight />
+    <SectionWhiteSpace />
 </article>
