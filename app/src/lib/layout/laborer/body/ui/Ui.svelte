@@ -7,8 +7,8 @@
     export let jumpTo: string = ''
 </script>
 
-<h1>UI overview</h1>
 {#if getPathSegments($path).length === 1 && getPathSegments($path)[0] === jumpTo}
+    <h1>UI overview</h1>
     <p>
         Here will be the utilities description.
     </p>
