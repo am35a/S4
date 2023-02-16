@@ -109,10 +109,14 @@
             </div>
         </div>
 
+        <h3>Icons</h3>
+        <span class="ico ico-ghost fs-xxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+        <span class="ico ico-github fs-xxl svelte-rlwjpu" style="--ico-image: url(/icons/github.svg);">&nbsp;</span>
+
         <h3 id="grid">Grid by grid</h3>
         <div class="d-grid cols-12 g-4 p-4 bgc-positive br-lg">
             <p class="col-span-12">
-                Play your imagination without limits to be completely responsive now S4 Grid has everything you need! 
+                Play your imagination without limits to be completely responsive now - <b>S4 Grid</b> has everything you need! 
             </p>
             <div class="bgc-negative-10 br py-1 ta-center o-hidden p:col-span-12 col-span-1">one <span class="d-none p:d-inline-block">to twelve</span></div>
             <div class="bgc-negative-10 br py-1 ta-center o-hidden p:col-span-12 col-span-11">eleven <span class="d-none p:d-inline-block">to twelve</span></div>
@@ -131,5 +135,48 @@
             <div class="bgc-negative-10 br py-1 ta-center o-hidden col-span-2 col-start-3">two</div>
             <div class="bgc-negative-10 br py-1 ta-center o-hidden col-span-6 col-start-7">six</div>
         </div>
+
+        <h3 class="shadow">Shadow</h3>
+        <div class="d-flex m:fw-wrap g-4">
+            <div class="d-grid g-3 bgc-positive p-4 br-lg s-xxxl">
+                <div>
+                    <p>
+                        Any of the material fantasy has a solid foundation in the form of eight sets of adaptive shadows.
+                    </p>
+                    <p>
+                        Each you want of the dividers, paragraph, icon, anchor, button and ect of atoms or completly molecules as headers, aside menu or fully components - its all support shadows.
+                    </p>
+                </div>
+                <div class="d-grid bgc-positive p-4 br-lg s-xxl">
+                    <div class="d-grid bgc-positive p-4 br-lg s-xl">
+                        <div class="d-grid bgc-positive p-4 br-lg s-lg">
+                            <div class="d-grid bgc-positive p-4 br-lg s-md">
+                                <div class="d-grid bgc-positive p-4 br-lg s-sm">
+                                    <div class="d-grid bgc-positive p-4 br-lg s-xs">
+                                        <div class="d-grid bgc-positive p-4 br s-xxs">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="alerts">Alerts and notofications</h3>
+        <div class="d-grid g-4 cols-2 p-4">
+            <div>
+                <div class="alert alert-primary">All servers are now running smoothly again! Thanks.</div>
+                <div class="alert alert-secondary">All servers are now running smoothly again! Thanks.</div>
+            </div>
+            <div class="">
+                <div class="alert alert-info">All servers are now running smoothly again! Thanks.</div>
+                <div class="alert alert-success">Success! This is positive notification.</div>
+                <div class="alert alert-warning">Warning. Loading of this page taking a way too long.</div>
+                <div class="alert alert-error">Error. Can’t connect to the platform.</div>
+            </div>
+        </div>
+
     </section>
 </article>

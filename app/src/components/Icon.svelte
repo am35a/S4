@@ -15,7 +15,7 @@
 
 <span {...$$restProps}>&nbsp;</span>
 
-<style lang="sass">
+<style lang="sass" global>
     .ico
         display: inline-block
         min-width: calc(var(--lh) * 1em)
