@@ -1383,6 +1383,37 @@
 }
 
 /*  typography section: ... contained in classes */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--size-1) !important;
+  font-weight: 600 !important;
+  line-height: var(--size-5) !important;
+}
+h2, h3, h4, h5, h6 {
+  margin-top: var(--size-2) !important;
+}
+h1 {
+  font-size: var(--fs-h1) !important;
+}
+h2 {
+  font-size: var(--fs-h2) !important;
+}
+h3 {
+  font-size: var(--fs-h3) !important;
+}
+h4 {
+  font-size: var(--fs-h4) !important;
+}
+h5 {
+  font-size: var(--fs-h5) !important;
+}
+h6 {
+  font-size: var(--fs-h6) !important;
+}
+
+p {
+  margin-bottom: var(--size-2) !important;
+}
+
 .p\:t\:ta-start {
   text-align: start !important;
 }
@@ -1560,35 +1591,31 @@
   color: transparent !important;
 }
 
-p\:t\:h1, p\:t\:h2, p\:t\:h3, p\:t\:h4, p\:t\:h5, p\:t\:h6, .p\:t\:h1, .p\:t\:h2, .p\:t\:h3, .p\:t\:h4, .p\:t\:h5, .p\:t\:h6 {
+.p\:t\:h1, .p\:t\:h2, .p\:t\:h3, .p\:t\:h4, .p\:t\:h5, .p\:t\:h6 {
   margin-bottom: var(--size-1) !important;
   font-weight: 600 !important;
   line-height: var(--size-5) !important;
 }
-p\:t\:h2, p\:t\:h3, p\:t\:h4, p\:t\:h5, p\:t\:h6, .p\:t\:h2, .p\:t\:h3, .p\:t\:h4, .p\:t\:h5, .p\:t\:h6 {
+.p\:t\:h2, .p\:t\:h3, .p\:t\:h4, .p\:t\:h5, .p\:t\:h6 {
   margin-top: var(--size-2) !important;
 }
-p\:t\:h1, .p\:t\:h1 {
+.p\:t\:h1 {
   font-size: var(--fs-h1) !important;
 }
-p\:t\:h2, .p\:t\:h2 {
+.p\:t\:h2 {
   font-size: var(--fs-h2) !important;
 }
-p\:t\:h3, .p\:t\:h3 {
+.p\:t\:h3 {
   font-size: var(--fs-h3) !important;
 }
-p\:t\:h4, .p\:t\:h4 {
+.p\:t\:h4 {
   font-size: var(--fs-h4) !important;
 }
-p\:t\:h5, .p\:t\:h5 {
+.p\:t\:h5 {
   font-size: var(--fs-h5) !important;
 }
-p\:t\:h6, .p\:t\:h6 {
+.p\:t\:h6 {
   font-size: var(--fs-h6) !important;
-}
-
-p\:t\:p {
-  margin-bottom: var(--size-2) !important;
 }
 
 .p\:t\:fs {
