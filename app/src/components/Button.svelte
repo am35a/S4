@@ -63,6 +63,8 @@
                         color: var(--negative-color-20)
                         &.active
                             color: var(--negative-color-40)
+                    &:hover
+                        background-color: var(--#{$colorName}-color-m)
             &:disabled
                 cursor: not-allowed
             &:focus

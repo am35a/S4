@@ -45,6 +45,13 @@
     class:show-submenu = {items && submenu}
     {...$$restProps}
 >
+    <div class="icon">
+        {#if icon}
+            <Icon class="m-auto fs-xl" name={icon}/>
+        {:else}
+            <div class="m-auto fw-600">{title.slice(0, 2).toLocaleUpperCase()}</div>
+        {/if}
+    </div>
     <button
         class="title"
         on:click={onTitleClick}
@@ -61,13 +68,6 @@
     {/if}
     <div class="backdrop"></div>
     <div class="status"></div>
-    <div class="icon">
-        {#if icon}
-            <Icon class="m-auto fs-xl" name={icon}/>
-        {:else}
-            <div class="m-auto fw-600">{title.slice(0, 2).toLocaleUpperCase()}</div>
-        {/if}
-    </div>
     {#if items}
         {#each items as item}
             <svelte:self
@@ -97,6 +97,7 @@
         .title
             grid-column: 1/-1
             grid-row: 1/-1
+            position: relative
             display: grid
             height: var(--layout-aside-item-height)
             justify-items: start
@@ -108,7 +109,6 @@
             cursor: pointer
             text-transform: capitalize
             user-select: none
-            z-index: 1
             &:not(:disabled)
                 &:focus,
                 &:hover
@@ -138,7 +138,6 @@
             height: 100%
             color: var(--aside-item-action-color)
             cursor: pointer
-            z-index: 2
             .ico
                 transform: scale(.75)
                 transition: transform .25s
@@ -177,5 +176,4 @@
             width: 3em
             color: var(--aside-item-icon-color)
             cursor: default
-            z-index: 0
 </style>
