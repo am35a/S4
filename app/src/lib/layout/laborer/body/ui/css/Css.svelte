@@ -230,7 +230,6 @@
 
         <h3 id="buttons">Buttons</h3>
 
-
         <div class="d-flex fw-wrap g-4">
             <div class="d-flex g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;">
                 <div class="d-grid g-3">
@@ -246,7 +245,7 @@
                     <button class="btn-secondary active btn" disabled type="button">Active / Disabled</button>
                 </div>
             </div>
-            <div class="d-flex g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;">
+            <div class="d-flex fw-wrap g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;">
                 <div class="d-grid g-3">
                     <button class="btn-info btn" type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
@@ -320,6 +319,20 @@
                     </button>
                 </div>
             </div>
+            
+            <div class="d-flex fw-wrap g-4 jc-evenly ai-center p-4 bgc-positive br-lg f" style="--fg: 1;">
+                <p>
+                    All button sizes depend on the font size. Don't think the S4 only has seven sizes. Make free your design desire and try to place one size element into another size - it's magic!
+                </p>
+                <button class="btn-secondary btn-xxs btn" type="button">Smallest</button>
+                <button class="btn-secondary btn-xs btn" type="button">Smaller</button>
+                <button class="btn-secondary btn-sm btn" type="button">Small</button>
+                <button class="btn-primary btn-md btn" type="button">Medium</button>
+                <button class="btn-success btn-lg btn" type="button">Large</button>
+                <button class="btn-success btn-xl btn" type="button">Larger</button>
+                <button class="btn-success btn-xxl btn" type="button">Largest</button>
+            </div>
+
         </div>
 
     </section>
