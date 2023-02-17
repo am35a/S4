@@ -98,7 +98,7 @@
                 <div class="fs-xs">x-small</div>
                 <div class="fs-xxs">xx-small</div>
             </div>
-            <div class="d-grid p-4 bgc-positive br-lg f" style="--fg: 1; --fb: 100%;">
+            <div class="d-grid p-4 bgc-positive br-lg">
                 <p>
                     <b>Paragraph</b> is big part of your designs. And here we are again, prepared for every situation.
                     One hint for your at the end: Always care about readability and use line-height more than 140%.
@@ -109,9 +109,46 @@
             </div>
         </div>
 
-        <h3>Icons</h3>
-        <span class="ico ico-ghost fs-xxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
-        <span class="ico ico-github fs-xxl svelte-rlwjpu" style="--ico-image: url(/icons/github.svg);">&nbsp;</span>
+        <h3 id="Icons">Icons</h3>
+        <div class="d-grid g-4 p-4 bgc-positive br-lg">
+            <div>
+                <p>
+                    The cash posible icon is the best way to take heart any front-end developer building deep data applications.
+                </p>
+                <div class="d-grid cols-8 ji-center ai-end">
+                    <span class="ico fs-xxxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                    <span class="ico fs-xxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                    <span class="ico fs-xl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                    <span class="ico fs-lg" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                    <span class="ico" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                    <span class="ico fs-sm" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                    <span class="ico fs-xs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                    <span class="ico fs-xxs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                </div>
+                <hr class="mt-1">
+                <div class="d-grid cols-8 ji-center ai-top">
+                    <span class="fs-xxxl">xxxl</span>
+                    <span class="fs-xxl">xxl</span>
+                    <span class="fs-xl">xl</span>
+                    <span class="fs-lg">lg</span>
+                    <span>md</span>
+                    <span class="fs-sm">sm</span>
+                    <span class="fs-xs">xs</span>
+                    <span class="fs-xxs">xxs</span>
+                </div>
+
+            </div>
+            <div class="d-flex ai-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 100 100">
+                    <circle cx="50" cy="23" r="13" fill="var(--success-color)">
+                      <animate attributeName="cy" dur="1s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.9 0.55;0 0.45 0.55 0.9" keyTimes="0;0.5;1" values="23;77;23"></animate>
+                    </circle>
+                </svg>
+                <p>
+                    There is perfect support for icon sets like font awesome, google fonts, ect or simply SVG with or without animation.
+                </p>
+            </div>
+        </div>
 
         <h3 id="grid">Grid by grid</h3>
         <div class="d-grid cols-12 g-4 p-4 bgc-positive br-lg">
@@ -164,17 +201,124 @@
             </div>
         </div>
 
-        <h3 class="alerts">Alerts and notofications</h3>
-        <div class="d-grid g-4 cols-2 p-4">
-            <div>
-                <div class="alert alert-primary">All servers are now running smoothly again! Thanks.</div>
-                <div class="alert alert-secondary">All servers are now running smoothly again! Thanks.</div>
+        <h3 class="alerts">Alerts</h3>
+        <div class="d-grid p-4 bgc-positive br-lg">
+            <div class="alert alert-primary">
+                Give importance with this simple alert.
             </div>
-            <div class="">
-                <div class="alert alert-info">All servers are now running smoothly again! Thanks.</div>
-                <div class="alert alert-success">Success! This is positive notification.</div>
-                <div class="alert alert-warning">Warning. Loading of this page taking a way too long.</div>
-                <div class="alert alert-error">Error. Can’t connect to the platform.</div>
+            <div class="alert alert-secondary">
+                Secondary alerts are likely to be rarely used.
+            </div>
+            <hr class="mb-4 w-75 mx-auto">
+            <div class="alert alert-info">
+                <span class="ico" style="--ico-image: url(/icons/info-circle.svg);">&nbsp;</span>
+                All servers are now running smoothly again! Thanks.
+            </div>
+            <div class="alert alert-success">
+                <span class="ico" style="--ico-image: url(/icons/check-circle.svg);">&nbsp;</span>
+                Success! This is positive alert.
+            </div>
+            <div class="alert alert-warning">
+                <span class="ico" style="--ico-image: url(/icons/alert-triangel.svg);">&nbsp;</span>
+                Warning. Loading of this page taking a way too long.
+            </div>
+            <div class="alert alert-error mb-0">
+                <span class="ico" style="--ico-image: url(/icons/alert-octagon.svg);">&nbsp;</span>
+                Error. Can`t connect to the platform.
+            </div>
+        </div>
+
+        <h3 id="buttons">Buttons</h3>
+
+
+        <div class="d-flex fw-wrap g-4">
+            <div class="d-flex g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;">
+                <div class="d-grid g-3">
+                    <button class="btn-primary btn" type="button">Primary</button>
+                    <button class="btn-primary active btn" type="button">Active</button>
+                    <button class="btn-primary btn" disabled type="button">Disabled</button>
+                    <button class="btn-primary active btn" disabled type="button">Active / Disabled</button>
+                </div>
+                <div class="d-grid g-3">
+                    <button class="btn-secondary btn" type="button">Secondary</button>
+                    <button class="btn-secondary active btn" type="button">Active</button>
+                    <button class="btn-secondary btn" disabled type="button">Disabled</button>
+                    <button class="btn-secondary active btn" disabled type="button">Active / Disabled</button>
+                </div>
+            </div>
+            <div class="d-flex g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;">
+                <div class="d-grid g-3">
+                    <button class="btn-info btn" type="button">
+                        <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
+                        Send
+                    </button>
+                    <button class="btn-info active btn" type="button">
+                        <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
+                        Send
+                    </button>
+                    <button class="btn-info btn" disabled type="button">
+                        <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
+                        Send
+                    </button>
+                    <button class="btn-info active btn" disabled type="button">
+                        <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
+                        Send
+                    </button>
+                </div>
+                <div class="d-grid g-3">
+                    <button class="btn-success btn" type="button">
+                        <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
+                        Confirm
+                    </button>
+                    <button class="btn-success active btn" type="button">
+                        <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
+                        Confirm
+                    </button>
+                    <button class="btn-success btn" disabled type="button">
+                        <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
+                        Confirm
+                    </button>
+                    <button class="btn-success active btn" disabled type="button">
+                        <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
+                        Confirm
+                    </button>
+                </div>
+                <div class="d-grid g-3">
+                    <button class="btn-warning btn" type="button">
+                        <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
+                        Discard
+                    </button>
+                    <button class="btn-warning active btn" type="button">
+                        <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
+                        Discard
+                    </button>
+                    <button class="btn-warning btn" disabled type="button">
+                        <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
+                        Discard
+                    </button>
+                    <button class="btn-warning active btn" disabled type="button">
+                        <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
+                        Discard
+                    </button>
+                </div>
+                <div class="d-grid g-3">
+                    <button class="btn-error btn" type="button">
+                        <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
+                        Remove
+                    </button>
+                    <button class="btn-error active btn" type="button">
+                        <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
+                        Remove
+                    </button>
+                    <button class="btn-error btn" disabled type="button">
+                        <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
+                        Remove
+                    </button>
+                    <button class="btn-error active btn" disabled type="button">
+                        <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
+                        Remove
+                    </button>
+                </div>
             </div>
         </div>
 

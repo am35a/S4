@@ -281,7 +281,6 @@ button,
 [type=reset],
 [type=submit] {
   cursor: pointer;
-  color: inherit;
 }
 
 button:-moz-focusring,

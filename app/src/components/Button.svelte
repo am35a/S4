@@ -13,7 +13,7 @@
         <slot></slot>
     </button>
     
-    <style lang='sass'>
+    <style lang='sass' global>
         $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
         $fontSizes: xxs, xs, sm, md, lg, xl, xxl
     
