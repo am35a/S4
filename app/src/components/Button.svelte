@@ -35,85 +35,65 @@
             text-decoration: none
             cursor: pointer
             user-select: none
-            // outline: calc(var(--size-1) / 2) solid transparent
-            outline-offset: calc(var(--size-1) / 4)                    
+            outline-width: 0
+            outline-style: solid
+            outline-color: transparent
+            outline-offset: 0
+            transition: color .15s linear, outline .15s linear
+            &:disabled
+                cursor: not-allowed
+            &:focus,
+            &:not(:disabled):hover,
+            &.active
+                outline-width: calc(var(--size-1) / 2)
+                outline-color: var(--negative-color-20)
+                outline-offset: calc(var(--size-1) / 4)
+            &.active:not(:disabled):not(:focus):hover,
+            &.active:not(:disabled):focus
+                outline-color: var(--negative-color-40)
+
             @each $colorName in $accentColors
                 &-#{$colorName}
                     background-color: var(--#{$colorName}-color)
                     color: var(--positive-color)
-                    &:focus,
-                    &:hover,
-                    &.active
-                        background-color: var(--#{$colorName}-color-d)
-                        color: var(--positive-color)
                     &:disabled
                         background-color: var(--#{$colorName}-color-l)
                         color: var(--positive-color-40)
-                        &.active
-                            background-color: var(--#{$colorName}-color-d)
-                            color: var(--positive-color-60)
+
             @each $colorName in $accentColors
                 &-alt-#{$colorName}
                     background-color: var(--#{$colorName}-color-m)
                     color: var(--#{$colorName}-color)
                     &:focus,
-                    &:hover,
+                    &:not(:disabled):hover,
                     &.active
                         color: var(--#{$colorName}-color-d)
                     &:disabled
                         background-color: var(--negative-color-10)
-                        color: var(--#{$colorName}-color)
-                        &.active
-                            color: var(--#{$colorName}-color-d)
+                        color: var(--#{$colorName}-color-m)
                     &:not(:disabled):hover
-                        background-color: var(--#{$colorName}-color-l)
-                        color: var(--positive-color-80)
+                        color: var(--#{$colorName}-color-d)
+
             @each $colorName in $accentColors
                 &-outline-#{$colorName}
                     box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color, currentColor)
                     color: var(--#{$colorName}-color)
                     &:focus,
-                    &:hover,
+                    &:not(:disabled):hover,
                     &.active
                         box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-d, currentColor)
+                        background-color: var(--#{$colorName}-color-m)
                         color: var(--#{$colorName}-color-d)
                     &:disabled
-                        box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-l, currentColor)
+                        box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-m, currentColor)
                         color: var(--negative-color-20)
-                        &.active
-                            box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-d, currentColor)
-                            color: var(--negative-color-40)
-            &:disabled
-                cursor: not-allowed
-            &:focus,
-            &:hover
-                outline-width: calc(var(--size-1) / 2)
-                outline-style: solid
-                outline-color: var(--negative-color-20)
-            &:not(:focus):not(:disabled):hover.active
-                outline-color: var(--negative-color-40)
+                        // &.active
+                            // box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-d, currentColor)
+                            // color: var(--negative-color-40)
 
             @each $size in $fontSizes
                 &-#{$size}
                     font-size: var(--fs-#{$size})
-                    // line-height: 2ex
-    
-            // &-sm
-                // font-size: calc(var(--key-size) * .875)
-                // line-height: calc(var(--key-size) * 1.25)
-            // &-lg
-                // font-size: calc(var(--key-size) * 1.125)
-                // line-height: calc(var(--key-size) * 1.75)
-            // &-ico
-            //     padding: calc(calc(calc(calc(var(--key-size) * 1.5) - 1em) / 2) + calc(var(--key-size) * .25))
-            //     &.btn-sm
-            //         padding: calc(calc(calc(calc(var(--key-size) * 1.25) - 1em) / 2) + calc(var(--key-size) * .25))
-            //     &.btn-lg
-            //         padding: calc(calc(calc(calc(var(--key-size) * 1.75) - 1em) / 2) + calc(var(--key-size) * .25))
             &-ico
-                // min-width: 2ex
-                // min-height: 2ex
-                // min-width: calc(0.25em + 2ex + 0.25em)
-                // min-height: calc(0.25em + 2ex + 0.25em)
                 padding: .25em
     </style>
