@@ -1,3 +1,12 @@
+<script lang="ts">
+    let buttonVariantArr: string[] = ['', 'alt-', 'outline-']
+    // let buttonTypesObj = {
+    //     default: '',
+    //     mute: 'mute',
+    //     outline: '-d'
+    // }
+</script>
+
 <article>
     <h2 id="css">CSS supported UI</h2>
     <section class="d-grid g-5">
@@ -231,94 +240,96 @@
         <h3 id="buttons">Buttons</h3>
 
         <div class="d-flex fw-wrap g-4">
+            {#each buttonVariantArr as variant }
             <div class="d-flex g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;">
                 <div class="d-grid g-3">
-                    <button class="btn-primary btn" type="button">Primary</button>
-                    <button class="btn-primary active btn" type="button">Active</button>
-                    <button class="btn-primary btn" disabled type="button">Disabled</button>
-                    <button class="btn-primary active btn" disabled type="button">Active / Disabled</button>
+                    <button class="btn-{variant}primary btn" type="button">Primary</button>
+                    <button class="btn-{variant}primary active btn" type="button">Active</button>
+                    <button class="btn-{variant}primary btn" disabled type="button">Disabled</button>
+                    <button class="btn-{variant}primary active btn" disabled type="button">Active / Disabled</button>
                 </div>
                 <div class="d-grid g-3">
-                    <button class="btn-secondary btn" type="button">Secondary</button>
-                    <button class="btn-secondary active btn" type="button">Active</button>
-                    <button class="btn-secondary btn" disabled type="button">Disabled</button>
-                    <button class="btn-secondary active btn" disabled type="button">Active / Disabled</button>
+                    <button class="btn-{variant}secondary btn" type="button">Secondary</button>
+                    <button class="btn-{variant}secondary active btn" type="button">Active</button>
+                    <button class="btn-{variant}secondary btn" disabled type="button">Disabled</button>
+                    <button class="btn-{variant}secondary active btn" disabled type="button">Active / Disabled</button>
                 </div>
             </div>
             <div class="d-flex fw-wrap g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;">
                 <div class="d-grid g-3">
-                    <button class="btn-info btn" type="button">
+                    <button class="btn-{variant}info btn" type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
                         Send
                     </button>
-                    <button class="btn-info active btn" type="button">
+                    <button class="btn-{variant}info active btn" type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
                         Send
                     </button>
-                    <button class="btn-info btn" disabled type="button">
+                    <button class="btn-{variant}info btn" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
                         Send
                     </button>
-                    <button class="btn-info active btn" disabled type="button">
+                    <button class="btn-{variant}info active btn" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
                         Send
                     </button>
                 </div>
                 <div class="d-grid g-3">
-                    <button class="btn-success btn" type="button">
+                    <button class="btn-{variant}success btn" type="button">
                         <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
                         Confirm
                     </button>
-                    <button class="btn-success active btn" type="button">
+                    <button class="btn-{variant}success active btn" type="button">
                         <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
                         Confirm
                     </button>
-                    <button class="btn-success btn" disabled type="button">
+                    <button class="btn-{variant}success btn" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
                         Confirm
                     </button>
-                    <button class="btn-success active btn" disabled type="button">
+                    <button class="btn-{variant}success active btn" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
                         Confirm
                     </button>
                 </div>
                 <div class="d-grid g-3">
-                    <button class="btn-warning btn" type="button">
+                    <button class="btn-{variant}warning btn" type="button">
                         <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
                         Discard
                     </button>
-                    <button class="btn-warning active btn" type="button">
+                    <button class="btn-{variant}warning active btn" type="button">
                         <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
                         Discard
                     </button>
-                    <button class="btn-warning btn" disabled type="button">
+                    <button class="btn-{variant}warning btn" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
                         Discard
                     </button>
-                    <button class="btn-warning active btn" disabled type="button">
+                    <button class="btn-{variant}warning active btn" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
                         Discard
                     </button>
                 </div>
                 <div class="d-grid g-3">
-                    <button class="btn-error btn" type="button">
+                    <button class="btn-{variant}error btn" type="button">
                         <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
                         Remove
                     </button>
-                    <button class="btn-error active btn" type="button">
+                    <button class="btn-{variant}error active btn" type="button">
                         <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
                         Remove
                     </button>
-                    <button class="btn-error btn" disabled type="button">
+                    <button class="btn-{variant}error btn" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
                         Remove
                     </button>
-                    <button class="btn-error active btn" disabled type="button">
+                    <button class="btn-{variant}error active btn" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
                         Remove
                     </button>
                 </div>
             </div>
+            {/each}
             
             <div class="d-flex fw-wrap g-4 jc-evenly ai-center p-4 bgc-positive br-lg f" style="--fg: 1;">
                 <p>

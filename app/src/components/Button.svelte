@@ -35,7 +35,7 @@
             text-decoration: none
             cursor: pointer
             user-select: none
-            outline: calc(var(--size-1) / 2) solid transparent
+            // outline: calc(var(--size-1) / 2) solid transparent
             outline-offset: calc(var(--size-1) / 4)                    
             @each $colorName in $accentColors
                 &-#{$colorName}
@@ -54,20 +54,41 @@
                             color: var(--positive-color-60)
             @each $colorName in $accentColors
                 &-alt-#{$colorName}
+                    background-color: var(--#{$colorName}-color-m)
                     color: var(--#{$colorName}-color)
                     &:focus,
                     &:hover,
                     &.active
                         color: var(--#{$colorName}-color-d)
                     &:disabled
+                        background-color: var(--negative-color-10)
+                        color: var(--#{$colorName}-color)
+                        &.active
+                            color: var(--#{$colorName}-color-d)
+                    &:not(:disabled):hover
+                        background-color: var(--#{$colorName}-color-l)
+                        color: var(--positive-color-80)
+            @each $colorName in $accentColors
+                &-outline-#{$colorName}
+                    box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color, currentColor)
+                    color: var(--#{$colorName}-color)
+                    &:focus,
+                    &:hover,
+                    &.active
+                        box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-d, currentColor)
+                        color: var(--#{$colorName}-color-d)
+                    &:disabled
+                        box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-l, currentColor)
                         color: var(--negative-color-20)
                         &.active
+                            box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-d, currentColor)
                             color: var(--negative-color-40)
-                    &:hover
-                        background-color: var(--#{$colorName}-color-m)
             &:disabled
                 cursor: not-allowed
-            &:focus
+            &:focus,
+            &:hover
+                outline-width: calc(var(--size-1) / 2)
+                outline-style: solid
                 outline-color: var(--negative-color-20)
             &:not(:focus):not(:disabled):hover.active
                 outline-color: var(--negative-color-40)
