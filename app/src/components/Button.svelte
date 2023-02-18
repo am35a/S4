@@ -39,7 +39,7 @@
             outline-style: solid
             outline-color: transparent
             outline-offset: 0
-            transition: color .15s linear, outline .15s linear
+            transition: color .15s linear, background-color .15s linear, outline .15s linear
             &:disabled
                 cursor: not-allowed
             &:focus,

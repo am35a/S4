@@ -5,7 +5,13 @@
     //     mute: 'mute',
     //     outline: '-d'
     // }
-    let buttonBorder: string = ''
+
+    let buttonBorderArr: string[] = ['br-0', 'br-xs', 'br-sm', 'br-md', 'br-lg', 'br-pill']
+    let buttonBorder: string = buttonBorderArr[2]
+
+    let buttonSizeArr: string[] = ['btn-xxl', 'btn-xl', 'btn-lg', 'btn-md', 'btn-sm', 'btn-xs', 'btn-xxs']
+    let buttonSize: string = buttonSizeArr[3]
+
 </script>
 
 <article>
@@ -239,102 +245,113 @@
         </div>
 
         <h3 id="buttons">Buttons</h3>
-        <div class="d-flex g-4 jc-end pb-4 border-bottom">
-            <button
-                class="btn btn-primary btn-ico"
-                on:click={() => buttonBorder = ''}
-            ><div class="p-4"></div></button>
-            <button
-                class="btn btn-primary btn-ico br-pill"
-                on:click={() => buttonBorder = 'br-pill'}
-            ><div class="p-4"></div></button>
+        <div class="d-flex g-4 jc-between ai-center pb-4 border-bottom">
+            <div class="d-flex g-4 ai-center">
+                {#each buttonSizeArr as values }
+                    <button
+                        class="btn btn-outline-primary btn-ico {buttonBorder} {values} {buttonSize === values ? 'active' : ''}"
+                        on:click = {() => buttonSize = values}
+                        disabled = {buttonSize === values}
+                    ><span class="ico" style="--ico-image: url(/icons/empty.svg);">&nbsp;</span></button>
+                {/each}
+            </div>
+
+            <div class="d-flex g-4">
+                {#each buttonBorderArr as values }
+                    <button
+                        class="btn btn-outline-primary btn-ico {buttonSize} {values} {buttonBorder === values ? 'active' : ''}"
+                        on:click={() => buttonBorder = values}
+                        disabled = {buttonBorder === values}
+                    ><span class="ico" style="--ico-image: url(/icons/empty.svg);">&nbsp;</span></button>
+                {/each}
+            </div>
         </div>
         <div class="d-flex fw-wrap g-4">
 
             {#each buttonVariantArr as variant }
             <div class="d-flex g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;">
                 <div class="d-grid g-3">
-                    <button class="btn btn-{variant}primary {buttonBorder}" type="button">Primary</button>
-                    <button class="btn btn-{variant}primary {buttonBorder} active" type="button">Active</button>
-                    <button class="btn btn-{variant}primary {buttonBorder}" disabled type="button">Disabled</button>
-                    <button class="btn btn-{variant}primary {buttonBorder} active" disabled type="button">Active / Disabled</button>
+                    <button class="btn btn-{variant}primary {buttonBorder} {buttonSize}" type="button">Primary</button>
+                    <button class="btn btn-{variant}primary {buttonBorder} {buttonSize} active" type="button">Active</button>
+                    <button class="btn btn-{variant}primary {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
+                    <button class="btn btn-{variant}primary {buttonBorder} {buttonSize} active" disabled type="button">Active / Disabled</button>
                 </div>
                 <div class="d-grid g-3">
-                    <button class="btn btn-{variant}secondary {buttonBorder}" type="button">Secondary</button>
-                    <button class="btn btn-{variant}secondary {buttonBorder} active" type="button">Active</button>
-                    <button class="btn btn-{variant}secondary {buttonBorder}" disabled type="button">Disabled</button>
-                    <button class="btn btn-{variant}secondary {buttonBorder} active" disabled type="button">Active / Disabled</button>
+                    <button class="btn btn-{variant}secondary {buttonBorder} {buttonSize}" type="button">Secondary</button>
+                    <button class="btn btn-{variant}secondary {buttonBorder} {buttonSize} active" type="button">Active</button>
+                    <button class="btn btn-{variant}secondary {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
+                    <button class="btn btn-{variant}secondary {buttonBorder} {buttonSize} active" disabled type="button">Active / Disabled</button>
                 </div>
-            </div>
-            <div class="d-flex fw-wrap g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;">
+            <!-- </div>
+            <div class="d-flex fw-wrap g-4 jc-evenly p-4 bgc-positive br-lg f" style="--fg: 1;"> -->
                 <div class="d-grid g-3">
-                    <button class="btn btn-{variant}info {buttonBorder}" type="button">
+                    <button class="btn btn-{variant}info {buttonBorder} {buttonSize}" type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
                         Send
                     </button>
-                    <button class="btn btn-{variant}info {buttonBorder} active" type="button">
+                    <button class="btn btn-{variant}info {buttonBorder} {buttonSize} active" type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
                         Send
                     </button>
-                    <button class="btn btn-{variant}info {buttonBorder}" disabled type="button">
+                    <button class="btn btn-{variant}info {buttonBorder} {buttonSize}" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
                         Send
                     </button>
-                    <button class="btn btn-{variant}info {buttonBorder} active" disabled type="button">
+                    <button class="btn btn-{variant}info {buttonBorder} {buttonSize} active" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
                         Send
                     </button>
                 </div>
                 <div class="d-grid g-3">
-                    <button class="btn btn-{variant}success {buttonBorder}" type="button">
+                    <button class="btn btn-{variant}success {buttonBorder} {buttonSize}" type="button">
                         <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
                         Confirm
                     </button>
-                    <button class="btn btn-{variant}success {buttonBorder} active" type="button">
+                    <button class="btn btn-{variant}success {buttonBorder} {buttonSize} active" type="button">
                         <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
                         Confirm
                     </button>
-                    <button class="btn btn-{variant}success {buttonBorder}" disabled type="button">
+                    <button class="btn btn-{variant}success {buttonBorder} {buttonSize}" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
                         Confirm
                     </button>
-                    <button class="btn btn-{variant}success {buttonBorder} active" disabled type="button">
+                    <button class="btn btn-{variant}success {buttonBorder} {buttonSize} active" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
                         Confirm
                     </button>
                 </div>
                 <div class="d-grid g-3">
-                    <button class="btn btn-{variant}warning {buttonBorder}" type="button">
+                    <button class="btn btn-{variant}warning {buttonBorder} {buttonSize}" type="button">
                         <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
                         Discard
                     </button>
-                    <button class="btn btn-{variant}warning {buttonBorder} active" type="button">
+                    <button class="btn btn-{variant}warning {buttonBorder} {buttonSize} active" type="button">
                         <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
                         Discard
                     </button>
-                    <button class="btn btn-{variant}warning {buttonBorder}" disabled type="button">
+                    <button class="btn btn-{variant}warning {buttonBorder} {buttonSize}" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
                         Discard
                     </button>
-                    <button class="btn btn-{variant}warning {buttonBorder} active" disabled type="button">
+                    <button class="btn btn-{variant}warning {buttonBorder} {buttonSize} active" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
                         Discard
                     </button>
                 </div>
                 <div class="d-grid g-3">
-                    <button class="btn btn-{variant}error {buttonBorder}" type="button">
+                    <button class="btn btn-{variant}error {buttonBorder} {buttonSize}" type="button">
                         <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
                         Remove
                     </button>
-                    <button class="btn btn-{variant}error {buttonBorder} active" type="button">
+                    <button class="btn btn-{variant}error {buttonBorder} {buttonSize} active" type="button">
                         <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
                         Remove
                     </button>
-                    <button class="btn btn-{variant}error {buttonBorder}" disabled type="button">
+                    <button class="btn btn-{variant}error {buttonBorder} {buttonSize}" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
                         Remove
                     </button>
-                    <button class="btn btn-{variant}error {buttonBorder} active" disabled type="button">
+                    <button class="btn btn-{variant}error {buttonBorder} {buttonSize} active" disabled type="button">
                         <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
                         Remove
                     </button>
@@ -346,13 +363,6 @@
                 <p>
                     All button sizes depend on the font size. Don't think the S4 only has seven sizes. Make free your design desire and try to place one size element into another size - it's magic!
                 </p>
-                <button class="btn btn-secondary btn-xxs" type="button">Smallest</button>
-                <button class="btn btn-secondary btn-xs" type="button">Smaller</button>
-                <button class="btn btn-secondary btn-sm" type="button">Small</button>
-                <button class="btn btn-primary btn-md" type="button">Medium</button>
-                <button class="btn btn-success btn-lg" type="button">Large</button>
-                <button class="btn btn-success btn-xl" type="button">Larger</button>
-                <button class="btn btn-success btn-xxl" type="button">Largest</button>
             </div>
 
         </div>
