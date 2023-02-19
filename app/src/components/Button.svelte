@@ -46,6 +46,7 @@
             &:not(:disabled):hover,
             &.active
                 outline-width: calc(var(--size-1) / 2)
+                outline-style: solid
                 outline-color: var(--negative-color-20)
                 outline-offset: calc(var(--size-1) / 4)
             &.active:not(:disabled):not(:focus):hover,

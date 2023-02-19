@@ -531,7 +531,7 @@
 .br-xxxl {
   border-radius: var(--br-xxxl) !important;
 }
-.br-circle {
+.br-oval {
   border-radius: 50% !important;
 }
 .br-pill {

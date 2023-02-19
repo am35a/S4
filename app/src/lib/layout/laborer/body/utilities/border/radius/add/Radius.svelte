@@ -18,7 +18,7 @@
         </div>
         <div class="d-flex fw-wrap g-4">
             <div>
-                <div class="bgc-negative-10 p-8 br-circle"></div>
+                <div class="bgc-negative-10 p-8 br-oval"></div>
             </div>
             <div>
                 <div class="bgc-negative-10 p-5 br-pill">br-pill</div>
