@@ -41,6 +41,7 @@
             outline-offset: 0
             transition: color .15s linear, background-color .15s linear, outline .15s linear
             &:disabled
+                color: var(--negative-color-20)
                 cursor: not-allowed
             &:focus,
             &:not(:disabled):hover,
@@ -52,6 +53,10 @@
             &.active:not(:disabled):not(:focus):hover,
             &.active:not(:disabled):focus
                 outline-color: var(--negative-color-40)
+            &-alt
+                background-color: var(--negative-color-10)
+            &-outline
+                box-shadow: inset 0px 0px 0px 0.0625em currentColor
 
             @each $colorName in $accentColors
                 &-#{$colorName}
@@ -70,8 +75,7 @@
                     &.active
                         color: var(--#{$colorName}-color-d)
                     &:disabled
-                        background-color: var(--negative-color-10)
-                        color: var(--#{$colorName}-color-m)
+                        color: var(--negative-color-20)
                     &:not(:disabled):hover
                         color: var(--#{$colorName}-color-d)
 
@@ -88,9 +92,6 @@
                     &:disabled
                         box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-m, currentColor)
                         color: var(--negative-color-20)
-                        // &.active
-                            // box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-d, currentColor)
-                            // color: var(--negative-color-40)
 
             @each $size in $fontSizes
                 &-#{$size}

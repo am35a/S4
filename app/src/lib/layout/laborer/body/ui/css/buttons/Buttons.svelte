@@ -50,6 +50,27 @@
 
     <div class="d-grid g-4">
 
+        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br-lg">
+            <div class="d-grid g-3">
+                <button class="btn {buttonBorder} {buttonSize}" type="button">Default</button>
+                <button class="btn {buttonBorder} {buttonSize} active" type="button">Active</button>
+                <button class="btn {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
+                <button class="btn {buttonBorder} {buttonSize} active" disabled type="button">Active / Disabled</button>
+            </div>
+            <div class="d-grid g-3">
+                <button class="btn btn-alt {buttonBorder} {buttonSize}" type="button">Default</button>
+                <button class="btn btn-alt {buttonBorder} {buttonSize} active" type="button">Active</button>
+                <button class="btn btn-alt {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
+                <button class="btn btn-alt {buttonBorder} {buttonSize} active" disabled type="button">Active / Disabled</button>
+            </div>
+            <div class="d-grid g-3">
+                <button class="btn btn-outline {buttonBorder} {buttonSize}" type="button">Default</button>
+                <button class="btn btn-outline {buttonBorder} {buttonSize} active" type="button">Active</button>
+                <button class="btn btn-outline {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
+                <button class="btn btn-outline {buttonBorder} {buttonSize} active" disabled type="button">Active / Disabled</button>
+            </div>
+        </div>
+
         {#each buttonVariantArr as variant}
             <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br-lg">
                 <div class="d-grid g-3">
