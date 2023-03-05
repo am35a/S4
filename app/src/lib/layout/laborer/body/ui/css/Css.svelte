@@ -44,7 +44,7 @@
         </div>
         <Button
             class="btn btn-ico btn-alt-primary btn-xs s-none"
-            on:click={() => window.open('#alignment', '_self')}
+            on:click={() => window.open('#css', '_self')}
         ><Icon name="arrow-top-big" /></Button>
     </div>
 </article>
