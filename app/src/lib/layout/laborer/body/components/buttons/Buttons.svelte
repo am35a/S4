@@ -3,27 +3,46 @@
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
+    let fontSizesObj = {
+        Default: '' as string,
+        xxs: 'fs-xxs' as string,
+        xs: 'fs-xs' as string,
+        sm: 'fs-sm' as string,
+        md: 'fs-md' as string,
+        lg: 'fs-lg' as string,
+        xl: 'fs-xl' as string,
+        xxl: 'fs-xxl' as string,
+        xxxl: 'fs-xxxl' as string
+    }
+    let fontSize: string = 'Default'
+
     let buttonsObj = {
+        typeObj: {
+            Default: '' as string,
+            Submit: 'submit' as string,
+            Reset: 'reset' as string
+        },
         variantsObj: {
-            'Default': '' as string,
-            'Alt': 'alt' as string,
-            'Outline': 'outline' as string
+            Default: '' as string,
+            Alt: 'alt' as string,
+            Outline: 'outline' as string
         },
         colorsObj: {
-            'Default': '' as string,
-            'Primary': '-primary' as string,
-            'Outline': '-secondary' as string,
-            'Info': '-info' as string,
-            "Success": '-success' as string,
-            'Warning': '-warning' as string,
-            'Error': '-error' as string,
+            Default: '' as string,
+            Primary: '-primary' as string,
+            Outline: '-secondary' as string,
+            Info: '-info' as string,
+            Success: '-success' as string,
+            Warning: '-warning' as string,
+            Error: '-error' as string,
         },
         iconObj: {
-            'Default': 0 as number,
-            'Both': 1 as number,
-            'Icon': 2 as number
+            Default: 0 as number,
+            Both: 1 as number,
+            Icon: 2 as number
         }
     }
+    let buttonType: string = 'Default'
     let buttonVariant: string = 'Default'
     let buttonColor: string = 'Default'
     let buttonIcon: string = 'Default'
@@ -31,6 +50,9 @@
     let buttonClass: string = ''
     $: {
         buttonClass = fnButtonClass()
+
+        if (fontSize !== 'Default')
+            buttonClass = `${buttonClass} ${fontSizesObj[fontSize]}`
 
         if (buttonsObj.iconObj[buttonIcon] === 2)
             buttonClass = `${buttonClass} btn-ico`
@@ -48,7 +70,6 @@
                         return ''    
         }
     }
-
 </script>
 
 <section>
@@ -57,7 +78,7 @@
 
     <div class="d-grid g-5">
         <div class="d-grid g-4">
-            <div>Variants</div>
+            <b>Variants</b>
             <div class="d-flex g-3">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
@@ -71,7 +92,7 @@
             </div>
         </div>
         <div class="d-grid g-4">
-            <div>Colors</div>
+            <b>Colors</b>
             <div class="d-flex g-3">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
@@ -85,7 +106,7 @@
             </div>
         </div>
         <div class="d-grid g-4">
-            <div>Icon</div>
+            <b>Icon</b>
             <div class="d-flex g-3">
                 {#each Object.entries(buttonsObj.iconObj) as [key, value]}
                     <Button
@@ -103,11 +124,39 @@
                 {/each}
             </div>
         </div>
+        <div class="d-grid g-4">
+            <b>Sizes</b>
+            <div class="d-flex g-3 ai-center">
+                {#each Object.entries(fontSizesObj) as [key, value]}
+                    <button
+                        on:click={() => fontSize = key}
+                        class="btn {value}"
+                        class:active = {fontSize === key}
+                        type="button"
+                        disabled = {fontSize === key}
+                    >{key}</button>
+                {/each}
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>Types</b>
+            <div class="d-flex g-3">
+                {#each Object.entries(buttonsObj.typeObj) as [key, value]}
+                    <button
+                        on:click={() => buttonType = key}
+                        class="btn btn{value}"
+                        class:active = {buttonType === key}
+                        type="button"
+                        disabled = {buttonType === key}
+                    >{key}</button>
+                {/each}
+            </div>
+        </div>
         <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br">
             <div class="d-grid cols-2 g-3">
-                <div class="js-end as-center">Default</div>
+                <b class="js-end as-center">Default</b>
                 <div>
-                    <button class="btn {buttonClass}">
+                    <button class="btn {buttonClass}" type="button">
                         {#if buttonsObj.iconObj[buttonIcon]}
                             <span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
                         {/if}
@@ -116,7 +165,7 @@
                         {/if}
                     </button>
                 </div>
-                <div class="js-end as-center">Active</div>
+                <b class="js-end as-center">Active</b>
                 <div>
                     <button class="btn {buttonClass} active">
                         {#if buttonsObj.iconObj[buttonIcon]}
@@ -127,9 +176,9 @@
                         {/if}
                     </button>
                 </div>
-                <div class="js-end as-center">Disabled</div>
+                <b class="js-end as-center">Disabled</b>
                 <div>
-                    <button class="btn {buttonClass}" disabled>
+                    <button class="btn {buttonClass}" type="button" disabled>
                         {#if buttonsObj.iconObj[buttonIcon]}
                             <span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
                         {/if}
@@ -138,9 +187,9 @@
                         {/if}
                     </button>
                 </div>
-                <div class="js-end as-center">Active & Disabled</div>
+                <b class="js-end as-center">Active & Disabled</b>
                 <div>
-                    <button class="btn {buttonClass} active" disabled>
+                    <button class="btn {buttonClass} active" type="button" disabled>
                         {#if buttonsObj.iconObj[buttonIcon]}
                             <span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
                         {/if}
@@ -150,89 +199,48 @@
                     </button>
                 </div>
             </div>
-        </div>
-        <Precode>
-            {
+        </div>        
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
+                {
 `// Default
-<button class="btn ${buttonClass}">${buttonsObj.iconObj[buttonIcon] ? '<span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</button>
-    
+<button class="btn ${buttonClass}" type="${buttonsObj.typeObj[buttonType] ? buttonsObj.typeObj[buttonType] : 'button'}">${buttonsObj.iconObj[buttonIcon] ? '<span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</button>
+        
 // Active
-<button class="btn ${buttonClass} active">${buttonsObj.iconObj[buttonIcon] ? '<span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</button>
-    
+<button class="btn ${buttonClass} active" type="${buttonsObj.typeObj[buttonType] ? buttonsObj.typeObj[buttonType] : 'button'}">${buttonsObj.iconObj[buttonIcon] ? '<span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</button>
+        
 // Disabled
-<button class="btn ${buttonClass}" disabled>${buttonsObj.iconObj[buttonIcon] ? '<span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</button>
-    
+<button class="btn ${buttonClass}" type="${buttonsObj.typeObj[buttonType] ? buttonsObj.typeObj[buttonType] : 'button'}" disabled>${buttonsObj.iconObj[buttonIcon] ? '<span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</button>
+        
 // Active & disabled
-<button class="btn ${buttonClass} active" disabled>${buttonsObj.iconObj[buttonIcon] ? '<span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</button>
+<button class="btn ${buttonClass} active" type="${buttonsObj.typeObj[buttonType] ? buttonsObj.typeObj[buttonType] : 'button'}" disabled>${buttonsObj.iconObj[buttonIcon] ? '<span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</button>
 `
-            }
-        </Precode>
-    </div>
-
-
-
-
-
-    <div class="d-grid g-2">
-        <div class="h4" aria-level={4} role="heading">Type</div>
-        <div>
-            <Button class="btn-primary" type="submit">Submit</Button>
-            <Button class="btn-primary" type="reset">Reset</Button>
+                }
+            </Precode>
         </div>
-        <Precode>
-            {
-`...`
-            }
-        </Precode>
-    </div>
-    
-    <div class="d-grid g-2">
-        <div class="h4" aria-level={4} role="heading">Size</div>
-        <div>
-            <Button class="btn-primary btn-xxs">Smallest</Button>
-            <Button class="btn-primary btn-xs">Smaller</Button>
-            <Button class="btn-primary btn-sm">Small</Button>
-            <Button class="btn-primary btn-md">Medium</Button>
-            <Button class="btn-primary btn-lg">Large</Button>
-            <Button class="btn-primary btn-xl">Larger</Button>
-            <Button class="btn-primary btn-xxl">Largest</Button>
-        </div>
-        <Precode>
-            {
-`...`
-            }
-        </Precode>
-    </div>
+        <div class="d-grid g-4">
+            <b>Svelte</b>
+            <Precode>
+                {
+`// Import
+${buttonsObj.iconObj[buttonIcon] !== 0 ? 'import Button from "component/Button.svelte"' : ''}
+import Icon from "component/Icon.svelte"
 
-    <!-- <div class="d-grid g-2">
-        <div class="h4" aria-level={4} role="heading">With icon</div>
-        <div>
-            <Button class="btn-primary"><Icon name="ghost"/>On the left</Button>
-            <Button class="btn-primary">On the right<Icon name="ghost"/></Button>
+// Default
+<Button ${buttonClass ? 'class="' + buttonClass + '"' : ''} ${buttonsObj.typeObj[buttonType] ? 'type="' + buttonsObj.typeObj[buttonType] + '"' : ''}>${buttonsObj.iconObj[buttonIcon] ? '<Icon name="ghost"/>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</Button>
+        
+// Active
+<Button class="${buttonClass} active" ${buttonsObj.typeObj[buttonType] ? 'type="' + buttonsObj.typeObj[buttonType] + '"' : ''}>${buttonsObj.iconObj[buttonIcon] ? '<Icon name="ghost"/>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</Button>
+        
+// Disabled
+<Button ${buttonClass ? 'class="' + buttonClass + '"' : ''}  ${buttonsObj.typeObj[buttonType] ? 'type="' + buttonsObj.typeObj[buttonType] + '"' : ''} disabled>${buttonsObj.iconObj[buttonIcon] ? '<Icon name="ghost"/>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</Button>
+        
+// Active & disabled
+<Button class="${buttonClass} active"  ${buttonsObj.typeObj[buttonType] ? 'type="' + buttonsObj.typeObj[buttonType] + '"' : ''} disabled>${buttonsObj.iconObj[buttonIcon] ? '<Icon name="ghost"/>' : ''}${buttonsObj.iconObj[buttonIcon] !== 2 ? 'Button' : ''}</Button>
+`
+                }
+            </Precode>
         </div>
-        <Precode>
-            {
-`...`
-            }
-        </Precode>
     </div>
-
-    <div class="d-grid g-2">
-        <div class="h4" aria-level={4} role="heading">Icon</div>
-        <div>
-            <Button class="btn-primary btn-ico btn-xxs"><Icon name="ghost"/></Button>
-            <Button class="btn-primary btn-ico btn-xs"><Icon name="ghost"/></Button>
-            <Button class="btn-primary btn-ico btn-sm"><Icon name="ghost"/></Button>
-            <Button class="btn-primary btn-ico"><Icon name="ghost"/></Button>
-            <Button class="btn-primary btn-ico btn-lg"><Icon name="ghost"/></Button>
-            <Button class="btn-primary btn-ico btn-xl"><Icon name="ghost"/></Button>
-            <Button class="btn-primary btn-ico btn-xxl"><Icon name="ghost"/></Button>
-        </div>
-        <Precode>
-            {
-`...`
-            }
-        </Precode>
-    </div> -->
-    
 </section>

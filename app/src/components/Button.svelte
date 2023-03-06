@@ -56,7 +56,7 @@
             &-alt
                 background-color: var(--negative-color-10)
             &-outline
-                box-shadow: inset 0px 0px 0px 0.0625em currentColor
+                box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) currentColor
 
             @each $colorName in $accentColors
                 &-#{$colorName}
@@ -81,21 +81,21 @@
 
             @each $colorName in $accentColors
                 &-outline-#{$colorName}
-                    box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color, currentColor)
+                    box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color, currentColor)
                     color: var(--#{$colorName}-color)
                     &:focus,
                     &:not(:disabled):hover,
                     &.active
-                        box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-d, currentColor)
+                        box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color-d, currentColor)
                         background-color: var(--#{$colorName}-color-m)
                         color: var(--#{$colorName}-color-d)
                     &:disabled
-                        box-shadow: inset 0px 0px 0px 0.0625em var(--#{$colorName}-color-m, currentColor)
+                        box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color-m, currentColor)
                         color: var(--negative-color-20)
 
             @each $size in $fontSizes
                 &-#{$size}
                     font-size: var(--fs-#{$size})
             &-ico
-                padding: .25em
+                padding: var(--size-1)
     </style>
