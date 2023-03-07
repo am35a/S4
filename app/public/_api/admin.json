@@ -55,11 +55,6 @@
                     },
                     {
                         "id": 34,
-                        "title": "Heading",
-                        "segment": "/components/heading"
-                    },
-                    {
-                        "id": 35,
                         "title": "Icons",
                         "segment": "/components/icons"
                     }
