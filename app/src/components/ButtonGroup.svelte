@@ -2,17 +2,19 @@
 
 </script>
 
+<!-- class:btn-group={true} -->
 <div
-    class:btn-group={true}
     {...$$restProps}
 >
     <slot></slot>
 </div>
 
 <style lang="sass" global>
-    .btn-group
+    .btns-h
         display: inline-flex
         gap: var(--size-1)
+        flex-direction: row
+        vertical-align: middle
         > .btn:first-child
             border-top-right-radius: 0
             border-bottom-right-radius: 0
@@ -21,8 +23,18 @@
         > .btn:last-child
             border-top-left-radius: 0
             border-bottom-left-radius: 0
-        // > .btn:focus,
-        // .btn:hover,
-        // .btn:active:not(:disabled)
-        //     z-index: 1
+
+    .btns-v
+        display: inline-grid
+        gap: var(--size-1)
+        align-items: flex-start
+        justify-content: center
+        > .btn:first-child
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+        > .btn:not(:first-child):not(:last-child)
+            border-radius: 0
+        > .btn:last-child
+            border-top-left-radius: 0
+            border-top-right-radius: 0
 </style>

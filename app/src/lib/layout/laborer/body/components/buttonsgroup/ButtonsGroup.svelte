@@ -79,8 +79,14 @@
                 ...
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br">
-            <ButtonGroup>
+        <div class="d-flex g-4 fw-wrap jc-evenly ai-center p-4 bgc-positive br">
+            <ButtonGroup class="btns-h">
+                <Button class="{buttonClass}">Default</Button>
+                <Button class="{buttonClass} active">Active</Button>
+                <Button class="{buttonClass}" disabled>Disabled</Button>
+                <Button class="{buttonClass} active" disabled>Act./Dis.</Button>
+            </ButtonGroup>
+            <ButtonGroup class="btns-v">
                 <Button class="{buttonClass}">Default</Button>
                 <Button class="{buttonClass} active">Active</Button>
                 <Button class="{buttonClass}" disabled>Disabled</Button>
@@ -92,7 +98,7 @@
                 <b>HTML</b>
                 <Precode>
                     {
-`<div class="btn-group">
+`<div class="btns-h">
     /* here are buttons as HTML or Svelte syntax */
 </div>
 `
@@ -106,7 +112,7 @@
 `// Import
 import ButtonGroup from 'component/ButtonGroup.svelte'
 
-<ButtonGroup>
+<ButtonGroup class="btns-h">
     /* here are buttons as HTML or Svelte syntax */
 </ButtonGroup>
 `
