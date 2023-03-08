@@ -1,7 +1,5 @@
 @use "sass:map"
 
-// $alignment: ("include": true, "orientation": $orientation, "type": $type)
-
 @import _alignment
 @if map.get($alignment, "include")
     @include _alignment(map.get($alignment, "orientation"), map.get($alignment, "type"))

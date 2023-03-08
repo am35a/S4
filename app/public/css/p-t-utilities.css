@@ -1,3 +1,38 @@
+.p\:t\:grp-h {
+  display: inline-flex;
+  gap: var(--size-1);
+  flex-direction: row;
+  vertical-align: middle;
+}
+.p\:t\:grp-h > :first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.p\:t\:grp-h > :not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.p\:t\:grp-h > :last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.p\:t\:grp-v {
+  display: inline-grid;
+  gap: var(--size-1);
+  align-items: flex-start;
+  justify-content: center;
+}
+.p\:t\:grp-v > :first-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.p\:t\:grp-v > :not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.p\:t\:grp-v > :last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 /*  alignment section: align and justify contained in classes */
 .p\:t\:va-baseline {
   vertical-align: baseline !important;
