@@ -72,7 +72,7 @@
     }
 </script>
 
-<section>
+<article>
     <h2 id="buttons">Buttons</h2>
     <p>S4 buttons have three variants and seven colors. From these views, you can get any other kind of buttons.</p>
 
@@ -243,4 +243,4 @@ import Icon from "component/Icon.svelte"
             </Precode>
         </div>
     </div>
-</section>
+</article>

@@ -29,32 +29,32 @@
             },
             {
                 "id": 4,
-                "icon": "components",
+                "icon": "svelte",
                 "title": "Components",
                 "segment": "/components",
                 "items": [
                     {
-                        "id": 30,
+                        "id": 400,
                         "title": "Alerts",
                         "segment": "/components/alerts"
                     },
                     {
-                        "id": 31,
+                        "id": 401,
                         "title": "Buttons",
                         "segment": "/components/buttons"
                     },
                     {
-                        "id": 32,
-                        "title": "Buttons group",
-                        "segment": "/components/buttonsgroup"
+                        "id": 402,
+                        "title": "Forms",
+                        "segment": "/components/forms"
                     },
                     {
-                        "id": 33,
+                        "id": 403,
                         "title": "Details",
                         "segment": "/components/details"
                     },
                     {
-                        "id": 34,
+                        "id": 404,
                         "title": "Icons",
                         "segment": "/components/icons"
                     }
@@ -62,100 +62,113 @@
             },
             {
                 "id": 5,
+                "icon": "html",
+                "title": "Components",
+                "segment": "/nojscomponents",
+                "items": [
+                    {
+                        "id": 500,
+                        "title": "Group",
+                        "segment": "/nojscomponents/group"
+                    }
+                ]
+            },
+            {
+                "id": 6,
                 "icon": "css3",
                 "title": "Utilities",
                 "segment": "/utilities",
                 "items": [
                     {
-                        "id": 500,
+                        "id": 600,
                         "title": "Alignment",
                         "segment": "/utilities/alignment"
                     },
                     {
-                        "id": 501,
+                        "id": 601,
                         "title": "Colors",
                         "segment": "/utilities/colors"
                     },
                     {
-                        "id": 502,
+                        "id": 602,
                         "title": "Background",
                         "segment": "/utilities/background"
                     },
                     {
-                        "id": 503,
+                        "id": 603,
                         "title": "Border",
                         "segment": "/utilities/border"
                     },
                     {
-                        "id": 504,
+                        "id": 604,
                         "title": "Display",
                         "segment": "/utilities/display"
                     },
                     {
-                        "id": 505,
+                        "id": 605,
                         "title": "Flex",
                         "segment": "/utilities/flex"
                     },
                     {
-                        "id": 506,
+                        "id": 606,
                         "title": "Float",
                         "segment": "/utilities/float"
                     },
                     {
-                        "id": 507,
+                        "id": 607,
                         "title": "Grid",
                         "segment": "/utilities/grid"
                      },
                     {
-                        "id": 508,
+                        "id": 608,
                         "title": "Overflow",
                         "segment": "/utilities/overflow"
                     },
                     {
-                        "id": 509,
+                        "id": 609,
                         "title": "Position",
                         "segment": "/utilities/position"
                     },
                     {
-                        "id": 510,
+                        "id": 610,
                         "title": "Pseudos",
                         "segment": "/utilities/pseudos"
                     },
                     {
-                        "id": 511,
+                        "id": 611,
                         "title": "Shadow",
                         "segment": "/utilities/shadow"
                     },
                     {
-                        "id": 512,
+                        "id": 612,
                         "title": "Sizing",
                         "segment": "/utilities/sizing"
                     },
                     {
-                        "id": 513,
+                        "id": 613,
                         "title": "Spacing",
                         "segment": "/utilities/spacing"
                     },
                     {
-                        "id": 514,
+                        "id": 614,
                         "title": "Typography",
                         "segment": "/utilities/typography"
                     }
                 ]
             },
             {
-                "id": 6,
+                "id": 7,
                 "icon": "atom",
                 "title": "UI Overview",
                 "segment": "/ui",
                 "items": [
                     {
-                        "id": 600,
+                        "id": 700,
                         "title": "CSS Supported",
                         "segment": "/ui/css"
                     },
                     {
-                        "id": 601,
+                        "id": 701,
                         "title": "Only for Svelte",
                         "segment": "/ui/svelte"
                     }
