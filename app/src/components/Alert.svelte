@@ -33,19 +33,7 @@
 {/if}
 
 <style lang="sass" global>
-    $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
-
     .alert
-        position: relative
-        grid-gap: var(--size-4)
-        margin-bottom: var(--size-4)
-        padding: var(--size-3)
-        border-radius: var(--size-1)
-        @each $colorName in $accentColors
-            &-#{$colorName}
-                background-color: var(--#{$colorName}-color-m)
-                color: var(--#{$colorName}-color-d)
-                font-weight: 500
         &:not(&-closable)
             .btn-close
                 display: none

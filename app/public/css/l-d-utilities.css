@@ -1,3 +1,41 @@
+.alert {
+  position: relative;
+  grid-gap: var(--size-4);
+  margin-bottom: var(--size-4);
+  padding: var(--size-3);
+  border-radius: var(--size-1);
+}
+.alert-primary {
+  background-color: var(--primary-color-m);
+  color: var(--primary-color-d);
+  font-weight: 500;
+}
+.alert-secondary {
+  background-color: var(--secondary-color-m);
+  color: var(--secondary-color-d);
+  font-weight: 500;
+}
+.alert-info {
+  background-color: var(--info-color-m);
+  color: var(--info-color-d);
+  font-weight: 500;
+}
+.alert-success {
+  background-color: var(--success-color-m);
+  color: var(--success-color-d);
+  font-weight: 500;
+}
+.alert-warning {
+  background-color: var(--warning-color-m);
+  color: var(--warning-color-d);
+  font-weight: 500;
+}
+.alert-error {
+  background-color: var(--error-color-m);
+  color: var(--error-color-d);
+  font-weight: 500;
+}
+
 .grp-h {
   display: inline-flex;
   gap: var(--size-1);
