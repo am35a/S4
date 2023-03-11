@@ -15,6 +15,7 @@
     import PageCore from './core/Core.svelte'
     import PageColors from './colors/Colors.svelte'
     import PageComponents from './components/Components.svelte'
+    import PageNoJSComponents from './nojscomponents/Components.svelte'
     import PageUtilities from './utilities/Utilities.svelte'
     import PageUi from './ui/Ui.svelte'
         // import Alignment from './utilities/alignment/Alignment.svelte'
@@ -45,6 +46,9 @@
         </Route>
         <Route path="/components">
             <svelte:component this={PageComponents}/>
+        </Route>
+        <Route path="/nojscomponents">
+            <svelte:component this={PageNoJSComponents}/>
         </Route>
         <Route path="/utilities">
             <svelte:component this={PageUtilities} jumpTo={'/utilities'}/>
