@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Alert from 'component/Alert.svelte'
     import Precode from 'component/Precode.svelte'
 
     let alertsObj = {
@@ -39,11 +38,15 @@
 </script>
 
 <article>
-    <h2>Alerts</h2>
+    <h2 id="alerts">Alerts</h2>
     <p>
-        To add the close button for killing an alerts add the <b>alert-closable</b> class name.
+        S4 alerts are available in classes <b>alert alert-...</b> and <b>alert alert-alt...</b> in various visual solutions.
     </p>
     <div class="d-grid g-5">
+        <div class="alert alert-info">
+            <span class="ico" style="--ico-image:url(/icons/info-circle.svg);">&nbsp;</span>
+            Pay attention: Self-closing alerts are available as svelte components. Learn more about them by the <a href="/components/alerts">link</a>.
+        </div>
         <div class="d-grid g-4">
             <b>Variants</b>
             <div class="d-flex g-3">
@@ -73,16 +76,18 @@
             </div>
         </div>
         <div class="d-flex g-4 p-4 bgc-positive br">
-            <Alert class="{alertClass} alert-closable mb-0">
-                Click the close icon in the top right corner to destroy the block of alert message.
-            </Alert>
-        </div>        
+            <div class="alert {alertClass}">
+                {alertVariant} variant of alert in {alertColor} color with <a href={'#'}>link</a>.
+            </div>
+        </div>
         <div class="d-grid g-4">
             <div class="d-grid g-4">
-                <b>Svelte</b>
+                <b>HTML</b>
                 <Precode>
                     {
-`<Alert class="${alertClass} alert-closable">...</Alert>
+`<div class="alert ${alertClass}">
+    Alert primary message with <a href={'#'}>link</a>
+</div>
 `
                     }
                 </Precode>

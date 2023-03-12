@@ -38,7 +38,8 @@
             .btn-close
                 display: none
         &-closable
-            padding-right: var(--size-6)
+            &.alert
+                padding-right: var(--size-6)
             .btn-close
                 position: absolute
                 top: 0

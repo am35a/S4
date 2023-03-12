@@ -62,12 +62,17 @@
             },
             {
                 "id": 5,
-                "icon": "html",
+                "icon": "css3",
                 "title": "Components",
                 "segment": "/nojscomponents",
                 "items": [
                     {
                         "id": 500,
+                        "title": "Alerts",
+                        "segment": "/nojscomponents/alerts"
+                    },
+                    {
+                        "id": 501,
                         "title": "Group",
                         "segment": "/nojscomponents/group"
                     }

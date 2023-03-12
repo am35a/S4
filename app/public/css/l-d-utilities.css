@@ -1,39 +1,75 @@
 .alert {
   position: relative;
-  grid-gap: var(--size-4);
-  margin-bottom: var(--size-4);
-  padding: var(--size-3);
+  padding: var(--size-3) var(--size-4);
   border-radius: var(--size-1);
+  font-weight: 500;
+  user-select: none;
 }
 .alert-primary {
+  background-color: var(--primary-color);
+  color: var(--positive-color);
+}
+.alert-primary a {
+  color: var(--positive-color);
+}
+.alert-alt-primary {
   background-color: var(--primary-color-m);
   color: var(--primary-color-d);
-  font-weight: 500;
 }
 .alert-secondary {
+  background-color: var(--secondary-color);
+  color: var(--positive-color);
+}
+.alert-secondary a {
+  color: var(--positive-color);
+}
+.alert-alt-secondary {
   background-color: var(--secondary-color-m);
   color: var(--secondary-color-d);
-  font-weight: 500;
 }
 .alert-info {
+  background-color: var(--info-color);
+  color: var(--positive-color);
+}
+.alert-info a {
+  color: var(--positive-color);
+}
+.alert-alt-info {
   background-color: var(--info-color-m);
   color: var(--info-color-d);
-  font-weight: 500;
 }
 .alert-success {
+  background-color: var(--success-color);
+  color: var(--positive-color);
+}
+.alert-success a {
+  color: var(--positive-color);
+}
+.alert-alt-success {
   background-color: var(--success-color-m);
   color: var(--success-color-d);
-  font-weight: 500;
 }
 .alert-warning {
+  background-color: var(--warning-color);
+  color: var(--positive-color);
+}
+.alert-warning a {
+  color: var(--positive-color);
+}
+.alert-alt-warning {
   background-color: var(--warning-color-m);
   color: var(--warning-color-d);
-  font-weight: 500;
 }
 .alert-error {
+  background-color: var(--error-color);
+  color: var(--positive-color);
+}
+.alert-error a {
+  color: var(--positive-color);
+}
+.alert-alt-error {
   background-color: var(--error-color-m);
   color: var(--error-color-d);
-  font-weight: 500;
 }
 
 .grp-h {

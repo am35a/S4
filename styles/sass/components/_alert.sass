@@ -1,12 +1,17 @@
 @mixin _alert($orientation, $type)
     .#{$orientation}#{$type}alert
         position: relative
-        grid-gap: var(--size-4)
-        margin-bottom: var(--size-4)
-        padding: var(--size-3)
+        // grid-gap: var(--size-4)
+        padding: var(--size-3) var(--size-4)
         border-radius: var(--size-1)
+        font-weight: 500
+        user-select: none
         @each $colorName in $accentColors
             &-#{$colorName}
+                background-color: var(--#{$colorName}-color)
+                color: var(--positive-color)
+                a
+                    color: var(--positive-color)
+            &-alt-#{$colorName}
                 background-color: var(--#{$colorName}-color-m)
                 color: var(--#{$colorName}-color-d)
-                font-weight: 500
