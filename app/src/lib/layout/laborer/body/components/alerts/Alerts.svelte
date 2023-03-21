@@ -37,8 +37,6 @@
                         return ''
         }
     }
-
-    let customClasses: string = ''
 </script>
 
 <article>
@@ -77,18 +75,9 @@
             </div>
         </div>
         <div class="d-grid g-4">
-            <b>Custom</b>
-            <input
-                id="customClasses"
-                bind:value={customClasses}
-                type="text"
-                placeholder="Type utility classes to customizing the component"
-            >
-        </div>
-        <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-flex g-4 p-4 bgc-positive br">
-                <Alert class="{alertClass} {customClasses} alert-closable mb-0">
+            <div class="d-flex p-4 bgc-positive br">
+                <Alert class="{alertClass} alert-closable mb-0">
                     Click the close icon in the top right corner to destroy the block of alert message.
                 </Alert>
             </div>        

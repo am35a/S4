@@ -4,7 +4,8 @@
     let alertsObj = {
         variantsObj: {
             Default: '' as string,
-            Alt: 'alt' as string
+            Alt: 'alt' as string,
+            Outline: 'outline' as string
         },
         colorsObj: {
             Primary: '-primary' as string,
@@ -35,12 +36,14 @@
                         return ''
         }
     }
+
+    let customClasses: string = ''
 </script>
 
 <article>
     <h2 id="alerts">Alerts</h2>
     <p>
-        S4 alerts are available in classes <b>alert alert-...</b> and <b>alert alert-alt...</b> in various visual solutions.
+        S4 alerts are available in classes <b>alert alert-...</b>, <b>alert alert-alt...</b> and <b>alert alert-outline...</b> in various visual solutions.
     </p>
     <div class="d-grid g-5">
         <div class="alert alert-info">
@@ -75,9 +78,21 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 p-4 bgc-positive br">
-            <div class="alert {alertClass}">
-                {alertVariant} variant of alert in {alertColor} color with <a href={'#'}>link</a>.
+        <div class="d-grid g-4">
+            <b>Customize</b>
+            <input
+                id="customClasses"
+                bind:value={customClasses}
+                type="text"
+                placeholder="Type utility classes to customizing the component"
+            >
+        </div>
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="d-flex p-4 bgc-positive br">
+                <div class="alert {alertClass} {customClasses}">
+                    {alertVariant} {customClasses ? 'custom' : ''} variant of alert in {alertColor} color with <a href={'#'}>link</a>.
+                </div>
             </div>
         </div>
         <div class="d-grid g-4">
@@ -85,7 +100,7 @@
                 <b>HTML</b>
                 <Precode>
                     {
-`<div class="alert ${alertClass}">
+`<div class="alert ${alertClass} ${customClasses}">
     Alert primary message with <a href={'#'}>link</a>
 </div>
 `
