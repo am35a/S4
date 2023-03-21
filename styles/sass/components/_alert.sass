@@ -15,3 +15,9 @@
             &-alt-#{$colorName}
                 background-color: var(--#{$colorName}-color-m)
                 color: var(--#{$colorName}-color-d)
+            &-outline-#{$colorName}
+                color: var(--#{$colorName}-color)
+                outline-width: calc(var(--size-1) / 4)
+                outline-style: solid
+                outline-color: currentColor
+                outline-offset: calc(var(--size-1) / 4 * -1)
