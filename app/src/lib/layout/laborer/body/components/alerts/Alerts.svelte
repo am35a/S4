@@ -40,7 +40,7 @@
 </script>
 
 <article>
-    <h2>Alerts</h2>
+    <h2 id="alerts">Alerts</h2>
     <p>
         To add the close button for killing an alerts add the <b>alert-closable</b> class name.
     </p>
