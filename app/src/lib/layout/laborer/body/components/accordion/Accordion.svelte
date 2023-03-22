@@ -1,34 +1,42 @@
 <script lang="ts">
     import Accordion from 'component/Accordion.svelte'
+    import Details from 'component/Details.svelte'
     import Precode from 'component/Precode.svelte'
+
+    let customClasses: string = 'd-grid p:cols-1 cols-2 g-4 w-100'
 </script>
 
 <article>
     <h2 id="accordion">Accordion</h2>
     <p>
-        ...
+        The Accordion сomponent is a watcher wrapper for containers <b>Details</b> components or <b>details</b> tags within it.
     </p>
     <div class="d-grid g-5">
         <div class="d-grid g-4">
+            <b>Customize</b>
+            <input
+                id="customClasses"
+                bind:value={customClasses}
+                type="text"
+                placeholder="Type utility classes to customizing the component"
+            >
+        </div>
+        <div class="d-grid g-4">
             <b>Preview</b>
             <div class="d-flex p-4 bgc-positive br">
-                <Accordion>
-                    <details class="shadow rounded p-2">
-                        <summary>Section 1</summary>
-                        <p>Content for section 1 goes here.</p>
-                    </details>
-                    <details class="shadow rounded p-2">
-                        <summary>Section 2</summary>
-                        <p>Content for section 2 goes here.</p>
-                    </details>
-                    <details class="shadow rounded p-2">
-                        <summary>Section 3</summary>
-                        <p>Content for section 3 goes here.</p>
-                    </details>
-                    <details class="shadow rounded p-2">
-                        <summary>Section 4</summary>
-                        <p>Content for section 4 goes here.</p>
-                    </details>
+                <Accordion class="{customClasses}">
+                    {#each Array(4) as _, i}
+                        <Details class="dtl-primary mb-0">
+                            <svelte:fragment slot="title">
+                                Section title {i + 1}
+                            </svelte:fragment>
+                            <svelte:fragment slot="body">
+                                <div class="p-4">
+                                    Content for section {i + 1} goes here.
+                                </div>
+                            </svelte:fragment>
+                        </Details>
+                    {/each}
                 </Accordion>
             </div>        
         </div>
@@ -40,6 +48,9 @@
 `// before using the component, import it
 // import Accordion from 'component/Accordion.svelte'
 
+<Accordion class="${customClasses}">
+    // <Details> or <details> goes here
+</Accordion>
 `
                     }
                 </Precode>
