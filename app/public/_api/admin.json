@@ -35,26 +35,31 @@
                 "items": [
                     {
                         "id": 400,
+                        "title": "Accordion",
+                        "segment": "/components/accordion"
+                    },
+                    {
+                        "id": 401,
                         "title": "Alerts",
                         "segment": "/components/alerts"
                     },
                     {
-                        "id": 401,
+                        "id": 402,
                         "title": "Buttons",
                         "segment": "/components/buttons"
                     },
                     {
-                        "id": 402,
+                        "id": 403,
                         "title": "Forms",
                         "segment": "/components/forms"
                     },
                     {
-                        "id": 403,
+                        "id": 404,
                         "title": "Details",
                         "segment": "/components/details"
                     },
                     {
-                        "id": 404,
+                        "id": 405,
                         "title": "Icons",
                         "segment": "/components/icons"
                     }

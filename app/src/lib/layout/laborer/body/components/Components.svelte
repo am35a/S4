@@ -1,6 +1,7 @@
 <script lang="ts">
     import { Route, path, query, hash } from 'svelte-micro'
 
+    import ArticleAccordion from './accordion/Accordion.svelte'
     import ArticleAlerts from './alerts/Alerts.svelte'
     import ArticleButtons from './buttons/Buttons.svelte'
     import ArticleForms from './forms/Forms.svelte'
@@ -10,6 +11,9 @@
 
 <h1>Components</h1>
 
+<Route path="/accordion">
+    <svelte:component this={ArticleAccordion}/>
+</Route>
 <Route path="/alerts">
     <svelte:component this={ArticleAlerts}/>
 </Route>
