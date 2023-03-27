@@ -10,11 +10,23 @@
     bind:value
     class:frm = {true}
     {...$$restProps}
+    placeholder = {$$restProps.type}
 />
 
 <style lang="sass" global>
-    [type='text'].frm
+    $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
+
+    [type="text"].frm,
+    [type="time"].frm,
+    [type="url"].frm,
+    [type="week"].frm,
+    [type="month"].frm,
+    [type="email"].frm,
+    [type="date"].frm,
+    [type='password'].frm,
+    [type="datetime-local"].frm
         display: inline-grid
+        grid-auto-flow: column
         margin: unset
         min-width: 0
         padding: var(--size-1) var(--size-3)
@@ -27,6 +39,8 @@
         outline-style: solid
         outline-color: transparent
         outline-offset: 0
+        &::placeholder
+            color: var(--negative-color-20)
         &:disabled
             color: var(--negative-color-20)
             cursor: not-allowed
@@ -44,5 +58,22 @@
             background-color: var(--negative-color-10)
         &-outline
             box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) currentColor
+
+        @each $colorName in $accentColors
+            &-#{$colorName}
+                color: var(--#{$colorName}-color-d)
+                &:disabled
+                    color: var(--negative-color-20)
+                &:not(:disabled):hover
+                    color: var(--#{$colorName}-color-d)
+
+        @each $colorName in $accentColors
+            &-alt-#{$colorName}
+                background-color: var(--#{$colorName}-color-m)
+                color: var(--#{$colorName}-color-d)
+                &:disabled
+                    color: var(--negative-color-20)
+                &:not(:disabled):hover
+                    color: var(--#{$colorName}-color-d)
 
 </style>

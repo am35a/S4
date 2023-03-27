@@ -18,7 +18,14 @@
     let inputsObj = {
         typeObj: {
             Text: 'text' as string,
-            Password: 'password' as string
+            Password: 'password' as string,
+            Time: 'time' as string,
+            Url: 'url' as string,
+            Week: 'week' as string,
+            Month: 'month' as string,
+            Email: 'email' as string,
+            Date: 'date' as string,
+            Datetime: 'datetime-local' as string
         },
         variantsObj: {
             Default: '' as string,
@@ -129,7 +136,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive- br">
+        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br">
             <div class="d-grid cols-2 g-3">
                 <b class="js-end as-center">Default</b>
                 <div>
@@ -150,7 +157,7 @@
             </div>
         </div>        
     </div>
-    
+
     <!-- <div class="d-grid">
         <FrmTxt bind:value={bindtext} placeholder="placeholder">
             <svelte:fragment slot="label">Label</svelte:fragment>
