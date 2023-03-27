@@ -14,7 +14,7 @@
 <article>
     <h2 class="forms">Forms</h2>
     <p>S4 forms have many variants and colors. From these list, you can get info of all avaliable kind of forms.</p>
-    <div class="d-grid cols-3 g-1">
+    <div class="d-grid cols-3 g-1 d-none">
         <div>FrmBtn - type button</div>
         <div>FrmChk - type checkbox</div>
         <div>FrmClr - type color</div>
