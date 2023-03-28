@@ -21,11 +21,11 @@
             Password: 'password' as string,
             Time: 'time' as string,
             Url: 'url' as string,
-            Week: 'week' as string,
-            Month: 'month' as string,
-            Email: 'email' as string,
+            Number: 'number' as string,
             Date: 'date' as string,
-            Datetime: 'datetime-local' as string
+            Datetime: 'datetime-local' as string,
+            // Radio: 'radio' as string,
+            // Checkbox: 'checkbox' as string
         },
         variantsObj: {
             Default: '' as string,
@@ -42,7 +42,7 @@
             Error: '-error' as string,
         }
     }
-    let inputType: string = 'Text'
+    let inputType: string = 'Radio'
     let inputVariant: string = 'Default'
     let inputColor: string = 'Default'
 
@@ -78,6 +78,28 @@
     <!-- <p>
         <b>FrmTxt</b>
     </p> -->
+
+    <div>
+        <Input class="{inputClass}" nane="cb" type="checkbox"/>
+        <Input class="{inputClass}" nane="cb" type="checkbox" checked/>
+        <Input class="{inputClass}" nane="cb" type="checkbox" disabled/>
+        <Input class="{inputClass}" nane="cb" type="checkbox" checked disabled/>
+    </div>
+
+    <div>
+        <Input class="{inputClass} frm-alt" nane="cb" type="checkbox"/>
+        <Input class="{inputClass} frm-alt" nane="cb" type="checkbox" checked/>
+        <Input class="{inputClass} frm-alt" nane="cb" type="checkbox" disabled/>
+        <Input class="{inputClass} frm-alt" nane="cb" type="checkbox" checked disabled/>
+    </div>
+
+    <div>
+        <Input class="{inputClass} frm-outline" nane="cb" type="checkbox"/>
+        <Input class="{inputClass} frm-outline" nane="cb" type="checkbox" checked/>
+        <Input class="{inputClass} frm-outline" nane="cb" type="checkbox" disabled/>
+        <Input class="{inputClass} frm-outline" nane="cb" type="checkbox" checked disabled/>
+    </div>
+
 
     <div class="d-grid g-5">
         <div class="d-grid g-4">
@@ -136,7 +158,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br">
+        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive- br">
             <div class="d-grid cols-2 g-3">
                 <b class="js-end as-center">Default</b>
                 <div>
