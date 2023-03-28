@@ -40,6 +40,7 @@
         outline-color: transparent
         outline-offset: 0
         transition: color .15s linear, background-color .15s linear, outline .15s linear
+        appearance: none
         &:disabled
             color: var(--negative-color-20)
             cursor: not-allowed
