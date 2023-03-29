@@ -8,6 +8,7 @@
     // import Button from 'component/Button.svelte'
     // import Precode from 'component/Precode.svelte'
 
+    import SectionBox from './box/Box.svelte'
     import SectionText from './text/Text.svelte'
 </script>
 
@@ -16,7 +17,7 @@
     <p>S4 forms have many variants and colors. From these list, you can get info of all avaliable kind of forms.</p>
     <div class="d-grid cols-3 g-1 d-none">
         <div>FrmBtn - type button</div>
-        <div>FrmChk - type checkbox</div>
+        <div>FrmChk - 2 type checkbox</div>
         <div>FrmClr - type color</div>
         <div>FrmDat - 1 type date</div>
         <div>FrmDtl - 1 type datetime-local</div>
@@ -27,7 +28,7 @@
         <div>FrmMon - 1 type month</div>
         <div>FrmNum - type number</div>
         <div>FrmPas - 1 type password</div>
-        <div>FrmRad - type radio</div>
+        <div>FrmRad - 2 type radio</div>
         <div>FrmRng - type range</div>
         <div>FrmRst - type reset</div>
         <div>FrmSrc - type search</div>
@@ -39,14 +40,6 @@
         <div>FrmWek - 1 type week</div>
     </div>
 
+    <SectionBox/>
     <SectionText/>
-
-    <!-- <div class="d-grid g-5">
-        <div class="d-grid g-4">
-            <b>type="text"</b>
-            <div>
-                <Input type="text" value="any text"/>
-            </div>        
-        </div>
-    </div> -->
 </article>

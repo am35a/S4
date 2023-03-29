@@ -16,15 +16,8 @@
 
     let inputsObj = {
         typeObj: {
-            Text: 'text' as string,
-            Password: 'password' as string,
-            Time: 'time' as string,
-            Url: 'url' as string,
-            Number: 'number' as string,
-            Date: 'date' as string,
-            Datetime: 'datetime-local' as string,
-            // Radio: 'radio' as string,
-            // Checkbox: 'checkbox' as string
+            Radio: 'radio' as string,
+            Checkbox: 'checkbox' as string
         },
         variantsObj: {
             Default: '' as string,
@@ -41,7 +34,7 @@
             Error: '-error' as string,
         }
     }
-    let inputType: string = 'Text'
+    let inputType: string = 'Radio'
     let inputVariant: string = 'Default'
     let inputColor: string = 'Default'
 
@@ -65,13 +58,10 @@
                         return ''    
         }
     }
-
-    let bindtext: string = 'Text here'
-
 </script>
 
 <section>
-    <h3 id="text">Text</h3>
+    <h3 id="box">Boxes</h3>
     <!-- <p>
         <b>FrmTxt</b>
     </p> -->
@@ -136,19 +126,19 @@
             <div class="d-grid cols-2 g-3">
                 <b class="js-end as-center">Default</b>
                 <div>
-                    <Input class="{inputClass}" bind:value={bindtext} type={inputsObj.typeObj[inputType]}/>
+                    <Input class="{inputClass}" nane="cb" type={inputType}/>
                 </div>
                 <b class="js-end as-center">Active</b>
                 <div>
-                    <Input class="{inputClass} active" bind:value={bindtext} type={inputsObj.typeObj[inputType]}/>
+                    <Input class="{inputClass}" nane="cb" type={inputType} checked/>
                 </div>
                 <b class="js-end as-center">Disabled</b>
                 <div>
-                    <Input class="{inputClass}" bind:value={bindtext} type={inputsObj.typeObj[inputType]} disabled/>
+                    <Input class="{inputClass}" nane="cb" type={inputType} disabled/>
                 </div>
                 <b class="js-end as-center">Active & Disabled</b>
                 <div>
-                    <Input class="{inputClass} active" bind:value={bindtext} type={inputsObj.typeObj[inputType]} disabled/>
+                    <Input class="{inputClass}" nane="cb" type={inputType} checked disabled/>
                 </div>
             </div>
         </div>        

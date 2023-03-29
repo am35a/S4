@@ -100,7 +100,6 @@
         height: 1em
         background-color: var(--positive-color)
         border: none
-        border-radius: var(--size-1)
         color: currentColor
         line-height: var(--lh)
         outline-width: calc(var(--size-1) / 4)
@@ -117,7 +116,6 @@
                 grid-row: 1/2
                 grid-column: 1/2
                 background-color: currentColor
-                border-radius: var(--size-1)
         &:disabled
             color: var(--negative-color-20)
             cursor: not-allowed
@@ -141,6 +139,15 @@
             &:checked
                 &::after
                     transform: scale(.75)
-
+    [type="radio"].frm
+        border-radius: 50%
+        &:checked
+            &::after
+                border-radius: 50%
+    [type="checkbox"].frm
+        border-radius: var(--size-1)
+        &:checked
+            &::after
+                border-radius: var(--size-1)
 
 </style>
