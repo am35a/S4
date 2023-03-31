@@ -117,6 +117,7 @@
                 grid-column: 1/2
                 background-color: currentColor
         &:disabled
+            background-color: var(--positive-color-20)
             color: var(--negative-color-20)
             cursor: not-allowed
         &:focus,
@@ -139,6 +140,39 @@
             &:checked
                 &::after
                     transform: scale(.75)
+
+        @each $colorName in $accentColors
+            &-#{$colorName}
+                color: var(--#{$colorName}-color)
+                &:disabled
+                    color: var(--negative-color-20)
+                &:not(:disabled):hover
+                    color: var(--#{$colorName}-color)
+
+        @each $colorName in $accentColors
+            &-alt-#{$colorName}
+                background-color: var(--#{$colorName}-color-m)
+                color: var(--#{$colorName}-color)
+                &:disabled
+                    color: var(--negative-color-20)
+                &:not(:disabled):hover
+                    color: var(--#{$colorName}-color)
+
+        @each $colorName in $accentColors
+            &-outline-#{$colorName}
+                box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color, currentColor)
+                color: var(--#{$colorName}-color)
+                outline-color: transparent
+                &:checked
+                    &::after
+                        transform: scale(.75)
+                &:disabled
+                    box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color-m, currentColor)
+                    color: var(--negative-color-20)
+                &:not(:disabled):hover
+                    color: var(--#{$colorName}-color)
+
+
     [type="radio"].frm
         border-radius: 50%
         &:checked
@@ -149,5 +183,15 @@
         &:checked
             &::after
                 border-radius: var(--size-1)
+        &:indeterminate
+            &::after
+                content: ''
+                grid-row: 1/2
+                grid-column: 1/2
+                background-color: currentColor
+                border-radius: var(--size-1)
+                height: var(--size-1)
+                align-self: center
+                transform: scale(.75)
 
 </style>

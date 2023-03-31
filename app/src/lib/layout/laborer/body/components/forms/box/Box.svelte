@@ -34,7 +34,7 @@
             Error: '-error' as string,
         }
     }
-    let inputType: string = 'Radio'
+    let inputType: string = 'Checkbox'
     let inputVariant: string = 'Default'
     let inputColor: string = 'Default'
 
@@ -122,12 +122,18 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br">
+        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive- br">
             <div class="d-grid cols-2 g-3">
                 <b class="js-end as-center">Default</b>
                 <div>
                     <Input class="{inputClass}" nane="cb" type={inputType}/>
                 </div>
+                {#if inputType === 'Checkbox'}
+                    <b class="js-end as-center">Default Indeterminate</b>
+                    <div>
+                        <Input class="{inputClass}" nane="cb" type={inputType} indeterminate={true}/>
+                    </div>
+                {/if}
                 <b class="js-end as-center">Active</b>
                 <div>
                     <Input class="{inputClass}" nane="cb" type={inputType} checked/>
@@ -136,6 +142,13 @@
                 <div>
                     <Input class="{inputClass}" nane="cb" type={inputType} disabled/>
                 </div>
+                {#if inputType === 'Checkbox'}
+                    <b class="js-end as-center">Disabled indeterminate</b>
+                    <div>
+                        <Input class="{inputClass}" nane="cb" type={inputType} disabled indeterminate={true}/>
+                    </div>
+                {/if}
+
                 <b class="js-end as-center">Active & Disabled</b>
                 <div>
                     <Input class="{inputClass}" nane="cb" type={inputType} checked disabled/>
