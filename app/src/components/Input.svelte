@@ -111,6 +111,7 @@
         cursor: pointer
         appearance: none
         &:checked
+            outline-width: 0
             &::after
                 content: ''
                 grid-row: 1/2
@@ -119,6 +120,7 @@
         &:disabled
             background-color: var(--positive-color-20)
             color: var(--negative-color-20)
+            outline-color: var(--negative-color-10)
             cursor: not-allowed
         &:focus,
         &:not(:disabled):hover
@@ -128,8 +130,11 @@
             outline-offset: calc(var(--size-1) / 4)
         &-alt
             background-color: var(--negative-color-10)
-            outline-width: 0
-            outline-offset: 0
+            &:not(:disabled)
+                outline-width: 0
+                outline-offset: 0
+            &:disabled
+                outline-width: calc(var(--size-1) / 4)
             &:checked
                 &::after
                     transform: scale(.75)
