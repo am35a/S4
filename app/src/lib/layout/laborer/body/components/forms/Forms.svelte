@@ -5,6 +5,7 @@
 
     import SectionSettings from './settings/Settings.svelte'
 
+    import SectionRange from './range/Range.svelte'
     import SectionColor from './color/Color.svelte'
     import SectionFile from './file/File.svelte'
     import SectionText from './text/Text.svelte'
@@ -42,6 +43,7 @@
     </div>
 
     <SectionSettings bind:inputClass/>
+    <SectionRange {inputClass}/>
     <SectionColor {inputClass}/>
     <SectionFile {inputClass}/>
     <SectionText  {inputClass}/>

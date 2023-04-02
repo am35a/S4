@@ -19,7 +19,7 @@
 
 <style lang="sass" global>
     $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
-
+    [type="range"].frm,
     [type="url"].frm,
     [type="text"].frm,
     [type="time"].frm,
@@ -102,6 +102,25 @@
     [type="color"].frm
         padding: var(--size-1)
         cursor: pointer
+
+    [type="range"].frm
+        padding: var(--size-1)
+        &::-webkit-slider-thumb
+            appearance: none
+            height: calc(var(--lh) * 1em)
+            width: var(--size-2)
+            background: currentColor
+            cursor: ew-resize
+            border-radius: calc(var(--size-1) / 2)
+            border: unset
+        &::-moz-range-thumb
+            appearance: none
+            height: calc(var(--lh) * 1em)
+            width: var(--size-2)
+            background: currentColor
+            cursor: ew-resize
+            border-radius: calc(var(--size-1) / 2)
+            border: unset
 
     [type="radio"].frm,
     [type="checkbox"].frm
