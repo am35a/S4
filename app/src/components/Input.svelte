@@ -26,6 +26,7 @@
     [type="date"].frm,
     [type="file"].frm,
     [type="email"].frm,
+    [type="color"].frm,
     [type="number"].frm,
     [type='password'].frm,
     [type="datetime-local"].frm
@@ -94,9 +95,13 @@
 
     [type="file"].frm
         line-height: calc(var(--lh) * 1em + var(--size-2))
+        cursor: pointer
         &::file-selector-button
             display: none
 
+    [type="color"].frm
+        padding: var(--size-1)
+        cursor: pointer
 
     [type="radio"].frm,
     [type="checkbox"].frm

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Input from "component/Input.svelte"
+    import Input from 'component/Input.svelte'
 
     let fontSizesObj = {
         Default: '' as string,
@@ -53,32 +53,32 @@
             <div class="d-grid cols-2 g-3">
                 <b class="js-end as-center">Default</b>
                 <div>
-                    <Input class="{inputClass}" name="cb" type={inputType}/>
+                    <Input class="{inputClass}" name="boxes" type={inputType}/>
                 </div>
                 {#if inputType === 'Checkbox'}
                     <b class="js-end as-center">Default Indeterminate</b>
                     <div>
-                        <Input class="{inputClass}" name="cb" type={inputType} indeterminate={true}/>
+                        <Input class="{inputClass}" type={inputType} indeterminate={true}/>
                     </div>
                 {/if}
                 <b class="js-end as-center">Сhecked</b>
                 <div>
-                    <Input class="{inputClass}" name="cb" type={inputType} checked/>
+                    <Input class="{inputClass}" name="boxes" type={inputType} checked/>
                 </div>
                 <b class="js-end as-center">Disabled</b>
                 <div>
-                    <Input class="{inputClass}" name="cb" type={inputType} disabled/>
+                    <Input class="{inputClass}" type={inputType} disabled/>
                 </div>
                 {#if inputType === 'Checkbox'}
                     <b class="js-end as-center">Disabled indeterminate</b>
                     <div>
-                        <Input class="{inputClass}" name="cb" type={inputType} disabled indeterminate={true}/>
+                        <Input class="{inputClass}" type={inputType} disabled indeterminate={true}/>
                     </div>
                 {/if}
 
                 <b class="js-end as-center">Сhecked & Disabled</b>
                 <div>
-                    <Input class="{inputClass}" name="cb" type={inputType} checked disabled/>
+                    <Input class="{inputClass}" type={inputType} checked disabled/>
                 </div>
             </div>
         </div>        

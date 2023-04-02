@@ -2,15 +2,10 @@
     // https://github.com/svelteuidev/svelteui/blob/main/packages/svelteui-core/src/components/Input/Input.svelte
     // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input
 
-    // https://nikitahl.com/custom-styled-input-type-file
-
-    // import Input from 'component/Input.svelte'
-    
-    // import Icon from 'component/Icon.svelte'
-    // import Button from 'component/Button.svelte'
-    // import Precode from 'component/Precode.svelte'
 
     import SectionSettings from './settings/Settings.svelte'
+
+    import SectionColor from './color/Color.svelte'
     import SectionFile from './file/File.svelte'
     import SectionText from './text/Text.svelte'
     import SectionBox from './box/Box.svelte'
@@ -47,6 +42,7 @@
     </div>
 
     <SectionSettings bind:inputClass/>
+    <SectionColor {inputClass}/>
     <SectionFile {inputClass}/>
     <SectionText  {inputClass}/>
     <SectionBox {inputClass}/>

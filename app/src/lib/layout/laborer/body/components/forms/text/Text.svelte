@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Input from "component/Input.svelte"
+    import Input from 'component/Input.svelte'
 
     let fontSizesObj = {
         Default: '' as string,
