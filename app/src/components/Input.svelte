@@ -24,6 +24,7 @@
     [type="text"].frm,
     [type="time"].frm,
     [type="date"].frm,
+    [type="file"].frm,
     [type="email"].frm,
     [type="number"].frm,
     [type='password'].frm,
@@ -90,6 +91,12 @@
                 &:disabled
                     box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color-m, currentColor)
                     color: var(--negative-color-20)
+
+    [type="file"].frm
+        line-height: calc(var(--lh) * 1em + var(--size-2))
+        &::file-selector-button
+            display: none
+
 
     [type="radio"].frm,
     [type="checkbox"].frm

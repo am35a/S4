@@ -2,14 +2,17 @@
     // https://github.com/svelteuidev/svelteui/blob/main/packages/svelteui-core/src/components/Input/Input.svelte
     // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input
 
+    // https://nikitahl.com/custom-styled-input-type-file
+
     // import Input from 'component/Input.svelte'
     
     // import Icon from 'component/Icon.svelte'
     // import Button from 'component/Button.svelte'
     // import Precode from 'component/Precode.svelte'
 
-    import SectionBox from './box/Box.svelte'
+    import SectionFile from './file/File.svelte'
     import SectionText from './text/Text.svelte'
+    import SectionBox from './box/Box.svelte'
 </script>
 
 <article>
@@ -22,7 +25,7 @@
         <div>FrmDat - 1 type date</div>
         <div>FrmDtl - 1 type datetime-local</div>
         <div>FrmEml - 1 type email</div>
-        <div>FrmFil - type file</div>
+        <div>FrmFil - 3 type file</div>
         <div>FrmHdn - type hidden</div>
         <div>FrmImg - type image</div>
         <div>FrmMon - 1 type month</div>
@@ -40,6 +43,7 @@
         <div>FrmWek - 1 type week</div>
     </div>
 
-    <SectionBox/>
+    <SectionFile/>
     <SectionText/>
+    <SectionBox/>
 </article>
