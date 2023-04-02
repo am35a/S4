@@ -22,48 +22,15 @@
             Url: 'url' as string,
             Number: 'number' as string,
             Date: 'date' as string,
-            Datetime: 'datetime-local' as string,
-            // Radio: 'radio' as string,
-            // Checkbox: 'checkbox' as string
+            Datetime: 'datetime-local' as string
         },
-        variantsObj: {
-            Default: '' as string,
-            Alt: 'alt' as string,
-            Outline: 'outline' as string
-        },
-        colorsObj: {
-            Default: '' as string,
-            Primary: '-primary' as string,
-            Outline: '-secondary' as string,
-            Info: '-info' as string,
-            Success: '-success' as string,
-            Warning: '-warning' as string,
-            Error: '-error' as string,
-        }
     }
     let inputType: string = 'Text'
-    let inputVariant: string = 'Default'
-    let inputColor: string = 'Default'
 
-    let inputClass: string = ''
+    export let inputClass: string = ''
     $: {
-        inputClass = fninputClass()
-
         if (fontSize !== 'Default')
             inputClass = `${inputClass} ${fontSizesObj[fontSize]}`
-
-        function fninputClass() {
-            if (inputsObj.variantsObj[inputVariant] && inputsObj.colorsObj[inputColor])
-                return `frm-${inputsObj.variantsObj[inputVariant]}${inputsObj.colorsObj[inputColor]}`
-            else
-                if (inputsObj.variantsObj[inputVariant])
-                    return `frm-${inputsObj.variantsObj[inputVariant]}`
-                else
-                    if (inputsObj.colorsObj[inputColor])
-                        return `frm${inputsObj.colorsObj[inputColor]}`
-                    else
-                        return ''    
-        }
     }
 
     let bindtext: string = 'Text here'
@@ -76,48 +43,6 @@
         <b>FrmTxt</b>
     </p> -->
     <div class="d-grid g-5">
-        <div class="d-grid g-4">
-            <b>Variants</b>
-            <div class="d-flex g-3">
-                {#each Object.entries(inputsObj.variantsObj) as [key, value]}
-                    <button
-                        on:click={() => inputVariant = key}
-                        class="btn btn-{value}"
-                        class:active = {inputVariant === key}
-                        type="button"
-                        disabled = {inputVariant === key}
-                    >{key}</button>
-                {/each}
-            </div>
-        </div>
-        <div class="d-grid g-4">
-            <b>Colors</b>
-            <div class="d-flex g-3">
-                {#each Object.entries(inputsObj.colorsObj) as [key, value]}
-                    <button
-                        on:click={() => inputColor = key}
-                        class="btn btn{value}"
-                        class:active = {inputColor === key}
-                        type="button"
-                        disabled = {inputColor === key}
-                    >{key}</button>
-                {/each}
-            </div>
-        </div>
-        <div class="d-grid g-4">
-            <b>Sizes</b>
-            <div class="d-flex g-3 ai-center">
-                {#each Object.entries(fontSizesObj) as [key, value]}
-                    <button
-                        on:click={() => fontSize = key}
-                        class="btn {value}"
-                        class:active = {fontSize === key}
-                        type="button"
-                        disabled = {fontSize === key}
-                    >{key}</button>
-                {/each}
-            </div>
-        </div>
         <div class="d-grid g-4">
             <b>Types</b>
             <div class="d-flex g-3">

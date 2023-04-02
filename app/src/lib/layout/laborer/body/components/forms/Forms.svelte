@@ -10,9 +10,12 @@
     // import Button from 'component/Button.svelte'
     // import Precode from 'component/Precode.svelte'
 
+    import SectionSettings from './settings/Settings.svelte'
     import SectionFile from './file/File.svelte'
     import SectionText from './text/Text.svelte'
     import SectionBox from './box/Box.svelte'
+
+    let inputClass: string = ''
 </script>
 
 <article>
@@ -43,7 +46,8 @@
         <div>FrmWek - 1 type week</div>
     </div>
 
-    <SectionFile/>
-    <SectionText/>
-    <SectionBox/>
+    <SectionSettings bind:inputClass/>
+    <SectionFile {inputClass}/>
+    <SectionText  {inputClass}/>
+    <SectionBox {inputClass}/>
 </article>

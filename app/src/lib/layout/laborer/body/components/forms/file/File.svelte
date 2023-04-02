@@ -1,5 +1,7 @@
 <script lang="ts">
-    import Input from "component/Input.svelte"
+    import Input from 'component/Input.svelte'
+
+    export let inputClass: string = ''
 </script>
 
 <section>
@@ -9,22 +11,21 @@
             <div class="d-grid cols-2 g-3">
                 <b class="js-end as-center">Default</b>
                 <div>
-                    <Input class="frm" type="file"/>
+                    <Input class={inputClass} type="file"/>
                 </div>
                 <b class="js-end as-center">Active</b>
                 <div>
-                    <Input class="frm active" type="file"/>
+                    <Input class="{inputClass} active" type="file"/>
                 </div>
                 <b class="js-end as-center">Disabled</b>
                 <div>
-                    <Input class="frm" type="file" disabled/>
+                    <Input class={inputClass} type="file" disabled/>
                 </div>
                 <b class="js-end as-center">Active & Disabled</b>
                 <div>
-                    <Input class="frm active" type="file" disabled/>
+                    <Input class="{inputClass} active" type="file" disabled/>
                 </div>
             </div>
         </div>        
     </div>
-
 </section>
