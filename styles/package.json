@@ -6,6 +6,6 @@
         "build": "sass --watch sass:css"
     },
     "devDependencies": {
-        "sass": "^1.58.3"
+        "sass": "^1.60.0"
     }
 }
