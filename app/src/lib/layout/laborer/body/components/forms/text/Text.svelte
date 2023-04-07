@@ -17,6 +17,7 @@
     let inputsObj = {
         typeObj: {
             Text: 'text' as string,
+            Search: 'search' as string,
             Password: 'password' as string,
             Time: 'time' as string,
             Url: 'url' as string,

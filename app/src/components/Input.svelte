@@ -19,9 +19,11 @@
 
 <style lang="sass" global>
     $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
+
     [type="range"].frm,
     [type="url"].frm,
     [type="text"].frm,
+    [type="search"].frm,
     [type="time"].frm,
     [type="date"].frm,
     [type="file"].frm,
@@ -207,7 +209,6 @@
                     color: var(--negative-color-20)
                 &:not(:disabled):hover
                     color: var(--#{$colorName}-color)
-
 
     [type="radio"].frm
         border-radius: 50%
