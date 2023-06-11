@@ -11,12 +11,12 @@
         <Icon name="chevron-down" class="fs-sm" expand/>
         <Icon name="chevron-up" class="fs-sm" contract/>
     </summary>
-    <!-- <div class="dtl-body"> -->
-        <slot name="body"/>
-    <!-- </div> -->
+        <!-- <div class="dtl-body"> -->
+            <slot name="body"/>
+        <!-- </div> -->
 </details>
 
-<style lang="sass">
+<style lang="sass" global>
     $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
 
     .dtl
@@ -26,7 +26,7 @@
             display: flex
             justify-content: space-between
             padding: .75em
-            background-color: var(--positive-color)
+            background-color: var(--positive-color-30)
             // border: .0625em solid currentColor
             border-top-left-radius: var(--br, .5em)
             border-top-right-radius: var(--br, .5em)
@@ -43,17 +43,23 @@
                 &:hover,
                 &:focus
                     outline-color: var(--negative-color-20)
-            :global([contract])
+            [contract]
                 display: none
         &[open]
+            outline: .125em solid var(--negative-color-20)
+            outline-offset: .0625em
+            &:hover,
+            &:focus
+                outline-color: var(--negative-color-40)
+
             summary
-                &:hover,
-                &:focus
-                    outline-color: var(--negative-color-40)
-                &:not(:hover)
-                    color: var(--negative-color-40)
+                // &:hover,
+                // &:focus
+                //     outline-color: var(--negative-color-40)
+                // &:not(:hover)
+                //     color: var(--negative-color-40)
                 // border-bottom-color: inherit
-            :global([expand])
+            [expand]
                 display: none
         // .dtl-body
         //     padding: .75em
@@ -62,9 +68,17 @@
         //     border-bottom-right-radius: .25em
         &-primary
             summary
+                background-color: var(--primary-color-m)
+                font-weight: 500
+            &[open]
                 color: var(--primary-color-d)
-                border-color: var(--primary-color-d)
-                background-color: var(--primary-color-l)
+
+            &:not([open])
+                summary
+                    color: var(--primary-color)
+                    &:hover,
+                    &focus
+                        color: var(--primary-color-d)
 
 
 

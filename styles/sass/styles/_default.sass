@@ -63,48 +63,47 @@
 
     // - Colors
     // - - Default colors
-    --positive-color:    hsl(0 0% 100%)
-    --positive-color-90: hsl(0 0% 100% / .9)
-    --positive-color-80: hsl(0 0% 100% / .8)
-    --positive-color-70: hsl(0 0% 100% / .7)
-    --positive-color-60: hsl(0 0% 100% / .6)
-    --positive-color-50: hsl(0 0% 100% / .5)
-    --positive-color-40: hsl(0 0% 100% / .4)
-    --positive-color-30: hsl(0 0% 100% / .3)
-    --positive-color-20: hsl(0 0% 100% / .2)
-    --positive-color-10: hsl(0 0% 100% / .1)
-    --negative-color-10: hsl(0 0% 0% / .1)
-    --negative-color-20: hsl(0 0% 0% / .2)
-    --negative-color-30: hsl(0 0% 0% / .3)
-    --negative-color-40: hsl(0 0% 0% / .4)
-    --negative-color-50: hsl(0 0% 0% / .5)
-    --negative-color-60: hsl(0 0% 0% / .6)
-    --negative-color-70: hsl(0 0% 0% / .7)
-    --negative-color-80: hsl(0 0% 0% / .8)
-    --negative-color-90: hsl(0 0% 0% / .9)
-    --negative-color:    hsl(0 0% 0%)
+    --positive-color:    oklch(100% 0 0)
+    --positive-color-90: oklch(100% 0 0 / .9)
+    --positive-color-80: oklch(100% 0 0 / .8)
+    --positive-color-70: oklch(100% 0 0 / .7)
+    --positive-color-60: oklch(100% 0 0 / .6)
+    --positive-color-50: oklch(100% 0 0 / .5)
+    --positive-color-40: oklch(100% 0 0 / .4)
+    --positive-color-30: oklch(100% 0 0 / .3)
+    --positive-color-20: oklch(100% 0 0 / .2)
+    --positive-color-10: oklch(100% 0 0 / .1)
+    --negative-color-10: oklch(0% 0 0 / .1)
+    --negative-color-20: oklch(0% 0 0 / .2)
+    --negative-color-30: oklch(0% 0 0 / .3)
+    --negative-color-40: oklch(0% 0 0 / .4)
+    --negative-color-50: oklch(0% 0 0 / .5)
+    --negative-color-60: oklch(0% 0 0 / .6)
+    --negative-color-70: oklch(0% 0 0 / .7)
+    --negative-color-80: oklch(0% 0 0 / .8)
+    --negative-color-90: oklch(0% 0 0 / .9)
+    --negative-color:    oklch(0% 0 0)
 
-    // - - Accent colors
-    --primary-color-h: 210
-    --primary-color-s: 90%
-    --secondary-color-h: 210
-    --secondary-color-s: 10%
-    --info-color-h: 190
-    --info-color-s: 90%
-    --success-color-h: 120
-    --success-color-s: 50%
-    --warning-color-h: 40
-    --warning-color-s: 90%
-    --error-color-h: 0
-    --error-color-s: 50%
+    --lightness: 60%
+    --lightness-offset: 15%
+    --chroma: 0.2
+    --alfa: 0.25
 
-    --accent-colors-l: 50%
-    --accent-colors-l-offset: 15%
-
-    --mute-color-alfa: 0.15
+    --primary-hue: 255
+    --secondary-hue: 255
+    --info-hue: 295
+    --success-hue: 145
+    --warning-hue: 85
+    --error-hue: 25
 
     @each $accentColor in $accentColors
-        --#{$accentColor}-color-l: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) calc(var(--accent-colors-l) + var(--accent-colors-l-offset)))
-        --#{$accentColor}-color: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) var(--accent-colors-l))
-        --#{$accentColor}-color-d: hsl(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) calc(var(--accent-colors-l) - var(--accent-colors-l-offset)))
-        --#{$accentColor}-color-m: hsla(var(--#{$accentColor}-color-h) var(--#{$accentColor}-color-s) var(--accent-colors-l) / var(--mute-color-alfa))
+        @if $accentColor == secondary
+            --#{$accentColor}-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color:   oklch(var(--lightness) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color-m: oklch(var(--lightness) calc(var(--chroma) * .1) var(--#{$accentColor}-hue) / var(--alfa))
+        @else
+            --#{$accentColor}-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color:   oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color-m: oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue) / var(--alfa))

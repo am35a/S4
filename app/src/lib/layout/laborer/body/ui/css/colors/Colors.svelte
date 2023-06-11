@@ -3,27 +3,57 @@
     <div class="d-flex fw-wrap g-4">            
         <div class="d-grid ji-center p-4 bgc-positive br-lg f" style="--fg: 1; --fb: 0;">
             <div class="ta-center fw-600">primary</div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em"><path fill="hsl(210 90% 50% / 0.3)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path><path class="color-light" fill="hsl(210 90% 65%)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path><path class="color-default" fill="hsl(210 90% 50%)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path><path class="color-dark" fill="hsl(210 90% 35%)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em">
+                <path fill="var(--primary-color-m)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path>
+                <path fill="var(--primary-color-l)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path>
+                <path fill="var(--primary-color)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path>
+                <path fill="var(--primary-color-d)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path>
+            </svg>
         </div>
         <div class="d-grid ji-center p-4 bgc-positive br-lg f" style="--fg: 1; --fb: 0;">
             <div class="ta-center fw-600">secondary</div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em"><path fill="hsl(210 10% 50% / 0.3)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path><path class="color-light" fill="hsl(210 10% 65%)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path><path class="color-default" fill="hsl(210 10% 50%)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path><path class="color-dark" fill="hsl(210 10% 35%)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em">
+                <path fill="var(--secondary-color-m)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path>
+                <path fill="var(--secondary-color-l)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path>
+                <path fill="var(--secondary-color)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path>
+                <path fill="var(--secondary-color-d)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path>
+            </svg>
         </div>
         <div class="d-grid ji-center p-4 bgc-positive br-lg f" style="--fg: 1; --fb: 0;">
             <div class="ta-center fw-600">info</div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em"><path fill="hsl(190 90% 50% / 0.3)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path><path class="color-light" fill="hsl(190 90% 65%)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path><path class="color-default" fill="hsl(190 90% 50%)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path><path class="color-dark" fill="hsl(190 90% 35%)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em">
+                <path fill="var(--info-color-m)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path>
+                <path fill="var(--info-color-l)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path>
+                <path fill="var(--info-color)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path>
+                <path fill="var(--info-color-d)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path>
+            </svg>
         </div>
         <div class="d-grid ji-center p-4 bgc-positive br-lg f" style="--fg: 1; --fb: 0;">
             <div class="ta-center fw-600">success</div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em"><path fill="hsl(120 50% 50% / 0.3)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path><path class="color-light" fill="hsl(120 50% 65%)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path><path class="color-default" fill="hsl(120 50% 50%)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path><path class="color-dark" fill="hsl(120 50% 35%)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em">
+                <path fill="var(--success-color-m)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path>
+                <path fill="var(--success-color-l)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path>
+                <path fill="var(--success-color)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path>
+                <path fill="var(--success-color-d)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path>
+            </svg>
         </div>
         <div class="d-grid ji-center p-4 bgc-positive br-lg f" style="--fg: 1; --fb: 0;">
             <div class="ta-center fw-600">warning</div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em"><path fill="hsl(40 90% 50% / 0.3)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path><path class="color-light" fill="hsl(40 90% 65%)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path><path class="color-default" fill="hsl(40 90% 50%)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path><path class="color-dark" fill="hsl(40 90% 35%)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em">
+                <path fill="var(--warning-color-m)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path>
+                <path fill="var(--warning-color-l)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path>
+                <path fill="var(--warning-color)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path>
+                <path fill="var(--warning-color-d)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path>
+            </svg>
         </div>
         <div class="d-grid ji-center p-4 bgc-positive br-lg f" style="--fg: 1; --fb: 0;">
             <div class="ta-center fw-600">error</div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em"><path fill="hsl(0 50% 50% / 0.3)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path><path class="color-light" fill="hsl(0 50% 65%)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path><path class="color-default" fill="hsl(0 50% 50%)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path><path class="color-dark" fill="hsl(0 50% 35%)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em">
+                <path fill="var(--error-color-m)" d="M 32 2 L 62 17 L 62 45 L 32 62 L 2 45 L 2 17 L 32 2 Z"></path>
+                <path fill="var(--error-color-l)" d="M 4 18 L 32 32 L 32 60 L 4 44 L 4 18 Z"></path>
+                <path fill="var(--error-color)" d="M 4 18 L 32 4 L 60 18 L 32 32 L 4 18 Z"></path>
+                <path fill="var(--error-color-d)" d="M 32 32 L 60 18 L 60 44 L 32 60 L 32 32 Z"></path>
+            </svg>
         </div>
         <div class="d-grid g-3 ji-center p-4 br-lg f bgc-negative" style="--fb: 100%;">
             <div class="ta-center fw-600 c-positive">positive</div>
