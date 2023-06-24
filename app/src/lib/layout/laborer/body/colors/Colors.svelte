@@ -2,31 +2,32 @@
     import Alert from 'src/components/Alert.svelte'
     import ColorBox from './colorbox/ColorBox.svelte'
 
-    // let colorPaletteObj = {
-    //     default: {
-    //         offset: 10,
-    //         positive: { h: 0, s: 0, l: 100 },
-    //         negative: { h: 0, s: 0, l: 0 }
-    //     },
-    //     accent: {
-    //         settings: {
-    //             offset: 15,
-    //             mute: .3
-    //         },
-    //         colors: {
-    //             primary: { h: 210, s: 90, l: 50 },
-    //             secondary: { h: 210, s: 10, l: 50 },
-    //             info: { h: 190, s: 90, l: 50 },
-    //             success: { h: 120, s: 50, l: 50 },
-    //             warning: { h: 40, s: 90, l: 50 },
-    //             error: { h: 0, s: 50, l: 50 }
-    //         }
-    //     }
-    // }
+    let colorPaletteObj = {
+        default: {
+            offset: 10,
+            positive: { h: 0, s: 0, l: 100 },
+            negative: { h: 0, s: 0, l: 0 }
+        },
+        accent: {
+            lightness: 60,
+            chroma: .2,
+            settings: {
+                offset: 15,
+                mute: .25
+            },
+            colors: {
+                primary: 255,
+                secondary: 255,
+                info: 295,
+                success: 145,
+                warning: 85,
+                error: 25,
+            }
+        }
+    }
+
     // const styleSheets = window.getComputedStyle(document.body)
-
     let root = document.querySelector(':root')
-
     function getVarValue(varName) {
         // styleSheets.setProperty(varName, '#000')
         // return styleSheets.getPropertyValue(varName)
@@ -76,33 +77,35 @@
     Colors
 </div>
 <div class="d-flex fw-wrap g-2">
-    <ColorBox  l={60} c={0.2} h={255} offset={15} alfa={0.25}/>
-    <!-- {#each Object.entries(colorPaletteObj.accent.colors) as [key, value]}
+    {#each Object.entries(colorPaletteObj.accent.colors) as [key, value]}
         <div class="d-grid ji-center p-4 bgc-positive br f" style="--fg: 1; --fb: 0;">
             <div>
                 <div class="ta-center fw-600">{key}</div>
-                hsl({value.h} {value.s} {value.l})
+                oklch({colorPaletteObj.accent.lightness}% {colorPaletteObj.accent.chroma / (key === 'secondary' ? 10 : 1)} {value})
             </div>
             <div class="d-flex fw-nowrap ji-center">
                 <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600">light</div>
-                    hsl({value.h} {value.s} {value.l + colorPaletteObj.accent.settings.offset})
+                    oklch({colorPaletteObj.accent.lightness + colorPaletteObj.accent.settings.offset}% {colorPaletteObj.accent.chroma / (key === 'secondary' ? 10 : 1)} {value})
                 </div>
                 <div class="col-span-2 d-grid">
                     <ColorBox
-                        {...value}
-                        {...colorPaletteObj.accent.settings}
+                        l={colorPaletteObj.accent.lightness}
+                        c={colorPaletteObj.accent.chroma / (key === 'secondary' ? 10 : 1)}
+                        h={value}
+                        offset={colorPaletteObj.accent.settings.offset}
+                        alfa={colorPaletteObj.accent.settings.mute}
                     />
                 </div>
                 <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600">dark</div>
-                    hsl({value.h} {value.s} {value.l  - colorPaletteObj.accent.settings.offset})
+                    oklch({colorPaletteObj.accent.lightness - colorPaletteObj.accent.settings.offset}% {colorPaletteObj.accent.chroma / (key === 'secondary' ? 10 : 1)} {value})
                 </div>
             </div>
             <div>
                 <div class="ta-center fw-600">mute</div>
-                hsl({value.h} {value.s} {value.l} / {colorPaletteObj.accent.settings.mute})
+                oklch({colorPaletteObj.accent.lightness}% {colorPaletteObj.accent.chroma / (key === 'secondary' ? 10 : 1)} {value} / {colorPaletteObj.accent.settings.mute})
             </div>
         </div>
-    {/each} -->
+    {/each}
 </div>
