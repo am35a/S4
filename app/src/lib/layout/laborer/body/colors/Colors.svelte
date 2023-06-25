@@ -16,7 +16,18 @@
             'warning' as string,
             'error' as string
         ],
-        variablesObj: {}
+        variablesObj: {
+            'lightness': undefined as number,
+            'lightness-offset': undefined as number,
+            'chroma': undefined as number,
+            'alfa': undefined as number,
+            'primary-hue': undefined as number,
+            'secondary-hue': undefined as number,
+            'info-hue': undefined as number,
+            'success-hue': undefined as number,
+            'warning-hue': undefined as number,
+            'error-hue': undefined as number
+        }
     }
 
     let computedRoot = getComputedStyle(document.querySelector(':root'))
@@ -35,16 +46,10 @@
     // }
 
     $: if ($styleFiles['styles']) {
-        // https://stackoverflow.com/questions/7306669/how-to-get-all-properties-values-of-a-javascript-object-without-knowing-the-key
-        colorPaletteObj.variablesObj['lightness'] = computedRoot.getPropertyValue('--lightness')
-        colorPaletteObj.variablesObj['lightness-offset'] = computedRoot.getPropertyValue('--lightness-offset')
-        colorPaletteObj.variablesObj['chroma'] = computedRoot.getPropertyValue('--chroma')
-        colorPaletteObj.variablesObj['primary-hue'] = computedRoot.getPropertyValue('--primary-hue')
-        colorPaletteObj.variablesObj['secondary-hue'] = computedRoot.getPropertyValue('--secondary-hue')
-        colorPaletteObj.variablesObj['info-hue'] = computedRoot.getPropertyValue('--info-hue')
-        colorPaletteObj.variablesObj['success-hue'] = computedRoot.getPropertyValue('--success-hue')
-        colorPaletteObj.variablesObj['warning-hue'] = computedRoot.getPropertyValue('--warning-hue')
-        colorPaletteObj.variablesObj['error-hue'] = computedRoot.getPropertyValue('--error-hue')
+        for (const key of Object.keys(colorPaletteObj.variablesObj)) {
+            colorPaletteObj.variablesObj[key] = +(computedRoot.getPropertyValue(`--${key}`).replace('%', ''))
+        }
+        // vals = Object.keys(obj).map(key => obj[key])
     }
 </script>
 
@@ -69,25 +74,42 @@
         <div class="d-grid ji-center p-4 bgc-positive br f" style="--fg: 1; --fb: 0;">
             <div>
                 <div class="ta-center fw-600">{value}</div>
-                oklch({colorPaletteObj.variablesObj['lightness']} {colorPaletteObj.variablesObj['chroma']} {colorPaletteObj.variablesObj[`${value}-hue`]})
-                <!-- oklch({colorPaletteObj.accent.lightness}% {colorPaletteObj.accent.chroma / (key === 'secondary' ? 10 : 1)} {value}) -->
+                oklch(
+                    {colorPaletteObj.variablesObj['lightness']}%
+                    {colorPaletteObj.variablesObj['chroma']}
+                    {colorPaletteObj.variablesObj[`${value}-hue`]}
+                )
             </div>
             <div class="d-flex fw-nowrap ji-center">
                 <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600">light</div>
-                    <!-- oklch({colorPaletteObj.accent.lightness + colorPaletteObj.accent.settings.offset}% {colorPaletteObj.accent.chroma / (key === 'secondary' ? 10 : 1)} {value}) -->
+                    oklch(
+                        {colorPaletteObj.variablesObj['lightness'] + colorPaletteObj.variablesObj['lightness-offset']}%
+                        {colorPaletteObj.variablesObj['chroma']}
+                        {colorPaletteObj.variablesObj[`${value}-hue`]}
+                    )
                 </div>
                 <div class="col-span-2 d-grid">
                     <ColorBox colorName={value} />
                 </div>
                 <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600">dark</div>
-                    <!-- oklch({colorPaletteObj.accent.lightness - colorPaletteObj.accent.settings.offset}% {colorPaletteObj.accent.chroma / (key === 'secondary' ? 10 : 1)} {value}) -->
+                    oklch(
+                        {colorPaletteObj.variablesObj['lightness'] - colorPaletteObj.variablesObj['lightness-offset']}%
+                        {colorPaletteObj.variablesObj['chroma']}
+                        {colorPaletteObj.variablesObj[`${value}-hue`]}
+                    )
                 </div>
             </div>
             <div>
                 <div class="ta-center fw-600">mute</div>
-                <!-- oklch({colorPaletteObj.accent.lightness}% {colorPaletteObj.accent.chroma / (key === 'secondary' ? 10 : 1)} {value} / {colorPaletteObj.accent.settings.mute}) -->
+                oklch(
+                    {colorPaletteObj.variablesObj['lightness']}%
+                    {colorPaletteObj.variablesObj['chroma']}
+                    {colorPaletteObj.variablesObj[`${value}-hue`]}
+                    /
+                    {colorPaletteObj.variablesObj['alfa']}
+                )
             </div>
         </div>
     {/each}
