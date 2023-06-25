@@ -13,6 +13,8 @@ export const appData = writable(
     }
 )
 
+export const styleFiles = writable({})
+
 /*
     For Aside.svelte component
 */

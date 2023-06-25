@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { appData } from 'src/store/store'
+    import { appData, styleFiles } from 'src/store/store'
     import device from 'current-device'
 
     const cssMap = {
@@ -32,7 +32,8 @@
 <svelte:head>
     <meta name="viewport" content="width=device-width, initial-scale={$appData.initialScale}">
     <title>{$appData.title}</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <!-- <link rel="stylesheet" href="/css/styles.css" on:load={() => $styleMap.push('styles')}> -->
+    <link rel="stylesheet" href="/css/styles.css" on:load={() => $styleFiles['styles'] = true}>
 
     <link rel='stylesheet' href='/css/settings/variables.css'>
     <link rel="stylesheet" href="/css/settings/{deviceCSSPrefix}variables.css"> <!-- load only appropriate styles utilities -->
