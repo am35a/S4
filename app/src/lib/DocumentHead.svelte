@@ -32,7 +32,6 @@
 <svelte:head>
     <meta name="viewport" content="width=device-width, initial-scale={$appData.initialScale}">
     <title>{$appData.title}</title>
-    <!-- <link rel="stylesheet" href="/css/styles.css" on:load={() => $styleMap.push('styles')}> -->
     <link rel="stylesheet" href="/css/styles.css" on:load={() => $styleFiles['styles'] = true}>
 
     <link rel='stylesheet' href='/css/settings/variables.css'>

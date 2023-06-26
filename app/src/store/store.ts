@@ -13,8 +13,6 @@ export const appData = writable(
     }
 )
 
-export const styleFiles = writable({})
-
 /*
     For Aside.svelte component
 */
@@ -85,5 +83,60 @@ export let user: any = writable(
             isDarkTheme: true as boolean,
             initialScale: 1 as number, // 1 as default for scale on screentouch devises
         } as any
+    }
+)
+
+
+/*
+    For color theme settings
+*/
+export const styleFiles = writable({})
+
+export const styleSettings = writable(
+    {
+        default: {
+            stylesLoaded: false as boolean, // styles.css
+            setuping: false as boolean,
+            variables: {
+                colors: {
+                    // separated colors 
+                    '--lightness': undefined as number,
+                    '--lightness-offset': undefined as number,
+                    '--chroma': undefined as number,
+                    '--alfa': undefined as number,
+                    '--primary-hue': undefined as number,
+                    '--secondary-hue': undefined as number,
+                    '--info-hue': undefined as number,
+                    '--success-hue': undefined as number,
+                    '--warning-hue': undefined as number,
+                    '--error-hue': undefined as number,
+                    // composite colors
+                    '--primary-l': undefined as string,
+                    '--primary': undefined as string,
+                    '--primary-d': undefined as string,
+                    '--primary-m': undefined as string,
+                    '--secondary-l': undefined as string,
+                    '--secondary': undefined as string,
+                    '--secondary-d': undefined as string,
+                    '--secondary-m': undefined as string,
+                    '--info-l': undefined as string,
+                    '--info': undefined as string,
+                    '--info-d': undefined as string,
+                    '--info-m': undefined as string,
+                    '--success-l': undefined as string,
+                    '--success': undefined as string,
+                    '--success-d': undefined as string,
+                    '--success-m': undefined as string,
+                    '--warning-l': undefined as string,
+                    '--warning': undefined as string,
+                    '--warning-d': undefined as string,
+                    '--warning-m': undefined as string,
+                    '--error-l': undefined as string,
+                    '--error': undefined as string,
+                    '--error-d': undefined as string,
+                    '--error-m': undefined as string
+                }
+            }
+        }
     }
 )
