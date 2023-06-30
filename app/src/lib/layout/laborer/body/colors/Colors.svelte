@@ -70,6 +70,14 @@
             type="range"
             step=".01"
         />
+        <div>Alfa (mute): {colorPaletteObj.variablesObj['alfa']}%</div>
+        <Input
+            bind:value={colorPaletteObj.variablesObj['alfa']}
+            min="0" max="1"
+            class="frm w-100"
+            type="range"
+            step=".01"
+        />
     </div>
 </article>
 <div>
@@ -95,7 +103,7 @@
                         {colorPaletteObj.variablesObj[`${value}-hue`]}
                     )
                 </div>
-                <div class="col-span-2 d-grid">
+                <div>
                     <ColorBox colorName={value} />
                 </div>
                 <div class="ws-nowrap as-end">
