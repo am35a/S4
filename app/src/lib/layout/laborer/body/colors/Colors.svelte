@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { styleFiles } from 'src/store/store'
+    import { appConsole } from 'src/store/console'
     import ColorBox from './colorbox/ColorBox.svelte'
 
     import Input from 'component/Input.svelte'
@@ -39,10 +39,10 @@
             colorPaletteObj.variablesObj[key] = +(computedRoot.getPropertyValue(`--${key}`).replace('%', ''))
         // vals = Object.keys(obj).map(key => obj[key])
     }
-    $: if ($styleFiles['styles'])
+    $: if ($appConsole['isWindowLoad'])
         getCSSVarValues()
 
-    $: if ($styleFiles['styles']) {
+    $: if ($appConsole['isWindowLoad']) {
         for (const key of Object.keys(colorPaletteObj.variablesObj))
             root.style.setProperty(`--${key}`, `${colorPaletteObj.variablesObj[key]}${key.includes('lightness') ? '%' : ''}`)
 

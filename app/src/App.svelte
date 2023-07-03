@@ -7,6 +7,8 @@
         asideItems,
         user
     } from 'src/store/store'
+        
+    import Console from './lib/layout/console/Console.svelte'
 
     import Window from './lib/DocumentWindow.svelte'
     import Head from './lib/DocumentHead.svelte'
@@ -95,7 +97,6 @@
 <Head />
 <Body />
 
-
 <!-- {#await promise}
 	<p>Loading data...</p>
 {:then value}
@@ -113,6 +114,8 @@
 {:else}
     <LayoutLaborer />
 {/if}
+
+<Console />
   
 <!-- <Route>
   
