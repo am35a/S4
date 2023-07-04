@@ -1,12 +1,15 @@
-// https://learn.svelte.dev/tutorial/custom-stores
-
 import { writable } from "svelte/store"
 
 function f() {
     let data = {
-        isWindowLoad: false,
-        history: ['start loading ...'],
-        state: 'open', // states: close, open or half
+        isWindowLoad: false as boolean,
+        history: [
+            {
+                text: 'window: start loading' as string,
+                type: 'default' as string
+            }
+        ],
+        state: 'open' as string, // states: close, open or half
     }
 
     const { subscribe, set } = writable(data)
@@ -15,12 +18,12 @@ function f() {
         subscribe,
         windowLoaded: (value: boolean) => {
             data.isWindowLoad = value
-            appConsole.message('window loaded')
+            appConsole.message('window: loaded', 'success')
             appConsole.setState()
             set(data)
         },
-        message: (text: string) => {
-            data.history.push(text)
+        message: (text: string, type: string = 'default') => {
+            data.history.push({text, type})
             set(data)
         },
         setState: () => {

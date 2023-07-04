@@ -10,16 +10,17 @@
 </script>
 
 <svelte:window
-    on:load={() => appConsole.windowLoaded(true)}
     on:keydown|preventDefault={onKeyDown}
+    on:load={() => appConsole.windowLoaded(true)}
+    on:offline={() => appConsole.message('window: the interface is fired - network connection has been lost', 'warning')}
 />
 
 {#if $appConsole.state === 'open' || $appConsole.state === 'half'}
     <section
         transition:slide
     >
-        {#each $appConsole.history as item }
-            <div>{item}</div>
+        {#each $appConsole.history as message }
+            <div class="{message.type}">{message.text}</div>
         {/each}
     </section>
 {/if}
@@ -40,4 +41,14 @@
         font-size: small
         z-index: 1000
         flex-direction: column
+        .default
+            color: oklch(75% 0.2 255)
+        .info
+            color: oklch(75% 0.2 295)
+        .success
+            color: oklch(75% 0.2 145)
+        .warning
+            color: oklch(75% 0.2 85)
+        .error
+            color: oklch(75% 0.2 25)
 </style>

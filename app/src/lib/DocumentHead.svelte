@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { appData, styleFiles } from 'src/store/store'
+    import { appData } from 'src/store/store'
+    import { appConsole } from 'src/store/console'
     import device from 'current-device'
 
     const cssMap = {
@@ -32,14 +33,29 @@
 <svelte:head>
     <meta name="viewport" content="width=device-width, initial-scale={$appData.initialScale}">
     <title>{$appData.title}</title>
-    <!-- <link rel="stylesheet" href="/css/styles.css" on:load={() => $styleFiles['styles'] = true}> -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link
+        rel="stylesheet"
+        href="/css/styles.css"
+        on:load={() => appConsole.message('styles.css: loaded', 'success')}
+    >
 
-    <link rel='stylesheet' href='/css/settings/variables.css'>
-    <link rel="stylesheet" href="/css/settings/{deviceCSSPrefix}variables.css"> <!-- load only appropriate styles utilities -->
+    <link
+        rel='stylesheet'
+        href='/css/settings/variables.css'
+        on:load={() => appConsole.message('variables.css: loaded', 'success')}
+    >
+    <link
+        rel="stylesheet"
+        href="/css/settings/{deviceCSSPrefix}variables.css"
+        on:load={() => appConsole.message(`${deviceCSSPrefix}variables.css: loaded`, 'success')}
+    ><!-- load only appropriate styles utilities -->
 
     {#each cssMap[deviceCSSPrefix] as item}
-        <link rel="stylesheet" href="/css/{item}utilities.css">
+        <link
+            rel="stylesheet"
+            href="/css/{item}utilities.css"
+            on:load={() => appConsole.message(`${item}utilities.css: loaded`, 'success')}
+        >
     {/each}
     <style>
         /* * {
@@ -57,10 +73,5 @@
         ::-webkit-scrollbar-track {
             background: var(--secondary-color-d);
         } */
-
     </style>
 </svelte:head>
-
-<style lang="sass">
-
-</style>
