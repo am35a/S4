@@ -7,20 +7,27 @@
             appConsole.setState()
         }
     }
+
+    const date: Date = new Date()
 </script>
 
 <svelte:window
-    on:keydown|preventDefault={onKeyDown}
+    on:keydown={onKeyDown}
     on:load={() => appConsole.windowLoaded(true)}
     on:offline={() => appConsole.message('window: the interface is fired - network connection has been lost', 'warning')}
-/>
+/> <!-- on:keydown|preventDefault={onKeyDown} -->
 
 {#if $appConsole.state === 'open' || $appConsole.state === 'half'}
     <section
         transition:slide
     >
         {#each $appConsole.history as message }
-            <div class="{message.type}">{message.text}</div>
+            <div>
+                {#if message.time}
+                    <span>[{message.time}]</span>
+                {/if}
+                <span class="{message.type}">{message.text}</span>
+            </div>
         {/each}
     </section>
 {/if}
@@ -34,15 +41,15 @@
         bottom: 0
         display: flex
         justify-content: end
-        align-items: end
+        align-items: start
         padding: 0.5em
         background-color: oklch(0% 0 0)
-        color: oklch(60% 0.2 145)
+        color: oklch(75% 0 0)
         font-size: small
         z-index: 1000
         flex-direction: column
         .default
-            color: oklch(75% 0.2 255)
+            color: oklch(75% 0 0)
         .info
             color: oklch(75% 0.2 295)
         .success

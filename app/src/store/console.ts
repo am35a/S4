@@ -6,7 +6,8 @@ function f() {
         history: [
             {
                 text: 'window: start loading' as string,
-                type: 'default' as string
+                type: 'info' as string,
+                time: undefined as string
             }
         ],
         state: 'open' as string, // states: close, open or half
@@ -23,7 +24,9 @@ function f() {
             set(data)
         },
         message: (text: string, type: string = 'default') => {
-            data.history.push({text, type})
+            const date: Date = new Date()
+            const time = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}.${date.getMilliseconds()}`
+            data.history.push({text, type, time})
             set(data)
         },
         setState: () => {
