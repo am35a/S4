@@ -36,7 +36,7 @@
 
     function getCSSVarValues() {
         for (const key of Object.keys(colorPaletteObj.variablesObj))
-            colorPaletteObj.variablesObj[key] = +(computedRoot.getPropertyValue(`--${key}`).replace('%', ''))
+            colorPaletteObj.variablesObj[key] = +(computedRoot.getPropertyValue(`--${key}`))
         // vals = Object.keys(obj).map(key => obj[key])
     }
     $: if ($appConsole['isWindowLoad'])
@@ -44,7 +44,7 @@
 
     $: if ($appConsole['isWindowLoad']) {
         for (const key of Object.keys(colorPaletteObj.variablesObj))
-            root.style.setProperty(`--${key}`, `${colorPaletteObj.variablesObj[key]}${key.includes('lightness') ? '%' : ''}`)
+            root.style.setProperty(`--${key}`, `${colorPaletteObj.variablesObj[key]}`)
 
     }
 </script>
@@ -54,15 +54,15 @@
 <article>
     <h2 id="alignment">Settings:</h2>
     <div>
-        <div>Lightness: {colorPaletteObj.variablesObj['lightness']}%</div>
+        <div>Lightness: {colorPaletteObj.variablesObj['lightness']}</div>
         <Input
             bind:value={colorPaletteObj.variablesObj['lightness']}
-            min={colorPaletteObj.variablesObj['lightness-offset']} max="100"
+            min={colorPaletteObj.variablesObj['lightness-offset']} max="1"
             class="frm w-100"
             type="range"
-            step="1"
+            step=".01"
         />
-        <div>Chroma: {colorPaletteObj.variablesObj['chroma']}%</div>
+        <div>Chroma: {colorPaletteObj.variablesObj['chroma']}</div>
         <Input
             bind:value={colorPaletteObj.variablesObj['chroma']}
             min="0" max="0.37"
@@ -89,7 +89,7 @@
             <div>
                 <div class="ta-center fw-600 text c-{value}">{value}</div>
                 oklch(
-                    {colorPaletteObj.variablesObj['lightness']}%
+                    {colorPaletteObj.variablesObj['lightness']}
                     {colorPaletteObj.variablesObj['chroma']}
                     {colorPaletteObj.variablesObj[`${value}-hue`]}
                 )
@@ -98,7 +98,7 @@
                 <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600 c-{value}-l">light</div>
                     oklch(
-                        {+(colorPaletteObj.variablesObj['lightness']) + colorPaletteObj.variablesObj['lightness-offset']}%
+                        {(+(colorPaletteObj.variablesObj['lightness']) + colorPaletteObj.variablesObj['lightness-offset']).toFixed(2)}
                         {colorPaletteObj.variablesObj['chroma']}
                         {colorPaletteObj.variablesObj[`${value}-hue`]}
                     )
@@ -109,7 +109,7 @@
                 <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600 c-{value}-d">dark</div>
                     oklch(
-                        {colorPaletteObj.variablesObj['lightness'] - colorPaletteObj.variablesObj['lightness-offset']}%
+                        {(+(colorPaletteObj.variablesObj['lightness']) - colorPaletteObj.variablesObj['lightness-offset']).toFixed(2)}
                         {colorPaletteObj.variablesObj['chroma']}
                         {colorPaletteObj.variablesObj[`${value}-hue`]}
                     )
@@ -118,7 +118,7 @@
             <div>
                 <div class="ta-center fw-600 c-{value}-m">mute</div>
                 oklch(
-                    {colorPaletteObj.variablesObj['lightness']}%
+                    {colorPaletteObj.variablesObj['lightness']}
                     {colorPaletteObj.variablesObj['chroma']}
                     {colorPaletteObj.variablesObj[`${value}-hue`]}
                     /
