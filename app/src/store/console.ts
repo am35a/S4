@@ -7,7 +7,7 @@ function f() {
             {
                 text: 'window: start loading' as string,
                 type: 'info' as string,
-                time: undefined as string
+                time: undefined as unknown as string
             }
         ],
         state: 'open' as string, // states: close, open or half
