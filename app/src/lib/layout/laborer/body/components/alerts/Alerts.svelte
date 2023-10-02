@@ -2,7 +2,7 @@
     import Alert from 'component/Alert.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let alertsObj = {
+    let alertsObj : { [key: string]: any } = {
         variantsObj: {
             Default: '' as string,
             Alt: 'alt' as string,
@@ -15,26 +15,37 @@
             Success: '-success' as string,
             Warning: '-warning' as string,
             Error: '-error' as string,
+        },
+        typeObj: {
+            Permanent: '' as string,
+            Closable: 'alert-closable'
         }
-    }
-    let alertVariant: string = 'Default'
-    let alertColor: string = 'Primary'
-    
-    let alertClass: string = ''
+    },
+        alertVariant: string = 'Default',
+        alertColor: string = 'Primary',
+        alertType: string = 'Permanent',
+
+        alertClass: string = ''
+
     $: {
         alertClass = fnalertClass()
     
         function fnalertClass() {
+            let classesString = ''
+
             if (alertsObj.variantsObj[alertVariant] && alertsObj.colorsObj[alertColor])
-                return `alert-${alertsObj.variantsObj[alertVariant]}${alertsObj.colorsObj[alertColor]}`
+                classesString = `alert-${alertsObj.variantsObj[alertVariant]}${alertsObj.colorsObj[alertColor]}`
             else
                 if (alertsObj.variantsObj[alertVariant])
-                    return `alert-${alertsObj.variantsObj[alertVariant]}`
+                    classesString = `alert-${alertsObj.variantsObj[alertVariant]}`
                 else
                     if (alertsObj.colorsObj[alertColor])
-                        return `alert${alertsObj.colorsObj[alertColor]}`
-                    else
-                        return ''
+                        classesString = `alert${alertsObj.colorsObj[alertColor]}`
+            
+            if (alertsObj.typeObj[alertType])
+                classesString = `${classesString} ${alertsObj.typeObj[alertType]}`
+
+            return classesString
         }
     }
 </script>
@@ -42,7 +53,7 @@
 <article>
     <h2 id="alerts">Alerts</h2>
     <p>
-        To add the close button for killing an alerts add the <b>alert-closable</b> class name.
+        To create self destroyed alerts, add the class name - <b>alert-closable</b>.
     </p>
 
     <div class="d-grid g-5">
@@ -75,9 +86,23 @@
             </div>
         </div>
         <div class="d-grid g-4">
+            <b>Type</b>
+            <div class="d-flex g-3">
+                {#each Object.entries(alertsObj.typeObj) as [key, value]}
+                    <button
+                        on:click={() => alertType = key}
+                        class="btn btn{value}"
+                        class:active = {alertType === key}
+                        type="button"
+                        disabled = {alertType === key}
+                    >{key}</button>
+                {/each}
+            </div>
+        </div>
+        <div class="d-grid g-4">
             <b>Preview</b>
             <div class="d-flex p-4 bgc-positive br">
-                <Alert class="{alertClass} alert-closable mb-0">
+                <Alert class="{alertClass} mb-0">
                     Click the close icon in the top right corner to destroy the block of alert message.
                 </Alert>
             </div>        
@@ -90,7 +115,7 @@
 `// before using the component, import it
 // import Alert from 'component/Alert.svelte'
 
-<Alert class="${alertClass} alert-closable">
+<Alert class="${alertClass}">
     Alert component place.
 </Alert>
 `
