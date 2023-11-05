@@ -28,8 +28,8 @@
             display: grid
             justify-items: center
             align-items: center
-            width: var(--layout-header-height)
-            height: var(--layout-header-height)
+            width: var(--header-mh)
+            height: var(--header-mh)
             margin: 0 0 auto auto
             color: var(--positive-color)
 </style>

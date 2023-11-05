@@ -1,12 +1,15 @@
 :root {
-    
-    --body-bgc: hsl(215, 25%, 92.5%);
-    --body-color: hsl(215, 25%, 10%);
 
-    --header-bgc: hsl(215, 25%, 15%);
-    --header-color: var(--positive-color-80);
-    
-    --aside-bgc: hsl(215, 25%, 10%);
-    --aside-submenu-bgc: hsl(215, 25%, 15%);
+    /* --bgc: oklch(0.9 0.01 255);
+    --color: oklch(0.15 0.01 255); */
+    /*
+    --body-bgc: oklch(0.9 0.01 255);
+    --body-color: oklch(0.15 0.01 255);
 
+    --header-bgc: oklch(0.4 0.03 270); /* oklch(0.30 0.01 255); * /
+    --header-color: var(--body-bgc);
+    
+    --aside-bgc: oklch(0.3 0.02 270); /* oklch(0.15 0.01 255); * /
+    --aside-submenu-bgc: var(--negative-color-10);
+    */
 }

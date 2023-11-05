@@ -20,118 +20,83 @@
     $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
 
     .dtl
-        margin-bottom: 1em
-        border-radius: .25em
+        border-radius: var(--size-1)
+        outline-width: 0
+        outline-style: solid
+        outline-color: transparent
+        outline-offset: 0
+        transition: color .15s linear, outline .15s linear
+        &:not([open])
+            &:focus-within,
+            &:hover
+                outline-width: calc(var(--size-1) / 2)
+                outline-style: solid
+                outline-color: var(--negative-color-20)
+                outline-offset: calc(var(--size-1) / 4)
+        &[open]
+            outline-width: calc(var(--size-1) / 2)
+            outline-style: solid
+            outline-color: var(--negative-color-20)
+            outline-offset: calc(var(--size-1) / 4)
+            &:focus-within,
+            &:hover
+                outline-color: var(--negative-color-40)
+
+        &:not([open]) [contract],
+        &[open] [expand]
+                display: none
+
         summary
             display: flex
             justify-content: space-between
-            padding: .75em
+            padding: var(--size-3)
             background-color: var(--positive-color-30)
-            // border: .0625em solid currentColor
-            border-top-left-radius: var(--br, .5em)
-            border-top-right-radius: var(--br, .5em)
-            // font-size: var(--fs-md)
+            border: none
+            color: currentColor
             list-style: none
             cursor: pointer
+            outline: none
+            transition: background-color .15s linear
             user-select: none
-            outline: .125em solid transparent
-            outline-offset: .0625em
         &:not([open])
             summary
-                border-bottom-left-radius: var(--br, .5em)
-                border-bottom-right-radius: var(--br, .5em)
-                &:hover,
-                &:focus
-                    outline-color: var(--negative-color-20)
-            [contract]
-                display: none
+                border-radius: var(--size-1) var(--size-1) var(--size-1) var(--size-1)
         &[open]
-            outline: .125em solid var(--negative-color-20)
-            outline-offset: .0625em
-            &:hover,
-            &:focus
-                outline-color: var(--negative-color-40)
-
             summary
-                // &:hover,
-                // &:focus
-                //     outline-color: var(--negative-color-40)
-                // &:not(:hover)
-                //     color: var(--negative-color-40)
-                // border-bottom-color: inherit
-            [expand]
-                display: none
-        // .dtl-body
-        //     padding: .75em
-        //     background-color: var(--positive-color)
-        //     border-bottom-left-radius: .25em
-        //     border-bottom-right-radius: .25em
-        &-primary
-            summary
-                background-color: var(--primary-color-m)
-                font-weight: 500
-            &[open]
-                color: var(--primary-color-d)
+                border-radius: var(--size-1) var(--size-1) 0 0
 
-            &:not([open])
+        &-alt
+            summary
+                background-color: var(--negative-color-10)
+        &-outline
+            summary
+                box-shadow: inset 0 0 0 calc(var(--size-1) / 4) currentColor
+
+
+        @each $colorName in $accentColors
+            &-#{$colorName}
                 summary
-                    color: var(--primary-color)
-                    &:hover,
-                    &focus
-                        color: var(--primary-color-d)
+                    background-color: var(--#{$colorName}-color)
+                    color: var(--positive-color)
 
+        @each $colorName in $accentColors
+            &-alt-#{$colorName}
+                summary
+                    background-color: var(--#{$colorName}-color-m)
+                    color: var(--#{$colorName}-color)
+                &:focus-within,
+                &:hover
+                    summary
+                        color: var(--#{$colorName}-color-d)
 
-
-    details
-        // border: .0625em solid currentColor
-        // border-radius: .25em
-        // padding: .25em .75em
-        summary
-            // font-size: var(--fs-lg)
-            // list-style: none
-            // display: inline-grid
-            // grid-auto-flow: column
-            // grid-gap: .25em
-            // justify-content: center
-            // align-items: center
-            // margin: unset
-            // padding: .25em .75em
-            // background-color: transparent
-            // border: .0625em solid transparent
-            // border-radius: .25em
-            // vertical-align: middle
-            // text-align: center
-            // color: currentColor
-            // // font-size: var(--key-size)
-            // line-height: calc(0.25em + 2ex + 0.25em)
-            // text-decoration: none
-            // cursor: pointer
-            // user-select: none
-            // outline: .125em solid transparent
-            // outline-offset: .0625em
-
+        @each $colorName in $accentColors
+            &-outline-#{$colorName}
+                summary
+                    box-shadow: inset 0 0 0 calc(var(--size-1) / 4) currentColor
+                    color: var(--#{$colorName}-color)
+                &:focus-within,
+                &:hover
+                    summary
+                        background-color: var(--#{$colorName}-color-m)
+                        color: var(--#{$colorName}-color-d)
 </style>
-<!-- .tf_details {
-    summary {
-        align-content: center;
-        display: flex;
-        list-style: none;
-        cursor: pointer;
-        &::before {
-            content: "\f054";
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome;
-            font-size: 50%;
-            text-rendering: auto;
-            margin: auto .5rem auto 0;
-            transition: .25s;
-        }
-    }
-    &[open] {
-        summary {
-            &::before  {
-                transform: rotate(90deg);
-            }
-        }
-    }
-} -->

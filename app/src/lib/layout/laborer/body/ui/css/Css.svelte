@@ -10,6 +10,7 @@
     import SectionAlerts from './alerts/Alerts.svelte'
     import SectionButtons from './buttons/Buttons.svelte'
     import SectionRadius from './radius/Radius.svelte'
+    import SectionDetails from './details/Details.svelte'
 
     let cssOverviewObj = {
         colors: 'Colors',
@@ -19,6 +20,7 @@
         shadows: 'Shadows',
         alerts: 'Alerts',
         buttons: 'Buttons',
+        details: 'Details',
         radius: 'Radius'
     }
 </script>
@@ -32,6 +34,7 @@
     <SectionShadows />
     <SectionAlerts />
     <SectionButtons />
+    <SectionDetails />
     <SectionRadius />
     <div class="p-sticky b-0 d-flex g-2 bgc-positive p-2 br w-fit ms-auto s-sm">
         <div class="d-flex fw-wrap g-1 w-fit ms-auto">
@@ -43,7 +46,7 @@
             {/each}
         </div>
         <Button
-            class="btn btn-ico btn-alt-primary btn-xs s-none"
+            class="btn btn-ico btn-alt-primary btn-xs s-none my-auto"
             on:click={() => window.open('#css', '_self')}
         ><Icon name="arrow-top-big" /></Button>
     </div>

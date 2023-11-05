@@ -33,21 +33,20 @@
         grid-row: 1/2
         display: grid
         grid-template-columns: auto 1fr auto
-        min-height: var(--layout-header-height)
+        min-height: var(--header-mh)
         background-color: var(--header-bgc, var(--secondary-color-l))
         color: var(--header-color, var(--negative-color))
         z-index: 10
         .hamburger
             display: grid
-            min-width: var(--layout-header-height)
-            width: var(--layout-aside-width)
-            padding: 0.25em
+            min-width: var(--header-hamburger-mw)
             button
                 display: grid
                 justify-items: center
                 align-items: center
                 border-radius: var(--br-2, .25em)
                 // background-color: var(--aside-bgc, var(--secondary-color-d))
+                color: var(--header-hamburger-button-color, var(--negative-color))
         .title
             display: grid
             padding-left: 1em

@@ -1,5 +1,5 @@
 <script lang="ts">
-    let fontSizesObj = {
+    let fontSizesObj : { [key: string]: any } = {
         Default: '' as string,
         xxs: 'fs-xxs' as string,
         xs: 'fs-xs' as string,
@@ -12,7 +12,7 @@
     }
     let fontSize: string = 'Default'
 
-    let inputsObj = {
+    let inputsObj : { [key: string]: any } = {
         variantsObj: {
             Default: '' as string,
             Alt: 'alt' as string,
@@ -21,7 +21,7 @@
         colorsObj: {
             Default: '' as string,
             Primary: '-primary' as string,
-            Outline: '-secondary' as string,
+            Secondary: '-secondary' as string,
             Info: '-info' as string,
             Success: '-success' as string,
             Warning: '-warning' as string,
@@ -58,7 +58,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Variants</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(inputsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => inputVariant = key}
@@ -72,7 +72,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Colors</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(inputsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => inputColor = key}
@@ -86,7 +86,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Sizes</b>
-            <div class="d-flex g-3 ai-center">
+            <div class="d-flex fw-wrap g-3 ai-center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}

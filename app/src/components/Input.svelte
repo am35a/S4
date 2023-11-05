@@ -67,7 +67,7 @@
         &-alt
             background-color: var(--negative-color-10)
         &-outline
-            box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) currentColor
+            box-shadow: inset 0 0 0 calc(var(--size-1) / 4) currentColor
 
         @each $colorName in $accentColors
             &-#{$colorName}
@@ -88,11 +88,11 @@
 
         @each $colorName in $accentColors
             &-outline-#{$colorName}
-                box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color, currentColor)
+                box-shadow: inset 0 0 0 calc(var(--size-1) / 4) var(--#{$colorName}-color, currentColor)
                 color: var(--#{$colorName}-color)
                 outline-color: transparent
                 &:disabled
-                    box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color-m, currentColor)
+                    box-shadow: inset 0 0 0 calc(var(--size-1) / 4) var(--#{$colorName}-color-m, currentColor)
                     color: var(--negative-color-20)
 
     [type="file"].frm
@@ -174,7 +174,7 @@
         &-outline
             outline-width: 0
             outline-offset: 0
-            box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) currentColor
+            box-shadow: inset 0 0 0 calc(var(--size-1) / 4) currentColor
             &:checked
                 &::after
                     transform: scale(.75)
@@ -198,14 +198,14 @@
 
         @each $colorName in $accentColors
             &-outline-#{$colorName}
-                box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color, currentColor)
+                box-shadow: inset 0 0 0 calc(var(--size-1) / 4) var(--#{$colorName}-color, currentColor)
                 color: var(--#{$colorName}-color)
                 outline-color: transparent
                 &:checked
                     &::after
                         transform: scale(.75)
                 &:disabled
-                    box-shadow: inset 0px 0px 0px calc(var(--size-1) / 4) var(--#{$colorName}-color-m, currentColor)
+                    box-shadow: inset 0 0 0 calc(var(--size-1) / 4) var(--#{$colorName}-color-m, currentColor)
                     color: var(--negative-color-20)
                 &:not(:disabled):hover
                     color: var(--#{$colorName}-color)

@@ -1,7 +1,7 @@
 <section class="d-grid g-5">
     <h3 id="radius">Radius</h3>
     <div class="d-grid g-4">
-        <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+        <div class="d-grid g-3 p-4 bgc-positive br-lg">
             <p>
                 Using these radii to give your components a custom look in particular or in general makes your UI stand out.
             </p>

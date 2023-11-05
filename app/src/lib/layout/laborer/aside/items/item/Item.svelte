@@ -99,7 +99,7 @@
             grid-row: 1/-1
             position: relative
             display: grid
-            height: var(--layout-aside-item-height)
+            height: var(--aside-item-height)
             justify-items: start
             align-items: center
             padding-left: 3em
@@ -161,7 +161,7 @@
         .status
             grid-column: 1/-1
             grid-row: 1/-1
-            height: var(--layout-aside-item-height)
+            height: var(--aside-item-height)
             margin: auto auto auto 0
             width: 0
             height: calc(100% - 1em)

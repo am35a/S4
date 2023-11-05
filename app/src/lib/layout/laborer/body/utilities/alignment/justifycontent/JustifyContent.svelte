@@ -4,7 +4,7 @@
     import Button from 'component/Button.svelte'
 
     let containerTypeObj = {
-        'inline-grid': 'd-inline-grid',
+        'grid': 'd-grid',
         'flex': 'd-flex'
     }
     let containerType:string = containerTypeObj['flex']
@@ -45,7 +45,7 @@
             <Precode class="br-top-0">
                 {#each justifyContentArr as item }
                     {
-`<div class="d-flex jc-${item}">
+`<div class="${containerType} jc-${item}">
     <div>one</div>
     <div>two</div>
     <div>three</div>

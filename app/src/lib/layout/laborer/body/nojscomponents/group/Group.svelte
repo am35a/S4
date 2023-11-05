@@ -2,13 +2,13 @@
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let groupObj = {
+    let groupObj : { [key: string]: any } = {
         Horizontal: 'grp-h' as string,
         Vertical: 'grp-v' as string,
     }
     let groupVariant: string = 'Horizontal'
 
-    let buttonsObj = {
+    let buttonsObj : { [key: string]: any } = {
         variantsObj: {
             Default: '' as string,
             Alt: 'alt' as string,
@@ -17,7 +17,7 @@
         colorsObj: {
             Default: '' as string,
             Primary: '-primary' as string,
-            Outline: '-secondary' as string,
+            Secondary: '-secondary' as string,
             Info: '-info' as string,
             Success: '-success' as string,
             Warning: '-warning' as string,

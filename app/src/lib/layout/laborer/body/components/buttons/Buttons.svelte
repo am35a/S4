@@ -3,7 +3,7 @@
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let fontSizesObj = {
+    let fontSizesObj : { [key: string]: any } = {
         Default: '' as string,
         xxs: 'fs-xxs' as string,
         xs: 'fs-xs' as string,
@@ -16,7 +16,7 @@
     }
     let fontSize: string = 'Default'
 
-    let buttonsObj = {
+    let buttonsObj : { [key: string]: any } = {
         typeObj: {
             Default: '' as string,
             Submit: 'submit' as string,
@@ -30,7 +30,7 @@
         colorsObj: {
             Default: '' as string,
             Primary: '-primary' as string,
-            Outline: '-secondary' as string,
+            Secondary: '-secondary' as string,
             Info: '-info' as string,
             Success: '-success' as string,
             Warning: '-warning' as string,
@@ -79,7 +79,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Variants</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
@@ -93,7 +93,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Colors</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
@@ -107,7 +107,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Icon</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.iconObj) as [key, value]}
                     <Button
                         class="{value === 2 ? 'btn-ico' : ''} {buttonIcon === key ? 'active' : ''}"
@@ -126,7 +126,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Sizes</b>
-            <div class="d-flex g-3 ai-center">
+            <div class="d-flex fw-wrap g-3 ai-center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}
@@ -140,7 +140,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Types</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => buttonType = key}

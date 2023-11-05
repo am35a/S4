@@ -69,7 +69,7 @@
             $appData = await res.json()
             // console.log($appData)
         } else {
-            console.log(`Error: ${res.status}`)
+            console.log(`App data error: ${res.status}`)
         }
 
         res = await fetch('/_api/admin.json')
@@ -80,7 +80,7 @@
             userData = await res.json()
             // console.log($appData)
         } else {
-            console.log(`Error: ${res.status}`)
+            console.log(`User data error: ${res.status}`)
         }
 
         $asideExpand = userData.aside.expand

@@ -25,9 +25,9 @@
         overflow: hidden
         .logo
             width: 100%
-            max-width: calc(var(--layout-aside-item-height) * 2)
+            max-width: calc(var(--aside-item-height) * 2)
             height: 100%
-            max-height: var(--layout-aside-item-height)
+            max-height: var(--aside-item-height)
         // .title
         //     line-height: 1.25
 </style>

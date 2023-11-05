@@ -26,20 +26,20 @@
         grid-row: 1/3
         display: grid
         grid-template-rows: auto max-content
-        width: var(--layout-aside-width)
+        width: var(--aside-width)
         color: var(--aside-color, var(--positive-color-80))
         z-index: 100
         > .blind
-            transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
+            transform: translateX(calc(calc(var(--aside-expand-width) - var(--aside-width)) * -1))
             transition: all 0.25s
         > .brand
-            transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
+            transform: translateX(calc(calc(var(--aside-expand-width) - var(--aside-width)) * -1))
             transition: all 0.25s
         > .items
-            transform: translateX(calc(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)) * -1))
+            transform: translateX(calc(calc(var(--aside-expand-width) - var(--aside-width)) * -1))
             transition: all 0.25s
             > .item
-                transform: translateX(calc(var(--layout-aside-expand-width) - var(--layout-aside-width)))
+                transform: translateX(calc(var(--aside-expand-width) - var(--aside-width)))
                 transition: all 0.25s
         &.expand
             > .blind

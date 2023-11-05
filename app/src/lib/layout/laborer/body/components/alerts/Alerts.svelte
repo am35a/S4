@@ -55,11 +55,10 @@
     <p>
         To create self destroyed alerts, add the class name - <b>alert-closable</b>.
     </p>
-
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Variants</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(alertsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => alertVariant = key}
@@ -73,7 +72,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Colors</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(alertsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => alertColor = key}
@@ -87,7 +86,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Type</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(alertsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => alertType = key}

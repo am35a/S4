@@ -1,9 +1,9 @@
 :root {
     /* Header */
-    --layout-header-height: 3em;
+    --header-mh: 3em;
     /* Aside */
-    --layout-aside-width: 0em;
-    --layout-aside-expand-width: 16em;
-    --layout-aside-blind-width: var(--layout-aside-expand-width);
-    --layout-aside-item-height: var(--layout-header-height);
+    --aside-width: 0em;
+    --aside-expand-width: 16em;
+    --aside-blind-width: var(--aside-expand-width);
+    --aside-item-height: var(--header-mh);
 }

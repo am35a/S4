@@ -6,12 +6,11 @@
     //     outline: '-d'
     // }
 
-    let buttonBorderArr: string[] = ['br-0', 'br-xxs', 'br-xs', 'br-sm', 'br-md', 'br-lg', 'br-xl', 'br-xxl', 'br-xxxl', 'br-pill']
-    let buttonBorder: string = buttonBorderArr[2]
-
     let buttonSizeArr: string[] = ['btn-xxl', 'btn-xl', 'btn-lg', 'btn-md', 'btn-sm', 'btn-xs', 'btn-xxs']
     let buttonSize: string = buttonSizeArr[3]
 
+    let buttonBorderArr: string[] = ['br-0', 'br-xxs', 'br-xs', 'br-sm', 'br-md', 'br-lg', 'br-xl', 'br-xxl', 'br-xxxl', 'br-pill']
+    let buttonBorder: string = buttonBorderArr[3]
 </script>
 
 <section class="d-grid g-5">

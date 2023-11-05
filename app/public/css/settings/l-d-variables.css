@@ -1,9 +1,11 @@
 :root {
     /* Header */
-    --layout-header-height: 3em;
+    --header-mh: 3em;
+    --header-hamburger-mw: var(--aside-width);
+    --header-hamburger-button-color: var(--header-color);
     /* Aside */
-    --layout-aside-width: 16em;
-    --layout-aside-expand-width: 16em;
-    --layout-aside-blind-width: var(--layout-aside-expand-width);
-    --layout-aside-item-height: var(--layout-header-height);
+    --aside-width: 16em;
+    --aside-expand-width: 16em;
+    --aside-blind-width: var(--aside-expand-width);
+    --aside-item-height: var(--header-mh);
 }
