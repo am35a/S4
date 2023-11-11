@@ -3,7 +3,7 @@
     import Details from 'component/Details.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let detailsObj : { [key: string]: any } = {
+    let detailsObj: { [key: string]: any } = {
         variantsObj: {
             Default: '' as string,
             Alt: 'alt' as string,

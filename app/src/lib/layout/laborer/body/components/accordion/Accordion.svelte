@@ -3,7 +3,7 @@
     import Details from 'component/Details.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let customClasses: string = 'd-grid p:cols-1 cols-2 g-4 w-100'
+    let customClasses: string = 'd-grid g-4 w-100'
 </script>
 
 <article>
@@ -16,6 +16,7 @@
             <b>Customize</b>
             <input
                 id="customClasses"
+                class="frm"
                 bind:value={customClasses}
                 type="text"
                 placeholder="Type utility classes to customizing the component"
@@ -26,7 +27,7 @@
             <div class="d-flex p-4 bgc-positive br">
                 <Accordion class="{customClasses}">
                     {#each Array(3) as _, i}
-                        <Details class="dtl-primary mb-0">
+                        <Details class="dtl-alt mb-0">
                             <svelte:fragment slot="title">
                                 Section title {i + 1}
                             </svelte:fragment>

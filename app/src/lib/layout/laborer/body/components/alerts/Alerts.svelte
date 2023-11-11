@@ -2,7 +2,7 @@
     import Alert from 'component/Alert.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let alertsObj : { [key: string]: any } = {
+    let alertsObj: { [key: string]: any } = {
         variantsObj: {
             Default: '' as string,
             Alt: 'alt' as string,

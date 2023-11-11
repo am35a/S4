@@ -1,5 +1,5 @@
 <script lang="ts">
-    let fontSizesObj : { [key: string]: any } = {
+    let fontSizesObj: { [key: string]: any } = {
         Default: '' as string,
         xxs: 'fs-xxs' as string,
         xs: 'fs-xs' as string,
@@ -12,7 +12,7 @@
     }
     let fontSize: string = 'Default'
 
-    let inputsObj : { [key: string]: any } = {
+    let inputsObj: { [key: string]: any } = {
         variantsObj: {
             Default: '' as string,
             Alt: 'alt' as string,

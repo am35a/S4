@@ -3,7 +3,7 @@
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let fontSizesObj : { [key: string]: any } = {
+    let fontSizesObj: { [key: string]: any } = {
         Default: '' as string,
         xxs: 'fs-xxs' as string,
         xs: 'fs-xs' as string,
@@ -16,7 +16,7 @@
     }
     let fontSize: string = 'Default'
 
-    let buttonsObj : { [key: string]: any } = {
+    let buttonsObj: { [key: string]: any } = {
         typeObj: {
             Default: '' as string,
             Submit: 'submit' as string,

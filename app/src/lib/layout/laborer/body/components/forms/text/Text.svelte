@@ -1,7 +1,7 @@
 <script lang="ts">
     import Input from 'component/Input.svelte'
 
-    let fontSizesObj = {
+    let fontSizesObj: { [key: string]: any } = {
         Default: '' as string,
         xxs: 'fs-xxs' as string,
         xs: 'fs-xs' as string,
@@ -14,7 +14,7 @@
     }
     let fontSize: string = 'Default'
 
-    let inputsObj = {
+    let inputsObj: any = {
         typeObj: {
             Text: 'text' as string,
             Search: 'search' as string,

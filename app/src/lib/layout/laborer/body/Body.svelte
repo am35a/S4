@@ -35,7 +35,7 @@
     <hr> -->
 
     <Route>
-        <Route path={'/home'}>
+        <Route path="/home">
             <svelte:component this={PageHome}/>
         </Route>
         <Route path="/core">
@@ -66,11 +66,10 @@
             404
         </Route>
     </Route>
-
     <!-- {#if $path === '/home'}
-        <svelte:component this={Home}/>
+        <svelte:component this={PageHome}/>
     {:else if $path === '/help'}
-        <svelte:component this={Help}/>
+        <svelte:component this={PageHelp}/>
     {:else}
         404
     {/if} -->
