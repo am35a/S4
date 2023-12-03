@@ -7,10 +7,10 @@
     import Icon from 'component/Icon.svelte'
 
     export let active: boolean = false
-    export let icon: string = undefined
-    export let title: string = undefined
+    export let icon: string = ''
+    export let title: string = ''
     export let action: any = undefined
-    export let segment: string = undefined
+    export let segment: string = ''
 
     export let items: any = undefined
 
