@@ -2,7 +2,7 @@
     import { slide } from 'svelte/transition'
     import { appConsole } from 'src/store/console'
 
-    function onKeyDown(e) {
+    function onKeyDown(e: { keyCode: number; }) {
         if (e.keyCode === 27) {
             appConsole.setState()
         }
