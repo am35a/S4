@@ -1,14 +1,16 @@
 <script lang="ts">
+    import Css from '../../laborer/body/ui/css/Css.svelte'
 
 </script>
 
 <main
     {...$$restProps}
-    class="p-2"
+    class="p-2 o-auto"
 >
-    <article class="">
+    <Css />
+    <!--article>
         ...
-    </article>
+    </article-->
 </main>
 
 <style lang="sass">

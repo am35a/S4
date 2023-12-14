@@ -3,7 +3,7 @@
     import { appConsole } from 'src/store/console'
     import device from 'current-device'
 
-    const cssMap = {
+    const cssMap: { [key: string]: any } = {
         'l-d-': [ 'l-d-' ],
         'p-d-': [ 'l-d-', 'p-d-' ],
         'l-t-': [ 'l-d-', 'l-t-' ],

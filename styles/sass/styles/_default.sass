@@ -1,5 +1,4 @@
 :root
-
     // - Sizes
     --size-1: .25em
     --size-2: .5em
@@ -61,6 +60,7 @@
     --s-xxl:  1.25em
     --s-xxxl: 1.5em
 
+[theme="light"]
     // - Colors
     // - - Default colors
     // - - - Separated gray colors
@@ -114,3 +114,64 @@
             --#{$accentColor}-color:   oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue))
             --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
             --#{$accentColor}-color-m: oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue) / var(--alfa))
+
+    --html-bgc: var(--positive-color)
+    --bsc: var(--negative-color-10)
+
+[theme="dark"]
+    // - Colors
+    // - - Default colors
+    // - - - Separated gray colors
+    --positive: 0%
+    --negative: 100%
+
+    // - - - Composite gray colors
+    --positive-color:    oklch(var(--positive) 0 0)
+    --positive-color-90: oklch(var(--positive) 0 0 / .9)
+    --positive-color-80: oklch(var(--positive) 0 0 / .8)
+    --positive-color-70: oklch(var(--positive) 0 0 / .7)
+    --positive-color-60: oklch(var(--positive) 0 0 / .6)
+    --positive-color-50: oklch(var(--positive) 0 0 / .5)
+    --positive-color-40: oklch(var(--positive) 0 0 / .4)
+    --positive-color-30: oklch(var(--positive) 0 0 / .3)
+    --positive-color-20: oklch(var(--positive) 0 0 / .2)
+    --positive-color-10: oklch(var(--positive) 0 0 / .1)
+    --negative-color-10: oklch(var(--negative) 0 0 / .1)
+    --negative-color-20: oklch(var(--negative) 0 0 / .2)
+    --negative-color-30: oklch(var(--negative) 0 0 / .3)
+    --negative-color-40: oklch(var(--negative) 0 0 / .4)
+    --negative-color-50: oklch(var(--negative) 0 0 / .5)
+    --negative-color-60: oklch(var(--negative) 0 0 / .6)
+    --negative-color-70: oklch(var(--negative) 0 0 / .7)
+    --negative-color-80: oklch(var(--negative) 0 0 / .8)
+    --negative-color-90: oklch(var(--negative) 0 0 / .9)
+    --negative-color:    oklch(var(--negative) 0 0)
+
+    // - - - Separated accent colors
+    --lightness: 0.60
+    --lightness-offset: 0.15
+    --chroma: 0.2
+    --alfa: 0.25
+
+    --primary-hue: 255
+    --secondary-hue: 255
+    --info-hue: 295
+    --success-hue: 145
+    --warning-hue: 85
+    --error-hue: 25
+
+    // - - - Composite accent colors
+    @each $accentColor in $accentColors
+        @if $accentColor == secondary
+            --#{$accentColor}-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color:   oklch(var(--lightness) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color-m: oklch(var(--lightness) calc(var(--chroma) * .1) var(--#{$accentColor}-hue) / var(--alfa))
+        @else
+            --#{$accentColor}-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color:   oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
+            --#{$accentColor}-color-m: oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue) / var(--alfa))
+
+    --html-bgc: var(--positive-color)
+    --bsc: var(--positive-color-10)

@@ -40,6 +40,9 @@
   --s-xl: 1em;
   --s-xxl: 1.25em;
   --s-xxxl: 1.5em;
+}
+
+[theme=light] {
   --positive: 100%;
   --negative: 0%;
   --positive-color: oklch(var(--positive) 0 0);
@@ -96,12 +99,76 @@
   --error-color: oklch(var(--lightness) var(--chroma) var(--error-hue));
   --error-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--error-hue));
   --error-color-m: oklch(var(--lightness) var(--chroma) var(--error-hue) / var(--alfa));
+  --html-bgc: var(--positive-color);
+  --bsc: var(--negative-color-10);
+}
+
+[theme=dark] {
+  --positive: 0%;
+  --negative: 100%;
+  --positive-color: oklch(var(--positive) 0 0);
+  --positive-color-90: oklch(var(--positive) 0 0 / .9);
+  --positive-color-80: oklch(var(--positive) 0 0 / .8);
+  --positive-color-70: oklch(var(--positive) 0 0 / .7);
+  --positive-color-60: oklch(var(--positive) 0 0 / .6);
+  --positive-color-50: oklch(var(--positive) 0 0 / .5);
+  --positive-color-40: oklch(var(--positive) 0 0 / .4);
+  --positive-color-30: oklch(var(--positive) 0 0 / .3);
+  --positive-color-20: oklch(var(--positive) 0 0 / .2);
+  --positive-color-10: oklch(var(--positive) 0 0 / .1);
+  --negative-color-10: oklch(var(--negative) 0 0 / .1);
+  --negative-color-20: oklch(var(--negative) 0 0 / .2);
+  --negative-color-30: oklch(var(--negative) 0 0 / .3);
+  --negative-color-40: oklch(var(--negative) 0 0 / .4);
+  --negative-color-50: oklch(var(--negative) 0 0 / .5);
+  --negative-color-60: oklch(var(--negative) 0 0 / .6);
+  --negative-color-70: oklch(var(--negative) 0 0 / .7);
+  --negative-color-80: oklch(var(--negative) 0 0 / .8);
+  --negative-color-90: oklch(var(--negative) 0 0 / .9);
+  --negative-color: oklch(var(--negative) 0 0);
+  --lightness: 0.60;
+  --lightness-offset: 0.15;
+  --chroma: 0.2;
+  --alfa: 0.25;
+  --primary-hue: 255;
+  --secondary-hue: 255;
+  --info-hue: 295;
+  --success-hue: 145;
+  --warning-hue: 85;
+  --error-hue: 25;
+  --primary-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) var(--chroma) var(--primary-hue));
+  --primary-color: oklch(var(--lightness) var(--chroma) var(--primary-hue));
+  --primary-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--primary-hue));
+  --primary-color-m: oklch(var(--lightness) var(--chroma) var(--primary-hue) / var(--alfa));
+  --secondary-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) calc(var(--chroma) * .1) var(--secondary-hue));
+  --secondary-color: oklch(var(--lightness) calc(var(--chroma) * .1) var(--secondary-hue));
+  --secondary-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) calc(var(--chroma) * .1) var(--secondary-hue));
+  --secondary-color-m: oklch(var(--lightness) calc(var(--chroma) * .1) var(--secondary-hue) / var(--alfa));
+  --info-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) var(--chroma) var(--info-hue));
+  --info-color: oklch(var(--lightness) var(--chroma) var(--info-hue));
+  --info-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--info-hue));
+  --info-color-m: oklch(var(--lightness) var(--chroma) var(--info-hue) / var(--alfa));
+  --success-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) var(--chroma) var(--success-hue));
+  --success-color: oklch(var(--lightness) var(--chroma) var(--success-hue));
+  --success-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--success-hue));
+  --success-color-m: oklch(var(--lightness) var(--chroma) var(--success-hue) / var(--alfa));
+  --warning-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) var(--chroma) var(--warning-hue));
+  --warning-color: oklch(var(--lightness) var(--chroma) var(--warning-hue));
+  --warning-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--warning-hue));
+  --warning-color-m: oklch(var(--lightness) var(--chroma) var(--warning-hue) / var(--alfa));
+  --error-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) var(--chroma) var(--error-hue));
+  --error-color: oklch(var(--lightness) var(--chroma) var(--error-hue));
+  --error-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--error-hue));
+  --error-color-m: oklch(var(--lightness) var(--chroma) var(--error-hue) / var(--alfa));
+  --html-bgc: var(--positive-color);
+  --bsc: var(--positive-color-10);
 }
 
 html {
   position: relative;
   height: 100%;
   box-sizing: border-box;
+  background-color: var(--html-bgc);
   -webkit-text-size-adjust: 100%;
   word-break: normal;
   -moz-tab-size: 4;

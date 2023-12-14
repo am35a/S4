@@ -8,7 +8,7 @@ export const appData = writable(
             full: '' as string
         },
         initialScale: 1 as number,
-        theme: 'default' as string,
+        // theme: 'light' as string,
         fontFamily: 'default' as string
     }
 )
@@ -80,7 +80,7 @@ export let user: any = writable(
         email: 's4@mobitoon.ru' as string,
         password: '123456' as string,
         settings: {
-            isDarkTheme: true as boolean,
+            // isDarkTheme: true as boolean,
             initialScale: 1 as number, // 1 as default for scale on screentouch devises
         } as any
     }
