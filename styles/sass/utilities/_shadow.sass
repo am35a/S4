@@ -1,7 +1,7 @@
 $shadowSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
 
 @mixin _shadow($orientation, $type)
-    .#{$orientation}#{$type}s
+    .#{$orientation}#{$type}bs
         @each $value in $shadowSizes
             &-#{$value}
                 box-shadow: 0 var(--s-#{$value}) calc(var(--s-#{$value}) * 2) calc(var(--s-#{$value}) * .5) var(--bsc) !important

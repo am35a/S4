@@ -8,7 +8,7 @@
 </script>
 
 <Main
-    style="margin-left: {withAside}; margin-top: {heightHeader}"
+    style="padding: calc({heightHeader} + var(--s-md)) var(--s-md) var(--s-md) calc({withAside} + var(--s-md))"
 />
 <Aside
     style="width: {withAside}; margin-top: {heightHeader}"

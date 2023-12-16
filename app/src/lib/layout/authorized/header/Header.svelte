@@ -1,8 +1,21 @@
 <script lang="ts">
-    import { appSegment } from 'src/store/store'
+    import { user, appSegment } from 'src/store/store'
 
     import Button from 'component/Button.svelte'
     import Icon from 'component/Icon.svelte'
+
+    function themeChange() {
+        switch ($user.settings.theme) {
+            case 'light':
+                $user.settings.theme = 'dark'
+                break;
+            case 'dark':
+                $user.settings.theme = 'light'
+                break;
+            // default:
+            //     console.log(`Sorry, we are out of ${expr}.`);
+        }
+    }
 </script>
 
 <header
@@ -10,7 +23,7 @@
     class="d-flex g-2 p-2 mb-auto h"
 >
     <div
-        class="d-flex ai-center f p-1 bgc-positive br s-xs"
+        class="d-flex ai-center f p-1 bgc-positive br bs-xs border border-negative-30"
         style="--fg: 1"
     >
         <div
@@ -26,11 +39,16 @@
             {$appSegment}
         </div>
     </div>
-    <div class="d-flex g-1 px-2 bgc-positive br s-xs">
+    <div class="d-flex g-1 px-2 bgc-positive br bs-xs border border-negative-30">
         <Button
             class="btn-ico my-auto"
+            on:click={() => themeChange()}
         >
-            <Icon name="x"/>
+            {#if $user.settings.theme === 'light'}
+                <Icon name="moon"/>
+            {:else}
+                <Icon name="sun"/>
+            {/if}
         </Button>
         <Button
             class="btn-ico my-auto"
@@ -43,6 +61,7 @@
 
 <style lang="sass">
     header
+        position: relative
         grid-column: 1/-1
         grid-row: 1/-1
 </style>

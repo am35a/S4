@@ -7,7 +7,7 @@
     class="d-grid p-2 me-auto h"
 >
     <div
-        class="d-grid p-2 bgc-positive br s-xs ai-start"
+        class="d-grid p-2 bgc-positive br bs-xs ai-start border border-negative-30"
     >
         <button class="btn jc-start px-1" type="reset">
             <span class="ico ico-ghost" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
@@ -18,6 +18,7 @@
 
 <style lang="sass">
     aside
+        position: relative
         grid-column: 1/-1
         grid-row: 1/-1
 </style>

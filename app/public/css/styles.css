@@ -23,7 +23,7 @@
   --fs-h4: 1.5em;
   --fs-h5: 1.25em;
   --fs-h6: 1em;
-  --br: var(--br-sm);
+  --br: var(--br-md);
   --br-xxs: .0625em;
   --br-xs: .125em;
   --br-sm: .25em;
@@ -99,7 +99,9 @@
   --error-color: oklch(var(--lightness) var(--chroma) var(--error-hue));
   --error-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--error-hue));
   --error-color-m: oklch(var(--lightness) var(--chroma) var(--error-hue) / var(--alfa));
-  --html-bgc: var(--positive-color);
+  --html-bg-color: var(--negative-color);
+  --body-bg-color: var(--positive-color-90);
+  --body-color: var(--negative-color-90);
   --bsc: var(--negative-color-10);
 }
 
@@ -126,8 +128,8 @@
   --negative-color-80: oklch(var(--negative) 0 0 / .8);
   --negative-color-90: oklch(var(--negative) 0 0 / .9);
   --negative-color: oklch(var(--negative) 0 0);
-  --lightness: 0.60;
-  --lightness-offset: 0.15;
+  --lightness: 0.55;
+  --lightness-offset: 0.1;
   --chroma: 0.2;
   --alfa: 0.25;
   --primary-hue: 255;
@@ -160,7 +162,9 @@
   --error-color: oklch(var(--lightness) var(--chroma) var(--error-hue));
   --error-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--error-hue));
   --error-color-m: oklch(var(--lightness) var(--chroma) var(--error-hue) / var(--alfa));
-  --html-bgc: var(--positive-color);
+  --html-bg-color: var(--negative-color);
+  --body-bg-color: var(--positive-color-90);
+  --body-color: var(--negative-color-90);
   --bsc: var(--positive-color-10);
 }
 
@@ -168,7 +172,7 @@ html {
   position: relative;
   height: 100%;
   box-sizing: border-box;
-  background-color: var(--html-bgc);
+  background-color: var(--html-bg-color);
   -webkit-text-size-adjust: 100%;
   word-break: normal;
   -moz-tab-size: 4;

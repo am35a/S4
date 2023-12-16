@@ -5,7 +5,7 @@
 
 <main
     {...$$restProps}
-    class="p-2 o-auto"
+    class="o-auto"
 >
     <Css />
     <!--article>
@@ -15,6 +15,7 @@
 
 <style lang="sass">
     main
+        position: relative
         grid-column: 1/-1
         grid-row: 1/-1
 </style>

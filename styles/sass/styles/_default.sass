@@ -41,7 +41,7 @@
 
     // - Border
     // - - Radius
-    --br:      var(--br-sm)
+    --br:      var(--br-md)
     --br-xxs:  .0625em
     --br-xs:   .125em
     --br-sm:   .25em
@@ -115,7 +115,9 @@
             --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
             --#{$accentColor}-color-m: oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue) / var(--alfa))
 
-    --html-bgc: var(--positive-color)
+    --html-bg-color: var(--negative-color)
+    --body-bg-color: var(--positive-color-90)
+    --body-color: var(--negative-color-90)
     --bsc: var(--negative-color-10)
 
 [theme="dark"]
@@ -148,8 +150,8 @@
     --negative-color:    oklch(var(--negative) 0 0)
 
     // - - - Separated accent colors
-    --lightness: 0.60
-    --lightness-offset: 0.15
+    --lightness: 0.55
+    --lightness-offset: 0.1
     --chroma: 0.2
     --alfa: 0.25
 
@@ -173,5 +175,7 @@
             --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
             --#{$accentColor}-color-m: oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue) / var(--alfa))
 
-    --html-bgc: var(--positive-color)
+    --html-bg-color: var(--negative-color)
+    --body-bg-color: var(--positive-color-90)
+    --body-color: var(--negative-color-90)
     --bsc: var(--positive-color-10)
