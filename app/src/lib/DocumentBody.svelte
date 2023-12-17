@@ -21,5 +21,5 @@
         display: grid
         background-color: var(--body-bg-color)
         color: var(--body-color)
-        overflow: hidden
+        // overflow: hidden
 </style>

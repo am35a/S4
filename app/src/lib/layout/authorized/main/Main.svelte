@@ -5,8 +5,8 @@
 
 <main
     {...$$restProps}
-    class="o-auto"
 >
+    <!-- class="o-auto" -->
     <Css />
     <!--article>
         ...
