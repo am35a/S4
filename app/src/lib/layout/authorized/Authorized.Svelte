@@ -4,10 +4,6 @@
     import Footer from './footer/Footer.svelte'
     import Main from './main/Main.svelte'
 
-    let heightHeader: any = '4rem',
-        withAside: any = '16rem'
-
-
     let headerObj = {
             'position': 'sticky' as string,
             'top': '0' as string,
@@ -26,7 +22,7 @@
         footerObj = {
         },
         mainObj = {
-            'padding': `calc(${heightHeader} + var(--s-md)) var(--s-md) var(--s-md) calc(${navObj['width']} + var(--s-md))` as string,
+            'padding': `calc(${headerObj['height']} + var(--s-md)) var(--s-md) var(--s-md) calc(${navObj['width']} + var(--s-md))` as string,
         }
 
 
