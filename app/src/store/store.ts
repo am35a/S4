@@ -80,7 +80,7 @@ export let user: any = writable(
         email: 's4@mobitoon.ru' as string,
         password: '123456' as string,
         settings: {
-            theme: 'light' as string,
+            theme: 'light' as string, // light or dark
             initialScale: 1 as number, // 1 as default for scale on screentouch devises
         } as any
     }

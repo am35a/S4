@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Segments from './segmentslist/Segments.svelte'
+    import Segments from './segments/Segments.svelte'
 </script>
 
 <nav

@@ -1,4 +1,9 @@
 <script lang="ts">
+
+    // https://developer.mozilla.org/ru/docs/Web/CSS/:out-of-range
+    // https://developer.mozilla.org/ru/docs/Web/CSS/:read-only
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid
+
     export let value: string = ''
 
     if($$restProps.type)
