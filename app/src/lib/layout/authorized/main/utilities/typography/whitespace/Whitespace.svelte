@@ -47,7 +47,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
         <svelte:fragment slot="body">
             <Precode class="br-top-0">
                 {
-`<p class="ws-${whiteSpace}"">
+`<p class="ws-${whiteSpace}">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

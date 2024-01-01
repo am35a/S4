@@ -28,10 +28,9 @@
 
 </script>
 
-{#if items}
-    <DropDown class="drpdwn-hover">
-        <Button 
-            slot="btn"
+<!-- <div class="drpdwn-hover"> -->
+    {#if items}
+        <Button
             class="{active} jc-start px-1"
             data-position="right bottom"
             on:click={onTitleClick}
@@ -42,35 +41,37 @@
             {/if}
             {title}
         </Button>
-        <div
-            slot="content"
-            class="d-grid g-2 w p-2 bgc-positive br border border-negative-30 bs-md"
-            style="--w: 16rem"
-        >
-            {#each items as item}
-                <svelte:self
-                    {...item}
-                    active={$appSegment === item.segment}
-                    segment={item.segment}
-                />
-            {/each}
+        <div class="drp-content h-100">
+            <div
+                class="d-grid g-2 w p-2 bgc-positive br border border-negative-30 bs-sm h-100 oy-auto ac-start"
+                style="--w: 16rem"
+            >
+                {#each items as item}
+                    <svelte:self
+                        {...item}
+                        active={$appSegment === item.segment}
+                        segment={item.segment}
+                    />
+                {/each}
+            </div>
         </div>
-    </DropDown>
-{:else}
-    <Button 
-        slot="btn"
-        class="{active} jc-start px-1"
-        data-position="right bottom"
-        on:click={onTitleClick}
-        disabled={active}
-    >
-        {#if icon}
+    {:else}
+        <Button
+            class="{active} jc-start px-1"
+            on:click={onTitleClick}
+            disabled={active}
+            >
+            {#if icon}
             <Icon class="fs-xl" name={icon}/>
-        {/if}
-        {title}
-    </Button>
-{/if}
+            {/if}
+            {title}
+        </Button>
+    {/if}
+<!-- </div> -->
 
-<style lang="sass">
-    
+<style lang="sass" global>
+    .drp-content
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display: none
 </style>

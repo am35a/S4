@@ -3,6 +3,7 @@
     import SectionFont from './font/Font.svelte'
     import SectionLineHeight from './lineheight/Lineheight.svelte'
     import SectionWhiteSpace from './whitespace/Whitespace.svelte'
+    import SectionTransform from './transform/Transform.svelte'
 </script>
 
 <article>
@@ -11,4 +12,5 @@
     <SectionFont />
     <SectionLineHeight />
     <SectionWhiteSpace />
+    <SectionTransform />
 </article>
