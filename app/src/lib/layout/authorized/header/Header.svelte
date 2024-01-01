@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { router } from 'svelte-micro'
     import { user, appSegment } from 'src/store/store'
 
     import Button from 'component/Button.svelte'
@@ -30,9 +31,24 @@
                 class="d-flex ai-center f g-2 h-100"
                 style="--fg: 1"
             >
-                <img class="w-auto h-100" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
-                <div class="fs-lg fw-600">
-                    S4 UI library
+                <img
+                    on:click={() => router.push($appSegment = '/home')}
+                    class="w-auto h-100"
+                    src="/images/logo.svg"
+                    alt="S4 - The lightweight Svelte UI Kit"
+                    role={'button'}
+                />
+                <div>
+                    <Button
+                        class="btn-outline fs-xs fw-500"
+                    >
+                        home
+                    </Button>
+                    <Button
+                        class="btn-outline fs-xs fw-500"
+                    >
+                        utilities
+                    </Button>                    
                 </div>
             </div>
             <div class="px-2">
