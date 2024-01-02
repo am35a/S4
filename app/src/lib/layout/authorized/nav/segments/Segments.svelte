@@ -12,7 +12,7 @@
 >
     <div class="drpdwn-hover d-grid g-2">
         {#each $asideItems as item (item.id)}
-            <Segment {...item}/>    
+            <Segment {...item}/>
         {/each}
     </div>
 </div>
