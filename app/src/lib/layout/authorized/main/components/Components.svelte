@@ -4,6 +4,7 @@
     import ArticleAccordion from './accordion/Accordion.svelte'
     import ArticleAlerts from './alerts/Alerts.svelte'
     import ArticleButtons from './buttons/Buttons.svelte'
+    import ArticleDropdown from './dropdown/Dropdown.svelte'
     import ArticleForms from './forms/Forms.svelte'
     import ArticleDetails from './details/Details.svelte'
     import ArticleIcons from './icons/Icons.svelte'
@@ -19,6 +20,9 @@
 </Route>
 <Route path="/buttons">
     <svelte:component this={ArticleButtons}/>
+</Route>
+<Route path="/dropdown">
+    <svelte:component this={ArticleDropdown}/>
 </Route>
 <Route path="/details">
     <svelte:component this={ArticleDetails}/>

@@ -49,6 +49,11 @@
                         "segment": "/components/buttons"
                     },
                     {
+                        "id": 402,
+                        "title": "Dropdown",
+                        "segment": "/components/dropdown"
+                    },
+                    {
                         "id": 403,
                         "title": "Forms",
                         "segment": "/components/forms"

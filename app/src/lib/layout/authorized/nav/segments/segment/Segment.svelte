@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { onMount } from 'svelte'
+    // import { onMount } from 'svelte'
 
     import Icon from 'component/Icon.svelte'
     import Button from 'component/Button.svelte'
