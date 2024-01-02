@@ -54,7 +54,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Variants</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
@@ -68,7 +68,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Colors</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
@@ -82,7 +82,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Directions</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(groupObj) as [key, value]}
                     <button
                         on:click={() => groupVariant = key}

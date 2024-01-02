@@ -46,7 +46,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Types</b>
-            <div class="d-flex g-3">
+            <div class="d-flex fw-wrap g-3">
                 {#each Object.entries(inputsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => inputType = key}
