@@ -82,14 +82,14 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
             &-#{$item}
                 resize: #{$item} !important
 
-    .#{$orientation}#{$type}aspect
+    .#{$orientation}#{$type}ar
         @each $v, $h in $defaultAspectRatio
             &-#{$v}#{'\\:'}#{$h}
                 aspect-ratio: #{$v + '/' + $h}
         &-auto
             aspect-ratio: auto
     
-.border-box
+.bs-border
     box-sizing: border-box !important
-.content-box
+.bs-content
     box-sizing: content-box !important

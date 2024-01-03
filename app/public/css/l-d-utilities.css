@@ -1256,11 +1256,11 @@
 }
 
 /*  sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes */
-.border-box {
+.bs-border {
   box-sizing: border-box !important;
 }
 
-.content-box {
+.bs-content {
   box-sizing: content-box !important;
 }
 
@@ -1445,40 +1445,40 @@
   resize: vertical !important;
 }
 
-.aspect-1\:1 {
+.ar-1\:1 {
   aspect-ratio: 1/1;
 }
-.aspect-4\:3 {
+.ar-4\:3 {
   aspect-ratio: 4/3;
 }
-.aspect-3\:4 {
+.ar-3\:4 {
   aspect-ratio: 3/4;
 }
-.aspect-16\:9 {
+.ar-16\:9 {
   aspect-ratio: 16/9;
 }
-.aspect-9\:16 {
+.ar-9\:16 {
   aspect-ratio: 9/16;
 }
-.aspect-16\:10 {
+.ar-16\:10 {
   aspect-ratio: 16/10;
 }
-.aspect-10\:16 {
+.ar-10\:16 {
   aspect-ratio: 10/16;
 }
-.aspect-21\:9 {
+.ar-21\:9 {
   aspect-ratio: 21/9;
 }
-.aspect-9\:21 {
+.ar-9\:21 {
   aspect-ratio: 9/21;
 }
-.aspect-32\:9 {
+.ar-32\:9 {
   aspect-ratio: 32/9;
 }
-.aspect-9\:32 {
+.ar-9\:32 {
   aspect-ratio: 9/32;
 }
-.aspect-auto {
+.ar-auto {
   aspect-ratio: auto;
 }
 

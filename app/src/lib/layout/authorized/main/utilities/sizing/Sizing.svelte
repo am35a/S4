@@ -2,6 +2,7 @@
     import SectionWidth from './width/Width.svelte'
     import SectionHeight from './height/Height.svelte'
     import SectionResize from './resize/Resize.svelte'
+    import SectionAspectratio from './aspectratio/Aspectratio.svelte'
 </script>
 
 <article>
@@ -9,4 +10,5 @@
     <SectionWidth />
     <SectionHeight />
     <SectionResize />
+    <SectionAspectratio />
 </article>
