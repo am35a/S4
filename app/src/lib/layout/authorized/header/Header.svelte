@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { router, getPathSegments, path } from 'svelte-micro'
-    import { user, appSegment } from 'src/store/store'
+    import { router, path } from 'svelte-micro'
+    import { user } from 'src/store/store'
 
     import Button from 'component/Button.svelte'
     import Icon from 'component/Icon.svelte'
@@ -45,7 +45,7 @@
                     alt="S4 - The lightweight Svelte UI Kit"
                     role={'button'}
                 />
-                <div class="d-inline-flex g-1">
+                <div class="d-inline-flex g-1 ai-center">
                     {#each $path.slice(1).split('/') as segment}
                         {#if $path !== '/home'}
                             <Button

@@ -6,11 +6,11 @@
 
     export let value: string = ''
 
-    if($$restProps.type)
-        console.log($$restProps.type)
+    // if($$restProps.type)
+    //     console.log($$restProps.type)
 
     $: {
-        if($$restProps.type == 'number')
+        if($$restProps.type === 'number')
             $$restProps.pattern = '^(0|[1-9][0-9]*)$'
     }
 </script>
@@ -19,7 +19,7 @@
     bind:value
     class:frm = {true}
     {...$$restProps}
-    placeholder = {$$restProps.type}
+    placeholder = {$$restProps.placeholder ? $$restProps.placeholder : $$restProps.type}
 />
 
 <style lang="sass" global>

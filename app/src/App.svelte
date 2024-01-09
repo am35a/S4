@@ -4,7 +4,8 @@
     import {
         appData,
         asideExpand,
-        asideItems
+        asideItems,
+        user
     } from 'src/store/store'
 
     import DocWindow from './lib/DocumentWindow.svelte'
@@ -63,8 +64,8 @@
         
         // console.log(getData('/_api/app.json'))
 
-        // router.replace($path === '/' && $user.isAuthorized ? '/home' : '/login')
-        router.replace($path === '/' ? '/home' : '')
+        router.replace($path === '/' && $user.isAuthorized ? '/home' : '/signin')
+        // router.replace($path === '/' ? '/home' : '')
 	})
 </script>
 

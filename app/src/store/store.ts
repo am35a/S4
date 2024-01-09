@@ -76,8 +76,8 @@ export let app: any = writable(
 
 export let user: any = writable(
     {
-        isAuthorized: true as boolean, // false as default
-        email: 's4@mobitoon.ru' as string,
+        isAuthorized: false as boolean, // false as default
+        email: 'guest@mobitoon.ru' as string,
         password: '123456' as string,
         settings: {
             theme: 'light' as string, // light or dark

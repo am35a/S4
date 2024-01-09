@@ -38,47 +38,93 @@
     .drpdwn-focus
         position: relative
         display: inline-grid
+        > .btn
+            position: relative
         > .drp-content
             position: absolute
             width: max-content
             // padding: 0
-            transition: all .15s linear .15s
+            transition: opacity .15s linear .15s, visibility .15s linear .15s
 
+        > .btn[data-position]
+            &::after
+                content: ''
+                position: absolute
+                border-radius: var(--size-1)
+                background-color: currentColor
+            
         > .btn[data-position^="left"]
+            &::after
+                width: calc(var(--size-1) / 2)
+                left: calc(var(--size-1) / 1.25)
+                top: var(--size-2)
+                bottom: var(--size-2)
             + .drp-content
                 right: 100%
                 padding-right: var(--size-1)
             &[data-position$="top"] + .drp-content
                 bottom: 0%
+            &[data-position$="center"] + .drp-content
+                top: 50%
+                transform: translateY(-50%)
             &[data-position$="bottom"] + .drp-content
                 top: 0%
 
         > .btn[data-position^="top"]
+            &::after
+                height: calc(var(--size-1) / 2)
+                left: var(--size-2)
+                top: calc(var(--size-1) / 1.25)
+                right: var(--size-2)
             + .drp-content
                 bottom: 100%
                 padding-bottom: var(--size-1)
-            &[data-position$="left"] > .drp-content
+            &[data-position$="left"] + .drp-content
                 right: 0%
-            &[data-position$="right"] > .drp-content
+            &[data-position$="center"] + .drp-content
+                left: 50%
+                transform: translateX(-50%)
+            &[data-position$="right"] + .drp-content
                 left: 0%
 
         > .btn[data-position^="right"]
+            &::after
+                width: calc(var(--size-1) / 2)
+                top: var(--size-2)
+                right: calc(var(--size-1) / 1.25)
+                bottom: var(--size-2)
             + .drp-content
                 left: 100%
                 padding-left: var(--size-1)
             &[data-position$="top"] + .drp-content
                 bottom: 0%
+            &[data-position$="center"] + .drp-content
+                top: 50%
+                transform: translateY(-50%)
             &[data-position$="bottom"] + .drp-content
                 top: 0%
 
         > .btn[data-position^="bottom"]
+            &::after
+                height: calc(var(--size-1) / 2)
+                left: var(--size-2)
+                right: var(--size-2)
+                bottom: calc(var(--size-1) / 1.25)
             + .drp-content
                 top: 100%
                 padding-top: var(--size-1)
-            &[data-position$="left"] > .drp-content
+            &[data-position$="left"] + .drp-content
                 right: 0%
-            &[data-position$="right"] > .drp-content
+            &[data-position$="center"] + .drp-content
+                left: 50%
+                transform: translateX(-50%)
+            &[data-position$="right"] + .drp-content
                 left: 0%
+
+        > .btn[data-position="center center"] + .drp-content
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
 
         > .drp-content
             visibility: hidden
@@ -86,11 +132,13 @@
 
     .drpdwn-hover
         > .btn:hover + .drp-content,
+        // > .btn.open + .drp-content,
         > .drp-content:hover,
         > .drp-content:focus-within
             visibility: visible
             opacity: 1
             z-index: 1
+
             
     .drpdwn-focus
         > .btn:focus-within + .drp-content,
