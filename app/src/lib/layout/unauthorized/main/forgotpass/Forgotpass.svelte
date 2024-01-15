@@ -47,8 +47,8 @@
 </section>
 
 <style lang="sass">
-    section
-        position: relative
-        grid-column: 1/-1
-        grid-row: 1/-1
+    // section
+    //     position: relative
+    //     grid-column: 1/-1
+    //     grid-row: 1/-1
 </style>

@@ -18,69 +18,84 @@
 
 </script>
 
+<!-- https://dribbble.com/shots/16029811/attachments/7872308?mode=media -->
+
 <section
-    class="d-grid g-2 p-2 bgc-positive br bs-xs border border-negative-30 m-auto w"
+    class="d-grid g-4 p-4 bgc-positive br bs-xs border border-negative-30 m-auto w"
     style="--w: 18em"
 >
-    <div class="d-grid g-1">
-        <label
-            class="px-1"
-            for="bindLoginEmailOrName"
-        >
-            Email
-            <span class="c-error">*</span>
+    <div class="d-grid">
+        <h1 class="fs-xxl">Sign In</h1>
+        <small class="c-negative-50">
+            to manage your account
+        </small>
+    </div>
+    <div class="d-grid g-2">
+        <div class="d-grid g-1">
+            <label
+                class="fs-sm fw-600 px-1"
+                for="bindLoginEmailOrName"
+            >
+                Email
+                <span class="c-error">*</span>
+            </label>
+            <Input
+                id="bindLoginEmailOrName"
+                bind:value={signinEmail}
+                placeholder={'email@domain.com'}
+                type={'email'}
+            />
+        </div>
+        <div class="d-grid g-1">
+            <label
+                class="fs-sm fw-600 px-1"
+                for="bindLoginPassword"
+            >
+                Password
+                <span class="c-error">*</span>
+            </label>
+            <Input
+                id="bindLoginPassword"
+                bind:value={signinPassword}
+                type={'password'}
+            />
+        </div>
+        <!-- svelte-ignore a11y-label-has-associated-control -->
+        <label class="d-inline-grid g-1 gaf-column jc-start ai-center lh-1">
+            <Input type={'checkbox'}/> Remember me
         </label>
-        <Input
-            id="bindLoginEmailOrName"
-            class=""
-            bind:value={signinEmail}
-            placeholder={'email@domain.com'}
-            type={'text'}
-        />
     </div>
-    <div class="d-grid g-1">
-        <label
-            class="px-1"
-            for="bindLoginPassword"
-        >
-            Password
-            <span class="c-error">*</span>
-        </label>
-        <Input
-            class=""
-            bind:value={signinPassword}
-            type={'password'}
-        />
-    </div>
-    <div class="d-grid g-2 cols-2">
+    <div class="d-grid g-2">
+        <div class="d-grid g-2 cols-2">
+            <Button
+                class="fs-sm"
+                on:click={() => router.push('/forgotpass')}
+            >
+                Forgotten pass?
+                <!-- <Icon name="refresh" /> -->
+            </Button>
+            <Button
+                class="fs-sm"
+                on:click={() => router.push('/signup')}
+            >
+                Sign Up
+                <!-- <Icon name="user-plus" /> -->
+            </Button>
+        </div>
         <Button
-            class="fs-sm"
-            on:click={() => router.push('/forgotpass')}
+            class="btn-alt"
+            on:click={signIn}
         >
-            Forgotten pass?
-            <!-- <Icon name="refresh" /> -->
-        </Button>
-        <Button
-            class="fs-sm"
-            on:click={() => router.push('/signup')}
-        >
-            Sign Up
-            <!-- <Icon name="user-plus" /> -->
+            Sign In
+            <Icon name="sign-in" />
         </Button>
     </div>
-    <Button
-        class="btn-alt"
-        on:click={signIn}
-    >
-        Sign In
-        <Icon name="sign-in" />
-    </Button>
 
 </section>
 
 <style lang="sass">
-    section
-        position: relative
-        grid-column: 1/-1
-        grid-row: 1/-1
+    // section
+    //     position: relative
+    //     grid-column: 1/-1
+    //     grid-row: 1/-1
 </style>
