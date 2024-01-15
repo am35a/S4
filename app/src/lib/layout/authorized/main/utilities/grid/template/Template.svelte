@@ -1,4 +1,7 @@
 <script lang="ts">
+    import Columns from './columns/Columns.svelte'
+    import Rows from './rows/Rows.svelte'
+
     import Input from 'component/Input.svelte'
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
@@ -19,9 +22,10 @@
 
 <section>
     <h3 id="template">Template</h3>
-    <p>
-        ...
-    </p>
+    <Columns />
+    <Rows />
+
+    <h4 id="template">Template playground</h4>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <!-- <input class="h-100" type="range" name="containerHeight" orient="vertical" min="0" max="100" step="1"> -->
 
