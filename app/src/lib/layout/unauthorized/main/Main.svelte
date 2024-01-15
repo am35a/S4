@@ -9,6 +9,15 @@
 <main
     {...$$restProps}
 >
+    <!-- <div>
+        <img
+            class=" btn p-0"
+            src="/images/logo.svg"
+            alt="S4 - The lightweight Svelte UI Kit"
+        />
+
+    </div> -->
+
     <Route>
         <Route path="/signin">
             <svelte:component this={Signin}/>

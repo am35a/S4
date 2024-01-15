@@ -184,24 +184,29 @@
 .p\:d-inline-grid {
   display: inline-grid !important;
 }
+.p\:d-contents {
+  display: contents !important;
+}
 .p\:d-none {
   display: none !important;
 }
 
-.grid-flow-col {
+.gaf-column {
   grid-auto-flow: column;
 }
 
-.grid-flow-row {
+.gaf-row {
   grid-auto-flow: row;
 }
 
-.cols-auto {
-  grid-auto-columns: var(--cols-auto, auto);
+.cols-auto,
+.gac-auto {
+  grid-auto-columns: var(--gac, auto);
 }
 
-.rows-auto {
-  grid-auto-rows: var(--rows-auto, auto);
+.rows-auto,
+.gar-auto {
+  grid-auto-rows: var(--gar, auto);
 }
 
 .p\:cols {

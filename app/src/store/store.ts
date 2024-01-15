@@ -76,11 +76,11 @@ export let app: any = writable(
 
 export let user: any = writable(
     {
-        isAuthorized: false as boolean, // false as default
+        isAuthorized: true as boolean, // false as default
         email: 'guest@mobitoon.ru' as string,
         password: '123456' as string,
         settings: {
-            theme: 'light' as string, // light or dark
+            theme: 'dark' as string, // light or dark
             initialScale: 1 as number, // 1 as default for scale on screentouch devises
         } as any
     }

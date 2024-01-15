@@ -40,12 +40,14 @@
             &-end-#{$i}
                 grid-row-end: $i
 
-.grid-flow-col
+.gaf-column
     grid-auto-flow: column
-.grid-flow-row
+.gaf-row
     grid-auto-flow: row
 
-.cols-auto
-    grid-auto-columns: var(--cols-auto, auto)
-.rows-auto
-    grid-auto-rows: var(--rows-auto, auto)
+.cols-auto,
+.gac-auto
+    grid-auto-columns: var(--gac, auto)
+.rows-auto,
+.gar-auto
+    grid-auto-rows: var(--gar, auto)

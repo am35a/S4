@@ -57,7 +57,7 @@
         </div>
         <div class="d-grid g-3 ji-center p-4 br-lg f bgc-negative" style="--fb: 100%;">
             <div class="ta-center fw-600 c-positive">positive</div>
-            <div class="d-grid grid-flow-col w-100">
+            <div class="d-grid gaf-column w-100">
                 <div class="bgc-positive-10 c-positive-90 py-4 color-negative ta-center">10</div>
                 <div class="bgc-positive-20 c-positive-80 py-4 color-negative ta-center">20</div>
                 <div class="bgc-positive-30 c-positive-70 py-4 color-negative ta-center">30</div>
@@ -72,7 +72,7 @@
         </div>
         <div class="d-grid g-3 ji-center p-4 br-lg f bgc-positive" style="--fb: 100%;">
             <div class="ta-center fw-600">negative</div>
-            <div class="d-grid grid-flow-col w-100">
+            <div class="d-grid gaf-column w-100">
                 <div class="bgc-negative-10 c-negative-90 py-4 color-positive ta-center">10</div>
                 <div class="bgc-negative-20 c-negative-80 py-4 color-positive ta-center">20</div>
                 <div class="bgc-negative-30 c-negative-70 py-4 color-positive ta-center">30</div>
