@@ -20,7 +20,7 @@
 
 <section>
     <div class="h2" aria-level={2} role="heading">Icons</div>
-    <div class="d-grid cols-2 p:cols-1">
+    <div class="d-grid gtc-2 p:gtc-1">
         <p>
             Lightweight <Icon name="ghost"/> responsive vector icons with cache available.
             <br>

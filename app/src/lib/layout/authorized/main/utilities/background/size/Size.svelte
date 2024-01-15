@@ -8,7 +8,7 @@
     <p>
         Add the <b>bgr-cover</b> or <b>bgs-contain</b> classes to container to work with background-size.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 cols-2 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 gtc-2 bgc-positive br">
         <div class="bgi bgc-negative-10 bgs-cover p-8" style="--bgi: url(http://placekitten.com/240/240)"></div>
         <div class="bgi bgc-negative-10 bgs-contain p-8" style="--bgi: url(http://placekitten.com/240/240)"></div>
     </div>

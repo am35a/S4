@@ -22,7 +22,7 @@
     <div class="d-grid g-1">
         Sign up
     </div>
-    <div class="d-grid g-2 cols-2">
+    <div class="d-grid g-2 gtc-2">
         <Button
             class="fs-sm"
             on:click={() => router.push('/signin')}

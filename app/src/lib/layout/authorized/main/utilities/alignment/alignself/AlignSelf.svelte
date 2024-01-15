@@ -4,7 +4,7 @@
     import Button from 'component/Button.svelte'
 
     let containerTypeObj = {
-        grid: 'd-grid cols-2',
+        grid: 'd-grid gtc-2',
         flex: 'd-flex'
     }
     let containerType:string = containerTypeObj.grid

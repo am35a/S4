@@ -22,7 +22,7 @@
     <p>
         ...
     </p>
-    <div class="d-grid cols-2 g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <!-- <input class="h-100" type="range" name="containerHeight" orient="vertical" min="0" max="100" step="1"> -->
 
         <div></div>
@@ -42,11 +42,11 @@
                 min={1} max={12} step={1}
                 bind:value={templateObj.rows}
                 type="range"
-                orient="vertical"
             />
+            <!-- orient="vertical" -->
         </div>
         <div>
-            <div class="d-grid cols-{templateObj.columns} g-4 bgc-negative-10 p-4">
+            <div class="d-grid gtc-{templateObj.columns} g-4 bgc-negative-10 p-4">
                 {#each Array(templateObj.items) as _, i}
                     <div class="bgc-negative-10 px-2 py-1">{i + 1}</div>
                 {/each}

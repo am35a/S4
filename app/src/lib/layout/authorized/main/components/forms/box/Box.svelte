@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br">
-            <div class="d-grid cols-2 g-3">
+            <div class="d-grid gtc-2 g-3">
                 <b class="js-end as-center">Default</b>
                 <div>
                     <Input class="{inputClass}" name="boxes" type={inputType}/>

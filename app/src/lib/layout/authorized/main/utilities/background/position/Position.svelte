@@ -10,7 +10,7 @@
     <p>
         Add the <b>bgp-...</b> classes to container to work with background-position.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 cols-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 gtc-3 bgc-positive br">
         {#each bgPositionsArr as position }
             <div class="bgi bgc-negative-10 bgp-{position} p-8" style="--bgi: url(http://placekitten.com/32/32)"></div>
         {/each}

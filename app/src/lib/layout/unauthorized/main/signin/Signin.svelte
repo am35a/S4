@@ -66,7 +66,7 @@
         </label>
     </div>
     <div class="d-grid g-2">
-        <div class="d-grid g-2 cols-2">
+        <div class="d-grid g-2 gtc-2">
             <Button
                 class="fs-sm"
                 on:click={() => router.push('/forgotpass')}

@@ -9,7 +9,7 @@
         library is use to define devices and get other data from device, which install the
         breakpoints dependencies.
     </p>
-    <div class="d-inline-grid cols-2 g-2">
+    <div class="d-inline-grid gtc-2 g-2">
         <div class="ta-end fw-600">Device type:</div>
         <div>'mobile', 'tablet', 'desktop', or 'unknown'</div>
         <div class="ta-end fw-600">Device orientation:</div>

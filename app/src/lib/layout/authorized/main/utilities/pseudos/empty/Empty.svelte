@@ -26,7 +26,7 @@
                 {defaultEmptyContent ? 'remove' : 'add'} content
             </Button>
         </div>
-        <div class="d-grid g-2 cols-2">
+        <div class="d-grid g-2 gtc-2">
             <div class="bgc-negative-10 p-4 br {defaultEmptyClass ? 'empty-none' : ''}">{defaultEmptyContent ? 'content' : ''}</div>
             <div class="bgc-negative-10 p-4 br {defaultEmptyClass ? 'empty-none' : ''}"></div>
         </div>

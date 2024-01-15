@@ -32,7 +32,7 @@
                 >{key}</Button>
             {/each}
         </div>
-        <div class="d-grid cols-4 ai-start g-2">
+        <div class="d-grid gtc-4 ai-start g-2">
             {#each Array(8) as _, i}
                 <div class="bgc-negative-10 p{paddingProperty}{i + 1}">
                     <div class="bgc-negative-10 px-2 py-1">p{paddingProperty}{i + 1}</div>

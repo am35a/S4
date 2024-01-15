@@ -751,84 +751,84 @@
   grid-auto-rows: var(--gar, auto);
 }
 
-.cols {
-  grid-template-columns: var(--cols-tl, unset);
+.gtc {
+  grid-template-columns: var(--gtc, unset) !important;
 }
-.cols-1 {
-  grid-template-columns: repeat(1, 1fr);
+.gtc-1 {
+  grid-template-columns: repeat(1, 1fr) !important;
 }
-.cols-2 {
-  grid-template-columns: repeat(2, 1fr);
+.gtc-2 {
+  grid-template-columns: repeat(2, 1fr) !important;
 }
-.cols-3 {
-  grid-template-columns: repeat(3, 1fr);
+.gtc-3 {
+  grid-template-columns: repeat(3, 1fr) !important;
 }
-.cols-4 {
-  grid-template-columns: repeat(4, 1fr);
+.gtc-4 {
+  grid-template-columns: repeat(4, 1fr) !important;
 }
-.cols-5 {
-  grid-template-columns: repeat(5, 1fr);
+.gtc-5 {
+  grid-template-columns: repeat(5, 1fr) !important;
 }
-.cols-6 {
-  grid-template-columns: repeat(6, 1fr);
+.gtc-6 {
+  grid-template-columns: repeat(6, 1fr) !important;
 }
-.cols-7 {
-  grid-template-columns: repeat(7, 1fr);
+.gtc-7 {
+  grid-template-columns: repeat(7, 1fr) !important;
 }
-.cols-8 {
-  grid-template-columns: repeat(8, 1fr);
+.gtc-8 {
+  grid-template-columns: repeat(8, 1fr) !important;
 }
-.cols-9 {
-  grid-template-columns: repeat(9, 1fr);
+.gtc-9 {
+  grid-template-columns: repeat(9, 1fr) !important;
 }
-.cols-10 {
-  grid-template-columns: repeat(10, 1fr);
+.gtc-10 {
+  grid-template-columns: repeat(10, 1fr) !important;
 }
-.cols-11 {
-  grid-template-columns: repeat(11, 1fr);
+.gtc-11 {
+  grid-template-columns: repeat(11, 1fr) !important;
 }
-.cols-12 {
-  grid-template-columns: repeat(12, 1fr);
+.gtc-12 {
+  grid-template-columns: repeat(12, 1fr) !important;
 }
 
-.rows {
-  grid-template-rows: var(--rows-tl, unset);
+.gtr {
+  grid-template-rows: var(--gtr, unset) !important;
 }
-.rows-1 {
-  grid-template-rows: repeat(1, 1fr);
+.gtr-1 {
+  grid-template-rows: repeat(1, 1fr) !important;
 }
-.rows-2 {
-  grid-template-rows: repeat(2, 1fr);
+.gtr-2 {
+  grid-template-rows: repeat(2, 1fr) !important;
 }
-.rows-3 {
-  grid-template-rows: repeat(3, 1fr);
+.gtr-3 {
+  grid-template-rows: repeat(3, 1fr) !important;
 }
-.rows-4 {
-  grid-template-rows: repeat(4, 1fr);
+.gtr-4 {
+  grid-template-rows: repeat(4, 1fr) !important;
 }
-.rows-5 {
-  grid-template-rows: repeat(5, 1fr);
+.gtr-5 {
+  grid-template-rows: repeat(5, 1fr) !important;
 }
-.rows-6 {
-  grid-template-rows: repeat(6, 1fr);
+.gtr-6 {
+  grid-template-rows: repeat(6, 1fr) !important;
 }
-.rows-7 {
-  grid-template-rows: repeat(7, 1fr);
+.gtr-7 {
+  grid-template-rows: repeat(7, 1fr) !important;
 }
-.rows-8 {
-  grid-template-rows: repeat(8, 1fr);
+.gtr-8 {
+  grid-template-rows: repeat(8, 1fr) !important;
 }
-.rows-9 {
-  grid-template-rows: repeat(9, 1fr);
+.gtr-9 {
+  grid-template-rows: repeat(9, 1fr) !important;
 }
-.rows-10 {
-  grid-template-rows: repeat(10, 1fr);
+.gtr-10 {
+  grid-template-rows: repeat(10, 1fr) !important;
 }
-.rows-11 {
-  grid-template-rows: repeat(11, 1fr);
+.gtr-11 {
+  grid-template-rows: repeat(11, 1fr) !important;
 }
-.rows-12 {
-  grid-template-rows: repeat(12, 1fr);
+.gtr-12 {
+  grid-template-rows: repeat(12, 1fr) !important;
 }
 
 .col-span-1 {

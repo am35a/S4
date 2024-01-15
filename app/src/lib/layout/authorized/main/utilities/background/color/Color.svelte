@@ -30,7 +30,7 @@
                 >{key}</Button>
             {/each}
         </div>
-        <div class="d-grid g-3 cols-2">
+        <div class="d-grid g-3 gtc-2">
             {#each accentColorsArr as item }
                 <div class="bgc-{item}{accentExtraColor} p-4 c-positive">
                     <!-- {item} {Object.keys(accentExtraColorsObj).find(key => accentExtraColorsObj[key] === accentExtraColor)} color -->
@@ -52,7 +52,7 @@
                 default extra colors {defaultExtraColorsInterval ? 'hide' : 'show'}
             </Button>
         </div>
-        <div class="d-grid g-3 cols-2">
+        <div class="d-grid g-3 gtc-2">
             <div class="d-flex fd-column-reverse g-2 bgc-negative">
                 {#if defaultExtraColorsInterval}
                     {#each Array(9) as _, i}

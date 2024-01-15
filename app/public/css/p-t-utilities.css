@@ -209,84 +209,84 @@
   grid-auto-rows: var(--gar, auto);
 }
 
-.p\:t\:cols {
-  grid-template-columns: var(--cols-tl, unset);
+.p\:t\:gtc {
+  grid-template-columns: var(--gtc, unset) !important;
 }
-.p\:t\:cols-1 {
-  grid-template-columns: repeat(1, 1fr);
+.p\:t\:gtc-1 {
+  grid-template-columns: repeat(1, 1fr) !important;
 }
-.p\:t\:cols-2 {
-  grid-template-columns: repeat(2, 1fr);
+.p\:t\:gtc-2 {
+  grid-template-columns: repeat(2, 1fr) !important;
 }
-.p\:t\:cols-3 {
-  grid-template-columns: repeat(3, 1fr);
+.p\:t\:gtc-3 {
+  grid-template-columns: repeat(3, 1fr) !important;
 }
-.p\:t\:cols-4 {
-  grid-template-columns: repeat(4, 1fr);
+.p\:t\:gtc-4 {
+  grid-template-columns: repeat(4, 1fr) !important;
 }
-.p\:t\:cols-5 {
-  grid-template-columns: repeat(5, 1fr);
+.p\:t\:gtc-5 {
+  grid-template-columns: repeat(5, 1fr) !important;
 }
-.p\:t\:cols-6 {
-  grid-template-columns: repeat(6, 1fr);
+.p\:t\:gtc-6 {
+  grid-template-columns: repeat(6, 1fr) !important;
 }
-.p\:t\:cols-7 {
-  grid-template-columns: repeat(7, 1fr);
+.p\:t\:gtc-7 {
+  grid-template-columns: repeat(7, 1fr) !important;
 }
-.p\:t\:cols-8 {
-  grid-template-columns: repeat(8, 1fr);
+.p\:t\:gtc-8 {
+  grid-template-columns: repeat(8, 1fr) !important;
 }
-.p\:t\:cols-9 {
-  grid-template-columns: repeat(9, 1fr);
+.p\:t\:gtc-9 {
+  grid-template-columns: repeat(9, 1fr) !important;
 }
-.p\:t\:cols-10 {
-  grid-template-columns: repeat(10, 1fr);
+.p\:t\:gtc-10 {
+  grid-template-columns: repeat(10, 1fr) !important;
 }
-.p\:t\:cols-11 {
-  grid-template-columns: repeat(11, 1fr);
+.p\:t\:gtc-11 {
+  grid-template-columns: repeat(11, 1fr) !important;
 }
-.p\:t\:cols-12 {
-  grid-template-columns: repeat(12, 1fr);
+.p\:t\:gtc-12 {
+  grid-template-columns: repeat(12, 1fr) !important;
 }
 
-.p\:t\:rows {
-  grid-template-rows: var(--rows-tl, unset);
+.p\:t\:gtr {
+  grid-template-rows: var(--gtr, unset) !important;
 }
-.p\:t\:rows-1 {
-  grid-template-rows: repeat(1, 1fr);
+.p\:t\:gtr-1 {
+  grid-template-rows: repeat(1, 1fr) !important;
 }
-.p\:t\:rows-2 {
-  grid-template-rows: repeat(2, 1fr);
+.p\:t\:gtr-2 {
+  grid-template-rows: repeat(2, 1fr) !important;
 }
-.p\:t\:rows-3 {
-  grid-template-rows: repeat(3, 1fr);
+.p\:t\:gtr-3 {
+  grid-template-rows: repeat(3, 1fr) !important;
 }
-.p\:t\:rows-4 {
-  grid-template-rows: repeat(4, 1fr);
+.p\:t\:gtr-4 {
+  grid-template-rows: repeat(4, 1fr) !important;
 }
-.p\:t\:rows-5 {
-  grid-template-rows: repeat(5, 1fr);
+.p\:t\:gtr-5 {
+  grid-template-rows: repeat(5, 1fr) !important;
 }
-.p\:t\:rows-6 {
-  grid-template-rows: repeat(6, 1fr);
+.p\:t\:gtr-6 {
+  grid-template-rows: repeat(6, 1fr) !important;
 }
-.p\:t\:rows-7 {
-  grid-template-rows: repeat(7, 1fr);
+.p\:t\:gtr-7 {
+  grid-template-rows: repeat(7, 1fr) !important;
 }
-.p\:t\:rows-8 {
-  grid-template-rows: repeat(8, 1fr);
+.p\:t\:gtr-8 {
+  grid-template-rows: repeat(8, 1fr) !important;
 }
-.p\:t\:rows-9 {
-  grid-template-rows: repeat(9, 1fr);
+.p\:t\:gtr-9 {
+  grid-template-rows: repeat(9, 1fr) !important;
 }
-.p\:t\:rows-10 {
-  grid-template-rows: repeat(10, 1fr);
+.p\:t\:gtr-10 {
+  grid-template-rows: repeat(10, 1fr) !important;
 }
-.p\:t\:rows-11 {
-  grid-template-rows: repeat(11, 1fr);
+.p\:t\:gtr-11 {
+  grid-template-rows: repeat(11, 1fr) !important;
 }
-.p\:t\:rows-12 {
-  grid-template-rows: repeat(12, 1fr);
+.p\:t\:gtr-12 {
+  grid-template-rows: repeat(12, 1fr) !important;
 }
 
 .p\:t\:col-span-1 {

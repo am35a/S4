@@ -8,7 +8,7 @@
     <h3 id="color">Color</h3>
     <div class="d-grid g-5">
         <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br">
-            <div class="d-grid cols-2 g-3">
+            <div class="d-grid gtc-2 g-3">
                 <b class="js-end as-center">Default</b>
                 <div>
                     <Input class={inputClass} value="#00cc00" type="color"/>
