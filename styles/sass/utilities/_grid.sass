@@ -10,15 +10,15 @@
             &-#{$i}
                 grid-template-rows: repeat($i, 1fr) !important
 
-    .#{$orientation}#{$type}col-span
+    .#{$orientation}#{$type}gc
         @for $i from 1 through 12
-            &-#{$i}
+            &-span-#{$i}
                 grid-column: span $i / span $i
         &-full
             grid-column: 1 / -1
         &-auto
             grid-column: auto
-    .#{$orientation}#{$type}row-span
+    .#{$orientation}#{$type}gr
         @for $i from 1 through 12
             &-#{$i}
                 grid-row: span $i / span $i

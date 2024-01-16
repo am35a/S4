@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="p-4 bgc-positive br">
-            <div class="d-{ifDisplayGrid ? 'grid' : 'inline-grid'} gtc-3 g-4 bgc-negative-10 p-4">
+            <div class="d-{ifDisplayGrid ? 'grid' : 'inline-grid'} gtc-3 g-3 bgc-negative-10 p-3">
                 <div class="bgc-negative-10 px-2 py-1">1</div>
                 <div class="bgc-negative-10 px-2 py-1">2</div>
                 <div class="bgc-negative-10 px-2 py-1">3</div>

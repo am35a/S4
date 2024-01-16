@@ -24,9 +24,9 @@
     <h3 id="template">Template</h3>
     <Columns />
     <Rows />
-
-    <h4 id="template">Template playground</h4>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+ 
+    <!-- <h4 id="template">Template playground</h4> -->
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br d-none">
         <!-- <input class="h-100" type="range" name="containerHeight" orient="vertical" min="0" max="100" step="1"> -->
 
         <div></div>
@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-    <Details>
+    <Details class="d-none">
         <svelte:fragment slot="title">
             Code example
         </svelte:fragment>

@@ -38,9 +38,9 @@
             {/each}
         </div>
         <div class="d-grid ws-nowrap ox-auto" style="--lh: {lineHeight}">
-            <div class="lh col-span-full row-span-full my-auto border-bottom border-top c-negative-10">&nbsp;<!-- base line indicator--></div>
-            <div class="lh col-span-full row-span-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
-            <div class="lh col-span-full row-span-full py-4">
+            <div class="lh gc-full gr-full my-auto border-bottom border-top c-negative-10">&nbsp;<!-- base line indicator--></div>
+            <div class="lh gc-full gr-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
+            <div class="lh gc-full gr-full py-4">
                 {#each Object.entries(verticalAlignObj) as [key, value]}
                     <span class="bgc-negative-10 px-1 me-1 br {key}">{value}</span>
                 {/each}

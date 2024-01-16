@@ -289,89 +289,89 @@
   grid-template-rows: repeat(12, 1fr) !important;
 }
 
-.t\:col-span-1 {
+.t\:gc-span-1 {
   grid-column: span 1/span 1;
 }
-.t\:col-span-2 {
+.t\:gc-span-2 {
   grid-column: span 2/span 2;
 }
-.t\:col-span-3 {
+.t\:gc-span-3 {
   grid-column: span 3/span 3;
 }
-.t\:col-span-4 {
+.t\:gc-span-4 {
   grid-column: span 4/span 4;
 }
-.t\:col-span-5 {
+.t\:gc-span-5 {
   grid-column: span 5/span 5;
 }
-.t\:col-span-6 {
+.t\:gc-span-6 {
   grid-column: span 6/span 6;
 }
-.t\:col-span-7 {
+.t\:gc-span-7 {
   grid-column: span 7/span 7;
 }
-.t\:col-span-8 {
+.t\:gc-span-8 {
   grid-column: span 8/span 8;
 }
-.t\:col-span-9 {
+.t\:gc-span-9 {
   grid-column: span 9/span 9;
 }
-.t\:col-span-10 {
+.t\:gc-span-10 {
   grid-column: span 10/span 10;
 }
-.t\:col-span-11 {
+.t\:gc-span-11 {
   grid-column: span 11/span 11;
 }
-.t\:col-span-12 {
+.t\:gc-span-12 {
   grid-column: span 12/span 12;
 }
-.t\:col-span-full {
+.t\:gc-full {
   grid-column: 1/-1;
 }
-.t\:col-span-auto {
+.t\:gc-auto {
   grid-column: auto;
 }
 
-.t\:row-span-1 {
+.t\:gr-1 {
   grid-row: span 1/span 1;
 }
-.t\:row-span-2 {
+.t\:gr-2 {
   grid-row: span 2/span 2;
 }
-.t\:row-span-3 {
+.t\:gr-3 {
   grid-row: span 3/span 3;
 }
-.t\:row-span-4 {
+.t\:gr-4 {
   grid-row: span 4/span 4;
 }
-.t\:row-span-5 {
+.t\:gr-5 {
   grid-row: span 5/span 5;
 }
-.t\:row-span-6 {
+.t\:gr-6 {
   grid-row: span 6/span 6;
 }
-.t\:row-span-7 {
+.t\:gr-7 {
   grid-row: span 7/span 7;
 }
-.t\:row-span-8 {
+.t\:gr-8 {
   grid-row: span 8/span 8;
 }
-.t\:row-span-9 {
+.t\:gr-9 {
   grid-row: span 9/span 9;
 }
-.t\:row-span-10 {
+.t\:gr-10 {
   grid-row: span 10/span 10;
 }
-.t\:row-span-11 {
+.t\:gr-11 {
   grid-row: span 11/span 11;
 }
-.t\:row-span-12 {
+.t\:gr-12 {
   grid-row: span 12/span 12;
 }
-.t\:row-span-full {
+.t\:gr-full {
   grid-row: 1/-1;
 }
-.t\:row-span-auto {
+.t\:gr-auto {
   grid-row: auto;
 }
 

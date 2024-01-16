@@ -289,89 +289,89 @@
   grid-template-rows: repeat(12, 1fr) !important;
 }
 
-.l\:m\:col-span-1 {
+.l\:m\:gc-span-1 {
   grid-column: span 1/span 1;
 }
-.l\:m\:col-span-2 {
+.l\:m\:gc-span-2 {
   grid-column: span 2/span 2;
 }
-.l\:m\:col-span-3 {
+.l\:m\:gc-span-3 {
   grid-column: span 3/span 3;
 }
-.l\:m\:col-span-4 {
+.l\:m\:gc-span-4 {
   grid-column: span 4/span 4;
 }
-.l\:m\:col-span-5 {
+.l\:m\:gc-span-5 {
   grid-column: span 5/span 5;
 }
-.l\:m\:col-span-6 {
+.l\:m\:gc-span-6 {
   grid-column: span 6/span 6;
 }
-.l\:m\:col-span-7 {
+.l\:m\:gc-span-7 {
   grid-column: span 7/span 7;
 }
-.l\:m\:col-span-8 {
+.l\:m\:gc-span-8 {
   grid-column: span 8/span 8;
 }
-.l\:m\:col-span-9 {
+.l\:m\:gc-span-9 {
   grid-column: span 9/span 9;
 }
-.l\:m\:col-span-10 {
+.l\:m\:gc-span-10 {
   grid-column: span 10/span 10;
 }
-.l\:m\:col-span-11 {
+.l\:m\:gc-span-11 {
   grid-column: span 11/span 11;
 }
-.l\:m\:col-span-12 {
+.l\:m\:gc-span-12 {
   grid-column: span 12/span 12;
 }
-.l\:m\:col-span-full {
+.l\:m\:gc-full {
   grid-column: 1/-1;
 }
-.l\:m\:col-span-auto {
+.l\:m\:gc-auto {
   grid-column: auto;
 }
 
-.l\:m\:row-span-1 {
+.l\:m\:gr-1 {
   grid-row: span 1/span 1;
 }
-.l\:m\:row-span-2 {
+.l\:m\:gr-2 {
   grid-row: span 2/span 2;
 }
-.l\:m\:row-span-3 {
+.l\:m\:gr-3 {
   grid-row: span 3/span 3;
 }
-.l\:m\:row-span-4 {
+.l\:m\:gr-4 {
   grid-row: span 4/span 4;
 }
-.l\:m\:row-span-5 {
+.l\:m\:gr-5 {
   grid-row: span 5/span 5;
 }
-.l\:m\:row-span-6 {
+.l\:m\:gr-6 {
   grid-row: span 6/span 6;
 }
-.l\:m\:row-span-7 {
+.l\:m\:gr-7 {
   grid-row: span 7/span 7;
 }
-.l\:m\:row-span-8 {
+.l\:m\:gr-8 {
   grid-row: span 8/span 8;
 }
-.l\:m\:row-span-9 {
+.l\:m\:gr-9 {
   grid-row: span 9/span 9;
 }
-.l\:m\:row-span-10 {
+.l\:m\:gr-10 {
   grid-row: span 10/span 10;
 }
-.l\:m\:row-span-11 {
+.l\:m\:gr-11 {
   grid-row: span 11/span 11;
 }
-.l\:m\:row-span-12 {
+.l\:m\:gr-12 {
   grid-row: span 12/span 12;
 }
-.l\:m\:row-span-full {
+.l\:m\:gr-full {
   grid-row: 1/-1;
 }
-.l\:m\:row-span-auto {
+.l\:m\:gr-auto {
   grid-row: auto;
 }
 

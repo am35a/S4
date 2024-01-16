@@ -289,89 +289,89 @@
   grid-template-rows: repeat(12, 1fr) !important;
 }
 
-.m\:col-span-1 {
+.m\:gc-span-1 {
   grid-column: span 1/span 1;
 }
-.m\:col-span-2 {
+.m\:gc-span-2 {
   grid-column: span 2/span 2;
 }
-.m\:col-span-3 {
+.m\:gc-span-3 {
   grid-column: span 3/span 3;
 }
-.m\:col-span-4 {
+.m\:gc-span-4 {
   grid-column: span 4/span 4;
 }
-.m\:col-span-5 {
+.m\:gc-span-5 {
   grid-column: span 5/span 5;
 }
-.m\:col-span-6 {
+.m\:gc-span-6 {
   grid-column: span 6/span 6;
 }
-.m\:col-span-7 {
+.m\:gc-span-7 {
   grid-column: span 7/span 7;
 }
-.m\:col-span-8 {
+.m\:gc-span-8 {
   grid-column: span 8/span 8;
 }
-.m\:col-span-9 {
+.m\:gc-span-9 {
   grid-column: span 9/span 9;
 }
-.m\:col-span-10 {
+.m\:gc-span-10 {
   grid-column: span 10/span 10;
 }
-.m\:col-span-11 {
+.m\:gc-span-11 {
   grid-column: span 11/span 11;
 }
-.m\:col-span-12 {
+.m\:gc-span-12 {
   grid-column: span 12/span 12;
 }
-.m\:col-span-full {
+.m\:gc-full {
   grid-column: 1/-1;
 }
-.m\:col-span-auto {
+.m\:gc-auto {
   grid-column: auto;
 }
 
-.m\:row-span-1 {
+.m\:gr-1 {
   grid-row: span 1/span 1;
 }
-.m\:row-span-2 {
+.m\:gr-2 {
   grid-row: span 2/span 2;
 }
-.m\:row-span-3 {
+.m\:gr-3 {
   grid-row: span 3/span 3;
 }
-.m\:row-span-4 {
+.m\:gr-4 {
   grid-row: span 4/span 4;
 }
-.m\:row-span-5 {
+.m\:gr-5 {
   grid-row: span 5/span 5;
 }
-.m\:row-span-6 {
+.m\:gr-6 {
   grid-row: span 6/span 6;
 }
-.m\:row-span-7 {
+.m\:gr-7 {
   grid-row: span 7/span 7;
 }
-.m\:row-span-8 {
+.m\:gr-8 {
   grid-row: span 8/span 8;
 }
-.m\:row-span-9 {
+.m\:gr-9 {
   grid-row: span 9/span 9;
 }
-.m\:row-span-10 {
+.m\:gr-10 {
   grid-row: span 10/span 10;
 }
-.m\:row-span-11 {
+.m\:gr-11 {
   grid-row: span 11/span 11;
 }
-.m\:row-span-12 {
+.m\:gr-12 {
   grid-row: span 12/span 12;
 }
-.m\:row-span-full {
+.m\:gr-full {
   grid-row: 1/-1;
 }
-.m\:row-span-auto {
+.m\:gr-auto {
   grid-row: auto;
 }
 
