@@ -11,6 +11,7 @@
                 grid-template-rows: repeat($i, 1fr) !important
 
     .#{$orientation}#{$type}gc
+        grid-column: var(--gc-1) / var(--gc-2)
         @for $i from 1 through 12
             &-span-#{$i}
                 grid-column: span $i / span $i
@@ -19,6 +20,7 @@
         &-auto
             grid-column: auto
     .#{$orientation}#{$type}gr
+        grid-row: var(--gr-1) / var(--gr-2)
         @for $i from 1 through 12
             &-#{$i}
                 grid-row: span $i / span $i

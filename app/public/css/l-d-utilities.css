@@ -831,6 +831,9 @@
   grid-template-rows: repeat(12, 1fr) !important;
 }
 
+.gc {
+  grid-column: var(--gc-1)/var(--gc-2);
+}
 .gc-span-1 {
   grid-column: span 1/span 1;
 }
@@ -874,6 +877,9 @@
   grid-column: auto;
 }
 
+.gr {
+  grid-row: var(--gr-1)/var(--gr-2);
+}
 .gr-1 {
   grid-row: span 1/span 1;
 }
