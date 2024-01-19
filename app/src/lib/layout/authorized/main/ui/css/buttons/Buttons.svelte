@@ -161,7 +161,7 @@
         
     </div>
 
-    <div class="d-flex p:fd-column g-4 p-4 bgc-positive br-lg">
+    <div class="d-flex p_fd-column g-4 p-4 bgc-positive br-lg">
         <p class="mb-0">
             Icon buttons like other button follow the same rules. Also they are perfect support for icon sets like font awesome, google fonts, ect.
         </p>

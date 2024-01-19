@@ -84,7 +84,7 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
 
     .#{$orientation}#{$type}ar
         @each $v, $h in $defaultAspectRatio
-            &-#{$v}#{'\\:'}#{$h}
+            &-#{$v}#{'_'}#{$h}
                 aspect-ratio: #{$v + '/' + $h}
         &-auto
             aspect-ratio: auto

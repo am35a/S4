@@ -28,19 +28,19 @@
         <div class="d-grid gtc-3 g-2">
             <div class="fw-600">Breakpoint</div><div class="fw-600">Class prefix</div><div class="fw-600">Pattern</div>
             <hr class="gc-full w-100 my-0">
-            <div>Landscape</div><div>l</div><div>.l:<span class="c-secondary">class-name</span></div>
-            <div>Portrait</div><div>p</div><div>.p:<span class="c-secondary">class-name</span></div>
+            <div>Landscape</div><div>l</div><div>.l_<span class="c-secondary">class-name</span></div>
+            <div>Portrait</div><div>p</div><div>.p_<span class="c-secondary">class-name</span></div>
             <div class="gc-full"></div>
-            <div>Desktop</div><div>d</div><div>.d:<span class="c-secondary">class-name</span></div>
-            <div>Tablet</div><div>t</div><div>.t:<span class="c-secondary">class-name</span></div>
-            <div>Mobile</div><div>m</div><div>.m:<span class="c-secondary">class-name</span></div>
+            <div>Desktop</div><div>d</div><div>.d_<span class="c-secondary">class-name</span></div>
+            <div>Tablet</div><div>t</div><div>.t_<span class="c-secondary">class-name</span></div>
+            <div>Mobile</div><div>m</div><div>.m_<span class="c-secondary">class-name</span></div>
             <div class="gc-full"></div>
-            <div>Landscape/Desktop</div><div>l/d</div><div>.l:d:<span class="c-secondary">class-name</span></div>
-            <div>Portrait/Desktop</div><div>p/d</div><div>.p:d:<span class="c-secondary">class-name</span></div>
-            <div>Landscape/Tablet</div><div>l/t</div><div>.l:t:<span class="c-secondary">class-name</span></div>
-            <div>Portrait/Tablet</div><div>p/t</div><div>.p:t:<span class="c-secondary">class-name</span></div>
-            <div>Landscape/Mobile</div><div>l/m</div><div>.l:m:<span class="c-secondary">class-name</span></div>
-            <div>Portrait/Mobile</div><div>p/m</div><div>.p:m:<span class="c-secondary">class-name</span></div>
+            <div>Landscape/Desktop</div><div>l/d</div><div>.l_d_<span class="c-secondary">class-name</span></div>
+            <div>Portrait/Desktop</div><div>p/d</div><div>.p_d_<span class="c-secondary">class-name</span></div>
+            <div>Landscape/Tablet</div><div>l/t</div><div>.l_t_<span class="c-secondary">class-name</span></div>
+            <div>Portrait/Tablet</div><div>p/t</div><div>.p_t_<span class="c-secondary">class-name</span></div>
+            <div>Landscape/Mobile</div><div>l/m</div><div>.l_m_<span class="c-secondary">class-name</span></div>
+            <div>Portrait/Mobile</div><div>p/m</div><div>.p_m_<span class="c-secondary">class-name</span></div>
         </div>
     </div>
     <div>
