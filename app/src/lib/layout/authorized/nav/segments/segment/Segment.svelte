@@ -30,7 +30,7 @@
 {#if items}
     <Button
         on:click={() => router.push(segment)}
-        class="{getPathSegments($path).includes(segment) ? 'active' : ''} jc-start px-1"
+        class="{getPathSegments($path).includes(segment) ? 'active' : ''} jc-start ps-1"
         data-position="right bottom"
         {title}
         disabled={getPathSegments($path).includes(segment) && segment === $path}
@@ -57,7 +57,7 @@
 {:else}
     <Button
         on:click={() => router.push(segment)}
-        class="jc-start {icon ? 'px-1' : ''}"
+        class="jc-start {icon ? 'ps-1' : ''}"
         {title}
         disabled={segment === $path}
     >

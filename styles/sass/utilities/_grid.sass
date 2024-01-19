@@ -1,4 +1,9 @@
+$gaf: (column: column, row: row, dense: dense, row-dense: row dense, column-dense: column dense)
+
 @mixin _grid($orientation, $type)
+
+    // .gtc
+    //     grid-template-columns: var(--#{$orientation}#{$type}gtc, unset) !important
     .#{$orientation}#{$type}gtc
         grid-template-columns: var(--gtc, unset) !important
         @for $i from 1 through 12
@@ -11,45 +16,39 @@
                 grid-template-rows: repeat($i, 1fr) !important
 
     .#{$orientation}#{$type}gc
-        grid-column: var(--gc-1) / var(--gc-2)
+        grid-column: var(--gc-1, auto) / var(--gc-2, auto) !important
         @for $i from 1 through 12
             &-span-#{$i}
-                grid-column: span $i / span $i
+                grid-column: span $i / span $i !important
         &-full
             grid-column: 1 / -1
-        &-auto
-            grid-column: auto
     .#{$orientation}#{$type}gr
-        grid-row: var(--gr-1) / var(--gr-2)
+        grid-row: var(--gr-1, auto) / var(--gr-2, auto) !important
         @for $i from 1 through 12
             &-#{$i}
-                grid-row: span $i / span $i
+                grid-row: span $i / span $i !important
         &-full
             grid-row: 1 / -1
-        &-auto
-            grid-row: auto
 
-    .#{$orientation}#{$type}col
+    .#{$orientation}#{$type}gc
         @for $i from 1 through 12
-            &-start-#{$i}
-                grid-column-start: $i
-            &-end-#{$i}
-                grid-column-end: $i
-    .#{$orientation}#{$type}row
+            &s-#{$i}
+                grid-column-start: $i !important
+            &e-#{$i}
+                grid-column-end: $i !important
+    .#{$orientation}#{$type}gr
         @for $i from 1 through 12
-            &-start-#{$i}
-                grid-row-start: $i
-            &-end-#{$i}
-                grid-row-end: $i
+            &s-#{$i}
+                grid-row-start: $i !important
+            &e-#{$i}
+                grid-row-end: $i !important
 
-.gaf-column
-    grid-auto-flow: column
-.gaf-row
-    grid-auto-flow: row
+    .#{$orientation}#{$type}gaf
+        @each $item, $value in $gaf
+            &-#{$item}
+                grid-auto-flow: $value !important
 
-.cols-auto,
 .gac-auto
-    grid-auto-columns: var(--gac, auto)
-.rows-auto,
+    grid-auto-columns: var(--gac, auto) !important
 .gar-auto
-    grid-auto-rows: var(--gar, auto)
+    grid-auto-rows: var(--gar, auto) !important

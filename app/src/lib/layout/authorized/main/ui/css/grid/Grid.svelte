@@ -18,7 +18,7 @@
         <div class="bgc-negative-10 br py-1 ta-center o-hidden p:gc-span-12 gc-span-6">sex <span class="d-none p:d-inline-block">to twelve</span></div>
     </div>
     <div class="d-grid gtc-12 g-4 p-4 bgc-positive br-lg">
-        <div class="bgc-negative-10 br py-1 ta-center o-hidden gc-span-2 col-start-3">two</div>
-        <div class="bgc-negative-10 br py-1 ta-center o-hidden gc-span-6 col-start-7">six</div>
+        <div class="bgc-negative-10 br py-1 ta-center o-hidden gc-span-2 gcs-3">two</div>
+        <div class="bgc-negative-10 br py-1 ta-center o-hidden gc-span-6 gcs-7">six</div>
     </div>
 </section>

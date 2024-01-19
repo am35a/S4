@@ -191,22 +191,12 @@
   display: none !important;
 }
 
-.gaf-column {
-  grid-auto-flow: column;
-}
-
-.gaf-row {
-  grid-auto-flow: row;
-}
-
-.cols-auto,
 .gac-auto {
-  grid-auto-columns: var(--gac, auto);
+  grid-auto-columns: var(--gac, auto) !important;
 }
 
-.rows-auto,
 .gar-auto {
-  grid-auto-rows: var(--gar, auto);
+  grid-auto-rows: var(--gar, auto) !important;
 }
 
 .l\:m\:gtc {
@@ -290,241 +280,251 @@
 }
 
 .l\:m\:gc {
-  grid-column: var(--gc-1)/var(--gc-2);
+  grid-column: var(--gc-1, auto)/var(--gc-2, auto) !important;
 }
 .l\:m\:gc-span-1 {
-  grid-column: span 1/span 1;
+  grid-column: span 1/span 1 !important;
 }
 .l\:m\:gc-span-2 {
-  grid-column: span 2/span 2;
+  grid-column: span 2/span 2 !important;
 }
 .l\:m\:gc-span-3 {
-  grid-column: span 3/span 3;
+  grid-column: span 3/span 3 !important;
 }
 .l\:m\:gc-span-4 {
-  grid-column: span 4/span 4;
+  grid-column: span 4/span 4 !important;
 }
 .l\:m\:gc-span-5 {
-  grid-column: span 5/span 5;
+  grid-column: span 5/span 5 !important;
 }
 .l\:m\:gc-span-6 {
-  grid-column: span 6/span 6;
+  grid-column: span 6/span 6 !important;
 }
 .l\:m\:gc-span-7 {
-  grid-column: span 7/span 7;
+  grid-column: span 7/span 7 !important;
 }
 .l\:m\:gc-span-8 {
-  grid-column: span 8/span 8;
+  grid-column: span 8/span 8 !important;
 }
 .l\:m\:gc-span-9 {
-  grid-column: span 9/span 9;
+  grid-column: span 9/span 9 !important;
 }
 .l\:m\:gc-span-10 {
-  grid-column: span 10/span 10;
+  grid-column: span 10/span 10 !important;
 }
 .l\:m\:gc-span-11 {
-  grid-column: span 11/span 11;
+  grid-column: span 11/span 11 !important;
 }
 .l\:m\:gc-span-12 {
-  grid-column: span 12/span 12;
+  grid-column: span 12/span 12 !important;
 }
 .l\:m\:gc-full {
   grid-column: 1/-1;
 }
-.l\:m\:gc-auto {
-  grid-column: auto;
-}
 
 .l\:m\:gr {
-  grid-row: var(--gr-1)/var(--gr-2);
+  grid-row: var(--gr-1, auto)/var(--gr-2, auto) !important;
 }
 .l\:m\:gr-1 {
-  grid-row: span 1/span 1;
+  grid-row: span 1/span 1 !important;
 }
 .l\:m\:gr-2 {
-  grid-row: span 2/span 2;
+  grid-row: span 2/span 2 !important;
 }
 .l\:m\:gr-3 {
-  grid-row: span 3/span 3;
+  grid-row: span 3/span 3 !important;
 }
 .l\:m\:gr-4 {
-  grid-row: span 4/span 4;
+  grid-row: span 4/span 4 !important;
 }
 .l\:m\:gr-5 {
-  grid-row: span 5/span 5;
+  grid-row: span 5/span 5 !important;
 }
 .l\:m\:gr-6 {
-  grid-row: span 6/span 6;
+  grid-row: span 6/span 6 !important;
 }
 .l\:m\:gr-7 {
-  grid-row: span 7/span 7;
+  grid-row: span 7/span 7 !important;
 }
 .l\:m\:gr-8 {
-  grid-row: span 8/span 8;
+  grid-row: span 8/span 8 !important;
 }
 .l\:m\:gr-9 {
-  grid-row: span 9/span 9;
+  grid-row: span 9/span 9 !important;
 }
 .l\:m\:gr-10 {
-  grid-row: span 10/span 10;
+  grid-row: span 10/span 10 !important;
 }
 .l\:m\:gr-11 {
-  grid-row: span 11/span 11;
+  grid-row: span 11/span 11 !important;
 }
 .l\:m\:gr-12 {
-  grid-row: span 12/span 12;
+  grid-row: span 12/span 12 !important;
 }
 .l\:m\:gr-full {
   grid-row: 1/-1;
 }
-.l\:m\:gr-auto {
-  grid-row: auto;
+
+.l\:m\:gcs-1 {
+  grid-column-start: 1 !important;
+}
+.l\:m\:gce-1 {
+  grid-column-end: 1 !important;
+}
+.l\:m\:gcs-2 {
+  grid-column-start: 2 !important;
+}
+.l\:m\:gce-2 {
+  grid-column-end: 2 !important;
+}
+.l\:m\:gcs-3 {
+  grid-column-start: 3 !important;
+}
+.l\:m\:gce-3 {
+  grid-column-end: 3 !important;
+}
+.l\:m\:gcs-4 {
+  grid-column-start: 4 !important;
+}
+.l\:m\:gce-4 {
+  grid-column-end: 4 !important;
+}
+.l\:m\:gcs-5 {
+  grid-column-start: 5 !important;
+}
+.l\:m\:gce-5 {
+  grid-column-end: 5 !important;
+}
+.l\:m\:gcs-6 {
+  grid-column-start: 6 !important;
+}
+.l\:m\:gce-6 {
+  grid-column-end: 6 !important;
+}
+.l\:m\:gcs-7 {
+  grid-column-start: 7 !important;
+}
+.l\:m\:gce-7 {
+  grid-column-end: 7 !important;
+}
+.l\:m\:gcs-8 {
+  grid-column-start: 8 !important;
+}
+.l\:m\:gce-8 {
+  grid-column-end: 8 !important;
+}
+.l\:m\:gcs-9 {
+  grid-column-start: 9 !important;
+}
+.l\:m\:gce-9 {
+  grid-column-end: 9 !important;
+}
+.l\:m\:gcs-10 {
+  grid-column-start: 10 !important;
+}
+.l\:m\:gce-10 {
+  grid-column-end: 10 !important;
+}
+.l\:m\:gcs-11 {
+  grid-column-start: 11 !important;
+}
+.l\:m\:gce-11 {
+  grid-column-end: 11 !important;
+}
+.l\:m\:gcs-12 {
+  grid-column-start: 12 !important;
+}
+.l\:m\:gce-12 {
+  grid-column-end: 12 !important;
 }
 
-.l\:m\:col-start-1 {
-  grid-column-start: 1;
+.l\:m\:grs-1 {
+  grid-row-start: 1 !important;
 }
-.l\:m\:col-end-1 {
-  grid-column-end: 1;
+.l\:m\:gre-1 {
+  grid-row-end: 1 !important;
 }
-.l\:m\:col-start-2 {
-  grid-column-start: 2;
+.l\:m\:grs-2 {
+  grid-row-start: 2 !important;
 }
-.l\:m\:col-end-2 {
-  grid-column-end: 2;
+.l\:m\:gre-2 {
+  grid-row-end: 2 !important;
 }
-.l\:m\:col-start-3 {
-  grid-column-start: 3;
+.l\:m\:grs-3 {
+  grid-row-start: 3 !important;
 }
-.l\:m\:col-end-3 {
-  grid-column-end: 3;
+.l\:m\:gre-3 {
+  grid-row-end: 3 !important;
 }
-.l\:m\:col-start-4 {
-  grid-column-start: 4;
+.l\:m\:grs-4 {
+  grid-row-start: 4 !important;
 }
-.l\:m\:col-end-4 {
-  grid-column-end: 4;
+.l\:m\:gre-4 {
+  grid-row-end: 4 !important;
 }
-.l\:m\:col-start-5 {
-  grid-column-start: 5;
+.l\:m\:grs-5 {
+  grid-row-start: 5 !important;
 }
-.l\:m\:col-end-5 {
-  grid-column-end: 5;
+.l\:m\:gre-5 {
+  grid-row-end: 5 !important;
 }
-.l\:m\:col-start-6 {
-  grid-column-start: 6;
+.l\:m\:grs-6 {
+  grid-row-start: 6 !important;
 }
-.l\:m\:col-end-6 {
-  grid-column-end: 6;
+.l\:m\:gre-6 {
+  grid-row-end: 6 !important;
 }
-.l\:m\:col-start-7 {
-  grid-column-start: 7;
+.l\:m\:grs-7 {
+  grid-row-start: 7 !important;
 }
-.l\:m\:col-end-7 {
-  grid-column-end: 7;
+.l\:m\:gre-7 {
+  grid-row-end: 7 !important;
 }
-.l\:m\:col-start-8 {
-  grid-column-start: 8;
+.l\:m\:grs-8 {
+  grid-row-start: 8 !important;
 }
-.l\:m\:col-end-8 {
-  grid-column-end: 8;
+.l\:m\:gre-8 {
+  grid-row-end: 8 !important;
 }
-.l\:m\:col-start-9 {
-  grid-column-start: 9;
+.l\:m\:grs-9 {
+  grid-row-start: 9 !important;
 }
-.l\:m\:col-end-9 {
-  grid-column-end: 9;
+.l\:m\:gre-9 {
+  grid-row-end: 9 !important;
 }
-.l\:m\:col-start-10 {
-  grid-column-start: 10;
+.l\:m\:grs-10 {
+  grid-row-start: 10 !important;
 }
-.l\:m\:col-end-10 {
-  grid-column-end: 10;
+.l\:m\:gre-10 {
+  grid-row-end: 10 !important;
 }
-.l\:m\:col-start-11 {
-  grid-column-start: 11;
+.l\:m\:grs-11 {
+  grid-row-start: 11 !important;
 }
-.l\:m\:col-end-11 {
-  grid-column-end: 11;
+.l\:m\:gre-11 {
+  grid-row-end: 11 !important;
 }
-.l\:m\:col-start-12 {
-  grid-column-start: 12;
+.l\:m\:grs-12 {
+  grid-row-start: 12 !important;
 }
-.l\:m\:col-end-12 {
-  grid-column-end: 12;
+.l\:m\:gre-12 {
+  grid-row-end: 12 !important;
 }
 
-.l\:m\:row-start-1 {
-  grid-row-start: 1;
+.l\:m\:gaf-column {
+  grid-auto-flow: column !important;
 }
-.l\:m\:row-end-1 {
-  grid-row-end: 1;
+.l\:m\:gaf-row {
+  grid-auto-flow: row !important;
 }
-.l\:m\:row-start-2 {
-  grid-row-start: 2;
+.l\:m\:gaf-dense {
+  grid-auto-flow: dense !important;
 }
-.l\:m\:row-end-2 {
-  grid-row-end: 2;
+.l\:m\:gaf-row-dense {
+  grid-auto-flow: row dense !important;
 }
-.l\:m\:row-start-3 {
-  grid-row-start: 3;
-}
-.l\:m\:row-end-3 {
-  grid-row-end: 3;
-}
-.l\:m\:row-start-4 {
-  grid-row-start: 4;
-}
-.l\:m\:row-end-4 {
-  grid-row-end: 4;
-}
-.l\:m\:row-start-5 {
-  grid-row-start: 5;
-}
-.l\:m\:row-end-5 {
-  grid-row-end: 5;
-}
-.l\:m\:row-start-6 {
-  grid-row-start: 6;
-}
-.l\:m\:row-end-6 {
-  grid-row-end: 6;
-}
-.l\:m\:row-start-7 {
-  grid-row-start: 7;
-}
-.l\:m\:row-end-7 {
-  grid-row-end: 7;
-}
-.l\:m\:row-start-8 {
-  grid-row-start: 8;
-}
-.l\:m\:row-end-8 {
-  grid-row-end: 8;
-}
-.l\:m\:row-start-9 {
-  grid-row-start: 9;
-}
-.l\:m\:row-end-9 {
-  grid-row-end: 9;
-}
-.l\:m\:row-start-10 {
-  grid-row-start: 10;
-}
-.l\:m\:row-end-10 {
-  grid-row-end: 10;
-}
-.l\:m\:row-start-11 {
-  grid-row-start: 11;
-}
-.l\:m\:row-end-11 {
-  grid-row-end: 11;
-}
-.l\:m\:row-start-12 {
-  grid-row-start: 12;
-}
-.l\:m\:row-end-12 {
-  grid-row-end: 12;
+.l\:m\:gaf-column-dense {
+  grid-auto-flow: column dense !important;
 }
 
 /*  flex section: fill, equal and other sets to flex container items */
