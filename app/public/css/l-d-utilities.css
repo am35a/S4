@@ -744,6 +744,7 @@
 .gtc {
   grid-template-columns: var(--gtc, unset) !important;
 }
+
 .gtc-1 {
   grid-template-columns: repeat(1, 1fr) !important;
 }
@@ -782,8 +783,9 @@
 }
 
 .gtr {
-  grid-template-rows: var(--gtr, unset) !important;
+  grid-template-columns: var(--gtr, unset) !important;
 }
+
 .gtr-1 {
   grid-template-rows: repeat(1, 1fr) !important;
 }
@@ -824,6 +826,7 @@
 .gc {
   grid-column: var(--gc-1, auto)/var(--gc-2, auto) !important;
 }
+
 .gc-span-1 {
   grid-column: span 1/span 1 !important;
 }
@@ -865,8 +868,9 @@
 }
 
 .gr {
-  grid-row: var(--gr-1, auto)/var(--gr-2, auto) !important;
+  grid-column: var(--gr-1, auto)/var(--gr-2, auto) !important;
 }
+
 .gr-1 {
   grid-row: span 1/span 1 !important;
 }

@@ -64,6 +64,25 @@
         </div>
     </div>
     <div>
+        <h3>Map</h3>
+        <p>
+            The breakpoint map for the S4 consists of individual CSS modules (files) that are loaded depending on the device and orientation: as an example.
+        </p>
+        <p>The S4 style gist panel breakpoint map:</p>
+        <div class="d-grid gtc-3 g-2">
+            <div class="fw-600">Breakpoint</div>
+            <div class="fw-600">Count</div>
+            <div class="fw-600">Class prefixes</div>
+            <hr class="gc-full w-100 my-0">
+            <div>Landscape/Desktop</div><div>no one</div>   <div>"l-d-"</div>
+            <div>Portrait/Desktop</div> <div>one</div>      <div>"l-d-" & "p-d-"</div>
+            <div>Landscape/Tablet</div> <div>two</div>      <div>"l-d-" & "l-t-"</div>
+            <div>Portrait/Tablet</div>  <div>three</div>    <div>"l-d-" & "p-d-" & "l-t-" && "p-t-"</div>
+            <div>Landscape/Mobile</div> <div>two</div>      <div>"l-d-" & "p-m-" & "l-m-"</div>
+            <div>Portrait/Mobile</div>  <div>two</div>      <div>"l-d-" & "p-d-" & "p-m-"</div>
+        </div>
+    </div>
+    <div>
         <h3>Document dimention</h3>
         <div class="alert alert-warning">
             Currently S4 <a href="/utilities" target={'_self'}>utilities</a> have not dependently from screen width. It will be soon.

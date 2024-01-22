@@ -8,8 +8,8 @@
 <div>
     <h4 id="columns">Columns</h4>
     <p>
-        To set a number of columns in the <b>grid</b> and <b>inline-grid</b> display container, use the <b>gtc</b> classes. <b>gtc</b> classes exist in the range from 1 to 12, such as <b>gtc-1</b> or <b>gtc-10</b>.
-        If need to set different number of columns, specify a variable for <b>gtc</b> with the required number of columns <b>--gtc: 21</b>, like this <Precode class="py-0 px-1 d-inline">class="gtc" style="--gtc: 21"</Precode>.
+        To set a number of columns in the <b>grid</b> and <b>inline-grid</b> display container, use the <b>gtc-...</b> classes. The <b>gtc-...</b> classes exist in the range from 1 to 12, such as <b>gtc-1</b> or <b>gtc-10</b>.
+        If need to set different patterns of columns, specify a variable for <b>gtc</b> with the required number and size of columns, like this <Precode class="py-0 px-1 d-inline">class="gtc" style="--p_gtc: 10% auto 10%; --gtc: auto 1fr;"</Precode>.
     </p>
     <div class="d-grid g-5">
         <div class="d-grid g-4">

@@ -199,9 +199,10 @@
   grid-auto-rows: var(--gar, auto) !important;
 }
 
-.p_t_gtc {
-  grid-template-columns: var(--gtc, unset) !important;
+.gtc {
+  grid-template-columns: var(--p_t_gtc, unset) !important;
 }
+
 .p_t_gtc-1 {
   grid-template-columns: repeat(1, 1fr) !important;
 }
@@ -239,9 +240,10 @@
   grid-template-columns: repeat(12, 1fr) !important;
 }
 
-.p_t_gtr {
-  grid-template-rows: var(--gtr, unset) !important;
+.gtr {
+  grid-template-columns: var(--p_t_gtr, unset) !important;
 }
+
 .p_t_gtr-1 {
   grid-template-rows: repeat(1, 1fr) !important;
 }
@@ -279,9 +281,10 @@
   grid-template-rows: repeat(12, 1fr) !important;
 }
 
-.p_t_gc {
-  grid-column: var(--gc-1, auto)/var(--gc-2, auto) !important;
+.gc {
+  grid-column: var(--p_t_gc-1, auto)/var(--p_t_gc-2, auto) !important;
 }
+
 .p_t_gc-span-1 {
   grid-column: span 1/span 1 !important;
 }
@@ -322,9 +325,10 @@
   grid-column: 1/-1;
 }
 
-.p_t_gr {
-  grid-row: var(--gr-1, auto)/var(--gr-2, auto) !important;
+.gr {
+  grid-column: var(--p_t_gr-1, auto)/var(--p_t_gr-2, auto) !important;
 }
+
 .p_t_gr-1 {
   grid-row: span 1/span 1 !important;
 }
