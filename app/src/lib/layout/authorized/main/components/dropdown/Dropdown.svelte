@@ -1,7 +1,7 @@
 <script lang="ts">
     import Icon from 'component/Icon.svelte'
     import Button from 'component/Button.svelte'
-    import DropDown from 'component/DropDown.svelte'
+    import Dropdown from 'component/Dropdown.svelte'
     import Precode from 'component/Precode.svelte'
 
     let dropdownObj: { [key: string]: any } = {
@@ -137,7 +137,7 @@
         </div>
         <div class="d-flex g-4 p-4 bgc-positive br" style="height: 10rem;">
             <div class="d-grid g-3 m-auto">
-                <DropDown class="drpdwn-hover">
+                <Dropdown class="drpdwn-hover">
                     <Button 
                         slot="btn"
                         class="{buttonClass} open"
@@ -158,7 +158,7 @@
                         Position:
                         <div>{contentPosition}</div>
                     </div>
-                </DropDown>
+                </Dropdown>
             </div>
         </div>
     </div>

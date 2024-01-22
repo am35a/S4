@@ -3,7 +3,7 @@
 
     import Icon from 'component/Icon.svelte'
     import Button from 'component/Button.svelte'
-    // import DropDown from 'component/DropDown.svelte'
+    // import Dropdown from 'component/Dropdown.svelte'
 
     import { router, getPathSegments, path } from 'svelte-micro'
     // import { asideExpand, appSegment } from 'src/store/store'
