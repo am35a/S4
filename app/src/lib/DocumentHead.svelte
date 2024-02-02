@@ -4,12 +4,12 @@
     import device from 'current-device'
 
     const cssMap: { [key: string]: any } = {
-        'l-d-': [ 'l-d-' ],
-        'p-d-': [ 'l-d-', 'p-d-' ],
-        'l-t-': [ 'l-d-', 'l-t-' ],
-        'p-t-': [ 'l-d-', 'p-d-', 'l-t-', 'p-t-' ],
-        'l-m-': [ 'l-d-', 'p-m-', 'l-m-' ],
-        'p-m-': [ 'l-d-', 'p-d-', 'p-m-' ]
+        'l_d_': [ 'l_d_' ],
+        'p_d_': [ 'l_d_', 'p_d_' ],
+        'l_t_': [ 'l_d_', 'l_t_' ],
+        'p_t_': [ 'l_d_', 'p_d_', 'l_t_', 'p_t_' ],
+        'l_m_': [ 'l_d_', 'p_m_', 'l_m_' ],
+        'p_m_': [ 'l_d_', 'p_d_', 'p_m_' ]
     }
 
     // start - device and orientation
@@ -17,7 +17,7 @@
     let deviceCSSPrefix: string = getDeviceCSSPrefix()
 
     function getDeviceCSSPrefix(): string {
-        return `${deviceOrientation === 'portrait' ? 'p' : 'l'}-${device.type === 'mobile' ? 'm' : device.type === 'tablet' ? 't' : 'd'}-`
+        return `${deviceOrientation === 'portrait' ? 'p' : 'l'}_${device.type === 'mobile' ? 'm' : device.type === 'tablet' ? 't' : 'd'}_`
     }
 
     device.onChangeOrientation(newOrientation => {

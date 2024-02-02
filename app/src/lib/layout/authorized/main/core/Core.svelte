@@ -74,12 +74,12 @@
             <div class="fw-600">Count</div>
             <div class="fw-600">Class prefixes</div>
             <hr class="gc-full w-100 my-0">
-            <div>Landscape/Desktop</div><div>no one</div>   <div>"l-d-"</div>
-            <div>Portrait/Desktop</div> <div>one</div>      <div>"l-d-" & "p-d-"</div>
-            <div>Landscape/Tablet</div> <div>two</div>      <div>"l-d-" & "l-t-"</div>
-            <div>Portrait/Tablet</div>  <div>three</div>    <div>"l-d-" & "p-d-" & "l-t-" && "p-t-"</div>
-            <div>Landscape/Mobile</div> <div>two</div>      <div>"l-d-" & "p-m-" & "l-m-"</div>
-            <div>Portrait/Mobile</div>  <div>two</div>      <div>"l-d-" & "p-d-" & "p-m-"</div>
+            <div>Landscape/Desktop</div><div>no one</div>   <div>l_d_</div>
+            <div>Portrait/Desktop</div> <div>one</div>      <div>l_d_ & p_d_</div>
+            <div>Landscape/Tablet</div> <div>two</div>      <div>l_d_ & l_t_</div>
+            <div>Portrait/Tablet</div>  <div>three</div>    <div>l_d_ & p_d_ & l_t_ && p_t_</div>
+            <div>Landscape/Mobile</div> <div>two</div>      <div>l_d_ & p_m_ & l_m_</div>
+            <div>Portrait/Mobile</div>  <div>two</div>      <div>l_d_ & p_d_ & p_m_</div>
         </div>
     </div>
     <div>
