@@ -33,6 +33,31 @@
 {/if}
 
 <style lang="sass" global>
+    $accentColors: 'primary', 'secondary', 'info', 'success', 'warning', 'error'
+    
+    .alert
+        position: relative
+        // grid-gap: var(--size-4)
+        padding: var(--size-3) var(--size-4)
+        border-radius: var(--size-1)
+        font-weight: 500
+        user-select: none
+        @each $colorName in $accentColors
+            &-#{$colorName}
+                background-color: var(--#{$colorName}-color)
+                color: var(--positive-color)
+                a
+                    color: var(--positive-color)
+            &-alt-#{$colorName}
+                background-color: var(--#{$colorName}-color-m)
+                color: var(--#{$colorName}-color-d)
+            &-outline-#{$colorName}
+                color: var(--#{$colorName}-color)
+                outline-width: calc(var(--size-1) / 4)
+                outline-style: solid
+                outline-color: currentColor
+                outline-offset: calc(var(--size-1) / 4 * -1)
+
     .alert
         &:not(&-closable)
             .btn-close
