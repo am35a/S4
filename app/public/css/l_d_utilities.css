@@ -1,38 +1,3 @@
-.grp-h {
-  display: inline-flex;
-  gap: var(--size-1);
-  flex-direction: row;
-  vertical-align: middle;
-}
-.grp-h > :first-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.grp-h > :not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-.grp-h > :last-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.grp-v {
-  display: inline-grid;
-  gap: var(--size-1);
-  align-items: flex-start;
-  justify-content: center;
-}
-.grp-v > :first-child {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.grp-v > :not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-.grp-v > :last-child {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
 /*  alignment section: align and justify contained in classes */
 .va-baseline {
   vertical-align: baseline !important;
@@ -708,7 +673,7 @@
 }
 
 .gc {
-  grid-column: var(--gc-1, auto)/var(--gc-2, auto) !important;
+  grid-column: var(--gc-start, auto)/var(--gc-end, auto) !important;
 }
 
 .gc-span-1 {
@@ -752,7 +717,7 @@
 }
 
 .gr {
-  grid-column: var(--gr-1, auto)/var(--gr-2, auto) !important;
+  grid-column: var(--gr-start, auto)/var(--gr-end, auto) !important;
 }
 
 .gr-1 {
@@ -2250,4 +2215,11 @@ p {
 }
 .ws-break-spaces {
   white-space: break-spaces !important;
+}
+
+.wm-vertical-rl {
+  writing-mode: vertical-rl;
+}
+.wm-vertical-lr {
+  writing-mode: vertical-lr;
 }

@@ -16,7 +16,7 @@ $gaf: (column: column, row: row, dense: dense, row-dense: row dense, column-dens
                 grid-template-rows: repeat($i, 1fr) !important
 
     .gc
-        grid-column: var(--#{$orientation}#{$type}gc-1, auto) / var(--#{$orientation}#{$type}gc-2, auto) !important
+        grid-column: var(--#{$orientation}#{$type}gc-start, auto) / var(--#{$orientation}#{$type}gc-end, auto) !important
     .#{$orientation}#{$type}gc
         @for $i from 1 through 12
             &-span-#{$i}
@@ -24,7 +24,7 @@ $gaf: (column: column, row: row, dense: dense, row-dense: row dense, column-dens
         &-full
             grid-column: 1 / -1
     .gr
-        grid-column: var(--#{$orientation}#{$type}gr-1, auto) / var(--#{$orientation}#{$type}gr-2, auto) !important
+        grid-column: var(--#{$orientation}#{$type}gr-start, auto) / var(--#{$orientation}#{$type}gr-end, auto) !important
     .#{$orientation}#{$type}gr
         @for $i from 1 through 12
             &-#{$i}

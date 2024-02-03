@@ -18,7 +18,7 @@
 
 {#if isAlert}
     <div
-        class:alert={alert}
+        class:alert={true}
         {...$$restProps}
     >
         {#if classesList.includes('alert-closable')}
@@ -58,7 +58,6 @@
                 outline-color: currentColor
                 outline-offset: calc(var(--size-1) / 4 * -1)
 
-    .alert
         &:not(&-closable)
             .btn-close
                 display: none

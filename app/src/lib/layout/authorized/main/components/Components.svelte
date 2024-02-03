@@ -8,6 +8,7 @@
     import ArticleForms from './forms/Forms.svelte'
     import ArticleDetails from './details/Details.svelte'
     import ArticleIcons from './icons/Icons.svelte'
+    import ArticleGroups from './groups/Groups.svelte'
 </script>
 
 <h1>Components</h1>
@@ -32,6 +33,9 @@
 </Route>
 <Route path="/forms">
     <svelte:component this={ArticleForms}/>
+</Route>
+<Route path="/groups">
+    <svelte:component this={ArticleGroups}/>
 </Route>
 <Route fallback>
     404

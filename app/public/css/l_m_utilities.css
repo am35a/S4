@@ -1,38 +1,3 @@
-.l_m_grp-h {
-  display: inline-flex;
-  gap: var(--size-1);
-  flex-direction: row;
-  vertical-align: middle;
-}
-.l_m_grp-h > :first-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.l_m_grp-h > :not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-.l_m_grp-h > :last-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.l_m_grp-v {
-  display: inline-grid;
-  gap: var(--size-1);
-  align-items: flex-start;
-  justify-content: center;
-}
-.l_m_grp-v > :first-child {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.l_m_grp-v > :not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-.l_m_grp-v > :last-child {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
 /*  alignment section: align and justify contained in classes */
 .l_m_va-baseline {
   vertical-align: baseline !important;
@@ -282,7 +247,7 @@
 }
 
 .gc {
-  grid-column: var(--l_m_gc-1, auto)/var(--l_m_gc-2, auto) !important;
+  grid-column: var(--l_m_gc-start, auto)/var(--l_m_gc-end, auto) !important;
 }
 
 .l_m_gc-span-1 {
@@ -326,7 +291,7 @@
 }
 
 .gr {
-  grid-column: var(--l_m_gr-1, auto)/var(--l_m_gr-2, auto) !important;
+  grid-column: var(--l_m_gr-start, auto)/var(--l_m_gr-end, auto) !important;
 }
 
 .l_m_gr-1 {
@@ -1759,4 +1724,11 @@ p {
 }
 .l_m_ws-break-spaces {
   white-space: break-spaces !important;
+}
+
+.l_m_wm-vertical-rl {
+  writing-mode: vertical-rl;
+}
+.l_m_wm-vertical-lr {
+  writing-mode: vertical-lr;
 }

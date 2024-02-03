@@ -1,5 +1,0 @@
-@use "sass:map"
-
-@import _group
-@if map.get($group, "include")
-    @include _group(map.get($group, "orientation"), map.get($group, "type"))

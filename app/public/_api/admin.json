@@ -67,6 +67,11 @@
                         "id": 405,
                         "title": "Icons",
                         "segment": "/components/icons"
+                    },
+                    {
+                        "id": 406,
+                        "title": "Groups",
+                        "segment": "/components/groups"
                     }
                 ]
             },

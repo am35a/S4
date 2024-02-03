@@ -1,38 +1,3 @@
-.t_grp-h {
-  display: inline-flex;
-  gap: var(--size-1);
-  flex-direction: row;
-  vertical-align: middle;
-}
-.t_grp-h > :first-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.t_grp-h > :not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-.t_grp-h > :last-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.t_grp-v {
-  display: inline-grid;
-  gap: var(--size-1);
-  align-items: flex-start;
-  justify-content: center;
-}
-.t_grp-v > :first-child {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.t_grp-v > :not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-.t_grp-v > :last-child {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
 /*  alignment section: align and justify contained in classes */
 .t_va-baseline {
   vertical-align: baseline !important;
@@ -282,7 +247,7 @@
 }
 
 .gc {
-  grid-column: var(--t_gc-1, auto)/var(--t_gc-2, auto) !important;
+  grid-column: var(--t_gc-start, auto)/var(--t_gc-end, auto) !important;
 }
 
 .t_gc-span-1 {
@@ -326,7 +291,7 @@
 }
 
 .gr {
-  grid-column: var(--t_gr-1, auto)/var(--t_gr-2, auto) !important;
+  grid-column: var(--t_gr-start, auto)/var(--t_gr-end, auto) !important;
 }
 
 .t_gr-1 {
@@ -1759,4 +1724,11 @@ p {
 }
 .t_ws-break-spaces {
   white-space: break-spaces !important;
+}
+
+.t_wm-vertical-rl {
+  writing-mode: vertical-rl;
+}
+.t_wm-vertical-lr {
+  writing-mode: vertical-lr;
 }
