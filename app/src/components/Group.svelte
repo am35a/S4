@@ -9,8 +9,8 @@
 <style lang="sass" global>
 .grp
     display: inline-grid
-    grid-gap: var(--size-1)
-    &[class*=-column]
+    // grid-gap: var(--size-1)
+    &[class*=gaf-column]
         > :first-child
             border-top-right-radius: 0
             border-bottom-right-radius: 0
@@ -19,7 +19,7 @@
         > :last-child
             border-top-left-radius: 0
             border-bottom-left-radius: 0
-    &[class*=-row]
+    &[class*=gaf-row]
         > :first-child
             border-bottom-left-radius: 0
             border-bottom-right-radius: 0

@@ -9,7 +9,7 @@
 <article>
     <h2 id="accordion">Accordion</h2>
     <p>
-        The Accordion сomponent is a watcher wrapper for containers <b>Details</b> components or <b>details</b> tags within it.
+        The Accordion сomponent is a watcher wrapper for containers <a href="/components/details"><b>Details</b> components</a> or <b>details</b> tags within it.
     </p>
     <div class="d-grid g-5">
         <div class="d-grid g-4">
