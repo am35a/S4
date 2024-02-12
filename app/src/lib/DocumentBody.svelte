@@ -1,9 +1,15 @@
 <script lang="ts">
+    import { onMount } from 'svelte'
     // import { user } from '../store/store'
     
     // $user.isAuthorized ?
     //     document.body.classList.add('tf_laborer') :
     //     document.body.classList.add('tf_signin')
+    
+    onMount(() => {
+        // root = document.documentElement;
+        // document.body.setAttribute('theme', 'light')
+    })
 
     // let innerHTML: HTMLBodyElement
 </script>
@@ -13,7 +19,7 @@
 <style lang="sass" global>
     body
         display: grid
-        background-color: var(--body-bgc, var(--negative-color-10))
-        color: var(--body-color, var(--negative-color-90))
-        overflow: hidden
+        background-color: var(--body-bg-color)
+        color: var(--body-color)
+        // overflow: hidden
 </style>

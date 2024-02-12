@@ -1,9 +1,0 @@
-@use "sass:map"
-
-@import _alert
-@if map.get($alert, "include")
-    @include _alert(map.get($alert, "orientation"), map.get($alert, "type"))
-
-@import _group
-@if map.get($group, "include")
-    @include _group(map.get($group, "orientation"), map.get($group, "type"))

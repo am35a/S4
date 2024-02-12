@@ -6,14 +6,22 @@
     class:dtl={true}
     {...$$restProps}
 >
-    <summary>
-        <slot name="title"/>
-        <Icon name="chevron-down" class="fs-sm" expand/>
-        <Icon name="chevron-up" class="fs-sm" contract/>
-    </summary>
-        <!-- <div class="dtl-body"> -->
-            <slot name="body"/>
-        <!-- </div> -->
+    {#if $$slots.title}
+        <summary>
+            <slot name="title"/>
+            <Icon name="chevron-down" class="fs-sm" expand/>
+            <Icon name="chevron-up" class="fs-sm" contract/>
+        </summary>
+    {:else}
+        <slot name="summary"></slot>
+    {/if}
+    {#if $$slots.body}
+        <slot name="body"/>
+    {:else}
+        <div class="p-3">
+            <div class="alert alert-error"> Error: details without details</div>
+        </div>
+    {/if}
 </details>
 
 <style lang="sass" global>
@@ -47,7 +55,9 @@
                 display: none
 
         summary
-            display: flex
+            display: grid
+            grid-auto-flow: column
+            column-gap: 0.5em
             justify-content: space-between
             padding: var(--size-3)
             background-color: var(--positive-color-30)

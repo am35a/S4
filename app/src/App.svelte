@@ -7,15 +7,19 @@
         asideItems,
         user
     } from 'src/store/store'
-        
+
+    import DocWindow from './lib/DocumentWindow.svelte'
+    import DocHead from './lib/DocumentHead.svelte'
+    import DocBody from './lib/DocumentBody.svelte'
+
+    import Layout from './lib/layout/Layout.svelte'
+
     import Console from './lib/layout/console/Console.svelte'
 
-    import Window from './lib/DocumentWindow.svelte'
-    import Head from './lib/DocumentHead.svelte'
-    import Body from './lib/DocumentBody.svelte'
+    // import Body from './lib/DocumentBody.svelte'
 
-    import LayoutSignIn from './lib/layout/signin/SignIn.svelte'
-    import LayoutLaborer from './lib/layout/laborer/Laborer.svelte'
+    // import LayoutSignIn from './lib/layout/signin/SignIn.svelte'
+    // import LayoutLaborer from './lib/layout/laborer/Laborer.svelte'
 
     // async function getData(path:string): Promise<any> {
     //     let res = await fetch(path)
@@ -35,34 +39,6 @@
     //     console.log(value.data)
     // })
 
-/*
-
-Логин диктует настройки
-
-настройки приложения глобальные {
-    // настройки может менять администратор
-    заголовок
-    логотип {
-        адрес
-    }
-    initialScale
-    название темы
-    название шрифта (пока из дефолтных)
-}
-данные пользователя {
-    имя,
-    фамилия,
-    отчество,
-    почтовый адрес,
-}
-
-настройки меню приложения {
-    ширина меню
-    сегмент (он же стартовый сегмент)
-
-}
-
-*/
 	onMount(async () => {
         let res = await fetch('/_api/app.json')
         if (res.ok) {
@@ -88,50 +64,25 @@
         
         // console.log(getData('/_api/app.json'))
 
-        // router.replace($path === '/' && $user.isAuthorized ? '/home' : '/login')
-        router.replace($path === '/' ? '/home' : '')
+        // router.replace($path === '/' && $user.isAuthorized ? '/home' : '/signin')
+        // router.replace($path === '/' ? '/home' : '')
+        if ($user.isAuthorized) {
+            router.replace($path === '/' ? '/home' : '')
+        } else {
+            router.replace('/signin')
+        }
 	})
 </script>
 
-<Window />
-<Head />
-<Body />
+<DocWindow />
+<DocHead />
+<DocBody />
 
-<!-- {#await promise}
-	<p>Loading data...</p>
-{:then value}
-    {#if value.status}
-    	<p>fulfilled - {JSON.stringify(value.data)}</p>
-    {:else}
-        <p>rejected - {JSON.stringify(value.data)}</p>
-    {/if}
-{:catch error}
-	<p>rejected - {error.message}</p>
-{/await} -->
+<Console />
+<Layout />
 
-{#if !$user.isAuthorized}
+<!-- {#if !$user.isAuthorized}
     <LayoutSignIn />
 {:else}
     <LayoutLaborer />
-{/if}
-
-<Console />
-  
-<!-- <Route>
-  
-    <Route path="/">
-      <h1>Home page</h1>
-      <p>Feel at home!</p>
-    </Route>
-  
-    <Route path="/portfolio">
-      <h1>Portfolio</h1>
-    </Route>
-  
-  
-    <Route fallback>
-      <h1>Route not found :(</h1>
-      <a href="/">Back to home</a>
-    </Route>
-</Route> -->
-  
+{/if} -->

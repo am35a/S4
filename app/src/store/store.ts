@@ -8,7 +8,7 @@ export const appData = writable(
             full: '' as string
         },
         initialScale: 1 as number,
-        theme: 'default' as string,
+        // theme: 'light' as string,
         fontFamily: 'default' as string
     }
 )
@@ -26,7 +26,7 @@ export let asideItems = writable(
         {
             id: 1 as number,
             icon: 'home' as string,
-            title: 'Home page' as string,
+            title: 'Welcome to S4' as string,
             segment: '/home' as string
         }
     ]
@@ -53,7 +53,7 @@ export let userData = writable(
                 {
                     id: 1 as number,
                     icon: 'home' as string,
-                    title: 'Home page' as string,
+                    title: 'Welcome to S4' as string,
                     segment: '/home' as string
                 }
             ]
@@ -77,10 +77,10 @@ export let app: any = writable(
 export let user: any = writable(
     {
         isAuthorized: true as boolean, // false as default
-        email: 's4@mobitoon.ru' as string,
+        email: 'guest@mobitoon.ru' as string,
         password: '123456' as string,
         settings: {
-            isDarkTheme: true as boolean,
+            theme: 'light' as string, // light or dark
             initialScale: 1 as number, // 1 as default for scale on screentouch devises
         } as any
     }

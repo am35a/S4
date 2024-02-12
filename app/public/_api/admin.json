@@ -12,7 +12,7 @@
             {
                 "id": 1,
                 "icon": "home",
-                "title": "Home page",
+                "title": "Welcome to S4",
                 "segment": "/home"
             },
             {
@@ -29,7 +29,7 @@
             },
             {
                 "id": 4,
-                "icon": "svelte",
+                "icon": "components",
                 "title": "Components",
                 "segment": "/components",
                 "items": [
@@ -49,6 +49,11 @@
                         "segment": "/components/buttons"
                     },
                     {
+                        "id": 402,
+                        "title": "Dropdown",
+                        "segment": "/components/dropdown"
+                    },
+                    {
                         "id": 403,
                         "title": "Forms",
                         "segment": "/components/forms"
@@ -62,6 +67,11 @@
                         "id": 405,
                         "title": "Icons",
                         "segment": "/components/icons"
+                    },
+                    {
+                        "id": 406,
+                        "title": "Groups",
+                        "segment": "/components/groups"
                     }
                 ]
             },
