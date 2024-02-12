@@ -43,9 +43,10 @@
     </div>
 
     <SectionSettings bind:inputClass/>
+
+    <SectionText  {inputClass}/>
+    <SectionFile {inputClass}/>
+    <SectionBox {inputClass}/>
     <SectionRange {inputClass}/>
     <SectionColor {inputClass}/>
-    <SectionFile {inputClass}/>
-    <SectionText  {inputClass}/>
-    <SectionBox {inputClass}/>
 </article>

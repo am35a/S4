@@ -34,7 +34,7 @@
         <div class="d-flex fw-wrap g-1 w-fit ms-auto">
             {#each Object.entries(alignmentsObj) as [key, value]}
                 <Button
-                    class="btn-xs btn-info"
+                    class="btn-xs btn-alt"
                     on:click={() => window.open(`#${key}`, '_self')}
                 >{value}</Button>
             {/each}

@@ -31,6 +31,7 @@ $textDecorations: none, underline, line-through
             white-space: nowrap !important
 
     .#{$orientation}#{$type}c
+        color: var(--c) !important
         @each $item in $defaultColors
             &-#{$item}
                color: var(--#{$item}-color) !important
@@ -47,25 +48,25 @@ $textDecorations: none, underline, line-through
         &-transparent
             color: transparent !important
 
-    .#{$orientation}#{$type}h
-        &1, &2, &3, &4, &5, &6
-            margin-bottom: var(--size-1) !important
-            font-weight: 600 !important
-            line-height: var(--size-5) !important
-        &2, &3, &4, &5, &6
-            margin-top: var(--size-2) !important
-        &1
-            font-size: var(--fs-h1) !important
-        &2
-            font-size: var(--fs-h2) !important
-        &3
-            font-size: var(--fs-h3) !important
-        &4
-            font-size: var(--fs-h4) !important
-        &5
-            font-size: var(--fs-h5) !important
-        &6
-            font-size: var(--fs-h6) !important
+    // .#{$orientation}#{$type}h
+    //     &1, &2, &3, &4, &5, &6
+    //         margin-bottom: var(--size-1) !important
+    //         font-weight: 600 !important
+    //         line-height: var(--size-5) !important
+    //     &2, &3, &4, &5, &6
+    //         margin-top: var(--size-3) !important
+    //     &1
+    //         font-size: var(--fs-h1) !important
+    //     &2
+    //         font-size: var(--fs-h2) !important
+    //     &3
+    //         font-size: var(--fs-h3) !important
+    //     &4
+    //         font-size: var(--fs-h4) !important
+    //     &5
+    //         font-size: var(--fs-h5) !important
+    //     &6
+    //         font-size: var(--fs-h6) !important
 
     // #{$orientation}#{$type}p
     //     margin-bottom: var(--size-2) !important
@@ -119,7 +120,7 @@ h
         font-weight: 600 !important
         line-height: var(--size-5) !important
     &2, &3, &4, &5, &6
-        margin-top: var(--size-2) !important
+        margin-top: var(--size-3) !important
     &1
         font-size: var(--fs-h1) !important
     &2

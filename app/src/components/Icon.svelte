@@ -1,25 +1,30 @@
 <script lang="ts">
-    let className: string = ''
-    // let classSize: string = ''
     $: {
-        className = $$restProps.name ? `ico-${$$restProps.name}` : ``
-        // classSize = $$restProps.size ? `ico-${$$restProps.size}` : ``
-        // let IconClasses = (): string => `ico ${className} ${classSize}`
-        let IconClasses = (): string => `ico ${className}`
-        $$restProps.class = $$restProps.class ? `${IconClasses()} ${$$restProps.class}` : IconClasses()
-        $$restProps.style=`--ico-image: url(/icons/${$$restProps.name}.svg)`
+        if(!$$restProps.name)
+            $$restProps.name = 'ghost'
+
+        if($$restProps.class)
+            $$restProps.class = `ico-${$$restProps.name} ${$$restProps.class}`
+        else    
+            $$restProps.class = `ico-${$$restProps.name}`
+
+        $$restProps.style = `--ico-image: url(/icons/${$$restProps.name}.svg); ${$$restProps.style}`
+        
         delete $$restProps.name
-        delete $$restProps.size
     }
 </script>
 
-<span {...$$restProps}>&nbsp;</span>
+<span
+    class:ico = {true}
+    {...$$restProps}
+></span>
 
 <style lang="sass" global>
     .ico
         display: inline-block
         min-width: calc(var(--lh) * 1em)
         min-height: calc(var(--lh) * 1em)
+        vertical-align: middle
         background-color: currentColor
         mask-repeat: no-repeat
         -webkit-mask-repeat: no-repeat

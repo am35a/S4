@@ -18,7 +18,7 @@
                 Success! This is positive alert.
             </div>
             <div class="alert alert-warning">
-                <span class="ico" style="--ico-image: url(/icons/alert-triangel.svg);">&nbsp;</span>
+                <span class="ico" style="--ico-image: url(/icons/alert-triangle.svg);">&nbsp;</span>
                 Warning. Loading of this page taking a way too long.
             </div>
             <div class="alert alert-error mb-0">
@@ -43,7 +43,7 @@
                 Success! This is positive alert.
             </div>
             <div class="alert alert-alt-warning">
-                <span class="ico" style="--ico-image: url(/icons/alert-triangel.svg);">&nbsp;</span>
+                <span class="ico" style="--ico-image: url(/icons/alert-triangle.svg);">&nbsp;</span>
                 Warning. Loading of this page taking a way too long.
             </div>
             <div class="alert alert-alt-error mb-0">
@@ -68,7 +68,7 @@
                 Success! This is positive alert.
             </div>
             <div class="alert alert-outline-warning">
-                <span class="ico" style="--ico-image: url(/icons/alert-triangel.svg);">&nbsp;</span>
+                <span class="ico" style="--ico-image: url(/icons/alert-triangle.svg);">&nbsp;</span>
                 Warning. Loading of this page taking a way too long.
             </div>
             <div class="alert alert-outline-error mb-0">

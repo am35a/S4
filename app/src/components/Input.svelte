@@ -1,10 +1,16 @@
 <script lang="ts">
-
     // https://developer.mozilla.org/ru/docs/Web/CSS/:out-of-range
     // https://developer.mozilla.org/ru/docs/Web/CSS/:read-only
     // https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid
 
-    export let value: string = ''
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
+    function handleChange(event: any) {
+        dispatch('change', event.target.value);
+    }
+
+    export let value = ''
 
     // if($$restProps.type)
     //     console.log($$restProps.type)
@@ -17,6 +23,7 @@
 
 <input
     bind:value
+    on:change={handleChange}
     class:frm = {true}
     {...$$restProps}
     placeholder = {$$restProps.placeholder ? $$restProps.placeholder : $$restProps.type}
@@ -107,8 +114,14 @@
             display: none
 
     [type="color"].frm
+        width: calc(var(--lh) * 1em + var(--size-2))
         padding: var(--size-1)
         cursor: pointer
+        overflow: hidden
+        &::-webkit-color-swatch-wrapper
+            padding: 0
+        &::-webkit-color-swatch
+            border: none
 
     [type="range"].frm
         padding: var(--size-1)

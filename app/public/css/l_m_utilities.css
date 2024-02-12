@@ -1404,7 +1404,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--size-5) !important;
 }
 h2, h3, h4, h5, h6 {
-  margin-top: var(--size-2) !important;
+  margin-top: var(--size-3) !important;
 }
 h1 {
   font-size: var(--fs-h1) !important;
@@ -1470,6 +1470,9 @@ p {
   white-space: nowrap !important;
 }
 
+.l_m_c {
+  color: var(--c) !important;
+}
 .l_m_c-positive {
   color: var(--positive-color) !important;
 }
@@ -1604,33 +1607,6 @@ p {
 }
 .l_m_c-transparent {
   color: transparent !important;
-}
-
-.l_m_h1, .l_m_h2, .l_m_h3, .l_m_h4, .l_m_h5, .l_m_h6 {
-  margin-bottom: var(--size-1) !important;
-  font-weight: 600 !important;
-  line-height: var(--size-5) !important;
-}
-.l_m_h2, .l_m_h3, .l_m_h4, .l_m_h5, .l_m_h6 {
-  margin-top: var(--size-2) !important;
-}
-.l_m_h1 {
-  font-size: var(--fs-h1) !important;
-}
-.l_m_h2 {
-  font-size: var(--fs-h2) !important;
-}
-.l_m_h3 {
-  font-size: var(--fs-h3) !important;
-}
-.l_m_h4 {
-  font-size: var(--fs-h4) !important;
-}
-.l_m_h5 {
-  font-size: var(--fs-h5) !important;
-}
-.l_m_h6 {
-  font-size: var(--fs-h6) !important;
 }
 
 .l_m_fs {

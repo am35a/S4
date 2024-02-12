@@ -9,7 +9,7 @@
         The <b>border-...0</b> classes remove borders from one of the four sides or all at once.
     </p>
     <div class="alert alert-warning js-start">
-        Pay attention the <b>border-...-0</b> classes remove the border by remove border width that resizing the container! If you need to keep the size of the container as before use <b>bgc-span-transparent</b>.
+        Pay attention the <b>border-...-0</b> classes remove the border by remove border width that resizing the container! If you need to keep the size of the container as before use <b>bgc-transparent</b>.
     </div>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
         <div class="d-flex fw-wrap g-4">

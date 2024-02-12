@@ -123,6 +123,9 @@
 }
 
 /*  background section: background color of accent and extra palette contained in classes */
+.bgc {
+  background-color: var(--bgc) !important;
+}
 .bgc-positive {
   background-color: var(--positive-color) !important;
 }
@@ -259,82 +262,82 @@
   background-color: transparent !important;
 }
 .bgi {
-  background-image: var(--bgi);
+  background-image: var(--bgi) !important;
 }
 .bgo-border {
-  background-origin: border-box;
+  background-origin: border-box !important;
 }
 .bgo-padding {
-  background-origin: padding-box;
+  background-origin: padding-box !important;
 }
 .bgo-content {
-  background-origin: content-box;
+  background-origin: content-box !important;
 }
 .bgp {
-  background-position: var(--bgp);
+  background-position: var(--bgp) !important;
 }
 .bgp-left {
-  background-position: var(--bgp, 0% 50%);
+  background-position: var(--bgp, 0% 50%) !important;
 }
 .bgp-top-left, .bgp-left-top {
-  background-position: var(--bgp, 0% 0%);
+  background-position: var(--bgp, 0% 0%) !important;
 }
 .bgp-top {
-  background-position: var(--bgp, 50% 0%);
+  background-position: var(--bgp, 50% 0%) !important;
 }
 .bgp-top-right, .bgp-right-top {
-  background-position: var(--bgp, 100% 0%);
+  background-position: var(--bgp, 100% 0%) !important;
 }
 .bgp-righ {
-  background-position: var(--bgp, 100% 50%);
+  background-position: var(--bgp, 100% 50%) !important;
 }
 .bgp-bottom-right, .bgp-right-bottom {
-  background-position: var(--bgp, 100% 100%);
+  background-position: var(--bgp, 100% 100%) !important;
 }
 .bgp-bottom {
-  background-position: var(--bgp, 50% 100%);
+  background-position: var(--bgp, 50% 100%) !important;
 }
 .bgp-bottom-left, .bgp-left-bottom {
-  background-position: var(--bgp, 0% 100%);
+  background-position: var(--bgp, 0% 100%) !important;
 }
 .bgp-center {
-  background-position: var(--bgp, 50% 50%);
+  background-position: var(--bgp, 50% 50%) !important;
 }
 .bgr {
-  background-repeat: var(--bgr, repeat);
+  background-repeat: var(--bgr, repeat) !important;
 }
 .bgr-no {
-  background-repeat: var(--bgr, no-repeat);
+  background-repeat: var(--bgr, no-repeat) !important;
 }
 .bgr-x {
-  background-repeat: var(--bgr, repeat-x);
+  background-repeat: var(--bgr, repeat-x) !important;
 }
 .bgr-y {
-  background-repeat: var(--bgr, repeat-y);
+  background-repeat: var(--bgr, repeat-y) !important;
 }
 .bgr-space {
-  background-repeat: var(--bgr, space);
+  background-repeat: var(--bgr, space) !important;
 }
 .bgr-round {
-  background-repeat: var(--bgr, round);
+  background-repeat: var(--bgr, round) !important;
 }
 .bgs {
-  background-size: var(--bgs, auto);
+  background-size: var(--bgs, auto) !important;
 }
 .bgs-cover {
-  background-size: var(--bgs, cover);
+  background-size: var(--bgs, cover) !important;
 }
 .bgs-contain {
-  background-size: var(--bgs, contain);
+  background-size: var(--bgs, contain) !important;
 }
 .bga-scroll {
-  background-attachment: scroll;
+  background-attachment: scroll !important;
 }
 .bga-fixed {
-  background-attachment: fixed;
+  background-attachment: fixed !important;
 }
 .bga-local {
-  background-attachment: local;
+  background-attachment: local !important;
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */
@@ -1895,7 +1898,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--size-5) !important;
 }
 h2, h3, h4, h5, h6 {
-  margin-top: var(--size-2) !important;
+  margin-top: var(--size-3) !important;
 }
 h1 {
   font-size: var(--fs-h1) !important;
@@ -1961,6 +1964,9 @@ p {
   white-space: nowrap !important;
 }
 
+.c {
+  color: var(--c) !important;
+}
 .c-positive {
   color: var(--positive-color) !important;
 }
@@ -2095,33 +2101,6 @@ p {
 }
 .c-transparent {
   color: transparent !important;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: var(--size-1) !important;
-  font-weight: 600 !important;
-  line-height: var(--size-5) !important;
-}
-.h2, .h3, .h4, .h5, .h6 {
-  margin-top: var(--size-2) !important;
-}
-.h1 {
-  font-size: var(--fs-h1) !important;
-}
-.h2 {
-  font-size: var(--fs-h2) !important;
-}
-.h3 {
-  font-size: var(--fs-h3) !important;
-}
-.h4 {
-  font-size: var(--fs-h4) !important;
-}
-.h5 {
-  font-size: var(--fs-h5) !important;
-}
-.h6 {
-  font-size: var(--fs-h6) !important;
 }
 
 .fs {

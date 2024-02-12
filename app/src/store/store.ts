@@ -26,7 +26,7 @@ export let asideItems = writable(
         {
             id: 1 as number,
             icon: 'home' as string,
-            title: 'Home page' as string,
+            title: 'Welcome to S4' as string,
             segment: '/home' as string
         }
     ]
@@ -53,7 +53,7 @@ export let userData = writable(
                 {
                     id: 1 as number,
                     icon: 'home' as string,
-                    title: 'Home page' as string,
+                    title: 'Welcome to S4' as string,
                     segment: '/home' as string
                 }
             ]

@@ -1404,7 +1404,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--size-5) !important;
 }
 h2, h3, h4, h5, h6 {
-  margin-top: var(--size-2) !important;
+  margin-top: var(--size-3) !important;
 }
 h1 {
   font-size: var(--fs-h1) !important;
@@ -1470,6 +1470,9 @@ p {
   white-space: nowrap !important;
 }
 
+.t_c {
+  color: var(--c) !important;
+}
 .t_c-positive {
   color: var(--positive-color) !important;
 }
@@ -1604,33 +1607,6 @@ p {
 }
 .t_c-transparent {
   color: transparent !important;
-}
-
-.t_h1, .t_h2, .t_h3, .t_h4, .t_h5, .t_h6 {
-  margin-bottom: var(--size-1) !important;
-  font-weight: 600 !important;
-  line-height: var(--size-5) !important;
-}
-.t_h2, .t_h3, .t_h4, .t_h5, .t_h6 {
-  margin-top: var(--size-2) !important;
-}
-.t_h1 {
-  font-size: var(--fs-h1) !important;
-}
-.t_h2 {
-  font-size: var(--fs-h2) !important;
-}
-.t_h3 {
-  font-size: var(--fs-h3) !important;
-}
-.t_h4 {
-  font-size: var(--fs-h4) !important;
-}
-.t_h5 {
-  font-size: var(--fs-h5) !important;
-}
-.t_h6 {
-  font-size: var(--fs-h6) !important;
 }
 
 .t_fs {

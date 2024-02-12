@@ -1,3 +1,8 @@
+<!-- 
+    1) добавить добавление иконки инфо алерт и т.п.
+    2) пересмотреть кнопку закрытия, возможно убрать в нижнюю часть
+ -->
+
 <script lang="ts">
     import Icon from 'component/Icon.svelte'
     import Button from 'component/Button.svelte'

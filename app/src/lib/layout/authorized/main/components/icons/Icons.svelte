@@ -2,48 +2,143 @@
     import Icon from 'component/Icon.svelte'
     import Precode from 'component/Precode.svelte'
     import Button from 'component/Button.svelte'
+    import Input from 'component/Input.svelte'
 
-    let iconSize:string = ''
     let iconSizeObj = {
-        'auto': '',
-        'xx-small': 'fs-xxs',
-        'x-small': 'fs-xs',
+        'none': '',
+        'small xx': 'fs-xxs',
+        'small x': 'fs-xs',
         'small': 'fs-sm',
         'medium': 'fs-md',
         'large': 'fs-lg',
-        'x-large': 'fs-xl',
-        'xx-large': 'fs-xxl',
-        'xxx-large': 'fs-xxxl',
-        'full': 'w-100 h-100'
+        'large x': 'fs-xl',
+        'large xx': 'fs-xxl',
+        'large xxx': 'fs-xxxl',
+        'expand': 'w-100 h-100'
+    }
+    let iconSize: string = '',
+        iconBgColor: string = '',
+        iconColor: string = ''
+
+    function toggleColor(switchColor: string) {
+        switch (switchColor) {
+            case 'bgColor':
+                iconColor = ''
+                break
+            case 'color':
+                iconBgColor = ''
+                break
+        }
+    }
+
+
+    let preCodeObj = {
+        classes: '',
+        styles: ''
+    }
+
+    $: iconSize || iconBgColor || iconColor, preCode()
+    
+    function preCode() {
+        preCodeObj.classes = preCodeObj.styles = ''
+
+        if (iconSize)
+            preCodeObj.classes += ` ${iconSize}`
+
+        if (iconBgColor)
+            preCodeObj.classes += ` bgc`
+
+        if (iconColor)
+            preCodeObj.classes += ` c`
     }
 </script>
 
 <section>
-    <div class="h2" aria-level={2} role="heading">Icons</div>
-    <div class="d-grid gtc-2 p_gtc-1">
+    <h2 id="buttons">Icons</h2>
+    <div class="d-grid g-5">
         <p>
             Lightweight <Icon name="ghost"/> responsive vector icons with cache available.
-            <br>
-            The  icon sizes directly depend on the font size and the container in which the icon is placed.            
+            The  icon sizes directly depend on the font size and the container in which the icon is placed.
+            Colors are changed in two ways - using the <b>bgc-...</b> or <b>c-...</b> classes.
         </p>
-        <div class="d-grid g-2 p-2 bgc-positive br">
-            <div style="min-height: 10em">
-                <Icon class={iconSize} name="ghost"/>
+        <div class="alert alert-warning js-start">
+            <span class="ico fs-xl" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
+            Pay attention! The <b>bgc-...</b> and <b>c-...</b> are incompatible in one case.
+        </div>
+
+        <div>
+            {preCodeObj.classes}
+        </div>
+        <div>
+            {preCodeObj.styles}
+        </div>
+
+        <div class="d-grid g-4">
+            <b>Background color</b>
+            <div>
+                <Input
+                    bind:value={iconBgColor}
+                    on:change={() => toggleColor('bgColor')}
+                    type="color"
+                />
             </div>
-            <div class="d-inline-flex fw-wrap g-2">
+        </div>
+        <div class="d-grid g-4">
+            <b>Color</b>
+            <div>
+                <Input
+                    bind:value={iconColor}
+                    on:change={() => toggleColor('color')}
+                    type="color"
+                />
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>Size</b>
+            <div class="d-inline-flex fw-wrap g-3">
                 {#each Object.entries(iconSizeObj) as [key, value]}
                     <Button
-                        class="btn-secondary {iconSize === value ? 'active' : ''}"
+                        class={iconSize === value ? 'active' : ''}
                         on:click = {() => iconSize = value}
                         disabled={iconSize === value}
                     >{key}</Button>
                 {/each}
             </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="d-grid g-3 p-3 bgc-positive br h" style="--h: 10rem">
+                <Icon
+                    class="{iconSize} m-auto {iconBgColor ? 'bgc' : ''} {iconColor ? 'c' : ''}"
+                    style="{iconBgColor ? `--bgc:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"
+                    name="ghost"
+                />
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>Svelte</b>
             <Precode>
-                {
+                    {
 `<Icon ${iconSize ? `class="${iconSize}" ` : ``}name="ghost" />
-<Icon class="ico-ghost${iconSize ? ` ${iconSize}` : ``}" />`
-                }
+// or
+<Icon
+    class="ico-ghost${preCodeObj.classes}"
+    style="${iconBgColor ? ` --bgc:${iconBgColor};` : ''}${iconColor ? ` --c:${iconColor};` : ''}"
+/>
+`
+                    }
+            </Precode>
+        </div>
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
+                    {
+`<span
+    class="ico${preCodeObj.classes}"
+    style="--ico-image: url(ghost.svg);${iconBgColor ? ` --bgc:${iconBgColor};` : ''}${iconColor ? ` --c:${iconColor};` : ''}"
+></span>
+`
+                    }
             </Precode>
         </div>
     </div>

@@ -12,7 +12,7 @@
             {
                 "id": 1,
                 "icon": "home",
-                "title": "Home page",
+                "title": "Welcome to S4",
                 "segment": "/home"
             },
             {
@@ -29,7 +29,7 @@
             },
             {
                 "id": 4,
-                "icon": "svelte",
+                "icon": "components",
                 "title": "Components",
                 "segment": "/components",
                 "items": [

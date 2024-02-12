@@ -1,15 +1,15 @@
 <script lang="ts">
     import Precode from 'component/Precode.svelte'
     import Button from 'component/Button.svelte'
-    import Details from 'component/Details.svelte'
 
-    let lineHeight:string = ''
     let lineHeightObj = {
-        'auto': '',
-        'lh-0': '0',
-        'lh-1': '1',
-        '--lh-4': '4'
+        'Normal': 'normal',
+        '0': '0',
+        '1': '1',
+        '4': '4'
     }
+    let lineHeight:string = '4'
+    
     let verticalAlignObj = {
         'va-baseline': 'Baseline',
         'va-sub': 'Sub',
@@ -24,42 +24,46 @@
 
 <div>
     <h4 id="alignBlock">Inline container</h4>
-    <p>
-        The <b>vertical-align-...</b> styles sets vertical alignment of an <b>inline</b>, <b>inline-block</b> elements.
-    </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        <div class="d-inline-flex fw-wrap g-2">
-            {#each Object.entries(lineHeightObj) as [key, value]}
-                <Button
-                    class="btn-secondary {lineHeight === value ? 'active' : ''}"
-                    on:click = {() => lineHeight = value}
-                    disabled={lineHeight === value}
-                >{key}</Button>
-            {/each}
-        </div>
-        <div class="d-grid ws-nowrap ox-auto" style="--lh: {lineHeight}">
-            <div class="lh gc-full gr-full my-auto border-bottom border-top c-negative-10">&nbsp;<!-- base line indicator--></div>
-            <div class="lh gc-full gr-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
-            <div class="lh gc-full gr-full py-4">
-                {#each Object.entries(verticalAlignObj) as [key, value]}
-                    <span class="bgc-negative-10 px-1 me-1 br {key}">{value}</span>
+    <div class="d-grid g-5">
+        <p>
+            The <b>va-...</b> classes sets vertical alignment of an <b>inline</b> or <b>inline-block</b> blocks.
+        </p>
+        <div class="d-grid g-4">
+            <b>Line height</b>
+            <div class="d-inline-flex fw-wrap g-3">
+                {#each Object.entries(lineHeightObj) as [key, value]}
+                    <Button
+                        class="{lineHeight === value ? 'active' : ''}"
+                        on:click = {() => lineHeight = value}
+                        disabled={lineHeight === value}
+                    >{key}</Button>
                 {/each}
             </div>
         </div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="d-grid g-3 p-3 bgc-positive br">
+                <div class="d-grid ws-nowrap ox-auto" style="--lh: {lineHeight}">
+                    <div class="lh gc-full gr-full my-auto border-bottom border-top c-negative-10">&nbsp;<!-- base line indicator--></div>
+                    <div class="lh gc-full gr-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
+                    <div class="lh gc-full gr-full py-4">
+                        {#each Object.entries(verticalAlignObj) as [key, value]}
+                            <span class="bgc-negative-10 px-1 me-1 br {key}">{value}</span>
+                        {/each}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
                 {#each Object.entries(verticalAlignObj) as [key, value]}
                     {
-`<span class="${key}">${value}</span>
+`   <span class="${key}">${value}</span>
 `
                     }
                 {/each}
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </div>

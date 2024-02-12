@@ -4,7 +4,7 @@
 
     import Input from 'component/Input.svelte'
 
-    let colorPaletteObj = {
+    let colorPaletteObj: { [key: string]: any } = {
         defaultNamesArr: [
             'positive' as string,
             'negative' as string
@@ -18,16 +18,16 @@
             'error' as string
         ],
         variablesObj: {
-            'lightness': undefined as number, // from 0 to 100
-            'lightness-offset': undefined as number, // from 0 to 100
-            'chroma': undefined as number, // from 0 to 0.37
-            'alfa': undefined as number, // from 0 to 100
-            'primary-hue': undefined as number, // from 0 to 360
-            'secondary-hue': undefined as number, // from 0 to 360
-            'info-hue': undefined as number, // from 0 to 360
-            'success-hue': undefined as number, // from 0 to 360
-            'warning-hue': undefined as number, // from 0 to 360
-            'error-hue': undefined as number // from 0 to 360
+            'lightness': 0 as number, // from 0 to 100
+            'lightness-offset': 0 as number, // from 0 to 100
+            'chroma': 0 as number, // from 0 to 0.37
+            'alfa': 0 as number, // from 0 to 100
+            'primary-hue': 0 as number, // from 0 to 360
+            'secondary-hue': 0 as number, // from 0 to 360
+            'info-hue': 0 as number, // from 0 to 360
+            'success-hue': 0 as number, // from 0 to 360
+            'warning-hue': 0 as number, // from 0 to 360
+            'error-hue': 0 as number // from 0 to 360
         }
     }
 
