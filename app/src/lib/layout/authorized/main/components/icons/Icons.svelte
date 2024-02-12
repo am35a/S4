@@ -37,6 +37,7 @@
         styles: ''
     }
 
+
     $: iconSize || iconBgColor || iconColor, preCode()
     
     function preCode() {
@@ -45,11 +46,15 @@
         if (iconSize)
             preCodeObj.classes += ` ${iconSize}`
 
-        if (iconBgColor)
+        if (iconBgColor) {
             preCodeObj.classes += ` bgc`
+            preCodeObj.styles += ` --bgc:${iconBgColor};`
+        }
 
-        if (iconColor)
+        if (iconColor) {
             preCodeObj.classes += ` c`
+            preCodeObj.styles += ` --c:${iconColor};`
+        }
     }
 </script>
 
@@ -119,12 +124,7 @@
             <b>Svelte</b>
             <Precode>
                     {
-`<Icon ${iconSize ? `class="${iconSize}" ` : ``}name="ghost" />
-// or
-<Icon
-    class="ico-ghost${preCodeObj.classes}"
-    style="${iconBgColor ? ` --bgc:${iconBgColor};` : ''}${iconColor ? ` --c:${iconColor};` : ''}"
-/>
+`<Icon ${preCodeObj.classes ? `class="${preCodeObj.classes}"` : ''}${preCodeObj.styles ? ` styles="${preCodeObj.styles}"` : ''} name="ghost" />
 `
                     }
             </Precode>
@@ -135,7 +135,7 @@
                     {
 `<span
     class="ico${preCodeObj.classes}"
-    style="--ico-image: url(ghost.svg);${iconBgColor ? ` --bgc:${iconBgColor};` : ''}${iconColor ? ` --c:${iconColor};` : ''}"
+    style="--ico-image:url(ghost.svg);${preCodeObj.styles}"
 ></span>
 `
                     }
