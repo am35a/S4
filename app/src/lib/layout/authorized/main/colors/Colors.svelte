@@ -49,10 +49,8 @@
     }
 </script>
 
-<h1>Colors</h1>
-
+<h1 id="colorPalette">Color palette</h1>
 <article>
-    <h2 id="alignment">Settings:</h2>
     <div>
         <div>Lightness: {colorPaletteObj.variablesObj['lightness']}</div>
         <Input
@@ -85,7 +83,14 @@
 </div>
 <div class="d-flex fw-wrap g-2">
     {#each colorPaletteObj.accentNamesArr as value}
-        <div class="d-grid ji-center p-4 bgc-positive br f" style="--fg: 1; --fb: 0;">
+        <div class="d-grid rg-2 ji-center p-4 bgc-positive br f" style="--fg: 1; --fb: 0;">
+            <Input
+                bind:value={colorPaletteObj.variablesObj[`${value}-hue`]}
+                min="0" max="360"
+                class="frm w-100"
+                type="range"
+                step="1"
+            />
             <div>
                 <div class="ta-center fw-600 text c-{value}">{value}</div>
                 oklch(

@@ -1,5 +1,5 @@
-<script lang="ts">
-    export let colorName: string = undefined
+<script>
+    export let colorName = ''
 </script>
 
 <svg
