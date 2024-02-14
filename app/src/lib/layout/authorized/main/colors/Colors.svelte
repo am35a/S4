@@ -58,10 +58,16 @@
 <h1 id="colorPalette">Color palette</h1>
 <article>
     <div>
-        <div>Lightness: {colorPaletteObj.variablesObj['lightness']}</div>
+        <div>Lightness:</div>
+        <div class="d-grid gtc-3 ai-end px-2">
+            <small class="ta-start">{colorPaletteObj.variablesObj['lightness-offset']}</small>
+            <div class="ta-center">{colorPaletteObj.variablesObj['lightness']}</div>
+            <small class="ta-end">{1 - colorPaletteObj.variablesObj['lightness-offset']}</small>
+        </div>
         <Input
             bind:value={colorPaletteObj.variablesObj['lightness']}
-            min={colorPaletteObj.variablesObj['lightness-offset']} max="1"
+            min={colorPaletteObj.variablesObj['lightness-offset']}
+            max={1 - colorPaletteObj.variablesObj['lightness-offset']}
             class="frm w-100"
             type="range"
             step=".01"
@@ -74,7 +80,12 @@
             type="range"
             step=".01"
         /> -->
-        <div>Chroma: {colorPaletteObj.variablesObj['chroma']}</div>
+        <div>Chroma:</div>
+        <div class="d-grid gtc-3 ai-end px-2">
+            <small class="ta-start">0</small>
+            <div class="ta-center">{colorPaletteObj.variablesObj['chroma']}</div>
+            <small class="ta-end">0.37</small>
+        </div>
         <Input
             bind:value={colorPaletteObj.variablesObj['chroma']}
             min="0" max="0.37"
@@ -82,7 +93,12 @@
             type="range"
             step=".01"
         />
-        <div>Alfa (mute): {colorPaletteObj.variablesObj['alfa']}</div>
+        <div>Alfa (mute):</div>
+        <div class="d-grid gtc-3 ai-end px-2">
+            <small class="ta-start">0</small>
+            <div class="ta-center">{colorPaletteObj.variablesObj['alfa']}</div>
+            <small class="ta-end">1</small>
+        </div>
         <Input
             bind:value={colorPaletteObj.variablesObj['alfa']}
             min="0" max="1"

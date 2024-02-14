@@ -100,9 +100,9 @@
   --error-color: oklch(var(--lightness) var(--chroma) var(--error-hue));
   --error-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--error-hue));
   --error-color-m: oklch(var(--lightness) var(--chroma) var(--error-hue) / var(--alfa));
-  --html-bg-color: var(--negative-color);
-  --body-bg-color: var(--positive-color-90);
-  --body-color: var(--negative-color-90);
+  --html-bgc: var(--negative-color);
+  --body-bgc: var(--positive-color-90);
+  --body-c: var(--negative-color-90);
   --bsc: var(--negative-color-10);
 }
 
@@ -163,16 +163,16 @@
   --error-color: oklch(var(--lightness) var(--chroma) var(--error-hue));
   --error-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--error-hue));
   --error-color-m: oklch(var(--lightness) var(--chroma) var(--error-hue) / var(--alfa));
-  --html-bg-color: var(--negative-color);
-  --body-bg-color: var(--positive-color-90);
-  --body-color: var(--negative-color-90);
+  --html-bgc: var(--negative-color);
+  --body-bgc: var(--positive-color-90);
+  --body-c: var(--negative-color-90);
   --bsc: var(--positive-color-10);
 }
 
 html {
   position: relative;
   box-sizing: border-box;
-  background-color: var(--html-bg-color);
+  background-color: var(--html-bgc);
   -webkit-text-size-adjust: 100%;
   word-break: normal;
   -moz-tab-size: 4;
