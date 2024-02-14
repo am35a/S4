@@ -1,4 +1,9 @@
-# S4 - UI Kit
+# S4 - UI System
+
+- The originality - less JS more CSS!
+
+- The modern, simple and responsive lightweight UI system with library parthly based on Svelte which easier to create high-loaded applications.
+
 S4 - this repo is used as a researching for UI library based on [Svelte](https://svelte.dev)/[TS](https://www.typescriptlang.org/)/[SASS](https://sass-lang.com/dart-sass) also [pnpm](https://pnpm.io/)/[Rollup](https://rollupjs.org)
 
 ## Before starting dev:

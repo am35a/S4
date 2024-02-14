@@ -74,7 +74,7 @@
   --secondary-hue: 255;
   --info-hue: 295;
   --success-hue: 145;
-  --warning-hue: 85;
+  --warning-hue: 95;
   --error-hue: 25;
   --primary-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) var(--chroma) var(--primary-hue));
   --primary-color: oklch(var(--lightness) var(--chroma) var(--primary-hue));

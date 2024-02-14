@@ -1,37 +1,37 @@
-<script lang="ts">
+<script>
     import { appConsole } from 'src/store/console'
     import ColorBox from './colorbox/ColorBox.svelte'
 
     import Input from 'component/Input.svelte'
 
-    let colorPaletteObj: { [key: string]: any } = {
+    let colorPaletteObj = {
         defaultNamesArr: [
-            'positive' as string,
-            'negative' as string
+            'positive',
+            'negative'
         ],
         accentNamesArr: [
-            'primary' as string,
-            'secondary' as string,
-            'info' as string,
-            'success' as string,
-            'warning' as string,
-            'error' as string
+            'primary',
+            'secondary',
+            'info',
+            'success',
+            'warning',
+            'error'
         ],
         variablesObj: {
-            'lightness': 0 as number, // from 0 to 100
-            'lightness-offset': 0 as number, // from 0 to 100
-            'chroma': 0 as number, // from 0 to 0.37
-            'alfa': 0 as number, // from 0 to 100
-            'primary-hue': 0 as number, // from 0 to 360
-            'secondary-hue': 0 as number, // from 0 to 360
-            'info-hue': 0 as number, // from 0 to 360
-            'success-hue': 0 as number, // from 0 to 360
-            'warning-hue': 0 as number, // from 0 to 360
-            'error-hue': 0 as number // from 0 to 360
+            'lightness': 0, // from 0 to 1
+            'lightness-offset': 0, // from 0 to 1
+            'chroma': 0, // from 0 to 0.37
+            'alfa': 0, // from 0 to 100
+            'primary-hue': 0, // from 0 to 360
+            'secondary-hue': 0, // from 0 to 360
+            'info-hue': 0, // from 0 to 360
+            'success-hue': 0, // from 0 to 360
+            'warning-hue': 0, // from 0 to 360
+            'error-hue': 0 // from 0 to 360
         }
     }
 
-    var root = document.querySelector(':root') as any
+    var root = document.querySelector(':root')
     let computedRoot = getComputedStyle(root)
 
     function getCSSVarValues() {
@@ -45,7 +45,13 @@
     $: if ($appConsole['isWindowLoad']) {
         for (const key of Object.keys(colorPaletteObj.variablesObj))
             root.style.setProperty(`--${key}`, `${colorPaletteObj.variablesObj[key]}`)
+    }
 
+    $: bgiGradientVar = () => {
+        let oklchCircle = ''
+        for (let index = 0; index < 360; index+=10)
+            oklchCircle += `, oklch(${colorPaletteObj.variablesObj['lightness']} ${colorPaletteObj.variablesObj['chroma']} ${index})`
+        return `--bgi: linear-gradient(to right${oklchCircle})`
     }
 </script>
 
@@ -60,6 +66,14 @@
             type="range"
             step=".01"
         />
+        <!-- <div>Lightness offset: {colorPaletteObj.variablesObj['lightness-offset']}</div>
+        <Input
+            bind:value={colorPaletteObj.variablesObj['lightness-offset']}
+            min="0" max="1"
+            class="frm w-100"
+            type="range"
+            step=".01"
+        /> -->
         <div>Chroma: {colorPaletteObj.variablesObj['chroma']}</div>
         <Input
             bind:value={colorPaletteObj.variablesObj['chroma']}
@@ -68,7 +82,7 @@
             type="range"
             step=".01"
         />
-        <div>Alfa (mute): {colorPaletteObj.variablesObj['alfa']}%</div>
+        <div>Alfa (mute): {colorPaletteObj.variablesObj['alfa']}</div>
         <Input
             bind:value={colorPaletteObj.variablesObj['alfa']}
             min="0" max="1"
@@ -87,7 +101,8 @@
             <Input
                 bind:value={colorPaletteObj.variablesObj[`${value}-hue`]}
                 min="0" max="360"
-                class="frm w-100"
+                class="frm w-100 bgi"
+                style="{bgiGradientVar()}"
                 type="range"
                 step="1"
             />
@@ -103,7 +118,7 @@
                 <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600 c-{value}-l">light</div>
                     oklch(
-                        {(+(colorPaletteObj.variablesObj['lightness']) + colorPaletteObj.variablesObj['lightness-offset']).toFixed(2)}
+                        {(+(colorPaletteObj.variablesObj['lightness']) + ~~colorPaletteObj.variablesObj['lightness-offset'])}
                         {colorPaletteObj.variablesObj['chroma']}
                         {colorPaletteObj.variablesObj[`${value}-hue`]}
                     )
@@ -114,7 +129,7 @@
                 <div class="ws-nowrap as-end">
                     <div class="ta-center fw-600 c-{value}-d">dark</div>
                     oklch(
-                        {(+(colorPaletteObj.variablesObj['lightness']) - colorPaletteObj.variablesObj['lightness-offset']).toFixed(2)}
+                        {(+(colorPaletteObj.variablesObj['lightness']) - ~~colorPaletteObj.variablesObj['lightness-offset'])}
                         {colorPaletteObj.variablesObj['chroma']}
                         {colorPaletteObj.variablesObj[`${value}-hue`]}
                     )
