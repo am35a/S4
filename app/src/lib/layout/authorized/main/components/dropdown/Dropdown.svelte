@@ -1,10 +1,10 @@
-<script lang="ts">
+<script>
     import Icon from 'component/Icon.svelte'
     import Button from 'component/Button.svelte'
     import Dropdown from 'component/Dropdown.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let dropdownObj: { [key: string]: any } = {
+    let dropdownObj = {
         positionObj: [
             'right top',
             'right center',
@@ -21,34 +21,34 @@
             'center center'
         ]
     }
-    let contentPosition: string = dropdownObj.positionObj[6]
+    let contentPosition = dropdownObj.positionObj[6]
 
-    let buttonsObj: { [key: string]: any } = {
+    let buttonsObj = {
         variantsObj: {
-            Default: '' as string,
-            Alt: 'alt' as string,
-            Outline: 'outline' as string
+            Default: '',
+            Alt: 'alt',
+            Outline: 'outline'
         },
         colorsObj: {
-            Default: '' as string,
-            Primary: '-primary' as string,
-            Secondary: '-secondary' as string,
-            Info: '-info' as string,
-            Success: '-success' as string,
-            Warning: '-warning' as string,
-            Error: '-error' as string,
+            Default: '',
+            Primary: '-primary',
+            Secondary: '-secondary',
+            Info: '-info',
+            Success: '-success',
+            Warning: '-warning',
+            Error: '-error',
         },
         iconObj: {
-            Default: 0 as number,
-            Both: 1 as number,
-            Icon: 2 as number
+            Default: 0,
+            Both: 1,
+            Icon: 2
         }
     }
-    let buttonVariant: string = 'Default'
-    let buttonColor: string = 'Default'
-    let buttonIcon: string = 'Default'
+    let buttonVariant = 'Default'
+    let buttonColor = 'Default'
+    let buttonIcon = 'Default'
 
-    let buttonClass: string = ''
+    let buttonClass = ''
     $: {
         buttonClass = fnButtonClass()
 

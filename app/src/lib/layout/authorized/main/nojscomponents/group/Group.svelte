@@ -1,33 +1,33 @@
-<script lang="ts">
+<script>
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let groupObj: { [key: string]: any } = {
-        Horizontal: 'grp-h' as string,
-        Vertical: 'grp-v' as string,
+    let groupObj = {
+        Horizontal: 'grp-h',
+        Vertical: 'grp-v',
     }
-    let groupVariant: string = 'Horizontal'
+    let groupVariant = 'Horizontal'
 
-    let buttonsObj: { [key: string]: any } = {
+    let buttonsObj = {
         variantsObj: {
-            Default: '' as string,
-            Alt: 'alt' as string,
-            Outline: 'outline' as string
+            Default: '',
+            Alt: 'alt',
+            Outline: 'outline'
         },
         colorsObj: {
-            Default: '' as string,
-            Primary: '-primary' as string,
-            Secondary: '-secondary' as string,
-            Info: '-info' as string,
-            Success: '-success' as string,
-            Warning: '-warning' as string,
-            Error: '-error' as string,
+            Default: '',
+            Primary: '-primary',
+            Secondary: '-secondary',
+            Info: '-info',
+            Success: '-success',
+            Warning: '-warning',
+            Error: '-error',
         }
     }
-    let buttonVariant: string = 'Default'
-    let buttonColor: string = 'Default'
+    let buttonVariant = 'Default'
+    let buttonColor = 'Default'
 
-    let buttonClass: string = ''
+    let buttonClass = ''
     $: {
         buttonClass = fnButtonClass()
     

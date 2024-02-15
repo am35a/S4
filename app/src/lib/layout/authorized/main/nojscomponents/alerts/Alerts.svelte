@@ -1,25 +1,25 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
 
     let alertsObj = {
         variantsObj: {
-            Default: '' as string,
-            Alt: 'alt' as string,
-            Outline: 'outline' as string
+            Default: '',
+            Alt: 'alt',
+            Outline: 'outline'
         },
         colorsObj: {
-            Primary: '-primary' as string,
-            Secondary: '-secondary' as string,
-            Info: '-info' as string,
-            Success: '-success' as string,
-            Warning: '-warning' as string,
-            Error: '-error' as string,
+            Primary: '-primary',
+            Secondary: '-secondary',
+            Info: '-info',
+            Success: '-success',
+            Warning: '-warning',
+            Error: '-error',
         }
     }
-    let alertVariant: string = 'Default'
-    let alertColor: string = 'Primary'
+    let alertVariant = 'Default'
+    let alertColor = 'Primary'
     
-    let alertClass: string = ''
+    let alertClass = ''
     $: {
         alertClass = fnalertClass()
     
@@ -37,7 +37,7 @@
         }
     }
 
-    let customClasses: string = ''
+    let customClasses = ''
 </script>
 
 <article>

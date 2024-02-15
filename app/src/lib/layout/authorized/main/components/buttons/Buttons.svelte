@@ -1,53 +1,53 @@
-<script lang="ts">
+<script>
     import Icon from 'component/Icon.svelte'
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let fontSizesObj: { [key: string]: any } = {
-        Default: '' as string,
-        xxs: 'fs-xxs' as string,
-        xs: 'fs-xs' as string,
-        sm: 'fs-sm' as string,
-        md: 'fs-md' as string,
-        lg: 'fs-lg' as string,
-        xl: 'fs-xl' as string,
-        xxl: 'fs-xxl' as string,
-        xxxl: 'fs-xxxl' as string
+    let fontSizesObj = {
+        Default: '',
+        xxs: 'fs-xxs',
+        xs: 'fs-xs',
+        sm: 'fs-sm',
+        md: 'fs-md',
+        lg: 'fs-lg',
+        xl: 'fs-xl',
+        xxl: 'fs-xxl',
+        xxxl: 'fs-xxxl'
     }
-    let fontSize: string = 'Default'
+    let fontSize = 'Default'
 
-    let buttonsObj: { [key: string]: any } = {
+    let buttonsObj = {
         typeObj: {
-            Default: '' as string,
-            Submit: 'submit' as string,
-            Reset: 'reset' as string
+            Default: '',
+            Submit: 'submit',
+            Reset: 'reset'
         },
         variantsObj: {
-            Default: '' as string,
-            Alt: 'alt' as string,
-            Outline: 'outline' as string
+            Default: '',
+            Alt: 'alt',
+            Outline: 'outline'
         },
         colorsObj: {
-            Default: '' as string,
-            Primary: '-primary' as string,
-            Secondary: '-secondary' as string,
-            Info: '-info' as string,
-            Success: '-success' as string,
-            Warning: '-warning' as string,
-            Error: '-error' as string,
+            Default: '',
+            Primary: '-primary',
+            Secondary: '-secondary',
+            Info: '-info',
+            Success: '-success',
+            Warning: '-warning',
+            Error: '-error',
         },
         iconObj: {
-            Default: 0 as number,
-            Both: 1 as number,
-            Icon: 2 as number
+            Default: 0,
+            Both: 1,
+            Icon: 2
         }
     }
-    let buttonType: string = 'Default'
-    let buttonVariant: string = 'Default'
-    let buttonColor: string = 'Default'
-    let buttonIcon: string = 'Default'
+    let buttonType = 'Default'
+    let buttonVariant = 'Default'
+    let buttonColor = 'Default'
+    let buttonIcon = 'Default'
 
-    let buttonClass: string = ''
+    let buttonClass = ''
     $: {
         buttonClass = fnButtonClass()
 

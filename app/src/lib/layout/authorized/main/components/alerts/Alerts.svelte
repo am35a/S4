@@ -1,31 +1,31 @@
-<script lang="ts">
+<script>
     import Alert from 'component/Alert.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let alertsObj: { [key: string]: any } = {
+    let alertsObj = {
         variantsObj: {
-            Default: '' as string,
-            Alt: 'alt' as string,
-            Outline: 'outline' as string
+            Default: '',
+            Alt: 'alt',
+            Outline: 'outline'
         },
         colorsObj: {
-            Primary: '-primary' as string,
-            Secondary: '-secondary' as string,
-            Info: '-info' as string,
-            Success: '-success' as string,
-            Warning: '-warning' as string,
-            Error: '-error' as string,
+            Primary: '-primary',
+            Secondary: '-secondary',
+            Info: '-info',
+            Success: '-success',
+            Warning: '-warning',
+            Error: '-error',
         },
         typeObj: {
-            Permanent: '' as string,
+            Permanent: '',
             Closable: 'alert-closable'
         }
     },
-        alertVariant: string = 'Default',
-        alertColor: string = 'Primary',
-        alertType: string = 'Permanent',
+        alertVariant = 'Default',
+        alertColor = 'Primary',
+        alertType = 'Permanent',
 
-        alertClass: string = ''
+        alertClass = ''
 
     $: {
         alertClass = fnalertClass()

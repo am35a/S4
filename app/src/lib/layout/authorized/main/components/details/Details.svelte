@@ -1,33 +1,33 @@
-<script lang="ts">
+<script>
     // import Icon from 'component/Icon.svelte'
     import Details from 'component/Details.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let detailsObj: { [key: string]: any } = {
+    let detailsObj = {
         variantsObj: {
-            Default: '' as string,
-            Alt: 'alt' as string,
-            Outline: 'outline' as string
+            Default: '',
+            Alt: 'alt',
+            Outline: 'outline'
         },
         colorsObj: {
-            Default: '' as string,
-            Primary: '-primary' as string,
-            Secondary: '-secondary' as string,
-            Info: '-info' as string,
-            Success: '-success' as string,
-            Warning: '-warning' as string,
-            Error: '-error' as string,
+            Default: '',
+            Primary: '-primary',
+            Secondary: '-secondary',
+            Info: '-info',
+            Success: '-success',
+            Warning: '-warning',
+            Error: '-error',
         },
         stateObj: {
-            Default: '' as string,
+            Default: '',
             Open: 'open'
         }
     },
-        detailsVariant: string = 'Default',
-        detailsColor: string = 'Default',
-        detailsState: string = 'Default',
+        detailsVariant = 'Default',
+        detailsColor = 'Default',
+        detailsState = 'Default',
 
-        detailsClass: string = ''
+        detailsClass = ''
 
     $: {
         detailsClass = fnDetailsClass()

@@ -1,37 +1,37 @@
-<script lang="ts">
-    let fontSizesObj: { [key: string]: any } = {
-        Default: '' as string,
-        xxs: 'fs-xxs' as string,
-        xs: 'fs-xs' as string,
-        sm: 'fs-sm' as string,
-        md: 'fs-md' as string,
-        lg: 'fs-lg' as string,
-        xl: 'fs-xl' as string,
-        xxl: 'fs-xxl' as string,
-        xxxl: 'fs-xxxl' as string
+<script>
+    let fontSizesObj = {
+        Default: '',
+        xxs: 'fs-xxs',
+        xs: 'fs-xs',
+        sm: 'fs-sm',
+        md: 'fs-md',
+        lg: 'fs-lg',
+        xl: 'fs-xl',
+        xxl: 'fs-xxl',
+        xxxl: 'fs-xxxl'
     }
-    let fontSize: string = 'Default'
+    let fontSize = 'Default'
 
-    let inputsObj: { [key: string]: any } = {
+    let inputsObj = {
         variantsObj: {
-            Default: '' as string,
-            Alt: 'alt' as string,
-            Outline: 'outline' as string
+            Default: '',
+            Alt: 'alt',
+            Outline: 'outline'
         },
         colorsObj: {
-            Default: '' as string,
-            Primary: '-primary' as string,
-            Secondary: '-secondary' as string,
-            Info: '-info' as string,
-            Success: '-success' as string,
-            Warning: '-warning' as string,
-            Error: '-error' as string,
+            Default: '',
+            Primary: '-primary',
+            Secondary: '-secondary',
+            Info: '-info',
+            Success: '-success',
+            Warning: '-warning',
+            Error: '-error',
         }
     }
-    let inputVariant: string = 'Default'
-    let inputColor: string = 'Default'
+    let inputVariant = 'Default'
+    let inputColor = 'Default'
 
-    export let inputClass: string = ''
+    export let inputClass = ''
     $: {
         inputClass = fnInputClass()
 

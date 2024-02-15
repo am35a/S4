@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import Icon from 'component/Icon.svelte'
     import Precode from 'component/Precode.svelte'
     import Button from 'component/Button.svelte'
@@ -16,11 +16,11 @@
         'large xxx': 'fs-xxxl',
         'expand': 'w-100 h-100'
     }
-    let iconSize: string = '',
-        iconBgColor: string = '',
-        iconColor: string = ''
+    let iconSize = '',
+        iconBgColor = '',
+        iconColor = ''
 
-    function toggleColor(switchColor: string) {
+    function toggleColor(switchColor) {
         switch (switchColor) {
             case 'bgColor':
                 iconColor = ''
@@ -31,12 +31,10 @@
         }
     }
 
-
     let preCodeObj = {
         classes: '',
         styles: ''
     }
-
 
     $: iconSize || iconBgColor || iconColor, preCode()
     
@@ -62,20 +60,13 @@
     <h2 id="buttons">Icons</h2>
     <div class="d-grid g-5">
         <p>
-            Lightweight <Icon name="ghost"/> responsive vector icons with cache available.
+            Lightweight <Icon /> responsive vector icons with cache available.
             The  icon sizes directly depend on the font size and the container in which the icon is placed.
             Colors are changed in two ways - using the <b>bgc-...</b> or <b>c-...</b> classes.
         </p>
         <div class="alert alert-warning js-start">
             <span class="ico fs-xl" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
             Pay attention! The <b>bgc-...</b> and <b>c-...</b> are incompatible in one case.
-        </div>
-
-        <div>
-            {preCodeObj.classes}
-        </div>
-        <div>
-            {preCodeObj.styles}
         </div>
 
         <div class="d-grid g-4">

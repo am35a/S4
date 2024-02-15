@@ -1,9 +1,9 @@
-<script lang="ts">
+<script>
     import Accordion from 'component/Accordion.svelte'
     import Details from 'component/Details.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let customClasses: string = 'd-grid g-4 w-100'
+    let customClasses = 'd-grid g-4 w-100'
 </script>
 
 <article>
