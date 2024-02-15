@@ -10,7 +10,7 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
 @mixin _sizing($orientation, $type)
 
     .mw
-        max-width: var(--#{$orientation}#{$type}mw, auto) !important
+        min-width: var(--#{$orientation}#{$type}mw, auto) !important
     .#{$orientation}#{$type}mw
         @for $i from 0 through math.div(100, $defaultSizingStep)
             &-#{$i * $defaultSizingStep}
@@ -22,7 +22,7 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
         &-max
             min-width: max-content !important
     .w
-        max-width: var(--#{$orientation}#{$type}w, auto) !important
+        width: var(--#{$orientation}#{$type}w, auto) !important
     .#{$orientation}#{$type}w
         @for $i from 0 through math.div(100, $defaultSizingStep)
             &-#{$i * $defaultSizingStep}
