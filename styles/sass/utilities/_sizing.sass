@@ -12,7 +12,6 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
     .mw
         max-width: var(--#{$orientation}#{$type}mw, auto) !important
     .#{$orientation}#{$type}mw
-        min-width: var(--mw, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
             &-#{$i * $defaultSizingStep}
                 min-width: #{$i * $defaultSizingStep + '%'} !important
@@ -25,7 +24,6 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
     .w
         max-width: var(--#{$orientation}#{$type}w, auto) !important
     .#{$orientation}#{$type}w
-        width: var(--w, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
             &-#{$i * $defaultSizingStep}
                 width: #{$i * $defaultSizingStep + '%'} !important

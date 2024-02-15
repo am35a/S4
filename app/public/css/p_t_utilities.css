@@ -669,9 +669,6 @@
   max-width: var(--p_t_mw, auto) !important;
 }
 
-.p_t_mw {
-  min-width: var(--mw, auto) !important;
-}
 .p_t_mw-0 {
   min-width: 0% !important;
 }
@@ -701,9 +698,6 @@
   max-width: var(--p_t_w, auto) !important;
 }
 
-.p_t_w {
-  width: var(--w, auto) !important;
-}
 .p_t_w-0 {
   width: 0% !important;
 }
