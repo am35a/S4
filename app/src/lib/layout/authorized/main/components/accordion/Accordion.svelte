@@ -27,7 +27,7 @@
             <div class="d-flex p-4 bgc-positive br">
                 <Accordion class="{customClasses}">
                     {#each Array(3) as _, i}
-                        <Details class="dtl-alt mb-0">
+                        <Details>
                             <svelte:fragment slot="title">
                                 Section title {i + 1}
                             </svelte:fragment>

@@ -21,7 +21,7 @@
                 </table>
             </div>
         </div>
-        <div class="d-grid g-3">
+        <div class="d-grid g-4">
             <b>HTML</b>
             <Precode>
                 {

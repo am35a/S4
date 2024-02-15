@@ -53,13 +53,13 @@
         </div>
         <div class="d-grid g-4">
             <b>HTML</b>
-            <Precode class="br-top-0">
-                    {
+            <Precode>
+                {
 `<div class="${containerType} ai-${alignItems}">
     // ...
 </div>
 `
-                    }
+                }
             </Precode>
         </div>
     </div>
