@@ -9,6 +9,8 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
 
 @mixin _sizing($orientation, $type)
 
+    .mw
+        max-width: var(--#{$orientation}#{$type}mw, auto) !important
     .#{$orientation}#{$type}mw
         min-width: var(--mw, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
@@ -20,6 +22,8 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
             min-width: min-content !important
         &-max
             min-width: max-content !important
+    .w
+        max-width: var(--#{$orientation}#{$type}w, auto) !important
     .#{$orientation}#{$type}w
         width: var(--w, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
@@ -31,8 +35,9 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
             width: min-content !important
         &-max
             width: max-content !important
+    .wm
+        max-width: var(--#{$orientation}#{$type}wm, auto) !important
     .#{$orientation}#{$type}wm
-        max-width: var(--wm, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
             &-#{$i * $defaultSizingStep}
                 max-width: #{$i * $defaultSizingStep + '%'} !important
@@ -43,8 +48,9 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
         &-max
             max-width: max-content !important
 
+    .mh
+        min-height: var(--#{$orientation}#{$type}mh, auto) !important
     .#{$orientation}#{$type}mh
-        min-height: var(--mh, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
             &-#{$i * $defaultSizingStep}
                 min-height: #{$i * $defaultSizingStep + '%'} !important
@@ -54,8 +60,9 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
             min-height: min-content !important
         &-max
             min-height: max-content !important
+    .h
+        height: var(--#{$orientation}#{$type}h, auto) !important
     .#{$orientation}#{$type}h
-        height: var(--h, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
             &-#{$i * $defaultSizingStep}
                 height: #{$i * $defaultSizingStep + '%'} !important
@@ -65,8 +72,9 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
             height: min-content !important
         &-max
             height: max-content !important
+    .hm
+        max-height: var(--#{$orientation}#{$type}hm, auto) !important
     .#{$orientation}#{$type}hm
-        max-height: var(--hm, auto) !important
         @for $i from 0 through math.div(100, $defaultSizingStep)
             &-#{$i * $defaultSizingStep}
                 max-height: #{$i * $defaultSizingStep + '%'} !important

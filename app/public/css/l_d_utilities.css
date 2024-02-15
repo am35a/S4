@@ -1132,6 +1132,10 @@
 }
 
 .mw {
+  max-width: var(--mw, auto) !important;
+}
+
+.mw {
   min-width: var(--mw, auto) !important;
 }
 .mw-0 {
@@ -1157,6 +1161,10 @@
 }
 .mw-max {
   min-width: max-content !important;
+}
+
+.w {
+  max-width: var(--w, auto) !important;
 }
 
 .w {
@@ -1190,6 +1198,7 @@
 .wm {
   max-width: var(--wm, auto) !important;
 }
+
 .wm-0 {
   max-width: 0% !important;
 }
@@ -1218,6 +1227,7 @@
 .mh {
   min-height: var(--mh, auto) !important;
 }
+
 .mh-0 {
   min-height: 0% !important;
 }
@@ -1246,6 +1256,7 @@
 .h {
   height: var(--h, auto) !important;
 }
+
 .h-0 {
   height: 0% !important;
 }
@@ -1274,6 +1285,7 @@
 .hm {
   max-height: var(--hm, auto) !important;
 }
+
 .hm-0 {
   max-height: 0% !important;
 }
