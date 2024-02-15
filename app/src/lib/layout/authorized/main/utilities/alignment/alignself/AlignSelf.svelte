@@ -1,59 +1,68 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
     import Button from 'component/Button.svelte'
 
-    let containerTypeObj = {
+    let containerTypesObj = {
         grid: 'd-grid gtc-2',
         flex: 'd-flex'
-    }
-    let containerType:string = containerTypeObj.grid
+    },
+        containerType = containerTypesObj.grid
 
-    let alignSelfArr: string[] = [ 'baseline', 'center', 'end', 'start', 'stretch' ]
+    let alignSelfArr = ['baseline', 'center', 'end', 'start', 'stretch'],
+        alignSelf = alignSelfArr[0]
 </script>
 
 <section>
     <h3 id="alignSelf">Align self</h3>
-    <p>
-        The <b>as-...</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>ai-</b> classes value.
-    </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        <div class="d-flex g-2">
-            {#each Object.entries(containerTypeObj) as [key, value]}
-                <Button
-                    class="btn-secondary {containerType === value ? 'active' : ''}"
-                    on:click = {() => containerType = value}
-                    disabled={containerType === value}
-                >{key}</Button>
-            {/each}
+    <div class="d-grid g-5">
+        <p>
+            The <b>as-...</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>ai-</b> classes value.
+        </p>
+        <div class="d-grid g-4">
+            <b>Display</b>
+            <div class="d-inline-flex fw-wrap g-3">
+                {#each Object.entries(containerTypesObj) as [key, value]}
+                    <Button
+                        class="{containerType === value ? 'active' : ''}"
+                        on:click = {() => containerType = value}
+                        disabled = {containerType === value}
+                    >{key}</Button>
+                {/each}
+            </div>
         </div>
-        <div class="d-grid g-3">
-            {#each alignSelfArr as item }
-                <div class="{containerType} g-2 bgc-negative-10 p-2" style="height: 16em;">
-                    <div class="bgc-negative-10 px-2 py-1 as-{item}">one</div>
-                    <div class="bgc-negative-10 px-2 py-1">two</div>
-                    <div class="bgc-negative-10 px-2 py-1">three</div>
-                </div>
-            {/each}
+        <div class="d-grid g-4">
+            <b>Align</b>
+            <div class="d-inline-flex fw-wrap g-3">
+                {#each alignSelfArr as value}
+                    <button
+                        class="btn"
+                        class:active={alignSelf === value}
+                        on:click = {() => alignSelf = value}
+                        disabled = {alignSelf === value}
+                    >as-{value}</button>
+                {/each}
+            </div>
         </div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
-                {#each alignSelfArr as item }
-                    {
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="{containerType} g-3 p-3 bgc-positive br h" style="--h: 16em; --p_h: 24em;">
+                <div class="bgc-negative-10 px-2 py-1 as-{alignSelf}">one</div>
+                <div class="bgc-negative-10 px-2 py-1">two</div>
+                <div class="bgc-negative-10 px-2 py-1">three</div>
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
+                {
 `<div class="${containerType}">
-    <div class="as-${item}">one</div>
-    <div>two</div>
-    <div>three</div>
+    <div class="as-${alignSelf}">one</div>
+    // ...
 </div>
 `
-                    }
-                {/each}
+                }
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>

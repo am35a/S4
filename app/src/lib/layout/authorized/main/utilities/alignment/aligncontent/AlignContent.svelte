@@ -1,34 +1,52 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
     import Button from 'component/Button.svelte'
     
     let containerTypesObj = {
         grid: 'd-grid gtc-2',
         flex: 'd-flex fw-wrap'
-    }
-    let containerType: string = containerTypesObj.grid
+    },
+        containerType = containerTypesObj.grid
 
-    let alignContentArr: string[] = [ 'start', 'end', 'stretch', 'around', 'between', 'evenly' ]
+    let alignContentArr = ['start', 'end', 'stretch', 'around', 'between', 'evenly'],
+        alignContent = alignContentArr[0]
+
 </script>
 
 <section>
     <h3 id="alignContent">Align content</h3>
-    <p>
-        The <b>ac-...</b> classes sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
-    </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        <div class="d-flex g-2">
-            {#each Object.entries(containerTypesObj) as [key, value]}
-                <Button
-                    class="btn-secondary {containerType === value ? 'active' : ''}"
-                    on:click = {() => containerType = value}
-                    disabled = {containerType === value}
-                >{key}</Button>
-            {/each}
+    <div class="d-grid g-5">
+        <p>
+            The <b>ac-...</b> classes sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
+        </p>
+        <div class="d-grid g-4">
+            <b>Display</b>
+            <div class="d-inline-flex fw-wrap g-3">
+                {#each Object.entries(containerTypesObj) as [key, value]}
+                    <Button
+                        class="{containerType === value ? 'active' : ''}"
+                        on:click = {() => containerType = value}
+                        disabled = {containerType === value}
+                    >{key}</Button>
+                {/each}
+            </div>
         </div>
-        {#each alignContentArr as item }
-            <div class="{containerType} g-2 bgc-negative-10 p-2 ac-{item}" style="height: 16em;">
+        <div class="d-grid g-4">
+            <b>Align</b>
+            <div class="d-inline-flex fw-wrap g-3">
+                {#each alignContentArr as value}
+                    <button
+                        class="btn"
+                        class:active={alignContent === value}
+                        on:click = {() => alignContent = value}
+                        disabled = {alignContent === value}
+                    >ac-{value}</button>
+                {/each}
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="{containerType} g-3 p-3 ac-{alignContent} bgc-positive br h" style="--h: 16em; --p_h: 24em;">
                 <div class="bgc-negative-10 px-2 py-1">one</div>
                 <div class="bgc-negative-10 px-2 py-1">two</div>
                 <div class="bgc-negative-10 px-2 py-1">three</div>
@@ -51,25 +69,17 @@
                     <div class="bgc-negative-10 px-2 py-1">nineteen</div>
                 {/if}
             </div>
-        {/each}
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
-                {#each alignContentArr as item }
-                    {
-`<div class="${containerType} ac-${item}">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
+        </div>
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
+                {
+`<div class="${containerType} ac-${alignContent}">
+    // ...
 </div>
 `
-                    }
-                {/each}
+                }
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>
