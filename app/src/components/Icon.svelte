@@ -26,12 +26,12 @@
         min-height: calc(var(--lh) * 1em)
         vertical-align: middle
         background-color: currentColor
-        mask-repeat: no-repeat
         -webkit-mask-repeat: no-repeat
-        mask-position: center
+        mask-repeat: no-repeat
         -webkit-mask-position: center
-        mask-clip: content-box
+        mask-position: center
         -webkit-mask-clip: content-box
-        mask-image: var(--ico-image)
+        mask-clip: content-box
         -webkit-mask-image: var(--ico-image)
+        mask-image: var(--ico-image)
 </style>

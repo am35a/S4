@@ -61,51 +61,15 @@
     --s-xxl:  1.25em
     --s-xxxl: 1.5em
 
+    // Colors
+    // - Composite gray colors
     --positive-color:    oklch(var(--positive) var(--positive-chroma) var(--positive-hue))
     @for $i from 9 through 1
         --positive-color-#{$i * 10}: oklch(var(--positive) var(--positive-chroma) var(--positive-hue) / #{$i * 0.1})
-
     @for $i from 1 through 9
         --negative-color-#{$i * 10}: oklch(var(--negative) var(--negative-chroma) var(--negative-hue) / #{$i * 0.1})
     --negative-color:    oklch(var(--negative) var(--negative-chroma) var(--negative-hue))
-
-[theme="light"]
-    // - Colors
-    // - - Default colors
-    // - - - Separated gray colors
-    --positive: 1
-    --positive-chroma: 0
-    --positive-hue: 0
-    --negative: 0
-    --negative-chroma: 0
-    --negative-hue: 0
-
-    // - - - Composite gray colors
-
-    // --positive-color:    oklch(var(--positive) var(--positive-chroma) var(--positive-hue))
-    // @for $i from 9 through 1
-    //     --positive-color-#{$i * 10}: oklch(var(--positive) var(--positive-chroma) var(--positive-hue) / #{$i / 10})
-
-    // @for $i from 9 through 1
-    //     --negative-color-#{$i * 10}: oklch(var(--negative) var(--negative-chroma) var(--negative-hue) / #{$i / 10})
-    // --negative-color:    oklch(var(--negative) var(--negative-chroma) var(--negative-hue))
-
-    // - - - Separated accent colors
-    --lightness: 0.60
-    --lightness-offset: 0.15
-    --chroma: 0.2
-    --alfa: 0.25
-
-    --primary-hue: 255
-    --secondary-hue: 255
-    --info-hue: 295
-    --success-hue: 145
-    --warning-hue: 95
-    --error-hue: 25
-
-    // - Colors
-    // - - Default colors
-    // - - - Composite accent colors
+    // - Composite accent colors
     @each $accentColor in $accentColors
         @if $accentColor == secondary
             --#{$accentColor}-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
@@ -118,51 +82,50 @@
             --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
             --#{$accentColor}-color-m: oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue) / var(--alfa))
 
-    // - - 
-    --html-bgc: var(--negative-color)
-    --body-bgc: var(--positive-color-90)
-    --body-c: var(--negative-color-90)
-    --bsc: var(--negative-color-10) 
-
-[theme="dark"]
+[theme=light]
     // - Colors
-    // - - Default colors
-    // - - - Separated gray colors
+    // - - Default
+    --positive: 1
+    --positive-chroma: 0
+    --positive-hue: 0
+    --negative: 0
+    --negative-chroma: 0
+    --negative-hue: 0
+    // - - Accent
+    --primary-hue: 255
+    --secondary-hue: 255
+    --info-hue: 295
+    --success-hue: 145
+    --warning-hue: 95
+    --error-hue: 25
+    --lightness: 0.60
+    --lightness-offset: 0.15
+    --chroma: 0.2
+    --alfa: 0.25
+    // - - Base
+    // - - - <html> background color
+    --html-bgc: var(--negative-color)
+    // - - - <body> background color
+    --body-bgc: var(--positive-color-90)
+    // - - - <body> color
+    --body-c: var(--negative-color-90)
+    // - - - box-shadow color
+    --bsc: var(--negative-color-10)
+
+[theme=dark]
+    // - Colors
+    // - - Default
     --positive: 0
     --positive-chroma: 0
     --positive-hue: 0
     --negative: 1
     --negative-chroma: 0
     --negative-hue: 0
-
-    // - - - Composite gray colors
-    // --positive-color:    oklch(var(--positive) 0 0)
-    // --positive-color-90: oklch(var(--positive) 0 0 / .9)
-    // --positive-color-80: oklch(var(--positive) 0 0 / .8)
-    // --positive-color-70: oklch(var(--positive) 0 0 / .7)
-    // --positive-color-60: oklch(var(--positive) 0 0 / .6)
-    // --positive-color-50: oklch(var(--positive) 0 0 / .5)
-    // --positive-color-40: oklch(var(--positive) 0 0 / .4)
-    // --positive-color-30: oklch(var(--positive) 0 0 / .3)
-    // --positive-color-20: oklch(var(--positive) 0 0 / .2)
-    // --positive-color-10: oklch(var(--positive) 0 0 / .1)
-    // --negative-color-10: oklch(var(--negative) 0 0 / .1)
-    // --negative-color-20: oklch(var(--negative) 0 0 / .2)
-    // --negative-color-30: oklch(var(--negative) 0 0 / .3)
-    // --negative-color-40: oklch(var(--negative) 0 0 / .4)
-    // --negative-color-50: oklch(var(--negative) 0 0 / .5)
-    // --negative-color-60: oklch(var(--negative) 0 0 / .6)
-    // --negative-color-70: oklch(var(--negative) 0 0 / .7)
-    // --negative-color-80: oklch(var(--negative) 0 0 / .8)
-    // --negative-color-90: oklch(var(--negative) 0 0 / .9)
-    // --negative-color:    oklch(var(--negative) 0 0)
-
-    // - - - Separated accent colors
+    // - - Accent
     --lightness: 0.55
     --lightness-offset: 0.1
     --chroma: 0.2
     --alfa: 0.25
-
     --primary-hue: 255
     --secondary-hue: 255
     --info-hue: 295
@@ -170,20 +133,12 @@
     --warning-hue: 85
     --error-hue: 25
 
-    // - - - Composite accent colors
-    @each $accentColor in $accentColors
-        @if $accentColor == secondary
-            --#{$accentColor}-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
-            --#{$accentColor}-color:   oklch(var(--lightness) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
-            --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) calc(var(--chroma) * .1) var(--#{$accentColor}-hue))
-            --#{$accentColor}-color-m: oklch(var(--lightness) calc(var(--chroma) * .1) var(--#{$accentColor}-hue) / var(--alfa))
-        @else
-            --#{$accentColor}-color-l: oklch(calc(var(--lightness) + var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
-            --#{$accentColor}-color:   oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue))
-            --#{$accentColor}-color-d: oklch(calc(var(--lightness) - var(--lightness-offset)) var(--chroma) var(--#{$accentColor}-hue))
-            --#{$accentColor}-color-m: oklch(var(--lightness) var(--chroma) var(--#{$accentColor}-hue) / var(--alfa))
-
+    // - - Base
+    // - - - <html> background color
     --html-bgc: var(--negative-color)
+    // - - - <body> background color
     --body-bgc: var(--positive-color-90)
+    // - - - <body> color
     --body-c: var(--negative-color-90)
+    // - - - box-shadow color
     --bsc: var(--positive-color-10)
