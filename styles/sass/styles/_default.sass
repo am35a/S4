@@ -63,12 +63,12 @@
 
     // Colors
     // - Composite gray colors
-    --positive-color:    oklch(var(--positive) var(--positive-chroma) var(--positive-hue))
+    --positive-color:    oklch(var(--positive-lightness) var(--positive-chroma) var(--positive-hue))
     @for $i from 9 through 1
-        --positive-color-#{$i * 10}: oklch(var(--positive) var(--positive-chroma) var(--positive-hue) / #{$i * 0.1})
+        --positive-color-#{$i * 10}: oklch(var(--positive-lightness) var(--positive-chroma) var(--positive-hue) / #{$i * 0.1})
     @for $i from 1 through 9
-        --negative-color-#{$i * 10}: oklch(var(--negative) var(--negative-chroma) var(--negative-hue) / #{$i * 0.1})
-    --negative-color:    oklch(var(--negative) var(--negative-chroma) var(--negative-hue))
+        --negative-color-#{$i * 10}: oklch(var(--negative-lightness) var(--negative-chroma) var(--negative-hue) / #{$i * 0.1})
+    --negative-color:    oklch(var(--negative-lightness) var(--negative-chroma) var(--negative-hue))
     // - Composite accent colors
     @each $accentColor in $accentColors
         @if $accentColor == secondary
@@ -85,10 +85,10 @@
 [theme=light]
     // - Colors
     // - - Default
-    --positive: 1
+    --positive-lightness: 1
     --positive-chroma: 0
     --positive-hue: 0
-    --negative: 0
+    --negative-lightness: 0
     --negative-chroma: 0
     --negative-hue: 0
     // - - Accent
@@ -115,10 +115,10 @@
 [theme=dark]
     // - Colors
     // - - Default
-    --positive: 0
+    --positive-lightness: 0
     --positive-chroma: 0
     --positive-hue: 0
-    --negative: 1
+    --negative-lightness: 1
     --negative-chroma: 0
     --negative-hue: 0
     // - - Accent
