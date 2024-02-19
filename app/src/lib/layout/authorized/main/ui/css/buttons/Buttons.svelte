@@ -34,7 +34,7 @@
             {/each}
         </div>
         <div>
-            <span class="ico" style="--ico-image: url(/icons/argtr-down-up.svg);">&nbsp;</span>
+            <span class="ico" style="--ico-image: url(/icons/arrows-down-up.svg);"></span>
         </div>
         <div class="d-flex g-4 fw-wrap jc-center ai-center">
             {#each buttonBorderArr as values}
