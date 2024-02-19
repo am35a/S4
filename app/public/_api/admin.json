@@ -198,11 +198,7 @@
                 "id": 98,
                 "icon": "layout",
                 "title": "Layout",
-                "segment": "/layout",
-                "action": {
-                    "icon": "plus",
-                    "segment": "/layout"
-                }
+                "segment": "/layout"
             },
             {
                 "id": 99,

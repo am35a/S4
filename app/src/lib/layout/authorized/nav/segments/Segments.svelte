@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import { path } from 'svelte-micro'
     import { asideItems, appSegment } from 'src/store/store'
     import Segment from './segment/Segment.svelte'

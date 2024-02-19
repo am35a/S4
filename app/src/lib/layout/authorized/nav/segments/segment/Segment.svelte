@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     // import { onMount } from 'svelte'
 
     import Icon from 'component/Icon.svelte'
@@ -8,11 +8,12 @@
     import { router, getPathSegments, path } from 'svelte-micro'
     // import { asideExpand, appSegment } from 'src/store/store'
 
-    export let icon: string = ''
-    export let title: string = ''
-    export let segment: string = ''
+    export let id = ''
+    export let icon = ''
+    export let title = ''
+    export let segment = ''
 
-    export let items: any = undefined
+    export let items = ''
 
     // onMount(async () => {
     //     $appSegment = getPathSegments($path)[0]
@@ -29,6 +30,7 @@
 
 {#if items}
     <Button
+        {id}
         on:click={() => router.push(segment)}
         class="{getPathSegments($path).includes(segment) ? 'active' : ''} jc-start ps-1"
         data-position="right bottom"
@@ -46,9 +48,9 @@
             style="--w: 16rem"
         >
             {#each items as item}
+            <!-- active={$path === item.segment} -->
                 <svelte:self
                     {...item}
-                    active={$path === item.segment}
                     segment={item.segment}
                 />
             {/each}
@@ -56,6 +58,7 @@
     </div>
 {:else}
     <Button
+        {id}
         on:click={() => router.push(segment)}
         class="jc-start {icon ? 'ps-1' : ''}"
         {title}
