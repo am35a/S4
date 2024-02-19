@@ -14,6 +14,7 @@
 </script>
 
 <main
+    class="o-hidden"
     {...$$restProps}
 >
     <Route>
