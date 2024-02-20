@@ -1,4 +1,14 @@
 [theme] {
+  color: var(--body-c);
+}
+[theme] body {
+  background-color: var(--body-bgc);
+}
+html[theme] {
+  background-color: var(--html-bgc);
+}
+
+[theme] {
   --size-0: 0;
   --size-1: .25em;
   --size-2: .5em;
@@ -136,7 +146,6 @@
 html {
   position: relative;
   box-sizing: border-box;
-  background-color: var(--html-bgc);
   -webkit-text-size-adjust: 100%;
   word-break: normal;
   -moz-tab-size: 4;
@@ -164,8 +173,6 @@ html {
 body {
   position: relative;
   min-height: 100dvh;
-  background-color: var(--body-bgc);
-  color: var(--body-c);
 }
 
 hr {
