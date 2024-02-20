@@ -1,4 +1,4 @@
-:root {
+[theme] {
   --size-0: 0;
   --size-1: .25em;
   --size-2: .5em;
@@ -164,6 +164,8 @@ html {
 body {
   position: relative;
   min-height: 100dvh;
+  background-color: var(--body-bgc);
+  color: var(--body-c);
 }
 
 hr {

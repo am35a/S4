@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import Segments from './segments/Segments.svelte'
 </script>
 

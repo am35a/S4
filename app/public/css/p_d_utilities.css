@@ -666,7 +666,7 @@
 }
 
 .mw {
-  min-width: var(--p_mw, auto) !important;
+  min-width: var(--p_mw, var(--mw, auto)) !important;
 }
 
 .p_mw-0 {
@@ -695,7 +695,7 @@
 }
 
 .w {
-  width: var(--p_w, auto) !important;
+  width: var(--p_w, var(--w, auto)) !important;
 }
 
 .p_w-0 {
@@ -724,7 +724,7 @@
 }
 
 .wm {
-  max-width: var(--p_wm, auto) !important;
+  max-width: var(--p_wm, var(--wm, auto)) !important;
 }
 
 .p_wm-0 {
@@ -753,7 +753,7 @@
 }
 
 .mh {
-  min-height: var(--p_mh, auto) !important;
+  min-height: var(--p_mh, var(--mh, auto)) !important;
 }
 
 .p_mh-0 {
@@ -782,7 +782,7 @@
 }
 
 .h {
-  height: var(--p_h, auto) !important;
+  height: var(--p_h, var(--h, auto)) !important;
 }
 
 .p_h-0 {
@@ -811,7 +811,7 @@
 }
 
 .hm {
-  max-height: var(--p_hm, auto) !important;
+  max-height: var(--p_hm, var(--hm, auto)) !important;
 }
 
 .p_hm-0 {

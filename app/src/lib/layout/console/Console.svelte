@@ -40,6 +40,7 @@
         right: 0
         bottom: 0
         display: flex
+        flex-direction: column
         justify-content: end
         align-items: start
         padding: 0.5em
@@ -47,7 +48,6 @@
         color: oklch(75% 0 0)
         font-size: small
         z-index: 1000
-        flex-direction: column
         .default
             color: oklch(75% 0 0)
         .info

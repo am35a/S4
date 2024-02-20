@@ -19,7 +19,7 @@
 <style lang="sass" global>
     body
         display: grid
-        background-color: var(--body-bgc)
-        color: var(--body-c)
+        // background-color: var(--body-bgc)
+        // color: var(--body-c)
         // overflow: hidden
 </style>

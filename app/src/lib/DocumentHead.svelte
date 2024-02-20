@@ -1,9 +1,9 @@
-<script lang="ts">
+<script>
     import { appData } from 'src/store/store'
     import { appConsole } from 'src/store/console'
     import device from 'current-device'
 
-    const cssMap: { [key: string]: any } = {
+    const styleDependencyMap = {
         'l_d_': [ 'l_d_' ],
         'p_d_': [ 'l_d_', 'p_d_' ],
         'l_t_': [ 'l_d_', 'l_t_' ],
@@ -13,10 +13,10 @@
     }
 
     // start - device and orientation
-    let deviceOrientation: string = device.orientation
-    let deviceCSSPrefix: string = getDeviceCSSPrefix()
+    let deviceOrientation = device.orientation
+    let deviceCSSPrefix = getDeviceCSSPrefix()
 
-    function getDeviceCSSPrefix(): string {
+    function getDeviceCSSPrefix() {
         return `${deviceOrientation === 'portrait' ? 'p' : 'l'}_${device.type === 'mobile' ? 'm' : device.type === 'tablet' ? 't' : 'd'}_`
     }
 
@@ -39,18 +39,19 @@
         on:load={() => appConsole.message('styles.css: loaded', 'success')}
     >
 
-    <link
+    <!-- <link
         rel='stylesheet'
         href='/css/settings/variables.css'
         on:load={() => appConsole.message('variables.css: loaded', 'success')}
-    >
-    <link
+    > -->
+    <!-- <link
         rel="stylesheet"
         href="/css/settings/{deviceCSSPrefix}variables.css"
         on:load={() => appConsole.message(`${deviceCSSPrefix}variables.css: loaded`, 'success')}
-    ><!-- load only appropriate styles utilities -->
+    > -->
+    <!-- load only appropriate styles utilities -->
 
-    {#each cssMap[deviceCSSPrefix] as item}
+    {#each styleDependencyMap[deviceCSSPrefix] as item}
         <link
             rel="stylesheet"
             href="/css/{item}utilities.css"
