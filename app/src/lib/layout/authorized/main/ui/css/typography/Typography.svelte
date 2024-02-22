@@ -37,7 +37,7 @@
             <div class="fs-xs">x-small</div>
             <div class="fs-xxs">xx-small</div>
         </div>
-        <div class="d-grid p-4 bgc-positive br-lg">
+        <div class="d-grid p-4 bgc-positive br-lg ac-start">
             <p>
                 <b>Paragraph</b> is big part of your designs. And here we are again, prepared for every situation.
                 One hint for your at the end: Always care about readability and use line-height more than 140%.

@@ -33,7 +33,7 @@
         {id}
         on:click={() => router.push(segment)}
         class="{getPathSegments($path).includes(segment) ? 'active' : ''} jc-start ps-1"
-        data-position="right bottom"
+        data-position="right center"
         {title}
         disabled={getPathSegments($path).includes(segment) && segment === $path}
     >

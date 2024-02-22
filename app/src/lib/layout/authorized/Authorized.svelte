@@ -4,6 +4,7 @@
     // import Footer from './footer/Footer.svelte'
     import Main from './main/Main.svelte'
 
+    // have to move all style to variables
     let headerObj = {
             'position': 'sticky',
             'top': '0',

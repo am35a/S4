@@ -10,7 +10,7 @@
 
 <style lang="sass">
     nav
-        position: relative
+        display: grid
         grid-column: 1/-1
         grid-row: 1/-1
 </style>
