@@ -1,6 +1,5 @@
 $directions: row, row-reverse, column, column-reverse
 $wraps: wrap, wrap-reverse, nowrap
-// $basis: fill, max-content, min-content, fit-content
 $basis: (fill: fill, max: max-content, min: min-content, fit: fit-content, 100: 100%)
 
 /*
@@ -11,17 +10,15 @@ $basis: (fill: fill, max: max-content, min: min-content, fit: fit-content, 100: 
         @each $item in $directions
             &d-#{$item}
                 flex-direction: $item !important
-
         @each $item in $wraps
             &w-#{$item}
                 flex-wrap: $item !important
-                
-        flex: var(--fg, 0) var(--fs, 1) var(--fb, auto) !important
-        &g
-            flex-grow: var(--fg, 1)
-        &s
-            flex-shrink: var(--fs, 0)
-
+        &g-1
+            flex-grow: 1
+        &s-0
+            flex-shrink: 0
         @each $item, $value in $basis
             &b-#{$item}
-                flex-basis: var(--fb, $value) !important
+                flex-basis: $value !important
+    .fx
+        flex: var(--#{$orientation}#{$type}fxg, 0) var(--#{$orientation}#{$type}fxs, 1) var(--#{$orientation}#{$type}fxb, auto) !important

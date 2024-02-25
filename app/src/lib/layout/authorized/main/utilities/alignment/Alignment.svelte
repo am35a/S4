@@ -30,7 +30,7 @@
     <SectionAlignContent />
     <SectionAlignItems />
     <SectionAlignSelf />
-    <div class="p-sticky b-0 d-flex g-1 bgc-positive p-2 br w-fit ms-auto bs-sm">
+    <div class="p-sticky b-0 d-flex g-1 bgc-positive p-2 br w-fit ms-auto s-sm">
         <div class="d-flex fw-wrap g-1 w-fit ms-auto">
             {#each Object.entries(alignmentsObj) as [key, value]}
                 <Button

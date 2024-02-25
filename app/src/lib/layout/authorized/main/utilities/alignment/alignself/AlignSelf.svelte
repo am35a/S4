@@ -24,7 +24,7 @@
             <div class="d-inline-flex fw-wrap g-3">
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <Button
-                        class="{containerType === value ? 'active' : ''}"
+                        class={containerType === value ? 'active' : ''}
                         on:click = {() => containerType = value}
                         disabled = {containerType === value}
                     >{key}</Button>

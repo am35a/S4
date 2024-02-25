@@ -17,7 +17,7 @@
 
     <h3 id="buttons">Buttons</h3>
 
-    <div class="d-flex fw-wrap g-4 jc-evenly ai-center p-4 bgc-positive br-lg f" style="--fg: 1;">
+    <div class="d-flex fw-wrap g-4 jc-evenly ai-center p-4 bgc-positive br-lg fx" style="--fxg: 1;">
         <p>
             All button sizes, borders, corners radius depend on the font size. Don't think the S4 only has only seven sizes, there are much. Make free your design desire and try to place one size element into another size - it's magic! Try playing with the buttons.
         </p>

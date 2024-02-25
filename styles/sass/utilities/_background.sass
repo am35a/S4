@@ -6,7 +6,6 @@
 @mixin _background($orientation, $type)
     .#{$orientation}#{$type}bg
         &c
-            background-color: var(--bgc) !important
             @each $item in $defaultColors
                 &-#{$item}
                     background-color: var(--#{$item}-color) !important
@@ -22,6 +21,8 @@
                         background-color: var(--#{$item}-color-#{$pref}) !important
             &-transparent
                 background-color: transparent !important
+            &-var
+                background-color: var(--bgc, initial) !important
 
         &i
             background-image: var(--bgi) !important

@@ -1,41 +1,39 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
 
-    let flexDirectionsArr: string[] = ['row', 'row-reverse', 'column', 'column-reverse']
+    let flexDirectionsArr = ['row', 'row-reverse', 'column', 'column-reverse']
 </script>
 
 <section>
-    <h3 id="flexDirection">Direction</h3>
+    <h3 id="direction">Direction</h3>
     <p>
-        The <b>fd-...</b> styles sets direction of an elements into flex container.
+        The <b>fd-{flexDirectionsArr.join('/')}</b> classes sets direction of an elements into a flex container.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        {#each flexDirectionsArr as direction }
-            <div class="d-flex fd-{direction} g-4 bgc-negative-10 p-4">
-                <div class="bgc-negative-10 px-2 py-1">one</div>
-                <div class="bgc-negative-10 px-2 py-1">two</div>
-                <div class="bgc-negative-10 px-2 py-1">three</div>
+    <div class="d-grid g-5">
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="d-grid g-3 p-3 bgc-positive br">
+                {#each flexDirectionsArr as direction }
+                    <div class="d-flex fd-{direction} g-2 bgc-negative-10 p-2">
+                        <div class="bgc-negative-10 px-2 py-1">one</div>
+                        <div class="bgc-negative-10 px-2 py-1">two</div>
+                        <div class="bgc-negative-10 px-2 py-1">three</div>
+                    </div>
+                {/each}
             </div>
-        {/each}
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+        </div>
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
                 {#each flexDirectionsArr as direction}
                     {
 `<div class="d-flex fd-${direction}">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
+    // ...
 </div>
 `
                     }
                 {/each}
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>

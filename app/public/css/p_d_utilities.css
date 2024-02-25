@@ -497,9 +497,6 @@
 }
 
 /*  flex section: fill, equal and other sets to flex container items */
-.p_f {
-  flex: var(--fg, 0) var(--fs, 1) var(--fb, auto) !important;
-}
 .p_fd-row {
   flex-direction: row !important;
 }
@@ -521,26 +518,30 @@
 .p_fw-nowrap {
   flex-wrap: nowrap !important;
 }
-.p_fg {
-  flex-grow: var(--fg, 1);
+.p_fg-1 {
+  flex-grow: 1;
 }
-.p_fs {
-  flex-shrink: var(--fs, 0);
+.p_fs-0 {
+  flex-shrink: 0;
 }
 .p_fb-fill {
-  flex-basis: var(--fb, fill) !important;
+  flex-basis: fill !important;
 }
 .p_fb-max {
-  flex-basis: var(--fb, max-content) !important;
+  flex-basis: max-content !important;
 }
 .p_fb-min {
-  flex-basis: var(--fb, min-content) !important;
+  flex-basis: min-content !important;
 }
 .p_fb-fit {
-  flex-basis: var(--fb, fit-content) !important;
+  flex-basis: fit-content !important;
 }
 .p_fb-100 {
-  flex-basis: var(--fb, 100%) !important;
+  flex-basis: 100% !important;
+}
+
+.fx {
+  flex: var(--p_fxg, 0) var(--p_fxs, 1) var(--p_fxb, auto) !important;
 }
 
 /*  float section: float contained in classes */

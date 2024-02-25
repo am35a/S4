@@ -85,7 +85,7 @@
                 />
             </div>
             <div>Colors:</div>
-            <div class="d-grid g-3 ji-center p-4 br f bgc-negative" style="--fb: 100%;">
+            <div class="d-grid g-3 ji-center p-4 br fx bgc-negative" style="--fxb: 100%;">
                 <div class="ta-center fw-600 c-positive">Positive in negative</div>
                 <div class="d-grid gaf-column w-100">
                     <div class="bgc-positive-10 c-positive-90 py-4 color-negative ta-center">10</div>
@@ -150,7 +150,7 @@
                 />
             </div>
             <div>Colors:</div>
-            <div class="d-grid g-3 ji-center p-4 br f bgc-positive" style="--fb: 100%;">
+            <div class="d-grid g-3 ji-center p-4 br fx bgc-positive" style="--fxb: 100%;">
                 <div class="ta-center fw-600 c-negative">Negative in positive</div>
                 <div class="d-grid gaf-column w-100">
                     <div class="bgc-negative-10 c-negative-90 py-4 color-positive ta-center">10</div>

@@ -13,8 +13,8 @@
 
 </script>
 
+<!-- class="o-hidden" -->
 <main
-    class="o-hidden"
     {...$$restProps}
 >
     <Route>

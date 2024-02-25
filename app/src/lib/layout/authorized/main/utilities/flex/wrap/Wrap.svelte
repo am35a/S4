@@ -1,62 +1,94 @@
-<script lang="ts">
-    import Button from 'component/Button.svelte'
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
 
-    let flexWrapArr: string[] = ['nowrap', 'wrap', 'wrap-reverse']
-    let flexWrap: string = flexWrapArr[0]
+    let flexWrapArr = ['nowrap', 'wrap', 'wrap-reverse'],
+        flexWrap = flexWrapArr[0]
+
+    let cellNamesArr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'],
+        containerWidth = 100,
+        isCellShrinked = true
 </script>
 
 <section>
-    <h3 id="flexWrap">Wrap</h3>
+    <h3 id="wrap">Wrap</h3>
     <p>
-        Change wrap items with <b>fw-...</b> classes in a flex container.
+        The <b>fw-{flexWrapArr.join('/')}</b> classes help to change wrap items in a flex container.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        <div class="d-flex g-2">
-            {#each flexWrapArr as values }
-                <Button
-                    class="btn-secondary {flexWrap === values ? 'active' : ''}"
-                    on:click = {() => flexWrap = values}
-                    disabled = {flexWrap === values}
-                >fw-{values}</Button>
-            {/each}
+    <div class="d-grid g-5">
+        <div class="d-grid g-4">
+            <b>Wrap</b>
+            <div class="d-inline-flex fw-wrap g-3">
+                {#each flexWrapArr as values }
+                    <button
+                        class="btn"
+                        class:active ={flexWrap === values}
+                        on:click = {() => flexWrap = values}
+                        disabled = {flexWrap === values}
+                    >fw-{values}</button>
+                {/each}
+            </div>
         </div>
-        <div class="d-flex fw-{flexWrap} g-4 bgc-negative-10 p-4 ox-hidden ws-nowrap">
-            <div class="bgc-negative-10 px-2 py-1">one</div>
-            <div class="bgc-negative-10 px-2 py-1">two</div>
-            <div class="bgc-negative-10 px-2 py-1">three</div>
-            <div class="bgc-negative-10 px-2 py-1">four</div>
-            <div class="bgc-negative-10 px-2 py-1">five</div>
-            <div class="bgc-negative-10 px-2 py-1">six</div>
-            <div class="bgc-negative-10 px-2 py-1">seven</div>
-            <div class="bgc-negative-10 px-2 py-1">eight</div>
-            <div class="bgc-negative-10 px-2 py-1">nine</div>
-            <div class="bgc-negative-10 px-2 py-1">ten</div>
-            <div class="bgc-negative-10 px-2 py-1">eleven</div>
-            <div class="bgc-negative-10 px-2 py-1">twelve</div>
-            <div class="bgc-negative-10 px-2 py-1">thirteen</div>
-            <div class="bgc-negative-10 px-2 py-1">fourteen</div>
-            <div class="bgc-negative-10 px-2 py-1">fifteen</div>
-            <div class="bgc-negative-10 px-2 py-1">sixteen</div>
-            <div class="bgc-negative-10 px-2 py-1">seventeen</div>
-            <div class="bgc-negative-10 px-2 py-1">eighteen</div>
-            <div class="bgc-negative-10 px-2 py-1">nineteen</div>
+        <div class="d-grid g-4">
+            <b>Space</b>
+            <div class="d-inline-flex fw-wrap g-3">
+                <button
+                    class="btn"
+                    class:active = {isCellShrinked}
+                    on:click = {() => isCellShrinked = !isCellShrinked}
+                    disabled = {isCellShrinked}
+                >fs-0</button>
+                <button
+                    class="btn"
+                    class:active = {!isCellShrinked}
+                    on:click = {() => isCellShrinked = !isCellShrinked}
+                    disabled = {!isCellShrinked}
+                >ws-nowrap</button>
+            </div>
         </div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="d-grid g-3 p-3 bgc-positive br">
+                <div class="d-grid mb-2">
+                    <label for="growContainerWidth" class="d-grid gtc-3 ai-end px-2">
+                        <small class="ta-start">min</small>
+                        <div class="ta-center">Width {containerWidth}%</div>
+                        <small class="ta-end">max</small>
+                    </label>
+                    <input
+                        class="frm"
+                        id="growContainerWidth"
+                        min={0}
+                        max={100}
+                        step={1}
+                        bind:value={containerWidth}
+                        type="range"
+                    >
+                </div>
+                <div
+                    class="d-flex fw-{flexWrap} g-2 p-2 bgc-negative-10 ox-hidden w"
+                    class:ws-nowrap={!isCellShrinked}
+                    style="--w: {containerWidth}%"
+                >
+                    {#each cellNamesArr as name }
+                        <div
+                            class="bgc-negative-10 px-2 py-1"
+                            class:fs-0={isCellShrinked}
+                        >{name}</div>
+                    {/each}
+                </div>
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
                 {
-`<div class="d-flex fw-${flexWrap}">
-    ...
+`<div class="d-flex fw-${flexWrap} ${isCellShrinked ? '' : 'ws-nowrap'}">
+    <div ${isCellShrinked ? 'class="fs-0"' : ''}>...</div>
+    // ...
 </div>
 `
                 }
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>

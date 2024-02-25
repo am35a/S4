@@ -24,12 +24,12 @@
 >
     <div class="d-flex g-2 h-100">
         <div
-            class="d-flex ai-center f p-1 bgc-positive br bs-xs border border-negative-30"
-            style="--fg: 1"
+            class="d-flex ai-center fx p-1 bgc-positive br bs-xs border border-negative-30"
+            style="--fxg: 1"
         >
             <div
-                class="d-flex ai-center f g-2 h-100"
-                style="--fg: 1"
+                class="d-flex ai-center fx g-2 h-100"
+                style="--fxg: 1"
             >
                 <!-- <Button
                     class="w-auto h-100 p-0 {$path === '/home' ? 'active' : ''}"

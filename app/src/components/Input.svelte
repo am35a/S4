@@ -125,12 +125,12 @@
 
     [type="range"].frm
         padding: var(--size-1)
+        cursor: ew-resize
         &::-webkit-slider-thumb
             appearance: none
             height: calc(var(--lh) * 1em)
             width: var(--size-2)
             background: currentColor
-            cursor: ew-resize
             border-radius: calc(var(--size-1) / 2)
             border: unset
         &::-moz-range-thumb
@@ -138,7 +138,6 @@
             height: calc(var(--lh) * 1em)
             width: var(--size-2)
             background: currentColor
-            cursor: ew-resize
             border-radius: calc(var(--size-1) / 2)
             border: unset
 

@@ -38,7 +38,7 @@
         disabled={getPathSegments($path).includes(segment) && segment === $path}
     >
         {#if icon}
-            <Icon class="fs-xl" name={icon}/>
+            <Icon name={icon}/>
         {/if}
         {title}
     </Button>
@@ -65,7 +65,7 @@
         disabled={segment === $path}
     >
         {#if icon}
-            <Icon class="fs-xl" name={icon}/>
+            <Icon name={icon}/>
         {/if}
         {title}
     </Button>

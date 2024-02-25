@@ -8,14 +8,14 @@
     let headerObj = {
             'position': 'sticky',
             'top': '0',
-            'height': '4rem',
+            'height': '4em',
             'margin': '',
             'padding': 'var(--s-md) var(--s-md) var(--s-md) var(--s-md)',
         },
         navObj = {
             'position': 'sticky',
             'top': `${headerObj['height']}`,
-            'width': '16rem',
+            'width': '16em',
             'height': `calc(100vh - ${headerObj['height']})`,
             'margin': `${headerObj['height']} 0 0 0`,
             'padding': 'var(--s-md) var(--s-md) var(--s-md) var(--s-md)',

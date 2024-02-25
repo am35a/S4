@@ -123,9 +123,6 @@
 }
 
 /*  background section: background color of accent and extra palette contained in classes */
-.bgc {
-  background-color: var(--bgc) !important;
-}
 .bgc-positive {
   background-color: var(--positive-color) !important;
 }
@@ -260,6 +257,9 @@
 }
 .bgc-transparent {
   background-color: transparent !important;
+}
+.bgc-var {
+  background-color: var(--bgc, initial) !important;
 }
 .bgi {
   background-image: var(--bgi) !important;
@@ -926,9 +926,6 @@
 }
 
 /*  flex section: fill, equal and other sets to flex container items */
-.f {
-  flex: var(--fg, 0) var(--fs, 1) var(--fb, auto) !important;
-}
 .fd-row {
   flex-direction: row !important;
 }
@@ -950,26 +947,30 @@
 .fw-nowrap {
   flex-wrap: nowrap !important;
 }
-.fg {
-  flex-grow: var(--fg, 1);
+.fg-1 {
+  flex-grow: 1;
 }
-.fs {
-  flex-shrink: var(--fs, 0);
+.fs-0 {
+  flex-shrink: 0;
 }
 .fb-fill {
-  flex-basis: var(--fb, fill) !important;
+  flex-basis: fill !important;
 }
 .fb-max {
-  flex-basis: var(--fb, max-content) !important;
+  flex-basis: max-content !important;
 }
 .fb-min {
-  flex-basis: var(--fb, min-content) !important;
+  flex-basis: min-content !important;
 }
 .fb-fit {
-  flex-basis: var(--fb, fit-content) !important;
+  flex-basis: fit-content !important;
 }
 .fb-100 {
-  flex-basis: var(--fb, 100%) !important;
+  flex-basis: 100% !important;
+}
+
+.fx {
+  flex: var(--fxg, 0) var(--fxs, 1) var(--fxb, auto) !important;
 }
 
 /*  float section: float contained in classes */

@@ -10,7 +10,7 @@
 
 <h1>Core</h1>
 <div class="d-inline-block">
-    <h2>Devices checking</h2>
+    <h2 id="devicesChecking">Devices checking</h2>
     <p>
         The <a href="https://github.com/matthewhudson/current-device">current-device (v0.10.2)</a>
         library is use to define devices and get other data from device, which install the
@@ -29,7 +29,7 @@
     </div>
 </div>
 <div class="d-inline-block">
-    <h2>Breakpoints</h2>
+    <h2 id="breakpoints">Breakpoints</h2>
     <div>
         <h3>Device type</h3>
         <div class="d-grid gtc-3 g-2">
@@ -64,7 +64,7 @@
         </div>
     </div>
     <div>
-        <h3>Map</h3>
+        <h3 id="map">Map</h3>
         <p>
             The breakpoint map for the S4 consists of individual CSS modules (files) that are loaded depending on the device and orientation: as an example.
         </p>
@@ -83,7 +83,7 @@
         </div>
     </div>
     <div>
-        <h3>Document dimention</h3>
+        <h3 id="documentDimention">Document dimention</h3>
         <div class="alert alert-warning">
             Currently S4 <a href="/utilities" target={'_self'}>utilities</a> have not dependently from screen width. It will be soon.
         </div>

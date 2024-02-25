@@ -1,96 +1,106 @@
-<script lang="ts">
-    import Button from 'component/Button.svelte'
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
 
-    let flexBasisArr: string[] = ['100', 'fill', 'max', 'min', 'fit']
-    let flexBasis: string = flexBasisArr[0]
+    let flexBasisArr = ['100', 'fill', 'fit', 'max', 'min'],
+        flexBasis = flexBasisArr[0]
 
-    let containerClasses: string = ''
-    let containerWidth: number = 100
+    let containerClasses = '',
+        containerWidth = 100
 </script>
 
 <div>
     <h4 id="flexBasis">Basis</h4>
     <p>
-        The basis set up avaliable after add <b>f</b> class to elements into flex container. Use variable <b>--fb</b> to manage flex basis.
+        The <b>fb-{flexBasisArr.join('/')}</b> classes help to change width of items in a flex container.
+        Also the basis set up avaliable after add <b>fx</b> class to elements into flex container ans using
+        variable <b>--fxb</b> to manage width.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        <div class="d-grid g-2">
-            <div class="d-grid">
-                <label for="containerClasses">Container classes:</label>
-                <input
-                    id="containerClasses"
-                    class="border"
-                    bind:value={containerClasses}
-                    type="text"
-                >
-            </div>
-            <div class="d-grid">
-                <label for="containerWidth">Container width {containerWidth}%:</label>
-                <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={containerWidth}>
-            </div>
-            <div class="d-flex g-2">
+    <div class="d-grid g-5">
+        <div class="d-grid g-4">
+            <b>Basis</b>
+            <div class="d-inline-flex fw-wrap g-3">
                 {#each flexBasisArr as values }
-                    <Button
-                        class="btn-secondary {flexBasis === values ? 'active' : ''}"
+                    <button
+                        class="btn"
+                        class:active = {flexBasis === values}
                         on:click = {() => flexBasis = values}
                         disabled = {flexBasis === values}
-                    >fb-{values}</Button>
+                    >fb-{values}</button>
                 {/each}
             </div>
+        </div>        
+        <div class="d-grid g-4">
+            <b>Customize container</b>
+            <input
+                class="frm"
+                bind:value={containerClasses}
+                type="text"
+                placeholder="Type utility classes to customizing the container"
+            >
         </div>
-        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
-            <div class="fb-{flexBasis} bgc-negative-10 px-2 py-1">fb-{flexBasis} one</div>
-            <div class="bgc-negative-10 px-2 py-1">simple two</div>
-            <div class="bgc-negative-10 px-2 py-1">simple three</div>
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="d-grid g-3 p-3 bgc-positive br">
+                <div class="d-grid mb-2">
+                    <label for="basisContainerWidth" class="d-grid gtc-3 ai-end px-2">
+                        <small class="ta-start">min</small>
+                        <div class="ta-center">Width {containerWidth}%</div>
+                        <small class="ta-end">max</small>
+                    </label>
+                    <input
+                        class="frm"
+                        id="basisContainerWidth"
+                        min={0}
+                        max={100}
+                        step={1}
+                        bind:value={containerWidth}
+                        type="range"
+                    >
+                </div>
+                    <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fb-{flexBasis} bgc-negative-10 px-2 py-1">fb-{flexBasis} one</div>
+                    <div class="bgc-negative-10 px-2 py-1">simple two</div>
+                    <div class="bgc-negative-10 px-2 py-1">simple three</div>
+                </div>
+                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 100%;">100% one</div>
+                    <div class="bgc-negative-10 px-2 py-1">two</div>
+                    <div class="bgc-negative-10 px-2 py-1">three</div>
+                </div>
+                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 100%;">equal one</div>
+                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 100%;">equal two</div>
+                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 100%;">equal three</div>
+                </div>
+                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 25%">fb 25% one</div>
+                    <div class="bgc-negative-10 px-2 py-1">simple two</div>
+                    <div class="bgc-negative-10 px-2 py-1">simple three</div>
+                </div>
+            </div>
         </div>
-        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
-            <div class="f bgc-negative-10 px-2 py-1" style="--fb: 100%;">100% one</div>
-            <div class="bgc-negative-10 px-2 py-1">two</div>
-            <div class="bgc-negative-10 px-2 py-1">three</div>
-        </div>
-        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
-            <div class="f bgc-negative-10 px-2 py-1" style="--fb: 100%;">equal one</div>
-            <div class="f bgc-negative-10 px-2 py-1" style="--fb: 100%;">equal two</div>
-            <div class="f bgc-negative-10 px-2 py-1" style="--fb: 100%;">equal three</div>
-        </div>
-        <div class="d-flex {containerClasses} g-4 bgc-negative-10 p-4" style="width: {containerWidth}%;">
-            <div class="f bgc-negative-10 px-2 py-1" style="--fb: 25%">fb 25% one</div>
-            <div class="bgc-negative-10 px-2 py-1">simple two</div>
-            <div class="bgc-negative-10 px-2 py-1">simple three</div>
-        </div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
                 {
 `<div class="d-flex">
-    <div class="fb-${flexBasis}">fb-{flexBasis} one</div>
+    <div class="fb-${flexBasis}">fb-${flexBasis} one</div>
     <div>simple two</div>
     <div>simple three</div>
 </div>
 <div class="d-flex">
-    <div class="f" style="--fb: 100%;">100% one</div>
-    <div>two</div>
-    <div>three</div>
+    <div class="fx" style="--fxb: 100%;">equal one</div>
+    <div class="fx" style="--fxb: 100%;">equal two</div>
+    <div class="fx" style="--fxb: 100%;">equal three</div>
 </div>
 <div class="d-flex">
-    <div class="f" style="--fb: 100%;">equal one</div>
-    <div class="f" style="--fb: 100%;">equal two</div>
-    <div class="f" style="--fb: 100%;">equal three</div>
-</div>
-<div class="d-flex">
-    <div class="f" style="--fb: 25%">fb 25% one</div>
+    <div class="fx" style="--fxb: 25%">fb 25% one</div>
     <div>simple two</div>
     <div>simple three</div>
 </div>
 `
                 }
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </div>

@@ -1,43 +1,45 @@
-<script lang="ts">
-    import Button from 'component/Button.svelte'
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
 
-    let displayFlexArr: string[] = ['inline-flex', 'flex']
-    let displayFlex: string = displayFlexArr[0]
+    let displayFlexArr = ['inline-flex', 'flex'],
+        displayFlex = displayFlexArr[0]
 </script>
 
 <section>
-    <h3 id="displayFlex">Display</h3>
+    <h3 id="display">Display</h3>
     <p>
-        Create the flex container to start. Choose one of behaviors: <b>inline-flex</b> or <b>flex</b>.
+        To create a flex container select one of the following behaviors: <b>d-inline-flex</b> or <b>d-flex</b>.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        <div class="d-flex g-2">
-            {#each displayFlexArr as values }
-                <Button
-                    class="btn-secondary {displayFlex === values ? 'active' : ''}"
-                    on:click = {() => displayFlex = values}
-                    disabled = {displayFlex === values}
-                >d-{values}</Button>
-            {/each}
+    <div class="d-grid g-5">
+        <div class="d-grid g-4">
+            <b>Display</b>
+            <div class="d-inline-flex fw-wrap g-3">
+                {#each displayFlexArr as values }
+                    <button
+                        class="btn"
+                        class:active = {displayFlex === values}
+                        on:click = {() => displayFlex = values}
+                        disabled = {displayFlex === values}
+                    >d-{values}</button>
+                {/each}
+            </div>
         </div>
-        <div>
-            <div class="d-{displayFlex} bgc-negative-10 p-4">{displayFlex} container</div>
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="p-3 bgc-positive br">
+                <div class="d-{displayFlex} bgc-negative-10 p-2">{displayFlex} container</div>
+            </div>
         </div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
                 {
-`<div class="d-${displayFlex}">...</div>
+`<div class="d-${displayFlex}">
+    // ...
+</div>
 `
                 }
             </Precode>
-        </svelte:fragment>
-    </Details>
-
+        </div>
+    </div>
 </section>
