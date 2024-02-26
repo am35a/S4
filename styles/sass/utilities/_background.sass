@@ -1,10 +1,17 @@
 @use "sass:math"
 
+$bgAttachment: scroll, fixed, local
+
 /*
     background section: background color of accent and extra palette contained in classes
 
 @mixin _background($orientation, $type)
     .#{$orientation}#{$type}bg
+        &a
+            @each $item in $bgAttachment
+                &-#{$item}
+                    background-attachment: #{$item} !important
+
         &c
             @each $item in $defaultColors
                 &-#{$item}
@@ -21,11 +28,6 @@
                         background-color: var(--#{$item}-color-#{$pref}) !important
             &-transparent
                 background-color: transparent !important
-            &-var
-                background-color: var(--bgc, initial) !important
-
-        &i
-            background-image: var(--bgi) !important
         
         &o
             &-border
@@ -76,10 +78,22 @@
             &-contain
                 background-size: var(--bgs, contain) !important
         
-        &a
-            &-scroll
-                background-attachment: scroll !important
-            &-fixed
-                background-attachment: fixed !important
-            &-local
-                background-attachment: local !important
+    .bg
+        &i
+            background-image: var(--#{$orientation}#{$type}bgi, initial)
+        // &p
+        //     background-position: ar(--#{$orientation}#{$type}bg, initial)
+        // &s
+        //     background-size: ar(--#{$orientation}#{$type}bg, initial)
+        // &r
+        //     background-repeat: ar(--#{$orientation}#{$type}bg, initial)
+        // &o
+        //     background-origin: ar(--#{$orientation}#{$type}bg, initial)
+        // &c
+        //     background-clip: ar(--#{$orientation}#{$type}bg, initial)
+        // &a
+        //     background-attachment: ar(--#{$orientation}#{$type}bg, initial)
+        // &c
+        //     background-color: ar(--#{$orientation}#{$type}bg, initial)
+
+        // background: var(--#{$orientation}#{$type}bgc) var(--#{$orientation}#{$type}bgi) !important

@@ -10,9 +10,9 @@
 
 <article>
     <h2 id="background">Background</h2>
+    <SectionAttachment />
     <SectionColor />
     <SectionImage />
-    <SectionAttachment />
     <SectionOrigin />
     <SectionPosition />
     <SectionRepeat />

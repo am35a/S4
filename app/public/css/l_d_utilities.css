@@ -123,6 +123,15 @@
 }
 
 /*  background section: background color of accent and extra palette contained in classes */
+.bga-scroll {
+  background-attachment: scroll !important;
+}
+.bga-fixed {
+  background-attachment: fixed !important;
+}
+.bga-local {
+  background-attachment: local !important;
+}
 .bgc-positive {
   background-color: var(--positive-color) !important;
 }
@@ -258,12 +267,6 @@
 .bgc-transparent {
   background-color: transparent !important;
 }
-.bgc-var {
-  background-color: var(--bgc, initial) !important;
-}
-.bgi {
-  background-image: var(--bgi) !important;
-}
 .bgo-border {
   background-origin: border-box !important;
 }
@@ -330,14 +333,9 @@
 .bgs-contain {
   background-size: var(--bgs, contain) !important;
 }
-.bga-scroll {
-  background-attachment: scroll !important;
-}
-.bga-fixed {
-  background-attachment: fixed !important;
-}
-.bga-local {
-  background-attachment: local !important;
+
+.bgi {
+  background-image: var(--bgi, initial);
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */
