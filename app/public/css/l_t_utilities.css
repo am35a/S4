@@ -319,9 +319,6 @@
 .t_bgp-center {
   background-position: var(--bgp, 50% 50%) !important;
 }
-.t_bgr {
-  background-repeat: var(--bgr, repeat) !important;
-}
 .t_bgr-no {
   background-repeat: var(--bgr, no-repeat) !important;
 }

@@ -319,9 +319,6 @@
 .bgp-center {
   background-position: var(--bgp, 50% 50%) !important;
 }
-.bgr {
-  background-repeat: var(--bgr, repeat) !important;
-}
 .bgr-no {
   background-repeat: var(--bgr, no-repeat) !important;
 }

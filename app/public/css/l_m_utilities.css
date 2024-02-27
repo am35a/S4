@@ -319,9 +319,6 @@
 .l_m_bgp-center {
   background-position: var(--bgp, 50% 50%) !important;
 }
-.l_m_bgr {
-  background-repeat: var(--bgr, repeat) !important;
-}
 .l_m_bgr-no {
   background-repeat: var(--bgr, no-repeat) !important;
 }
