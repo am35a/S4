@@ -132,6 +132,19 @@
 .bga-local {
   background-attachment: local !important;
 }
+.bgc-border {
+  background-clip: border-box !important;
+}
+.bgc-padding {
+  background-clip: padding-box !important;
+}
+.bgc-content {
+  background-clip: content-box !important;
+}
+.bgc-text {
+  background-clip: text !important;
+  color: transparent;
+}
 .bgc-positive {
   background-color: var(--positive-color) !important;
 }

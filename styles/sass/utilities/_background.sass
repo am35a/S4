@@ -1,6 +1,7 @@
 @use "sass:math"
 
 $bgAttachment: scroll, fixed, local
+$bgClip: (border: border-box, padding: padding-box, content: content-box, text: text)
 
 /*
     background section: background color of accent and extra palette contained in classes
@@ -11,6 +12,13 @@ $bgAttachment: scroll, fixed, local
             @each $item in $bgAttachment
                 &-#{$item}
                     background-attachment: #{$item} !important
+        
+        &c
+            @each $item, $value in $bgClip
+                &-#{$item}
+                    background-clip: $value !important
+                    @if $value == text
+                        color: transparent
 
         &c
             @each $item in $defaultColors
