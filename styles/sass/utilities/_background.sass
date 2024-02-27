@@ -2,6 +2,7 @@
 
 $bgAttachment: scroll, fixed, local
 $bgClip: (border: border-box, padding: padding-box, content: content-box, text: text)
+$bgOrigin: (border: border-box, padding: padding-box, content: content-box)
 
 /*
     background section: background color of accent and extra palette contained in classes
@@ -20,6 +21,11 @@ $bgClip: (border: border-box, padding: padding-box, content: content-box, text: 
                     @if $value == text
                         color: transparent
 
+        &o
+            @each $item, $value in $bgOrigin
+                &-#{$item}
+                    background-origin: $value !important
+
         &c
             @each $item in $defaultColors
                 &-#{$item}
@@ -37,37 +43,28 @@ $bgClip: (border: border-box, padding: padding-box, content: content-box, text: 
             &-transparent
                 background-color: transparent !important
         
-        &o
-            &-border
-                background-origin: border-box !important
-            &-padding
-                background-origin: padding-box !important
-            &-content
-                background-origin: content-box !important
-        
         &p
-            background-position: var(--bgp) !important
             &-left
-                background-position: var(--bgp, 0% 50%) !important
+                background-position: var(0% 50%) !important
             &-top-left, &-left-top
-                background-position: var(--bgp, 0% 0%) !important
+                background-position: var(0% 0%) !important
             &-top
-                background-position: var(--bgp, 50% 0%) !important
+                background-position: var(50% 0%) !important
             &-top-right, &-right-top
-                background-position: var(--bgp, 100% 0%) !important
+                background-position: var(100% 0%) !important
             &-righ
-                background-position: var(--bgp, 100% 50%) !important
+                background-position: var(100% 50%) !important
             &-bottom-right, &-right-bottom
-                background-position: var(--bgp, 100% 100%) !important
+                background-position: var(100% 100%) !important
             &-bottom
-                background-position: var(--bgp, 50% 100%) !important
+                background-position: var(50% 100%) !important
             &-bottom-left, &-left-bottom
-                background-position: var(--bgp, 0% 100%) !important
+                background-position: var(0% 100%) !important
             &-center
-                background-position: var(--bgp, 50% 50%) !important
+                background-position: var(50% 50%) !important
 
         &r
-            // background-repeat: var(--bgr, repeat) !important
+            background-repeat: var(--bgr, repeat) !important
             &-no
                 background-repeat: var(--bgr, no-repeat) !important
             &-x
@@ -89,8 +86,8 @@ $bgClip: (border: border-box, padding: padding-box, content: content-box, text: 
     .bg
         &i
             background-image: var(--#{$orientation}#{$type}bgi, initial)
-        // &p
-        //     background-position: ar(--#{$orientation}#{$type}bg, initial)
+        &p
+            background-position: ar(--#{$orientation}#{$type}bgp, initial)
         // &s
         //     background-size: ar(--#{$orientation}#{$type}bg, initial)
         // &r

@@ -51,7 +51,7 @@
         .footer
             margin: auto auto 1em 1em
             font-size: x-small
-            color: var(--negative-color-25)
+            color: var(--negative-color-20)
 
         .portrait &
             .body

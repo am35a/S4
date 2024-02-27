@@ -14,15 +14,17 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Customize container</b>
-            <input
-                class="frm"
-                bind:value={containerClasses}
-                type="text"
-                placeholder="Type utility classes to customizing the container"
-            >
-            <div class="fs-sm">
-                Play with the <b>bgr-no</b>, <b>bgo-border</b> or other background classes
-                to view different results.
+            <div class="d-grid">
+                <input
+                    class="frm"
+                    bind:value={containerClasses}
+                    type="text"
+                    placeholder="Type utility classes to customizing the container"
+                >
+                <div class="fs-sm">
+                    Play with the <b>bgr-no</b>, <b>bgo-border</b> or other background classes
+                    to view different results.
+                </div>
             </div>
         </div>
         <div class="d-grid g-4">
@@ -41,7 +43,7 @@
             <Precode>
                 {#each bgClipArr as clip}
                     {
-`<div class="bgi bgc-${clip}" style="--bgi: url(...)">
+`<div class="bgi bgc-${clip} ${containerClasses}" style="--bgi: url(...)">
     // ...
 </div>
 `

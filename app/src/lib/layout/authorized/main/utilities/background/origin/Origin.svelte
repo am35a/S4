@@ -1,31 +1,53 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
+
+    let bgOriginArr = ['border', 'padding', 'content']
+    let containerClasses = ''
 </script>
 
 <section>
     <h3 id="backgroundOrigin">Origin</h3>
     <p>
-        Add the <b>bgo-border</b>, <b>bgo-padding</b> or <b>bgo-content</b> classes to container to work with background-attachment.
+        The <b>bga-{bgOriginArr.join('/')}</b> ...
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        <div class="bgc-negative-10 bgi bgo-border p-8" style="--bgi: url(http://placekitten.com/200/300)"></div>
-        <div class="bgc-negative-10 bgi bgo-padding p-8" style="--bgi: url(http://placekitten.com/200/300); border-width: 10px; border-style: solid;"></div>
-        <div class="bgc-negative-10 bgi bgo-content p-8" style="--bgi: url(http://placekitten.com/200/300)"></div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
-                {
-`<div class="bgi bgo-border" style="--bgi: url(http://placekitten.com/200/300)"></div>
-<div class="bgi bgo-padding" style="--bgi: url(http://placekitten.com/200/300); border-width: 10px; border-style: solid;"></div>
-<div class="bgi bgo-content" style="--bgi: url(http://placekitten.com/200/300)"></div>
+    <div class="d-grid g-5">
+        <div class="d-grid g-4">
+            <b>Customize container</b>
+            <div class="d-grid">
+                <input
+                    class="frm"
+                    bind:value={containerClasses}
+                    type="text"
+                    placeholder="Type utility classes to customizing the container"
+                >
+                <div class="fs-sm">
+                    Play with the <b>bgr</b> or other background classes to view different results.
+                </div>
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="d-grid g-3 p-3 bgc-positive br">
+                {#each bgOriginArr as origin}
+                    <div
+                        class="p-4 fs-xxxl fw-700 bgi bgc-negative-10 bgo-{origin} {containerClasses}"
+                        style="--bgi: url(/images/logo.svg); border: 1em dashed;"
+                    >Lorem ipsum dolor sit amet.</div>
+                {/each}
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
+                {#each bgOriginArr as origin}
+                    {
+`<div class="bgi bgo-${origin} ${containerClasses}" style="--bgi: url(...)">
+    // ...
+</div>
 `
-                }
+                    }
+                {/each}
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>

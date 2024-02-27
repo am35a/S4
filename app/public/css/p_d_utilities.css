@@ -145,6 +145,15 @@
   background-clip: text !important;
   color: transparent;
 }
+.p_bgo-border {
+  background-origin: border-box !important;
+}
+.p_bgo-padding {
+  background-origin: padding-box !important;
+}
+.p_bgo-content {
+  background-origin: content-box !important;
+}
 .p_bgc-positive {
   background-color: var(--positive-color) !important;
 }
@@ -280,44 +289,35 @@
 .p_bgc-transparent {
   background-color: transparent !important;
 }
-.p_bgo-border {
-  background-origin: border-box !important;
-}
-.p_bgo-padding {
-  background-origin: padding-box !important;
-}
-.p_bgo-content {
-  background-origin: content-box !important;
-}
-.p_bgp {
-  background-position: var(--bgp) !important;
-}
 .p_bgp-left {
-  background-position: var(--bgp, 0% 50%) !important;
+  background-position: var(0% 50%) !important;
 }
 .p_bgp-top-left, .p_bgp-left-top {
-  background-position: var(--bgp, 0% 0%) !important;
+  background-position: var(0% 0%) !important;
 }
 .p_bgp-top {
-  background-position: var(--bgp, 50% 0%) !important;
+  background-position: var(50% 0%) !important;
 }
 .p_bgp-top-right, .p_bgp-right-top {
-  background-position: var(--bgp, 100% 0%) !important;
+  background-position: var(100% 0%) !important;
 }
 .p_bgp-righ {
-  background-position: var(--bgp, 100% 50%) !important;
+  background-position: var(100% 50%) !important;
 }
 .p_bgp-bottom-right, .p_bgp-right-bottom {
-  background-position: var(--bgp, 100% 100%) !important;
+  background-position: var(100% 100%) !important;
 }
 .p_bgp-bottom {
-  background-position: var(--bgp, 50% 100%) !important;
+  background-position: var(50% 100%) !important;
 }
 .p_bgp-bottom-left, .p_bgp-left-bottom {
-  background-position: var(--bgp, 0% 100%) !important;
+  background-position: var(0% 100%) !important;
 }
 .p_bgp-center {
-  background-position: var(--bgp, 50% 50%) !important;
+  background-position: var(50% 50%) !important;
+}
+.p_bgr {
+  background-repeat: var(--bgr, repeat) !important;
 }
 .p_bgr-no {
   background-repeat: var(--bgr, no-repeat) !important;
@@ -346,6 +346,9 @@
 
 .bgi {
   background-image: var(--p_bgi, initial);
+}
+.bgp {
+  background-position: ar(--p_bgp, initial);
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */
