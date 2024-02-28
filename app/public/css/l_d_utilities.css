@@ -290,31 +290,31 @@
   background-color: transparent !important;
 }
 .bgp-left {
-  background-position: var(0% 50%) !important;
+  background-position: 0% 50% !important;
 }
 .bgp-top-left, .bgp-left-top {
-  background-position: var(0% 0%) !important;
+  background-position: 0% 0% !important;
 }
 .bgp-top {
-  background-position: var(50% 0%) !important;
+  background-position: 50% 0% !important;
 }
 .bgp-top-right, .bgp-right-top {
-  background-position: var(100% 0%) !important;
+  background-position: 100% 0% !important;
 }
 .bgp-righ {
-  background-position: var(100% 50%) !important;
+  background-position: 100% 50% !important;
 }
 .bgp-bottom-right, .bgp-right-bottom {
-  background-position: var(100% 100%) !important;
+  background-position: 100% 100% !important;
 }
 .bgp-bottom {
-  background-position: var(50% 100%) !important;
+  background-position: 50% 100% !important;
 }
 .bgp-bottom-left, .bgp-left-bottom {
-  background-position: var(0% 100%) !important;
+  background-position: 0% 100% !important;
 }
 .bgp-center {
-  background-position: var(50% 50%) !important;
+  background-position: 50% 50% !important;
 }
 .bgr {
   background-repeat: var(--bgr, repeat) !important;
@@ -334,9 +334,6 @@
 .bgr-round {
   background-repeat: var(--bgr, round) !important;
 }
-.bgs {
-  background-size: var(--bgs, auto) !important;
-}
 .bgs-cover {
   background-size: var(--bgs, cover) !important;
 }
@@ -345,10 +342,13 @@
 }
 
 .bgi {
-  background-image: var(--bgi, initial);
+  background-image: var(--bgi, var(--bgi, initial));
 }
 .bgp {
-  background-position: ar(--bgp, initial);
+  background-position: var(--bgp, var(--bgp, initial));
+}
+.bgs {
+  background-size: var(--bgs, var(--bgs, initial));
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */

@@ -45,23 +45,23 @@ $bgOrigin: (border: border-box, padding: padding-box, content: content-box)
         
         &p
             &-left
-                background-position: var(0% 50%) !important
+                background-position: 0% 50% !important
             &-top-left, &-left-top
-                background-position: var(0% 0%) !important
+                background-position: 0% 0% !important
             &-top
-                background-position: var(50% 0%) !important
+                background-position: 50% 0% !important
             &-top-right, &-right-top
-                background-position: var(100% 0%) !important
+                background-position: 100% 0% !important
             &-righ
-                background-position: var(100% 50%) !important
+                background-position: 100% 50% !important
             &-bottom-right, &-right-bottom
-                background-position: var(100% 100%) !important
+                background-position: 100% 100% !important
             &-bottom
-                background-position: var(50% 100%) !important
+                background-position: 50% 100% !important
             &-bottom-left, &-left-bottom
-                background-position: var(0% 100%) !important
+                background-position: 0% 100% !important
             &-center
-                background-position: var(50% 50%) !important
+                background-position: 50% 50% !important
 
         &r
             background-repeat: var(--bgr, repeat) !important
@@ -77,7 +77,6 @@ $bgOrigin: (border: border-box, padding: padding-box, content: content-box)
                 background-repeat: var(--bgr, round) !important
         
         &s
-            background-size: var(--bgs, auto) !important
             &-cover
                 background-size: var(--bgs, cover) !important
             &-contain
@@ -85,11 +84,11 @@ $bgOrigin: (border: border-box, padding: padding-box, content: content-box)
         
     .bg
         &i
-            background-image: var(--#{$orientation}#{$type}bgi, initial)
+            background-image: var(--#{$orientation}#{$type}bgi, var(--bgi, initial))
         &p
-            background-position: ar(--#{$orientation}#{$type}bgp, initial)
-        // &s
-        //     background-size: ar(--#{$orientation}#{$type}bg, initial)
+            background-position: var(--#{$orientation}#{$type}bgp, var(--bgp, initial))
+        &s
+            background-size: var(--#{$orientation}#{$type}bgs, var(--bgs, initial))
         // &r
         //     background-repeat: ar(--#{$orientation}#{$type}bg, initial)
         // &o
