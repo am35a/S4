@@ -86,9 +86,9 @@
                         <div class="d-flex fd-column-reverse g-2 bgc-negative">
                             {#if defaultExtraColorsInterval}
                                 {#each Array(9) as _, i}
-                                    <div class="bgc-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 c-{defaultColorsArr[1]} ta-center">
-                                        bgc-{defaultColorsArr[0]}-{(i + 1) * 10}
-                                    </div>
+                                    <div
+                                        class="bgc-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 c-{defaultColorsArr[i < 5 ? 0 : 1]} ta-center"
+                                    >bgc-{defaultColorsArr[0]}-{(i + 1) * 10}</div>
                                 {/each}
                             {/if}
                             <div class="bgc-{defaultColorsArr[0]} p-4 c-{defaultColorsArr[1]} ta-center">
@@ -99,7 +99,7 @@
                             {#if defaultExtraColorsInterval}
                                 {#each Array(9) as _, i}
                                     <div
-                                        class="bgc-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 c-{defaultColorsArr[0]} ta-center"
+                                        class="bgc-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 c-{defaultColorsArr[i < 4 ? 1 : 0]} ta-center"
                                     >
                                         bgc-{defaultColorsArr[0]}-{(i + 1) * 10}
                                     </div>
