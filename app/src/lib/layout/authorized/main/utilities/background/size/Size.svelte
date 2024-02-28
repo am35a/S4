@@ -1,29 +1,35 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
 </script>
 
 <section>
     <h3 id="backgroundSize">Size</h3>
     <p>
-        Add the <b>bgr-cover</b> or <b>bgs-contain</b> classes to container to work with background-size.
+        Add the <b>bgr-cover</b> or <b>bgs-contain</b> classes to container to change background size.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 gtc-2 bgc-positive br">
-        <div class="bgi bgc-negative-10 bgs-cover p-8" style="--bgi: url(http://placekitten.com/240/240)"></div>
-        <div class="bgi bgc-negative-10 bgs-contain p-8" style="--bgi: url(http://placekitten.com/240/240)"></div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+    <div class="d-grid g-5">
+        <div class="d-grid g-4">
+            <b>Preview</b>
+            <div class="d-grid gtc-2 g-3 p-3 bgc-positive br">
+                <div
+                class="bgi bgc-negative-10 bgs-cover h"
+                style="--bgi: url(/images/logo.svg); --h: 8em"
+            ></div>
+            <div
+                class="bgi bgc-negative-10 bgs-contain h"
+                style="--bgi: url(/images/logo.svg); --h: 8em"
+            ></div>
+            </div>
+        </div>
+        <div class="d-grid g-4">
+            <b>HTML</b>
+            <Precode>
                 {
-`<div class="bgi bgs-cover" style="--bgi: url(http://placekitten.com/240/240)"></div>
-<div class="bgi bgs-contain" style="--bgi: url(http://placekitten.com/240/240)"></div>
+`<div class="bgi bgs-cover" style="--bgi: url(...)"></div>
+<div class="bgi bgs-contain" style="--bgi: url(...)"></div>
 `
                 }
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>
