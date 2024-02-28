@@ -80,17 +80,7 @@ $bgRepeat: (x: repeat-x, y: repeat-y, space: space, round: round, no: no-repeat)
             background-image: var(--#{$orientation}#{$type}bgi, var(--bgi, initial))
         &p
             background-position: var(--#{$orientation}#{$type}bgp, var(--bgp, initial))
+        &c
+            background-color: ar(--#{$orientation}#{$type}bgc, var(--bgc, initial))
         &s
             background-size: var(--#{$orientation}#{$type}bgs, var(--bgs, initial))
-        // &r
-        //     background-repeat: ar(--#{$orientation}#{$type}bg, initial)
-        // &o
-        //     background-origin: ar(--#{$orientation}#{$type}bg, initial)
-        // &c
-        //     background-clip: ar(--#{$orientation}#{$type}bg, initial)
-        // &a
-        //     background-attachment: ar(--#{$orientation}#{$type}bg, initial)
-        // &c
-        //     background-color: ar(--#{$orientation}#{$type}bg, initial)
-
-        // background: var(--#{$orientation}#{$type}bgc) var(--#{$orientation}#{$type}bgi) !important

@@ -8,7 +8,7 @@
 <section>
     <h3 id="backgroundOrigin">Origin</h3>
     <p>
-        The <b>bga-{bgOriginArr.join('/')}</b> ...
+        Change the background`s origin from the border start, inside the border, or inside the padding by the classes <b>bga-{bgOriginArr.join('/')}</b>.
     </p>
     <div class="d-grid g-5">
         <div class="d-grid g-4">

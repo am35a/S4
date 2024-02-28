@@ -344,6 +344,9 @@
 .bgp {
   background-position: var(--p_bgp, var(--bgp, initial));
 }
+.bgc {
+  background-color: ar(--p_bgc, var(--bgc, initial));
+}
 .bgs {
   background-size: var(--p_bgs, var(--bgs, initial));
 }
