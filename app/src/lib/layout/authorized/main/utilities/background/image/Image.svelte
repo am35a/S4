@@ -8,20 +8,23 @@
     <p>
         Add the <b>bgi</b> class to container before work with background-image and use the <b>--bgi</b> variable to control the property.
     </p>
-    <div class="d-grid g-3 mb-4 p-2 bgc-positive br">
-        <div class="bgi p-8" style="--bgi: url(http://placekitten.com/200/300)"></div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
-                {
-`<div class="bgi" style="--bgi: url(http://placekitten.com/200/300)"></div>
+    <div class="d-grid g-5">
+        <div class="d-grid g-5">
+            <div class="d-grid g-4">
+                <b>Preview</b>
+                <div class="d-grid g-3 p-2 bgc-positive br">
+                    <div class="bgi p-8" style="--bgi: url(/images/logo.svg)"></div>
+                </div>
+            </div>
+            <div class="d-grid g-4">
+                <b>HTML</b>
+                <Precode>
+                    {
+`<div class="bgi" style="--bgi: url(...)"></div>
 `
-                }
-            </Precode>
-        </svelte:fragment>
-    </Details>
+                    }
+                </Precode>
+            </div>
+        </div>
+    </div>
 </section>
