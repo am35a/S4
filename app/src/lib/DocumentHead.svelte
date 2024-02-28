@@ -38,7 +38,6 @@
         href="/css/styles.css"
         on:load={() => appConsole.message('styles.css: loaded', 'success')}
     >
-
     <!-- <link
         rel='stylesheet'
         href='/css/settings/variables.css'
@@ -50,7 +49,6 @@
         on:load={() => appConsole.message(`${deviceCSSPrefix}variables.css: loaded`, 'success')}
     > -->
     <!-- load only appropriate styles utilities -->
-
     {#each styleDependencyMap[deviceCSSPrefix] as item}
         <link
             rel="stylesheet"

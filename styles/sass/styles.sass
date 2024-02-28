@@ -1,5 +1,7 @@
 @import __variables
 
-@import styles/_theme
-@import styles/_default
-@import styles/_reset
+@layer reset
+    @import styles/_reset
+@layer themes
+    @import styles/_theme
+    @import styles/_default

@@ -23,14 +23,8 @@
     {...$$restProps}
 >
     <div class="d-flex g-2 h-100">
-        <div
-            class="d-flex ai-center fx p-1 bgc-positive br bs-xs border border-negative-30"
-            style="--fxg: 1"
-        >
-            <div
-                class="d-flex ai-center fx g-2 h-100"
-                style="--fxg: 1"
-            >
+        <div class="d-flex ai-center fg-1 p-1 bgc-positive br bs-xs border border-negative-30">
+            <div class="d-flex ai-center fg-1 g-2 h-100">
                 <!-- <Button
                     class="w-auto h-100 p-0 {$path === '/home' ? 'active' : ''}"
                     title="S4 - The lightweight Svelte UI library"

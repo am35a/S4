@@ -16,3 +16,8 @@
 </script>
 
 <svelte:window/>
+
+<style lang="sass" global>
+    @layer reset, themes, components
+    // utilities are not placed in layers because by default have high priority
+</style>
