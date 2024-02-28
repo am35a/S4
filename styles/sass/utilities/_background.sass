@@ -3,6 +3,7 @@
 $bgAttachment: scroll, fixed, local
 $bgClip: (border: border-box, padding: padding-box, content: content-box, text: text)
 $bgOrigin: (border: border-box, padding: padding-box, content: content-box)
+$bgRepeat: (x: repeat-x, y: repeat-y, space: space, round: round, no: no-repeat)
 
 /*
     background section: background color of accent and extra palette contained in classes
@@ -12,7 +13,7 @@ $bgOrigin: (border: border-box, padding: padding-box, content: content-box)
         &a
             @each $item in $bgAttachment
                 &-#{$item}
-                    background-attachment: #{$item} !important
+                    background-attachment: $item !important
         
         &c
             @each $item, $value in $bgClip
@@ -64,17 +65,9 @@ $bgOrigin: (border: border-box, padding: padding-box, content: content-box)
                 background-position: 50% 50% !important
 
         &r
-            background-repeat: var(--bgr, repeat) !important
-            &-no
-                background-repeat: var(--bgr, no-repeat) !important
-            &-x
-                background-repeat: var(--bgr, repeat-x) !important
-            &-y
-                background-repeat: var(--bgr, repeat-y) !important
-            &-space
-                background-repeat: var(--bgr, space) !important
-            &-round
-                background-repeat: var(--bgr, round) !important
+            @each $item, $value in $bgRepeat
+                &-#{$item}
+                    background-repeat: $value !important
         
         &s
             &-cover

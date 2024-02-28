@@ -316,23 +316,20 @@
 .bgp-center {
   background-position: 50% 50% !important;
 }
-.bgr {
-  background-repeat: var(--bgr, repeat) !important;
-}
-.bgr-no {
-  background-repeat: var(--bgr, no-repeat) !important;
-}
 .bgr-x {
-  background-repeat: var(--bgr, repeat-x) !important;
+  background-repeat: repeat-x !important;
 }
 .bgr-y {
-  background-repeat: var(--bgr, repeat-y) !important;
+  background-repeat: repeat-y !important;
 }
 .bgr-space {
-  background-repeat: var(--bgr, space) !important;
+  background-repeat: space !important;
 }
 .bgr-round {
-  background-repeat: var(--bgr, round) !important;
+  background-repeat: round !important;
+}
+.bgr-no {
+  background-repeat: no-repeat !important;
 }
 .bgs-cover {
   background-size: var(--bgs, cover) !important;
@@ -1365,6 +1362,10 @@
 }
 .ar-auto {
   aspect-ratio: auto;
+}
+
+.ar {
+  aspect-ratio: var(--ar, var(--ar, initial));
 }
 
 .bs-xxs {

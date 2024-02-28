@@ -890,6 +890,10 @@
   aspect-ratio: auto;
 }
 
+.ar {
+  aspect-ratio: var(--p_t_ar, var(--ar, initial));
+}
+
 /*  spacing section: width, height, box-sizing and resize types contained in classes */
 .p_t_m-0 {
   margin: unset !important;

@@ -316,23 +316,20 @@
 .p_bgp-center {
   background-position: 50% 50% !important;
 }
-.p_bgr {
-  background-repeat: var(--bgr, repeat) !important;
-}
-.p_bgr-no {
-  background-repeat: var(--bgr, no-repeat) !important;
-}
 .p_bgr-x {
-  background-repeat: var(--bgr, repeat-x) !important;
+  background-repeat: repeat-x !important;
 }
 .p_bgr-y {
-  background-repeat: var(--bgr, repeat-y) !important;
+  background-repeat: repeat-y !important;
 }
 .p_bgr-space {
-  background-repeat: var(--bgr, space) !important;
+  background-repeat: space !important;
 }
 .p_bgr-round {
-  background-repeat: var(--bgr, round) !important;
+  background-repeat: round !important;
+}
+.p_bgr-no {
+  background-repeat: no-repeat !important;
 }
 .p_bgs-cover {
   background-size: var(--bgs, cover) !important;
@@ -1116,6 +1113,10 @@
 }
 .p_ar-auto {
   aspect-ratio: auto;
+}
+
+.ar {
+  aspect-ratio: var(--p_ar, var(--ar, initial));
 }
 
 /*  spacing section: width, height, box-sizing and resize types contained in classes */
