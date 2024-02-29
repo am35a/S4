@@ -1,7 +1,4 @@
-<script lang="ts">
-    import Button from 'component/Button.svelte'
-    import Icon from 'component/Icon.svelte'
-
+<script>
     import SectionVerticalAlign from './verticalalign/VerticalAlign.svelte'
     import SectionJustifyContent from './justifycontent/JustifyContent.svelte'
     import SectionJustifyItems from './justifyitems/JustifyItems.svelte'
@@ -30,18 +27,20 @@
     <SectionAlignContent />
     <SectionAlignItems />
     <SectionAlignSelf />
-    <div class="p-sticky b-0 d-flex g-1 bgc-positive p-2 br w-fit ms-auto s-sm">
-        <div class="d-flex fw-wrap g-1 w-fit ms-auto">
-            {#each Object.entries(alignmentsObj) as [key, value]}
-                <Button
-                    class="btn-xs btn-alt"
-                    on:click={() => window.open(`#${key}`, '_self')}
-                >{value}</Button>
-            {/each}
+    <div class="p-sticky b-0 p-2">
+        <div class="d-flex g-1 bgc-positive p-2 w-fit ms-auto br bs-sm border border-negative-30 fs-sm">
+            <div class="d-flex fw-wrap g-1 w-fit ms-auto fs-sm">
+                {#each Object.entries(alignmentsObj) as [key, value]}
+                    <button
+                        class="btn btn-primary btn-alt"
+                        on:click={() => window.open(`#${key}`, '_self')}
+                    >{value}</button>
+                {/each}
+            </div>
+            <button
+                class="btn btn-ico fs-sm"
+                on:click={() => window.open('#alignment', '_self')}
+            ><span class="ico" style="--ico-image: url(/icons/arrow-top-big.svg);"></span></button>
         </div>
-        <Button
-            class="btn btn-ico btn-xs"
-            on:click={() => window.open('#alignment', '_self')}
-        ><Icon name="arrow-top-big" /></Button>
     </div>
 </article>

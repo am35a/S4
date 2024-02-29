@@ -1,42 +1,42 @@
 <script lang="ts">
     import Precode from 'component/Precode.svelte'
-    import Button from 'component/Button.svelte'
 
-    let lineHeightObj = {
-        'Normal': 'normal',
-        '0': '0',
-        '1': '1',
-        '4': '4'
-    }
-    let lineHeight:string = '4'
+    let lineHeightObj={
+            'Normal': 'normal',
+            '0': '0',
+            '1': '1',
+            '4': '4'
+        },
+        lineHeight:string = '4'
     
-    let verticalAlignObj = {
-        'va-baseline': 'Baseline',
-        'va-sub': 'Sub',
-        'va-super': 'Super',
-        'va-top': 'Top',
-        'va-middle': 'Middle',
-        'va-bottom': 'Bottom',
-        'va-text-bottom': 'Text bottom',
-        'va-text-top': 'Text top'
+    let verticalAlignObj={
+        'Baseline': 'baseline',
+        'Sub': 'sub',
+        'Super': 'super',
+        'Top': 'top',
+        'Middle': 'middle',
+        'Bottom': 'bottom',
+        'Text bottom': 'text-bottom',
+        'Text top': 'text-top'
     }
 </script>
 
 <div>
     <h4 id="alignBlock">Inline container</h4>
+    <p>
+        The <b>va-{Object.values(verticalAlignObj).join('/')}</b> classes sets vertical alignment of an <b>inline</b> or <b>inline-block</b> blocks.
+    </p>
     <div class="d-grid g-5">
-        <p>
-            The <b>va-...</b> classes sets vertical alignment of an <b>inline</b> or <b>inline-block</b> blocks.
-        </p>
         <div class="d-grid g-4">
             <b>Line height</b>
             <div class="d-inline-flex fw-wrap g-3">
                 {#each Object.entries(lineHeightObj) as [key, value]}
-                    <Button
-                        class="{lineHeight === value ? 'active' : ''}"
-                        on:click = {() => lineHeight = value}
-                        disabled={lineHeight === value}
-                    >{key}</Button>
+                    <button
+                        class = "btn"
+                        class:active = {lineHeight === key}
+                        on:click = {() => lineHeight = key}
+                        disabled = {lineHeight === key}
+                    >{value}</button>
                 {/each}
             </div>
         </div>
@@ -48,7 +48,7 @@
                     <div class="lh gc-full gr-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
                     <div class="lh gc-full gr-full py-4">
                         {#each Object.entries(verticalAlignObj) as [key, value]}
-                            <span class="bgc-negative-10 px-1 me-1 br {key}">{value}</span>
+                            <span class="bgc-negative-10 px-1 me-1 br va-{value}">{key}</span>
                         {/each}
                     </div>
                 </div>
@@ -59,7 +59,7 @@
             <Precode>
                 {#each Object.entries(verticalAlignObj) as [key, value]}
                     {
-`   <span class="${key}">${value}</span>
+`<span class="${key}">${value}</span>
 `
                     }
                 {/each}

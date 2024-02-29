@@ -10,7 +10,7 @@
 
 <style lang="sass">
     footer
-        margin: calc(100vh - 3rem) 0 auto 0
+        margin: calc(100vh - 3em) 0 auto 0
         position: relative
         grid-column: 1/-1
         grid-row: 1/-1

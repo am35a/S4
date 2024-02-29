@@ -1,31 +1,31 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
-    import Button from 'component/Button.svelte'
 
     let containerTypeObj = {
         'grid': 'd-grid',
         'flex': 'd-flex'
     }
-    let containerType: string = containerTypeObj['flex']
+    let containerType = containerTypeObj['flex']
 
     let justifyContentArr = [ 'center', 'end', 'start', 'stretch', 'between', 'around', 'evenly' ]
 </script>
 
 <section>
     <h3 id="justifyContent">Justify content</h3>
+    <p>
+        The <b>jc-{Object.values(justifyContentArr).join('/')}</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
+    </p>
     <div class="d-grid g-5">
-        <p>
-            The <b>jc-...</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
-        </p>
         <div class="d-grid g-4">
             <b>Display</b>
             <div class="d-inline-flex fw-wrap g-3">
                 {#each Object.entries(containerTypeObj) as [key, value]}
-                    <Button
-                        class={containerType === value ? 'active' : ''}
+                    <button
+                        class="btn"
+                        class:active = {containerType === value}
                         on:click = {() => containerType = value}
                         disabled={containerType === value}
-                    >{key}</Button>
+                    >{key}</button>
                 {/each}
             </div>
         </div>
@@ -47,9 +47,7 @@
                 {#each justifyContentArr as item }
                     {
 `<div class="${containerType} jc-${item}">
-    <div>one</div>
-    <div>two</div>
-    <div>three</div>
+    // ...
 </div>
 `
                     }

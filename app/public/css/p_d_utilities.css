@@ -1638,7 +1638,7 @@
 
 /*  typography section: ... contained in classes */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: var(--size-1) !important;
+  margin-bottom: var(--size-2) !important;
   font-weight: 600 !important;
   line-height: var(--size-5) !important;
 }

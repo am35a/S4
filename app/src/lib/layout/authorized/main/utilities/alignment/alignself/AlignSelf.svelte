@@ -1,7 +1,5 @@
 <script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
-    import Button from 'component/Button.svelte'
 
     let containerTypesObj = {
         grid: 'd-grid gtc-2',
@@ -15,19 +13,20 @@
 
 <section>
     <h3 id="alignSelf">Align self</h3>
+    <p>
+        The <b>as-{alignSelfArr.join('/')}</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>ai-</b> classes value.
+    </p>
     <div class="d-grid g-5">
-        <p>
-            The <b>as-...</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>ai-</b> classes value.
-        </p>
         <div class="d-grid g-4">
             <b>Display</b>
             <div class="d-inline-flex fw-wrap g-3">
                 {#each Object.entries(containerTypesObj) as [key, value]}
-                    <Button
-                        class={containerType === value ? 'active' : ''}
+                    <button
+                        class="btn"
+                        class:active = {containerType === value}
                         on:click = {() => containerType = value}
                         disabled = {containerType === value}
-                    >{key}</Button>
+                    >{key}</button>
                 {/each}
             </div>
         </div>

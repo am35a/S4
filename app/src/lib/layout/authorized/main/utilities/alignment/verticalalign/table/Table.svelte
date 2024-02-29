@@ -4,10 +4,10 @@
 
 <div>
     <h4 id="alignTable">Table cells container</h4>
+    <p>
+        The <b>va-top/middle/bottom</b> classes suitable for vertical alignmet into table sells.
+    </p>
     <div class="d-grid g-5">
-        <div>
-            The <b>va-top</b>, <b>va-middle</b> and <b>va-bottom</b> classes suitable for vertical alignmet into table sells.
-        </div>
         <div class="d-grid g-4">
             <b>Preview</b>
             <div class="d-grid g-3 p-3 bgc-positive br">

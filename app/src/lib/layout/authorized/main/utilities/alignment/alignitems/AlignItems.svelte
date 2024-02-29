@@ -14,10 +14,10 @@
 
 <section>
     <h3 id="alignItems">Align items</h3>
+    <p>
+        The <b>ai-{alignItemsArr.join('/')}</b> classes sets the <b>as-</b> classes value on all direct children as a group.
+    </p>
     <div class="d-grid g-5">
-        <p>
-            The <b>ai-...</b> classes sets the <b>as-</b> classes value on all direct children as a group.
-        </p>
         <div class="d-grid g-4">
             <b>Display</b>
             <div class="d-inline-flex fw-wrap g-3">

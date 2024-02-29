@@ -16,7 +16,7 @@
                 {#each bgAttachmentArr as attachment}
                     <div
                         class="p-2 h o-auto bgi bgc-negative-10 bga-{attachment}"
-                        style="--bgi: url(/images/logo.svg); --h: 5rem"
+                        style="--bgi: url(/images/logo.svg); --h: 5em"
                     >
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur et optio eveniet tempora molestiae animi possimus, dolorem voluptatem itaque error odio tempore expedita iusto consequatur vitae sapiente inventore incidunt voluptatum.</p>
                         <p>Ducimus sit voluptatibus quaerat maxime accusamus, earum similique facere totam voluptas est, dolorum molestias eligendi incidunt nisi? Atque explicabo a neque animi odio veritatis quia quos libero, aspernatur nesciunt laudantium?</p>

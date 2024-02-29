@@ -65,12 +65,12 @@
 
     // Colors
     // - Composite gray colors
-    --positive-color:    oklch(var(--positive-lightness) var(--positive-chroma) var(--positive-hue))
+    --positive-color: oklch(var(--positive-lightness) var(--positive-chroma) var(--positive-hue))
     @for $i from 9 through 1
         --positive-color-#{$i * 10}: oklch(var(--positive-lightness) var(--positive-chroma) var(--positive-hue) / #{$i * 0.1})
     @for $i from 1 through 9
         --negative-color-#{$i * 10}: oklch(var(--negative-lightness) var(--negative-chroma) var(--negative-hue) / #{$i * 0.1})
-    --negative-color:    oklch(var(--negative-lightness) var(--negative-chroma) var(--negative-hue))
+    --negative-color: oklch(var(--negative-lightness) var(--negative-chroma) var(--negative-hue))
     // - Composite accent colors
     @each $accentColor in $accentColors
         @if $accentColor == secondary

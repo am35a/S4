@@ -1,6 +1,5 @@
 <script>
     import Precode from 'component/Precode.svelte'
-    import Button from 'component/Button.svelte'
     
     let containerTypesObj = {
         grid: 'd-grid gtc-2',
@@ -15,19 +14,21 @@
 
 <section>
     <h3 id="alignContent">Align content</h3>
+    <p>
+        The <b>ac-{alignContentArr.join('/')}</b> classes sets the distribution of space between
+        and around content item of <b>grid</b> and <b>flex</b> containers.
+    </p>
     <div class="d-grid g-5">
-        <p>
-            The <b>ac-...</b> classes sets the distribution of space between and around content item of <b>grid</b> and <b>flex</b> containers.
-        </p>
         <div class="d-grid g-4">
             <b>Display</b>
             <div class="d-inline-flex fw-wrap g-3">
                 {#each Object.entries(containerTypesObj) as [key, value]}
-                    <Button
-                        class={containerType === value ? 'active' : ''}
+                    <button
+                        class="btn"
+                        class:active = {containerType === value}
                         on:click = {() => containerType = value}
                         disabled = {containerType === value}
-                    >{key}</Button>
+                    >{key}</button>
                 {/each}
             </div>
         </div>
@@ -37,7 +38,7 @@
                 {#each alignContentArr as value}
                     <button
                         class="btn"
-                        class:active={alignContent === value}
+                        class:active = {alignContent === value}
                         on:click = {() => alignContent = value}
                         disabled = {alignContent === value}
                     >ac-{value}</button>
