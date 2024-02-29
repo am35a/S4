@@ -332,10 +332,10 @@
   background-repeat: no-repeat !important;
 }
 .l_m_bgs-cover {
-  background-size: var(--bgs, cover) !important;
+  background-size: cover !important;
 }
 .l_m_bgs-contain {
-  background-size: var(--bgs, contain) !important;
+  background-size: contain !important;
 }
 
 .bgi {
