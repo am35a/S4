@@ -339,16 +339,16 @@
 }
 
 .bgi {
-  background-image: var(--m_bgi, var(--bgi, initial));
+  background-image: var(--m_bgi, var(--bgi, initial)) !important;
 }
 .bgp {
-  background-position: var(--m_bgp, var(--bgp, initial));
+  background-position: var(--m_bgp, var(--bgp, initial)) !important;
 }
 .bgc {
-  background-color: ar(--m_bgc, var(--bgc, initial));
+  background-color: ar(--m_bgc, var(--bgc, initial)) !important;
 }
 .bgs {
-  background-size: var(--m_bgs, var(--bgs, initial));
+  background-size: var(--m_bgs, var(--bgs, initial)) !important;
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */

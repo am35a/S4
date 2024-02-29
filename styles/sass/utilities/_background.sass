@@ -77,10 +77,10 @@ $bgRepeat: (x: repeat-x, y: repeat-y, space: space, round: round, no: no-repeat)
         
     .bg
         &i
-            background-image: var(--#{$orientation}#{$type}bgi, var(--bgi, initial))
+            background-image: var(--#{$orientation}#{$type}bgi, var(--bgi, initial)) !important
         &p
-            background-position: var(--#{$orientation}#{$type}bgp, var(--bgp, initial))
+            background-position: var(--#{$orientation}#{$type}bgp, var(--bgp, initial)) !important
         &c
-            background-color: ar(--#{$orientation}#{$type}bgc, var(--bgc, initial))
+            background-color: ar(--#{$orientation}#{$type}bgc, var(--bgc, initial)) !important
         &s
-            background-size: var(--#{$orientation}#{$type}bgs, var(--bgs, initial))
+            background-size: var(--#{$orientation}#{$type}bgs, var(--bgs, initial)) !important
