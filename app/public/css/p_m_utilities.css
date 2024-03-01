@@ -855,6 +855,10 @@
   left: 100% !important;
 }
 
+.l {
+  left: var(--m_l, var(--l, initial)) !important;
+}
+
 .m_t-0 {
   top: 0% !important;
 }
@@ -863,6 +867,10 @@
 }
 .m_t-100 {
   top: 100% !important;
+}
+
+.t {
+  top: var(--m_t, var(--t, initial)) !important;
 }
 
 .m_r-0 {
@@ -875,6 +883,10 @@
   right: 100% !important;
 }
 
+.r {
+  right: var(--m_r, var(--r, initial)) !important;
+}
+
 .m_b-0 {
   bottom: 0% !important;
 }
@@ -883,6 +895,10 @@
 }
 .m_b-100 {
   bottom: 100% !important;
+}
+
+.b {
+  bottom: var(--m_b, var(--b, initial)) !important;
 }
 
 /*  sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes */

@@ -19,6 +19,9 @@
             @for $i from 0 through 2
                 &-#{$i * 50}
                     #{$value}: $i * 50% !important
+        .#{$item}
+            #{$value}: var(--#{$orientation}#{$type}#{$item}, var(--#{$item}, initial)) !important
+
         
     // .#{$orientation}#{$type}translate
     //     &-middle

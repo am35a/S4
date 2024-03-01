@@ -1,46 +1,35 @@
-<script lang="ts">
-    import Button from 'component/Button.svelte'
+<script>
+    import Placement from './placement/Placement.svelte'
+
     // import Precode from 'component/Precode.svelte'
     // import Details from 'component/Details.svelte'
 
-    let positionPropertyArr: string[] = [ 'static', 'relative', 'absolute', 'fixed', 'sticky' ]
-    let positionProperty: string = positionPropertyArr[0]
+    // let positionPropertyArr = ['static', 'relative', 'absolute', 'fixed', 'sticky'],
+    //     positionProperty = positionPropertyArr[0]
 </script>
 
 <article>
     <h2 id="position">Position</h2>
-    <p>
-        For the location of the element in the document area determine the classes: <b>p-static</b>, <b>p-relative</b>, <b>p-absolute</b>, <b>p-fixed</b> and <b>p-sticky</b>.
-    </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
-        <div class="d-flex g-2">
-            {#each positionPropertyArr as values }
-                <Button
-                    class="btn-secondary {positionProperty === values ? 'active' : ''}"
-                    on:click = {() => positionProperty = values}
-                    disabled = {positionProperty === values}
-                >p-{values}</Button>
-            {/each}
-        </div>
-        <div class="bgc-negative-10 p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos libero, amet iure in maxime odio nemo quia ratione, necessitatibus quaerat soluta delectus magnam! Commodi quae ut mollitia qui necessitatibus?
-            <div class="f-start bgc-negative-10 p-2">regular</div>
-            <div class="f-start bgc-negative-10 p-2 p-{positionProperty}">p-{positionProperty}</div>
-            <div class="f-start bgc-negative-10 p-2">regular</div>
-            Corporis eum expedita recusandae, adipisci autem enim. Harum cumque sunt facilis quas. Nesciunt itaque accusamus velit, dignissimos, quis aut expedita sit sed magni praesentium ducimus fuga eveniet! Perferendis, accusantium nesciunt.
-        </div>
-    </div>
-    <!-- <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
-                {
-`...
-`
-                }
-            </Precode>
-        </svelte:fragment>
-    </Details> -->
+    <section>
+        <p>
+            The <b>p-static</b> class sets an element is positioned according to the normal flow of the document.
+        </p>
+        <p>
+            The <b>p-relative</b> class sets an element is positioned according to the bordered flow of the
+            document.
+        </p>
+        <p>
+            The <b>p-absolute</b> class sets an element is removed from the normal document flow, and no space is
+            created for the element in the page layout but can stay bordered layout.
+        </p>
+        <p>
+            The <b>p-fixed</b> removes an element from the normal document flow, and no space is created for the
+            element in the page layout.
+        </p>
+        <p>
+            The <b>p-sticky</b> class removes an element from the normal flow of the document if an offset relative
+            to its nearest scrollable ancestor and containing block is available.
+        </p>
+    </section>
+    <Placement/>
 </article>
