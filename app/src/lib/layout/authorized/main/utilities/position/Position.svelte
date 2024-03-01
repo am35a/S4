@@ -1,11 +1,5 @@
 <script>
     import Placement from './placement/Placement.svelte'
-
-    // import Precode from 'component/Precode.svelte'
-    // import Details from 'component/Details.svelte'
-
-    // let positionPropertyArr = ['static', 'relative', 'absolute', 'fixed', 'sticky'],
-    //     positionProperty = positionPropertyArr[0]
 </script>
 
 <article>
