@@ -345,7 +345,7 @@
   background-position: var(--l_m_bgp, var(--bgp, initial)) !important;
 }
 .bgc {
-  background-color: ar(--l_m_bgc, var(--bgc, initial)) !important;
+  background-color: var(--l_m_bgc, var(--bgc, initial)) !important;
 }
 .bgs {
   background-size: var(--l_m_bgs, var(--bgs, initial)) !important;
