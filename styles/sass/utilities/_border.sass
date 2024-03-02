@@ -65,3 +65,11 @@ $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
         &-left-0,
         &-bottom-left-0
             border-bottom-left-radius: 0 !important
+
+    .tbc
+        &-collapse
+           border-collapse: collapse
+        &-separate
+            border-collapse: separate
+    .tbs
+        border-spacing: var(--#{$orientation}#{$type}tbs)

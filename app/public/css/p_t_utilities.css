@@ -541,7 +541,7 @@
 }
 
 .fx {
-  flex: var(--p_t_fxg, 0) var(--p_t_fxs, 1) var(--p_t_fxb, auto) !important;
+  flex: var(--p_t_fxg, initial) var(--p_t_fxs, initial) var(--p_t_fxb, initial) !important;
 }
 
 /*  float section: float contained in classes */
@@ -1729,9 +1729,22 @@ p {
   white-space: break-spaces !important;
 }
 
+.p_t_wm-horizontal-tb {
+  writing-mode: horizontal-tb;
+}
+.p_t_wm-horizontal-bt {
+  writing-mode: horizontal-bt;
+}
 .p_t_wm-vertical-rl {
   writing-mode: vertical-rl;
 }
 .p_t_wm-vertical-lr {
   writing-mode: vertical-lr;
+}
+
+.p_t_d-ltr {
+  direction: ltr;
+}
+.p_t_d-rtl {
+  direction: rtl;
 }

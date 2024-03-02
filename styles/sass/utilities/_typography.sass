@@ -108,11 +108,22 @@ $textDecorations: none, underline, line-through
             white-space: pre-line !important
         &-break-spaces
             white-space: break-spaces !important
+
     .#{$orientation}#{$type}wm
+        &-horizontal-tb
+            writing-mode: horizontal-tb
+        &-horizontal-bt
+            writing-mode: horizontal-bt
         &-vertical-rl
             writing-mode: vertical-rl
         &-vertical-lr
             writing-mode: vertical-lr
+
+    .#{$orientation}#{$type}d
+        &-ltr
+            direction: ltr
+        &-rtl
+            direction: rtl
 
 h
     &1, &2, &3, &4, &5, &6

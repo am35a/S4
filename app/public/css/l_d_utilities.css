@@ -564,6 +564,17 @@
   border-bottom-left-radius: 0 !important;
 }
 
+.tbc-collapse {
+  border-collapse: collapse;
+}
+.tbc-separate {
+  border-collapse: separate;
+}
+
+.tbs {
+  border-spacing: var(--tbs);
+}
+
 /*  display section: display variants contained in classes */
 .d-inline {
   display: inline !important;
@@ -981,7 +992,7 @@
 }
 
 .fx {
-  flex: var(--fxg, 0) var(--fxs, 1) var(--fxb, auto) !important;
+  flex: var(--fxg, initial) var(--fxs, initial) var(--fxb, initial) !important;
 }
 
 /*  float section: float contained in classes */
@@ -2234,9 +2245,22 @@ p {
   white-space: break-spaces !important;
 }
 
+.wm-horizontal-tb {
+  writing-mode: horizontal-tb;
+}
+.wm-horizontal-bt {
+  writing-mode: horizontal-bt;
+}
 .wm-vertical-rl {
   writing-mode: vertical-rl;
 }
 .wm-vertical-lr {
   writing-mode: vertical-lr;
+}
+
+.d-ltr {
+  direction: ltr;
+}
+.d-rtl {
+  direction: rtl;
 }
