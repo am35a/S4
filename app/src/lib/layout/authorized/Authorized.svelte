@@ -9,21 +9,32 @@
             'position': 'sticky',
             'top': '0',
             'height': '4em',
-            'margin': '',
-            'padding': 'var(--s-md) var(--s-md) var(--s-md) var(--s-md)',
+            'padding-top': 'var(--size-2)',
+            'padding-right': 'var(--size-2)',
+            'padding-bottom': 'var(--size-2)',
+            'padding-left': 'var(--size-2)',
         },
         navObj = {
             'position': 'sticky',
             'top': `${headerObj['height']}`,
             'width': '16em',
             'height': `calc(100vh - ${headerObj['height']})`,
-            'margin': `${headerObj['height']} 0 0 0`,
-            'padding': 'var(--s-md) var(--s-md) var(--s-md) var(--s-md)',
+            'margin-top': `calc(${headerObj['height']} + var(--size-0))`,
+            'margin-right': 'var(--size-0)',
+            'margin-bottom': 'var(--size-0)',
+            'margin-left': 'var(--size-0)',
+            'padding-top': 'var(--size-0)',
+            'padding-right': 'var(--size-2)',
+            'padding-bottom': 'var(--size-2)',
+            'padding-left': 'var(--size-2)',
         },
         footerObj = {
         },
         mainObj = {
-            'padding': `calc(${headerObj['height']} + var(--s-md)) var(--s-md) var(--s-md) calc(${navObj['width']} + var(--s-md))`,
+            'padding-top': `calc(${headerObj['height']} + var(--size-2))`,
+            'padding-right': 'var(--size-2)',
+            'padding-bottom': 'var(--size-2)',
+            'padding-left': `calc(${navObj['width']} + var(--size-2))`,
         }
 
 
