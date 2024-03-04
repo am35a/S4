@@ -33,6 +33,32 @@ $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
         &-transparent
             border-color: transparent !important
 
+
+    $borderParams: (width: w, style: s, color: c)
+    $borderAxles: (top: t, right: r, bottom: b, left: l)
+
+    @each $param, $p in $borderParams
+        @each $axis, $a in $borderAxles
+            .brdr, .brdr#{$a}, .brdr#{$p}, .brdr#{$a}#{$p}
+                border-#{$axis}-#{$param}: var(--#{$orientation}#{$type}br#{$a}#{$p}, var(--br#{$a}#{$p}, initial)) !important
+
+    $borderStyles: hidden, dotted, dashed, solid, double, groove, ridge, inset, outset
+    @each $axis, $a in $borderAxles
+        @each $style in $borderStyles
+            .brdr-#{$style}, .brdr#{$a}-#{$style}
+                border-#{$axis}-style: $style
+
+    .brdr-none, .brdrt-none
+        border-top: initial
+    .brdr-none, .brdrr-none
+        border-right: initial
+    .brdr-none, .brdrb-none
+        border-bottom: initial
+    .brdr-none, .brdrl-none
+        border-left: initial
+
+
+
     .#{$orientation}#{$type}br
         border-radius: var(--br) !important
         
@@ -68,8 +94,9 @@ $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
 
     .tbc
         &-collapse
-           border-collapse: collapse
+           border-collapse: collapse !important
         &-separate
-            border-collapse: separate
+            border-collapse: separate !important
     .tbs
-        border-spacing: var(--#{$orientation}#{$type}tbs)
+        border-spacing: var(--#{$orientation}#{$type}tbs, var(--tbs, initial)) !important
+        
