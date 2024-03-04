@@ -20,5 +20,9 @@ $basis: (fill: fill, max: max-content, min: min-content, fit: fit-content, 100: 
         @each $item, $value in $basis
             &b-#{$item}
                 flex-basis: $value !important
+        &b-basis
+            flex-basis: auto
     .fx
-        flex: var(--#{$orientation}#{$type}fxg, initial) var(--#{$orientation}#{$type}fxs, initial) var(--#{$orientation}#{$type}fxb, initial) !important
+        flex-grow: var(--#{$orientation}#{$type}fxg, var(--fxg, initial)) !important
+        flex-shrink: var(--#{$orientation}#{$type}fxs, var(--fxs, initial)) !important
+        flex-basis: var(--#{$orientation}#{$type}fxb, var(--fxb, initial)) !important
