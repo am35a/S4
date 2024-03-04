@@ -14,9 +14,12 @@
     --lh: 1.5
 
     // - Font size
+    // - - Start size
+    --fs-from: 0.625
     // - - Delta
-    --fs-delta: .125    
+    --fs-delta: 0.125
     // - - Reset
+
     // xx-small
     --fs-xxs:  .625em
     // x-small
@@ -54,14 +57,25 @@
     --br-xxl:  1.25em
     --br-xxxl: 1.5em
 
-    --s-xxs:  .0625em
-    --s-xs:   .125em
-    --s-sm:   .25em
-    --s-md:   .5em
-    --s-lg:   .75em
-    --s-xl:   1em
-    --s-xxl:  1.25em
-    --s-xxxl: 1.5em
+    // - - Box shadow
+    --bs-xxs:  .0625em
+    --bs-xs:   .125em
+    --bs-sm:   .25em
+    --bs-md:   .5em
+    --bs-lg:   .75em
+    --bs-xl:   1em
+    --bs-xxl:  1.25em
+    --bs-xxxl: 1.5em
+
+    // - - Text shadow
+    // --ts-xxs:  .0625em
+    // --ts-xs:   .125em
+    // --ts-sm:   .25em
+    // --ts-md:   .5em
+    // --ts-lg:   .75em
+    // --ts-xl:   1em
+    // --ts-xxl:  1.25em
+    // --ts-xxxl: 1.5em
 
     // Colors
     // - Composite gray colors
@@ -113,6 +127,8 @@
     --body-c: var(--negative-color-90)
     // - - - box-shadow color
     --bsc: var(--negative-color-10)
+    // - - - text-shadow color
+    // --tsc: var(--bsc)
 
 [theme=dark]
     // - Colors
@@ -144,3 +160,5 @@
     --body-c: var(--negative-color-90)
     // - - - box-shadow color
     --bsc: var(--positive-color-10)
+    // - - - text-shadow color
+    // --tsc: var(--bsc)
