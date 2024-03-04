@@ -8,15 +8,15 @@ $flexDefines: none, initial, auto
 
 @mixin _flex($orientation, $type)
     .#{$orientation}#{$type}f
-        @each $value in $flexDefines
-            &x-#{$value}
-                flex: $value
         @each $value in $directions
             &d-#{$value}
                 flex-direction: $value !important
         @each $value in $wraps
             &w-#{$value}
                 flex-wrap: $value !important
+        @each $value in $flexDefines
+            &x-#{$value}
+                flex: $value !important
         &g-0
             flex-grow: 0
         &g-1
@@ -28,7 +28,6 @@ $flexDefines: none, initial, auto
         @each $name, $value in $basis
             &b-#{$name}
                 flex-basis: $value !important
-            
     .fx, .fxg
         flex-grow: var(--#{$orientation}#{$type}fxg, var(--fxg, initial)) !important
     .fx, .fxs
