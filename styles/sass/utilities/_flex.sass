@@ -1,28 +1,37 @@
 $directions: row, row-reverse, column, column-reverse
 $wraps: wrap, wrap-reverse, nowrap
-$basis: (fill: fill, max: max-content, min: min-content, fit: fit-content, 100: 100%)
+$basis: (auto: auto, fill: fill, max: max-content, min: min-content, fit: fit-content, 100: 100%)
+$flexDefines: none, initial, auto
 
 /*
     flex section: fill, equal and other sets to flex container items
 
 @mixin _flex($orientation, $type)
     .#{$orientation}#{$type}f
-        @each $item in $directions
-            &d-#{$item}
-                flex-direction: $item !important
-        @each $item in $wraps
-            &w-#{$item}
-                flex-wrap: $item !important
+        @each $value in $flexDefines
+            &x-#{$value}
+                flex: $value
+        @each $value in $directions
+            &d-#{$value}
+                flex-direction: $value !important
+        @each $value in $wraps
+            &w-#{$value}
+                flex-wrap: $value !important
+        &g-0
+            flex-grow: 0
         &g-1
             flex-grow: 1
         &s-0
             flex-shrink: 0
-        @each $item, $value in $basis
-            &b-#{$item}
+        &s-1
+            flex-shrink: 1
+        @each $name, $value in $basis
+            &b-#{$name}
                 flex-basis: $value !important
-        &b-basis
-            flex-basis: auto
-    .fx
+            
+    .fx, .fxg
         flex-grow: var(--#{$orientation}#{$type}fxg, var(--fxg, initial)) !important
+    .fx, .fxs
         flex-shrink: var(--#{$orientation}#{$type}fxs, var(--fxs, initial)) !important
+    .fx, .fxb
         flex-basis: var(--#{$orientation}#{$type}fxb, var(--fxb, initial)) !important
