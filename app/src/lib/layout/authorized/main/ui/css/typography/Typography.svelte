@@ -2,19 +2,19 @@
     <h3 id="typography">Typography</h3>
     <div class="d-flex fw-wrap g-4">
         <div class="d-grid ji-center ac-center p-4 bgc-positive br-lg fx" style="--fxg: 4; --fxb: 0;">
-            <div class="my-4 w-75 ta-center">
+            <div class="my-4 ta-center">
                 <span class="fs lh-1" style="--fs: 8em">Aa</span>
                 <hr class="my-8 w-100 bb">
                 <span class="">system default</span>
             </div>
         </div>
         <div class="d-grid ji-center p-4 bgc-positive br-lg fx" style="--fxg: 4; --fxb: 0;">
-            <div class="h1 ws-nowrap">Heading 1</div>
-            <div class="h2 ws-nowrap">Heading 2</div>
-            <div class="h3 ws-nowrap">Heading 3</div>
-            <div class="h4 ws-nowrap">Heading 4</div>
-            <div class="h5 ws-nowrap">Heading 5</div>
-            <div class="h6 ws-nowrap">Heading 6</div>
+            <h1 class="ws-nowrap">Heading 1</h1>
+            <h2 class="ws-nowrap">Heading 2</h2>
+            <h3 class="ws-nowrap">Heading 3</h3>
+            <h4 class="ws-nowrap">Heading 4</h4>
+            <h5 class="ws-nowrap">Heading 5</h5>
+            <h6 class="ws-nowrap">Heading 6</h6>
         </div>
         <div class="d-grid ji-center p-4 bgc-positive br-lg fx" style="--fxg: 1;">
             <div class="fw-100">100</div>
