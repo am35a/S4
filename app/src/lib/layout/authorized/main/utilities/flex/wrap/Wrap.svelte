@@ -36,7 +36,7 @@
                     class:active = {isCellShrinked}
                     on:click = {() => isCellShrinked = !isCellShrinked}
                     disabled = {isCellShrinked}
-                >fs-0</button>
+                >fxs-0</button>
                 <button
                     class="btn"
                     class:active = {!isCellShrinked}
@@ -72,7 +72,7 @@
                     {#each cellNamesArr as name }
                         <div
                             class="bgc-negative-10 px-2 py-1"
-                            class:fs-0={isCellShrinked}
+                            class:fxs-0={isCellShrinked}
                         >{name}</div>
                     {/each}
                 </div>
@@ -83,7 +83,7 @@
             <Precode>
                 {
 `<div class="d-flex fw-${flexWrap} ${isCellShrinked ? '' : 'ws-nowrap'}">
-    <div ${isCellShrinked ? 'class="fs-0"' : ''}>...</div>
+    <div ${isCellShrinked ? 'class="fxs-0"' : ''}>...</div>
     // ...
 </div>
 `
