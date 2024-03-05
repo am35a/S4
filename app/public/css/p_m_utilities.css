@@ -746,11 +746,29 @@
 .m_fw-nowrap {
   flex-wrap: nowrap !important;
 }
+.m_fx-none {
+  flex: none !important;
+}
+.m_fx-initial {
+  flex: initial !important;
+}
+.m_fx-auto {
+  flex: auto !important;
+}
+.m_fg-0 {
+  flex-grow: 0;
+}
 .m_fg-1 {
   flex-grow: 1;
 }
 .m_fs-0 {
   flex-shrink: 0;
+}
+.m_fs-1 {
+  flex-shrink: 1;
+}
+.m_fb-auto {
+  flex-basis: auto !important;
 }
 .m_fb-fill {
   flex-basis: fill !important;
@@ -768,8 +786,16 @@
   flex-basis: 100% !important;
 }
 
-.fx {
-  flex: var(--m_fxg, initial) var(--m_fxs, initial) var(--m_fxb, initial) !important;
+.fx, .fxg {
+  flex-grow: var(--m_fxg, var(--fxg, initial)) !important;
+}
+
+.fx, .fxs {
+  flex-shrink: var(--m_fxs, var(--fxs, initial)) !important;
+}
+
+.fx, .fxb {
+  flex-basis: var(--m_fxb, var(--fxb, initial)) !important;
 }
 
 /*  float section: float contained in classes */
