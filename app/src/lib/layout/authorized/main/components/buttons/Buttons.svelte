@@ -152,7 +152,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br">
+        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br-md">
             <div class="d-grid gtc-2 g-3">
                 <b class="js-end as-center">Default</b>
                 <div>

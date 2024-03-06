@@ -29,7 +29,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br">
+            <div class="d-grid g-3 p-3 bgc-positive br-md">
                 {#each bgClipArr as clip}
                     <div
                         class="p-4 fs-xxxl fw-700 bgi bgc-negative-10 bgc-{clip} {containerClasses}"

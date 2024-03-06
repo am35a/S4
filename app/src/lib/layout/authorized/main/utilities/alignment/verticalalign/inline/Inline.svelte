@@ -42,13 +42,13 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br">
+            <div class="d-grid g-3 p-3 bgc-positive br-md">
                 <div class="d-grid ws-nowrap ox-auto" style="--lh: {lineHeight}">
                     <div class="lh gc-full gr-full my-auto border-bottom border-top c-negative-10">&nbsp;<!-- base line indicator--></div>
                     <div class="lh gc-full gr-full my-auto border-bottom c-negative-20"><!-- base line indicator--></div>
                     <div class="lh gc-full gr-full py-4">
                         {#each Object.entries(verticalAlignObj) as [key, value]}
-                            <span class="bgc-negative-10 px-1 me-1 br va-{value}">{key}</span>
+                            <span class="bgc-negative-10 px-1 me-1 br-md va-{value}">{key}</span>
                         {/each}
                     </div>
                 </div>

@@ -3,7 +3,7 @@
 </script>
 
 <footer class="d-grid p-2">
-    <div class="p-1 bgc-positive br bs-xs border border-negative-30">
+    <div class="p-1 bgc-positive br-md bs-xs border border-negative-30">
         ...
     </div>
 </footer>

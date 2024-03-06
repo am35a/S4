@@ -100,7 +100,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-flex p-4 bgc-positive br">
+            <div class="d-flex p-4 bgc-positive br-md">
                 <Alert class="{alertClass} mb-0">
                     Click the close icon in the top right corner to destroy the block of alert message.
                 </Alert>

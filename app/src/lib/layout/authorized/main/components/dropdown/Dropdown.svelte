@@ -135,7 +135,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 p-4 bgc-positive br" style="height: 10em;">
+        <div class="d-flex g-4 p-4 bgc-positive br-md" style="height: 10em;">
             <div class="d-grid g-3 m-auto">
                 <Dropdown class="drpdwn-hover">
                     <Button 
@@ -152,7 +152,7 @@
                     </Button>
                     <div
                         slot="content"
-                        class="d-grid g-2 w p-2 bgc-positive br border border-negative-30"
+                        class="d-grid g-2 w p-2 bgc-positive br-md border border-negative-30"
                         style="--w: 16em"
                     >
                         Position:
@@ -174,7 +174,7 @@
                     class="drp-content"
                 >
                     <div
-                        class="d-grid g-2 w p-2 bgc-positive br border border-negative-30"
+                        class="d-grid g-2 w p-2 bgc-positive br-md border border-negative-30"
                         style="--w: 16em"
                     >
                         <button class="btn jc-start px-1" type="reset">

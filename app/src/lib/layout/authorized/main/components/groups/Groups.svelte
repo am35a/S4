@@ -32,7 +32,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly ai-center p-4 bgc-positive br">
+        <div class="d-flex g-4 fw-wrap jc-evenly ai-center p-4 bgc-positive br-md">
             <Group class="{groupObj[groupDirection]}">
                 <input
                     class="frm"

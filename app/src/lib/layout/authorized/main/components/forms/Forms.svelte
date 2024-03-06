@@ -10,6 +10,8 @@
     import SectionFile from './file/File.svelte'
     import SectionText from './text/Text.svelte'
     import SectionBox from './box/Box.svelte'
+    import SectionSelect from './select/Select.svelte'
+
 
     let inputClass: string = ''
 </script>
@@ -43,6 +45,8 @@
     </div>
 
     <SectionSettings bind:inputClass/>
+    
+    <SectionSelect {inputClass}/>
 
     <SectionText  {inputClass}/>
     <SectionFile {inputClass}/>

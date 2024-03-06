@@ -12,7 +12,7 @@
     <p>
         These display values override the outside behavior of the elements.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br">
+    <div class="d-grid g-2 p-2 bgc-positive br-md">
         <div class="d-flex g-2">
             {#each displayOutsideArr as values }
                 <Button

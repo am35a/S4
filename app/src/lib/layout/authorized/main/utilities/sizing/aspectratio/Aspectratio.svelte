@@ -10,7 +10,7 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
         ...
     </div>
     <Details>

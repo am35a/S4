@@ -12,7 +12,7 @@
     <p>
         From CSS 2 the legasy display values welcome still here and set control element of their both side. Equared to two modern two words value: "inline-flex" = "inline flex" and ect.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br">
+    <div class="d-grid g-2 p-2 bgc-positive br-md">
         <div class="d-flex g-2">
             {#each displayLegacyArr as values }
                 <Button

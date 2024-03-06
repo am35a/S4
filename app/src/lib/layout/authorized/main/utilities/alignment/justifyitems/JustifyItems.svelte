@@ -16,7 +16,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br">
+            <div class="d-grid g-3 p-3 bgc-positive br-md">
                 {#each justifyItemsArr as item }
                     <div class="d-grid gtc-2 g-2 bgc-negative-10 p-2 ji-{item}">
                         <div class="bgc-negative-10 px-2 py-1">one</div>

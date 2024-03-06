@@ -22,7 +22,7 @@
         The prefix <b>x</b>, <b>y</b> after <b>m</b> sets the axios value and <b>l</b>, <b>t</b>, <b>r</b> and <b>b</b> the direction value.
         To disable padding use the <b>m...-0</b> classes.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
         <div class="d-flex g-2">
             {#each Object.entries(paddingPropertyObj) as [key, value]}
                 <Button

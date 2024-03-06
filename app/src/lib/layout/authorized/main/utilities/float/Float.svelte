@@ -11,7 +11,7 @@
     <div class="alert alert-warning js-start">
         * Pay attention the <b>fx-start</b> and <b>fx-end</b> classes do not support by invalid browsers like Chrome or Safari.
     </div>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
         <div class="bgc-negative-10 p-2">
             <div class="fx-left bgc-negative-10 p-2">fx-left</div>
             Unde quae consequatur optio, saepe, harum modi nobis excepturi cum ducimus minima architecto tenetur laudantium quaerat rem fuga nihil nemo distinctio beatae minus, rerum voluptate vel facere. Corporis, blanditiis inventore!

@@ -12,7 +12,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br">
+            <div class="d-grid g-3 p-3 bgc-positive br-md">
                 {#each flexDirectionsArr as direction }
                     <div class="d-flex fd-{direction} g-2 bgc-negative-10 p-2">
                         <div class="bgc-negative-10 px-2 py-1">one</div>

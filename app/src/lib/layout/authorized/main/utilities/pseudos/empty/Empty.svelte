@@ -11,7 +11,7 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br">
+    <div class="d-grid g-2 p-2 bgc-positive br-md">
         <div class="d-flex g-2">
             <Button
                 class="btn-secondary {defaultEmptyClass ? 'active' : ''}"
@@ -27,7 +27,7 @@
             </Button>
         </div>
         <div class="d-grid g-2 gtc-2">
-            <div class="bgc-negative-10 p-4 br {defaultEmptyClass ? 'empty-none' : ''}">{defaultEmptyContent ? 'content' : ''}</div>
-            <div class="bgc-negative-10 p-4 br {defaultEmptyClass ? 'empty-none' : ''}"></div>
+            <div class="bgc-negative-10 p-4 br-md {defaultEmptyClass ? 'empty-none' : ''}">{defaultEmptyContent ? 'content' : ''}</div>
+            <div class="bgc-negative-10 p-4 br-md {defaultEmptyClass ? 'empty-none' : ''}"></div>
         </div>
 </section>

@@ -31,7 +31,7 @@
             </span>
         </span>
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
         <div class="d-grid">
             <label for="containerHeight">Height {height}%:</label>
         </div>

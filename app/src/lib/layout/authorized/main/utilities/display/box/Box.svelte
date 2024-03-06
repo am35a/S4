@@ -11,7 +11,7 @@
     <p>
         Using a d-none class make an element as removed from DOM tree.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br">
+    <div class="d-grid g-2 p-2 bgc-positive br-md">
         <div class="d-flex g-2">
             <Button
                 class="btn-secondary {displayNone ? 'active' : ''}"

@@ -10,7 +10,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br">
+            <div class="d-grid g-3 p-3 bgc-positive br-md">
                 <table style="height: 6em;">
                     <tr>
                         <td class="bgc-negative-10 va-baseline">Baseline</td>

@@ -34,7 +34,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br">
+            <div class="d-grid g-3 p-3 bgc-positive br-md">
                 <div
                     class="bgi bgc-negative-10 bgr{bgRepeatObj[bgRepeat]} bgs ar-16_9"
                     style="--bgi: url(/images/logo.svg); --bgs: 10em auto"

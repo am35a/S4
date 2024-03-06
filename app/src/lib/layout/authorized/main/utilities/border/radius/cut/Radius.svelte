@@ -8,7 +8,7 @@
     <p>
         To remove round of corners use <b>br-0</b> class and for accurate manipulations use <b>br-...-0</b>.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
         <div class="d-flex fw-wrap g-4">
             <div class="bgc-negative-10 p-4 br-lg br-left-0">br-left-0</div>
             <div class="bgc-negative-10 p-4 br-lg br-top-0">br-top-0</div>

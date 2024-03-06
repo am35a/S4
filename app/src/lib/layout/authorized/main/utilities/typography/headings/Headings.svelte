@@ -5,7 +5,7 @@
 
 <section>
     <h3 id="headings">Headings</h3>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
         <div>
             <h1>Heading - 1</h1>
             <h2>Heading - 2</h2>

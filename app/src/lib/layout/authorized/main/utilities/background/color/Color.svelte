@@ -36,7 +36,7 @@
             </div>
             <div class="d-grid g-4">
                 <b>Preview</b>
-                <div class="d-grid g-3 p-3 bgc-positive br">
+                <div class="d-grid g-3 p-3 bgc-positive br-md">
                     <div class="d-grid g-3 gtc-2">
                         {#each accentColorsArr as item }
                             <div
@@ -81,7 +81,7 @@
             </div>
             <div class="d-grid g-4">
                 <b>Preview</b>
-                <div class="d-grid g-3 p-3 bgc-positive br">
+                <div class="d-grid g-3 p-3 bgc-positive br-md">
                     <div class="d-grid g-3 gtc-2">
                         <div class="d-flex fd-column-reverse g-2 bgc-negative">
                             {#if defaultExtraColorsInterval}

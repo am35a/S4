@@ -726,9 +726,6 @@
   border-left: initial;
 }
 
-.br {
-  border-radius: var(--br) !important;
-}
 .br-xxs {
   border-radius: var(--br-xxs) !important;
 }

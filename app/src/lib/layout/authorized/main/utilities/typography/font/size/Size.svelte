@@ -12,7 +12,7 @@
         For custom sizes use the <b>fs</b> class with the <b>--fs</b> variable.
         Also available the standard <b>small</b> attribute to make any font small and <b>small</b> supports levels, the more attributes inside the smaller the font.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
         <div>
             {#each fontSizeArr as item }
                 <div class="fs-{item}">fs-{item}</div>

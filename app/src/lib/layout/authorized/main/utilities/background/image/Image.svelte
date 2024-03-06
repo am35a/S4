@@ -15,7 +15,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-2 bgc-positive br">
+            <div class="d-grid g-3 p-2 bgc-positive br-md">
                 <div class="bgi p-8" style="--bgi: url(/images/logo.svg)"></div>
             </div>
         </div>

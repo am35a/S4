@@ -20,7 +20,7 @@
         <!-- The <b>gc-...</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container. -->
         ...
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
         <div class="d-grid gtc-2 p_gtc-1 g-2">
             <div class="d-grid">
                 <label for="columnClasses">Grid classes:</label>

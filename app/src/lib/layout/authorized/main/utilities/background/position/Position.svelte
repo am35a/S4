@@ -16,7 +16,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid gtc-3 g-3 p-2 bgc-positive br">
+            <div class="d-grid gtc-3 g-3 p-2 bgc-positive br-md">
                 {#each bgPositionsArr as position }
                     <div
                         class="bgi bgc-negative-10 bgp-{position} bgs h"

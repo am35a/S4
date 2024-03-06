@@ -5,7 +5,7 @@
 
 <div>
     <h3 id="add">Add border</h3>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br">
+    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
         <div class="d-flex fw-wrap g-2">
             <div class="bgc-negative-10 p-4 border">border</div>
             <div class="bgc-negative-10 p-4 border-top">border-top</div>

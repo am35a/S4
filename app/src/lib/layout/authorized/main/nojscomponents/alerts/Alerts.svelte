@@ -89,7 +89,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-flex p-4 bgc-positive br">
+            <div class="d-flex p-4 bgc-positive br-md">
                 <div class="alert {alertClass} {customClasses}">
                     {alertVariant} {customClasses ? 'custom' : ''} variant of alert in {alertColor} color with <a href={'#'}>link</a>.
                 </div>

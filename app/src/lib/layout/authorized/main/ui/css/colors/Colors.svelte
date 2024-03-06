@@ -1,6 +1,6 @@
 <section class="d-grid g-5">
     <h3 id="colors">Colors</h3>
-    <div class="d-flex fw-wrap g-4">            
+    <div class="d-flex fw-wrap g-4">
         <div class="d-grid ji-center p-4 bgc-positive br-lg fx" style="--fxg: 1; --fxb: 0;">
             <div class="ta-center fw-600">primary</div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="10em" height="10em">

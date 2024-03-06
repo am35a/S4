@@ -6,8 +6,7 @@
         define2 = 'auto',
         define3 = 'auto'
 
-    let containerClasses = '',
-        containerWidth = 100
+    let containerWidth = 100
 </script>
 
 <div>
@@ -31,7 +30,7 @@
             <b>Defines</b>
             <div class="d-flex g-3">
                 <select
-                    class="border"
+                    class="frm"
                     bind:value={define1}
                 >
                     {#each flexDefinesArr as define}
@@ -41,7 +40,7 @@
                     {/each}
                 </select>                
                 <select
-                    class="border"
+                    class="frm"
                     bind:value={define2}
                 >
                     {#each flexDefinesArr as define}
@@ -51,7 +50,7 @@
                     {/each}
                 </select>                
                 <select
-                    class="border"
+                    class="frm"
                     bind:value={define3}
                 >
                     {#each flexDefinesArr as define}
@@ -64,7 +63,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br">
+            <div class="d-grid g-3 p-3 bgc-positive br-md">
                 <div class="d-grid mb-2">
                     <label for="mixContainerWidth" class="d-grid gtc-3 ai-end px-2">
                         <small class="ta-start">min</small>
@@ -92,7 +91,11 @@
             <b>HTML</b>
             <Precode>
                 {
-`
+`<div class="d-flex">
+    <div class="fx-${define1}></div>
+    <div class="fx-${define2}></div>
+    <div class="fx-${define3}></div>
+</div>
 `
                 }
             </Precode>

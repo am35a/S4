@@ -14,7 +14,7 @@
     >
         <slot name="content" />
         <!-- <div
-            class="d-grid g-2 w p-2 bgc-positive br border border-negative-30"
+            class="d-grid g-2 w p-2 bgc-positive br-md border border-negative-30"
             style="--w: 16em"
         >
             <button class="btn jc-start px-1" type="reset">

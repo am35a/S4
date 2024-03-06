@@ -103,7 +103,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br h" style="--h: 10em">
+            <div class="d-grid g-3 p-3 bgc-positive br-md h" style="--h: 10em">
                 <Icon
                     class="{iconSize} m-auto {iconBgColor ? 'bgc' : ''} {iconColor ? 'c' : ''}"
                     style="{iconBgColor ? `--bgc:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"

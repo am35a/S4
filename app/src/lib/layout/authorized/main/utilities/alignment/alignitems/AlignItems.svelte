@@ -45,7 +45,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="{containerType} g-3 p-3 ai-{alignItems} bgc-positive br h" style="--h: 16em; --p_h: 24em;">
+            <div class="{containerType} g-3 p-3 ai-{alignItems} bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
                 <div class="bgc-negative-10 px-2 py-1">one</div>
                 <div class="bgc-negative-10 px-2 py-1">two</div>
                 <div class="bgc-negative-10 px-2 py-1">three</div>

@@ -40,7 +40,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br">
+            <div class="d-grid g-3 p-3 bgc-positive br-md">
                 <div class="d-grid mb-2">
                     <label for="basisContainerWidth" class="d-grid gtc-3 ai-end px-2">
                         <small class="ta-start">min</small>

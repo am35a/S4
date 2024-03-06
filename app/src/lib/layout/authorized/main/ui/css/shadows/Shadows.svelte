@@ -16,7 +16,7 @@
                         <div class="d-grid bgc-positive p-4 br-lg bs-md">
                             <div class="d-grid bgc-positive p-4 br-lg bs-sm">
                                 <div class="d-grid bgc-positive p-4 br-lg bs-xs">
-                                    <div class="d-grid bgc-positive p-4 br bs-xxs">
+                                    <div class="d-grid bgc-positive p-4 br-md bs-xxs">
                                     </div>
                                 </div>
                             </div>

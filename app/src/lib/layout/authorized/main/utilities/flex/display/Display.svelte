@@ -26,7 +26,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="p-3 bgc-positive br">
+            <div class="p-3 bgc-positive br-md">
                 <div class="d-{displayFlex} bgc-negative-10 p-2">{displayFlex} container</div>
             </div>
         </div>

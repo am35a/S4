@@ -12,7 +12,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br">
+            <div class="d-grid g-3 p-3 bgc-positive br-md">
                 {#each bgAttachmentArr as attachment}
                     <div
                         class="p-2 h o-auto bgi bgc-negative-10 bga-{attachment}"
