@@ -32,7 +32,7 @@
     //     }
     // }
 
-    // let promise = getData('/_api/app.js-on')
+    // let promise = getData('/_api/app.justify-self--on')
     // console.log(promise)
 
     // promise.then((value) => {

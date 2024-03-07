@@ -116,7 +116,7 @@
 
         <h4 id="backgroundCustomColors">Custom colors</h4>
         <div class="d-grid g-5">
-            <div class="alert alert-info js-start">
+            <div class="alert alert-info justify-self--start">
                 <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
                 Pay attentions! The <b>--bgc</b> variable is adaptive. The list of prefixes
                 available on the <a href="/core#map">Core</a> page.

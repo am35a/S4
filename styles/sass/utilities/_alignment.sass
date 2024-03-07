@@ -19,28 +19,28 @@ $justifySelf: center, end, start, stretch
             &--#{$item}
                 vertical-align: $item !important
 
-    .#{$orientation}#{$type}a
+    .#{$orientation}#{$type}align
         @each $item, $value in $alignContent
-            &c-#{$item}
+            &-content--#{$item}
                 align-content: $value !important
         
         @each $item in $alignItems
-            &i-#{$item}
+            &-items--#{$item}
                 align-items: $item !important
     
         @each $item in $alignSelf
-            &s-#{$item}
+            &-self--#{$item}
                 align-self: $item !important
     
-    .#{$orientation}#{$type}j
+    .#{$orientation}#{$type}justify
         @each $item, $value in $justifyContent
-            &c-#{$item}
+            &-content--#{$item}
                 justify-content: $value !important
     
         @each $item in $justifyItems
-            &i-#{$item}
+            &-item--#{$item}
                 justify-items: $item !important
     
         @each $item in $justifySelf
-            &s-#{$item}
+            &-self--#{$item}
                 justify-self: $item !important

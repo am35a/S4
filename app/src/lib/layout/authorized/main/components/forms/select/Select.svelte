@@ -30,9 +30,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br-md">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 bgc-positive br-md">
             <div class="d-grid gtc-2 g-3">
-                <b class="js-end as-center">Default</b>
+                <b class="justify-self--end align-self--center">Default</b>
                 <div>
                     <Select
                         class="{inputClass}"
@@ -46,7 +46,7 @@
                         <option value="third">Fourth value</option>
                     </Select>
                 </div>
-                <b class="js-end as-center">Active</b>
+                <b class="justify-self--end align-self--center">Active</b>
                 <div>
                     <Select
                         class="{inputClass} active"
@@ -60,7 +60,7 @@
                         <option value="third">Fourth value</option>
                     </Select>
                 </div>
-                <b class="js-end as-center">Disabled</b>
+                <b class="justify-self--end align-self--center">Disabled</b>
                 <div>
                     <Select
                         class="{inputClass}"
@@ -75,7 +75,7 @@
                         <option value="third">Fourth value</option>
                     </Select>
                 </div>
-                <b class="js-end as-center">Сhecked & Disabled</b>
+                <b class="justify-self--end align-self--center">Сhecked & Disabled</b>
                 <div>
                     <Select
                         class="{inputClass} active"

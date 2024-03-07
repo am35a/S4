@@ -24,101 +24,101 @@
   vertical-align: text-top !important;
 }
 
-.t_ac-around {
+.t_align-content--around {
   align-content: space-around !important;
 }
-.t_ac-between {
+.t_align-content--between {
   align-content: space-between !important;
 }
-.t_ac-center {
+.t_align-content--center {
   align-content: center !important;
 }
-.t_ac-end {
+.t_align-content--end {
   align-content: end !important;
 }
-.t_ac-evenly {
+.t_align-content--evenly {
   align-content: space-evenly !important;
 }
-.t_ac-start {
+.t_align-content--start {
   align-content: start !important;
 }
-.t_ac-stretch {
+.t_align-content--stretch {
   align-content: stretch !important;
 }
-.t_ai-baseline {
+.t_align-items--baseline {
   align-items: baseline !important;
 }
-.t_ai-center {
+.t_align-items--center {
   align-items: center !important;
 }
-.t_ai-end {
+.t_align-items--end {
   align-items: end !important;
 }
-.t_ai-start {
+.t_align-items--start {
   align-items: start !important;
 }
-.t_ai-stretch {
+.t_align-items--stretch {
   align-items: stretch !important;
 }
-.t_as-baseline {
+.t_align-self--baseline {
   align-self: baseline !important;
 }
-.t_as-center {
+.t_align-self--center {
   align-self: center !important;
 }
-.t_as-end {
+.t_align-self--end {
   align-self: end !important;
 }
-.t_as-start {
+.t_align-self--start {
   align-self: start !important;
 }
-.t_as-stretch {
+.t_align-self--stretch {
   align-self: stretch !important;
 }
 
-.t_jc-around {
+.t_justify-content--around {
   justify-content: space-around !important;
 }
-.t_jc-between {
+.t_justify-content--between {
   justify-content: space-between !important;
 }
-.t_jc-center {
+.t_justify-content--center {
   justify-content: center !important;
 }
-.t_jc-end {
+.t_justify-content--end {
   justify-content: end !important;
 }
-.t_jc-evenly {
+.t_justify-content--evenly {
   justify-content: space-evenly !important;
 }
-.t_jc-start {
+.t_justify-content--start {
   justify-content: start !important;
 }
-.t_jc-stretch {
+.t_justify-content--stretch {
   justify-content: stretch !important;
 }
-.t_ji-center {
+.t_justify-item--center {
   justify-items: center !important;
 }
-.t_ji-end {
+.t_justify-item--end {
   justify-items: end !important;
 }
-.t_ji-start {
+.t_justify-item--start {
   justify-items: start !important;
 }
-.t_ji-stretch {
+.t_justify-item--stretch {
   justify-items: stretch !important;
 }
-.t_js-center {
+.t_justify-self--center {
   justify-self: center !important;
 }
-.t_js-end {
+.t_justify-self--end {
   justify-self: end !important;
 }
-.t_js-start {
+.t_justify-self--start {
   justify-self: start !important;
 }
-.t_js-stretch {
+.t_justify-self--stretch {
   justify-self: stretch !important;
 }
 

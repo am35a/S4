@@ -86,7 +86,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Sizes</b>
-            <div class="d-flex fw-wrap g-3 ai-center">
+            <div class="d-flex fw-wrap g-3 align-items--center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}

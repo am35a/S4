@@ -8,7 +8,7 @@
         Add the <b>bgi</b> class to container before work with background-image and use the <b>--bgi</b> variable to control the property.
     </p>
     <div class="d-grid g-5">
-        <div class="alert alert-info js-start">
+        <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
             Pay attentions! The <b>--bgi</b> variable is adaptive. The list of prefixes
             available on the <a href="/core#map">Core</a> page.

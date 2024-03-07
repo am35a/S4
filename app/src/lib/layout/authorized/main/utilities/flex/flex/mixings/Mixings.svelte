@@ -24,7 +24,7 @@
             <b>Preview</b>
             <div class="d-grid g-3 p-3 bgc-positive br-md">
                 <div class="d-grid mb-2">
-                    <label for="mixContainerWidth" class="d-grid gtc-3 ai-end px-2">
+                    <label for="mixContainerWidth" class="d-grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>

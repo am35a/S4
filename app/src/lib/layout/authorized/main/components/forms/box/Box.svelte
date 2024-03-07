@@ -49,34 +49,34 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br-md">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 bgc-positive br-md">
             <div class="d-grid gtc-2 g-3">
-                <b class="js-end as-center">Default</b>
+                <b class="justify-self--end align-self--center">Default</b>
                 <div>
                     <Input class="{inputClass}" name="boxes" type={inputType}/>
                 </div>
                 {#if inputType === 'Checkbox'}
-                    <b class="js-end as-center">Default Indeterminate</b>
+                    <b class="justify-self--end align-self--center">Default Indeterminate</b>
                     <div>
                         <Input class="{inputClass}" type={inputType} indeterminate={true}/>
                     </div>
                 {/if}
-                <b class="js-end as-center">Сhecked</b>
+                <b class="justify-self--end align-self--center">Сhecked</b>
                 <div>
                     <Input class="{inputClass}" name="boxes" type={inputType} checked/>
                 </div>
-                <b class="js-end as-center">Disabled</b>
+                <b class="justify-self--end align-self--center">Disabled</b>
                 <div>
                     <Input class="{inputClass}" type={inputType} disabled/>
                 </div>
                 {#if inputType === 'Checkbox'}
-                    <b class="js-end as-center">Disabled indeterminate</b>
+                    <b class="justify-self--end align-self--center">Disabled indeterminate</b>
                     <div>
                         <Input class="{inputClass}" type={inputType} disabled indeterminate={true}/>
                     </div>
                 {/if}
 
-                <b class="js-end as-center">Сhecked & Disabled</b>
+                <b class="justify-self--end align-self--center">Сhecked & Disabled</b>
                 <div>
                     <Input class="{inputClass}" type={inputType} checked disabled/>
                 </div>

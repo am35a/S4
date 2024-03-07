@@ -13,7 +13,7 @@
         to control flexible growth.
     </p>
     <div class="d-grid g-5">
-        <div class="alert alert-info js-start">
+        <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
             Default value of <b>flex-grow</b> is <b>0</b>. Class <b>fg-1</b> convert value to 1.
         </div>
@@ -30,7 +30,7 @@
             <b>Preview</b>
             <div class="d-grid g-3 p-3 bgc-positive br-md">
                 <div class="d-grid mb-2">
-                    <label for="growContainerWidth" class="d-grid gtc-3 ai-end px-2">
+                    <label for="growContainerWidth" class="d-grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>

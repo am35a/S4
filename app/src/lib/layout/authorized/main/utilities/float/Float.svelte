@@ -8,7 +8,7 @@
     <p>
         Use <b>fx-...</b> classes to floats any element across any breakpoint.
     </p>
-    <div class="alert alert-warning js-start">
+    <div class="alert alert-warning justify-self--start">
         * Pay attention the <b>fx-start</b> and <b>fx-end</b> classes do not support by invalid browsers like Chrome or Safari.
     </div>
     <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">

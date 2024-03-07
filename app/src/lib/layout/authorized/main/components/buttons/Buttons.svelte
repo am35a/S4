@@ -126,7 +126,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Sizes</b>
-            <div class="d-flex fw-wrap g-3 ai-center">
+            <div class="d-flex fw-wrap g-3 align-items--center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}
@@ -152,9 +152,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br-md">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 bgc-positive br-md">
             <div class="d-grid gtc-2 g-3">
-                <b class="js-end as-center">Default</b>
+                <b class="justify-self--end align-self--center">Default</b>
                 <div>
                     <button class="btn {buttonClass}" type="button">
                         {#if buttonsObj.iconObj[buttonIcon]}
@@ -165,7 +165,7 @@
                         {/if}
                     </button>
                 </div>
-                <b class="js-end as-center">Active</b>
+                <b class="justify-self--end align-self--center">Active</b>
                 <div>
                     <button class="btn {buttonClass} active">
                         {#if buttonsObj.iconObj[buttonIcon]}
@@ -176,7 +176,7 @@
                         {/if}
                     </button>
                 </div>
-                <b class="js-end as-center">Disabled</b>
+                <b class="justify-self--end align-self--center">Disabled</b>
                 <div>
                     <button class="btn {buttonClass}" type="button" disabled>
                         {#if buttonsObj.iconObj[buttonIcon]}
@@ -187,7 +187,7 @@
                         {/if}
                     </button>
                 </div>
-                <b class="js-end as-center">Active & Disabled</b>
+                <b class="justify-self--end align-self--center">Active & Disabled</b>
                 <div>
                     <button class="btn {buttonClass} active" type="button" disabled>
                         {#if buttonsObj.iconObj[buttonIcon]}

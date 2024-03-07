@@ -24,101 +24,101 @@
   vertical-align: text-top !important;
 }
 
-.p_ac-around {
+.p_align-content--around {
   align-content: space-around !important;
 }
-.p_ac-between {
+.p_align-content--between {
   align-content: space-between !important;
 }
-.p_ac-center {
+.p_align-content--center {
   align-content: center !important;
 }
-.p_ac-end {
+.p_align-content--end {
   align-content: end !important;
 }
-.p_ac-evenly {
+.p_align-content--evenly {
   align-content: space-evenly !important;
 }
-.p_ac-start {
+.p_align-content--start {
   align-content: start !important;
 }
-.p_ac-stretch {
+.p_align-content--stretch {
   align-content: stretch !important;
 }
-.p_ai-baseline {
+.p_align-items--baseline {
   align-items: baseline !important;
 }
-.p_ai-center {
+.p_align-items--center {
   align-items: center !important;
 }
-.p_ai-end {
+.p_align-items--end {
   align-items: end !important;
 }
-.p_ai-start {
+.p_align-items--start {
   align-items: start !important;
 }
-.p_ai-stretch {
+.p_align-items--stretch {
   align-items: stretch !important;
 }
-.p_as-baseline {
+.p_align-self--baseline {
   align-self: baseline !important;
 }
-.p_as-center {
+.p_align-self--center {
   align-self: center !important;
 }
-.p_as-end {
+.p_align-self--end {
   align-self: end !important;
 }
-.p_as-start {
+.p_align-self--start {
   align-self: start !important;
 }
-.p_as-stretch {
+.p_align-self--stretch {
   align-self: stretch !important;
 }
 
-.p_jc-around {
+.p_justify-content--around {
   justify-content: space-around !important;
 }
-.p_jc-between {
+.p_justify-content--between {
   justify-content: space-between !important;
 }
-.p_jc-center {
+.p_justify-content--center {
   justify-content: center !important;
 }
-.p_jc-end {
+.p_justify-content--end {
   justify-content: end !important;
 }
-.p_jc-evenly {
+.p_justify-content--evenly {
   justify-content: space-evenly !important;
 }
-.p_jc-start {
+.p_justify-content--start {
   justify-content: start !important;
 }
-.p_jc-stretch {
+.p_justify-content--stretch {
   justify-content: stretch !important;
 }
-.p_ji-center {
+.p_justify-item--center {
   justify-items: center !important;
 }
-.p_ji-end {
+.p_justify-item--end {
   justify-items: end !important;
 }
-.p_ji-start {
+.p_justify-item--start {
   justify-items: start !important;
 }
-.p_ji-stretch {
+.p_justify-item--stretch {
   justify-items: stretch !important;
 }
-.p_js-center {
+.p_justify-self--center {
   justify-self: center !important;
 }
-.p_js-end {
+.p_justify-self--end {
   justify-self: end !important;
 }
-.p_js-start {
+.p_justify-self--start {
   justify-self: start !important;
 }
-.p_js-stretch {
+.p_justify-self--stretch {
   justify-self: stretch !important;
 }
 

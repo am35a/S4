@@ -5,7 +5,7 @@
             <p>
                 The cash posible icon is the best way to take heart any front-end developer building deep data applications.
             </p>
-            <div class="d-grid gtc-8 ji-center ai-end">
+            <div class="d-grid gtc-8 justify-item--center align-items--end">
                 <span class="ico fs-xxxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
                 <span class="ico fs-xxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
                 <span class="ico fs-xl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
@@ -16,7 +16,7 @@
                 <span class="ico fs-xxs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
             </div>
             <hr class="mt-1">
-            <div class="d-grid gtc-8 ji-center ai-top">
+            <div class="d-grid gtc-8 justify-item--center align-items--top">
                 <span class="fs-xxxl">xxxl</span>
                 <span class="fs-xxl">xxl</span>
                 <span class="fs-xl">xl</span>
@@ -28,7 +28,7 @@
             </div>
 
         </div>
-        <div class="d-flex ai-center">
+        <div class="d-flex align-items--center">
             <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 100 100">
                 <circle cx="50" cy="23" r="13" fill="var(--success-color)">
                   <animate attributeName="cy" dur="1s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.9 0.55;0 0.45 0.55 0.9" keyTimes="0;0.5;1" values="23;77;23"></animate>

@@ -23,8 +23,8 @@
     {...$$restProps}
 >
     <div class="d-flex g-2 h-100">
-        <div class="d-flex ai-center fg-1 p-1 bgc-positive br-md bs-xs border border-negative-30">
-            <div class="d-flex ai-center fg-1 g-2 h-100">
+        <div class="d-flex align-items--center fg-1 p-1 bgc-positive br-md bs-xs border border-negative-30">
+            <div class="d-flex align-items--center fg-1 g-2 h-100">
                 <!-- <Button
                     class="w-auto h-100 p-0 {$path === '/home' ? 'active' : ''}"
                     title="S4 - The lightweight Svelte UI library"
@@ -39,7 +39,7 @@
                     alt="S4 - The lightweight Svelte UI Kit"
                     role={'button'}
                 />
-                <div class="d-inline-flex g-1 ai-center">
+                <div class="d-inline-flex g-1 align-items--center">
                     {#each $path.slice(1).split('/') as segment}
                         {#if $path !== '/home'}
                             <Button

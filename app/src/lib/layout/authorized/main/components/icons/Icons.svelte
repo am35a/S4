@@ -64,7 +64,7 @@
             The  icon sizes directly depend on the font size and the container in which the icon is placed.
             Colors are changed in two ways - using the <b>bgc-...</b> or <b>c-...</b> classes.
         </p>
-        <div class="alert alert-warning js-start">
+        <div class="alert alert-warning justify-self--start">
             <span class="ico fs-xl" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
             Pay attention! The <b>bgc-...</b> and <b>c-...</b> are incompatible in one case.
         </div>

@@ -24,101 +24,101 @@
   vertical-align: text-top !important;
 }
 
-.ac-around {
+.align-content--around {
   align-content: space-around !important;
 }
-.ac-between {
+.align-content--between {
   align-content: space-between !important;
 }
-.ac-center {
+.align-content--center {
   align-content: center !important;
 }
-.ac-end {
+.align-content--end {
   align-content: end !important;
 }
-.ac-evenly {
+.align-content--evenly {
   align-content: space-evenly !important;
 }
-.ac-start {
+.align-content--start {
   align-content: start !important;
 }
-.ac-stretch {
+.align-content--stretch {
   align-content: stretch !important;
 }
-.ai-baseline {
+.align-items--baseline {
   align-items: baseline !important;
 }
-.ai-center {
+.align-items--center {
   align-items: center !important;
 }
-.ai-end {
+.align-items--end {
   align-items: end !important;
 }
-.ai-start {
+.align-items--start {
   align-items: start !important;
 }
-.ai-stretch {
+.align-items--stretch {
   align-items: stretch !important;
 }
-.as-baseline {
+.align-self--baseline {
   align-self: baseline !important;
 }
-.as-center {
+.align-self--center {
   align-self: center !important;
 }
-.as-end {
+.align-self--end {
   align-self: end !important;
 }
-.as-start {
+.align-self--start {
   align-self: start !important;
 }
-.as-stretch {
+.align-self--stretch {
   align-self: stretch !important;
 }
 
-.jc-around {
+.justify-content--around {
   justify-content: space-around !important;
 }
-.jc-between {
+.justify-content--between {
   justify-content: space-between !important;
 }
-.jc-center {
+.justify-content--center {
   justify-content: center !important;
 }
-.jc-end {
+.justify-content--end {
   justify-content: end !important;
 }
-.jc-evenly {
+.justify-content--evenly {
   justify-content: space-evenly !important;
 }
-.jc-start {
+.justify-content--start {
   justify-content: start !important;
 }
-.jc-stretch {
+.justify-content--stretch {
   justify-content: stretch !important;
 }
-.ji-center {
+.justify-item--center {
   justify-items: center !important;
 }
-.ji-end {
+.justify-item--end {
   justify-items: end !important;
 }
-.ji-start {
+.justify-item--start {
   justify-items: start !important;
 }
-.ji-stretch {
+.justify-item--stretch {
   justify-items: stretch !important;
 }
-.js-center {
+.justify-self--center {
   justify-self: center !important;
 }
-.js-end {
+.justify-self--end {
   justify-self: end !important;
 }
-.js-start {
+.justify-self--start {
   justify-self: start !important;
 }
-.js-stretch {
+.justify-self--stretch {
   justify-self: stretch !important;
 }
 

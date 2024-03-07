@@ -61,7 +61,7 @@
             />
         </div>
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label class="d-inline-grid g-1 gaf-column jc-start ai-center lh-1">
+        <label class="d-inline-grid g-1 gaf-column justify-content--start align-items--center lh-1">
             <Input type={'checkbox'}/> Remember me
         </label>
     </div>

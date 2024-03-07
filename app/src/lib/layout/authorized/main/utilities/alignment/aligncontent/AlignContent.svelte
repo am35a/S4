@@ -15,7 +15,7 @@
 <section>
     <h3 id="alignContent">Align content</h3>
     <p>
-        The <b>ac-{alignContentArr.join('/')}</b> classes sets the distribution of space between
+        The <b>align-content--{alignContentArr.join('/')}</b> classes sets the distribution of space between
         and around content item of <b>grid</b> and <b>flex</b> containers.
     </p>
     <div class="d-grid g-5">
@@ -41,13 +41,13 @@
                         class:active = {alignContent === value}
                         on:click = {() => alignContent = value}
                         disabled = {alignContent === value}
-                    >ac-{value}</button>
+                    >align-content--{value}</button>
                 {/each}
             </div>
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="{containerType} g-3 p-3 ac-{alignContent} bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
+            <div class="{containerType} g-3 p-3 align-content--{alignContent} bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
                 <div class="bgc-negative-10 px-2 py-1">one</div>
                 <div class="bgc-negative-10 px-2 py-1">two</div>
                 <div class="bgc-negative-10 px-2 py-1">three</div>
@@ -75,7 +75,7 @@
             <b>HTML</b>
             <Precode>
                 {
-`<div class="${containerType} ac-${alignContent}">
+`<div class="${containerType} align-content--${alignContent}">
     // ...
 </div>
 `

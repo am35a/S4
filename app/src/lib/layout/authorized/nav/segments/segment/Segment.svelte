@@ -32,7 +32,7 @@
     <Button
         {id}
         on:click={() => router.push(segment)}
-        class="{getPathSegments($path).includes(segment) ? 'active' : ''} jc-start ps-1"
+        class="{getPathSegments($path).includes(segment) ? 'active' : ''} justify-content--start ps-1"
         data-position="right center"
         {title}
         disabled={getPathSegments($path).includes(segment) && segment === $path}
@@ -44,7 +44,7 @@
     </Button>
     <div class="drp-content h-100">
         <div
-            class="d-grid g-2 w p-2 bgc-positive br-md border border-negative-30 bs-sm h-100 oy-auto ac-start"
+            class="d-grid g-2 w p-2 bgc-positive br-md border border-negative-30 bs-sm h-100 oy-auto align-content--start"
             style="--w: 16em"
         >
             {#each items as item}
@@ -60,7 +60,7 @@
     <Button
         {id}
         on:click={() => router.push(segment)}
-        class="jc-start {icon ? 'ps-1' : ''}"
+        class="justify-content--start {icon ? 'ps-1' : ''}"
         {title}
         disabled={segment === $path}
     >

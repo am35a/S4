@@ -35,7 +35,7 @@
     <div>
         <div>Lightness:</div>
         <div>
-            <div class="d-grid gtc-3 ai-end px-2">
+            <div class="d-grid gtc-3 align-items--end px-2">
                 <small class="ta-start">{accentColorsObj.variablesObj['lightness-offset']}</small>
                 <div class="ta-center">{accentColorsObj.variablesObj['lightness']}</div>
                 <small class="ta-end">{1 - accentColorsObj.variablesObj['lightness-offset']}</small>
@@ -59,7 +59,7 @@
         /> -->
         <div>Chroma:</div>
         <div>
-            <div class="d-grid gtc-3 ai-end px-2">
+            <div class="d-grid gtc-3 align-items--end px-2">
                 <small class="ta-start">0</small>
                 <div class="ta-center">{accentColorsObj.variablesObj['chroma']}</div>
                 <small class="ta-end">0.37</small>
@@ -74,7 +74,7 @@
         </div>
         <div>Alfa (mute):</div>
         <div>
-            <div class="d-grid gtc-3 ai-end px-2">
+            <div class="d-grid gtc-3 align-items--end px-2">
                 <small class="ta-start">0</small>
                 <div class="ta-center">{accentColorsObj.variablesObj['alfa']}</div>
                 <small class="ta-end">1</small>
@@ -90,7 +90,7 @@
         <div>Colors</div>
         <div class="d-flex fw-wrap g-2">
             {#each accentColorsObj.namesArr as value}
-                <div class="d-grid rg-2 ji-center p-4 bgc-positive br-md fx" style="--fxg: 1; --fxb: 0;">
+                <div class="d-grid rg-2 justify-item--center p-4 bgc-positive br-md fx" style="--fxg: 1; --fxb: 0;">
                     <Input
                         bind:value={accentColorsObj.variablesObj[`${value}-hue`]}
                         min="0" max="360"
@@ -107,8 +107,8 @@
                             {accentColorsObj.variablesObj[`${value}-hue`]}
                         )
                     </div>
-                    <div class="d-flex fw-nowrap ji-center">
-                        <div class="ws-nowrap as-end">
+                    <div class="d-flex fw-nowrap justify-item--center">
+                        <div class="ws-nowrap align-self--end">
                             <div class="ta-center fw-600 c-{value}-l">light</div>
                             oklch(
                                 {(+(accentColorsObj.variablesObj['lightness']) + ~~accentColorsObj.variablesObj['lightness-offset'])}
@@ -119,7 +119,7 @@
                         <div>
                             <ColorBox colorName={value} />
                         </div>
-                        <div class="ws-nowrap as-end">
+                        <div class="ws-nowrap align-self--end">
                             <div class="ta-center fw-600 c-{value}-d">dark</div>
                             oklch(
                                 {(+(accentColorsObj.variablesObj['lightness']) - ~~accentColorsObj.variablesObj['lightness-offset'])}

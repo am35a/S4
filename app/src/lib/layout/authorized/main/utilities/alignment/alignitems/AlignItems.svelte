@@ -15,7 +15,7 @@
 <section>
     <h3 id="alignItems">Align items</h3>
     <p>
-        The <b>ai-{alignItemsArr.join('/')}</b> classes sets the <b>as-</b> classes value on all direct children as a group.
+        The <b>align-items--{alignItemsArr.join('/')}</b> classes sets the <b>align-self--</b> classes value on all direct children as a group.
     </p>
     <div class="d-grid g-5">
         <div class="d-grid g-4">
@@ -39,13 +39,13 @@
                         class:active={alignItems === value}
                         on:click = {() => alignItems = value}
                         disabled = {alignItems === value}
-                    >ai-{value}</button>
+                    >align-items--{value}</button>
                 {/each}
             </div>
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="{containerType} g-3 p-3 ai-{alignItems} bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
+            <div class="{containerType} g-3 p-3 align-items--{alignItems} bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
                 <div class="bgc-negative-10 px-2 py-1">one</div>
                 <div class="bgc-negative-10 px-2 py-1">two</div>
                 <div class="bgc-negative-10 px-2 py-1">three</div>
@@ -55,7 +55,7 @@
             <b>HTML</b>
             <Precode>
                 {
-`<div class="${containerType} ai-${alignItems}">
+`<div class="${containerType} align-items--${alignItems}">
     // ...
 </div>
 `

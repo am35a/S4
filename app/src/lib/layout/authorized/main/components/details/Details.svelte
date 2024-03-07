@@ -120,7 +120,7 @@
                 <b>Custom</b>
                 <div class="d-grid p-4 bgc-positive br-md">
                     <Details class="bgc-negative-10" open>
-                        <summary class="px-2 py-1 jc-start bgc-transparent" slot="summary">
+                        <summary class="px-2 py-1 justify-content--start bgc-transparent" slot="summary">
                             <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
                             <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
                             <div class="truncate fw-600">
@@ -154,7 +154,7 @@
 
 // custom uses
 <Details class="bgc-negative-10" open>
-    <summary class="px-2 py-1 jc-start bgc-transparent" slot="summary">
+    <summary class="px-2 py-1 justify-content--start bgc-transparent" slot="summary">
         <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
         <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
         <div class="truncate fw-600">
