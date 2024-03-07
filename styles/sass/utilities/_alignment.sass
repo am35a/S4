@@ -1,6 +1,6 @@
 // @use "sass:list"
 
-$align: baseline, sub, super, top, middle, bottom, text-bottom, text-top
+$verticalAlign: baseline, sub, super, top, middle, bottom, text-bottom, text-top
 $alignContent: ( around: space-around, between: space-between, center: center, end: end, evenly: space-evenly, start: start, stretch: stretch )
 $alignItems: baseline, center, end, start, stretch
 $alignSelf: $alignItems
@@ -14,9 +14,9 @@ $justifySelf: center, end, start, stretch
     alignment section: align and justify contained in classes
 
 @mixin _alignment($orientation, $type)
-    .#{$orientation}#{$type}va
-        @each $item in $align
-            &-#{$item}
+    .#{$orientation}#{$type}vertical-align
+        @each $item in $verticalAlign
+            &--#{$item}
                 vertical-align: $item !important
 
     .#{$orientation}#{$type}a

@@ -1,26 +1,26 @@
 /*  alignment section: align and justify contained in classes */
-.m_va-baseline {
+.m_vertical-align--baseline {
   vertical-align: baseline !important;
 }
-.m_va-sub {
+.m_vertical-align--sub {
   vertical-align: sub !important;
 }
-.m_va-super {
+.m_vertical-align--super {
   vertical-align: super !important;
 }
-.m_va-top {
+.m_vertical-align--top {
   vertical-align: top !important;
 }
-.m_va-middle {
+.m_vertical-align--middle {
   vertical-align: middle !important;
 }
-.m_va-bottom {
+.m_vertical-align--bottom {
   vertical-align: bottom !important;
 }
-.m_va-text-bottom {
+.m_vertical-align--text-bottom {
   vertical-align: text-bottom !important;
 }
-.m_va-text-top {
+.m_vertical-align--text-top {
   vertical-align: text-top !important;
 }
 
