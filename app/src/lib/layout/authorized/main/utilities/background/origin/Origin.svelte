@@ -8,7 +8,7 @@
 <section>
     <h3 id="backgroundOrigin">Origin</h3>
     <p>
-        Change the background`s origin from the border start, inside the border, or inside the padding by the classes <b>bga-{bgOriginArr.join('/')}</b>.
+        Change the background`s origin from the border start, inside the border, or inside the padding by the classes <b>background-attachment--{bgOriginArr.join('/')}</b>.
     </p>
     <div class="d-grid g-5">
         <div class="d-grid g-4">
@@ -30,8 +30,8 @@
             <div class="d-grid g-3 p-3 bgc-positive br-md">
                 {#each bgOriginArr as origin}
                     <div
-                        class="p-4 fs-xxxl fw-700 bgi bgc-negative-10 bgo-{origin} {containerClasses}"
-                        style="--bgi: url(/images/logo.svg); border: 1em dashed;"
+                        class="p-4 fs-xxxl fw-700 background-image bgc-negative-10 background-origin--{origin} {containerClasses}"
+                        style="--background-image: url(/images/logo.svg); border: 1em dashed;"
                     >Lorem ipsum dolor sit amet.</div>
                 {/each}
             </div>
@@ -41,7 +41,7 @@
             <Precode>
                 {#each bgOriginArr as origin}
                     {
-`<div class="bgi bgo-${origin} ${containerClasses}" style="--bgi: url(...)">
+`<div class="background-image background-origin--${origin} ${containerClasses}" style="--background-image: url(...)">
     // ...
 </div>
 `

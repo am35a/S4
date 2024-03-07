@@ -123,232 +123,235 @@
 }
 
 /*  background section: background color of accent and extra palette contained in classes */
-.t_bga-scroll {
+.t_background-attachment--scroll {
   background-attachment: scroll !important;
 }
-.t_bga-fixed {
+.t_background-attachment--fixed {
   background-attachment: fixed !important;
 }
-.t_bga-local {
+.t_background-attachment--local {
   background-attachment: local !important;
 }
-.t_bgc-border {
+.t_background-clip--border {
   background-clip: border-box !important;
 }
-.t_bgc-padding {
+.t_background-clip--padding {
   background-clip: padding-box !important;
 }
-.t_bgc-content {
+.t_background-clip--content {
   background-clip: content-box !important;
 }
-.t_bgc-text {
+.t_background-clip--text {
   background-clip: text !important;
   color: transparent;
 }
-.t_bgo-border {
+.t_background-origin--border {
   background-origin: border-box !important;
 }
-.t_bgo-padding {
+.t_background-origin--padding {
   background-origin: padding-box !important;
 }
-.t_bgo-content {
+.t_background-origin--content {
   background-origin: content-box !important;
 }
-.t_bgc-positive {
+.t_background-color--positive {
   background-color: var(--positive-color) !important;
 }
-.t_bgc-negative {
+.t_background-color--negative {
   background-color: var(--negative-color) !important;
 }
-.t_bgc-positive-10 {
+.t_background-color-positive-10 {
   background-color: var(--positive-color-10) !important;
 }
-.t_bgc-positive-20 {
+.t_background-color-positive-20 {
   background-color: var(--positive-color-20) !important;
 }
-.t_bgc-positive-30 {
+.t_background-color-positive-30 {
   background-color: var(--positive-color-30) !important;
 }
-.t_bgc-positive-40 {
+.t_background-color-positive-40 {
   background-color: var(--positive-color-40) !important;
 }
-.t_bgc-positive-50 {
+.t_background-color-positive-50 {
   background-color: var(--positive-color-50) !important;
 }
-.t_bgc-positive-60 {
+.t_background-color-positive-60 {
   background-color: var(--positive-color-60) !important;
 }
-.t_bgc-positive-70 {
+.t_background-color-positive-70 {
   background-color: var(--positive-color-70) !important;
 }
-.t_bgc-positive-80 {
+.t_background-color-positive-80 {
   background-color: var(--positive-color-80) !important;
 }
-.t_bgc-positive-90 {
+.t_background-color-positive-90 {
   background-color: var(--positive-color-90) !important;
 }
-.t_bgc-negative-10 {
+.t_background-color-negative-10 {
   background-color: var(--negative-color-10) !important;
 }
-.t_bgc-negative-20 {
+.t_background-color-negative-20 {
   background-color: var(--negative-color-20) !important;
 }
-.t_bgc-negative-30 {
+.t_background-color-negative-30 {
   background-color: var(--negative-color-30) !important;
 }
-.t_bgc-negative-40 {
+.t_background-color-negative-40 {
   background-color: var(--negative-color-40) !important;
 }
-.t_bgc-negative-50 {
+.t_background-color-negative-50 {
   background-color: var(--negative-color-50) !important;
 }
-.t_bgc-negative-60 {
+.t_background-color-negative-60 {
   background-color: var(--negative-color-60) !important;
 }
-.t_bgc-negative-70 {
+.t_background-color-negative-70 {
   background-color: var(--negative-color-70) !important;
 }
-.t_bgc-negative-80 {
+.t_background-color-negative-80 {
   background-color: var(--negative-color-80) !important;
 }
-.t_bgc-negative-90 {
+.t_background-color-negative-90 {
   background-color: var(--negative-color-90) !important;
 }
-.t_bgc-primary {
+.t_background-color--primary {
   background-color: var(--primary-color) !important;
 }
-.t_bgc-primary-l {
+.t_background-color--primary-l {
   background-color: var(--primary-color-l) !important;
 }
-.t_bgc-primary-d {
+.t_background-color--primary-d {
   background-color: var(--primary-color-d) !important;
 }
-.t_bgc-primary-m {
+.t_background-color--primary-m {
   background-color: var(--primary-color-m) !important;
 }
-.t_bgc-secondary {
+.t_background-color--secondary {
   background-color: var(--secondary-color) !important;
 }
-.t_bgc-secondary-l {
+.t_background-color--secondary-l {
   background-color: var(--secondary-color-l) !important;
 }
-.t_bgc-secondary-d {
+.t_background-color--secondary-d {
   background-color: var(--secondary-color-d) !important;
 }
-.t_bgc-secondary-m {
+.t_background-color--secondary-m {
   background-color: var(--secondary-color-m) !important;
 }
-.t_bgc-info {
+.t_background-color--info {
   background-color: var(--info-color) !important;
 }
-.t_bgc-info-l {
+.t_background-color--info-l {
   background-color: var(--info-color-l) !important;
 }
-.t_bgc-info-d {
+.t_background-color--info-d {
   background-color: var(--info-color-d) !important;
 }
-.t_bgc-info-m {
+.t_background-color--info-m {
   background-color: var(--info-color-m) !important;
 }
-.t_bgc-success {
+.t_background-color--success {
   background-color: var(--success-color) !important;
 }
-.t_bgc-success-l {
+.t_background-color--success-l {
   background-color: var(--success-color-l) !important;
 }
-.t_bgc-success-d {
+.t_background-color--success-d {
   background-color: var(--success-color-d) !important;
 }
-.t_bgc-success-m {
+.t_background-color--success-m {
   background-color: var(--success-color-m) !important;
 }
-.t_bgc-warning {
+.t_background-color--warning {
   background-color: var(--warning-color) !important;
 }
-.t_bgc-warning-l {
+.t_background-color--warning-l {
   background-color: var(--warning-color-l) !important;
 }
-.t_bgc-warning-d {
+.t_background-color--warning-d {
   background-color: var(--warning-color-d) !important;
 }
-.t_bgc-warning-m {
+.t_background-color--warning-m {
   background-color: var(--warning-color-m) !important;
 }
-.t_bgc-error {
+.t_background-color--error {
   background-color: var(--error-color) !important;
 }
-.t_bgc-error-l {
+.t_background-color--error-l {
   background-color: var(--error-color-l) !important;
 }
-.t_bgc-error-d {
+.t_background-color--error-d {
   background-color: var(--error-color-d) !important;
 }
-.t_bgc-error-m {
+.t_background-color--error-m {
   background-color: var(--error-color-m) !important;
 }
-.t_bgc-transparent {
+.t_background-color--transparent {
   background-color: transparent !important;
 }
-.t_bgp-left {
+.t_background-position--left {
   background-position: 0% 50% !important;
 }
-.t_bgp-top-left, .t_bgp-left-top {
+.t_background-position--top-left, .t_background-position--left-top {
   background-position: 0% 0% !important;
 }
-.t_bgp-top {
+.t_background-position--top {
   background-position: 50% 0% !important;
 }
-.t_bgp-top-right, .t_bgp-right-top {
+.t_background-position--top-right, .t_background-position--right-top {
   background-position: 100% 0% !important;
 }
-.t_bgp-righ {
+.t_background-position-righ {
   background-position: 100% 50% !important;
 }
-.t_bgp-bottom-right, .t_bgp-right-bottom {
+.t_background-position--bottom-right, .t_background-position--right-bottom {
   background-position: 100% 100% !important;
 }
-.t_bgp-bottom {
+.t_background-position--bottom {
   background-position: 50% 100% !important;
 }
-.t_bgp-bottom-left, .t_bgp-left-bottom {
+.t_background-position--bottom-left, .t_background-position--left-bottom {
   background-position: 0% 100% !important;
 }
-.t_bgp-center {
+.t_background-position--center {
   background-position: 50% 50% !important;
 }
-.t_bgr-x {
+.t_background-repeat--x {
   background-repeat: repeat-x !important;
 }
-.t_bgr-y {
+.t_background-repeat--y {
   background-repeat: repeat-y !important;
 }
-.t_bgr-space {
+.t_background-repeat--space {
   background-repeat: space !important;
 }
-.t_bgr-round {
+.t_background-repeat--round {
   background-repeat: round !important;
 }
-.t_bgr-no {
+.t_background-repeat--no {
   background-repeat: no-repeat !important;
 }
-.t_bgs-cover {
+.t_background-size--cover {
   background-size: cover !important;
 }
-.t_bgs-contain {
+.t_background-size--contain {
   background-size: contain !important;
 }
 
-.bgi {
-  background-image: var(--t_bgi, var(--bgi, initial)) !important;
+.background, .background-image {
+  background-image: var(--t_background-image, var(--background-image, initial)) !important;
 }
-.bgp {
-  background-position: var(--t_bgp, var(--bgp, initial)) !important;
+
+.background, .background-position {
+  background-position: var(--t_background-position, var(--background-position, initial)) !important;
 }
-.bgc {
-  background-color: var(--t_bgc, var(--bgc, initial)) !important;
+
+.background, .background-color {
+  background-color: var(--t_background-color, var(--background-color, initial)) !important;
 }
-.bgs {
-  background-size: var(--t_bgs, var(--bgs, initial)) !important;
+
+.background, .background-size {
+  background-size: var(--t_background-size, var(--background-size, initial)) !important;
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */

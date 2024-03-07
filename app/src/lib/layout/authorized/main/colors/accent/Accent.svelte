@@ -26,7 +26,7 @@
         let oklchCircle = ''
         for (let index = 0; index < 360; index+=10)
             oklchCircle += `, oklch(${accentColorsObj.variablesObj['lightness']} ${accentColorsObj.variablesObj['chroma']} ${index})`
-        return `--bgi: linear-gradient(to right${oklchCircle})`
+        return `--background-image: linear-gradient(to right${oklchCircle})`
     }
 </script>
 
@@ -94,7 +94,7 @@
                     <Input
                         bind:value={accentColorsObj.variablesObj[`${value}-hue`]}
                         min="0" max="360"
-                        class="frm w-100 bgi"
+                        class="frm w-100 background-image"
                         style="{bgiGradientVar()}"
                         type="range"
                         step="1"

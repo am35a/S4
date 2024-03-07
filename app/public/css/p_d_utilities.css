@@ -123,232 +123,235 @@
 }
 
 /*  background section: background color of accent and extra palette contained in classes */
-.p_bga-scroll {
+.p_background-attachment--scroll {
   background-attachment: scroll !important;
 }
-.p_bga-fixed {
+.p_background-attachment--fixed {
   background-attachment: fixed !important;
 }
-.p_bga-local {
+.p_background-attachment--local {
   background-attachment: local !important;
 }
-.p_bgc-border {
+.p_background-clip--border {
   background-clip: border-box !important;
 }
-.p_bgc-padding {
+.p_background-clip--padding {
   background-clip: padding-box !important;
 }
-.p_bgc-content {
+.p_background-clip--content {
   background-clip: content-box !important;
 }
-.p_bgc-text {
+.p_background-clip--text {
   background-clip: text !important;
   color: transparent;
 }
-.p_bgo-border {
+.p_background-origin--border {
   background-origin: border-box !important;
 }
-.p_bgo-padding {
+.p_background-origin--padding {
   background-origin: padding-box !important;
 }
-.p_bgo-content {
+.p_background-origin--content {
   background-origin: content-box !important;
 }
-.p_bgc-positive {
+.p_background-color--positive {
   background-color: var(--positive-color) !important;
 }
-.p_bgc-negative {
+.p_background-color--negative {
   background-color: var(--negative-color) !important;
 }
-.p_bgc-positive-10 {
+.p_background-color-positive-10 {
   background-color: var(--positive-color-10) !important;
 }
-.p_bgc-positive-20 {
+.p_background-color-positive-20 {
   background-color: var(--positive-color-20) !important;
 }
-.p_bgc-positive-30 {
+.p_background-color-positive-30 {
   background-color: var(--positive-color-30) !important;
 }
-.p_bgc-positive-40 {
+.p_background-color-positive-40 {
   background-color: var(--positive-color-40) !important;
 }
-.p_bgc-positive-50 {
+.p_background-color-positive-50 {
   background-color: var(--positive-color-50) !important;
 }
-.p_bgc-positive-60 {
+.p_background-color-positive-60 {
   background-color: var(--positive-color-60) !important;
 }
-.p_bgc-positive-70 {
+.p_background-color-positive-70 {
   background-color: var(--positive-color-70) !important;
 }
-.p_bgc-positive-80 {
+.p_background-color-positive-80 {
   background-color: var(--positive-color-80) !important;
 }
-.p_bgc-positive-90 {
+.p_background-color-positive-90 {
   background-color: var(--positive-color-90) !important;
 }
-.p_bgc-negative-10 {
+.p_background-color-negative-10 {
   background-color: var(--negative-color-10) !important;
 }
-.p_bgc-negative-20 {
+.p_background-color-negative-20 {
   background-color: var(--negative-color-20) !important;
 }
-.p_bgc-negative-30 {
+.p_background-color-negative-30 {
   background-color: var(--negative-color-30) !important;
 }
-.p_bgc-negative-40 {
+.p_background-color-negative-40 {
   background-color: var(--negative-color-40) !important;
 }
-.p_bgc-negative-50 {
+.p_background-color-negative-50 {
   background-color: var(--negative-color-50) !important;
 }
-.p_bgc-negative-60 {
+.p_background-color-negative-60 {
   background-color: var(--negative-color-60) !important;
 }
-.p_bgc-negative-70 {
+.p_background-color-negative-70 {
   background-color: var(--negative-color-70) !important;
 }
-.p_bgc-negative-80 {
+.p_background-color-negative-80 {
   background-color: var(--negative-color-80) !important;
 }
-.p_bgc-negative-90 {
+.p_background-color-negative-90 {
   background-color: var(--negative-color-90) !important;
 }
-.p_bgc-primary {
+.p_background-color--primary {
   background-color: var(--primary-color) !important;
 }
-.p_bgc-primary-l {
+.p_background-color--primary-l {
   background-color: var(--primary-color-l) !important;
 }
-.p_bgc-primary-d {
+.p_background-color--primary-d {
   background-color: var(--primary-color-d) !important;
 }
-.p_bgc-primary-m {
+.p_background-color--primary-m {
   background-color: var(--primary-color-m) !important;
 }
-.p_bgc-secondary {
+.p_background-color--secondary {
   background-color: var(--secondary-color) !important;
 }
-.p_bgc-secondary-l {
+.p_background-color--secondary-l {
   background-color: var(--secondary-color-l) !important;
 }
-.p_bgc-secondary-d {
+.p_background-color--secondary-d {
   background-color: var(--secondary-color-d) !important;
 }
-.p_bgc-secondary-m {
+.p_background-color--secondary-m {
   background-color: var(--secondary-color-m) !important;
 }
-.p_bgc-info {
+.p_background-color--info {
   background-color: var(--info-color) !important;
 }
-.p_bgc-info-l {
+.p_background-color--info-l {
   background-color: var(--info-color-l) !important;
 }
-.p_bgc-info-d {
+.p_background-color--info-d {
   background-color: var(--info-color-d) !important;
 }
-.p_bgc-info-m {
+.p_background-color--info-m {
   background-color: var(--info-color-m) !important;
 }
-.p_bgc-success {
+.p_background-color--success {
   background-color: var(--success-color) !important;
 }
-.p_bgc-success-l {
+.p_background-color--success-l {
   background-color: var(--success-color-l) !important;
 }
-.p_bgc-success-d {
+.p_background-color--success-d {
   background-color: var(--success-color-d) !important;
 }
-.p_bgc-success-m {
+.p_background-color--success-m {
   background-color: var(--success-color-m) !important;
 }
-.p_bgc-warning {
+.p_background-color--warning {
   background-color: var(--warning-color) !important;
 }
-.p_bgc-warning-l {
+.p_background-color--warning-l {
   background-color: var(--warning-color-l) !important;
 }
-.p_bgc-warning-d {
+.p_background-color--warning-d {
   background-color: var(--warning-color-d) !important;
 }
-.p_bgc-warning-m {
+.p_background-color--warning-m {
   background-color: var(--warning-color-m) !important;
 }
-.p_bgc-error {
+.p_background-color--error {
   background-color: var(--error-color) !important;
 }
-.p_bgc-error-l {
+.p_background-color--error-l {
   background-color: var(--error-color-l) !important;
 }
-.p_bgc-error-d {
+.p_background-color--error-d {
   background-color: var(--error-color-d) !important;
 }
-.p_bgc-error-m {
+.p_background-color--error-m {
   background-color: var(--error-color-m) !important;
 }
-.p_bgc-transparent {
+.p_background-color--transparent {
   background-color: transparent !important;
 }
-.p_bgp-left {
+.p_background-position--left {
   background-position: 0% 50% !important;
 }
-.p_bgp-top-left, .p_bgp-left-top {
+.p_background-position--top-left, .p_background-position--left-top {
   background-position: 0% 0% !important;
 }
-.p_bgp-top {
+.p_background-position--top {
   background-position: 50% 0% !important;
 }
-.p_bgp-top-right, .p_bgp-right-top {
+.p_background-position--top-right, .p_background-position--right-top {
   background-position: 100% 0% !important;
 }
-.p_bgp-righ {
+.p_background-position-righ {
   background-position: 100% 50% !important;
 }
-.p_bgp-bottom-right, .p_bgp-right-bottom {
+.p_background-position--bottom-right, .p_background-position--right-bottom {
   background-position: 100% 100% !important;
 }
-.p_bgp-bottom {
+.p_background-position--bottom {
   background-position: 50% 100% !important;
 }
-.p_bgp-bottom-left, .p_bgp-left-bottom {
+.p_background-position--bottom-left, .p_background-position--left-bottom {
   background-position: 0% 100% !important;
 }
-.p_bgp-center {
+.p_background-position--center {
   background-position: 50% 50% !important;
 }
-.p_bgr-x {
+.p_background-repeat--x {
   background-repeat: repeat-x !important;
 }
-.p_bgr-y {
+.p_background-repeat--y {
   background-repeat: repeat-y !important;
 }
-.p_bgr-space {
+.p_background-repeat--space {
   background-repeat: space !important;
 }
-.p_bgr-round {
+.p_background-repeat--round {
   background-repeat: round !important;
 }
-.p_bgr-no {
+.p_background-repeat--no {
   background-repeat: no-repeat !important;
 }
-.p_bgs-cover {
+.p_background-size--cover {
   background-size: cover !important;
 }
-.p_bgs-contain {
+.p_background-size--contain {
   background-size: contain !important;
 }
 
-.bgi {
-  background-image: var(--p_bgi, var(--bgi, initial)) !important;
+.background, .background-image {
+  background-image: var(--p_background-image, var(--background-image, initial)) !important;
 }
-.bgp {
-  background-position: var(--p_bgp, var(--bgp, initial)) !important;
+
+.background, .background-position {
+  background-position: var(--p_background-position, var(--background-position, initial)) !important;
 }
-.bgc {
-  background-color: var(--p_bgc, var(--bgc, initial)) !important;
+
+.background, .background-color {
+  background-color: var(--p_background-color, var(--background-color, initial)) !important;
 }
-.bgs {
-  background-size: var(--p_bgs, var(--bgs, initial)) !important;
+
+.background, .background-size {
+  background-size: var(--p_background-size, var(--background-size, initial)) !important;
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */

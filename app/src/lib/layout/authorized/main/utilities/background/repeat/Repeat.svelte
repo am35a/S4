@@ -36,8 +36,8 @@
             <b>Preview</b>
             <div class="d-grid g-3 p-3 bgc-positive br-md">
                 <div
-                    class="bgi bgc-negative-10 bgr{bgRepeatObj[bgRepeat]} bgs ar-16_9"
-                    style="--bgi: url(/images/logo.svg); --bgs: 10em auto"
+                    class="background-image bgc-negative-10 bgr{bgRepeatObj[bgRepeat]} background-size ar-16_9"
+                    style="--background-image: url(/images/logo.svg); --background-size: 10em auto"
                 ></div>
             </div>
         </div>
@@ -45,7 +45,7 @@
             <b>HTML</b>
             <Precode>
                 {
-`<div class="bgi bgr${bgRepeatObj[bgRepeat]}" style="--bgi: url(...)">
+`<div class="background-image bgr${bgRepeatObj[bgRepeat]}" style="--background-image: url(...)">
     // ...
 </div>
 `

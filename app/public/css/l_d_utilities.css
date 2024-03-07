@@ -123,232 +123,235 @@
 }
 
 /*  background section: background color of accent and extra palette contained in classes */
-.bga-scroll {
+.background-attachment--scroll {
   background-attachment: scroll !important;
 }
-.bga-fixed {
+.background-attachment--fixed {
   background-attachment: fixed !important;
 }
-.bga-local {
+.background-attachment--local {
   background-attachment: local !important;
 }
-.bgc-border {
+.background-clip--border {
   background-clip: border-box !important;
 }
-.bgc-padding {
+.background-clip--padding {
   background-clip: padding-box !important;
 }
-.bgc-content {
+.background-clip--content {
   background-clip: content-box !important;
 }
-.bgc-text {
+.background-clip--text {
   background-clip: text !important;
   color: transparent;
 }
-.bgo-border {
+.background-origin--border {
   background-origin: border-box !important;
 }
-.bgo-padding {
+.background-origin--padding {
   background-origin: padding-box !important;
 }
-.bgo-content {
+.background-origin--content {
   background-origin: content-box !important;
 }
-.bgc-positive {
+.background-color--positive {
   background-color: var(--positive-color) !important;
 }
-.bgc-negative {
+.background-color--negative {
   background-color: var(--negative-color) !important;
 }
-.bgc-positive-10 {
+.background-color-positive-10 {
   background-color: var(--positive-color-10) !important;
 }
-.bgc-positive-20 {
+.background-color-positive-20 {
   background-color: var(--positive-color-20) !important;
 }
-.bgc-positive-30 {
+.background-color-positive-30 {
   background-color: var(--positive-color-30) !important;
 }
-.bgc-positive-40 {
+.background-color-positive-40 {
   background-color: var(--positive-color-40) !important;
 }
-.bgc-positive-50 {
+.background-color-positive-50 {
   background-color: var(--positive-color-50) !important;
 }
-.bgc-positive-60 {
+.background-color-positive-60 {
   background-color: var(--positive-color-60) !important;
 }
-.bgc-positive-70 {
+.background-color-positive-70 {
   background-color: var(--positive-color-70) !important;
 }
-.bgc-positive-80 {
+.background-color-positive-80 {
   background-color: var(--positive-color-80) !important;
 }
-.bgc-positive-90 {
+.background-color-positive-90 {
   background-color: var(--positive-color-90) !important;
 }
-.bgc-negative-10 {
+.background-color-negative-10 {
   background-color: var(--negative-color-10) !important;
 }
-.bgc-negative-20 {
+.background-color-negative-20 {
   background-color: var(--negative-color-20) !important;
 }
-.bgc-negative-30 {
+.background-color-negative-30 {
   background-color: var(--negative-color-30) !important;
 }
-.bgc-negative-40 {
+.background-color-negative-40 {
   background-color: var(--negative-color-40) !important;
 }
-.bgc-negative-50 {
+.background-color-negative-50 {
   background-color: var(--negative-color-50) !important;
 }
-.bgc-negative-60 {
+.background-color-negative-60 {
   background-color: var(--negative-color-60) !important;
 }
-.bgc-negative-70 {
+.background-color-negative-70 {
   background-color: var(--negative-color-70) !important;
 }
-.bgc-negative-80 {
+.background-color-negative-80 {
   background-color: var(--negative-color-80) !important;
 }
-.bgc-negative-90 {
+.background-color-negative-90 {
   background-color: var(--negative-color-90) !important;
 }
-.bgc-primary {
+.background-color--primary {
   background-color: var(--primary-color) !important;
 }
-.bgc-primary-l {
+.background-color--primary-l {
   background-color: var(--primary-color-l) !important;
 }
-.bgc-primary-d {
+.background-color--primary-d {
   background-color: var(--primary-color-d) !important;
 }
-.bgc-primary-m {
+.background-color--primary-m {
   background-color: var(--primary-color-m) !important;
 }
-.bgc-secondary {
+.background-color--secondary {
   background-color: var(--secondary-color) !important;
 }
-.bgc-secondary-l {
+.background-color--secondary-l {
   background-color: var(--secondary-color-l) !important;
 }
-.bgc-secondary-d {
+.background-color--secondary-d {
   background-color: var(--secondary-color-d) !important;
 }
-.bgc-secondary-m {
+.background-color--secondary-m {
   background-color: var(--secondary-color-m) !important;
 }
-.bgc-info {
+.background-color--info {
   background-color: var(--info-color) !important;
 }
-.bgc-info-l {
+.background-color--info-l {
   background-color: var(--info-color-l) !important;
 }
-.bgc-info-d {
+.background-color--info-d {
   background-color: var(--info-color-d) !important;
 }
-.bgc-info-m {
+.background-color--info-m {
   background-color: var(--info-color-m) !important;
 }
-.bgc-success {
+.background-color--success {
   background-color: var(--success-color) !important;
 }
-.bgc-success-l {
+.background-color--success-l {
   background-color: var(--success-color-l) !important;
 }
-.bgc-success-d {
+.background-color--success-d {
   background-color: var(--success-color-d) !important;
 }
-.bgc-success-m {
+.background-color--success-m {
   background-color: var(--success-color-m) !important;
 }
-.bgc-warning {
+.background-color--warning {
   background-color: var(--warning-color) !important;
 }
-.bgc-warning-l {
+.background-color--warning-l {
   background-color: var(--warning-color-l) !important;
 }
-.bgc-warning-d {
+.background-color--warning-d {
   background-color: var(--warning-color-d) !important;
 }
-.bgc-warning-m {
+.background-color--warning-m {
   background-color: var(--warning-color-m) !important;
 }
-.bgc-error {
+.background-color--error {
   background-color: var(--error-color) !important;
 }
-.bgc-error-l {
+.background-color--error-l {
   background-color: var(--error-color-l) !important;
 }
-.bgc-error-d {
+.background-color--error-d {
   background-color: var(--error-color-d) !important;
 }
-.bgc-error-m {
+.background-color--error-m {
   background-color: var(--error-color-m) !important;
 }
-.bgc-transparent {
+.background-color--transparent {
   background-color: transparent !important;
 }
-.bgp-left {
+.background-position--left {
   background-position: 0% 50% !important;
 }
-.bgp-top-left, .bgp-left-top {
+.background-position--top-left, .background-position--left-top {
   background-position: 0% 0% !important;
 }
-.bgp-top {
+.background-position--top {
   background-position: 50% 0% !important;
 }
-.bgp-top-right, .bgp-right-top {
+.background-position--top-right, .background-position--right-top {
   background-position: 100% 0% !important;
 }
-.bgp-righ {
+.background-position-righ {
   background-position: 100% 50% !important;
 }
-.bgp-bottom-right, .bgp-right-bottom {
+.background-position--bottom-right, .background-position--right-bottom {
   background-position: 100% 100% !important;
 }
-.bgp-bottom {
+.background-position--bottom {
   background-position: 50% 100% !important;
 }
-.bgp-bottom-left, .bgp-left-bottom {
+.background-position--bottom-left, .background-position--left-bottom {
   background-position: 0% 100% !important;
 }
-.bgp-center {
+.background-position--center {
   background-position: 50% 50% !important;
 }
-.bgr-x {
+.background-repeat--x {
   background-repeat: repeat-x !important;
 }
-.bgr-y {
+.background-repeat--y {
   background-repeat: repeat-y !important;
 }
-.bgr-space {
+.background-repeat--space {
   background-repeat: space !important;
 }
-.bgr-round {
+.background-repeat--round {
   background-repeat: round !important;
 }
-.bgr-no {
+.background-repeat--no {
   background-repeat: no-repeat !important;
 }
-.bgs-cover {
+.background-size--cover {
   background-size: cover !important;
 }
-.bgs-contain {
+.background-size--contain {
   background-size: contain !important;
 }
 
-.bgi {
-  background-image: var(--bgi, var(--bgi, initial)) !important;
+.background, .background-image {
+  background-image: var(--background-image, var(--background-image, initial)) !important;
 }
-.bgp {
-  background-position: var(--bgp, var(--bgp, initial)) !important;
+
+.background, .background-position {
+  background-position: var(--background-position, var(--background-position, initial)) !important;
 }
-.bgc {
-  background-color: var(--bgc, var(--bgc, initial)) !important;
+
+.background, .background-color {
+  background-color: var(--background-color, var(--background-color, initial)) !important;
 }
-.bgs {
-  background-size: var(--bgs, var(--bgs, initial)) !important;
+
+.background, .background-size {
+  background-size: var(--background-size, var(--background-size, initial)) !important;
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */

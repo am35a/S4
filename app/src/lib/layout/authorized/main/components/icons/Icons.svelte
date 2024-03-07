@@ -46,7 +46,7 @@
 
         if (iconBgColor) {
             preCodeObj.classes += ` bgc`
-            preCodeObj.styles += ` --bgc:${iconBgColor};`
+            preCodeObj.styles += ` --background-color:${iconBgColor};`
         }
 
         if (iconColor) {
@@ -106,7 +106,7 @@
             <div class="d-grid g-3 p-3 bgc-positive br-md h" style="--h: 10em">
                 <Icon
                     class="{iconSize} m-auto {iconBgColor ? 'bgc' : ''} {iconColor ? 'c' : ''}"
-                    style="{iconBgColor ? `--bgc:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"
+                    style="{iconBgColor ? `--background-color:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"
                     name="ghost"
                 />
             </div>

@@ -9,78 +9,75 @@ $bgRepeat: (x: repeat-x, y: repeat-y, space: space, round: round, no: no-repeat)
     background section: background color of accent and extra palette contained in classes
 
 @mixin _background($orientation, $type)
-    .#{$orientation}#{$type}bg
-        &a
+    .#{$orientation}#{$type}background
+        &-attachment
             @each $item in $bgAttachment
-                &-#{$item}
+                &--#{$item}
                     background-attachment: $item !important
-        
-        &c
+        &-clip
             @each $item, $value in $bgClip
-                &-#{$item}
+                &--#{$item}
                     background-clip: $value !important
                     @if $value == text
                         color: transparent
-
-        &o
+        &-origin
             @each $item, $value in $bgOrigin
-                &-#{$item}
+                &--#{$item}
                     background-origin: $value !important
 
-        &c
+        &-color
             @each $item in $defaultColors
-                &-#{$item}
+                &--#{$item}
                     background-color: var(--#{$item}-color) !important
             @each $item in $defaultColors
                 @for $i from 1 through math.div(100, $defaultExtraColorsInterval) - 1
                     &#{'-' + $item + '-' + $i * $defaultExtraColorsInterval}
                         background-color: var(--#{$item}-color-#{$i * $defaultExtraColorsInterval}) !important
             @each $item in $accentColors
-                &-#{$item}
+                &--#{$item}
                     background-color: var(--#{$item}-color) !important
                 @each $pref in $accentExtraColorsPrefs
-                    &-#{$item + '-' + $pref}
+                    &--#{$item + '-' + $pref}
                         background-color: var(--#{$item}-color-#{$pref}) !important
-            &-transparent
+            &--transparent
                 background-color: transparent !important
         
-        &p
-            &-left
+        &-position
+            &--left
                 background-position: 0% 50% !important
-            &-top-left, &-left-top
+            &--top-left, &--left-top
                 background-position: 0% 0% !important
-            &-top
+            &--top
                 background-position: 50% 0% !important
-            &-top-right, &-right-top
+            &--top-right, &--right-top
                 background-position: 100% 0% !important
             &-righ
                 background-position: 100% 50% !important
-            &-bottom-right, &-right-bottom
+            &--bottom-right, &--right-bottom
                 background-position: 100% 100% !important
-            &-bottom
+            &--bottom
                 background-position: 50% 100% !important
-            &-bottom-left, &-left-bottom
+            &--bottom-left, &--left-bottom
                 background-position: 0% 100% !important
-            &-center
+            &--center
                 background-position: 50% 50% !important
 
-        &r
+        &-repeat
             @each $item, $value in $bgRepeat
-                &-#{$item}
+                &--#{$item}
                     background-repeat: $value !important
         
-        &s
-            &-cover
+        &-size
+            &--cover
                 background-size: cover !important
-            &-contain
+            &--contain
                 background-size: contain !important
         
-    .bg
-        &i
-            background-image: var(--#{$orientation}#{$type}bgi, var(--bgi, initial)) !important
-        &p
-            background-position: var(--#{$orientation}#{$type}bgp, var(--bgp, initial)) !important
-        &c
-            background-color: var(--#{$orientation}#{$type}bgc, var(--bgc, initial)) !important
-        &s
-            background-size: var(--#{$orientation}#{$type}bgs, var(--bgs, initial)) !important
+    .background, .background-image
+        background-image: var(--#{$orientation}#{$type}background-image, var(--background-image, initial)) !important
+    .background, .background-position
+        background-position: var(--#{$orientation}#{$type}background-position, var(--background-position, initial)) !important
+    .background, .background-color
+        background-color: var(--#{$orientation}#{$type}background-color, var(--background-color, initial)) !important
+    .background, .background-size
+        background-size: var(--#{$orientation}#{$type}background-size, var(--background-size, initial)) !important
