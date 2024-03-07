@@ -41,8 +41,16 @@
                     align-content: center
                     padding: 0 var(--size-2)
                     border-radius: var(--br-xs)
-                    // &:checked
-                    //     background-color: var(--negative-color-20)
+                    background-color: var(--positive-color)
+                &:not(:disabled) > option
+                    &:checked
+                        background-color: var(--negative-color-20)
+                    &:not(:checked):hover
+                        background-color: var(--negative-color-10)
+                &:disabled > option
+                    &:checked
+                        background-color: var(--negative-color-10)
+
             &:disabled
                 color: var(--negative-color-20)
                 cursor: not-allowed
