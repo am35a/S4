@@ -1,7 +1,7 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let containerTypesObj = {
+    let containerTypesObj={
         grid: 'd-grid gtc-2',
         flex: 'd-flex'
     },
@@ -23,9 +23,9 @@
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <button
                         class="btn"
-                        class:active = {containerType === value}
-                        on:click = {() => containerType = value}
-                        disabled = {containerType === value}
+                        class:active={containerType === value}
+                        on:click={() => containerType = value}
+                        disabled={containerType === value}
                     >{key}</button>
                 {/each}
             </div>
@@ -37,18 +37,18 @@
                     <button
                         class="btn"
                         class:active={alignSelf === value}
-                        on:click = {() => alignSelf = value}
-                        disabled = {alignSelf === value}
+                        on:click={() => alignSelf = value}
+                        disabled={alignSelf === value}
                     >align-self--{value}</button>
                 {/each}
             </div>
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="{containerType} g-3 p-3 bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
-                <div class="bgc-negative-10 px-2 py-1 align-self--{alignSelf}">one</div>
-                <div class="bgc-negative-10 px-2 py-1">two</div>
-                <div class="bgc-negative-10 px-2 py-1">three</div>
+            <div class="{containerType} g-3 p-3 background-color--positive br-md h" style="--h: 16em; --p_h: 24em;">
+                <div class="background-color--negative-10 px-2 py-1 align-self--{alignSelf}">one</div>
+                <div class="background-color--negative-10 px-2 py-1">two</div>
+                <div class="background-color--negative-10 px-2 py-1">three</div>
             </div>
         </div>
         <div class="d-grid g-4">

@@ -28,7 +28,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive br-md">
                 <div class="d-grid mb-2">
                     <label for="growContainerWidth" class="d-grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>
@@ -45,25 +45,25 @@
                         type="range"
                     >
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">one</div>
-                    <div class="bgc-negative-10 px-2 py-1">two</div>
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fg-1 background-color--negative-10 px-2 py-1">one</div>
+                    <div class="background-color--negative-10 px-2 py-1">two</div>
+                    <div class="fg-1 background-color--negative-10 px-2 py-1">three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="bgc-negative-10 px-2 py-1">one</div>
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">two</div>
-                    <div class="bgc-negative-10 px-2 py-1">three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="background-color--negative-10 px-2 py-1">one</div>
+                    <div class="fg-1 background-color--negative-10 px-2 py-1">two</div>
+                    <div class="background-color--negative-10 px-2 py-1">three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">one</div>
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">two</div>
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fg-1 background-color--negative-10 px-2 py-1">one</div>
+                    <div class="fg-1 background-color--negative-10 px-2 py-1">two</div>
+                    <div class="fg-1 background-color--negative-10 px-2 py-1">three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 1">one</div>
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 2">two</div>
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 3">three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1">one</div>
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 2">two</div>
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 3">three</div>
                 </div>
             </div>
         </div>

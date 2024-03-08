@@ -24,9 +24,9 @@
 <input
     bind:value
     on:change={handleChange}
-    class:frm = {true}
+    class:frm={true}
     {...$$restProps}
-    placeholder = {$$restProps.placeholder ? $$restProps.placeholder : $$restProps.type}
+    placeholder={$$restProps.placeholder ? $$restProps.placeholder : $$restProps.type}
 />
 
 <style lang="sass" global>

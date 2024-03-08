@@ -31,7 +31,7 @@ $bgRepeat: (x: repeat-x, y: repeat-y, space: space, round: round, no: no-repeat)
                     background-color: var(--#{$item}-color) !important
             @each $item in $defaultColors
                 @for $i from 1 through math.div(100, $defaultExtraColorsInterval) - 1
-                    &#{'-' + $item + '-' + $i * $defaultExtraColorsInterval}
+                    &--#{$item + '-' + $i * $defaultExtraColorsInterval}
                         background-color: var(--#{$item}-color-#{$i * $defaultExtraColorsInterval}) !important
             @each $item in $accentColors
                 &--#{$item}

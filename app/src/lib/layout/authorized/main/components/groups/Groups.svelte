@@ -3,7 +3,7 @@
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let groupObj: { [key: string]: any } = {
+    let groupObj: { [key: string]: any }={
         Horizontal: 'gaf-column' as string,
         Vertical: 'gaf-row' as string,
     }
@@ -25,14 +25,14 @@
                     <button
                         on:click={() => groupDirection = key}
                         class="btn btn{value}"
-                        class:active = {groupDirection === key}
+                        class:active={groupDirection === key}
                         type="button"
-                        disabled = {groupDirection === key}
+                        disabled={groupDirection === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap justify-content--evenly align-items--center p-4 bgc-positive br-md">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly align-items--center p-4 background-color--positive br-md">
             <Group class="{groupObj[groupDirection]}">
                 <input
                     class="frm"

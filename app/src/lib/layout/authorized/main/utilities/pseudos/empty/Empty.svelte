@@ -11,23 +11,23 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br-md">
+    <div class="d-grid g-2 p-2 background-color--positive br-md">
         <div class="d-flex g-2">
             <Button
                 class="btn-secondary {defaultEmptyClass ? 'active' : ''}"
-                on:click = {() => defaultEmptyClass = !defaultEmptyClass }
+                on:click={() => defaultEmptyClass = !defaultEmptyClass }
             >
                 {defaultEmptyClass ? 'remove' : 'add'} class
             </Button>
             <Button
                 class="btn-secondary {defaultEmptyContent ? 'active' : ''}"
-                on:click = {() => defaultEmptyContent = !defaultEmptyContent }
+                on:click={() => defaultEmptyContent = !defaultEmptyContent }
             >
                 {defaultEmptyContent ? 'remove' : 'add'} content
             </Button>
         </div>
         <div class="d-grid g-2 gtc-2">
-            <div class="bgc-negative-10 p-4 br-md {defaultEmptyClass ? 'empty-none' : ''}">{defaultEmptyContent ? 'content' : ''}</div>
-            <div class="bgc-negative-10 p-4 br-md {defaultEmptyClass ? 'empty-none' : ''}"></div>
+            <div class="background-color--negative-10 p-4 br-md {defaultEmptyClass ? 'empty-none' : ''}">{defaultEmptyContent ? 'content' : ''}</div>
+            <div class="background-color--negative-10 p-4 br-md {defaultEmptyClass ? 'empty-none' : ''}"></div>
         </div>
 </section>

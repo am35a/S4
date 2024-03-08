@@ -2,7 +2,7 @@
     import Alert from 'component/Alert.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let alertsObj = {
+    let alertsObj={
         variantsObj: {
             Default: '',
             Alt: 'alt',
@@ -63,9 +63,9 @@
                     <button
                         on:click={() => alertVariant = key}
                         class="btn btn-{value}"
-                        class:active = {alertVariant === key}
+                        class:active={alertVariant === key}
                         type="button"
-                        disabled = {alertVariant === key}
+                        disabled={alertVariant === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -77,9 +77,9 @@
                     <button
                         on:click={() => alertColor = key}
                         class="btn btn{value}"
-                        class:active = {alertColor === key}
+                        class:active={alertColor === key}
                         type="button"
-                        disabled = {alertColor === key}
+                        disabled={alertColor === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -91,16 +91,16 @@
                     <button
                         on:click={() => alertType = key}
                         class="btn btn{value}"
-                        class:active = {alertType === key}
+                        class:active={alertType === key}
                         type="button"
-                        disabled = {alertType === key}
+                        disabled={alertType === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-flex p-4 bgc-positive br-md">
+            <div class="d-flex p-4 background-color--positive br-md">
                 <Alert class="{alertClass} mb-0">
                     Click the close icon in the top right corner to destroy the block of alert message.
                 </Alert>

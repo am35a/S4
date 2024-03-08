@@ -1,7 +1,7 @@
 <script>
     import Precode from 'component/Precode.svelte'
     
-    let containerTypesObj = {
+    let containerTypesObj={
         grid: 'd-grid gtc-2',
         flex: 'd-flex fw-wrap'
     },
@@ -25,9 +25,9 @@
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <button
                         class="btn"
-                        class:active = {containerType === value}
-                        on:click = {() => containerType = value}
-                        disabled = {containerType === value}
+                        class:active={containerType === value}
+                        on:click={() => containerType = value}
+                        disabled={containerType === value}
                     >{key}</button>
                 {/each}
             </div>
@@ -38,36 +38,36 @@
                 {#each alignContentArr as value}
                     <button
                         class="btn"
-                        class:active = {alignContent === value}
-                        on:click = {() => alignContent = value}
-                        disabled = {alignContent === value}
+                        class:active={alignContent === value}
+                        on:click={() => alignContent = value}
+                        disabled={alignContent === value}
                     >align-content--{value}</button>
                 {/each}
             </div>
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="{containerType} g-3 p-3 align-content--{alignContent} bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
-                <div class="bgc-negative-10 px-2 py-1">one</div>
-                <div class="bgc-negative-10 px-2 py-1">two</div>
-                <div class="bgc-negative-10 px-2 py-1">three</div>
+            <div class="{containerType} g-3 p-3 align-content--{alignContent} background-color--positive br-md h" style="--h: 16em; --p_h: 24em;">
+                <div class="background-color--negative-10 px-2 py-1">one</div>
+                <div class="background-color--negative-10 px-2 py-1">two</div>
+                <div class="background-color--negative-10 px-2 py-1">three</div>
                 {#if containerType.includes('d-flex')}
-                    <div class="bgc-negative-10 px-2 py-1">four</div>
-                    <div class="bgc-negative-10 px-2 py-1">five</div>
-                    <div class="bgc-negative-10 px-2 py-1">six</div>
-                    <div class="bgc-negative-10 px-2 py-1">seven</div>
-                    <div class="bgc-negative-10 px-2 py-1">eight</div>
-                    <div class="bgc-negative-10 px-2 py-1">nine</div>
-                    <div class="bgc-negative-10 px-2 py-1">ten</div>
-                    <div class="bgc-negative-10 px-2 py-1">eleven</div>
-                    <div class="bgc-negative-10 px-2 py-1">twelve</div>
-                    <div class="bgc-negative-10 px-2 py-1">thirteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">fourteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">fifteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">sixteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">seventeen</div>
-                    <div class="bgc-negative-10 px-2 py-1">eighteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">nineteen</div>
+                    <div class="background-color--negative-10 px-2 py-1">four</div>
+                    <div class="background-color--negative-10 px-2 py-1">five</div>
+                    <div class="background-color--negative-10 px-2 py-1">six</div>
+                    <div class="background-color--negative-10 px-2 py-1">seven</div>
+                    <div class="background-color--negative-10 px-2 py-1">eight</div>
+                    <div class="background-color--negative-10 px-2 py-1">nine</div>
+                    <div class="background-color--negative-10 px-2 py-1">ten</div>
+                    <div class="background-color--negative-10 px-2 py-1">eleven</div>
+                    <div class="background-color--negative-10 px-2 py-1">twelve</div>
+                    <div class="background-color--negative-10 px-2 py-1">thirteen</div>
+                    <div class="background-color--negative-10 px-2 py-1">fourteen</div>
+                    <div class="background-color--negative-10 px-2 py-1">fifteen</div>
+                    <div class="background-color--negative-10 px-2 py-1">sixteen</div>
+                    <div class="background-color--negative-10 px-2 py-1">seventeen</div>
+                    <div class="background-color--negative-10 px-2 py-1">eighteen</div>
+                    <div class="background-color--negative-10 px-2 py-1">nineteen</div>
                 {/if}
             </div>
         </div>

@@ -44,7 +44,7 @@
     </Button>
     <div class="drp-content h-100">
         <div
-            class="d-grid g-2 w p-2 bgc-positive br-md border border-negative-30 bs-sm h-100 oy-auto align-content--start"
+            class="d-grid g-2 w p-2 background-color--positive br-md border border-negative-30 bs-sm h-100 oy-auto align-content--start"
             style="--w: 16em"
         >
             {#each items as item}

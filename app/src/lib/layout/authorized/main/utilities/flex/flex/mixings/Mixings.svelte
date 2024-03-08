@@ -22,7 +22,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive br-md">
                 <div class="d-grid mb-2">
                     <label for="mixContainerWidth" class="d-grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>
@@ -39,19 +39,19 @@
                         type="range"
                     >
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2 ox-hidden w" style="--w: {containerWidth}%">
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 1; --fxs: 1; --fxb: 25em;">two</div>
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 2; --fxs: 2; --fxb: 25em;">three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2 ox-hidden w" style="--w: {containerWidth}%">
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1; --fxs: 1; --fxb: 25em;">two</div>
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 2; --fxs: 2; --fxb: 25em;">three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2 w" style="--w: {containerWidth}%">
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 1; --fxb: 0; ">equal one</div>
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 1; --fxb: 0; ">equal two</div>
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 1; --fxb: 0; ">equal three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1; --fxb: 0; ">equal one</div>
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1; --fxb: 0; ">equal two</div>
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1; --fxb: 0; ">equal three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2 w" style="--w: {containerWidth}%">
-                    <div class="bgc-negative-10 px-2 py-1 w-100">w-100 one</div>
-                    <div class="bgc-negative-10 px-2 py-1 fx" style="--fxs: 0;">shrink-1 two</div>
-                    <div class="bgc-negative-10 px-2 py-1">simple three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
+                    <div class="background-color--negative-10 px-2 py-1 w-100">w-100 one</div>
+                    <div class="background-color--negative-10 px-2 py-1 fx" style="--fxs: 0;">shrink-1 two</div>
+                    <div class="background-color--negative-10 px-2 py-1">simple three</div>
                 </div>
             </div>
         </div>

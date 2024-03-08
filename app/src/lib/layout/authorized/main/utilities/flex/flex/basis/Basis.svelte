@@ -22,9 +22,9 @@
                 {#each flexBasisArr as values }
                     <button
                         class="btn"
-                        class:active = {flexBasis === values}
-                        on:click = {() => flexBasis = values}
-                        disabled = {flexBasis === values}
+                        class:active={flexBasis === values}
+                        on:click={() => flexBasis = values}
+                        disabled={flexBasis === values}
                     >fb-{values}</button>
                 {/each}
             </div>
@@ -40,7 +40,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive br-md">
                 <div class="d-grid mb-2">
                     <label for="basisContainerWidth" class="d-grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>
@@ -57,25 +57,25 @@
                         type="range"
                     >
                 </div>
-                    <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fb-{flexBasis} bgc-negative-10 px-2 py-1">fb-{flexBasis} one</div>
-                    <div class="bgc-negative-10 px-2 py-1">simple two</div>
-                    <div class="bgc-negative-10 px-2 py-1">simple three</div>
+                    <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fb-{flexBasis} background-color--negative-10 px-2 py-1">fb-{flexBasis} one</div>
+                    <div class="background-color--negative-10 px-2 py-1">simple two</div>
+                    <div class="background-color--negative-10 px-2 py-1">simple three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 100%;">100% one</div>
-                    <div class="bgc-negative-10 px-2 py-1">two</div>
-                    <div class="bgc-negative-10 px-2 py-1">three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 100%;">100% one</div>
+                    <div class="background-color--negative-10 px-2 py-1">two</div>
+                    <div class="background-color--negative-10 px-2 py-1">three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 100%;">equal one</div>
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 100%;">equal two</div>
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 100%;">equal three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 100%;">equal one</div>
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 100%;">equal two</div>
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 100%;">equal three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxb: 25%">fb 25% one</div>
-                    <div class="bgc-negative-10 px-2 py-1">simple two</div>
-                    <div class="bgc-negative-10 px-2 py-1">simple three</div>
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 25%">fb 25% one</div>
+                    <div class="background-color--negative-10 px-2 py-1">simple two</div>
+                    <div class="background-color--negative-10 px-2 py-1">simple three</div>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <section class="d-grid g-5">
     <h3 id="details">Details</h3>
     <div class="d-flex fw-wrap g-4">
-        <div class="d-grid p-4 g-4 bgc-positive br-lg align-content--start fx" style="--fxg: 1;">
+        <div class="d-grid p-4 g-4 background-color--positive br-lg align-content--start fx" style="--fxg: 1;">
             <details class="dtl">
                 <summary>
                     Expand block with this simple details tag.
@@ -42,7 +42,7 @@
                 </div>
             </details>
         </div>
-        <div class="d-grid p-4 g-4 bgc-positive br-lg align-content--start fx" style="--fxg: 1;">
+        <div class="d-grid p-4 g-4 background-color--positive br-lg align-content--start fx" style="--fxg: 1;">
             <details class="dtl dtl-primary">
                 <summary>
                     Expand block with this simple details tag.
@@ -123,7 +123,7 @@
                 </div>
             </details>
         </div>
-        <div class="d-grid p-4 g-4 bgc-positive br-lg align-content--start fx" style="--fxg: 1;">
+        <div class="d-grid p-4 g-4 background-color--positive br-lg align-content--start fx" style="--fxg: 1;">
             <details class="dtl dtl-alt-primary">
                 <summary>
                     Expand block with this simple details tag.
@@ -204,7 +204,7 @@
                 </div>
             </details>
         </div>
-        <div class="d-grid p-4 g-4 bgc-positive br-lg align-content--start fx" style="--fxg: 1;">
+        <div class="d-grid p-4 g-4 background-color--positive br-lg align-content--start fx" style="--fxg: 1;">
             <details class="dtl dtl-outline-primary">
                 <summary>
                     Expand block with this simple details tag.

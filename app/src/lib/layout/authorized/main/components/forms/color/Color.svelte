@@ -7,7 +7,7 @@
 <section>
     <h3 id="color">Color</h3>
     <div class="d-grid g-5">
-        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 bgc-positive br-md">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive br-md">
             <div class="d-grid gtc-2 g-3">
                 <b class="justify-self--end align-self--center">Default</b>
                 <div>

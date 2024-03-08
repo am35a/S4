@@ -2,13 +2,13 @@
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let groupObj = {
+    let groupObj={
         Horizontal: 'grp-h',
         Vertical: 'grp-v',
     }
     let groupVariant = 'Horizontal'
 
-    let buttonsObj = {
+    let buttonsObj={
         variantsObj: {
             Default: '',
             Alt: 'alt',
@@ -59,9 +59,9 @@
                     <button
                         on:click={() => buttonVariant = key}
                         class="btn btn-{value}"
-                        class:active = {buttonVariant === key}
+                        class:active={buttonVariant === key}
                         type="button"
-                        disabled = {buttonVariant === key}
+                        disabled={buttonVariant === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -73,9 +73,9 @@
                     <button
                         on:click={() => buttonColor = key}
                         class="btn btn{value}"
-                        class:active = {buttonColor === key}
+                        class:active={buttonColor === key}
                         type="button"
-                        disabled = {buttonColor === key}
+                        disabled={buttonColor === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -87,14 +87,14 @@
                     <button
                         on:click={() => groupVariant = key}
                         class="btn btn{value}"
-                        class:active = {groupVariant === key}
+                        class:active={groupVariant === key}
                         type="button"
-                        disabled = {groupVariant === key}
+                        disabled={groupVariant === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap justify-content--evenly align-items--center p-4 bgc-positive br-md">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly align-items--center p-4 background-color--positive br-md">
             <div class="{groupObj[groupVariant]}">
                 <Button class="{buttonClass}">Default</Button>
                 <Button class="{buttonClass} active">Active</Button>

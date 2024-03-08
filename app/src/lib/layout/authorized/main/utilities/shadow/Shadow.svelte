@@ -10,9 +10,9 @@
     <p>
         To add shadows to elements use <b>bs-...</b> classes. The <b>bs-none</b> class remove shadow.
     </p>
-    <div class="d-grid g-3 gtc-2 mb-4 p-3 bgc-positive br-md o-hidden">
+    <div class="d-grid g-3 gtc-2 mb-4 p-3 background-color--positive br-md o-hidden">
         {#each shadowSizesArr as size}
-            <div class="bgc-positive p-2 rounded bs-{size}">
+            <div class="background-color--positive p-2 rounded bs-{size}">
                 bs-{size}
             </div>
         {/each}
@@ -25,7 +25,7 @@
             <Precode class="br-top-0">
                 {#each shadowSizesArr as size}
                     {
-`<div class="bgc-positive p-2 bs-${size}">...</div>
+`<div class="background-color--positive p-2 bs-${size}">...</div>
 `
                     }
                 {/each}

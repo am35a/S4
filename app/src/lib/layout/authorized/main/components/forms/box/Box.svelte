@@ -1,7 +1,7 @@
 <script lang="ts">
     import Input from 'component/Input.svelte'
 
-    let fontSizesObj: { [key: string]: any } = {
+    let fontSizesObj: { [key: string]: any }={
         Default: '' as string,
         xxs: 'fs-xxs' as string,
         xs: 'fs-xs' as string,
@@ -14,7 +14,7 @@
     }
     let fontSize: string = 'Default'
 
-    let inputsObj = {
+    let inputsObj={
         typeObj: {
             Radio: 'radio' as string,
             Checkbox: 'checkbox' as string
@@ -42,14 +42,14 @@
                     <button
                         on:click={() => inputType = key}
                         class="btn btn{value}"
-                        class:active = {inputType === key}
+                        class:active={inputType === key}
                         type="button"
-                        disabled = {inputType === key}
+                        disabled={inputType === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 bgc-positive br-md">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive br-md">
             <div class="d-grid gtc-2 g-3">
                 <b class="justify-self--end align-self--center">Default</b>
                 <div>

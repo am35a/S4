@@ -17,17 +17,17 @@
                 {#each displayFlexArr as values }
                     <button
                         class="btn"
-                        class:active = {displayFlex === values}
-                        on:click = {() => displayFlex = values}
-                        disabled = {displayFlex === values}
+                        class:active={displayFlex === values}
+                        on:click={() => displayFlex = values}
+                        disabled={displayFlex === values}
                     >d-{values}</button>
                 {/each}
             </div>
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="p-3 bgc-positive br-md">
-                <div class="d-{displayFlex} bgc-negative-10 p-2">{displayFlex} container</div>
+            <div class="p-3 background-color--positive br-md">
+                <div class="d-{displayFlex} background-color--negative-10 p-2">{displayFlex} container</div>
             </div>
         </div>
         <div class="d-grid g-4">

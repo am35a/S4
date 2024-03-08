@@ -12,20 +12,20 @@
     <p>
         From CSS 2 the legasy display values welcome still here and set control element of their both side. Equared to two modern two words value: "inline-flex" = "inline flex" and ect.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br-md">
+    <div class="d-grid g-2 p-2 background-color--positive br-md">
         <div class="d-flex g-2">
             {#each displayLegacyArr as values }
                 <Button
                     class="btn-secondary {displayLegacy === values ? 'active' : ''}"
-                    on:click = {() => displayLegacy = values}
-                    disabled = {displayLegacy === values}
+                    on:click={() => displayLegacy = values}
+                    disabled={displayLegacy === values}
                 >d-{values}</Button>
             {/each}
         </div>
         <div class="d-grid g-2">
             <div class="d-{displayLegacy}">
-                <span class="bgc-negative-10 p-4">span</span>
-                <div class="bgc-negative-10 p-4">div</div>
+                <span class="background-color--negative-10 p-4">span</span>
+                <div class="background-color--negative-10 p-4">div</div>
             </div>
         </div>
     </div>

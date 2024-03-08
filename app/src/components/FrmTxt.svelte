@@ -13,7 +13,7 @@
 {/if}
 <input
     id={UID}
-    class:frm = {true}
+    class:frm={true}
     {...$$restProps}
     bind:value
     type="text"

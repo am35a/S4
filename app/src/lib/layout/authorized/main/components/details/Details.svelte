@@ -3,7 +3,7 @@
     import Details from 'component/Details.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let detailsObj = {
+    let detailsObj={
         variantsObj: {
             Default: '',
             Alt: 'alt',
@@ -67,9 +67,9 @@
                     <button
                         on:click={() => detailsVariant = key}
                         class="btn btn-{value}"
-                        class:active = {detailsVariant === key}
+                        class:active={detailsVariant === key}
                         type="button"
-                        disabled = {detailsVariant === key}
+                        disabled={detailsVariant === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -80,9 +80,9 @@
                         <button
                             on:click={() => detailsColor = key}
                             class="btn btn{value}"
-                            class:active = {detailsColor === key}
+                            class:active={detailsColor === key}
                             type="button"
-                            disabled = {detailsColor === key}
+                            disabled={detailsColor === key}
                         >{key}</button>
                     {/each}
                 </div>
@@ -94,16 +94,16 @@
                         <button
                             on:click={() => detailsState = key}
                             class="btn btn{value}"
-                            class:active = {detailsState === key}
+                            class:active={detailsState === key}
                             type="button"
-                            disabled = {detailsState === key}
+                            disabled={detailsState === key}
                         >{key}</button>
                     {/each}
                 </div>
             </div>
             <div class="d-grid g-4">
                 <b>Preview</b>
-                <div class="d-grid p-4 bgc-positive br-md">
+                <div class="d-grid p-4 background-color--positive br-md">
                     <Details class="{detailsClass} mb-0" open={detailsObj.stateObj[detailsState]}>
                         <svelte:fragment slot="title">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -118,9 +118,9 @@
             </div>
             <div class="d-grid g-4">
                 <b>Custom</b>
-                <div class="d-grid p-4 bgc-positive br-md">
-                    <Details class="bgc-negative-10" open>
-                        <summary class="px-2 py-1 justify-content--start bgc-transparent" slot="summary">
+                <div class="d-grid p-4 background-color--positive br-md">
+                    <Details class="background-color--negative-10" open>
+                        <summary class="px-2 py-1 justify-content--start background-color--transparent" slot="summary">
                             <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
                             <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
                             <div class="truncate fw-600">
@@ -153,8 +153,8 @@
 </Details>
 
 // custom uses
-<Details class="bgc-negative-10" open>
-    <summary class="px-2 py-1 justify-content--start bgc-transparent" slot="summary">
+<Details class="background-color--negative-10" open>
+    <summary class="px-2 py-1 justify-content--start background-color--transparent" slot="summary">
         <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
         <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
         <div class="truncate fw-600">
@@ -196,7 +196,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </svelte:fragment>
             <svelte:fragment slot="body">
-                <div class="bgc-positive- m-1-">
+                <div class="background-color--positive- m-1-">
                     <hr class="mx-2 border-secondary">
                     <div class="p-4">
                         Eligendi quibusdam ut labore ex eius? Corrupti voluptates dicta ducimus mollitia. Reprehenderit debitis reiciendis, facere voluptatum odio neque perspiciatis laboriosam ullam laudantium repellat, qui quod sit alias voluptas impedit illum.
@@ -209,7 +209,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </svelte:fragment>
             <svelte:fragment slot="body">
-                <div class="bgc-positive- m-1-">
+                <div class="background-color--positive- m-1-">
                     <hr class="mx-2 border-secondary">
                     <div class="p-4">
                         Eligendi quibusdam ut labore ex eius? Corrupti voluptates dicta ducimus mollitia. Reprehenderit debitis reiciendis, facere voluptatum odio neque perspiciatis laboriosam ullam laudantium repellat, qui quod sit alias voluptas impedit illum.

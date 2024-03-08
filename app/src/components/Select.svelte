@@ -3,9 +3,9 @@
 </script>
 
 <select
-    class:frm = {true}
+    class:frm={true}
     {...$$restProps}
-    placeholder = {$$restProps.placeholder ? $$restProps.placeholder : `Select the ${$$restProps.name}`}
+    placeholder={$$restProps.placeholder ? $$restProps.placeholder : `Select the ${$$restProps.name}`}
 >
     <slot></slot>
 </select>

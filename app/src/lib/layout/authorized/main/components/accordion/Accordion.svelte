@@ -24,7 +24,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-flex p-4 bgc-positive br-md">
+            <div class="d-flex p-4 background-color--positive br-md">
                 <Accordion class="{customClasses}">
                     {#each Array(3) as _, i}
                         <Details>

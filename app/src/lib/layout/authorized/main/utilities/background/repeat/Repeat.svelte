@@ -1,7 +1,7 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let bgRepeatObj = {
+    let bgRepeatObj={
             'default': '',
             'repeat-x': '-x',
             'repeat-y': '-y',
@@ -15,7 +15,7 @@
 <section>
     <h3 id="backgroundRepeat">Repeat</h3>
     <p>
-        Add the <b>bgr{Object.values(bgRepeatObj).slice(1).join('/')}</b> classes to container to work with background-position.
+        Add the <b>background-repeat{Object.values(bgRepeatObj).slice(1).join('/')}</b> classes to container to work with background-position.
     </p>
     <div class="d-grid g-5">
         <div class="d-grid g-4">
@@ -25,18 +25,18 @@
                     <button
                         on:click={() => bgRepeat = key}
                         class="btn {value}"
-                        class:active = {bgRepeat === key}
+                        class:active={bgRepeat === key}
                         type="button"
-                        disabled = {bgRepeat === key}
+                        disabled={bgRepeat === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive br-md">
                 <div
-                    class="background-image bgc-negative-10 bgr{bgRepeatObj[bgRepeat]} background-size ar-16_9"
+                    class="background-image background-color--negative-10 background-repeat{bgRepeatObj[bgRepeat]} background-size ar-16_9"
                     style="--background-image: url(/images/logo.svg); --background-size: 10em auto"
                 ></div>
             </div>
@@ -45,7 +45,7 @@
             <b>HTML</b>
             <Precode>
                 {
-`<div class="background-image bgr${bgRepeatObj[bgRepeat]}" style="--background-image: url(...)">
+`<div class="background-image background-repeat${bgRepeatObj[bgRepeat]}" style="--background-image: url(...)">
     // ...
 </div>
 `

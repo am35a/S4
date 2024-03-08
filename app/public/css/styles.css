@@ -220,10 +220,10 @@
     color: var(--body-c);
   }
   [theme] body {
-    background-color: var(--body-bgc);
+    background-color: var(--body-background-color);
   }
   html[theme] {
-    background-color: var(--html-bgc);
+    background-color: var(--html-background-color);
   }
   [theme] {
     --size-0: 0;
@@ -331,8 +331,8 @@
     --lightness-offset: 0.15;
     --chroma: 0.2;
     --alfa: 0.25;
-    --html-bgc: var(--negative-color);
-    --body-bgc: var(--positive-color-90);
+    --html-background-color: var(--negative-color);
+    --body-background-color: var(--positive-color-90);
     --body-c: var(--negative-color-90);
     --bsc: var(--negative-color-10);
   }
@@ -353,8 +353,8 @@
     --success-hue: 145;
     --warning-hue: 85;
     --error-hue: 25;
-    --html-bgc: var(--negative-color);
-    --body-bgc: var(--positive-color-90);
+    --html-background-color: var(--negative-color);
+    --body-background-color: var(--positive-color-90);
     --body-c: var(--negative-color-90);
     --bsc: var(--positive-color-10);
   }

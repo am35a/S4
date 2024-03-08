@@ -1,5 +1,5 @@
 <script>
-    let fontSizesObj = {
+    let fontSizesObj={
         Default: '',
         xxs: 'fs-xxs',
         xs: 'fs-xs',
@@ -12,7 +12,7 @@
     }
     let fontSize = 'Default'
 
-    let inputsObj = {
+    let inputsObj={
         variantsObj: {
             Default: '',
             Alt: 'alt',
@@ -63,9 +63,9 @@
                     <button
                         on:click={() => inputVariant = key}
                         class="btn btn-{value}"
-                        class:active = {inputVariant === key}
+                        class:active={inputVariant === key}
                         type="button"
-                        disabled = {inputVariant === key}
+                        disabled={inputVariant === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -77,9 +77,9 @@
                     <button
                         on:click={() => inputColor = key}
                         class="btn btn{value}"
-                        class:active = {inputColor === key}
+                        class:active={inputColor === key}
                         type="button"
-                        disabled = {inputColor === key}
+                        disabled={inputColor === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -91,9 +91,9 @@
                     <button
                         on:click={() => fontSize = key}
                         class="btn {value}"
-                        class:active = {fontSize === key}
+                        class:active={fontSize === key}
                         type="button"
-                        disabled = {fontSize === key}
+                        disabled={fontSize === key}
                     >{key}</button>
                 {/each}
             </div>

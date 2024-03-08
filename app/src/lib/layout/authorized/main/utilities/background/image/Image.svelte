@@ -3,7 +3,7 @@
 </script>
 
 <section>
-    <h3 id="backgroundImage">Image</h3>
+    <h3 id="image">Image</h3>
     <p>
         Add the <b>background-image</b> class to container before work with background-image and use the <b>--background-image</b> variable to control the property.
     </p>
@@ -15,7 +15,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-2 bgc-positive br-md">
+            <div class="d-grid g-3 p-2 background-color--positive br-md">
                 <div class="background-image p-8" style="--background-image: url(/images/logo.svg)"></div>
             </div>
         </div>
@@ -23,7 +23,15 @@
             <b>HTML</b>
             <Precode>
                 {
-`<div class="background-image" style="--background-image: url(...)"></div>
+`<div
+    class="background-image"
+    style="--background-image: url(...)"
+> //... </div>
+// or
+<div
+    class="background"
+    style="--background-image: url(...)"
+>
 `
                 }
             </Precode>

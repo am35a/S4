@@ -6,7 +6,7 @@
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
 
-    let templateObj = {
+    let templateObj={
         rows: 4,
         columns: 4,
         items: 4
@@ -26,7 +26,7 @@
     <Rows />
  
     <!-- <h4 id="template">Template playground</h4> -->
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md d-none">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md d-none">
         <!-- <input class="h-100" type="range" name="containerHeight" orient="vertical" min="0" max="100" step="1"> -->
 
         <div></div>
@@ -50,9 +50,9 @@
             <!-- orient="vertical" -->
         </div>
         <div>
-            <div class="d-grid gtc-{templateObj.columns} g-4 bgc-negative-10 p-4">
+            <div class="d-grid gtc-{templateObj.columns} g-4 background-color--negative-10 p-4">
                 {#each Array(templateObj.items) as _, i}
-                    <div class="bgc-negative-10 px-2 py-1">{i + 1}</div>
+                    <div class="background-color--negative-10 px-2 py-1">{i + 1}</div>
                 {/each}
             </div>
         </div>

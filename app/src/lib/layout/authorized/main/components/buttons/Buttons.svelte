@@ -3,7 +3,7 @@
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let fontSizesObj = {
+    let fontSizesObj={
         Default: '',
         xxs: 'fs-xxs',
         xs: 'fs-xs',
@@ -16,7 +16,7 @@
     }
     let fontSize = 'Default'
 
-    let buttonsObj = {
+    let buttonsObj={
         typeObj: {
             Default: '',
             Submit: 'submit',
@@ -84,9 +84,9 @@
                     <button
                         on:click={() => buttonVariant = key}
                         class="btn btn-{value}"
-                        class:active = {buttonVariant === key}
+                        class:active={buttonVariant === key}
                         type="button"
-                        disabled = {buttonVariant === key}
+                        disabled={buttonVariant === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -98,9 +98,9 @@
                     <button
                         on:click={() => buttonColor = key}
                         class="btn btn{value}"
-                        class:active = {buttonColor === key}
+                        class:active={buttonColor === key}
                         type="button"
-                        disabled = {buttonColor === key}
+                        disabled={buttonColor === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -112,7 +112,7 @@
                     <Button
                         class="{value === 2 ? 'btn-ico' : ''} {buttonIcon === key ? 'active' : ''}"
                         on:click={() => buttonIcon = key}
-                        disabled = {buttonIcon === key}
+                        disabled={buttonIcon === key}
                     >
                         {#if value}
                             <Icon name="ghost"/>
@@ -131,9 +131,9 @@
                     <button
                         on:click={() => fontSize = key}
                         class="btn {value}"
-                        class:active = {fontSize === key}
+                        class:active={fontSize === key}
                         type="button"
-                        disabled = {fontSize === key}
+                        disabled={fontSize === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -145,14 +145,14 @@
                     <button
                         on:click={() => buttonType = key}
                         class="btn btn{value}"
-                        class:active = {buttonType === key}
+                        class:active={buttonType === key}
                         type="button"
-                        disabled = {buttonType === key}
+                        disabled={buttonType === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 bgc-positive br-md">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive br-md">
             <div class="d-grid gtc-2 g-3">
                 <b class="justify-self--end align-self--center">Default</b>
                 <div>

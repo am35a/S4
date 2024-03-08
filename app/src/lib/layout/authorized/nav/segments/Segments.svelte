@@ -7,7 +7,7 @@
 </script>
 
 <div
-    class:segments = {true}
+    class:segments={true}
     {...$$restProps}
 >
     <div class="drpdwn-hover d-grid g-2">

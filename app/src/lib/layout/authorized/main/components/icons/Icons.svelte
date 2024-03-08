@@ -4,7 +4,7 @@
     import Button from 'component/Button.svelte'
     import Input from 'component/Input.svelte'
 
-    let iconSizeObj = {
+    let iconSizeObj={
         'none': '',
         'small xx': 'fs-xxs',
         'small x': 'fs-xs',
@@ -31,7 +31,7 @@
         }
     }
 
-    let preCodeObj = {
+    let preCodeObj={
         classes: '',
         styles: ''
     }
@@ -45,7 +45,7 @@
             preCodeObj.classes += ` ${iconSize}`
 
         if (iconBgColor) {
-            preCodeObj.classes += ` bgc`
+            preCodeObj.classes += ` background-color`
             preCodeObj.styles += ` --background-color:${iconBgColor};`
         }
 
@@ -62,11 +62,11 @@
         <p>
             Lightweight <Icon /> responsive vector icons with cache available.
             The  icon sizes directly depend on the font size and the container in which the icon is placed.
-            Colors are changed in two ways - using the <b>bgc-...</b> or <b>c-...</b> classes.
+            Colors are changed in two ways - using the <b>background-color--...</b> or <b>c-...</b> classes.
         </p>
         <div class="alert alert-warning justify-self--start">
             <span class="ico fs-xl" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
-            Pay attention! The <b>bgc-...</b> and <b>c-...</b> are incompatible in one case.
+            Pay attention! The <b>background-color--...</b> and <b>c-...</b> are incompatible in one case.
         </div>
 
         <div class="d-grid g-4">
@@ -95,7 +95,7 @@
                 {#each Object.entries(iconSizeObj) as [key, value]}
                     <Button
                         class={iconSize === value ? 'active' : ''}
-                        on:click = {() => iconSize = value}
+                        on:click={() => iconSize = value}
                         disabled={iconSize === value}
                     >{key}</Button>
                 {/each}
@@ -103,9 +103,9 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md h" style="--h: 10em">
+            <div class="d-grid g-3 p-3 background-color--positive br-md h" style="--h: 10em">
                 <Icon
-                    class="{iconSize} m-auto {iconBgColor ? 'bgc' : ''} {iconColor ? 'c' : ''}"
+                    class="{iconSize} m-auto {iconBgColor ? 'background-color' : ''} {iconColor ? 'c' : ''}"
                     style="{iconBgColor ? `--background-color:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"
                     name="ghost"
                 />

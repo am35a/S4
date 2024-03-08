@@ -1,7 +1,7 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let containerTypeObj = {
+    let containerTypeObj={
         'grid': 'd-grid',
         'flex': 'd-flex'
     }
@@ -22,8 +22,8 @@
                 {#each Object.entries(containerTypeObj) as [key, value]}
                     <button
                         class="btn"
-                        class:active = {containerType === value}
-                        on:click = {() => containerType = value}
+                        class:active={containerType === value}
+                        on:click={() => containerType = value}
                         disabled={containerType === value}
                     >{key}</button>
                 {/each}
@@ -31,12 +31,12 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive br-md">
                 {#each justifyContentArr as item }
-                    <div class="{containerType} g-2 bgc-negative-10 p-2 justify-content--{item}">
-                        <div class="bgc-negative-10 px-2 py-1">one</div>
-                        <div class="bgc-negative-10 px-2 py-1">two</div>
-                        <div class="bgc-negative-10 px-2 py-1">three</div>
+                    <div class="{containerType} g-2 background-color--negative-10 p-2 justify-content--{item}">
+                        <div class="background-color--negative-10 px-2 py-1">one</div>
+                        <div class="background-color--negative-10 px-2 py-1">two</div>
+                        <div class="background-color--negative-10 px-2 py-1">three</div>
                     </div>
                 {/each}
             </div>

@@ -1,14 +1,15 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let bgOriginArr = ['border', 'padding', 'content']
-    let containerClasses = ''
+    let originsArr = ['border', 'padding', 'content'],
+        containerClasses = ''
 </script>
 
 <section>
-    <h3 id="backgroundOrigin">Origin</h3>
+    <h3 id="origin">Origin</h3>
     <p>
-        Change the background`s origin from the border start, inside the border, or inside the padding by the classes <b>background-attachment--{bgOriginArr.join('/')}</b>.
+        Change the background`s origin from the border start, inside the border, or inside the padding
+        by the classes <b>background-origin--{originsArr.join('/')}</b>.
     </p>
     <div class="d-grid g-5">
         <div class="d-grid g-4">
@@ -16,7 +17,7 @@
             <div class="d-grid">
                 <input
                     class="frm"
-                    bind:value={containerClasses}
+                    bind:value={containerClasses} 
                     type="text"
                     placeholder="Type utility classes to customizing the container"
                 >
@@ -27,10 +28,10 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
-                {#each bgOriginArr as origin}
+            <div class="d-grid g-3 p-3 background-color--positive br-md">
+                {#each originsArr as origin}
                     <div
-                        class="p-4 fs-xxxl fw-700 background-image bgc-negative-10 background-origin--{origin} {containerClasses}"
+                        class="p-4 fs-xxxl fw-700 background-image background-color--negative-10 background-origin--{origin} {containerClasses}"
                         style="--background-image: url(/images/logo.svg); border: 1em dashed;"
                     >Lorem ipsum dolor sit amet.</div>
                 {/each}
@@ -39,11 +40,12 @@
         <div class="d-grid g-4">
             <b>HTML</b>
             <Precode>
-                {#each bgOriginArr as origin}
+                {#each originsArr as origin}
                     {
-`<div class="background-image background-origin--${origin} ${containerClasses}" style="--background-image: url(...)">
-    // ...
-</div>
+`<div
+    class="background-image background-origin--${origin} ${containerClasses}"
+    style="--background-image: url(...)"
+> // ... </div>
 `
                     }
                 {/each}

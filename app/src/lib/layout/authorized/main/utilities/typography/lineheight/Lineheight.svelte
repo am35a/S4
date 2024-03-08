@@ -13,13 +13,13 @@
         To change the <b>line-height</b> property, use the <b>lh-0/1/unset/normal</b> classes.
         For necessary, able set a custom size variable <b>--lh</b> in the styles for the <b>lh</b> class.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md">
         <div class="d-flex  fw-wrap g-2">
             {#each lineHeightArr as value}
                 <Button
                     class="btn-secondary {lineHeight === value ? 'active' : ''}"
-                    on:click = {() => lineHeight = value}
-                    disabled = {lineHeight === value}
+                    on:click={() => lineHeight = value}
+                    disabled={lineHeight === value}
                 >lh-{value}</Button>
             {/each}
         </div>

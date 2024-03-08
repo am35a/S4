@@ -16,10 +16,10 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid gtc-3 g-3 p-2 bgc-positive br-md">
+            <div class="d-grid gtc-3 g-3 p-2 background-color--positive br-md">
                 {#each bgPositionsArr as position }
                     <div
-                        class="background-image bgc-negative-10 background-position-{position} background-size h"
+                        class="background-image background-color--negative-10 background-position-{position} background-size h"
                         style="--background-image: url(/images/logo.svg); --background-size: 4em auto; --h: 6em"
                     ></div>
                 {/each}

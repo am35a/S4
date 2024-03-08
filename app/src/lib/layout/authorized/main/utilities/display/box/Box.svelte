@@ -11,17 +11,17 @@
     <p>
         Using a d-none class make an element as removed from DOM tree.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br-md">
+    <div class="d-grid g-2 p-2 background-color--positive br-md">
         <div class="d-flex g-2">
             <Button
                 class="btn-secondary {displayNone ? 'active' : ''}"
-                on:click = {() => displayNone = !displayNone}
+                on:click={() => displayNone = !displayNone}
             >d-none {displayNone ? 'on' : 'off'}</Button>
         </div>
         <div class="d-grid g-2">
             <div class="{displayNone ? 'd-none' : 'd-block'}">
-                <span class="bgc-negative-10 p-4">span</span>
-                <div class="bgc-negative-10 p-4">div</div>
+                <span class="background-color--negative-10 p-4">span</span>
+                <div class="background-color--negative-10 p-4">div</div>
             </div>
         </div>
     </div>

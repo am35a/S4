@@ -22,8 +22,8 @@
                     <button
                         class="btn"
                         class:active ={flexWrap === values}
-                        on:click = {() => flexWrap = values}
-                        disabled = {flexWrap === values}
+                        on:click={() => flexWrap = values}
+                        disabled={flexWrap === values}
                     >fw-{values}</button>
                 {/each}
             </div>
@@ -33,21 +33,21 @@
             <div class="d-inline-flex fw-wrap g-3">
                 <button
                     class="btn"
-                    class:active = {isCellShrinked}
-                    on:click = {() => isCellShrinked = !isCellShrinked}
-                    disabled = {isCellShrinked}
+                    class:active={isCellShrinked}
+                    on:click={() => isCellShrinked = !isCellShrinked}
+                    disabled={isCellShrinked}
                 >fxs-0</button>
                 <button
                     class="btn"
-                    class:active = {!isCellShrinked}
-                    on:click = {() => isCellShrinked = !isCellShrinked}
-                    disabled = {!isCellShrinked}
+                    class:active={!isCellShrinked}
+                    on:click={() => isCellShrinked = !isCellShrinked}
+                    disabled={!isCellShrinked}
                 >ws-nowrap</button>
             </div>
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive br-md">
                 <div class="d-grid mb-2">
                     <label for="growContainerWidth" class="d-grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>
@@ -65,13 +65,13 @@
                     >
                 </div>
                 <div
-                    class="d-flex fw-{flexWrap} g-2 p-2 bgc-negative-10 ox-hidden w"
+                    class="d-flex fw-{flexWrap} g-2 p-2 background-color--negative-10 ox-hidden w"
                     class:ws-nowrap={!isCellShrinked}
                     style="--w: {containerWidth}%"
                 >
                     {#each cellNamesArr as name }
                         <div
-                            class="bgc-negative-10 px-2 py-1"
+                            class="background-color--negative-10 px-2 py-1"
                             class:fxs-0={isCellShrinked}
                         >{name}</div>
                     {/each}

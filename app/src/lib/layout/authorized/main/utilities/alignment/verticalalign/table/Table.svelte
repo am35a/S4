@@ -1,7 +1,7 @@
 <script lang="ts">
     import Precode from 'component/Precode.svelte'
 
-    let verticalAlignObj = {
+    let verticalAlignObj={
             'Baseline': 'baseline',
             'Top': 'top',
             'Middle': 'middle',
@@ -18,11 +18,11 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive br-md">
                 <table class="h" style="--h: 6em">
                     <tr>
                         {#each Object.entries(verticalAlignObj) as [key, value]}
-                            <td class="bgc-negative-10 vertical-align--{value}">{key}</td>
+                            <td class="background-color--negative-10 vertical-align--{value}">{key}</td>
                         {/each}
                     </tr>
                 </table>

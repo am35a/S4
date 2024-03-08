@@ -16,7 +16,7 @@
 </script>
 
 <section
-    class="d-grid g-2 p-2 bgc-positive br-md bs-xs border border-negative-30 m-auto w"
+    class="d-grid g-2 p-2 background-color--positive br-md bs-xs border border-negative-30 m-auto w"
     style="--w: 18em"
 >
     <div class="d-grid g-1">

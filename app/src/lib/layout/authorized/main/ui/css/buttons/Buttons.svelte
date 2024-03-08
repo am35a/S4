@@ -1,6 +1,6 @@
 <script lang="ts">
     let buttonVariantArr: string[] = ['', 'alt-', 'outline-']
-    // let buttonTypesObj = {
+    // let buttonTypesObj={
     //     default: '',
     //     mute: 'mute',
     //     outline: '-d'
@@ -17,7 +17,7 @@
 
     <h3 id="buttons">Buttons</h3>
 
-    <div class="d-flex fw-wrap g-4 justify-content--evenly align-items--center p-4 bgc-positive br-lg fx" style="--fxg: 1;">
+    <div class="d-flex fw-wrap g-4 justify-content--evenly align-items--center p-4 background-color--positive br-lg fx" style="--fxg: 1;">
         <p>
             All button sizes, borders, corners radius depend on the font size. Don't think the S4 only has only seven sizes, there are much. Make free your design desire and try to place one size element into another size - it's magic! Try playing with the buttons.
         </p>
@@ -28,8 +28,8 @@
             {#each buttonSizeArr as values }
                 <button
                     class="btn btn-primary btn-ico {buttonBorder} {values} {buttonSize === values ? 'active' : ''}"
-                    on:click = {() => buttonSize = values}
-                    disabled = {buttonSize === values}
+                    on:click={() => buttonSize = values}
+                    disabled={buttonSize === values}
                 ><span class="ico" style="--ico-image: url(/icons/empty.svg);">&nbsp;</span></button>
             {/each}
         </div>
@@ -41,7 +41,7 @@
                 <button
                     class="btn btn-primary btn-ico {buttonSize} {values} {buttonBorder === values ? 'active' : ''}"
                     on:click={() => buttonBorder = values}
-                    disabled = {buttonBorder === values}
+                    disabled={buttonBorder === values}
                 ><span class="ico" style="--ico-image: url(/icons/empty.svg);">&nbsp;</span></button>
             {/each}
         </div>
@@ -49,7 +49,7 @@
 
     <div class="d-grid g-4">
 
-        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 bgc-positive br-lg">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive br-lg">
             <div class="d-grid g-3">
                 <button class="btn {buttonBorder} {buttonSize}" type="button">Default</button>
                 <button class="btn {buttonBorder} {buttonSize} active" type="button">Active</button>
@@ -71,7 +71,7 @@
         </div>
 
         {#each buttonVariantArr as variant}
-            <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 bgc-positive br-lg">
+            <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive br-lg">
                 <div class="d-grid g-3">
                     <button class="btn btn-{variant}primary {buttonBorder} {buttonSize}" type="button">Primary</button>
                     <button class="btn btn-{variant}primary {buttonBorder} {buttonSize} active" type="button">Active</button>
@@ -161,7 +161,7 @@
         
     </div>
 
-    <div class="d-flex p_fd-column g-4 p-4 bgc-positive br-lg">
+    <div class="d-flex p_fd-column g-4 p-4 background-color--positive br-lg">
         <p class="mb-0">
             Icon buttons like other button follow the same rules. Also they are perfect support for icon sets like font awesome, google fonts, ect.
         </p>

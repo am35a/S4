@@ -1,7 +1,7 @@
 <section class="d-grid g-5">
     <h3 id="alerts">Alerts</h3>
     <div class="d-flex fw-wrap g-4">
-        <div class="d-grid p-4 g-4 bgc-positive br-lg fx" style="--fxg: 1;">
+        <div class="d-grid p-4 g-4 background-color--positive br-lg fx" style="--fxg: 1;">
             <div class="alert alert-primary">
                 Give importance with this simple alert.
             </div>
@@ -26,7 +26,7 @@
                 Error. Can`t connect to the platform.
             </div>
         </div>
-        <div class="d-grid p-4 g-4 bgc-positive br-lg fx" style="--fxg: 1;">
+        <div class="d-grid p-4 g-4 background-color--positive br-lg fx" style="--fxg: 1;">
             <div class="alert alert-alt-primary">
                 Give importance with this simple alert.
             </div>
@@ -51,7 +51,7 @@
                 Error. Can`t connect to the platform.
             </div>
         </div>
-        <div class="d-grid p-4 g-4 bgc-positive br-lg fx" style="--fxg: 1;">
+        <div class="d-grid p-4 g-4 background-color--positive br-lg fx" style="--fxg: 1;">
             <div class="alert alert-outline-primary">
                 Give importance with this simple alert.
             </div>

@@ -12,20 +12,20 @@
     <p>
         These display values override the outside behavior of the elements.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br-md">
+    <div class="d-grid g-2 p-2 background-color--positive br-md">
         <div class="d-flex g-2">
             {#each displayOutsideArr as values }
                 <Button
                     class="btn-secondary {displayOutside === values ? 'active' : ''}"
-                    on:click = {() => displayOutside = values}
-                    disabled = {displayOutside === values}
+                    on:click={() => displayOutside = values}
+                    disabled={displayOutside === values}
                 >d-{values}</Button>
             {/each}
         </div>
         <div class="d-grid g-2">
             <div>
-                <span class="d-{displayOutside} bgc-negative-10 p-4">span</span>
-                <div class="d-{displayOutside} bgc-negative-10 p-4">div</div>
+                <span class="d-{displayOutside} background-color--negative-10 p-4">span</span>
+                <div class="d-{displayOutside} background-color--negative-10 p-4">div</div>
             </div>
         </div>
     </div>

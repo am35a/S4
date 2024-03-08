@@ -3,7 +3,7 @@
 
     import Input from 'component/Input.svelte'
 
-    export let defaultColorsObj = {}
+    export let defaultColorsObj={}
 
     var root = document.querySelector('html')
     let computedRoot = getComputedStyle(root)
@@ -85,19 +85,19 @@
                 />
             </div>
             <div>Colors:</div>
-            <div class="d-grid g-3 justify-item--center p-4 br-md fx bgc-negative" style="--fxb: 100%;">
+            <div class="d-grid g-3 justify-item--center p-4 br-md fx background-color--negative" style="--fxb: 100%;">
                 <div class="ta-center fw-600 c-positive">Positive in negative</div>
                 <div class="d-grid gaf-column w-100">
-                    <div class="bgc-positive-10 c-positive-90 py-4 color-negative ta-center">10</div>
-                    <div class="bgc-positive-20 c-positive-80 py-4 color-negative ta-center">20</div>
-                    <div class="bgc-positive-30 c-positive-70 py-4 color-negative ta-center">30</div>
-                    <div class="bgc-positive-40 c-positive-60 py-4 color-negative ta-center">40</div>
-                    <div class="bgc-positive-50 c-positive-50 py-4 color-negative ta-center">50</div>
-                    <div class="bgc-positive-60 c-negative-60 py-4 color-negative ta-center">60</div>
-                    <div class="bgc-positive-70 c-negative-70 py-4 color-negative ta-center">70</div>
-                    <div class="bgc-positive-80 c-negative-80 py-4 color-negative ta-center">80</div>
-                    <div class="bgc-positive-90 c-negative-90 py-4 color-negative ta-center">90</div>
-                    <div class="bgc-positive c-negative py-4 color-negative ta-center">100</div>
+                    <div class="background-color--positive-10 c-positive-90 py-4 color-negative ta-center">10</div>
+                    <div class="background-color--positive-20 c-positive-80 py-4 color-negative ta-center">20</div>
+                    <div class="background-color--positive-30 c-positive-70 py-4 color-negative ta-center">30</div>
+                    <div class="background-color--positive-40 c-positive-60 py-4 color-negative ta-center">40</div>
+                    <div class="background-color--positive-50 c-positive-50 py-4 color-negative ta-center">50</div>
+                    <div class="background-color--positive-60 c-negative-60 py-4 color-negative ta-center">60</div>
+                    <div class="background-color--positive-70 c-negative-70 py-4 color-negative ta-center">70</div>
+                    <div class="background-color--positive-80 c-negative-80 py-4 color-negative ta-center">80</div>
+                    <div class="background-color--positive-90 c-negative-90 py-4 color-negative ta-center">90</div>
+                    <div class="background-color--positive c-negative py-4 color-negative ta-center">100</div>
                 </div>
             </div>
         </div>
@@ -150,19 +150,19 @@
                 />
             </div>
             <div>Colors:</div>
-            <div class="d-grid g-3 justify-item--center p-4 br-md fx bgc-positive" style="--fxb: 100%;">
+            <div class="d-grid g-3 justify-item--center p-4 br-md fx background-color--positive" style="--fxb: 100%;">
                 <div class="ta-center fw-600 c-negative">Negative in positive</div>
                 <div class="d-grid gaf-column w-100">
-                    <div class="bgc-negative-10 c-negative-90 py-4 color-positive ta-center">10</div>
-                    <div class="bgc-negative-20 c-negative-80 py-4 color-positive ta-center">20</div>
-                    <div class="bgc-negative-30 c-negative-70 py-4 color-positive ta-center">30</div>
-                    <div class="bgc-negative-40 c-negative-60 py-4 color-positive ta-center">40</div>
-                    <div class="bgc-negative-50 c-negative-50 py-4 color-positive ta-center">50</div>
-                    <div class="bgc-negative-60 c-positive-60 py-4 color-positive ta-center">60</div>
-                    <div class="bgc-negative-70 c-positive-70 py-4 color-positive ta-center">70</div>
-                    <div class="bgc-negative-80 c-positive-80 py-4 color-positive ta-center">80</div>
-                    <div class="bgc-negative-90 c-positive-90 py-4 color-positive ta-center">90</div>
-                    <div class="bgc-negative c-positive py-4 color-positive ta-center">100</div>
+                    <div class="background-color--negative-10 c-negative-90 py-4 color-positive ta-center">10</div>
+                    <div class="background-color--negative-20 c-negative-80 py-4 color-positive ta-center">20</div>
+                    <div class="background-color--negative-30 c-negative-70 py-4 color-positive ta-center">30</div>
+                    <div class="background-color--negative-40 c-negative-60 py-4 color-positive ta-center">40</div>
+                    <div class="background-color--negative-50 c-negative-50 py-4 color-positive ta-center">50</div>
+                    <div class="background-color--negative-60 c-positive-60 py-4 color-positive ta-center">60</div>
+                    <div class="background-color--negative-70 c-positive-70 py-4 color-positive ta-center">70</div>
+                    <div class="background-color--negative-80 c-positive-80 py-4 color-positive ta-center">80</div>
+                    <div class="background-color--negative-90 c-positive-90 py-4 color-positive ta-center">90</div>
+                    <div class="background-color--negative c-positive py-4 color-positive ta-center">100</div>
                 </div>
             </div>
         </div>

@@ -19,21 +19,21 @@
                     on:click={() => ifDisplayGrid = true}
                     class="btn {ifDisplayGrid ? 'active' : ''}"
                     type="button"
-                    disabled = {ifDisplayGrid}
+                    disabled={ifDisplayGrid}
                 >Grid</Button>
                 <Button
                     on:click={() => ifDisplayGrid = false}
                     class="btn {!ifDisplayGrid ? 'active' : ''}"
                     type="button"
-                    disabled = {!ifDisplayGrid}
+                    disabled={!ifDisplayGrid}
                 >Inline grid</Button>
             </div>
         </div>
-        <div class="p-4 bgc-positive br-md">
-            <div class="d-{ifDisplayGrid ? 'grid' : 'inline-grid'} gtc-3 g-3 bgc-negative-10 p-3">
-                <div class="bgc-negative-10 px-2 py-1">1</div>
-                <div class="bgc-negative-10 px-2 py-1">2</div>
-                <div class="bgc-negative-10 px-2 py-1">3</div>
+        <div class="p-4 background-color--positive br-md">
+            <div class="d-{ifDisplayGrid ? 'grid' : 'inline-grid'} gtc-3 g-3 background-color--negative-10 p-3">
+                <div class="background-color--negative-10 px-2 py-1">1</div>
+                <div class="background-color--negative-10 px-2 py-1">2</div>
+                <div class="background-color--negative-10 px-2 py-1">3</div>
             </div>
         </div>
         <div class="d-grid g-4">

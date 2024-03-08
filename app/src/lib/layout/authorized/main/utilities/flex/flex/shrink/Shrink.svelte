@@ -23,15 +23,15 @@
             <div class="d-inline-flex fw-wrap g-3">
                 <button
                     class="btn"
-                    class:active = {isCellShrinked}
-                    on:click = {() => isCellShrinked = !isCellShrinked}
-                    disabled = {isCellShrinked}
+                    class:active={isCellShrinked}
+                    on:click={() => isCellShrinked = !isCellShrinked}
+                    disabled={isCellShrinked}
                 >default</button>
                 <button
                     class="btn"
-                    class:active = {!isCellShrinked}
-                    on:click = {() => isCellShrinked = !isCellShrinked}
-                    disabled = {!isCellShrinked}
+                    class:active={!isCellShrinked}
+                    on:click={() => isCellShrinked = !isCellShrinked}
+                    disabled={!isCellShrinked}
                 >fs-0</button>
             </div>
         </div>
@@ -52,7 +52,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive br-md">
                 <div class="d-grid mb-2">
                     <label for="shrinkContainerWidth" class="d-grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>
@@ -69,25 +69,25 @@
                         type="range"
                     >
                 </div>    
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2 w" style="--w: {containerWidth}%">
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
                     {#each Array(6) as _, i}
                         <div
-                            class="bgc-negative-10 px-2 py-1"
+                            class="background-color--negative-10 px-2 py-1"
                             class:fs-0={!isCellShrinked}
                         >cell {isCellShrinked ? 'shrinked' : 'no shrink'}</div>
                     {/each}
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2 ox-hidden w" style="--w: {containerWidth}%">
+                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2 ox-hidden w" style="--w: {containerWidth}%">
                     <div
-                        class="bgc-negative-10 px-2 py-1 w"
+                        class="background-color--negative-10 px-2 py-1 w"
                         style="--w: 10em;"
                     >1:1</div>
                     <div
-                        class="fx bgc-negative-10 px-2 py-1 w"
+                        class="fx background-color--negative-10 px-2 py-1 w"
                         style="--w: 10em; {isCellShrinked ? '--fxs: 2' : ''}"
                     >{isCellShrinked ? '1:2' : '1:1'}</div>
                     <div
-                        class="fx bgc-negative-10 px-2 py-1 w"
+                        class="fx background-color--negative-10 px-2 py-1 w"
                         style="--w: 10em; {isCellShrinked ? '--fxs: 3' : ''}"
                     >{isCellShrinked ? '1:3' : '1:1'}</div>
                 </div>

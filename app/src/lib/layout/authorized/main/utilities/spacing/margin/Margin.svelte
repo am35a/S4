@@ -3,7 +3,7 @@
     import Details from 'component/Details.svelte'
     import Button from 'component/Button.svelte'
 
-    let marginPropertyObj = {
+    let marginPropertyObj={
         'all': '-',
         'x axis': 'x-',
         'y axis': 'y-',
@@ -22,20 +22,20 @@
         The prefix <b>x</b>, <b>y</b> after <b>m</b> sets the axios value and <b>l</b>, <b>t</b>, <b>r</b> and <b>b</b> the direction value.
         To disable margin use the <b>m...-0</b> classes.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md">
         <div class="d-flex g-2">
             {#each Object.entries(marginPropertyObj) as [key, value]}
                 <Button
                     class="btn-secondary {marginProperty === value ? 'active' : ''}"
-                    on:click = {() => marginProperty = value}
-                    disabled = {marginProperty === value}
+                    on:click={() => marginProperty = value}
+                    disabled={marginProperty === value}
                 >{key}</Button>
             {/each}
         </div>
         <div class="d-grid gtc-4 align-items--start g-2">
             {#each Array(8) as _, i}
-                <div class="bgc-negative-10">
-                    <div class="bgc-negative-10 px-2 py-1 m{marginProperty}{i + 1}">m{marginProperty}{i + 1}</div>
+                <div class="background-color--negative-10">
+                    <div class="background-color--negative-10 px-2 py-1 m{marginProperty}{i + 1}">m{marginProperty}{i + 1}</div>
                 </div>
             {/each}
         </div>

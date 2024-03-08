@@ -5,7 +5,7 @@
     import Main from './main/Main.svelte'
 
     // have to move all style to variables
-    let headerObj = {
+    let headerObj={
             'position': 'sticky',
             'top': '0',
             'height': '4em',
@@ -14,7 +14,7 @@
             'padding-bottom': 'var(--size-2)',
             'padding-left': 'var(--size-2)',
         },
-        navObj = {
+        navObj={
             'position': 'sticky',
             'top': `${headerObj['height']}`,
             'width': '16em',
@@ -28,9 +28,9 @@
             'padding-bottom': 'var(--size-2)',
             'padding-left': 'var(--size-2)',
         },
-        footerObj = {
+        footerObj={
         },
-        mainObj = {
+        mainObj={
             'padding-top': `calc(${headerObj['height']} + var(--size-2))`,
             'padding-right': 'var(--size-2)',
             'padding-bottom': 'var(--size-2)',

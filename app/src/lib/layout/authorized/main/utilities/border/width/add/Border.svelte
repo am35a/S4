@@ -5,13 +5,13 @@
 
 <div>
     <h3 id="add">Add border</h3>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md">
         <div class="d-flex fw-wrap g-2">
-            <div class="bgc-negative-10 p-4 border">border</div>
-            <div class="bgc-negative-10 p-4 border-top">border-top</div>
-            <div class="bgc-negative-10 p-4 border-right">border-right</div>
-            <div class="bgc-negative-10 p-4 border-bottom">border-bottom</div>
-            <div class="bgc-negative-10 p-4 border-left">border-left</div>
+            <div class="background-color--negative-10 p-4 border">border</div>
+            <div class="background-color--negative-10 p-4 border-top">border-top</div>
+            <div class="background-color--negative-10 p-4 border-right">border-right</div>
+            <div class="background-color--negative-10 p-4 border-bottom">border-bottom</div>
+            <div class="background-color--negative-10 p-4 border-left">border-left</div>
         </div>
     </div>
     <Details>

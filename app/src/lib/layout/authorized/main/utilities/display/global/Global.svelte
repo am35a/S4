@@ -10,19 +10,19 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br-md">
+    <div class="d-grid g-2 p-2 background-color--positive br-md">
         <div class="d-flex g-2">
             {#each displayGlobalArr as values }
                 <Button
                     class="btn-secondary {displayGlobal === values ? 'active' : ''}"
-                    on:click = {() => displayGlobal = values}
-                    disabled = {displayGlobal === values}
+                    on:click={() => displayGlobal = values}
+                    disabled={displayGlobal === values}
                 >d-{values}</Button>
             {/each}
         </div>
         <div class="d-grid g-2">
-            <span class="d-{displayGlobal} bgc-negative-10 p-4">span</span>
-            <div class="d-{displayGlobal} bgc-negative-10 p-4">div</div>
+            <span class="d-{displayGlobal} background-color--negative-10 p-4">span</span>
+            <div class="d-{displayGlobal} background-color--negative-10 p-4">div</div>
         </div>
     </div>
 </section>

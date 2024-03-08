@@ -23,8 +23,8 @@
                 {#each Object.entries(placementObj) as [key, value]}
                     <button
                         class="btn"
-                        class:active = {placement === value}
-                        on:click = {() => placement = value}
+                        class:active={placement === value}
+                        on:click={() => placement = value}
                         disabled={placement === value}
                     >{key}</button>
                 {/each}
@@ -32,11 +32,11 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="p-6 bgc-positive br-md o-hidden">
-                <div class="p-relative bgc-negative-10 h" style="--h: 10em">
-                    <div class="p-absolute bgc-negative-10 px-2 py-1 {placement}-0">0%</div>
-                    <div class="p-absolute bgc-negative-10 px-2 py-1 {placement}-50">50%</div>
-                    <div class="p-absolute bgc-negative-10 px-2 py-1 {placement}-100">100%</div>
+            <div class="p-6 background-color--positive br-md o-hidden">
+                <div class="p-relative background-color--negative-10 h" style="--h: 10em">
+                    <div class="p-absolute background-color--negative-10 px-2 py-1 {placement}-0">0%</div>
+                    <div class="p-absolute background-color--negative-10 px-2 py-1 {placement}-50">50%</div>
+                    <div class="p-absolute background-color--negative-10 px-2 py-1 {placement}-100">100%</div>
                 </div>
             </div>
         </div>

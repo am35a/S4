@@ -31,12 +31,12 @@
             </span>
         </span>
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md">
         <div class="d-grid">
             <label for="containerWidth">Width {width}%:</label>
             <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={width}>
         </div>
-        <div class="bgc-negative-10 ta-center py-1 ws-nowrap w" style="--w: {width}%">--w: {width}%</div>
+        <div class="background-color--negative-10 ta-center py-1 ws-nowrap w" style="--w: {width}%">--w: {width}%</div>
     </div>
     <Details>
         <svelte:fragment slot="title">

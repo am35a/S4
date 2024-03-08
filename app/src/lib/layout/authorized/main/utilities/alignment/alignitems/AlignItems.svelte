@@ -2,7 +2,7 @@
     import Precode from 'component/Precode.svelte'
     import Button from 'component/Button.svelte'
     
-    let containerTypesObj = {
+    let containerTypesObj={
         grid: 'd-grid gtc-2',
         flex: 'd-flex'
     },
@@ -24,8 +24,8 @@
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <Button
                         class={containerType === value ? 'active' : ''}
-                        on:click = {() => containerType = value}
-                        disabled = {containerType === value}
+                        on:click={() => containerType = value}
+                        disabled={containerType === value}
                     >{key}</Button>
                 {/each}
             </div>
@@ -37,18 +37,18 @@
                     <button
                         class="btn"
                         class:active={alignItems === value}
-                        on:click = {() => alignItems = value}
-                        disabled = {alignItems === value}
+                        on:click={() => alignItems = value}
+                        disabled={alignItems === value}
                     >align-items--{value}</button>
                 {/each}
             </div>
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="{containerType} g-3 p-3 align-items--{alignItems} bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
-                <div class="bgc-negative-10 px-2 py-1">one</div>
-                <div class="bgc-negative-10 px-2 py-1">two</div>
-                <div class="bgc-negative-10 px-2 py-1">three</div>
+            <div class="{containerType} g-3 p-3 align-items--{alignItems} background-color--positive br-md h" style="--h: 16em; --p_h: 24em;">
+                <div class="background-color--negative-10 px-2 py-1">one</div>
+                <div class="background-color--negative-10 px-2 py-1">two</div>
+                <div class="background-color--negative-10 px-2 py-1">three</div>
             </div>
         </div>
         <div class="d-grid g-4">

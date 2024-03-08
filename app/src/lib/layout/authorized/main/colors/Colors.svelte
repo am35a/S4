@@ -2,7 +2,7 @@
     import SectionDefault from "./default/Default.svelte"
     import SectionAccent from "./accent/Accent.svelte"
 
-    let colorsObj = {
+    let colorsObj={
         defaultObj: {
             namesArr: [ 'positive', 'negative' ],
             variablesObj: {
@@ -30,8 +30,8 @@
             }
         },
         baseObj: {
-            "html-bgc": 'initial', // link to other variable
-            "body-bgc": 'inherit', // link to other variable
+            "html-background-color": 'initial', // link to other variable
+            "body-background-color": 'inherit', // link to other variable
             "body-c": 'inherit', // link to other variable
             "bsc": 'inherit' // link to other variable
         }

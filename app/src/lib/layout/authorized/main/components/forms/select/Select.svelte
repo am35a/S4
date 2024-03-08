@@ -1,7 +1,7 @@
 <script>
     import Select from 'component/Select.svelte'
 
-    let selectFeaturesObj = {
+    let selectFeaturesObj={
             Default: '',
             Multiple: 'multiple'
         },
@@ -23,14 +23,14 @@
                     <button
                         on:click={() => selectFeature = key}
                         class="btn btn{value}"
-                        class:active = {selectFeature === key}
+                        class:active={selectFeature === key}
                         type="button"
-                        disabled = {selectFeature === key}
+                        disabled={selectFeature === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 bgc-positive br-md">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive br-md">
             <div class="d-grid gtc-2 g-3">
                 <b class="justify-self--end align-self--center">Default</b>
                 <div>

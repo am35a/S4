@@ -31,7 +31,7 @@
             </span>
         </span>
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md">
         <div class="d-grid">
             <label for="containerHeight">Height {height}%:</label>
         </div>
@@ -39,7 +39,7 @@
             <div>
                 <input class="h-100" type="range" name="containerHeight" orient="vertical" min={0} max={100} step={1} bind:value={height}>
             </div>
-            <div class="bgc-negative-10 ta-center mt-auto mx-auto px-1 ws-nowrap w-fit h d-flex align-items--end" style="--h: {height}%">--h: {height}%</div>
+            <div class="background-color--negative-10 ta-center mt-auto mx-auto px-1 ws-nowrap w-fit h d-flex align-items--end" style="--h: {height}%">--h: {height}%</div>
         </div>
     </div>
     <Details>
