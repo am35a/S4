@@ -5,7 +5,8 @@
 <section>
     <h3 id="image">Image</h3>
     <p>
-        Add the <b>background-image</b> class to container before work with background-image and use the <b>--background-image</b> variable to control the property.
+        Add the <b>background-image</b> or <b>background</b> classes to container before work with
+        background-image and use the <b>--background-image</b> variable to control the property.
     </p>
     <div class="d-grid g-5">
         <div class="alert alert-info justify-self--start">

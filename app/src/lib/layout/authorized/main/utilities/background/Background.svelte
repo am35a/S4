@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import SectionAttachment from './attachment/Attachment.svelte'
     import SectionClip from './clip/Clip.svelte'
     import SectionOrigin from './origin/Origin.svelte'
@@ -7,6 +7,8 @@
     import SectionPosition from './position/Position.svelte'
     import SectionRepeat from './repeat/Repeat.svelte'
     import SectionSize from './size/Size.svelte'
+
+    import AnchorNavigation from 'src/lib/layout/components/AnchorNavigation.svelte'
 </script>
 
 <article>
@@ -19,4 +21,19 @@
     <SectionPosition />
     <SectionRepeat />
     <SectionSize />
+
+    <div class="p-sticky b-0 p-2">
+        <AnchorNavigation
+            anchorsObj={{
+                attachment: 'Attachment',
+                clip: 'Clip',
+                origin: 'Origin',
+                colors: 'Color',
+                image: 'Image',
+                position: 'Position',
+                repeat: 'Repeat',
+                size: 'Size'
+            }}
+        />
+    </div>
 </article>

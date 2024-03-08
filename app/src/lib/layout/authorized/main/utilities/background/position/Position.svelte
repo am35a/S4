@@ -1,13 +1,13 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let bgPositionsArr = [ 'top-left', 'top', 'top-right', 'left', 'center', 'righ','bottom-left', 'bottom', 'bottom-right' ]
+    let bgPositionsArr = ['top-left', 'top', 'top-right', 'left', 'center', 'righ','bottom-left', 'bottom', 'bottom-right']
 </script>
 
 <section>
-    <h3 id="backgroundPosition">Position</h3>
+    <h3 id="position">Position</h3>
     <p>
-        Add the <b>background-position-{bgPositionsArr.join('/')}</b> classes to container to work with background-position.
+        Add the <b>background-position--{bgPositionsArr.join('/')}</b> classes to container to work with background-position.
     </p>
     <div class="d-grid g-5">
         <div class="alert alert-info justify-self--start">
@@ -19,7 +19,7 @@
             <div class="d-grid gtc-3 g-3 p-2 background-color--positive br-md">
                 {#each bgPositionsArr as position }
                     <div
-                        class="background-image background-color--negative-10 background-position-{position} background-size h"
+                        class="background-image background-color--negative-10 background-position--{position} background-repeat--no background-size h"
                         style="--background-image: url(/images/logo.svg); --background-size: 4em auto; --h: 6em"
                     ></div>
                 {/each}
@@ -30,12 +30,13 @@
             <Precode>
                 {#each bgPositionsArr as position }
                     {
-`<div class="background-image background-position-${position}" style="--background-image: url(...)"></div>
+`<div class="background-position--${position}">
+    // ...
+</div>
 `
                     }
                 {/each}
             </Precode>
         </div>
     </div>
-
 </section>

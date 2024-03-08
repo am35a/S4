@@ -1,33 +1,33 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let bgRepeatObj={
+    let repeatsObj={
             'default': '',
-            'repeat-x': '-x',
-            'repeat-y': '-y',
-            'space': '-space',
-            'round': '-round',
-            'no-repeat': '-no'
+            'repeat-x': '--x',
+            'repeat-y': '--y',
+            'space': '--space',
+            'round': '--round',
+            'no-repeat': '--no'
         },
-        bgRepeat = 'default'
+        repeat = 'default'
 </script>
 
 <section>
-    <h3 id="backgroundRepeat">Repeat</h3>
+    <h3 id="repeat">Repeat</h3>
     <p>
-        Add the <b>background-repeat{Object.values(bgRepeatObj).slice(1).join('/')}</b> classes to container to work with background-position.
+        Add the <b>background-repeat{Object.values(repeatsObj).slice(1).join('/')}</b> classes to container to work with background-position.
     </p>
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Sizes</b>
             <div class="d-flex fw-wrap g-3 align-items--center">
-                {#each Object.entries(bgRepeatObj) as [key, value]}
+                {#each Object.entries(repeatsObj) as [key, value]}
                     <button
-                        on:click={() => bgRepeat = key}
+                        on:click={() => repeat = key}
                         class="btn {value}"
-                        class:active={bgRepeat === key}
+                        class:active={repeat === key}
                         type="button"
-                        disabled={bgRepeat === key}
+                        disabled={repeat === key}
                     >{key}</button>
                 {/each}
             </div>
@@ -36,8 +36,8 @@
             <b>Preview</b>
             <div class="d-grid g-3 p-3 background-color--positive br-md">
                 <div
-                    class="background-image background-color--negative-10 background-repeat{bgRepeatObj[bgRepeat]} background-size ar-16_9"
-                    style="--background-image: url(/images/logo.svg); --background-size: 10em auto"
+                    class="background-image background-color--negative-10 background-repeat{repeatsObj[repeat]} background-size ar-16_9"
+                    style="--background-image: url(/images/logo.svg); --background-size: 25% auto"
                 ></div>
             </div>
         </div>
@@ -45,9 +45,10 @@
             <b>HTML</b>
             <Precode>
                 {
-`<div class="background-image background-repeat${bgRepeatObj[bgRepeat]}" style="--background-image: url(...)">
-    // ...
-</div>
+`<div
+    class="background-image background-repeat${repeatsObj[repeat]}"
+    style="--background-image: url(...)"
+> // ... </div>
 `
                 }
             </Precode>

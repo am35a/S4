@@ -301,7 +301,7 @@
 .m_background-position--top-right, .m_background-position--right-top {
   background-position: 100% 0% !important;
 }
-.m_background-position-righ {
+.m_background-position--righ {
   background-position: 100% 50% !important;
 }
 .m_background-position--bottom-right, .m_background-position--right-bottom {
