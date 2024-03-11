@@ -12,7 +12,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
                 {#each flexDirectionsArr as direction }
                     <div class="d-flex fd-{direction} g-2 background-color--negative-10 p-2">
                         <div class="background-color--negative-10 px-2 py-1">one</div>

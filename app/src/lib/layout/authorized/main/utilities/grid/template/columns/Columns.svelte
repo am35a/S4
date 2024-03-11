@@ -29,7 +29,7 @@
                 >Inline grid</Button>
             </div>
         </div>
-        <div class="p-4 background-color--positive br-md">
+        <div class="p-4 background-color--positive border-radius--md">
             <div class="d-{ifDisplayGrid ? 'grid' : 'inline-grid'} gtc-3 g-3 background-color--negative-10 p-3">
                 <div class="background-color--negative-10 px-2 py-1">1</div>
                 <div class="background-color--negative-10 px-2 py-1">2</div>

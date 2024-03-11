@@ -15,7 +15,7 @@
     <p>
         The <b>ws-...</b> classes of the <b>white-space</b> CSS property sets how provide horizontal or vertical space between other characters inside an element is handled.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
         <div class="d-grid g-2">
             <div class="d-flex fw-wrap g-2">
                 {#each whiteSpaceArr as value}
@@ -45,7 +45,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+            <Precode class="border-radius--top-0">
                 {
 `<p class="ws-${whiteSpace}">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -47,7 +47,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
                 <div class="d-grid mb-2">
                     <label for="growContainerWidth" class="d-grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>

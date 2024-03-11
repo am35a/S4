@@ -12,7 +12,7 @@
     <p>
         From CSS 2 the legasy display values welcome still here and set control element of their both side. Equared to two modern two words value: "inline-flex" = "inline flex" and ect.
     </p>
-    <div class="d-grid g-2 p-2 background-color--positive br-md">
+    <div class="d-grid g-2 p-2 background-color--positive border-radius--md">
         <div class="d-flex g-2">
             {#each displayLegacyArr as values }
                 <Button
@@ -34,7 +34,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+            <Precode class="border-radius--top-0">
                 {
 `<div class="d-${displayLegacy}">
     <span>span</span>

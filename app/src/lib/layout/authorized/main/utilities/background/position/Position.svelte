@@ -16,7 +16,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid gtc-3 g-3 p-2 background-color--positive br-md">
+            <div class="d-grid gtc-3 g-3 p-2 background-color--positive border-radius--md">
                 {#each bgPositionsArr as position }
                     <div
                         class="background-image background-color--negative-10 background-position--{position} background-repeat--no background-size h"

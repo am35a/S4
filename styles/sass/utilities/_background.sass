@@ -19,7 +19,7 @@ $bgRepeat: (x: repeat-x, y: repeat-y, space: space, round: round, no: no-repeat)
                 &--#{$item}
                     background-clip: $value !important
                     @if $value == text
-                        color: transparent
+                        color: transparent !important
         &-origin
             @each $item, $value in $bgOrigin
                 &--#{$item}
@@ -74,10 +74,10 @@ $bgRepeat: (x: repeat-x, y: repeat-y, space: space, round: round, no: no-repeat)
                 background-size: contain !important
         
     .background, .background-image
-        background-image: var(--#{$orientation}#{$type}background-image, var(--background-image, initial)) !important
+        background-image: var(--#{$orientation}#{$type}background-image, var(--background-image, initial))
     .background, .background-position
-        background-position: var(--#{$orientation}#{$type}background-position, var(--background-position, initial)) !important
+        background-position: var(--#{$orientation}#{$type}background-position, var(--background-position, initial))
     .background, .background-color
-        background-color: var(--#{$orientation}#{$type}background-color, var(--background-color, initial)) !important
+        background-color: var(--#{$orientation}#{$type}background-color, var(--background-color, initial))
     .background, .background-size
-        background-size: var(--#{$orientation}#{$type}background-size, var(--background-size, initial)) !important
+        background-size: var(--#{$orientation}#{$type}background-size, var(--background-size, initial))

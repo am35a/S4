@@ -90,7 +90,7 @@
         <div>Colors</div>
         <div class="d-flex fw-wrap g-2">
             {#each accentColorsObj.namesArr as value}
-                <div class="d-grid rg-2 justify-item--center p-4 background-color--positive br-md fx" style="--fxg: 1; --fxb: 0;">
+                <div class="d-grid rg-2 justify-item--center p-4 background-color--positive border-radius--md fx" style="--fxg: 1; --fxb: 0;">
                     <Input
                         bind:value={accentColorsObj.variablesObj[`${value}-hue`]}
                         min="0" max="360"

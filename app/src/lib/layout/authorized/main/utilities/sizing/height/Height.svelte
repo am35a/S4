@@ -31,7 +31,7 @@
             </span>
         </span>
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
         <div class="d-grid">
             <label for="containerHeight">Height {height}%:</label>
         </div>
@@ -47,7 +47,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+            <Precode class="border-radius--top-0">
                 {
 `div class="h" style="--h: ${height}%">--h: ${height}%</div>
 `

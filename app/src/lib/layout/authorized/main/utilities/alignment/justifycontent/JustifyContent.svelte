@@ -31,7 +31,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
                 {#each justifyContentArr as item }
                     <div class="{containerType} g-2 background-color--negative-10 p-2 justify-content--{item}">
                         <div class="background-color--negative-10 px-2 py-1">one</div>

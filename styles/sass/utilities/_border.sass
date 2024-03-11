@@ -2,94 +2,82 @@
 
 /*
     border section: border round, sizes, placement, color of accent and extra palette contained in classes
+
+$borderParams: width, style, color
+$borderSides: top, right, bottom, left
+// $borderWidth: min, thin, medium, thick
+$borderWidth: thin, medium, thick
+$borderStyles: none, dotted, dashed, solid
+
 $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
+
 
 @mixin _border($orientation, $type)
     .#{$orientation}#{$type}border
-        border: .0625em solid var(--border-color, currentColor) !important
-        @each $item in $placementDirections
-            &-#{$item}
-                border-#{$item}: .0625em solid var(--border-color, currentColor) !important
+        @each $width in $borderWidth
+            &-width--#{$width}
+                border-width: var(--border-width--#{$width}) !important
+        // @each $width in $borderWidth
+        //     @each $side in $borderSides
+        //         &-#{$side}-width--#{$width}
+        //             border-#{$side}-width: var(--border-width--#{$width}) !important
 
-        &-0
-            border: 0 !important
-        @each $item in $placementDirections
-            &-#{$item}-0
-                border-#{$item}: 0 !important
+        @each $style in $borderStyles
+            &-style--#{$style}
+                border-style: $style !important
+                @if $style != none
+                    border-width: var(--border-width--min)
+        @each $style in $borderStyles
+            @each $side in $borderSides
+                &-#{$side}-style--#{$style}
+                    border-#{$side}-style: $style !important
+                    @if $style != none
+                        border-width: var(--border-width--min)
+
+        // [class*="border-style--"]
+        //     border-width: var(--border-width--min)
 
         @each $item in $defaultColors
-            &-#{$item}
+            &-color--#{$item}
                 border-color: var(--#{$item}-color) !important
         @each $item in $defaultColors
             @for $i from 1 through math.div(100, $defaultExtraColorsInterval) - 1
-                &#{'-' + $item + '-' + $i * $defaultExtraColorsInterval}
+                &-color--#{$item + '-' + $i * $defaultExtraColorsInterval}
                     border-color: var(--#{$item}-color-#{$i * $defaultExtraColorsInterval}) !important
         @each $item in $accentColors
-            &-#{$item}
+            &-color--#{$item}
                border-color: var(--#{$item}-color) !important
             @each $pref in $accentExtraColorsPrefs
-                &-#{$item + '-' + $pref}
+                &-color--#{$item + '-' + $pref}
                     border-color: var(--#{$item}-color-#{$pref}) !important
-        &-transparent
+        &-color--transparent
             border-color: transparent !important
 
-
-    $borderParams: (width: w, style: s, color: c)
-    $borderAxles: (top: t, right: r, bottom: b, left: l)
-
-    @each $param, $p in $borderParams
-        @each $axis, $a in $borderAxles
-            .brdr, .brdr#{$a}, .brdr#{$p}, .brdr#{$a}#{$p}
-                border-#{$axis}-#{$param}: var(--#{$orientation}#{$type}br#{$a}#{$p}, var(--br#{$a}#{$p}, initial)) !important
-
-    $borderStyles: hidden, dotted, dashed, solid, double, groove, ridge, inset, outset
-    @each $axis, $a in $borderAxles
-        @each $style in $borderStyles
-            .brdr-#{$style}, .brdr#{$a}-#{$style}
-                border-#{$axis}-style: $style
-
-    .brdr-none, .brdrt-none
-        border-top: initial
-    .brdr-none, .brdrr-none
-        border-right: initial
-    .brdr-none, .brdrb-none
-        border-bottom: initial
-    .brdr-none, .brdrl-none
-        border-left: initial
+    @each $param in $borderParams
+        @each $side in $borderSides
+            .border, .border-#{$param}, .border-#{$side}, .border-#{$side}-#{$param}
+                border-#{$side}-#{$param}: var(--#{$orientation}#{$type}border-#{$side}-#{$param}, var(--border-#{$param}, initial))
 
 
-
-    .#{$orientation}#{$type}br
-        // border-radius: var(--br-md) !important
+    .#{$orientation}#{$type}border-radius
+        // border-radius: var(--border-radius--md) !important
         
         @each $size in $borderRadiusSizes
-            &-#{$size}
-                border-radius: var(--br-#{$size}) !important
+            &--#{$size}
+                border-radius: var(--border-radius--#{$size}) !important
 
-        &-oval
+        &--oval
             border-radius: 50% !important
-        &-pill
+        &--pill
             border-radius: 4em !important
 
-        &-0,
-        &-top-0,
-        &-left-0,
-        &-top-left-0
+        &--0, &--top-0, &--left-0, &--top-left-0
             border-top-left-radius: 0 !important
-        &-0,
-        &-top-0,
-        &-right-0,
-        &-top-right-0
+        &--0, &--top-0, &--right-0, &--top-right-0
             border-top-right-radius: 0 !important
-        &-0,
-        &-bottom-0,
-        &-right-0,
-        &-bottom-right-0
+        &-0, &-bottom-0, &-right-0, &-bottom-right-0
             border-bottom-right-radius: 0 !important
-        &-0,
-        &-bottom-0,
-        &-left-0,
-        &-bottom-left-0
+        &--0, &--bottom-0, &--left-0, &--bottom-left-0
             border-bottom-left-radius: 0 !important
 
     .tbc

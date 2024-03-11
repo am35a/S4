@@ -103,7 +103,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive br-md h" style="--h: 10em">
+            <div class="d-grid g-3 p-3 background-color--positive border-radius--md h" style="--h: 10em">
                 <Icon
                     class="{iconSize} m-auto {iconBgColor ? 'background-color' : ''} {iconColor ? 'c' : ''}"
                     style="{iconBgColor ? `--background-color:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"

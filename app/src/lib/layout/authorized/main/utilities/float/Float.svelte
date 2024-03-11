@@ -11,7 +11,7 @@
     <div class="alert alert-warning justify-self--start">
         * Pay attention the <b>fx-start</b> and <b>fx-end</b> classes do not support by invalid browsers like Chrome or Safari.
     </div>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
         <div class="background-color--negative-10 p-2">
             <div class="fx-left background-color--negative-10 p-2">fx-left</div>
             Unde quae consequatur optio, saepe, harum modi nobis excepturi cum ducimus minima architecto tenetur laudantium quaerat rem fuga nihil nemo distinctio beatae minus, rerum voluptate vel facere. Corporis, blanditiis inventore!
@@ -38,7 +38,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+            <Precode class="border-radius--top-0">
                 {
 `<div>
     <div class="fx-start">fx-start</div>

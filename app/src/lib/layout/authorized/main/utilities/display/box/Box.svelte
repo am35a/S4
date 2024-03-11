@@ -11,7 +11,7 @@
     <p>
         Using a d-none class make an element as removed from DOM tree.
     </p>
-    <div class="d-grid g-2 p-2 background-color--positive br-md">
+    <div class="d-grid g-2 p-2 background-color--positive border-radius--md">
         <div class="d-flex g-2">
             <Button
                 class="btn-secondary {displayNone ? 'active' : ''}"
@@ -30,7 +30,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+            <Precode class="border-radius--top-0">
                 {
 `<div class="${displayNone ? 'd-none' : 'd-block'}">
     <span>span</span>

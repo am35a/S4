@@ -22,7 +22,7 @@
         The prefix <b>x</b>, <b>y</b> after <b>m</b> sets the axios value and <b>l</b>, <b>t</b>, <b>r</b> and <b>b</b> the direction value.
         To disable padding use the <b>m...-0</b> classes.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
         <div class="d-flex g-2">
             {#each Object.entries(paddingPropertyObj) as [key, value]}
                 <Button
@@ -45,7 +45,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+            <Precode class="border-radius--top-0">
                 {
 `<div class="p${paddingProperty}#">...</div>
 `

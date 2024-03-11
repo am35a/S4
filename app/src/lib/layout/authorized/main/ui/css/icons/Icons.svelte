@@ -1,6 +1,6 @@
 <section class="d-grid g-5">
     <h3 id="icons">Icons</h3>
-    <div class="d-grid g-4 p-4 background-color--positive br-lg">
+    <div class="d-grid g-4 p-4 background-color--positive border-radius--lg">
         <div>
             <p>
                 The cash posible icon is the best way to take heart any front-end developer building deep data applications.

@@ -12,7 +12,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
                 {#each attachmentsArr as attachment}
                     <div
                         class="p-2 h o-auto background-image background-color--negative-10 background-attachment--{attachment}"

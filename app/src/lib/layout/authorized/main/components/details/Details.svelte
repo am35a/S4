@@ -103,7 +103,7 @@
             </div>
             <div class="d-grid g-4">
                 <b>Preview</b>
-                <div class="d-grid p-4 background-color--positive br-md">
+                <div class="d-grid p-4 background-color--positive border-radius--md">
                     <Details class="{detailsClass} mb-0" open={detailsObj.stateObj[detailsState]}>
                         <svelte:fragment slot="title">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -118,7 +118,7 @@
             </div>
             <div class="d-grid g-4">
                 <b>Custom</b>
-                <div class="d-grid p-4 background-color--positive br-md">
+                <div class="d-grid p-4 background-color--positive border-radius--md">
                     <Details class="background-color--negative-10" open>
                         <summary class="px-2 py-1 justify-content--start background-color--transparent" slot="summary">
                             <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>

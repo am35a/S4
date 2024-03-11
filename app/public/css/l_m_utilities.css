@@ -143,7 +143,7 @@
 }
 .l_m_background-clip--text {
   background-clip: text !important;
-  color: transparent;
+  color: transparent !important;
 }
 .l_m_background-origin--border {
   background-origin: border-box !important;
@@ -339,19 +339,19 @@
 }
 
 .background, .background-image {
-  background-image: var(--l_m_background-image, var(--background-image, initial)) !important;
+  background-image: var(--l_m_background-image, var(--background-image, initial));
 }
 
 .background, .background-position {
-  background-position: var(--l_m_background-position, var(--background-position, initial)) !important;
+  background-position: var(--l_m_background-position, var(--background-position, initial));
 }
 
 .background, .background-color {
-  background-color: var(--l_m_background-color, var(--background-color, initial)) !important;
+  background-color: var(--l_m_background-color, var(--background-color, initial));
 }
 
 .background, .background-size {
-  background-size: var(--l_m_background-size, var(--background-size, initial)) !important;
+  background-size: var(--l_m_background-size, var(--background-size, initial));
 }
 
 /*  border section: border round, sizes, placement, color of accent and extra palette contained in classes */

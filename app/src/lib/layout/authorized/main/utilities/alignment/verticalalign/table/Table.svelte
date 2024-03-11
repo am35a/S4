@@ -18,7 +18,7 @@
     <div class="d-grid g-5">
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
                 <table class="h" style="--h: 6em">
                     <tr>
                         {#each Object.entries(verticalAlignObj) as [key, value]}

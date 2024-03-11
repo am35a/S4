@@ -2,7 +2,7 @@
     export let anchorsObj={}
 </script>
 
-<div class="d-flex g-1 background-color--positive p-2 w-fit ms-auto br-lg bs-sm border border-negative-30 fs-xs">
+<div class="d-flex g-1 background-color--positive p-2 w-fit ms-auto border-radius--lg bs-sm border border-color--negative-30 fs-xs">
     {#if Object.keys(anchorsObj).length}
         <div class="d-flex fw-wrap g-1 w-fit ms-auto">
             {#each Object.entries(anchorsObj) as [anchor, name]}

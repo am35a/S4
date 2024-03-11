@@ -9,7 +9,7 @@
     let buttonSizeArr: string[] = ['btn-xxl', 'btn-xl', 'btn-lg', 'btn-md', 'btn-sm', 'btn-xs', 'btn-xxs']
     let buttonSize: string = buttonSizeArr[3]
 
-    let buttonBorderArr: string[] = ['br-0', 'br-xxs', 'br-xs', 'br-sm', 'br-md', 'br-lg', 'br-xl', 'br-xxl', 'br-xxxl', 'br-pill']
+    let buttonBorderArr: string[] = ['border-radius--0', 'border-radius--xxs', 'border-radius--xs', 'border-radius--sm', 'border-radius--md', 'border-radius--lg', 'border-radius--xl', 'border-radius--xxl', 'border-radius--xxxl', 'border-radius--pill']
     let buttonBorder: string = buttonBorderArr[3]
 </script>
 
@@ -17,7 +17,7 @@
 
     <h3 id="buttons">Buttons</h3>
 
-    <div class="d-flex fw-wrap g-4 justify-content--evenly align-items--center p-4 background-color--positive br-lg fx" style="--fxg: 1;">
+    <div class="d-flex fw-wrap g-4 justify-content--evenly align-items--center p-4 background-color--positive border-radius--lg fx" style="--fxg: 1;">
         <p>
             All button sizes, borders, corners radius depend on the font size. Don't think the S4 only has only seven sizes, there are much. Make free your design desire and try to place one size element into another size - it's magic! Try playing with the buttons.
         </p>
@@ -49,7 +49,7 @@
 
     <div class="d-grid g-4">
 
-        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive br-lg">
+        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--lg">
             <div class="d-grid g-3">
                 <button class="btn {buttonBorder} {buttonSize}" type="button">Default</button>
                 <button class="btn {buttonBorder} {buttonSize} active" type="button">Active</button>
@@ -71,7 +71,7 @@
         </div>
 
         {#each buttonVariantArr as variant}
-            <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive br-lg">
+            <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--lg">
                 <div class="d-grid g-3">
                     <button class="btn btn-{variant}primary {buttonBorder} {buttonSize}" type="button">Primary</button>
                     <button class="btn btn-{variant}primary {buttonBorder} {buttonSize} active" type="button">Active</button>
@@ -161,7 +161,7 @@
         
     </div>
 
-    <div class="d-flex p_fd-column g-4 p-4 background-color--positive br-lg">
+    <div class="d-flex p_fd-column g-4 p-4 background-color--positive border-radius--lg">
         <p class="mb-0">
             Icon buttons like other button follow the same rules. Also they are perfect support for icon sets like font awesome, google fonts, ect.
         </p>

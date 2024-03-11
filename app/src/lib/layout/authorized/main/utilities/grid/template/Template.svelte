@@ -26,7 +26,7 @@
     <Rows />
  
     <!-- <h4 id="template">Template playground</h4> -->
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive br-md d-none">
+    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md d-none">
         <!-- <input class="h-100" type="range" name="containerHeight" orient="vertical" min="0" max="100" step="1"> -->
 
         <div></div>
@@ -62,7 +62,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+            <Precode class="border-radius--top-0">
                 {
 `...
 `

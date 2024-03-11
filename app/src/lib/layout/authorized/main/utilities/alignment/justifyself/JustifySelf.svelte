@@ -17,7 +17,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive br-md">
+            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
                 {#each justifySelfArr as item }
                     <div class="d-grid gtc-2 g-2 background-color--negative-10 p-2">
                         <div class="background-color--negative-10 px-2 py-1 justify-self--{item}">one</div>

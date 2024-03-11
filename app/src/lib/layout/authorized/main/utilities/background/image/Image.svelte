@@ -16,7 +16,7 @@
         </div>
         <div class="d-grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-2 background-color--positive br-md">
+            <div class="d-grid g-3 p-2 background-color--positive border-radius--md">
                 <div class="background-image p-8" style="--background-image: url(/images/logo.svg)"></div>
             </div>
         </div>

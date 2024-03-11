@@ -10,7 +10,7 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-2 p-2 background-color--positive br-md">
+    <div class="d-grid g-2 p-2 background-color--positive border-radius--md">
         <div class="d-flex g-2">
             {#each displayGlobalArr as values }
                 <Button
