@@ -69,23 +69,23 @@
             <div class="d-grid g-3 p-3 -background-color--positive -border-radius--md">
                 <div class="d-flex fw-wrap g-2 align-items--baseline">
                     <div class="
-                        background-color--negative-10 p-4"
+                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
                         class:border-style--solid={isStyle}
                     >all sides</div>
                     <div class="
-                        background-color--negative-10 p-4"
+                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
                         class:border-top-style--solid={isStyle}
                     >top side</div>
                     <div class="
-                        background-color--negative-10 p-4"
+                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
                         class:border-right-style--solid={isStyle}
                     >right side</div>
                     <div class="
-                        background-color--negative-10 p-4"
+                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
                         class:border-bottom-style--solid={isStyle}
                     >bottom side</div>
                     <div class="
-                        background-color--negative-10 p-4"
+                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
                         class:border-left-style--solid={isStyle}
                     >left side</div>
                 </div>

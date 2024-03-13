@@ -7,10 +7,11 @@ $borderParams: width, style, color
 $borderSides: top, right, bottom, left
 // $borderWidth: min, thin, medium, thick
 $borderWidth: thin, medium, thick
-$borderStyles: none, dotted, dashed, solid
+$borderStyles: dotted, dashed, solid, none
 
+$borderRadiusCorners: top-left, top-right, bottom-right, bottom-left
 $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
-
+$borderRadiusXtraSizes: (oval: 50%, pill: 4em, none: unset)
 
 @mixin _border($orientation, $type)
     .#{$orientation}#{$type}border
@@ -59,26 +60,19 @@ $borderRadiusSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
                 border-#{$side}-#{$param}: var(--#{$orientation}#{$type}border-#{$side}-#{$param}, var(--border-#{$param}, initial))
 
 
-    .#{$orientation}#{$type}border-radius
-        // border-radius: var(--border-radius--md) !important
-        
+    .#{$orientation}#{$type}border
         @each $size in $borderRadiusSizes
-            &--#{$size}
+            &-radius--#{$size}
                 border-radius: var(--border-radius--#{$size}) !important
+        @each $name, $size in $borderRadiusXtraSizes
+            &-radius--#{$name}
+                border-radius: $size !important
 
-        &--oval
-            border-radius: 50% !important
-        &--pill
-            border-radius: 4em !important
+        @each $corner in $borderRadiusCorners
+            @each $size in $borderRadiusSizes
+                &-#{$corner}-radius--#{$size}
+                    border-#{$corner}-radius: var(--border-radius--#{$size}) !important
 
-        &--0, &--top-0, &--left-0, &--top-left-0
-            border-top-left-radius: 0 !important
-        &--0, &--top-0, &--right-0, &--top-right-0
-            border-top-right-radius: 0 !important
-        &-0, &-bottom-0, &-right-0, &-bottom-right-0
-            border-bottom-right-radius: 0 !important
-        &--0, &--bottom-0, &--left-0, &--bottom-left-0
-            border-bottom-left-radius: 0 !important
 
     .tbc
         &-collapse
