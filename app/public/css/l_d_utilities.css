@@ -789,6 +789,22 @@
   border-bottom-left-radius: unset !important;
 }
 
+.border-top-left-radius {
+  border-top-left-radius: var(--border-radius, var(--border-radius, initial));
+}
+
+.border-top-right-radius {
+  border-top-right-radius: var(--border-radius, var(--border-radius, initial));
+}
+
+.border-bottom-right-radius {
+  border-bottom-right-radius: var(--border-radius, var(--border-radius, initial));
+}
+
+.border-bottom-left-radius {
+  border-bottom-left-radius: var(--border-radius, var(--border-radius, initial));
+}
+
 .tbc-collapse {
   border-collapse: collapse !important;
 }
