@@ -17,6 +17,12 @@
         the <b>border-{sidesArr.join('/')}-style--...</b> classes.
     </p>
     <div class="d-grid g-5">
+        <div class="alert alert-info justify-self--start">
+            <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
+            Pay attentions! The <b>--border-style</b> variable of <b>border</b>, <b>border-style</b>,
+            <b>border-...</b>, <b>border-...-style</b>  is adaptive. The list of prefixes available on the
+            <a href="/core#map">Core</a> page.
+        </div>
         <div class="d-grid g-4">
             <b>Preview</b>
             <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
@@ -25,6 +31,16 @@
                         <div class="background-color--negative-10 p-4 border-width--medium border-style--{value}"
                         >{key}</div>
                     {/each}
+                </div>
+            </div>
+            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="d-flex fw-wrap g-2 align-items--baseline">
+                    <div class="background-color--negative-10 p-4
+                        border-width--medium
+                        border-left-width--thick
+                        border-style--solid
+                        border-right-style--dotted"
+                    >mixed</div>
                 </div>
             </div>
         </div>

@@ -576,51 +576,51 @@
 }
 
 .border, .border-width, .border-top, .border-top-width {
-  border-top-width: var(--border-top-width, var(--border-width, initial));
+  border-top-width: var(--border-width, var(--border-width, initial));
 }
 
 .border, .border-width, .border-right, .border-right-width {
-  border-right-width: var(--border-right-width, var(--border-width, initial));
+  border-right-width: var(--border-width, var(--border-width, initial));
 }
 
 .border, .border-width, .border-bottom, .border-bottom-width {
-  border-bottom-width: var(--border-bottom-width, var(--border-width, initial));
+  border-bottom-width: var(--border-width, var(--border-width, initial));
 }
 
 .border, .border-width, .border-left, .border-left-width {
-  border-left-width: var(--border-left-width, var(--border-width, initial));
+  border-left-width: var(--border-width, var(--border-width, initial));
 }
 
 .border, .border-style, .border-top, .border-top-style {
-  border-top-style: var(--border-top-style, var(--border-style, initial));
+  border-top-style: var(--border-style, var(--border-style, initial));
 }
 
 .border, .border-style, .border-right, .border-right-style {
-  border-right-style: var(--border-right-style, var(--border-style, initial));
+  border-right-style: var(--border-style, var(--border-style, initial));
 }
 
 .border, .border-style, .border-bottom, .border-bottom-style {
-  border-bottom-style: var(--border-bottom-style, var(--border-style, initial));
+  border-bottom-style: var(--border-style, var(--border-style, initial));
 }
 
 .border, .border-style, .border-left, .border-left-style {
-  border-left-style: var(--border-left-style, var(--border-style, initial));
+  border-left-style: var(--border-style, var(--border-style, initial));
 }
 
 .border, .border-color, .border-top, .border-top-color {
-  border-top-color: var(--border-top-color, var(--border-color, initial));
+  border-top-color: var(--border-color, var(--border-color, initial));
 }
 
 .border, .border-color, .border-right, .border-right-color {
-  border-right-color: var(--border-right-color, var(--border-color, initial));
+  border-right-color: var(--border-color, var(--border-color, initial));
 }
 
 .border, .border-color, .border-bottom, .border-bottom-color {
-  border-bottom-color: var(--border-bottom-color, var(--border-color, initial));
+  border-bottom-color: var(--border-color, var(--border-color, initial));
 }
 
 .border, .border-color, .border-left, .border-left-color {
-  border-left-color: var(--border-left-color, var(--border-color, initial));
+  border-left-color: var(--border-color, var(--border-color, initial));
 }
 
 .border-radius--xxs {

@@ -34,6 +34,12 @@
             <span class="ico" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
             If there are no border styles then the width does not matter as the border will be shown.
         </div>
+        <div class="alert alert-info justify-self--start">
+            <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
+            Pay attentions! The <b>--border-width</b> variable of <b>border</b>, <b>border-width</b>,
+            <b>border-...</b>, <b>border-...-width</b>  is adaptive. The list of prefixes available on the
+            <a href="/core#map">Core</a> page.
+        </div>
         <div class="d-grid g-4">
             <b>Sizes</b>
             <div class="d-flex fw-wrap g-3 align-items--center">

@@ -57,7 +57,7 @@ $borderRadiusXtraSizes: (oval: 50%, pill: 4em, none: unset)
     @each $param in $borderParams
         @each $side in $borderSides
             .border, .border-#{$param}, .border-#{$side}, .border-#{$side}-#{$param}
-                border-#{$side}-#{$param}: var(--#{$orientation}#{$type}border-#{$side}-#{$param}, var(--border-#{$param}, initial))
+                border-#{$side}-#{$param}: var(--#{$orientation}#{$type}border-#{$param}, var(--border-#{$param}, initial))
 
 
     .#{$orientation}#{$type}border

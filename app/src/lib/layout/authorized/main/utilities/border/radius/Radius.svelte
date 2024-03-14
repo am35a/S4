@@ -15,7 +15,7 @@
             <b>Preview</b>
             <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
                 <div class="d-flex fw-wrap g-2">
-                    {#each radiusSizesArr as item }
+                    {#each radiusSizesArr as item}
                         <div
                             class="background-color--negative-10 p-2 border-radius--{item} ta-center ar-4_3 w"
                             style="--w: 6em"
@@ -63,7 +63,7 @@
         <div class="d-grid g-4">
             <b>HTML</b>
             <Precode>
-                {#each radiusSizesArr as item }
+                {#each radiusSizesArr as item}
                     {
 `<div class="border-radius--${item}">${item}</div>
 `
@@ -71,7 +71,7 @@
                 {/each}
             </Precode>
             <Precode>
-                {#each radiusXtraSizes as item }
+                {#each radiusXtraSizes as item}
                     {
 `<div class="border-radius--${item}">${item}</div>
 `
