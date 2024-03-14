@@ -364,9 +364,6 @@
 .border-width--thick {
   border-width: var(--border-width--thick) !important;
 }
-.border-style--none {
-  border-style: none !important;
-}
 .border-style--dotted {
   border-style: dotted !important;
   border-width: var(--border-width--min);
@@ -379,17 +376,8 @@
   border-style: solid !important;
   border-width: var(--border-width--min);
 }
-.border-top-style--none {
-  border-top-style: none !important;
-}
-.border-right-style--none {
-  border-right-style: none !important;
-}
-.border-bottom-style--none {
-  border-bottom-style: none !important;
-}
-.border-left-style--none {
-  border-left-style: none !important;
+.border-style--none {
+  border-style: none !important;
 }
 .border-top-style--dotted {
   border-top-style: dotted !important;
@@ -438,6 +426,18 @@
 .border-left-style--solid {
   border-left-style: solid !important;
   border-width: var(--border-width--min);
+}
+.border-top-style--none {
+  border-top-style: none !important;
+}
+.border-right-style--none {
+  border-right-style: none !important;
+}
+.border-bottom-style--none {
+  border-bottom-style: none !important;
+}
+.border-left-style--none {
+  border-left-style: none !important;
 }
 .border-color--positive {
   border-color: var(--positive-color) !important;
@@ -653,17 +653,140 @@
 .border-radius--pill {
   border-radius: 4em !important;
 }
-.border-radius--0, .border-radius--top-0, .border-radius--left-0, .border-radius--top-left-0 {
-  border-top-left-radius: 0 !important;
+.border-radius--none {
+  border-radius: unset !important;
 }
-.border-radius--0, .border-radius--top-0, .border-radius--right-0, .border-radius--top-right-0 {
-  border-top-right-radius: 0 !important;
+.border-top-left-radius--xxs {
+  border-top-left-radius: var(--border-radius--xxs) !important;
 }
-.border-radius-0, .border-radius-bottom-0, .border-radius-right-0, .border-radius-bottom-right-0 {
-  border-bottom-right-radius: 0 !important;
+.border-top-left-radius--xs {
+  border-top-left-radius: var(--border-radius--xs) !important;
 }
-.border-radius--0, .border-radius--bottom-0, .border-radius--left-0, .border-radius--bottom-left-0 {
-  border-bottom-left-radius: 0 !important;
+.border-top-left-radius--sm {
+  border-top-left-radius: var(--border-radius--sm) !important;
+}
+.border-top-left-radius--md {
+  border-top-left-radius: var(--border-radius--md) !important;
+}
+.border-top-left-radius--lg {
+  border-top-left-radius: var(--border-radius--lg) !important;
+}
+.border-top-left-radius--xl {
+  border-top-left-radius: var(--border-radius--xl) !important;
+}
+.border-top-left-radius--xxl {
+  border-top-left-radius: var(--border-radius--xxl) !important;
+}
+.border-top-left-radius--xxxl {
+  border-top-left-radius: var(--border-radius--xxxl) !important;
+}
+.border-top-left-radius--oval {
+  border-top-left-radius: 50% !important;
+}
+.border-top-left-radius--pill {
+  border-top-left-radius: 4em !important;
+}
+.border-top-left-radius--none {
+  border-top-left-radius: unset !important;
+}
+.border-top-right-radius--xxs {
+  border-top-right-radius: var(--border-radius--xxs) !important;
+}
+.border-top-right-radius--xs {
+  border-top-right-radius: var(--border-radius--xs) !important;
+}
+.border-top-right-radius--sm {
+  border-top-right-radius: var(--border-radius--sm) !important;
+}
+.border-top-right-radius--md {
+  border-top-right-radius: var(--border-radius--md) !important;
+}
+.border-top-right-radius--lg {
+  border-top-right-radius: var(--border-radius--lg) !important;
+}
+.border-top-right-radius--xl {
+  border-top-right-radius: var(--border-radius--xl) !important;
+}
+.border-top-right-radius--xxl {
+  border-top-right-radius: var(--border-radius--xxl) !important;
+}
+.border-top-right-radius--xxxl {
+  border-top-right-radius: var(--border-radius--xxxl) !important;
+}
+.border-top-right-radius--oval {
+  border-top-right-radius: 50% !important;
+}
+.border-top-right-radius--pill {
+  border-top-right-radius: 4em !important;
+}
+.border-top-right-radius--none {
+  border-top-right-radius: unset !important;
+}
+.border-bottom-right-radius--xxs {
+  border-bottom-right-radius: var(--border-radius--xxs) !important;
+}
+.border-bottom-right-radius--xs {
+  border-bottom-right-radius: var(--border-radius--xs) !important;
+}
+.border-bottom-right-radius--sm {
+  border-bottom-right-radius: var(--border-radius--sm) !important;
+}
+.border-bottom-right-radius--md {
+  border-bottom-right-radius: var(--border-radius--md) !important;
+}
+.border-bottom-right-radius--lg {
+  border-bottom-right-radius: var(--border-radius--lg) !important;
+}
+.border-bottom-right-radius--xl {
+  border-bottom-right-radius: var(--border-radius--xl) !important;
+}
+.border-bottom-right-radius--xxl {
+  border-bottom-right-radius: var(--border-radius--xxl) !important;
+}
+.border-bottom-right-radius--xxxl {
+  border-bottom-right-radius: var(--border-radius--xxxl) !important;
+}
+.border-bottom-right-radius--oval {
+  border-bottom-right-radius: 50% !important;
+}
+.border-bottom-right-radius--pill {
+  border-bottom-right-radius: 4em !important;
+}
+.border-bottom-right-radius--none {
+  border-bottom-right-radius: unset !important;
+}
+.border-bottom-left-radius--xxs {
+  border-bottom-left-radius: var(--border-radius--xxs) !important;
+}
+.border-bottom-left-radius--xs {
+  border-bottom-left-radius: var(--border-radius--xs) !important;
+}
+.border-bottom-left-radius--sm {
+  border-bottom-left-radius: var(--border-radius--sm) !important;
+}
+.border-bottom-left-radius--md {
+  border-bottom-left-radius: var(--border-radius--md) !important;
+}
+.border-bottom-left-radius--lg {
+  border-bottom-left-radius: var(--border-radius--lg) !important;
+}
+.border-bottom-left-radius--xl {
+  border-bottom-left-radius: var(--border-radius--xl) !important;
+}
+.border-bottom-left-radius--xxl {
+  border-bottom-left-radius: var(--border-radius--xxl) !important;
+}
+.border-bottom-left-radius--xxxl {
+  border-bottom-left-radius: var(--border-radius--xxxl) !important;
+}
+.border-bottom-left-radius--oval {
+  border-bottom-left-radius: 50% !important;
+}
+.border-bottom-left-radius--pill {
+  border-bottom-left-radius: 4em !important;
+}
+.border-bottom-left-radius--none {
+  border-bottom-left-radius: unset !important;
 }
 
 .tbc-collapse {

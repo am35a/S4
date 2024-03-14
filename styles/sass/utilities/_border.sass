@@ -72,6 +72,9 @@ $borderRadiusXtraSizes: (oval: 50%, pill: 4em, none: unset)
             @each $size in $borderRadiusSizes
                 &-#{$corner}-radius--#{$size}
                     border-#{$corner}-radius: var(--border-radius--#{$size}) !important
+            @each $name, $size in $borderRadiusXtraSizes
+                &-#{$corner}-radius--#{$name}
+                    border-#{$corner}-radius: $size !important
 
 
     .tbc
