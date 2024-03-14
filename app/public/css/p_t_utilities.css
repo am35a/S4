@@ -805,15 +805,15 @@
   border-bottom-left-radius: var(--p_t_border-radius, var(--border-radius, initial));
 }
 
-.tbc-collapse {
+.border--collapse {
   border-collapse: collapse !important;
 }
-.tbc-separate {
+.border--separate {
   border-collapse: separate !important;
 }
 
-.tbs {
-  border-spacing: var(--p_t_tbs, var(--tbs, initial)) !important;
+.border-spacing {
+  border-spacing: var(--p_t_border-spacing, var(--border-spacing, initial));
 }
 
 /*  display section: display variants contained in classes */

@@ -80,11 +80,11 @@ $borderRadiusXtraSizes: (oval: 50%, pill: 4em, none: unset)
         .border-#{$corner}-radius
             border-#{$corner}-radius: var(--#{$orientation}#{$type}border-radius, var(--border-radius, initial))
 
-    .tbc
-        &-collapse
+    .border
+        &--collapse
            border-collapse: collapse !important
-        &-separate
+        &--separate
             border-collapse: separate !important
-    .tbs
-        border-spacing: var(--#{$orientation}#{$type}tbs, var(--tbs, initial)) !important
+    .border-spacing
+        border-spacing: var(--#{$orientation}#{$type}border-spacing, var(--border-spacing, initial))
         
