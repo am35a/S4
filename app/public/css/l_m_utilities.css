@@ -1263,19 +1263,19 @@
 }
 
 /*  float section: float contained in classes */
-.l_m_f-left {
+.l_m_float--left {
   float: left !important;
 }
-.l_m_f-right {
+.l_m_float--right {
   float: right !important;
 }
-.l_m_f-start {
+.l_m_float--start {
   float: inline-start !important;
 }
-.l_m_f-end {
+.l_m_float--end {
   float: inline-end !important;
 }
-.l_m_f-none {
+.l_m_float--none {
   float: none !important;
 }
 

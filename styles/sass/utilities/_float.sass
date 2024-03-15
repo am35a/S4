@@ -1,16 +1,10 @@
 /*
     float section: float contained in classes
+
+$floatList: (left: left, right: right, start: inline-start, end: inline-end, none: none)
     
 @mixin _float($orientation, $type)
-
-    .#{$orientation}#{$type}f
-        &-left
-            float: left !important
-        &-right
-            float: right !important
-        &-start
-            float: inline-start !important
-        &-end
-            float: inline-end !important
-        &-none
-            float: none !important
+    .#{$orientation}#{$type}float
+        @each $name, $value in $floatList
+            &--#{$name}
+                float: $value !important

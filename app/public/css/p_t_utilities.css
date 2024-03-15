@@ -1263,19 +1263,19 @@
 }
 
 /*  float section: float contained in classes */
-.p_t_f-left {
+.p_t_float--left {
   float: left !important;
 }
-.p_t_f-right {
+.p_t_float--right {
   float: right !important;
 }
-.p_t_f-start {
+.p_t_float--start {
   float: inline-start !important;
 }
-.p_t_f-end {
+.p_t_float--end {
   float: inline-end !important;
 }
-.p_t_f-none {
+.p_t_float--none {
   float: none !important;
 }
 

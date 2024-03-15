@@ -1263,19 +1263,19 @@
 }
 
 /*  float section: float contained in classes */
-.f-left {
+.float--left {
   float: left !important;
 }
-.f-right {
+.float--right {
   float: right !important;
 }
-.f-start {
+.float--start {
   float: inline-start !important;
 }
-.f-end {
+.float--end {
   float: inline-end !important;
 }
-.f-none {
+.float--none {
   float: none !important;
 }
 

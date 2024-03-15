@@ -6,7 +6,7 @@
 <div class="border-top ta-end fs-xs c-negative-50">
     The example from Wikipedia, <a href="https://en.wikipedia.org/wiki/Lancia_Delta_S4">the free encyclopedia</a>.
 </div>
-<table class="f-end" style="width:290px;">
+<table class="float--end" style="width:290px;">
     <caption>Lancia Delta S4</caption>
     <tbody class="fs-xs">
         <tr>
@@ -139,7 +139,7 @@
 <p>
     Like <a href="https://en.wikipedia.org/wiki/Peugeot" title="Peugeot">Peugeot</a>'s earlier <a href="https://en.wikipedia.org/wiki/Peugeot_205#205_T16" title="Peugeot 205">205 T16</a>, the mid-engine Lancia Delta S4 was a <a href="https://en.wikipedia.org/wiki/Silhouette_racing_car" title="Silhouette racing car">silhouette race car</a> (for marketing purposes), and shared virtually nothing in terms of construction with the production front-engine <a href="https://en.wikipedia.org/wiki/Lancia_Delta" title="Lancia Delta">Delta</a>. The chassis was a tubular space frame construction much like the 037. It featured long travel double wishbone suspension front and rear, with a single large coil over at the front along with a separate spring and twin shock absorbers at the rear. The bodywork was made of a carbon fibre composite with front and rear bodywork fully detachable for fast replacement due to accident damage, allowing ease of access during on-event servicing. The bodywork featured several aerodynamic aids including bonnet opening behind the front-mounted water radiator with <a href="https://en.wikipedia.org/wiki/Gurney_flap" title="Gurney flap">Gurney flap</a>, front splitter and winglets moulded into the front bumper panel, flexible front skirt, and rear deck lid wing that featured both a full <a href="https://en.wikipedia.org/wiki/Aerofoil" class="mw-redirect" title="Aerofoil">aerofoil</a> wind section twinned with a deflection <a href="https://en.wikipedia.org/wiki/Spoiler_(automotive)" class="mw-redirect" title="Spoiler (automotive)">spoiler</a>. The door construction style was brought from the 037 with a hollow shell all-<a href="https://en.wikipedia.org/wiki/Kevlar" title="Kevlar">Kevlar</a> construction that had no inner door skin, no door handle or window winder. The door was opened with a small loop and the windows were fixed perspex with small sliding panels to allow ventilation and passing of time cards.
 </p>
-<div class="f-start">
+<div class="float--start">
     <div class="thumbinner multiimageinner" style="width:224px;max-width:224px">
         <div class="trow">
             <div class="tsingle" style="width:222px;max-width:222px">
