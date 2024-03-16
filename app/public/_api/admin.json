@@ -105,11 +105,6 @@
                         "segment": "/utilities/alignment"
                     },
                     {
-                        "id": 601,
-                        "title": "Colors",
-                        "segment": "/utilities/colors"
-                    },
-                    {
                         "id": 602,
                         "title": "Background",
                         "segment": "/utilities/background"
@@ -118,6 +113,11 @@
                         "id": 603,
                         "title": "Border",
                         "segment": "/utilities/border"
+                    },
+                    {
+                        "id": 601,
+                        "title": "Colors",
+                        "segment": "/utilities/colors"
                     },
                     {
                         "id": 604,
