@@ -2,7 +2,7 @@
     import { Route, getPathSegments, path, query, hash, Link } from 'svelte-micro'
 
     import ArticleAlignment, {anchorsObj as alignmentObj} from './alignment/Alignment.svelte'
-    import ArticleBackground from './background/Background.svelte'
+    import ArticleBackground, {anchorsObj as backgroundObj} from './background/Background.svelte'
     import ArticleBorder from './border/Border.svelte'
     import ArticleDisplay from './display/Display.svelte'
     import ArticleColors from './colors/Colors.svelte'
@@ -20,7 +20,8 @@
     // export let jumpTo = ''
 
     let anchorsObj = {
-            alignmentObj: {modulePath: '/alignment', ...alignmentObj}
+            alignmentObj: {modulePath: '/alignment', ...alignmentObj},
+            backgroundObj: {modulePath: '/background', ...backgroundObj}
         }
 </script>
 
@@ -28,15 +29,27 @@
 <!-- {#if getPathSegments($path).length === 1 && getPathSegments($path)[0] === jumpTo} -->
     <Route path="/">
         <h2>Index</h2>
-        <div>
-            <h3>{Object.values(anchorsObj.alignmentObj.headAnchorObg)}</h3>
-            <div class="d-grid g-2 px-2">
-                {#each Object.entries(anchorsObj.alignmentObj.subAnchorsObj) as [anchor, name]}
-                    <Link
-                        href="/utilities{anchorsObj.alignmentObj.modulePath}#{anchor}"
-                    >{name}</Link>
-                {/each}
-            </div>
+        <div class="d-grid g-3">
+            {#each Object.entries(anchorsObj) as [_, moduleObj], index}
+                <div class="d-grid g-2 px-2">
+                    <div class="fs-lg">
+                        <span>{index + 1}</span>
+                        <Link
+                            href="{$path}{moduleObj.modulePath}"
+                        >{Object.values(moduleObj.headAnchorObg)}</Link>
+                    </div>
+                    <div class="d-grid g-2 px-2">
+                        {#each Object.entries(moduleObj.subAnchorsObj) as [anchor, name], subIndex}
+                            <div>
+                                <span>{index + 1}.{subIndex + 1}</span>
+                                <Link
+                                    href="{$path}{moduleObj.modulePath}#{anchor}"
+                                >{name}</Link>
+                            </div>
+                        {/each}
+                    </div>
+                </div>
+            {/each}
         </div>
     </Route>
 <!-- {/if} -->
@@ -44,14 +57,14 @@
 <Route path={anchorsObj.alignmentObj.modulePath}>
     <svelte:component this={ArticleAlignment}/>
 </Route>
-<Route path="/colors">
-    <svelte:component this={ArticleColors}/>
-</Route>
-<Route path="/background">
+<Route path={anchorsObj.backgroundObj.modulePath}>
     <svelte:component this={ArticleBackground}/>
 </Route>
 <Route path="/border">
     <svelte:component this={ArticleBorder}/>
+</Route>
+<Route path="/colors">
+    <svelte:component this={ArticleColors}/>
 </Route>
 <Route path="/display">
     <svelte:component this={ArticleDisplay}/>

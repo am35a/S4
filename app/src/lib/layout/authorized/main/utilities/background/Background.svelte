@@ -11,8 +11,28 @@
     import AnchorNavigation from 'src/lib/layout/components/AnchorNavigation.svelte'
 </script>
 
+<script context="module">
+    export const anchorsObj = {
+        headAnchorObg: {
+            background: 'Background'
+        },
+        subAnchorsObj: {
+            attachment: 'Attachment',
+            clip: 'Clip',
+            origin: 'Origin',
+            color: 'Color',
+            image: 'Image',
+            position: 'Position',
+            repeat: 'Repeat',
+            size: 'Size'
+        }
+	}
+</script>
+
 <article>
-    <h2 id="background">Background</h2>
+    <h2 id={Object.keys(anchorsObj.headAnchorObg)}>
+        {Object.values(anchorsObj.headAnchorObg)}
+    </h2>
     <SectionAttachment />
     <SectionClip />
     <SectionOrigin />
@@ -23,17 +43,6 @@
     <SectionSize />
 
     <div class="p-sticky b-0 p-2">
-        <AnchorNavigation
-            anchorsObj={{
-                attachment: 'Attachment',
-                clip: 'Clip',
-                origin: 'Origin',
-                colors: 'Color',
-                image: 'Image',
-                position: 'Position',
-                repeat: 'Repeat',
-                size: 'Size'
-            }}
-        />
+        <AnchorNavigation anchorsObj={anchorsObj.subAnchorsObj} />
     </div>
 </article>
