@@ -10,6 +10,23 @@
     import AnchorNavigation from 'src/lib/layout/components/AnchorNavigation.svelte'
 </script>
 
+<script context="module">
+    export const anchorsObj = {
+        headAnchorObg: {
+            alignment: 'Alignment'
+        },
+        subAnchorsObj: {
+            verticalAlignment: 'Vertical alignment',
+            justifyContent: 'Justify content',
+            justifyItems: 'Justify items',
+            justifySelf: 'Justify self',
+            alignContent: 'Align content',
+            alignItems: 'Align items',
+            alignSelf: 'Align self'
+        }
+	}
+</script>
+
 <article>
     <h2 id="alignment">Alignment</h2>
     <SectionVerticalAlign />
@@ -21,16 +38,6 @@
     <SectionAlignSelf />
 
     <div class="p-sticky b-0 p-2">
-        <AnchorNavigation
-            anchorsObj={{
-                verticalAlignment: 'Vertical alignment',
-                justifyContent: 'Justify content',
-                justifyItems: 'Justify items',
-                justifySelf: 'Justify self',
-                alignContent: 'Align content',
-                alignItems: 'Align items',
-                alignSelf: 'Align self'
-            }}
-        />
+        <AnchorNavigation anchorsObj={anchorsObj.subAnchorsObj} />
     </div>
 </article>

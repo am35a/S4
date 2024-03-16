@@ -1,11 +1,11 @@
-<script lang="ts">
-    import { Route, getPathSegments, path, query, hash } from 'svelte-micro'
+<script>
+    import { Route, getPathSegments, path, query, hash, Link } from 'svelte-micro'
 
-    import ArticleAlignment from './alignment/Alignment.svelte'
-    import ArticleColors from './colors/Colors.svelte'
+    import ArticleAlignment, {anchorsObj as alignmentObj} from './alignment/Alignment.svelte'
     import ArticleBackground from './background/Background.svelte'
     import ArticleBorder from './border/Border.svelte'
     import ArticleDisplay from './display/Display.svelte'
+    import ArticleColors from './colors/Colors.svelte'
     import ArticleFlex from './flex/Flex.svelte'
     import ArticleFloat from './float/Float.svelte'
     import ArticleGrid from './grid/Grid.svelte'
@@ -17,17 +17,31 @@
     import ArticleSpacing from './spacing/Spacing.svelte'
     import ArticleTypography from './typography/Typography.svelte'
 
-    export let jumpTo: string = ''
+    // export let jumpTo = ''
+
+    let anchorsObj = {
+            alignmentObj: {modulePath: '/alignment', ...alignmentObj}
+        }
 </script>
 
 <h1>Utilities</h1>
-{#if getPathSegments($path).length === 1 && getPathSegments($path)[0] === jumpTo}
-    <p>
-        Here will be the utilities description.
-    </p>
-{/if}
+<!-- {#if getPathSegments($path).length === 1 && getPathSegments($path)[0] === jumpTo} -->
+    <Route path="/">
+        <h2>Index</h2>
+        <div>
+            <h3>{Object.values(anchorsObj.alignmentObj.headAnchorObg)}</h3>
+            <div class="d-grid g-2 px-2">
+                {#each Object.entries(anchorsObj.alignmentObj.subAnchorsObj) as [anchor, name]}
+                    <Link
+                        href="/utilities{anchorsObj.alignmentObj.modulePath}#{anchor}"
+                    >{name}</Link>
+                {/each}
+            </div>
+        </div>
+    </Route>
+<!-- {/if} -->
 
-<Route path="/alignment">
+<Route path={anchorsObj.alignmentObj.modulePath}>
     <svelte:component this={ArticleAlignment}/>
 </Route>
 <Route path="/colors">
