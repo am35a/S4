@@ -154,139 +154,139 @@
 .m_background-origin--content {
   background-origin: content-box !important;
 }
-.m_background-color--positive {
+.m_background-color--positive, .m_background-color--positive\:hover:hover {
   background-color: var(--positive-color) !important;
 }
-.m_background-color--negative {
+.m_background-color--negative, .m_background-color--negative\:hover:hover {
   background-color: var(--negative-color) !important;
 }
-.m_background-color--positive-10 {
+.m_background-color--positive-10, .m_background-color--positive-10\:hover:hover {
   background-color: var(--positive-color-10) !important;
 }
-.m_background-color--positive-20 {
+.m_background-color--positive-20, .m_background-color--positive-20\:hover:hover {
   background-color: var(--positive-color-20) !important;
 }
-.m_background-color--positive-30 {
+.m_background-color--positive-30, .m_background-color--positive-30\:hover:hover {
   background-color: var(--positive-color-30) !important;
 }
-.m_background-color--positive-40 {
+.m_background-color--positive-40, .m_background-color--positive-40\:hover:hover {
   background-color: var(--positive-color-40) !important;
 }
-.m_background-color--positive-50 {
+.m_background-color--positive-50, .m_background-color--positive-50\:hover:hover {
   background-color: var(--positive-color-50) !important;
 }
-.m_background-color--positive-60 {
+.m_background-color--positive-60, .m_background-color--positive-60\:hover:hover {
   background-color: var(--positive-color-60) !important;
 }
-.m_background-color--positive-70 {
+.m_background-color--positive-70, .m_background-color--positive-70\:hover:hover {
   background-color: var(--positive-color-70) !important;
 }
-.m_background-color--positive-80 {
+.m_background-color--positive-80, .m_background-color--positive-80\:hover:hover {
   background-color: var(--positive-color-80) !important;
 }
-.m_background-color--positive-90 {
+.m_background-color--positive-90, .m_background-color--positive-90\:hover:hover {
   background-color: var(--positive-color-90) !important;
 }
-.m_background-color--negative-10 {
+.m_background-color--negative-10, .m_background-color--negative-10\:hover:hover {
   background-color: var(--negative-color-10) !important;
 }
-.m_background-color--negative-20 {
+.m_background-color--negative-20, .m_background-color--negative-20\:hover:hover {
   background-color: var(--negative-color-20) !important;
 }
-.m_background-color--negative-30 {
+.m_background-color--negative-30, .m_background-color--negative-30\:hover:hover {
   background-color: var(--negative-color-30) !important;
 }
-.m_background-color--negative-40 {
+.m_background-color--negative-40, .m_background-color--negative-40\:hover:hover {
   background-color: var(--negative-color-40) !important;
 }
-.m_background-color--negative-50 {
+.m_background-color--negative-50, .m_background-color--negative-50\:hover:hover {
   background-color: var(--negative-color-50) !important;
 }
-.m_background-color--negative-60 {
+.m_background-color--negative-60, .m_background-color--negative-60\:hover:hover {
   background-color: var(--negative-color-60) !important;
 }
-.m_background-color--negative-70 {
+.m_background-color--negative-70, .m_background-color--negative-70\:hover:hover {
   background-color: var(--negative-color-70) !important;
 }
-.m_background-color--negative-80 {
+.m_background-color--negative-80, .m_background-color--negative-80\:hover:hover {
   background-color: var(--negative-color-80) !important;
 }
-.m_background-color--negative-90 {
+.m_background-color--negative-90, .m_background-color--negative-90\:hover:hover {
   background-color: var(--negative-color-90) !important;
 }
-.m_background-color--primary {
+.m_background-color--primary, .m_background-color--primary\:hover:hover {
   background-color: var(--primary-color) !important;
 }
-.m_background-color--primary-l {
+.m_background-color--primary-l, .m_background-color--primary-l\:hover:hover {
   background-color: var(--primary-color-l) !important;
 }
-.m_background-color--primary-d {
+.m_background-color--primary-d, .m_background-color--primary-d\:hover:hover {
   background-color: var(--primary-color-d) !important;
 }
-.m_background-color--primary-m {
+.m_background-color--primary-m, .m_background-color--primary-m\:hover:hover {
   background-color: var(--primary-color-m) !important;
 }
-.m_background-color--secondary {
+.m_background-color--secondary, .m_background-color--secondary\:hover:hover {
   background-color: var(--secondary-color) !important;
 }
-.m_background-color--secondary-l {
+.m_background-color--secondary-l, .m_background-color--secondary-l\:hover:hover {
   background-color: var(--secondary-color-l) !important;
 }
-.m_background-color--secondary-d {
+.m_background-color--secondary-d, .m_background-color--secondary-d\:hover:hover {
   background-color: var(--secondary-color-d) !important;
 }
-.m_background-color--secondary-m {
+.m_background-color--secondary-m, .m_background-color--secondary-m\:hover:hover {
   background-color: var(--secondary-color-m) !important;
 }
-.m_background-color--info {
+.m_background-color--info, .m_background-color--info\:hover:hover {
   background-color: var(--info-color) !important;
 }
-.m_background-color--info-l {
+.m_background-color--info-l, .m_background-color--info-l\:hover:hover {
   background-color: var(--info-color-l) !important;
 }
-.m_background-color--info-d {
+.m_background-color--info-d, .m_background-color--info-d\:hover:hover {
   background-color: var(--info-color-d) !important;
 }
-.m_background-color--info-m {
+.m_background-color--info-m, .m_background-color--info-m\:hover:hover {
   background-color: var(--info-color-m) !important;
 }
-.m_background-color--success {
+.m_background-color--success, .m_background-color--success\:hover:hover {
   background-color: var(--success-color) !important;
 }
-.m_background-color--success-l {
+.m_background-color--success-l, .m_background-color--success-l\:hover:hover {
   background-color: var(--success-color-l) !important;
 }
-.m_background-color--success-d {
+.m_background-color--success-d, .m_background-color--success-d\:hover:hover {
   background-color: var(--success-color-d) !important;
 }
-.m_background-color--success-m {
+.m_background-color--success-m, .m_background-color--success-m\:hover:hover {
   background-color: var(--success-color-m) !important;
 }
-.m_background-color--warning {
+.m_background-color--warning, .m_background-color--warning\:hover:hover {
   background-color: var(--warning-color) !important;
 }
-.m_background-color--warning-l {
+.m_background-color--warning-l, .m_background-color--warning-l\:hover:hover {
   background-color: var(--warning-color-l) !important;
 }
-.m_background-color--warning-d {
+.m_background-color--warning-d, .m_background-color--warning-d\:hover:hover {
   background-color: var(--warning-color-d) !important;
 }
-.m_background-color--warning-m {
+.m_background-color--warning-m, .m_background-color--warning-m\:hover:hover {
   background-color: var(--warning-color-m) !important;
 }
-.m_background-color--error {
+.m_background-color--error, .m_background-color--error\:hover:hover {
   background-color: var(--error-color) !important;
 }
-.m_background-color--error-l {
+.m_background-color--error-l, .m_background-color--error-l\:hover:hover {
   background-color: var(--error-color-l) !important;
 }
-.m_background-color--error-d {
+.m_background-color--error-d, .m_background-color--error-d\:hover:hover {
   background-color: var(--error-color-d) !important;
 }
-.m_background-color--error-m {
+.m_background-color--error-m, .m_background-color--error-m\:hover:hover {
   background-color: var(--error-color-m) !important;
 }
-.m_background-color--transparent {
+.m_background-color--transparent, .m_background-color--transparent\:hover:hover {
   background-color: transparent !important;
 }
 .m_background-position--left {

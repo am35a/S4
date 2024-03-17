@@ -12,11 +12,13 @@
 <section>
     <h2 id="color">Colors</h2>
     <p>
-        The <b>c-...</b> classes allow you to set default colors for text, strokes, and other default states which use <b>currentColor</b> value.
-        Use <b>c-transparent</b> class to make color or other dependencies transparent.
+        The <b>c-...</b> classes allow you to set default colors for text, strokes, and other default states
+        which use <b>currentColor</b> value. Use <b>c-transparent</b> class to make color or other
+        dependencies transparent.
     </p>
     <p>
-        The classes from <b>c-...-10</b> to <b>c-...-90</b> make color transparent in percentage which point in the end of.
+        The classes from <b>c-...-10</b> to <b>c-...-90</b> make color transparent in percentage which point
+        in the end of.
     </p>
     <div class="d-grid g-3 gtc-2 mb-4 p-3 background-color--positive border-radius--md">
         <div class="d-flex fd-column-reverse g-2 background-color--negative">
