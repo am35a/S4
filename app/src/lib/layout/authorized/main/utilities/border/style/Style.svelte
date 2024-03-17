@@ -39,7 +39,8 @@
                         border-width--medium
                         border-left-width--thick
                         border-style--solid
-                        border-right-style--dotted"
+                        border-right-style--dotted
+                        border-left-style--none"
                     >mixed</div>
                 </div>
             </div>

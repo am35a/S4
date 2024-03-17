@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import SectionWidth from './width/Width.svelte'
     import SectionStyle from './style/Style.svelte'
     import SectionColor from './color/Color.svelte'
@@ -8,8 +8,25 @@
     import AnchorNavigation from 'src/lib/layout/components/AnchorNavigation.svelte'
 </script>
 
+<script context="module">
+    export const anchorsObj = {
+        headAnchorObg: {
+            border: 'Border'
+        },
+        subAnchorsObj: {
+            width: 'Width',
+            style: 'Style',
+            color: 'Color',
+            radius: 'Radius',
+            spacing: 'Spacing'
+        }
+	}
+</script>
+
 <article>
-    <h2 id="border">Border</h2>
+    <h2 id={Object.keys(anchorsObj.headAnchorObg)}>
+        {Object.values(anchorsObj.headAnchorObg)}
+    </h2>
     <SectionWidth />
     <SectionStyle />
     <SectionColor />
@@ -17,14 +34,6 @@
     <SectionSpacing />
 
     <div class="p-sticky b-0 p-2">
-        <AnchorNavigation
-            anchorsObj={{
-                width: 'Width',
-                style: 'Style',
-                color: 'Color',
-                radius: 'Radius',
-                spacing: 'Spacing'
-            }}
-        />
+        <AnchorNavigation anchorsObj={anchorsObj.subAnchorsObj} />
     </div>
 </article>

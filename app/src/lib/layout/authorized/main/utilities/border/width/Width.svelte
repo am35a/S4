@@ -1,8 +1,8 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let sidesArr = ['', 'top-', 'right-', 'bottom-', 'left-'],
-        widthObj = {
+    // let sidesArr = ['', 'top-', 'right-', 'bottom-', 'left-'],
+    let widthObj = {
             Min: 'min',
             Thin: 'thin',
             Medium: 'medium',
@@ -16,13 +16,14 @@
     <h3 id="width">Width</h3>
     <p>
         To change the border width use the:
-        <span class="d-grid">
+        <!-- <span class="d-grid">
             {#each sidesArr as side }
                 <b>border-{side}width--{Object.values(widthObj).slice(1).join('/')}</b>
             {/each}
-        </span>
-        <!-- <b>border-width--{Object.values(widthObj).slice(1).join('/')}</b> -->
-        classes in combination with border styles.
+        </span> -->
+        <b>border-width--{Object.values(widthObj).slice(1).join('/')}</b>
+        classes in combination with border styles. The <b>border-width--min</b> is not directly available,
+        it is set automatically with the border style.
     </p>
     <div class="d-grid g-5">
         <div class="alert alert-info justify-self--start">

@@ -3,7 +3,7 @@
 
     import ArticleAlignment, {anchorsObj as alignmentObj} from './alignment/Alignment.svelte'
     import ArticleBackground, {anchorsObj as backgroundObj} from './background/Background.svelte'
-    import ArticleBorder from './border/Border.svelte'
+    import ArticleBorder, {anchorsObj as borderObj} from './border/Border.svelte'
     import ArticleDisplay from './display/Display.svelte'
     import ArticleColors from './colors/Colors.svelte'
     import ArticleFlex from './flex/Flex.svelte'
@@ -21,7 +21,8 @@
 
     let anchorsObj = {
             alignmentObj: {modulePath: '/alignment', ...alignmentObj},
-            backgroundObj: {modulePath: '/background', ...backgroundObj}
+            backgroundObj: {modulePath: '/background', ...backgroundObj},
+            borderObj: {modulePath: '/border', ...borderObj},
         }
 </script>
 
@@ -60,7 +61,7 @@
 <Route path={anchorsObj.backgroundObj.modulePath}>
     <svelte:component this={ArticleBackground}/>
 </Route>
-<Route path="/border">
+<Route path={anchorsObj.borderObj.modulePath}>
     <svelte:component this={ArticleBorder}/>
 </Route>
 <Route path="/colors">
