@@ -5,7 +5,6 @@
     import ArticleBackground, {anchorsObj as backgroundObj} from './background/Background.svelte'
     import ArticleBorder, {anchorsObj as borderObj} from './border/Border.svelte'
     import ArticleDisplay from './display/Display.svelte'
-    import ArticleColors from './colors/Colors.svelte'
     import ArticleFlex from './flex/Flex.svelte'
     import ArticleFloat from './float/Float.svelte'
     import ArticleGrid from './grid/Grid.svelte'
@@ -63,9 +62,6 @@
 </Route>
 <Route path={anchorsObj.borderObj.modulePath}>
     <svelte:component this={ArticleBorder}/>
-</Route>
-<Route path="/colors">
-    <svelte:component this={ArticleColors}/>
 </Route>
 <Route path="/display">
     <svelte:component this={ArticleDisplay}/>

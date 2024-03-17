@@ -115,11 +115,6 @@
                         "segment": "/utilities/border"
                     },
                     {
-                        "id": 601,
-                        "title": "Colors",
-                        "segment": "/utilities/colors"
-                    },
-                    {
                         "id": 604,
                         "title": "Display",
                         "segment": "/utilities/display"
