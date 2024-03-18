@@ -23,8 +23,8 @@
     {...$$restProps}
 >
     <div class="display--flex g-2 h-100">
-        <div class="display--flex align-items--center fg-1 p-1 background-color--positive border-radius--md bs-xs border-style--solid border-color--negative-30">
-            <div class="display--flex align-items--center fg-1 g-2 h-100">
+        <div class="display--flex align-items--center flex-grow--1 p-1 background-color--positive border-radius--md bs-xs border-style--solid border-color--negative-30">
+            <div class="display--flex align-items--center flex-grow--1 g-2 h-100">
                 <!-- <Button
                     class="w-auto h-100 p-0 {$path === '/home' ? 'active' : ''}"
                     title="S4 - The lightweight Svelte UI library"

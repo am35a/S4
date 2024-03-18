@@ -20,7 +20,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Display</b>
-            <div class="display--inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap g-3">
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <Button
                         class={containerType === value ? 'active' : ''}
@@ -32,7 +32,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Align</b>
-            <div class="display--inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap g-3">
                 {#each alignItemsArr as value }
                     <button
                         class="btn"

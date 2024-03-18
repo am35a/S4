@@ -21,7 +21,7 @@
         in the end of.
     </p>
     <div class="display--grid g-3 gtc-2 mb-4 p-3 background-color--positive border-radius--md">
-        <div class="display--flex fd-column-reverse g-2 background-color--negative">
+        <div class="display--flex flex-direction--column-reverse g-2 background-color--negative">
             {#each Array(9) as _, i}
                 <div class="c-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 ta-center">
                     c-{defaultColorsArr[0]}-{(i + 1) * 10}
@@ -31,7 +31,7 @@
                 c-{defaultColorsArr[0]}
             </div>
         </div>
-        <div class="display--flex fd-column-reverse g-2">
+        <div class="display--flex flex-direction--column-reverse g-2">
             {#each Array(9) as _, i}
                 <div class="c-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 ta-center">
                     c-{defaultColorsArr[1]}-{(i + 1) * 10}

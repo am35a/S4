@@ -20,7 +20,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Sizes</b>
-            <div class="display--flex fw-wrap g-3 align-items--center">
+            <div class="display--flex flex-wrap--wrap g-3 align-items--center">
                 {#each Object.entries(repeatsObj) as [key, value]}
                     <button
                         on:click={() => repeat = key}

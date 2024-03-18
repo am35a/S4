@@ -19,7 +19,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Display</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 <Button
                     on:click={() => ifDisplayGrid = true}
                     class="btn {ifDisplayGrid ? 'active' : ''}"

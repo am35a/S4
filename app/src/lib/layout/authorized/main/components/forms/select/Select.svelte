@@ -18,7 +18,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Types</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(selectFeaturesObj) as [key, value]}
                     <button
                         on:click={() => selectFeature = key}
@@ -30,7 +30,7 @@
                 {/each}
             </div>
         </div>
-        <div class="display--flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--md">
+        <div class="display--flex g-4 flex-wrap--wrap justify-content--evenly p-4 background-color--positive border-radius--md">
             <div class="display--grid gtc-2 g-3">
                 <b class="justify-self--end align-self--center">Default</b>
                 <div>

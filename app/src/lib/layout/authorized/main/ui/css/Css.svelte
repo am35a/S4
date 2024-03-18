@@ -37,7 +37,7 @@
     <SectionDetails />
     <SectionRadius />
     <div class="p-sticky b-0 display--flex g-2 background-color--positive p-2 border-radius--md w-fit ms-auto bs-sm">
-        <div class="display--flex fw-wrap g-1 w-fit ms-auto">
+        <div class="display--flex flex-wrap--wrap g-1 w-fit ms-auto">
             {#each Object.entries(cssOverviewObj) as [key, value]}
                 <Button
                     class="btn-xs btn-primary"

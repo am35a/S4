@@ -13,7 +13,7 @@
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--flex fw-wrap g-2">
+                <div class="display--flex flex-wrap--wrap g-2">
                     ...
                 </div>
             </div>

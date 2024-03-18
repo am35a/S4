@@ -26,7 +26,7 @@
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--flex fw-wrap g-2 align-items--baseline">
+                <div class="display--flex flex-wrap--wrap g-2 align-items--baseline">
                     {#each Object.entries(stylesObj) as [key, value]}
                         <div class="background-color--negative-10 p-4 border-width--medium border-style--{value}"
                         >{key}</div>
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--flex fw-wrap g-2 align-items--baseline">
+                <div class="display--flex flex-wrap--wrap g-2 align-items--baseline">
                     <div class="background-color--negative-10 p-4
                         border-width--medium
                         border-left-width--thick

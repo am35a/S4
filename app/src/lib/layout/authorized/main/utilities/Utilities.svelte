@@ -5,7 +5,7 @@
     import ArticleBackground, {anchorsObj as backgroundObj} from './background/Background.svelte'
     import ArticleBorder, {anchorsObj as borderObj} from './border/Border.svelte'
     import ArticleDisplay, {anchorsObj as displayObj} from './display/Display.svelte'
-    import ArticleFlex from './flex/Flex.svelte'
+    import ArticleFlex, {anchorsObj as flexObj} from './flex/Flex.svelte'
     import ArticleFloat from './float/Float.svelte'
     import ArticleGrid from './grid/Grid.svelte'
     import ArticleOverflow from './overflow/Overflow.svelte'
@@ -23,6 +23,7 @@
             backgroundObj: {modulePath: '/background', ...backgroundObj},
             borderObj: {modulePath: '/border', ...borderObj},
             displayObj: {modulePath: '/display', ...displayObj},
+            flexObj: {modulePath: '/flex', ...flexObj},
         }
 </script>
 
@@ -67,7 +68,7 @@
 <Route path={anchorsObj.displayObj.modulePath}>
     <svelte:component this={ArticleDisplay}/>
 </Route>
-<Route path="/flex">
+<Route path={anchorsObj.flexObj.modulePath}>
     <svelte:component this={ArticleFlex}/>
 </Route>
 <Route path="/float">

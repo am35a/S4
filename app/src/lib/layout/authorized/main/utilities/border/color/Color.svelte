@@ -26,7 +26,7 @@
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="display--grid g-3 gtc-2 mb-4 p-3 background-color--positive border-radius--md">
-                <div class="display--flex fd-column-reverse g-2 p-2 background-color--negative">
+                <div class="display--flex flex-direction--column-reverse g-2 p-2 background-color--negative">
                     {#each {length: 9} as _, i}
                         <div class="border-style--solid border-color--{defaultColorsArr[0]}-{(i + 1) * 10} p-4 ta-center c-positive">
                             border-color--{defaultColorsArr[0]}-{(i + 1) * 10}
@@ -36,7 +36,7 @@
                         border-color--{defaultColorsArr[0]}
                     </div>
                 </div>
-                <div class="display--flex fd-column-reverse g-2 p-2">
+                <div class="display--flex flex-direction--column-reverse g-2 p-2">
                     {#each {length: 9} as _, i}
                         <div class="border-style--solid border-color--{defaultColorsArr[1]}-{(i + 1) * 10} p-4 ta-center">
                             border-color--{defaultColorsArr[1]}-{(i + 1) * 10}
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 {#each accentColorsArr as item }
-                    <div class="display--flex fd-column-reverse g-2 p-2">
+                    <div class="display--flex flex-direction--column-reverse g-2 p-2">
                         {#each Object.entries(accentExtraColorsObj) as [key, value]}
                             <div class="border-style--solid border-color--{item}{value} p-4 ta-center">
                                 border-color--{item}{value}

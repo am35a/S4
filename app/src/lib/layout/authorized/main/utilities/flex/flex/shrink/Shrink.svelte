@@ -7,20 +7,21 @@
 </script>
 
 <div>
-    <h4 id="flexShrink">Shrink</h4>
+    <h4 id="shrink">Shrink</h4>
     <p>
-        Shrink settings are available by default. To disable shrink add the <b>fs-0</b> class to the elements
-        in a flex container. There is an additional option via the <b>fx</b> class and the <b>--fxs</b>
-        variable to control flexible shrink.
+        Shrink settings are available by default. To disable shrink add the <b>flex-shrink--0</b> class to
+        the elements in a flex container. There is an additional option via the <b>flex</b> class and the
+        <b>--flex-shrink</b> variable to control flexible shrink.
     </p>
     <div class="display--grid g-5">
         <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
-            Default value of <b>flex-shrink</b> is <b>1</b>. Class <b>fs-0</b> convert value to <b>0</b>.
+            Default value of <b>flex-shrink</b> is <b>1</b>.
+            Class <b>flex-shrink--0</b> convert value to <b>0</b>.
         </div>
         <div class="display--grid g-4">
             <b>Shrink</b>
-            <div class="display--inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap g-3">
                 <button
                     class="btn"
                     class:active={isCellShrinked}
@@ -32,7 +33,7 @@
                     class:active={!isCellShrinked}
                     on:click={() => isCellShrinked = !isCellShrinked}
                     disabled={!isCellShrinked}
-                >fs-0</button>
+                >flex-shrink--0</button>
             </div>
         </div>
         <div class="display--grid g-4">
@@ -45,7 +46,7 @@
                     placeholder="Type utility classes to customizing the container"
                 >
                 <div class="fs-sm">
-                    Try the <b>o-hidden</b> and <b>fw-wrap</b> to view dependence
+                    Try the <b>o-hidden</b> and <b>flex-wrap--wrap</b> to view dependence
                     container and items inside it.
                 </div>
             </div>
@@ -73,7 +74,7 @@
                     {#each Array(6) as _, i}
                         <div
                             class="background-color--negative-10 px-2 py-1"
-                            class:fs-0={!isCellShrinked}
+                            class:flex-shrink--0={!isCellShrinked}
                         >cell {isCellShrinked ? 'shrinked' : 'no shrink'}</div>
                     {/each}
                 </div>
@@ -83,12 +84,12 @@
                         style="--w: 10em;"
                     >1:1</div>
                     <div
-                        class="fx background-color--negative-10 px-2 py-1 w"
-                        style="--w: 10em; {isCellShrinked ? '--fxs: 2' : ''}"
+                        class="flex background-color--negative-10 px-2 py-1 w"
+                        style="--w: 10em; {isCellShrinked ? '--flex-shrink: 2' : ''}"
                     >{isCellShrinked ? '1:2' : '1:1'}</div>
                     <div
-                        class="fx background-color--negative-10 px-2 py-1 w"
-                        style="--w: 10em; {isCellShrinked ? '--fxs: 3' : ''}"
+                        class="flex background-color--negative-10 px-2 py-1 w"
+                        style="--w: 10em; {isCellShrinked ? '--flex-shrink: 3' : ''}"
                     >{isCellShrinked ? '1:3' : '1:1'}</div>
                 </div>
             </div>
@@ -98,13 +99,13 @@
             <Precode>
                 {
 `<div class="display--flex ${containerClasses}">
-    <div ${isCellShrinked ? '' : 'class="fs-0"'}>cell ${isCellShrinked ? 'shrinked' : 'no shrink'}</div>
+    <div ${isCellShrinked ? '' : 'class="flex-shrink--0"'}>cell ${isCellShrinked ? 'shrinked' : 'no shrink'}</div>
     ...
 </div>
 <div class="display--flex ${containerClasses}">
-    <div class="w" style="--w: 10em;">'1:1'</div>
-    <div class="fx w" style="--w: 10em; ${isCellShrinked ? '--fxs: 2' : ''}">${isCellShrinked ? '1:2' : '1:1'}</div>
-    <div class="fx w" style="--w: 10em; ${isCellShrinked ? '--fxs: 3' : ''}">${isCellShrinked ? '1:3' : '1:1'}</div>
+    <div class="w" style="--w: 10em;">1:1</div>
+    <div class="flex w" style="--w: 10em; ${isCellShrinked ? '--flex-shrink: 2' : ''}">${isCellShrinked ? '1:2' : '1:1'}</div>
+    <div class="flex w" style="--w: 10em; ${isCellShrinked ? '--flex-shrink: 3' : ''}">${isCellShrinked ? '1:3' : '1:1'}</div>
 </div>
 `
                 }

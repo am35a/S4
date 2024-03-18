@@ -19,7 +19,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Colors</b>
-            <div class="display--flex fw-wrap g-2">
+            <div class="display--flex flex-wrap--wrap g-2">
                 {#each Object.entries(accentsExtraObj) as [key, value]}
                     <button
                         class="btn"

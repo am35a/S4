@@ -12,7 +12,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Gradient</b>
-            <div class="display--flex fw-wrap g-2">
+            <div class="display--flex flex-wrap--wrap g-2">
                 <button
                     class="btn"
                     class:active={defaultsInterval}
@@ -35,7 +35,7 @@
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 <div class="display--grid g-3 gtc-2">
-                    <div class="display--flex fd-column-reverse g-2 background-color--negative">
+                    <div class="display--flex flex-direction--column-reverse g-2 background-color--negative">
                         {#if defaultsInterval}
                             {#each Array(9) as _, i}
                                 <div
@@ -47,7 +47,7 @@
                             background-color--{defaultsArr[0]}
                         </div>
                     </div>
-                    <div class="display--flex fd-column-reverse g-2">
+                    <div class="display--flex flex-direction--column-reverse g-2">
                         {#if defaultsInterval}
                             {#each Array(9) as _, i}
                                 <div

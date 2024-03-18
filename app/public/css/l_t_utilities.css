@@ -1189,77 +1189,74 @@
 }
 
 /*  flex section: fill, equal and other sets to flex container items */
-.t_fd-row {
+.t_flex-direction--row {
   flex-direction: row !important;
 }
-.t_fd-row-reverse {
+.t_flex-direction--row-reverse {
   flex-direction: row-reverse !important;
 }
-.t_fd-column {
+.t_flex-direction--column {
   flex-direction: column !important;
 }
-.t_fd-column-reverse {
+.t_flex-direction--column-reverse {
   flex-direction: column-reverse !important;
 }
-.t_fw-wrap {
+.t_flex-wrap--wrap {
   flex-wrap: wrap !important;
 }
-.t_fw-wrap-reverse {
+.t_flex-wrap--wrap-reverse {
   flex-wrap: wrap-reverse !important;
 }
-.t_fw-nowrap {
+.t_flex-wrap--nowrap {
   flex-wrap: nowrap !important;
 }
-.t_fx-none {
+.t_flex--none {
   flex: none !important;
 }
-.t_fx-initial {
+.t_flex--initial {
   flex: initial !important;
 }
-.t_fx-auto {
+.t_flex--auto {
   flex: auto !important;
 }
-.t_fg-0 {
+.t_flex-grow--0 {
   flex-grow: 0;
 }
-.t_fg-1 {
+.t_flex-grow--1 {
   flex-grow: 1;
 }
-.t_fs-0 {
+.t_flex-shrink--0 {
   flex-shrink: 0;
 }
-.t_fs-1 {
+.t_flex-shrink--1 {
   flex-shrink: 1;
 }
-.t_fb-auto {
+.t_flex-basis--auto {
   flex-basis: auto !important;
 }
-.t_fb-fill {
-  flex-basis: fill !important;
-}
-.t_fb-max {
+.t_flex-basis--max {
   flex-basis: max-content !important;
 }
-.t_fb-min {
+.t_flex-basis--min {
   flex-basis: min-content !important;
 }
-.t_fb-fit {
+.t_flex-basis--fit {
   flex-basis: fit-content !important;
 }
-.t_fb-100 {
+.t_flex-basis--100 {
   flex-basis: 100% !important;
 }
 
-.fx, .fxg {
-  flex-grow: var(--t_fxg, var(--fxg, initial)) !important;
+.flex, .flex-grow {
+  flex-grow: var(--t_flex-grow, var(--flex-grow, initial)) !important;
 }
 
-.fx, .fxs {
-  flex-shrink: var(--t_fxs, var(--fxs, initial)) !important;
+.flex, .flex-shrink {
+  flex-shrink: var(--t_flex-shrink, var(--flex-shrink, initial)) !important;
 }
 
-.fx, .fxb {
-  flex-basis: var(--t_fxb, var(--fxb, initial)) !important;
+.flex, .flex-basis {
+  flex-basis: var(--t_flex-basis, var(--flex-basis, initial)) !important;
 }
 
 /*  float section: float contained in classes */

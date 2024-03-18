@@ -1,8 +1,8 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let displayFlexArr = ['inline-flex', 'flex'],
-        displayFlex = displayFlexArr[0]
+    let displayArr = ['inline-flex', 'flex'],
+        display = displayArr[0]
 </script>
 
 <section>
@@ -13,30 +13,28 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Display</b>
-            <div class="display--inline-flex fw-wrap g-3">
-                {#each displayFlexArr as values }
+            <div class="display--inline-flex flex-wrap--wrap g-3">
+                {#each displayArr as values }
                     <button
                         class="btn"
-                        class:active={displayFlex === values}
-                        on:click={() => displayFlex = values}
-                        disabled={displayFlex === values}
-                    >d-{values}</button>
+                        class:active={display === values}
+                        on:click={() => display = values}
+                        disabled={display === values}
+                    >{values}</button>
                 {/each}
             </div>
         </div>
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="p-3 background-color--positive border-radius--md">
-                <div class="d-{displayFlex} background-color--negative-10 p-2">{displayFlex} container</div>
+                <div class="display--{display} background-color--negative-10 p-2">{display}</div>
             </div>
         </div>
         <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {
-`<div class="d-${displayFlex}">
-    ...
-</div>
+`<div class="display--${display}"> ... </div>
 `
                 }
             </Precode>

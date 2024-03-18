@@ -3,7 +3,7 @@
     import Details from 'component/Details.svelte'
     import Button from 'component/Button.svelte'
 
-    let containerClasses: string = 'o-hidden fw-wrap'    
+    let containerClasses: string = 'o-hidden flex-wrap--wrap'    
     let containerWidth: number = 50
 
     let whiteSpaceArr: string[] = ['normal', 'nowrap', 'pre', 'pre-wrap', 'pre-line', 'break-spaces']
@@ -17,7 +17,7 @@
     </p>
     <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
         <div class="display--grid g-2">
-            <div class="display--flex fw-wrap g-2">
+            <div class="display--flex flex-wrap--wrap g-2">
                 {#each whiteSpaceArr as value}
                     <Button
                         class="btn-secondary {whiteSpace === value ? 'active' : ''}"

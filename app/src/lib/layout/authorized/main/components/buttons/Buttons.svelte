@@ -79,7 +79,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Variants</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
@@ -93,7 +93,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Colors</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
@@ -107,7 +107,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Icon</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(buttonsObj.iconObj) as [key, value]}
                     <Button
                         class="{value === 2 ? 'btn-ico' : ''} {buttonIcon === key ? 'active' : ''}"
@@ -126,7 +126,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Sizes</b>
-            <div class="display--flex fw-wrap g-3 align-items--center">
+            <div class="display--flex flex-wrap--wrap g-3 align-items--center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}
@@ -140,7 +140,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Types</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(buttonsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => buttonType = key}
@@ -152,7 +152,7 @@
                 {/each}
             </div>
         </div>
-        <div class="display--flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--md">
+        <div class="display--flex g-4 flex-wrap--wrap justify-content--evenly p-4 background-color--positive border-radius--md">
             <div class="display--grid gtc-2 g-3">
                 <b class="justify-self--end align-self--center">Default</b>
                 <div>

@@ -6,7 +6,7 @@
 </script>
 
 <div>
-    <h4 id="flexMixings">Mixings</h4>
+    <h4 id="mixings">Mixings</h4>
     <p>
         Mixing of using the flex container.
     </p>
@@ -40,18 +40,18 @@
                     >
                 </div>
                 <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 ox-hidden w" style="--w: {containerWidth}%">
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1; --fxs: 1; --fxb: 25em;">two</div>
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 2; --fxs: 2; --fxb: 25em;">three</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1; --flex-shrink: 1; --flex-basis: 25em;">one</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 2; --flex-shrink: 2; --flex-basis: 25em;">two</div>
                 </div>
                 <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1; --fxb: 0; ">equal one</div>
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1; --fxb: 0; ">equal two</div>
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1; --fxb: 0; ">equal three</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
                 </div>
                 <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
-                    <div class="background-color--negative-10 px-2 py-1 w-100">w-100 one</div>
-                    <div class="background-color--negative-10 px-2 py-1 fx" style="--fxs: 0;">shrink-1 two</div>
-                    <div class="background-color--negative-10 px-2 py-1">simple three</div>
+                    <div class="background-color--negative-10 px-2 py-1 w-100">one</div>
+                    <div class="background-color--negative-10 px-2 py-1 flex" style="--flex-shrink: 0;">shrink 0 two</div>
+                    <div class="background-color--negative-10 px-2 py-1">three</div>
                 </div>
             </div>
         </div>
@@ -60,17 +60,17 @@
             <Precode>
                 {
 `<div class="display--flex">
-    <div class="fx" style="--fxg: 1; --fxs: 1; --fxb: 25em;">two</div>
-    <div class="fx" style="--fxg: 2; --fxs: 2; --fxb: 25em;">three</div>
+    <div class="flex" style="--flex-grow: 1; --flex-shrink: 1; --flex-basis: 25em;">two</div>
+    <div class="flex" style="--flex-grow: 2; --flex-shrink: 2; --flex-basis: 25em;">three</div>
 </div>
 <div class="display--flex">
-    <div class="fx" style="--fxg: 1; --fxb: 0; ">equal one</div>
-    <div class="fx" style="--fxg: 1; --fxb: 0; ">equal two</div>
-    <div class="fx" style="--fxg: 1; --fxb: 0; ">equal three</div>
+    <div class="flex" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
+    <div class="flex" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
+    <div class="flex" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
 </div>
 <div class="display--flex">
-    <div class="w-100">w-100 one</div>
-    <div class="fx" style="--fxs: 0;">shrinked two</div>
+    <div class="w-100">one</div>
+    <div class="flex" style="--flex-shrink: 0;">shrink 0 two</div>
     <div>three</div>
 </div>
 `

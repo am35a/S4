@@ -1,31 +1,31 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let flexBasisArr = ['100', 'fill', 'fit', 'max', 'min'],
-        flexBasis = flexBasisArr[0]
+    let basisArr = ['100', 'fit', 'max', 'min'],
+        basis = basisArr[0]
 
     let containerClasses = '',
         containerWidth = 100
 </script>
 
 <div>
-    <h4 id="flexBasis">Basis</h4>
+    <h4 id="basis">Basis</h4>
     <p>
-        The <b>fb-{flexBasisArr.join('/')}</b> classes help to change width of items in a flex container.
-        Also the basis set up avaliable after add <b>fx</b> class to elements into flex container ans using
-        variable <b>--fxb</b> to manage width.
+        The <b>flex-basis--{basisArr.join('/')}</b> classes help to change width of items in a flex
+        container. Also the basis set up avaliable after add <b>flex</b> class to elements into flex
+        container ans using variable <b>--flex-basis</b> to manage width.
     </p>
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Basis</b>
-            <div class="display--inline-flex fw-wrap g-3">
-                {#each flexBasisArr as values }
+            <div class="display--inline-flex flex-wrap--wrap g-3">
+                {#each basisArr as values }
                     <button
                         class="btn"
-                        class:active={flexBasis === values}
-                        on:click={() => flexBasis = values}
-                        disabled={flexBasis === values}
-                    >fb-{values}</button>
+                        class:active={basis === values}
+                        on:click={() => basis = values}
+                        disabled={basis === values}
+                    >flex-basis--{values}</button>
                 {/each}
             </div>
         </div>        
@@ -58,24 +58,24 @@
                     >
                 </div>
                     <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fb-{flexBasis} background-color--negative-10 px-2 py-1">fb-{flexBasis} one</div>
-                    <div class="background-color--negative-10 px-2 py-1">simple two</div>
-                    <div class="background-color--negative-10 px-2 py-1">simple three</div>
-                </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 100%;">100% one</div>
+                    <div class="flex-basis--{basis} background-color--negative-10 px-2 py-1">{basis} one</div>
                     <div class="background-color--negative-10 px-2 py-1">two</div>
                     <div class="background-color--negative-10 px-2 py-1">three</div>
                 </div>
                 <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 100%;">equal one</div>
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 100%;">equal two</div>
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 100%;">equal three</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 100%;">one</div>
+                    <div class="background-color--negative-10 px-2 py-1">two</div>
+                    <div class="background-color--negative-10 px-2 py-1">three</div>
                 </div>
                 <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxb: 25%">fb 25% one</div>
-                    <div class="background-color--negative-10 px-2 py-1">simple two</div>
-                    <div class="background-color--negative-10 px-2 py-1">simple three</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 100%;">equal</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 100%;">equal</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 100%;">equal</div>
+                </div>
+                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 25%">one</div>
+                    <div class="background-color--negative-10 px-2 py-1">two</div>
+                    <div class="background-color--negative-10 px-2 py-1">three</div>
                 </div>
             </div>
         </div>
@@ -84,17 +84,17 @@
             <Precode>
                 {
 `<div class="display--flex">
-    <div class="fb-${flexBasis}">fb-${flexBasis} one</div>
+    <div class="flex-basis--${basis}">${basis} one</div>
     <div>simple two</div>
     <div>simple three</div>
 </div>
 <div class="display--flex">
-    <div class="fx" style="--fxb: 100%;">equal one</div>
-    <div class="fx" style="--fxb: 100%;">equal two</div>
-    <div class="fx" style="--fxb: 100%;">equal three</div>
+    <div class="flex" style="--flex-basis: 100%;">equal one</div>
+    <div class="flex" style="--flex-basis: 100%;">equal two</div>
+    <div class="flex" style="--flex-basis: 100%;">equal three</div>
 </div>
 <div class="display--flex">
-    <div class="fx" style="--fxb: 25%">fb 25% one</div>
+    <div class="flex" style="--flex-basis: 25%">25% one</div>
     <div>simple two</div>
     <div>simple three</div>
 </div>

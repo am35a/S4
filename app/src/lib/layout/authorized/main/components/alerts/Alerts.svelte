@@ -58,7 +58,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Variants</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(alertsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => alertVariant = key}
@@ -72,7 +72,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Colors</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(alertsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => alertColor = key}
@@ -86,7 +86,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Type</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(alertsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => alertType = key}

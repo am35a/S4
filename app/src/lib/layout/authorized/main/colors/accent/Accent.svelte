@@ -88,9 +88,9 @@
             />
         </div>
         <div>Colors</div>
-        <div class="display--flex fw-wrap g-2">
+        <div class="display--flex flex-wrap--wrap g-2">
             {#each accentColorsObj.namesArr as value}
-                <div class="display--grid rg-2 justify-item--center p-4 background-color--positive border-radius--md fx" style="--fxg: 1; --fxb: 0;">
+                <div class="display--grid rg-2 justify-item--center p-4 background-color--positive border-radius--md flex" style="--flex-grow: 1; --flex-basis: 0;">
                     <Input
                         bind:value={accentColorsObj.variablesObj[`${value}-hue`]}
                         min="0" max="360"
@@ -107,7 +107,7 @@
                             {accentColorsObj.variablesObj[`${value}-hue`]}
                         )
                     </div>
-                    <div class="display--flex fw-nowrap justify-item--center">
+                    <div class="display--flex flex-wrap--nowrap justify-item--center">
                         <div class="ws-nowrap align-self--end">
                             <div class="ta-center fw-600 c-{value}-l">light</div>
                             oklch(

@@ -1,7 +1,7 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let flexDefinesArr = ['auto', 'initial', 'none'],
+    let definesArr = ['auto', 'initial', 'none'],
         define1 = 'auto',
         define2 = 'auto',
         define3 = 'auto'
@@ -10,20 +10,20 @@
 </script>
 
 <div>
-    <h4 id="flexDefines">Defines</h4>
+    <h4 id="defines">Defines</h4>
     <p>
-        The <b>fx</b> class do nothing with items into clear flex container, only sets container items as initial
+        The <b>flex</b> class do nothing with items into clear flex container, only sets container items as initial
         parameters for modification items - <Precode class="py-0 px-1 display--inline">flex: 0 1 auto;</Precode>.
-        There are variables can be used to control the fx class <b>--fxg</b>, <b>--fxs</b> and <b>--fxb</b>.
+        There are variables can be used to control the flex class <b>--flex-grow</b>, <b>--flex-shrink</b> and <b>--flex-basis</b>.
     </p>
     <p>
-        If necessary use flex params separately there are classes <b>.fxg</b>, <b>.fxs</b> and <b>.fxb</b>.
-        The classes work with same variables <b>--fxg</b>, <b>--fxs</b> and <b>--fxb</b>.
+        If necessary use flex params separately there are classes <b>flex-grow</b>, <b>flex-shrink</b> and <b>flex-basis</b>.
+        The classes work with same variables <b>--flex-grow</b>, <b>--flex-shrink</b> and <b>--flex-basis</b>.
     </p>
     <div class="display--grid g-5">
         <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
-            Pay attentions! All variables <b>--fxg</b>, <b>--fxs</b> and <b>--fxb</b> are adaptive. The list
+            Pay attentions! All variables <b>--flex-grow</b>, <b>--flex-shrink</b> and <b>--flex-basis</b> are adaptive. The list
             of prefixes available on the <a href="/core#map">Core</a> page.
         </div>
         <div class="display--grid g-4">
@@ -33,7 +33,7 @@
                     class="frm"
                     bind:value={define1}
                 >
-                    {#each flexDefinesArr as define}
+                    {#each definesArr as define}
                         <option value={define}>
                             {define}
                         </option>
@@ -43,7 +43,7 @@
                     class="frm"
                     bind:value={define2}
                 >
-                    {#each flexDefinesArr as define}
+                    {#each definesArr as define}
                         <option value={define}>
                             {define}
                         </option>
@@ -53,7 +53,7 @@
                     class="frm"
                     bind:value={define3}
                 >
-                    {#each flexDefinesArr as define}
+                    {#each definesArr as define}
                         <option value={define}>
                             {define}
                         </option>
@@ -81,9 +81,9 @@
                     >
                 </div>
                 <div class="display--flex g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
-                    <div class="fx-{define1} background-color--negative-10 px-2 py-1">{define1}</div>
-                    <div class="fx-{define2} background-color--negative-10 px-2 py-1">{define2}</div>
-                    <div class="fx-{define3} background-color--negative-10 px-2 py-1">{define3}</div>
+                    <div class="flex--{define1} background-color--negative-10 px-2 py-1">{define1}</div>
+                    <div class="flex--{define2} background-color--negative-10 px-2 py-1">{define2}</div>
+                    <div class="flex--{define3} background-color--negative-10 px-2 py-1">{define3}</div>
                 </div>
             </div>
         </div>
@@ -92,9 +92,9 @@
             <Precode>
                 {
 `<div class="display--flex">
-    <div class="fx-${define1}></div>
-    <div class="fx-${define2}></div>
-    <div class="fx-${define3}></div>
+    <div class="flex--${define1}></div>
+    <div class="flex--${define2}></div>
+    <div class="flex--${define3}></div>
 </div>
 `
                 }

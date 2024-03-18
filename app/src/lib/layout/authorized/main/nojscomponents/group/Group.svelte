@@ -49,12 +49,12 @@
 <article>
     <h2 class="ButtonGroup">Group</h2>
     <p>
-        S4 makes possible to combine various objects into groups. The classes are responsible for vertical grouping <b>.grp-v</b> and horizontal <b>.grp-h</b>.
+        S4 makes possible to combine various objects into groups. The classes are responsible for vertical grouping <b>grp-v</b> and horizontal <b>grp-h</b>.
     </p>
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Variants</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
@@ -68,7 +68,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Colors</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
@@ -82,7 +82,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Directions</b>
-            <div class="display--flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap g-3">
                 {#each Object.entries(groupObj) as [key, value]}
                     <button
                         on:click={() => groupVariant = key}
@@ -94,7 +94,7 @@
                 {/each}
             </div>
         </div>
-        <div class="display--flex g-4 fw-wrap justify-content--evenly align-items--center p-4 background-color--positive border-radius--md">
+        <div class="display--flex g-4 flex-wrap--wrap justify-content--evenly align-items--center p-4 background-color--positive border-radius--md">
             <div class="{groupObj[groupVariant]}">
                 <Button class="{buttonClass}">Default</Button>
                 <Button class="{buttonClass} active">Active</Button>

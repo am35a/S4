@@ -14,7 +14,7 @@
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--flex fw-wrap g-2">
+                <div class="display--flex flex-wrap--wrap g-2">
                     {#each radiusSizesArr as item}
                         <div
                             class="background-color--negative-10 p-2 border-radius--{item} ta-center ar-4_3 w"
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--flex fw-wrap g-4">
+                <div class="display--flex flex-wrap--wrap g-4">
                     <div>
                         <div
                             class="background-color--negative-10 p-2 border-radius--oval ta-center w"
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--flex fw-wrap g-4">
+                <div class="display--flex flex-wrap--wrap g-4">
                     <div
                         class="background-color--negative-10 p-2 border-radius--oval border-top-left-radius--sm ta-center ar-4_3 w"
                         style="--w: 6em"

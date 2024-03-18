@@ -3,7 +3,7 @@
     
     let containerTypesObj={
         grid: 'display--grid gtc-2',
-        flex: 'display--flex fw-wrap'
+        flex: 'display--flex flex-wrap--wrap'
     },
         containerType = containerTypesObj.grid
 
@@ -21,7 +21,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Display</b>
-            <div class="display--inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap g-3">
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <button
                         class="btn"
@@ -34,7 +34,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Align</b>
-            <div class="display--inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap g-3">
                 {#each alignContentArr as value}
                     <button
                         class="btn"

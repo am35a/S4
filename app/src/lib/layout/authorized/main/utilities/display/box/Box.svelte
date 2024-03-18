@@ -18,7 +18,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Display</b>
-            <div class="display--inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap g-3">
                 <button
                     class="btn"
                     class:active={boxNone}

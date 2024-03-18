@@ -1,21 +1,21 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let containerClasses = 'o-hidden fw-wrap',
+    let containerClasses = 'o-hidden flex-wrap--wrap',
         containerWidth = 100
 </script>
 
 <div>
-    <h4 id="flexGrow">Grow</h4>
+    <h4 id="grow">Grow</h4>
     <p>
-        Growth settings are available after adding the <b>fg-1</b> class to the elements in a flex
-        container. There is an additional option via the <b>fx</b> class and the <b>--fxg</b> variable
+        Growth settings will available after adding the <b>flex-grow--1</b> class to the elements in a flex
+        container. There is an additional option via the <b>flex</b> class and the <b>--flex-grow</b> variable
         to control flexible growth.
     </p>
     <div class="display--grid g-5">
         <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
-            Default value of <b>flex-grow</b> is <b>0</b>. Class <b>fg-1</b> convert value to 1.
+            Default value of <b>flex-grow</b> is <b>0</b>. Class <b>flex-grow--1</b> convert value to 1.
         </div>
         <div class="display--grid g-4">
             <b>Customize container</b>
@@ -46,24 +46,24 @@
                     >
                 </div>
                 <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fg-1 background-color--negative-10 px-2 py-1">one</div>
+                    <div class="flex-grow--1 background-color--negative-10 px-2 py-1">one</div>
                     <div class="background-color--negative-10 px-2 py-1">two</div>
-                    <div class="fg-1 background-color--negative-10 px-2 py-1">three</div>
+                    <div class="flex-grow--1 background-color--negative-10 px-2 py-1">three</div>
                 </div>
                 <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
                     <div class="background-color--negative-10 px-2 py-1">one</div>
-                    <div class="fg-1 background-color--negative-10 px-2 py-1">two</div>
+                    <div class="flex-grow--1 background-color--negative-10 px-2 py-1">two</div>
                     <div class="background-color--negative-10 px-2 py-1">three</div>
                 </div>
                 <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fg-1 background-color--negative-10 px-2 py-1">one</div>
-                    <div class="fg-1 background-color--negative-10 px-2 py-1">two</div>
-                    <div class="fg-1 background-color--negative-10 px-2 py-1">three</div>
+                    <div class="flex-grow--1 background-color--negative-10 px-2 py-1">one</div>
+                    <div class="flex-grow--1 background-color--negative-10 px-2 py-1">two</div>
+                    <div class="flex-grow--1 background-color--negative-10 px-2 py-1">three</div>
                 </div>
                 <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 1">one</div>
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 2">two</div>
-                    <div class="fx background-color--negative-10 px-2 py-1" style="--fxg: 3">three</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1">one</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 2">two</div>
+                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 3">three</div>
                 </div>
             </div>
         </div>
@@ -72,24 +72,24 @@
             <Precode>
                 {
 `<div class="display--flex">
-    <div class="fg-1">one</div>
+    <div class="flex-grow--1">one</div>
     <div>simple two</div>
-    <div class="fg-1">three</div>
+    <div class="flex-grow--1">three</div>
 </div>
 <div class="display--flex">
     <div>simple one</div>
-    <div class="fg-1">two</div>
+    <div class="flex-grow--1">two</div>
     <div>simple three</div>
 </div>
 <div class="display--flex">
-    <div class="fg-1">one</div>
-    <div class="fg-1">two</div>
-    <div class="fg-1">three</div>
+    <div class="flex-grow--1">one</div>
+    <div class="flex-grow--1">two</div>
+    <div class="flex-grow--1">three</div>
 </div>
 <div class="display--flex">
-    <div class="fx" style="--fxg: 1">one</div>
-    <div class="fx" style="--fxg: 2">two</div>
-    <div class="fx" style="--fxg: 3">three</div>
+    <div class="flex" style="--flex-grow: 1">one</div>
+    <div class="flex" style="--flex-grow: 2">two</div>
+    <div class="flex" style="--flex-grow: 3">three</div>
 </div>
 `
                 }

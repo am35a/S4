@@ -43,7 +43,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Sizes</b>
-            <div class="display--flex fw-wrap g-3 align-items--center">
+            <div class="display--flex flex-wrap--wrap g-3 align-items--center">
                 {#each Object.entries(widthObj) as [key, value]}
                     <button
                         on:click={() => width = key}
@@ -56,7 +56,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Style</b>
-            <div class="display--flex fw-wrap g-3 align-items--center">
+            <div class="display--flex flex-wrap--wrap g-3 align-items--center">
                 <button
                     on:click={() => isStyle = !isStyle}
                     class="btn"
@@ -74,7 +74,7 @@
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="display--grid g-3 p-3 -background-color--positive -border-radius--md">
-                <div class="display--flex fw-wrap g-2 align-items--baseline">
+                <div class="display--flex flex-wrap--wrap g-2 align-items--baseline">
                     <div class="
                         background-color--negative-10 p-4 border-width--{widthObj[width]}"
                         class:border-style--solid={isStyle}
