@@ -75,10 +75,10 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
@@ -90,9 +90,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
@@ -104,9 +104,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Icon</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.iconObj) as [key, value]}
                     <Button
                         class="{value === 2 ? 'btn-ico' : ''} {buttonIcon === key ? 'active' : ''}"
@@ -123,9 +123,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Position</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each dropdownObj.positionObj as position, i}
                     <Button
                         on:click="{() => contentPosition = dropdownObj.positionObj[i]}"
@@ -135,8 +135,8 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 p-4 background-color--positive border-radius--md" style="height: 10em;">
-            <div class="d-grid g-3 m-auto">
+        <div class="display--flex g-4 p-4 background-color--positive border-radius--md" style="height: 10em;">
+            <div class="display--grid g-3 m-auto">
                 <Dropdown class="drpdwn-hover">
                     <Button 
                         slot="btn"
@@ -152,7 +152,7 @@
                     </Button>
                     <div
                         slot="content"
-                        class="d-grid g-2 w p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30"
+                        class="display--grid g-2 w p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30"
                         style="--w: 16em"
                     >
                         Position:
@@ -174,7 +174,7 @@
                     class="drp-content"
                 >
                     <div
-                        class="d-grid g-2 w p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30"
+                        class="display--grid g-2 w p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30"
                         style="--w: 16em"
                     >
                         <button class="btn justify-content--start px-1" type="reset">

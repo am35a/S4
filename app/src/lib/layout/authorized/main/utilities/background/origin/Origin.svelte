@@ -11,10 +11,10 @@
         Change the background`s origin from the border start, inside the border, or inside the padding
         by the classes <b>background-origin--{originsArr.join('/')}</b>.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Customize container</b>
-            <div class="d-grid">
+            <div class="display--grid">
                 <input
                     class="frm"
                     bind:value={containerClasses} 
@@ -26,9 +26,9 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 {#each originsArr as origin}
                     <div
                         class="p-4 fs-xxxl fw-700 background-image background-color--negative-10 background-origin--{origin} {containerClasses}"
@@ -37,7 +37,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {#each originsArr as origin}
@@ -45,7 +45,7 @@
 `<div
     class="background-image background-origin--${origin} ${containerClasses}"
     style="--background-image: url(...)"
-> // ... </div>
+> ... </div>
 `
                     }
                 {/each}

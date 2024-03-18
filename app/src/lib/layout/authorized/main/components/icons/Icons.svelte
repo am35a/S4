@@ -58,7 +58,7 @@
 
 <section>
     <h2 id="buttons">Icons</h2>
-    <div class="d-grid g-5">
+    <div class="display--grid g-5">
         <p>
             Lightweight <Icon /> responsive vector icons with cache available.
             The  icon sizes directly depend on the font size and the container in which the icon is placed.
@@ -69,7 +69,7 @@
             Pay attention! The <b>background-color--...</b> and <b>c-...</b> are incompatible in one case.
         </div>
 
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Background color</b>
             <div>
                 <Input
@@ -79,7 +79,7 @@
                 />
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Color</b>
             <div>
                 <Input
@@ -89,9 +89,9 @@
                 />
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Size</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex fw-wrap g-3">
                 {#each Object.entries(iconSizeObj) as [key, value]}
                     <Button
                         class={iconSize === value ? 'active' : ''}
@@ -101,9 +101,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md h" style="--h: 10em">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md h" style="--h: 10em">
                 <Icon
                     class="{iconSize} m-auto {iconBgColor ? 'background-color' : ''} {iconColor ? 'c' : ''}"
                     style="{iconBgColor ? `--background-color:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"
@@ -111,7 +111,7 @@
                 />
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Svelte</b>
             <Precode>
                     {
@@ -120,7 +120,7 @@
                     }
             </Precode>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                     {

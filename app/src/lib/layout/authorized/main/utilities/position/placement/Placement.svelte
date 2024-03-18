@@ -16,10 +16,10 @@
         The <b>{Object.values(placementObj).join('/')}</b> sets the horizontal and/or vertical position of
         a positioned element. To fine-tune positioning, you can use variables <b>--{Object.values(placementObj).join('/--')}</b> that are adaptive.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Position</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex fw-wrap g-3">
                 {#each Object.entries(placementObj) as [key, value]}
                     <button
                         class="btn"
@@ -30,7 +30,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
             <div class="p-6 background-color--positive border-radius--md o-hidden">
                 <div class="p-relative background-color--negative-10 h" style="--h: 10em">
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {

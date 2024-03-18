@@ -5,8 +5,8 @@
     import Button from 'component/Button.svelte'
 
     let containerTypeObj={
-        'Grid': 'd-grid',
-        'Inline grid': 'd-inline-grid'
+        'Grid': 'display--grid',
+        'Inline grid': 'display--inline-grid'
     }
     let containerType:string = containerTypeObj['Grid'],
         columnClasses: string = '',
@@ -20,9 +20,9 @@
         <!-- The <b>gc-...</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container. -->
         ...
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
-        <div class="d-grid gtc-2 p_gtc-1 g-2">
-            <div class="d-grid">
+    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
+        <div class="display--grid gtc-2 p_gtc-1 g-2">
+            <div class="display--grid">
                 <label for="columnClasses">Grid classes:</label>
                 <Input
                     id="columnClasses"
@@ -30,7 +30,7 @@
                     placeholder="example:"
                     type="text" />
             </div>
-            <div class="d-grid">
+            <div class="display--grid">
                 <label for="columnStyles">Grid styles:</label>
                 <Input
                     id="columnStyles"
@@ -39,7 +39,7 @@
                     type="text" />
             </div>
         </div>
-        <div class="d-flex g-2">
+        <div class="display--flex g-2">
             {#each Object.entries(containerTypeObj) as [key, value]}
                 <Button
                     class="btn-alt {containerType === value ? 'active' : ''}"

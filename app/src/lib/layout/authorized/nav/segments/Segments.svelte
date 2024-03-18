@@ -10,7 +10,7 @@
     class:segments={true}
     {...$$restProps}
 >
-    <div class="drpdwn-hover d-grid g-2">
+    <div class="drpdwn-hover display--grid g-2">
         {#each $asideItems as item (item.id)}
             <Segment {...item}/>
         {/each}

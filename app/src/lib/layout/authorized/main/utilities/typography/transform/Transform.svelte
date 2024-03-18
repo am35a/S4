@@ -8,7 +8,7 @@
     <p>
         Standard text manipulation
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
+    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
         <div>Simple text before <strong>strong</strong> and after.</div>
         <div>Simple text before <i>italik</i> and after.</div>
         <div>Simple text before <sub>sub</sub> and after.</div>

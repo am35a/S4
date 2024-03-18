@@ -55,10 +55,10 @@
     <p>
         To create self destroyed alerts, add the class name - <b>alert-closable</b>.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(alertsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => alertVariant = key}
@@ -70,9 +70,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(alertsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => alertColor = key}
@@ -84,9 +84,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Type</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(alertsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => alertType = key}
@@ -98,16 +98,16 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-flex p-4 background-color--positive border-radius--md">
+            <div class="display--flex p-4 background-color--positive border-radius--md">
                 <Alert class="{alertClass} mb-0">
                     Click the close icon in the top right corner to destroy the block of alert message.
                 </Alert>
             </div>        
         </div>
-        <div class="d-grid g-4">
-            <div class="d-grid g-4">
+        <div class="display--grid g-4">
+            <div class="display--grid g-4">
                 <b>Svelte</b>
                 <Precode>
                     {

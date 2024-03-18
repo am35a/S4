@@ -9,10 +9,10 @@
     <p>
         Add the <b>background-attachment--{attachmentsArr.join('/')}</b> classes to container to work with background-attachment.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 {#each attachmentsArr as attachment}
                     <div
                         class="p-2 h o-auto background-image background-color--negative-10 background-attachment--{attachment}"
@@ -27,7 +27,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {#each attachmentsArr as attachment}
@@ -35,7 +35,7 @@
 `<div
     class="background-image background-attachment--${attachment}"
     style="--background-image: url(...)"
-> // ... </div>
+> ... </div>
 `
                     }
                 {/each}

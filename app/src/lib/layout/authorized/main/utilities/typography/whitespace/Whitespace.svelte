@@ -15,9 +15,9 @@
     <p>
         The <b>ws-...</b> classes of the <b>white-space</b> CSS property sets how provide horizontal or vertical space between other characters inside an element is handled.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
-        <div class="d-grid g-2">
-            <div class="d-flex fw-wrap g-2">
+    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
+        <div class="display--grid g-2">
+            <div class="display--flex fw-wrap g-2">
                 {#each whiteSpaceArr as value}
                     <Button
                         class="btn-secondary {whiteSpace === value ? 'active' : ''}"
@@ -26,7 +26,7 @@
                     >ws-{value}</Button>
                 {/each}
             </div>
-            <div class="d-grid">
+            <div class="display--grid">
                 <label for="containerWidth">Container width {containerWidth}%:</label>
                 <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={containerWidth}>
             </div>            

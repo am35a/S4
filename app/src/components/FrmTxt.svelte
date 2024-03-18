@@ -3,7 +3,7 @@
     const UID: string = self.crypto.randomUUID()
 </script>
 
-<div class="d-contents">
+<div class="display--contents">
 {#if $$slots.label}
     <label
         for={UID}

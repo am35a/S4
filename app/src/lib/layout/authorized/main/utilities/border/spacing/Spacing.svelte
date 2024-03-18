@@ -9,16 +9,16 @@
         with  var classes work for tables. Using these classes can control the space between the borders of
         table cells.
     </p>
-    <!-- <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <!-- <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-flex fw-wrap g-2">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--flex fw-wrap g-2">
                     ...
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {

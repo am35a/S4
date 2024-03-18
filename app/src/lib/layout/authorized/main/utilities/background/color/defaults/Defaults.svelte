@@ -9,10 +9,10 @@
         The classes from <b>background-color--...-10</b> to <b>background-color--...-90</b> make color transparent in percentage which point in the end of.
         Using <b>background-color--transparent</b> class make background transparent.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Gradient</b>
-            <div class="d-flex fw-wrap g-2">
+            <div class="display--flex fw-wrap g-2">
                 <button
                     class="btn"
                     class:active={defaultsInterval}
@@ -31,11 +31,11 @@
                 </button>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-grid g-3 gtc-2">
-                    <div class="d-flex fd-column-reverse g-2 background-color--negative">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--grid g-3 gtc-2">
+                    <div class="display--flex fd-column-reverse g-2 background-color--negative">
                         {#if defaultsInterval}
                             {#each Array(9) as _, i}
                                 <div
@@ -47,7 +47,7 @@
                             background-color--{defaultsArr[0]}
                         </div>
                     </div>
-                    <div class="d-flex fd-column-reverse g-2">
+                    <div class="display--flex fd-column-reverse g-2">
                         {#if defaultsInterval}
                             {#each Array(9) as _, i}
                                 <div

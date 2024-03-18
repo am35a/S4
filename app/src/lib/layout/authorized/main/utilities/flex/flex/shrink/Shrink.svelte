@@ -13,14 +13,14 @@
         in a flex container. There is an additional option via the <b>fx</b> class and the <b>--fxs</b>
         variable to control flexible shrink.
     </p>
-    <div class="d-grid g-5">
+    <div class="display--grid g-5">
         <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
             Default value of <b>flex-shrink</b> is <b>1</b>. Class <b>fs-0</b> convert value to <b>0</b>.
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Shrink</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex fw-wrap g-3">
                 <button
                     class="btn"
                     class:active={isCellShrinked}
@@ -35,9 +35,9 @@
                 >fs-0</button>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Customize container</b>
-            <div class="d-grid">
+            <div class="display--grid">
                 <input
                     class="frm"
                     bind:value={containerClasses}
@@ -50,11 +50,11 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-grid mb-2">
-                    <label for="shrinkContainerWidth" class="d-grid gtc-3 align-items--end px-2">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--grid mb-2">
+                    <label for="shrinkContainerWidth" class="display--grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>
@@ -69,7 +69,7 @@
                         type="range"
                     >
                 </div>    
-                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
+                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
                     {#each Array(6) as _, i}
                         <div
                             class="background-color--negative-10 px-2 py-1"
@@ -77,7 +77,7 @@
                         >cell {isCellShrinked ? 'shrinked' : 'no shrink'}</div>
                     {/each}
                 </div>
-                <div class="d-flex {containerClasses} g-2 background-color--negative-10 p-2 ox-hidden w" style="--w: {containerWidth}%">
+                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 ox-hidden w" style="--w: {containerWidth}%">
                     <div
                         class="background-color--negative-10 px-2 py-1 w"
                         style="--w: 10em;"
@@ -93,15 +93,15 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {
-`<div class="d-flex ${containerClasses}">
+`<div class="display--flex ${containerClasses}">
     <div ${isCellShrinked ? '' : 'class="fs-0"'}>cell ${isCellShrinked ? 'shrinked' : 'no shrink'}</div>
-    // ...
+    ...
 </div>
-<div class="d-flex ${containerClasses}">
+<div class="display--flex ${containerClasses}">
     <div class="w" style="--w: 10em;">'1:1'</div>
     <div class="fx w" style="--w: 10em; ${isCellShrinked ? '--fxs: 2' : ''}">${isCellShrinked ? '1:2' : '1:1'}</div>
     <div class="fx w" style="--w: 10em; ${isCellShrinked ? '--fxs: 3' : ''}">${isCellShrinked ? '1:3' : '1:1'}</div>

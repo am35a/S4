@@ -2,8 +2,8 @@
     import Precode from 'component/Precode.svelte'
     
     let containerTypesObj={
-        grid: 'd-grid gtc-2',
-        flex: 'd-flex fw-wrap'
+        grid: 'display--grid gtc-2',
+        flex: 'display--flex fw-wrap'
     },
         containerType = containerTypesObj.grid
 
@@ -18,10 +18,10 @@
         The <b>align-content--{alignContentArr.join('/')}</b> classes sets the distribution of space between
         and around content item of <b>grid</b> and <b>flex</b> containers.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Display</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex fw-wrap g-3">
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <button
                         class="btn"
@@ -32,9 +32,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Align</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex fw-wrap g-3">
                 {#each alignContentArr as value}
                     <button
                         class="btn"
@@ -45,13 +45,13 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
             <div class="{containerType} g-3 p-3 align-content--{alignContent} background-color--positive border-radius--md h" style="--h: 16em; --p_h: 24em;">
                 <div class="background-color--negative-10 px-2 py-1">one</div>
                 <div class="background-color--negative-10 px-2 py-1">two</div>
                 <div class="background-color--negative-10 px-2 py-1">three</div>
-                {#if containerType.includes('d-flex')}
+                {#if containerType.includes('display--flex')}
                     <div class="background-color--negative-10 px-2 py-1">four</div>
                     <div class="background-color--negative-10 px-2 py-1">five</div>
                     <div class="background-color--negative-10 px-2 py-1">six</div>
@@ -71,12 +71,12 @@
                 {/if}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {
 `<div class="${containerType} align-content--${alignContent}">
-    // ...
+    ...
 </div>
 `
                 }

@@ -16,10 +16,10 @@
         shades for accent background colors. Also avaliable the mute - <b>background-color--...-m</b>
         background colors.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-2">
+            <div class="display--flex fw-wrap g-2">
                 {#each Object.entries(accentsExtraObj) as [key, value]}
                     <button
                         class="btn"
@@ -30,10 +30,10 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-grid g-3 gtc-2">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--grid g-3 gtc-2">
                     {#each accentsArr as item }
                         <div
                             class:c-negative={accentExtra === '-m'}

@@ -13,33 +13,33 @@
         Using <b>--mh/h/hm</b> variable sets custon height. 
         Full list of the height classes:
         <br>
-        <span class="d-inline-flex g-4">
-            <span class="d-grid g-2">
+        <span class="display--inline-flex g-4">
+            <span class="display--grid g-2">
                 {#each heightParamsArr as param}
                     <span class="fw-600">mh{param}</span>
                 {/each}
             </span>
-            <span class="d-grid g-2">
+            <span class="display--grid g-2">
                 {#each heightParamsArr as param}
                     <span class="fw-600">h{param}</span>
                 {/each}
             </span>
-            <span class="d-grid g-2">
+            <span class="display--grid g-2">
                 {#each heightParamsArr as param}
                     <span class="fw-600">hm{param}</span>
                 {/each}
             </span>
         </span>
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
-        <div class="d-grid">
+    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
+        <div class="display--grid">
             <label for="containerHeight">Height {height}%:</label>
         </div>
-        <div class="d-flex" style="height: 10em;">
+        <div class="display--flex" style="height: 10em;">
             <div>
                 <input class="h-100" type="range" name="containerHeight" orient="vertical" min={0} max={100} step={1} bind:value={height}>
             </div>
-            <div class="background-color--negative-10 ta-center mt-auto mx-auto px-1 ws-nowrap w-fit h d-flex align-items--end" style="--h: {height}%">--h: {height}%</div>
+            <div class="background-color--negative-10 ta-center mt-auto mx-auto px-1 ws-nowrap w-fit h display--flex align-items--end" style="--h: {height}%">--h: {height}%</div>
         </div>
     </div>
     <Details>

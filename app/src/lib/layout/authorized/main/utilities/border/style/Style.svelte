@@ -16,25 +16,25 @@
         sides. To remove styles use classes <b>border-...--none</b>. To side change border style add one of
         the <b>border-{sidesArr.join('/')}-style--...</b> classes.
     </p>
-    <div class="d-grid g-5">
+    <div class="display--grid g-5">
         <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
             Pay attentions! The <b>--border-style</b> variable of <b>border</b>, <b>border-style</b>,
             <b>border-...</b>, <b>border-...-style</b>  is adaptive. The list of prefixes available on the
             <a href="/core#map">Core</a> page.
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-flex fw-wrap g-2 align-items--baseline">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--flex fw-wrap g-2 align-items--baseline">
                     {#each Object.entries(stylesObj) as [key, value]}
                         <div class="background-color--negative-10 p-4 border-width--medium border-style--{value}"
                         >{key}</div>
                     {/each}
                 </div>
             </div>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-flex fw-wrap g-2 align-items--baseline">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--flex fw-wrap g-2 align-items--baseline">
                     <div class="background-color--negative-10 p-4
                         border-width--medium
                         border-left-width--thick
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {#each Object.entries(stylesObj) as [key, value]}

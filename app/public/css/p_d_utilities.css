@@ -817,34 +817,34 @@
 }
 
 /*  display section: display variants contained in classes */
-.p_d-inline {
+.p_display--inline {
   display: inline !important;
 }
-.p_d-block {
+.p_display--block {
   display: block !important;
 }
-.p_d-flow-root {
+.p_display--flow-root {
   display: flow-root !important;
 }
-.p_d-flex {
+.p_display--flex {
   display: flex !important;
 }
-.p_d-grid {
+.p_display--grid {
   display: grid !important;
 }
-.p_d-inline-block {
+.p_display--inline-block {
   display: inline-block !important;
 }
-.p_d-inline-flex {
+.p_display--inline-flex {
   display: inline-flex !important;
 }
-.p_d-inline-grid {
+.p_display--inline-grid {
   display: inline-grid !important;
 }
-.p_d-contents {
+.p_display--contents {
   display: contents !important;
 }
-.p_d-none {
+.p_display--none {
   display: none !important;
 }
 

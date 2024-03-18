@@ -59,10 +59,10 @@
         S4 has a pretty looking and flexy HTML <b>details</b> element of the disclosure toggle widget with the included
         <b>summary</b> header inside the element. The addition of <b>dtl-...</b> classes makes the widget styles changeable.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(detailsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => detailsVariant = key}
@@ -73,9 +73,9 @@
                     >{key}</button>
                 {/each}
             </div>
-            <div class="d-grid g-4">
+            <div class="display--grid g-4">
                 <b>Colors</b>
-                <div class="d-flex fw-wrap g-3">
+                <div class="display--flex fw-wrap g-3">
                     {#each Object.entries(detailsObj.colorsObj) as [key, value]}
                         <button
                             on:click={() => detailsColor = key}
@@ -87,9 +87,9 @@
                     {/each}
                 </div>
             </div>
-            <div class="d-grid g-4">
+            <div class="display--grid g-4">
                 <b>State</b>
-                <div class="d-flex fw-wrap g-3">
+                <div class="display--flex fw-wrap g-3">
                     {#each Object.entries(detailsObj.stateObj) as [key, value]}
                         <button
                             on:click={() => detailsState = key}
@@ -101,9 +101,9 @@
                     {/each}
                 </div>
             </div>
-            <div class="d-grid g-4">
+            <div class="display--grid g-4">
                 <b>Preview</b>
-                <div class="d-grid p-4 background-color--positive border-radius--md">
+                <div class="display--grid p-4 background-color--positive border-radius--md">
                     <Details class="{detailsClass} mb-0" open={detailsObj.stateObj[detailsState]}>
                         <svelte:fragment slot="title">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -116,9 +116,9 @@
                     </Details>
                 </div>
             </div>
-            <div class="d-grid g-4">
+            <div class="display--grid g-4">
                 <b>Custom</b>
-                <div class="d-grid p-4 background-color--positive border-radius--md">
+                <div class="display--grid p-4 background-color--positive border-radius--md">
                     <Details class="background-color--negative-10" open>
                         <summary class="px-2 py-1 justify-content--start background-color--transparent" slot="summary">
                             <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
@@ -136,7 +136,7 @@
                     </Details>
                 </div>        
             </div>
-            <div class="d-grid g-4">
+            <div class="display--grid g-4">
                 <b>Svelte</b>
                 <Precode>
                     {
@@ -170,7 +170,7 @@
                     }
                 </Precode>
             </div>
-            <div class="d-grid g-4">
+            <div class="display--grid g-4">
                 <b>HTML</b>
                 <Precode>
                     {
@@ -190,7 +190,7 @@
         </div>
     </div>
 
-    <!-- <div class="d-grid g-4">
+    <!-- <div class="display--grid g-4">
         <Details class="dtl-primary">
             <svelte:fragment slot="title">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

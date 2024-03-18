@@ -76,10 +76,10 @@
     <h2 id="buttons">Buttons</h2>
     <p>S4 buttons have three variants and seven colors. From these views, you can get any other kind of buttons.</p>
 
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
@@ -91,9 +91,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
@@ -105,9 +105,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Icon</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.iconObj) as [key, value]}
                     <Button
                         class="{value === 2 ? 'btn-ico' : ''} {buttonIcon === key ? 'active' : ''}"
@@ -124,9 +124,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Sizes</b>
-            <div class="d-flex fw-wrap g-3 align-items--center">
+            <div class="display--flex fw-wrap g-3 align-items--center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}
@@ -138,9 +138,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Types</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(buttonsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => buttonType = key}
@@ -152,8 +152,8 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--md">
-            <div class="d-grid gtc-2 g-3">
+        <div class="display--flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--md">
+            <div class="display--grid gtc-2 g-3">
                 <b class="justify-self--end align-self--center">Default</b>
                 <div>
                     <button class="btn {buttonClass}" type="button">
@@ -200,7 +200,7 @@
                 </div>
             </div>
         </div>        
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {
@@ -219,7 +219,7 @@
                 }
             </Precode>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Svelte</b>
             <Precode>
                 {

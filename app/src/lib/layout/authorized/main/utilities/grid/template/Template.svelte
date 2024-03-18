@@ -26,11 +26,11 @@
     <Rows />
  
     <!-- <h4 id="template">Template playground</h4> -->
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md d-none">
+    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md display--none">
         <!-- <input class="h-100" type="range" name="containerHeight" orient="vertical" min="0" max="100" step="1"> -->
 
         <div></div>
-        <div class="d-grid">
+        <div class="display--grid">
             <!-- <label for="containerWidth">Columns {templateObj.columns}:</label> -->
             <Input
                 name="containerWidth"
@@ -39,7 +39,7 @@
                 type="range"
             />
         </div>
-        <div class="d-grid">
+        <div class="display--grid">
             <!-- <label for="containerWidth">Columns {templateObj.columns}:</label> -->
             <Input
                 name="containerWidth"
@@ -50,14 +50,14 @@
             <!-- orient="vertical" -->
         </div>
         <div>
-            <div class="d-grid gtc-{templateObj.columns} g-4 background-color--negative-10 p-4">
+            <div class="display--grid gtc-{templateObj.columns} g-4 background-color--negative-10 p-4">
                 {#each Array(templateObj.items) as _, i}
                     <div class="background-color--negative-10 px-2 py-1">{i + 1}</div>
                 {/each}
             </div>
         </div>
     </div>
-    <Details class="d-none">
+    <Details class="display--none">
         <svelte:fragment slot="title">
             Code example
         </svelte:fragment>

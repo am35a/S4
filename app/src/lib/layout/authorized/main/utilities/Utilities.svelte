@@ -4,7 +4,7 @@
     import ArticleAlignment, {anchorsObj as alignmentObj} from './alignment/Alignment.svelte'
     import ArticleBackground, {anchorsObj as backgroundObj} from './background/Background.svelte'
     import ArticleBorder, {anchorsObj as borderObj} from './border/Border.svelte'
-    import ArticleDisplay from './display/Display.svelte'
+    import ArticleDisplay, {anchorsObj as displayObj} from './display/Display.svelte'
     import ArticleFlex from './flex/Flex.svelte'
     import ArticleFloat from './float/Float.svelte'
     import ArticleGrid from './grid/Grid.svelte'
@@ -22,6 +22,7 @@
             alignmentObj: {modulePath: '/alignment', ...alignmentObj},
             backgroundObj: {modulePath: '/background', ...backgroundObj},
             borderObj: {modulePath: '/border', ...borderObj},
+            displayObj: {modulePath: '/display', ...displayObj},
         }
 </script>
 
@@ -29,16 +30,16 @@
 <!-- {#if getPathSegments($path).length === 1 && getPathSegments($path)[0] === jumpTo} -->
     <Route path="/">
         <h2>Index</h2>
-        <div class="d-grid g-3">
+        <div class="display--grid g-3">
             {#each Object.entries(anchorsObj) as [_, moduleObj], index}
-                <div class="d-grid g-2 px-2">
+                <div class="display--grid g-2 px-2">
                     <div class="fs-lg">
                         <span>{index + 1}</span>
                         <Link
                             href="{$path}{moduleObj.modulePath}"
                         >{Object.values(moduleObj.headAnchorObg)}</Link>
                     </div>
-                    <div class="d-grid g-2 px-2">
+                    <div class="display--grid g-2 px-2">
                         {#each Object.entries(moduleObj.subAnchorsObj) as [anchor, name], subIndex}
                             <div>
                                 <span>{index + 1}.{subIndex + 1}</span>
@@ -63,7 +64,7 @@
 <Route path={anchorsObj.borderObj.modulePath}>
     <svelte:component this={ArticleBorder}/>
 </Route>
-<Route path="/display">
+<Route path={anchorsObj.displayObj.modulePath}>
     <svelte:component this={ArticleDisplay}/>
 </Route>
 <Route path="/flex">

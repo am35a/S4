@@ -16,7 +16,7 @@
     <h3 id="width">Width</h3>
     <p>
         To change the border width use the:
-        <!-- <span class="d-grid">
+        <!-- <span class="display--grid">
             {#each sidesArr as side }
                 <b>border-{side}width--{Object.values(widthObj).slice(1).join('/')}</b>
             {/each}
@@ -25,7 +25,7 @@
         classes in combination with border styles. The <b>border-width--min</b> is not directly available,
         it is set automatically with the border style.
     </p>
-    <div class="d-grid g-5">
+    <div class="display--grid g-5">
         <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
             Pay attentions! The classes <b>thin</b>, <b>medium</b> and <b>thick</b> are not dynamic, unlike <b>min</b>
@@ -41,9 +41,9 @@
             <b>border-...</b>, <b>border-...-width</b>  is adaptive. The list of prefixes available on the
             <a href="/core#map">Core</a> page.
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Sizes</b>
-            <div class="d-flex fw-wrap g-3 align-items--center">
+            <div class="display--flex fw-wrap g-3 align-items--center">
                 {#each Object.entries(widthObj) as [key, value]}
                     <button
                         on:click={() => width = key}
@@ -54,9 +54,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Style</b>
-            <div class="d-flex fw-wrap g-3 align-items--center">
+            <div class="display--flex fw-wrap g-3 align-items--center">
                 <button
                     on:click={() => isStyle = !isStyle}
                     class="btn"
@@ -71,10 +71,10 @@
                 >Without</button>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 -background-color--positive -border-radius--md">
-                <div class="d-flex fw-wrap g-2 align-items--baseline">
+            <div class="display--grid g-3 p-3 -background-color--positive -border-radius--md">
+                <div class="display--flex fw-wrap g-2 align-items--baseline">
                     <div class="
                         background-color--negative-10 p-4 border-width--{widthObj[width]}"
                         class:border-style--solid={isStyle}
@@ -98,25 +98,25 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {
 `
 <div class="border-width--${widthObj[width]} ${isStyle ? 'border-style--solid' : ''}"
-    // ...
+    ...
 >all sides</div>
 <div class="border-width--${widthObj[width]} ${isStyle ? 'border-top-style--solid' : ''}"
-    // ...
+    ...
 >top side</div>
 <div class="border-width--${widthObj[width]} ${isStyle ? 'border-right-style--solid' : ''}"
-    // ...
+    ...
 >right side</div>
 <div class="border-width--${widthObj[width]} ${isStyle ? 'border-bottom-style--solid' : ''}"
-    // ...
+    ...
 >bottom side</div>
 <div class="border-width--${widthObj[width]} ${isStyle ? 'border-left-style--solid' : ''}"
-    // ...
+    ...
 >left side</div>
 `
                 }

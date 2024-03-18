@@ -3,7 +3,7 @@
 </script>
 
 <h1>Welcome to S4</h1>
-<div class="d-inline-grid g-4">
+<div class="display--inline-grid g-4">
     <p class="fs" style="--fs: 2em;">
         The originality - less JS more CSS!
     </p>

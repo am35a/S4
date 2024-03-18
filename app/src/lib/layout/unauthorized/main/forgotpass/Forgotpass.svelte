@@ -16,13 +16,13 @@
 </script>
 
 <section
-    class="d-grid g-2 p-2 background-color--positive border-radius--md bs-xs border-style--solid border-color--negative-30 m-auto w"
+    class="display--grid g-2 p-2 background-color--positive border-radius--md bs-xs border-style--solid border-color--negative-30 m-auto w"
     style="--w: 18em"
 >
-    <div class="d-grid g-1">
+    <div class="display--grid g-1">
         Forgot pass
     </div>
-    <div class="d-grid g-2 gtc-2">
+    <div class="display--grid g-2 gtc-2">
         <Button
             class="fs-sm"
             on:click={() => router.push('/signup')}

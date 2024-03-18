@@ -10,7 +10,7 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
+    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
         ...
     </div>
     <Details>

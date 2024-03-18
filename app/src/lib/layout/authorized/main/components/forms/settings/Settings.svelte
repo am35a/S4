@@ -55,10 +55,10 @@
 
 <section>
     <h3>Settings</h3>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(inputsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => inputVariant = key}
@@ -70,9 +70,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(inputsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => inputColor = key}
@@ -84,9 +84,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Sizes</b>
-            <div class="d-flex fw-wrap g-3 align-items--center">
+            <div class="display--flex fw-wrap g-3 align-items--center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}

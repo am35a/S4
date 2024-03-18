@@ -9,12 +9,12 @@
     <p>
         The <b>fd-{flexDirectionsArr.join('/')}</b> classes sets direction of an elements into a flex container.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 {#each flexDirectionsArr as direction }
-                    <div class="d-flex fd-{direction} g-2 background-color--negative-10 p-2">
+                    <div class="display--flex fd-{direction} g-2 background-color--negative-10 p-2">
                         <div class="background-color--negative-10 px-2 py-1">one</div>
                         <div class="background-color--negative-10 px-2 py-1">two</div>
                         <div class="background-color--negative-10 px-2 py-1">three</div>
@@ -22,13 +22,13 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {#each flexDirectionsArr as direction}
                     {
-`<div class="d-flex fd-${direction}">
-    // ...
+`<div class="display--flex fd-${direction}">
+    ...
 </div>
 `
                     }

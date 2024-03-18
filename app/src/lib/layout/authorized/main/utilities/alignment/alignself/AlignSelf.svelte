@@ -2,8 +2,8 @@
     import Precode from 'component/Precode.svelte'
 
     let containerTypesObj={
-        grid: 'd-grid gtc-2',
-        flex: 'd-flex'
+        grid: 'display--grid gtc-2',
+        flex: 'display--flex'
     },
         containerType = containerTypesObj.grid
 
@@ -16,10 +16,10 @@
     <p>
         The <b>align-self--{alignSelfArr.join('/')}</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>align-items--</b> classes value.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Display</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex fw-wrap g-3">
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <button
                         class="btn"
@@ -30,9 +30,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Align</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex fw-wrap g-3">
                 {#each alignSelfArr as value}
                     <button
                         class="btn"
@@ -43,7 +43,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
             <div class="{containerType} g-3 p-3 background-color--positive border-radius--md h" style="--h: 16em; --p_h: 24em;">
                 <div class="background-color--negative-10 px-2 py-1 align-self--{alignSelf}">one</div>
@@ -51,13 +51,13 @@
                 <div class="background-color--negative-10 px-2 py-1">three</div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {
 `<div class="${containerType}">
     <div class="align-self--${alignSelf}">one</div>
-    // ...
+    ...
 </div>
 `
                 }

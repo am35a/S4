@@ -21,17 +21,17 @@
 <!-- https://dribbble.com/shots/16029811/attachments/7872308?mode=media -->
 
 <section
-    class="d-grid g-4 p-4 background-color--positive border-radius--md bs-xs border-style--solid border-color--negative-30 m-auto w"
+    class="display--grid g-4 p-4 background-color--positive border-radius--md bs-xs border-style--solid border-color--negative-30 m-auto w"
     style="--w: 18em"
 >
-    <div class="d-grid">
+    <div class="display--grid">
         <h1 class="fs-xxl">Sign In</h1>
         <small class="c-negative-50">
             to manage your account
         </small>
     </div>
-    <div class="d-grid g-2">
-        <div class="d-grid g-1">
+    <div class="display--grid g-2">
+        <div class="display--grid g-1">
             <label
                 class="fs-sm fw-600 px-1"
                 for="bindLoginEmailOrName"
@@ -46,7 +46,7 @@
                 type={'email'}
             />
         </div>
-        <div class="d-grid g-1">
+        <div class="display--grid g-1">
             <label
                 class="fs-sm fw-600 px-1"
                 for="bindLoginPassword"
@@ -61,12 +61,12 @@
             />
         </div>
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label class="d-inline-grid g-1 gaf-column justify-content--start align-items--center lh-1">
+        <label class="display--inline-grid g-1 gaf-column justify-content--start align-items--center lh-1">
             <Input type={'checkbox'}/> Remember me
         </label>
     </div>
-    <div class="d-grid g-2">
-        <div class="d-grid g-2 gtc-2">
+    <div class="display--grid g-2">
+        <div class="display--grid g-2 gtc-2">
             <Button
                 class="fs-sm"
                 on:click={() => router.push('/forgotpass')}

@@ -11,8 +11,8 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-2 p-2 background-color--positive border-radius--md">
-        <div class="d-flex g-2">
+    <div class="display--grid g-2 p-2 background-color--positive border-radius--md">
+        <div class="display--flex g-2">
             <Button
                 class="btn-secondary {defaultEmptyClass ? 'active' : ''}"
                 on:click={() => defaultEmptyClass = !defaultEmptyClass }
@@ -26,7 +26,7 @@
                 {defaultEmptyContent ? 'remove' : 'add'} content
             </Button>
         </div>
-        <div class="d-grid g-2 gtc-2">
+        <div class="display--grid g-2 gtc-2">
             <div class="background-color--negative-10 p-4 border-radius--md {defaultEmptyClass ? 'empty-none' : ''}">{defaultEmptyContent ? 'content' : ''}</div>
             <div class="background-color--negative-10 p-4 border-radius--md {defaultEmptyClass ? 'empty-none' : ''}"></div>
         </div>

@@ -17,10 +17,10 @@
         S4 makes possible to combine various objects into groups.
         The classes are responsible for vertical grouping <b>.gaf-row</b> and horizontal <b>.gaf-column</b>.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Directions</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 {#each Object.entries(groupObj) as [key, value]}
                     <button
                         on:click={() => groupDirection = key}
@@ -32,7 +32,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap justify-content--evenly align-items--center p-4 background-color--positive border-radius--md">
+        <div class="display--flex g-4 fw-wrap justify-content--evenly align-items--center p-4 background-color--positive border-radius--md">
             <Group class="{groupObj[groupDirection]}">
                 <input
                     class="frm"
@@ -44,7 +44,7 @@
             </Group>
         </div>
 
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Svelte</b>
             <Precode>
                 {
@@ -56,7 +56,7 @@
                 }
             </Precode>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {

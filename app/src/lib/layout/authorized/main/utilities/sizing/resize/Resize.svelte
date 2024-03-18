@@ -9,7 +9,7 @@
     <p>
         The <b>rs-both</b> class set as default for textarea resizing.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
+    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
         <textarea class="rs-horizontal rounded background-color--negative-10 border-radius--md">rs-horizontal</textarea>
         <textarea class="rs-vertical rounded background-color--negative-10 border-radius--md">rs-vertical</textarea>
         <textarea class="rs-none rounded background-color--negative-10 border-radius--md">rs-none</textarea>

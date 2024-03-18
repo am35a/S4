@@ -1,14 +1,14 @@
-<section class="d-grid g-5">
+<section class="display--grid g-5">
     <h3 id="details">Details</h3>
-    <div class="d-flex fw-wrap g-4">
-        <div class="d-grid p-4 g-4 background-color--positive border-radius--lg align-content--start fx" style="--fxg: 1;">
+    <div class="display--flex fw-wrap g-4">
+        <div class="display--grid p-4 g-4 background-color--positive border-radius--lg align-content--start fx" style="--fxg: 1;">
             <details class="dtl">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -21,7 +21,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -34,7 +34,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -42,14 +42,14 @@
                 </div>
             </details>
         </div>
-        <div class="d-grid p-4 g-4 background-color--positive border-radius--lg align-content--start fx" style="--fxg: 1;">
+        <div class="display--grid p-4 g-4 background-color--positive border-radius--lg align-content--start fx" style="--fxg: 1;">
             <details class="dtl dtl-primary">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -62,7 +62,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -76,7 +76,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -89,7 +89,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -102,7 +102,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -115,7 +115,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -123,14 +123,14 @@
                 </div>
             </details>
         </div>
-        <div class="d-grid p-4 g-4 background-color--positive border-radius--lg align-content--start fx" style="--fxg: 1;">
+        <div class="display--grid p-4 g-4 background-color--positive border-radius--lg align-content--start fx" style="--fxg: 1;">
             <details class="dtl dtl-alt-primary">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -143,7 +143,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -157,7 +157,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -170,7 +170,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -183,7 +183,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -196,7 +196,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -204,14 +204,14 @@
                 </div>
             </details>
         </div>
-        <div class="d-grid p-4 g-4 background-color--positive border-radius--lg align-content--start fx" style="--fxg: 1;">
+        <div class="display--grid p-4 g-4 background-color--positive border-radius--lg align-content--start fx" style="--fxg: 1;">
             <details class="dtl dtl-outline-primary">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -224,7 +224,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -238,7 +238,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -251,7 +251,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -264,7 +264,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
@@ -277,7 +277,7 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 d-grid">
+                <div class="p-2 display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>

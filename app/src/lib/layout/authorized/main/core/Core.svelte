@@ -9,14 +9,14 @@
 </script>
 
 <h1>Core</h1>
-<div class="d-inline-block">
+<div class="display--inline-block">
     <h2 id="devicesChecking">Devices checking</h2>
     <p>
         The <a href="https://github.com/matthewhudson/current-device">current-device (v0.10.2)</a>
         library is use to define devices and get other data from device, which install the
         breakpoints dependencies.
     </p>
-    <div class="d-inline-grid gtc g-2" style="--gtc: auto 1fr">
+    <div class="display--inline-grid gtc g-2" style="--gtc: auto 1fr">
         <div class="ta-end fw-600">Device type:</div>
         <div>'mobile', 'tablet', 'desktop', or 'unknown'</div>
         <div class="ta-end fw-600">Device orientation:</div>
@@ -28,16 +28,16 @@
         </div>
     </div>
 </div>
-<div class="d-inline-block">
+<div class="display--inline-block">
     <h2 id="breakpoints">Breakpoints</h2>
     <div>
         <h3>Device type</h3>
-        <div class="d-grid gtc-3 g-2">
+        <div class="display--grid gtc-3 g-2">
             <div class="fw-600">Breakpoint</div>
             <div class="fw-600">Class prefix</div>
             <div class="fw-600">
                 Pattern
-                <div class="d-inline-grid gtc g-1" style="--gtc: auto auto">
+                <div class="display--inline-grid gtc g-1" style="--gtc: auto auto">
                     {#each breakpointsNamesArr as object }
                         <Button
                             on:click={() => breakpointsName = object}
@@ -69,7 +69,7 @@
             The breakpoint map for the S4 consists of individual CSS modules (files) that are loaded depending on the device and orientation: as an example.
         </p>
         <p>The S4 style gist panel breakpoint map:</p>
-        <div class="d-grid gtc-3 g-2">
+        <div class="display--grid gtc-3 g-2">
             <div class="fw-600">Breakpoint</div>
             <div class="fw-600">Count</div>
             <div class="fw-600">Class prefixes</div>

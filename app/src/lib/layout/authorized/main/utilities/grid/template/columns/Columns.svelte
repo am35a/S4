@@ -9,12 +9,12 @@
     <h4 id="columns">Columns</h4>
     <p>
         To set a number of columns in the <b>grid</b> and <b>inline-grid</b> display container, use the <b>gtc-...</b> classes. The <b>gtc-...</b> classes exist in the range from 1 to 12, such as <b>gtc-1</b> or <b>gtc-10</b>.
-        If need to set different patterns of columns, specify a variable for <b>gtc</b> with the required number and size of columns, like this <Precode class="py-0 px-1 d-inline">class="gtc" style="--p_gtc: 10% auto 10%; --gtc: auto 1fr;"</Precode>.
+        If need to set different patterns of columns, specify a variable for <b>gtc</b> with the required number and size of columns, like this <Precode class="py-0 px-1 display--inline">class="gtc" style="--p_gtc: 10% auto 10%; --gtc: auto 1fr;"</Precode>.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Display</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex fw-wrap g-3">
                 <Button
                     on:click={() => ifDisplayGrid = true}
                     class="btn {ifDisplayGrid ? 'active' : ''}"
@@ -36,7 +36,7 @@
                 <div class="background-color--negative-10 px-2 py-1">3</div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {

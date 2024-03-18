@@ -1,8 +1,8 @@
-<script lang="ts">
+<script>
     import Button from 'component/Button.svelte'
 
-    let displayGlobalArr: string[] = ['inherit', 'initial', 'revert', 'unset']
-    let displayGlobal: string = displayGlobalArr[0]
+    let displayGlobalArr = ['inherit', 'initial', 'revert', 'unset']
+    let displayGlobal = displayGlobalArr[0]
 </script>
 
 <section>
@@ -10,8 +10,8 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-2 p-2 background-color--positive border-radius--md">
-        <div class="d-flex g-2">
+    <div class="display--grid g-2 p-2 background-color--positive border-radius--md">
+        <div class="display--flex g-2">
             {#each displayGlobalArr as values }
                 <Button
                     class="btn-secondary {displayGlobal === values ? 'active' : ''}"
@@ -20,7 +20,7 @@
                 >d-{values}</Button>
             {/each}
         </div>
-        <div class="d-grid g-2">
+        <div class="display--grid g-2">
             <span class="d-{displayGlobal} background-color--negative-10 p-4">span</span>
             <div class="d-{displayGlobal} background-color--negative-10 p-4">div</div>
         </div>

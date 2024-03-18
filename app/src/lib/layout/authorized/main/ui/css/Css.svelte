@@ -25,7 +25,7 @@
     }
 </script>
 
-<article class="d-grid g-6">
+<article class="display--grid g-6">
     <h2 id="css">CSS supported UI</h2>
     <SectionColors />
     <SectionTypography />
@@ -36,8 +36,8 @@
     <SectionButtons />
     <SectionDetails />
     <SectionRadius />
-    <div class="p-sticky b-0 d-flex g-2 background-color--positive p-2 border-radius--md w-fit ms-auto bs-sm">
-        <div class="d-flex fw-wrap g-1 w-fit ms-auto">
+    <div class="p-sticky b-0 display--flex g-2 background-color--positive p-2 border-radius--md w-fit ms-auto bs-sm">
+        <div class="display--flex fw-wrap g-1 w-fit ms-auto">
             {#each Object.entries(cssOverviewObj) as [key, value]}
                 <Button
                     class="btn-xs btn-primary"

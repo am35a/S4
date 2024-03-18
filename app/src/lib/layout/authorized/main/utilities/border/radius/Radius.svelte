@@ -10,11 +10,11 @@
     <p>
         To add the default radius use the <b>br</b> class. For different round corners use the <b>border-radius--...</b> classes.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-flex fw-wrap g-2">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--flex fw-wrap g-2">
                     {#each radiusSizesArr as item}
                         <div
                             class="background-color--negative-10 p-2 border-radius--{item} ta-center ar-4_3 w"
@@ -23,8 +23,8 @@
                     {/each}
                 </div>
             </div>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-flex fw-wrap g-4">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--flex fw-wrap g-4">
                     <div>
                         <div
                             class="background-color--negative-10 p-2 border-radius--oval ta-center w"
@@ -39,8 +39,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-flex fw-wrap g-4">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--flex fw-wrap g-4">
                     <div
                         class="background-color--negative-10 p-2 border-radius--oval border-top-left-radius--sm ta-center ar-4_3 w"
                         style="--w: 6em"
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {#each radiusSizesArr as item}

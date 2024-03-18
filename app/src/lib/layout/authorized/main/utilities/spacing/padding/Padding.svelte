@@ -22,8 +22,8 @@
         The prefix <b>x</b>, <b>y</b> after <b>m</b> sets the axios value and <b>l</b>, <b>t</b>, <b>r</b> and <b>b</b> the direction value.
         To disable padding use the <b>m...-0</b> classes.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
-        <div class="d-flex g-2">
+    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
+        <div class="display--flex g-2">
             {#each Object.entries(paddingPropertyObj) as [key, value]}
                 <Button
                     class="btn-secondary {paddingProperty === value ? 'active' : ''}"
@@ -32,7 +32,7 @@
                 >{key}</Button>
             {/each}
         </div>
-        <div class="d-grid gtc-4 align-items--start g-2">
+        <div class="display--grid gtc-4 align-items--start g-2">
             {#each Array(8) as _, i}
                 <div class="background-color--negative-10 p{paddingProperty}{i + 1}">
                     <div class="background-color--negative-10 px-2 py-1">p{paddingProperty}{i + 1}</div>

@@ -14,10 +14,10 @@
     <p>
         The <b>fw-{flexWrapArr.join('/')}</b> classes help to change wrap items in a flex container.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Wrap</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex fw-wrap g-3">
                 {#each flexWrapArr as values }
                     <button
                         class="btn"
@@ -28,9 +28,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Space</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex fw-wrap g-3">
                 <button
                     class="btn"
                     class:active={isCellShrinked}
@@ -45,11 +45,11 @@
                 >ws-nowrap</button>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="d-grid mb-2">
-                    <label for="growContainerWidth" class="d-grid gtc-3 align-items--end px-2">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+                <div class="display--grid mb-2">
+                    <label for="growContainerWidth" class="display--grid gtc-3 align-items--end px-2">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>
@@ -65,7 +65,7 @@
                     >
                 </div>
                 <div
-                    class="d-flex fw-{flexWrap} g-2 p-2 background-color--negative-10 ox-hidden w"
+                    class="display--flex fw-{flexWrap} g-2 p-2 background-color--negative-10 ox-hidden w"
                     class:ws-nowrap={!isCellShrinked}
                     style="--w: {containerWidth}%"
                 >
@@ -78,13 +78,13 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {
-`<div class="d-flex fw-${flexWrap} ${isCellShrinked ? '' : 'ws-nowrap'}">
+`<div class="display--flex fw-${flexWrap} ${isCellShrinked ? '' : 'ws-nowrap'}">
     <div ${isCellShrinked ? 'class="fxs-0"' : ''}>...</div>
-    // ...
+    ...
 </div>
 `
                 }

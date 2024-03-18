@@ -13,26 +13,26 @@
         Using <b>--mw/w/wm</b> variable sets custon width. 
         Full list of the width classes:
         <br>
-        <span class="d-inline-flex g-4">
-            <span class="d-grid g-2">
+        <span class="display--inline-flex g-4">
+            <span class="display--grid g-2">
                 {#each widthParamsArr as param}
                     <span class="fw-600">mw{param}</span>
                 {/each}
             </span>
-            <span class="d-grid g-2">
+            <span class="display--grid g-2">
                 {#each widthParamsArr as param}
                     <span class="fw-600">w{param}</span>
                 {/each}
             </span>
-            <span class="d-grid g-2">
+            <span class="display--grid g-2">
                 {#each widthParamsArr as param}
                     <span class="fw-600">wm{param}</span>
                 {/each}
             </span>
         </span>
     </p>
-    <div class="d-grid g-3 mb-4 p-3 background-color--positive border-radius--md">
-        <div class="d-grid">
+    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
+        <div class="display--grid">
             <label for="containerWidth">Width {width}%:</label>
             <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={width}>
         </div>

@@ -13,18 +13,18 @@
     let buttonBorder: string = buttonBorderArr[3]
 </script>
 
-<section class="d-grid g-5">
+<section class="display--grid g-5">
 
     <h3 id="buttons">Buttons</h3>
 
-    <div class="d-flex fw-wrap g-4 justify-content--evenly align-items--center p-4 background-color--positive border-radius--lg fx" style="--fxg: 1;">
+    <div class="display--flex fw-wrap g-4 justify-content--evenly align-items--center p-4 background-color--positive border-radius--lg fx" style="--fxg: 1;">
         <p>
             All button sizes, borders, corners radius depend on the font size. Don't think the S4 only has only seven sizes, there are much. Make free your design desire and try to place one size element into another size - it's magic! Try playing with the buttons.
         </p>
     </div>
 
-    <div class="d-grid g-4 justify-item--center pb-4 border-bottom">
-        <div class="d-flex g-4 fw-wrap justify-content--center align-items--center">
+    <div class="display--grid g-4 justify-item--center pb-4 border-bottom">
+        <div class="display--flex g-4 fw-wrap justify-content--center align-items--center">
             {#each buttonSizeArr as values }
                 <button
                     class="btn btn-primary btn-ico {buttonBorder} {values} {buttonSize === values ? 'active' : ''}"
@@ -36,7 +36,7 @@
         <div>
             <span class="ico" style="--ico-image: url(/icons/arrows-down-up.svg);"></span>
         </div>
-        <div class="d-flex g-4 fw-wrap justify-content--center align-items--center">
+        <div class="display--flex g-4 fw-wrap justify-content--center align-items--center">
             {#each buttonBorderArr as values}
                 <button
                     class="btn btn-primary btn-ico {buttonSize} {values} {buttonBorder === values ? 'active' : ''}"
@@ -47,22 +47,22 @@
         </div>
     </div>
 
-    <div class="d-grid g-4">
+    <div class="display--grid g-4">
 
-        <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--lg">
-            <div class="d-grid g-3">
+        <div class="display--flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--lg">
+            <div class="display--grid g-3">
                 <button class="btn {buttonBorder} {buttonSize}" type="button">Default</button>
                 <button class="btn {buttonBorder} {buttonSize} active" type="button">Active</button>
                 <button class="btn {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
                 <button class="btn {buttonBorder} {buttonSize} active" disabled type="button">Active / Disabled</button>
             </div>
-            <div class="d-grid g-3">
+            <div class="display--grid g-3">
                 <button class="btn btn-alt {buttonBorder} {buttonSize}" type="button">Default</button>
                 <button class="btn btn-alt {buttonBorder} {buttonSize} active" type="button">Active</button>
                 <button class="btn btn-alt {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
                 <button class="btn btn-alt {buttonBorder} {buttonSize} active" disabled type="button">Active / Disabled</button>
             </div>
-            <div class="d-grid g-3">
+            <div class="display--grid g-3">
                 <button class="btn btn-outline {buttonBorder} {buttonSize}" type="button">Default</button>
                 <button class="btn btn-outline {buttonBorder} {buttonSize} active" type="button">Active</button>
                 <button class="btn btn-outline {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
@@ -71,20 +71,20 @@
         </div>
 
         {#each buttonVariantArr as variant}
-            <div class="d-flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--lg">
-                <div class="d-grid g-3">
+            <div class="display--flex g-4 fw-wrap justify-content--evenly p-4 background-color--positive border-radius--lg">
+                <div class="display--grid g-3">
                     <button class="btn btn-{variant}primary {buttonBorder} {buttonSize}" type="button">Primary</button>
                     <button class="btn btn-{variant}primary {buttonBorder} {buttonSize} active" type="button">Active</button>
                     <button class="btn btn-{variant}primary {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
                     <button class="btn btn-{variant}primary {buttonBorder} {buttonSize} active" disabled type="button">Active / Disabled</button>
                 </div>
-                <div class="d-grid g-3">
+                <div class="display--grid g-3">
                     <button class="btn btn-{variant}secondary {buttonBorder} {buttonSize}" type="button">Secondary</button>
                     <button class="btn btn-{variant}secondary {buttonBorder} {buttonSize} active" type="button">Active</button>
                     <button class="btn btn-{variant}secondary {buttonBorder} {buttonSize}" disabled type="button">Disabled</button>
                     <button class="btn btn-{variant}secondary {buttonBorder} {buttonSize} active" disabled type="button">Active / Disabled</button>
                 </div>
-                <div class="d-grid g-3">
+                <div class="display--grid g-3">
                     <button class="btn btn-{variant}info {buttonBorder} {buttonSize}" type="button">
                         <span class="ico" style="--ico-image: url(/icons/send.svg);">&nbsp;</span>
                         Send
@@ -102,7 +102,7 @@
                         Send
                     </button>
                 </div>
-                <div class="d-grid g-3">
+                <div class="display--grid g-3">
                     <button class="btn btn-{variant}success {buttonBorder} {buttonSize}" type="button">
                         <span class="ico" style="--ico-image: url(/icons/check.svg);">&nbsp;</span>
                         Confirm
@@ -120,7 +120,7 @@
                         Confirm
                     </button>
                 </div>
-                <div class="d-grid g-3">
+                <div class="display--grid g-3">
                     <button class="btn btn-{variant}warning {buttonBorder} {buttonSize}" type="button">
                         <span class="ico" style="--ico-image: url(/icons/x.svg);">&nbsp;</span>
                         Discard
@@ -138,7 +138,7 @@
                         Discard
                     </button>
                 </div>
-                <div class="d-grid g-3">
+                <div class="display--grid g-3">
                     <button class="btn btn-{variant}error {buttonBorder} {buttonSize}" type="button">
                         <span class="ico" style="--ico-image: url(/icons/trash.svg);">&nbsp;</span>
                         Remove
@@ -161,11 +161,11 @@
         
     </div>
 
-    <div class="d-flex p_fd-column g-4 p-4 background-color--positive border-radius--lg">
+    <div class="display--flex p_fd-column g-4 p-4 background-color--positive border-radius--lg">
         <p class="mb-0">
             Icon buttons like other button follow the same rules. Also they are perfect support for icon sets like font awesome, google fonts, ect.
         </p>
-        <div class="d-flex justify-content--evenly g-3 align-items--center">
+        <div class="display--flex justify-content--evenly g-3 align-items--center">
             <button class="btn btn-ico btn-primary {buttonBorder} {buttonSize}" type="button">
                 <span class="ico" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
             </button>

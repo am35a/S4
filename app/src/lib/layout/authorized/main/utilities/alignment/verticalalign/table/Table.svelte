@@ -15,10 +15,10 @@
     <p>
         The <b>vertical-align--top/middle/bottom</b> classes suitable for vertical alignmet into table sells.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 <table class="h" style="--h: 6em">
                     <tr>
                         {#each Object.entries(verticalAlignObj) as [key, value]}
@@ -28,7 +28,7 @@
                 </table>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {

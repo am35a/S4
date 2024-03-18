@@ -11,10 +11,10 @@
         The <b>background-clip--{clipsArr.join('/')}</b> property sets made the background extends
         underneath its border box, padding box, content box or text border cliping.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid g-5">
+        <div class="display--grid g-4">
             <b>Customize container</b>
-            <div class="d-grid">
+            <div class="display--grid">
                 <input
                     class="frm"
                     bind:value={containerClasses}
@@ -27,9 +27,9 @@
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 {#each clipsArr as clip}
                     <div
                         class="p-4 fs-xxxl fw-700 background-image background-color--negative-10 background-clip--{clip} {containerClasses}"
@@ -38,7 +38,7 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {#each clipsArr as clip}
@@ -46,7 +46,7 @@
 `<div
     class="background-image background-clip--${clip} ${containerClasses}"
     style="--background-image: url(...)"
-> // ... </div>
+> ... </div>
 `
                     }
                 {/each}
