@@ -10,7 +10,7 @@
     <p>
         To add shadows to elements use <b>bs-...</b> classes. The <b>bs-none</b> class remove shadow.
     </p>
-    <div class="display--grid g-3 grid-template-columns--2 mb-4 p-3 background-color--positive border-radius--md o-hidden">
+    <div class="display--grid g-3 grid-template-columns--2 mb-4 p-3 background-color--positive border-radius--md overflow--hidden">
         {#each shadowSizesArr as size}
             <div class="background-color--positive p-2 rounded bs-{size}">
                 bs-{size}

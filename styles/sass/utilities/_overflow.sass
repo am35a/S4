@@ -5,13 +5,13 @@ $overflowAxises: x, y
     overflow section: overflow type and axis contained in classes
 
 @mixin _overflow($orientation, $type)
-    .#{$orientation}#{$type}o
+    .#{$orientation}#{$type}overflow
         @each $item in $overflowProps
-            &-#{$item}
+            &--#{$item}
                overflow: #{$item} !important
 
         @each $axis in $overflowAxises
-            &#{$axis}
+            &-#{$axis}
                 @each $item in $overflowProps
-                    &-#{$item}
+                    &--#{$item}
                         overflow-#{$axis}: #{$item} !important

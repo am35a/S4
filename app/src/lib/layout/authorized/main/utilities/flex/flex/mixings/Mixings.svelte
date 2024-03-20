@@ -39,7 +39,7 @@
                         type="range"
                     >
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 ox-hidden w" style="--w: {containerWidth}%">
+                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 overflow-x--hidden w" style="--w: {containerWidth}%">
                     <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1; --flex-shrink: 1; --flex-basis: 25em;">one</div>
                     <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 2; --flex-shrink: 2; --flex-basis: 25em;">two</div>
                 </div>

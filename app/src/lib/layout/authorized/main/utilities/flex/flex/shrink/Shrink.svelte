@@ -46,7 +46,7 @@
                     placeholder="Type utility classes to customizing the container"
                 >
                 <div class="fs-sm">
-                    Try the <b>o-hidden</b> and <b>flex-wrap--wrap</b> to view dependence
+                    Try the <b>overflow--hidden</b> and <b>flex-wrap--wrap</b> to view dependence
                     container and items inside it.
                 </div>
             </div>
@@ -78,7 +78,7 @@
                         >cell {isCellShrinked ? 'shrinked' : 'no shrink'}</div>
                     {/each}
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 ox-hidden w" style="--w: {containerWidth}%">
+                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 overflow-x--hidden w" style="--w: {containerWidth}%">
                     <div
                         class="background-color--negative-10 px-2 py-1 w"
                         style="--w: 10em;"

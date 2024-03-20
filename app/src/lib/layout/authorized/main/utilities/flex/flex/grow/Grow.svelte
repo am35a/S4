@@ -1,7 +1,7 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let containerClasses = 'o-hidden flex-wrap--wrap',
+    let containerClasses = 'overflow--hidden flex-wrap--wrap',
         containerWidth = 100
 </script>
 

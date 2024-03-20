@@ -3,7 +3,7 @@
     import Details from 'component/Details.svelte'
     import Button from 'component/Button.svelte'
 
-    let containerClasses: string = 'o-hidden flex-wrap--wrap'    
+    let containerClasses: string = 'overflow--hidden flex-wrap--wrap'    
     let containerWidth: number = 50
 
     let whiteSpaceArr: string[] = ['normal', 'nowrap', 'pre', 'pre-wrap', 'pre-line', 'break-spaces']

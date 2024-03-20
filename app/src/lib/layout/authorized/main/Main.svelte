@@ -13,7 +13,7 @@
 
 </script>
 
-<!-- class="o-hidden" -->
+<!-- class="overflow--hidden" -->
 <main
     {...$$restProps}
 >

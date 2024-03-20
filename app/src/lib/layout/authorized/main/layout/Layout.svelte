@@ -3,7 +3,7 @@
 </script>
 
 <h1>Lancia Delta S4</h1>
-<div class="border-top ta-end fs-xs c-negative-50">
+<div class="border-top-style--solid ta-end fs-xs c-negative-50">
     The example from Wikipedia, <a href="https://en.wikipedia.org/wiki/Lancia_Delta_S4">the free encyclopedia</a>.
 </div>
 <table class="float--end" style="width:290px;">
