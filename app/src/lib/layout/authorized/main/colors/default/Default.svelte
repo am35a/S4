@@ -39,7 +39,7 @@
             <!-- <div>positive:</div> -->
             <div>Lightness:</div>
             <div>
-                <div class="display--grid gtc-3 align-items--end px-2">
+                <div class="display--grid grid-template-columns--3 align-items--end px-2">
                     <small class="ta-start">0</small>
                     <div class="ta-center">{defaultColorsObj.variablesObj['positive-lightness']}</div>
                     <small class="ta-end">1</small>
@@ -55,7 +55,7 @@
             </div>
             <div>Chroma:</div>
             <div>
-                <div class="display--grid gtc-3 align-items--end px-2">
+                <div class="display--grid grid-template-columns--3 align-items--end px-2">
                     <small class="ta-start">0</small>
                     <div class="ta-center">{defaultColorsObj.variablesObj['positive-chroma']}</div>
                     <small class="ta-end">0.37</small>
@@ -70,7 +70,7 @@
             </div>
             <div>Hue:</div>
             <div>
-                <div class="display--grid gtc-3 align-items--end px-2">
+                <div class="display--grid grid-template-columns--3 align-items--end px-2">
                     <small class="ta-start">0</small>
                     <div class="ta-center">{defaultColorsObj.variablesObj['positive-hue']}</div>
                     <small class="ta-end">360</small>
@@ -87,7 +87,7 @@
             <div>Colors:</div>
             <div class="display--grid g-3 justify-item--center p-4 border-radius--md flex background-color--negative" style="--flex-basis: 100%;">
                 <div class="ta-center fw-600 c-positive">Positive in negative</div>
-                <div class="display--grid gaf-column w-100">
+                <div class="display--grid grid-auto-flow--column w-100">
                     <div class="background-color--positive-10 c-positive-90 py-4 color-negative ta-center">10</div>
                     <div class="background-color--positive-20 c-positive-80 py-4 color-negative ta-center">20</div>
                     <div class="background-color--positive-30 c-positive-70 py-4 color-negative ta-center">30</div>
@@ -104,7 +104,7 @@
         <div>
             <div>Lightness:</div>
             <div>
-                <div class="display--grid gtc-3 align-items--end px-2">
+                <div class="display--grid grid-template-columns--3 align-items--end px-2">
                     <small class="ta-start">0</small>
                     <div class="ta-center">{defaultColorsObj.variablesObj['negative-lightness']}</div>
                     <small class="ta-end">1</small>
@@ -120,7 +120,7 @@
             </div>
             <div>Chroma:</div>
             <div>
-                <div class="display--grid gtc-3 align-items--end px-2">
+                <div class="display--grid grid-template-columns--3 align-items--end px-2">
                     <small class="ta-start">0</small>
                     <div class="ta-center">{defaultColorsObj.variablesObj['negative-chroma']}</div>
                     <small class="ta-end">0.37</small>
@@ -135,7 +135,7 @@
             </div>
             <div>Hue:</div>
             <div>
-                <div class="display--grid gtc-3 align-items--end px-2">
+                <div class="display--grid grid-template-columns--3 align-items--end px-2">
                     <small class="ta-start">0</small>
                     <div class="ta-center">{defaultColorsObj.variablesObj['negative-hue']}</div>
                     <small class="ta-end">360</small>
@@ -152,7 +152,7 @@
             <div>Colors:</div>
             <div class="display--grid g-3 justify-item--center p-4 border-radius--md flex background-color--positive" style="--flex-basis: 100%;">
                 <div class="ta-center fw-600 c-negative">Negative in positive</div>
-                <div class="display--grid gaf-column w-100">
+                <div class="display--grid grid-auto-flow--column w-100">
                     <div class="background-color--negative-10 c-negative-90 py-4 color-positive ta-center">10</div>
                     <div class="background-color--negative-20 c-negative-80 py-4 color-positive ta-center">20</div>
                     <div class="background-color--negative-30 c-negative-70 py-4 color-positive ta-center">30</div>

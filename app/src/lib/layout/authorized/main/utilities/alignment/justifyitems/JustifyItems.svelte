@@ -18,7 +18,7 @@
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 {#each justifyItemsArr as item }
-                    <div class="display--grid gtc-2 g-2 background-color--negative-10 p-2 justify-item--{item}">
+                    <div class="display--grid grid-template-columns--2 g-2 background-color--negative-10 p-2 justify-item--{item}">
                         <div class="background-color--negative-10 px-2 py-1">one</div>
                         <div class="background-color--negative-10 px-2 py-1">two</div>
                         <div class="background-color--negative-10 px-2 py-1">three</div>

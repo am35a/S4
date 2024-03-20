@@ -24,7 +24,7 @@
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 <div class="display--grid mb-2">
-                    <label for="mixContainerWidth" class="display--grid gtc-3 align-items--end px-2">
+                    <label for="mixContainerWidth" class="display--grid grid-template-columns--3 align-items--end px-2">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>

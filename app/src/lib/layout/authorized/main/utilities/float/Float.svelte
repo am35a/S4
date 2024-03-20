@@ -24,7 +24,7 @@
         </div>
         <div class="display--grid g-4">
             <b>HTML</b>
-            <Precode class="border-radius--top-0">
+            <Precode>
                 {#each sidesArr as side}
                     {
 `<div>

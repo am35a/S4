@@ -34,7 +34,7 @@
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--grid g-3 gtc-2">
+                <div class="display--grid g-3 grid-template-columns--2">
                     <div class="display--flex flex-direction--column-reverse g-2 background-color--negative">
                         {#if defaultsInterval}
                             {#each Array(9) as _, i}

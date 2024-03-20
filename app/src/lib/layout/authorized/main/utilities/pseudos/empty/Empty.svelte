@@ -26,7 +26,7 @@
                 {defaultEmptyContent ? 'remove' : 'add'} content
             </Button>
         </div>
-        <div class="display--grid g-2 gtc-2">
+        <div class="display--grid g-2 grid-template-columns--2">
             <div class="background-color--negative-10 p-4 border-radius--md {defaultEmptyClass ? 'empty-none' : ''}">{defaultEmptyContent ? 'content' : ''}</div>
             <div class="background-color--negative-10 p-4 border-radius--md {defaultEmptyClass ? 'empty-none' : ''}"></div>
         </div>

@@ -7,13 +7,13 @@
     {...$$restProps}
 ><code><slot></slot></code></pre>
 
-<style lang="sass">
-
+<style lang="sass" global>
     pre
         background-color: var(--negative-color)
+        border-radius: var(--border-radius--md)
         color: var(--success-color)
         font-size: var(--fs-md)
-        border-radius: var(--border-radius--md)
+        text-wrap: unset
         &:not(.inline)
             display: grid
             padding: 1em

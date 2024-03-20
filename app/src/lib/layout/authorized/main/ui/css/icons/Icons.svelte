@@ -5,7 +5,7 @@
             <p>
                 The cash posible icon is the best way to take heart any front-end developer building deep data applications.
             </p>
-            <div class="display--grid gtc-8 justify-item--center align-items--end">
+            <div class="display--grid grid-template-columns--8 justify-item--center align-items--end">
                 <span class="ico fs-xxxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
                 <span class="ico fs-xxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
                 <span class="ico fs-xl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
@@ -16,7 +16,7 @@
                 <span class="ico fs-xxs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
             </div>
             <hr class="mt-1">
-            <div class="display--grid gtc-8 justify-item--center align-items--top">
+            <div class="display--grid grid-template-columns--8 justify-item--center align-items--top">
                 <span class="fs-xxxl">xxxl</span>
                 <span class="fs-xxl">xxl</span>
                 <span class="fs-xl">xl</span>

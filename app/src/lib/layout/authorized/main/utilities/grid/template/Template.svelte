@@ -50,7 +50,7 @@
             <!-- orient="vertical" -->
         </div>
         <div>
-            <div class="display--grid gtc-{templateObj.columns} g-4 background-color--negative-10 p-4">
+            <div class="display--grid grid-template-columns--{templateObj.columns} g-4 background-color--negative-10 p-4">
                 {#each Array(templateObj.items) as _, i}
                     <div class="background-color--negative-10 px-2 py-1">{i + 1}</div>
                 {/each}

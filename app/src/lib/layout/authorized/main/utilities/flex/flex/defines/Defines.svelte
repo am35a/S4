@@ -13,7 +13,7 @@
     <h4 id="defines">Defines</h4>
     <p>
         The <b>flex</b> class do nothing with items into clear flex container, only sets container items as initial
-        parameters for modification items - <Precode class="py-0 px-1 display--inline">flex: 0 1 auto;</Precode>.
+        parameters for modification items - <Precode class="display--inline px-1 py-0">flex: 0 1 auto;</Precode>.
         There are variables can be used to control the flex class <b>--flex-grow</b>, <b>--flex-shrink</b> and <b>--flex-basis</b>.
     </p>
     <p>
@@ -65,7 +65,7 @@
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 <div class="display--grid mb-2">
-                    <label for="mixContainerWidth" class="display--grid gtc-3 align-items--end px-2">
+                    <label for="mixContainerWidth" class="display--grid grid-template-columns--3 align-items--end px-2">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>

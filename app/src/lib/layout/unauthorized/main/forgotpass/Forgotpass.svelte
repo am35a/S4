@@ -22,7 +22,7 @@
     <div class="display--grid g-1">
         Forgot pass
     </div>
-    <div class="display--grid g-2 gtc-2">
+    <div class="display--grid g-2 grid-template-columns--2">
         <Button
             class="fs-sm"
             on:click={() => router.push('/signup')}

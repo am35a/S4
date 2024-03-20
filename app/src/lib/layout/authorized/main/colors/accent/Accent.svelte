@@ -35,7 +35,7 @@
     <div>
         <div>Lightness:</div>
         <div>
-            <div class="display--grid gtc-3 align-items--end px-2">
+            <div class="display--grid grid-template-columns--3 align-items--end px-2">
                 <small class="ta-start">{accentColorsObj.variablesObj['lightness-offset']}</small>
                 <div class="ta-center">{accentColorsObj.variablesObj['lightness']}</div>
                 <small class="ta-end">{1 - accentColorsObj.variablesObj['lightness-offset']}</small>
@@ -59,7 +59,7 @@
         /> -->
         <div>Chroma:</div>
         <div>
-            <div class="display--grid gtc-3 align-items--end px-2">
+            <div class="display--grid grid-template-columns--3 align-items--end px-2">
                 <small class="ta-start">0</small>
                 <div class="ta-center">{accentColorsObj.variablesObj['chroma']}</div>
                 <small class="ta-end">0.37</small>
@@ -74,7 +74,7 @@
         </div>
         <div>Alfa (mute):</div>
         <div>
-            <div class="display--grid gtc-3 align-items--end px-2">
+            <div class="display--grid grid-template-columns--3 align-items--end px-2">
                 <small class="ta-start">0</small>
                 <div class="ta-center">{accentColorsObj.variablesObj['alfa']}</div>
                 <small class="ta-end">1</small>

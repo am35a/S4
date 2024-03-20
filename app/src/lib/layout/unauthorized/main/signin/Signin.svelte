@@ -61,12 +61,12 @@
             />
         </div>
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label class="display--inline-grid g-1 gaf-column justify-content--start align-items--center lh-1">
+        <label class="display--inline-grid g-1 grid-auto-flow--column justify-content--start align-items--center lh-1">
             <Input type={'checkbox'}/> Remember me
         </label>
     </div>
     <div class="display--grid g-2">
-        <div class="display--grid g-2 gtc-2">
+        <div class="display--grid g-2 grid-template-columns--2">
             <Button
                 class="fs-sm"
                 on:click={() => router.push('/forgotpass')}

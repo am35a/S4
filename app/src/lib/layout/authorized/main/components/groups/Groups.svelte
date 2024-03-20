@@ -4,8 +4,8 @@
     import Precode from 'component/Precode.svelte'
 
     let groupObj: { [key: string]: any }={
-        Horizontal: 'gaf-column' as string,
-        Vertical: 'gaf-row' as string,
+        Horizontal: 'grid-auto-flow--column' as string,
+        Vertical: 'grid-auto-flow--row' as string,
     }
     let groupDirection: string = 'Horizontal'
 
@@ -15,7 +15,7 @@
     <h2 class="group">Groups</h2>
     <p>
         S4 makes possible to combine various objects into groups.
-        The classes are responsible for vertical grouping <b>gaf-row</b> and horizontal <b>gaf-column</b>.
+        The classes are responsible for vertical grouping <b>grid-auto-flow--row</b> and horizontal <b>grid-auto-flow--column</b>.
     </p>
     <div class="display--grid g-5">
         <div class="display--grid g-4">

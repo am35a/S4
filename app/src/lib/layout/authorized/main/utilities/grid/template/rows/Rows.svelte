@@ -1,54 +1,52 @@
 <script lang="ts">
-    import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let ifDisplayGrid: boolean = true
+    let containerTypeObj = {
+        'Grid': 'display--grid',
+        'Inline grid': 'display--inline-grid'
+    },
+        containerType = containerTypeObj['Grid']
 </script>
 
 <div>
     <h4 id="rows">Rows</h4>
     <p>
-        To set a number of rows in the <b>grid</b> and <b>inline-grid</b> display container, use the <b>gtc-...</b> classes. The <b>gtc-...</b> classes exist in the range from 1 to 12, such as <b>gtc-1</b> or <b>gtc-10</b>.
-        If need to set different patterns of columns, specify a variable for <b>gtc</b> with the required number and size of columns, like this <Precode class="py-0 px-1 display--inline">class="gtc" style="--p_gtc: 10% auto 10%; --gtc: auto 1fr;"</Precode>.
-    </p>
-
-    <p>
-        To set a number of rows in the <b>grid</b> and <b>inline-grid</b> display container, use the <b>gtr-...</b> classes. The <b>gtr-...</b> classes exist in the range from 1 to 12, such as <b>gtr-1</b> or <b>gtr-10</b>.
-        If need to set different number of rows, specify a variable for <b>gtr</b> with the required number of rows <b>--gtr: 15</b>, like this <Precode class="py-0 px-1 display--inline">class="gtr" style="--p_gtr: 16rem auto 10rem; --gtr: auto 10rem;"</Precode>.
+        To set a number of rows in the <b>grid</b> and <b>inline-grid</b> display container, use the
+        <b>grid-template-rows--1/.../12</b> classes. If need to set different number of rows, use a
+        variable for <b>--grid-template-rows</b> with the required number of rows
+        <b>--grid-template-rows: 15</b>, like the example
+        <Precode class="display--inline px-2 py-1 ws-normal">
+            class="grid-template-rows"
+            style="--p_grid-template-rows: 16rem auto 10rem; --grid-template-rows: auto 10rem;"
+        </Precode>.
     </p>
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Display</b>
             <div class="display--flex flex-wrap--wrap g-3">
-                <Button
-                    on:click={() => ifDisplayGrid = true}
-                    class="btn {ifDisplayGrid ? 'active' : ''}"
-                    type="button"
-                    disabled={ifDisplayGrid}
-                >Grid</Button>
-                <Button
-                    on:click={() => ifDisplayGrid = false}
-                    class="btn {!ifDisplayGrid ? 'active' : ''}"
-                    type="button"
-                    disabled={!ifDisplayGrid}
-                >Inline grid</Button>
+                {#each Object.entries(containerTypeObj) as [key, value]}
+                    <button
+                        class="btn"
+                        class:active={containerType === value}
+                        on:click={() => containerType = value}
+                        disabled={containerType === value}
+                    >{key}</button>
+                {/each}
             </div>
         </div>
         <div class="p-4 background-color--positive border-radius--md">
-            <div class="d-{ifDisplayGrid ? 'grid' : 'inline-grid'} gtr-3 g-3 background-color--negative-10 p-3">
-                <div class="background-color--negative-10 px-2 py-1">1</div>
-                <div class="background-color--negative-10 px-2 py-1">2</div>
-                <div class="background-color--negative-10 px-2 py-1">3</div>
+            <div class="{containerType} grid-template-rows--3 g-3 background-color--negative-10 p-3">
+                <div class="background-color--negative-10 px-2 py-1">one</div>
+                <div class="background-color--negative-10 px-2 py-1">two</div>
+                <div class="background-color--negative-10 px-2 py-1">three</div>
             </div>
         </div>
         <div class="display--grid g-4">
             <b>HTML</b>
             <Precode>
                 {
-`<div class="d-${ifDisplayGrid ? 'grid' : 'inline-grid'} gtr-3">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
+`<div class="${containerType} grid-template-rows--3">
+    ...
 </div>
 `
                 }

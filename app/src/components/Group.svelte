@@ -10,7 +10,7 @@
 .grp
     display: inline-grid
     // grid-gap: var(--size-1)
-    &[class*=gaf-column]
+    &[class*=grid-auto-flow--column]
         > :first-child
             border-top-right-radius: 0
             border-bottom-right-radius: 0
@@ -19,7 +19,7 @@
         > :last-child
             border-top-left-radius: 0
             border-bottom-left-radius: 0
-    &[class*=gaf-row]
+    &[class*=grid-auto-flow--row]
         > :first-child
             border-bottom-left-radius: 0
             border-bottom-right-radius: 0

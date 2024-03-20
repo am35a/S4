@@ -2,7 +2,7 @@
     import Precode from 'component/Precode.svelte'
 
     let containerTypesObj={
-        grid: 'display--grid gtc-2',
+        grid: 'display--grid grid-template-columns--2',
         flex: 'display--flex'
     },
         containerType = containerTypesObj.grid

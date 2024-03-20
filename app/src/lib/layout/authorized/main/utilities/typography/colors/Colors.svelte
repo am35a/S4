@@ -20,7 +20,7 @@
         The classes from <b>c-...-10</b> to <b>c-...-90</b> make color transparent in percentage which point
         in the end of.
     </p>
-    <div class="display--grid g-3 gtc-2 mb-4 p-3 background-color--positive border-radius--md">
+    <div class="display--grid g-3 grid-template-columns--2 mb-4 p-3 background-color--positive border-radius--md">
         <div class="display--flex flex-direction--column-reverse g-2 background-color--negative">
             {#each Array(9) as _, i}
                 <div class="c-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 ta-center">
@@ -46,7 +46,7 @@
         The <b>c-...-l</b> and <b>c-...-d</b> classes set light or dark shades for accent colors.
         The <b>c-...-m</b> classes set partly transparent (mute) colors.
     </p>
-    <div class="display--grid g-3 gtc-4 mb-4 p-3 background-color--positive border-radius--md">
+    <div class="display--grid g-3 grid-template-columns--4 mb-4 p-3 background-color--positive border-radius--md">
         {#each accentColorsArr as item }
             {#each Object.entries(accentExtraColorsObj) as [key, value]}
                 <span class="c-{item}{value}">c-{item}{value}</span>

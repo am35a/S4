@@ -25,7 +25,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="display--grid g-3 gtc-2 mb-4 p-3 background-color--positive border-radius--md">
+            <div class="display--grid g-3 grid-template-columns--2 mb-4 p-3 background-color--positive border-radius--md">
                 <div class="display--flex flex-direction--column-reverse g-2 p-2 background-color--negative">
                     {#each {length: 9} as _, i}
                         <div class="border-style--solid border-color--{defaultColorsArr[0]}-{(i + 1) * 10} p-4 ta-center c-positive">

@@ -11,7 +11,7 @@
     <div class="display--grid g-5">
         <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="display--grid gtc-2 p_gtc-1 g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid grid-template-columns--2 p_grid-template-columns--1 g-3 p-3 background-color--positive border-radius--md">
                 <div
                 class="background-image background-color--negative-10 background-size--cover h"
                 style="--background-image: url(/images/logo.svg); --h: 8em"

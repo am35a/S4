@@ -57,7 +57,7 @@
         </div>
         <div class="display--grid g-3 justify-item--center p-4 border-radius--lg flex background-color--negative" style="--flex-basis: 100%;">
             <div class="ta-center fw-600 c-positive">positive</div>
-            <div class="display--grid gaf-column w-100">
+            <div class="display--grid grid-auto-flow--column w-100">
                 <div class="background-color--positive-10 c-positive-90 py-4 color-negative ta-center">10</div>
                 <div class="background-color--positive-20 c-positive-80 py-4 color-negative ta-center">20</div>
                 <div class="background-color--positive-30 c-positive-70 py-4 color-negative ta-center">30</div>
@@ -72,7 +72,7 @@
         </div>
         <div class="display--grid g-3 justify-item--center p-4 border-radius--lg flex background-color--positive" style="--flex-basis: 100%;">
             <div class="ta-center fw-600">negative</div>
-            <div class="display--grid gaf-column w-100">
+            <div class="display--grid grid-auto-flow--column w-100">
                 <div class="background-color--negative-10 c-negative-90 py-4 color-positive ta-center">10</div>
                 <div class="background-color--negative-20 c-negative-80 py-4 color-positive ta-center">20</div>
                 <div class="background-color--negative-30 c-negative-70 py-4 color-positive ta-center">30</div>

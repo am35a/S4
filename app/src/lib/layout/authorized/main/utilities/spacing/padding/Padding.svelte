@@ -32,7 +32,7 @@
                 >{key}</Button>
             {/each}
         </div>
-        <div class="display--grid gtc-4 align-items--start g-2">
+        <div class="display--grid grid-template-columns--4 align-items--start g-2">
             {#each Array(8) as _, i}
                 <div class="background-color--negative-10 p{paddingProperty}{i + 1}">
                     <div class="background-color--negative-10 px-2 py-1">p{paddingProperty}{i + 1}</div>
