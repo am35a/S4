@@ -33,10 +33,10 @@
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="p-6 background-color--positive border-radius--md overflow--hidden">
-                <div class="p-relative background-color--negative-10 h" style="--h: 10em">
-                    <div class="p-absolute background-color--negative-10 px-2 py-1 {placement}-0">0%</div>
-                    <div class="p-absolute background-color--negative-10 px-2 py-1 {placement}-50">50%</div>
-                    <div class="p-absolute background-color--negative-10 px-2 py-1 {placement}-100">100%</div>
+                <div class="position--relative background-color--negative-10 h" style="--h: 10em">
+                    <div class="position--absolute background-color--negative-10 px-2 py-1 {placement}-0">0%</div>
+                    <div class="position--absolute background-color--negative-10 px-2 py-1 {placement}-50">50%</div>
+                    <div class="position--absolute background-color--negative-10 px-2 py-1 {placement}-100">100%</div>
                 </div>
             </div>
         </div>
@@ -44,10 +44,10 @@
             <b>HTML</b>
             <Precode>
                 {
-`<div class="p-relative">
-    <div class="p-absolute ${placement}-0">0%</div>
-    <div class="p-absolute ${placement}-50">50%</div>
-    <div class="p-absolute ${placement}-100">100%</div>
+`<div class="position--relative">
+    <div class="position--absolute ${placement}-0">0%</div>
+    <div class="position--absolute ${placement}-50">50%</div>
+    <div class="position--absolute ${placement}-100">100%</div>
 </div>
 `
                 }

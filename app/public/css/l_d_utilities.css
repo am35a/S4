@@ -1353,19 +1353,19 @@
 }
 
 /*  position section: position, ltrb and translate contained in classes */
-.p-static {
+.position--static {
   position: static !important;
 }
-.p-relative {
+.position--relative {
   position: relative !important;
 }
-.p-absolute {
+.position--absolute {
   position: absolute !important;
 }
-.p-fixed {
+.position--fixed {
   position: fixed !important;
 }
-.p-sticky {
+.position--sticky {
   position: sticky !important;
 }
 
@@ -1380,7 +1380,7 @@
 }
 
 .l {
-  left: var(--l, var(--l, initial)) !important;
+  left: var(--l, var(--l, initial));
 }
 
 .t-0 {
@@ -1394,7 +1394,7 @@
 }
 
 .t {
-  top: var(--t, var(--t, initial)) !important;
+  top: var(--t, var(--t, initial));
 }
 
 .r-0 {
@@ -1408,7 +1408,7 @@
 }
 
 .r {
-  right: var(--r, var(--r, initial)) !important;
+  right: var(--r, var(--r, initial));
 }
 
 .b-0 {
@@ -1422,7 +1422,7 @@
 }
 
 .b {
-  bottom: var(--b, var(--b, initial)) !important;
+  bottom: var(--b, var(--b, initial));
 }
 
 /*  sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes */
