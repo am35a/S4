@@ -47,7 +47,7 @@
         <svelte:fragment slot="body">
             <Precode class="border-radius--top-0">
                 {
-`<div class="p${paddingProperty}#">...</div>
+`<div class="p${paddingProperty}#"> ... </div>
 `
                 }
             </Precode>

@@ -45,7 +45,7 @@
             <b>HTML</b>
             <Precode>
                 {
-`<div class="overflow--${overflowProperty}>...</div>
+`<div class="overflow--${overflowProperty}> ... </div>
 `
                 }
             </Precode>

@@ -47,7 +47,7 @@
         <svelte:fragment slot="body">
             <Precode class="border-radius--top-0">
                 {
-`<div class="m${marginProperty}#">...</div>
+`<div class="m${marginProperty}#"> ... </div>
 `
                 }
             </Precode>

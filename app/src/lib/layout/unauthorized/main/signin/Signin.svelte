@@ -21,7 +21,7 @@
 <!-- https://dribbble.com/shots/16029811/attachments/7872308?mode=media -->
 
 <section
-    class="display--grid g-4 p-4 background-color--positive border-radius--md bs-xs border-style--solid border-color--negative-30 m-auto w"
+    class="display--grid g-4 p-4 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30 m-auto w"
     style="--w: 18em"
 >
     <div class="display--grid">

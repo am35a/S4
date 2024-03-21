@@ -23,7 +23,7 @@
     {...$$restProps}
 >
     <div class="display--flex g-2 h-100">
-        <div class="display--flex align-items--center flex-grow--1 p-1 background-color--positive border-radius--md bs-xs border-style--solid border-color--negative-30">
+        <div class="display--flex align-items--center flex-grow--1 p-1 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30">
             <div class="display--flex align-items--center flex-grow--1 g-2 h-100">
                 <!-- <Button
                     class="w-auto h-100 p-0 {$path === '/home' ? 'active' : ''}"
@@ -57,7 +57,7 @@
                 <!-- {$appSegment.split('/').length} -->
             <!-- </div> -->
         </div>
-        <div class="display--flex g-2 px-2 background-color--positive border-radius--md bs-xs border-style--solid border-color--negative-30">
+        <div class="display--flex g-2 px-2 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30">
             <Button
                 class="btn-ico my-auto"
                 on:click={() => themeChange()}

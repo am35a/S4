@@ -1625,6 +1625,34 @@
   aspect-ratio: var(--p_t_ar, var(--ar, initial));
 }
 
+.p_t_box-shadow--xxs, .p_t_box-shadow--xxs\:hover:hover {
+  box-shadow: 0 var(--bs-xxs) calc(var(--bs-xxs) * 2) calc(var(--bs-xxs) * 0.5) var(--bsc) !important;
+}
+.p_t_box-shadow--xs, .p_t_box-shadow--xs\:hover:hover {
+  box-shadow: 0 var(--bs-xs) calc(var(--bs-xs) * 2) calc(var(--bs-xs) * 0.5) var(--bsc) !important;
+}
+.p_t_box-shadow--sm, .p_t_box-shadow--sm\:hover:hover {
+  box-shadow: 0 var(--bs-sm) calc(var(--bs-sm) * 2) calc(var(--bs-sm) * 0.5) var(--bsc) !important;
+}
+.p_t_box-shadow--md, .p_t_box-shadow--md\:hover:hover {
+  box-shadow: 0 var(--bs-md) calc(var(--bs-md) * 2) calc(var(--bs-md) * 0.5) var(--bsc) !important;
+}
+.p_t_box-shadow--lg, .p_t_box-shadow--lg\:hover:hover {
+  box-shadow: 0 var(--bs-lg) calc(var(--bs-lg) * 2) calc(var(--bs-lg) * 0.5) var(--bsc) !important;
+}
+.p_t_box-shadow--xl, .p_t_box-shadow--xl\:hover:hover {
+  box-shadow: 0 var(--bs-xl) calc(var(--bs-xl) * 2) calc(var(--bs-xl) * 0.5) var(--bsc) !important;
+}
+.p_t_box-shadow--xxl, .p_t_box-shadow--xxl\:hover:hover {
+  box-shadow: 0 var(--bs-xxl) calc(var(--bs-xxl) * 2) calc(var(--bs-xxl) * 0.5) var(--bsc) !important;
+}
+.p_t_box-shadow--xxxl, .p_t_box-shadow--xxxl\:hover:hover {
+  box-shadow: 0 var(--bs-xxxl) calc(var(--bs-xxxl) * 2) calc(var(--bs-xxxl) * 0.5) var(--bsc) !important;
+}
+.p_t_box-shadow--none {
+  box-shadow: none !important;
+}
+
 /*  spacing section: width, height, box-sizing and resize types contained in classes */
 .p_t_m-0 {
   margin: unset !important;

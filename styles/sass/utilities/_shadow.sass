@@ -1,11 +1,11 @@
 $shadowSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
 
 @mixin _shadow($orientation, $type)
-    .#{$orientation}#{$type}bs
+    .#{$orientation}#{$type}box-shadow
         @each $value in $shadowSizes
-            &-#{$value}
+            &--#{$value}, &--#{$value}\:hover:hover
                 box-shadow: 0 var(--bs-#{$value}) calc(var(--bs-#{$value}) * 2) calc(var(--bs-#{$value}) * .5) var(--bsc) !important
-        &-none
+        &--none
             box-shadow: none !important
 
     // .#{$orientation}#{$type}ts
