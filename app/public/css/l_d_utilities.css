@@ -1369,60 +1369,60 @@
   position: sticky !important;
 }
 
-.l-0 {
+.left--0 {
   left: 0% !important;
 }
-.l-50 {
+.left--50 {
   left: 50% !important;
 }
-.l-100 {
+.left--100 {
   left: 100% !important;
 }
 
-.l {
-  left: var(--l, var(--l, initial));
+.left {
+  left: var(--left, var(--left, initial));
 }
 
-.t-0 {
+.top--0 {
   top: 0% !important;
 }
-.t-50 {
+.top--50 {
   top: 50% !important;
 }
-.t-100 {
+.top--100 {
   top: 100% !important;
 }
 
-.t {
-  top: var(--t, var(--t, initial));
+.top {
+  top: var(--top, var(--top, initial));
 }
 
-.r-0 {
+.right--0 {
   right: 0% !important;
 }
-.r-50 {
+.right--50 {
   right: 50% !important;
 }
-.r-100 {
+.right--100 {
   right: 100% !important;
 }
 
-.r {
-  right: var(--r, var(--r, initial));
+.right {
+  right: var(--right, var(--right, initial));
 }
 
-.b-0 {
+.bottom--0 {
   bottom: 0% !important;
 }
-.b-50 {
+.bottom--50 {
   bottom: 50% !important;
 }
-.b-100 {
+.bottom--100 {
   bottom: 100% !important;
 }
 
-.b {
-  bottom: var(--b, var(--b, initial));
+.bottom {
+  bottom: var(--bottom, var(--bottom, initial));
 }
 
 /*  sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes */

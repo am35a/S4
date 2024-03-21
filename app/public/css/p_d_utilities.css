@@ -1332,60 +1332,60 @@
   position: sticky !important;
 }
 
-.p_l-0 {
+.p_left--0 {
   left: 0% !important;
 }
-.p_l-50 {
+.p_left--50 {
   left: 50% !important;
 }
-.p_l-100 {
+.p_left--100 {
   left: 100% !important;
 }
 
-.l {
-  left: var(--p_l, var(--l, initial));
+.left {
+  left: var(--p_left, var(--left, initial));
 }
 
-.p_t-0 {
+.p_top--0 {
   top: 0% !important;
 }
-.p_t-50 {
+.p_top--50 {
   top: 50% !important;
 }
-.p_t-100 {
+.p_top--100 {
   top: 100% !important;
 }
 
-.t {
-  top: var(--p_t, var(--t, initial));
+.top {
+  top: var(--p_top, var(--top, initial));
 }
 
-.p_r-0 {
+.p_right--0 {
   right: 0% !important;
 }
-.p_r-50 {
+.p_right--50 {
   right: 50% !important;
 }
-.p_r-100 {
+.p_right--100 {
   right: 100% !important;
 }
 
-.r {
-  right: var(--p_r, var(--r, initial));
+.right {
+  right: var(--p_right, var(--right, initial));
 }
 
-.p_b-0 {
+.p_bottom--0 {
   bottom: 0% !important;
 }
-.p_b-50 {
+.p_bottom--50 {
   bottom: 50% !important;
 }
-.p_b-100 {
+.p_bottom--100 {
   bottom: 100% !important;
 }
 
-.b {
-  bottom: var(--p_b, var(--b, initial));
+.bottom {
+  bottom: var(--p_bottom, var(--bottom, initial));
 }
 
 /*  sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes */

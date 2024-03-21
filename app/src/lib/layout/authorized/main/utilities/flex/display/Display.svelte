@@ -14,13 +14,13 @@
         <div class="display--grid g-4">
             <b>Display</b>
             <div class="display--inline-flex flex-wrap--wrap g-3">
-                {#each displayArr as values }
+                {#each displayArr as value}
                     <button
                         class="btn"
-                        class:active={display === values}
-                        on:click={() => display = values}
-                        disabled={display === values}
-                    >{values}</button>
+                        class:active={display === value}
+                        on:click={() => display = value}
+                        disabled={display === value}
+                    >{value}</button>
                 {/each}
             </div>
         </div>

@@ -1332,60 +1332,60 @@
   position: sticky !important;
 }
 
-.l_m_l-0 {
+.l_m_left--0 {
   left: 0% !important;
 }
-.l_m_l-50 {
+.l_m_left--50 {
   left: 50% !important;
 }
-.l_m_l-100 {
+.l_m_left--100 {
   left: 100% !important;
 }
 
-.l {
-  left: var(--l_m_l, var(--l, initial));
+.left {
+  left: var(--l_m_left, var(--left, initial));
 }
 
-.l_m_t-0 {
+.l_m_top--0 {
   top: 0% !important;
 }
-.l_m_t-50 {
+.l_m_top--50 {
   top: 50% !important;
 }
-.l_m_t-100 {
+.l_m_top--100 {
   top: 100% !important;
 }
 
-.t {
-  top: var(--l_m_t, var(--t, initial));
+.top {
+  top: var(--l_m_top, var(--top, initial));
 }
 
-.l_m_r-0 {
+.l_m_right--0 {
   right: 0% !important;
 }
-.l_m_r-50 {
+.l_m_right--50 {
   right: 50% !important;
 }
-.l_m_r-100 {
+.l_m_right--100 {
   right: 100% !important;
 }
 
-.r {
-  right: var(--l_m_r, var(--r, initial));
+.right {
+  right: var(--l_m_right, var(--right, initial));
 }
 
-.l_m_b-0 {
+.l_m_bottom--0 {
   bottom: 0% !important;
 }
-.l_m_b-50 {
+.l_m_bottom--50 {
   bottom: 50% !important;
 }
-.l_m_b-100 {
+.l_m_bottom--100 {
   bottom: 100% !important;
 }
 
-.b {
-  bottom: var(--l_m_b, var(--b, initial));
+.bottom {
+  bottom: var(--l_m_bottom, var(--bottom, initial));
 }
 
 /*  sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes */
