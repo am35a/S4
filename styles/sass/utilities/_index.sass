@@ -57,3 +57,5 @@
     @include _typography(map.get($typography, "orientation"), map.get($typography, "type"))
 
 @import _pseudos
+@if map.get($pseudos, "include")
+    @include _pseudos(map.get($pseudos, "orientation"), map.get($pseudos, "type"))

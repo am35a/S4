@@ -2528,3 +2528,7 @@ p {
 .d-rtl {
   direction: rtl;
 }
+
+.display--none\:empty:empty {
+  display: none !important;
+}
