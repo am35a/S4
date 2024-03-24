@@ -1806,16 +1806,16 @@
   margin: var(--p_margin, var(--margin, initial));
 }
 .margin-y, .margin-top {
-  margin-top: var(--p_margin-top, var(--margin-top, initial));
+  margin-top: var(--p_margin, var(--margin, initial));
 }
 .margin-x, .margin-right {
-  margin-right: var(--p_margin-right, var(--margin-right, initial));
+  margin-right: var(--p_margin, var(--margin, initial));
 }
 .margin-y, .margin-bottom {
-  margin-bottom: var(--p_margin-bottom, var(--margin-bottom, initial));
+  margin-bottom: var(--p_margin, var(--margin, initial));
 }
 .margin-x, .margin-left {
-  margin-left: var(--p_margin-left, var(--margin-left, initial));
+  margin-left: var(--p_margin, var(--margin, initial));
 }
 
 .p_padding--xxs {
@@ -1973,100 +1973,112 @@
   padding: var(--p_padding, var(--padding, initial));
 }
 .padding-y, .padding-top {
-  padding-top: var(--p_padding-top, var(--padding-top, initial));
+  padding-top: var(--p_padding, var(--padding, initial));
 }
 .padding-x, .padding-right {
-  padding-right: var(--p_padding-right, var(--padding-right, initial));
+  padding-right: var(--p_padding, var(--padding, initial));
 }
 .padding-y, .padding-bottom {
-  padding-bottom: var(--p_padding-bottom, var(--padding-bottom, initial));
+  padding-bottom: var(--p_padding, var(--padding, initial));
 }
 .padding-x, .padding-left {
-  padding-left: var(--p_padding-left, var(--padding-left, initial));
+  padding-left: var(--p_padding, var(--padding, initial));
 }
 
 .p_gap--xxs {
-  gap: var(--gap--xxs) !important;
+  gap: var(--gap--xxs);
 }
 .p_gap--xs {
-  gap: var(--gap--xs) !important;
+  gap: var(--gap--xs);
 }
 .p_gap--sm {
-  gap: var(--gap--sm) !important;
+  gap: var(--gap--sm);
 }
 .p_gap--md {
-  gap: var(--gap--md) !important;
+  gap: var(--gap--md);
 }
 .p_gap--lg {
-  gap: var(--gap--lg) !important;
+  gap: var(--gap--lg);
 }
 .p_gap--xl {
-  gap: var(--gap--xl) !important;
+  gap: var(--gap--xl);
 }
 .p_gap--xxl {
-  gap: var(--gap--xxl) !important;
+  gap: var(--gap--xxl);
 }
 .p_gap--xxxl {
-  gap: var(--gap--xxxl) !important;
+  gap: var(--gap--xxxl);
 }
 .p_gap--none {
-  gap: unset !important;
+  gap: unset;
+}
+
+.gap {
+  gap: var(--p_gap, var(--gap, initial));
 }
 
 .p_row-gap--xxs {
-  row-gap: var(--row-gap--xxs) !important;
+  row-gap: var(--gap--xxs);
 }
 .p_row-gap--xs {
-  row-gap: var(--row-gap--xs) !important;
+  row-gap: var(--gap--xs);
 }
 .p_row-gap--sm {
-  row-gap: var(--row-gap--sm) !important;
+  row-gap: var(--gap--sm);
 }
 .p_row-gap--md {
-  row-gap: var(--row-gap--md) !important;
+  row-gap: var(--gap--md);
 }
 .p_row-gap--lg {
-  row-gap: var(--row-gap--lg) !important;
+  row-gap: var(--gap--lg);
 }
 .p_row-gap--xl {
-  row-gap: var(--row-gap--xl) !important;
+  row-gap: var(--gap--xl);
 }
 .p_row-gap--xxl {
-  row-gap: var(--row-gap--xxl) !important;
+  row-gap: var(--gap--xxl);
 }
 .p_row-gap--xxxl {
-  row-gap: var(--row-gap--xxxl) !important;
+  row-gap: var(--gap--xxxl);
 }
 .p_row-gap--none {
-  row-gap: unset !important;
+  row-gap: unset;
+}
+
+.row-gap {
+  row-gap: var(--p_gap, var(--gap, initial));
 }
 
 .p_column-gap--xxs {
-  column-gap: var(--column-gap--xxs) !important;
+  column-gap: var(--gap--xxs);
 }
 .p_column-gap--xs {
-  column-gap: var(--column-gap--xs) !important;
+  column-gap: var(--gap--xs);
 }
 .p_column-gap--sm {
-  column-gap: var(--column-gap--sm) !important;
+  column-gap: var(--gap--sm);
 }
 .p_column-gap--md {
-  column-gap: var(--column-gap--md) !important;
+  column-gap: var(--gap--md);
 }
 .p_column-gap--lg {
-  column-gap: var(--column-gap--lg) !important;
+  column-gap: var(--gap--lg);
 }
 .p_column-gap--xl {
-  column-gap: var(--column-gap--xl) !important;
+  column-gap: var(--gap--xl);
 }
 .p_column-gap--xxl {
-  column-gap: var(--column-gap--xxl) !important;
+  column-gap: var(--gap--xxl);
 }
 .p_column-gap--xxxl {
-  column-gap: var(--column-gap--xxxl) !important;
+  column-gap: var(--gap--xxxl);
 }
 .p_column-gap--none {
-  column-gap: unset !important;
+  column-gap: unset;
+}
+
+.column-gap {
+  column-gap: var(--p_gap, var(--gap, initial));
 }
 
 /*  typography section: ... contained in classes */

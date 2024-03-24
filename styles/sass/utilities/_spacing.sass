@@ -38,20 +38,22 @@ $gapNames: '', row-, column-
         .#{$name}
             #{$name}: var(--#{$orientation}#{$type}#{$name}, var(--#{$name}, initial))
             &-y, &-top
-                #{$name}-top: var(--#{$orientation}#{$type}#{$name}-top, var(--#{$name}-top, initial))
+                #{$name}-top: var(--#{$orientation}#{$type}#{$name}, var(--#{$name}, initial))
             &-x, &-right
-                #{$name}-right: var(--#{$orientation}#{$type}#{$name}-right, var(--#{$name}-right, initial))
+                #{$name}-right: var(--#{$orientation}#{$type}#{$name}, var(--#{$name}, initial))
             &-y, &-bottom
-                #{$name}-bottom: var(--#{$orientation}#{$type}#{$name}-bottom, var(--#{$name}-bottom, initial))
+                #{$name}-bottom: var(--#{$orientation}#{$type}#{$name}, var(--#{$name}, initial))
             &-x, &-left
-                #{$name}-left: var(--#{$orientation}#{$type}#{$name}-left, var(--#{$name}-left, initial))
+                #{$name}-left: var(--#{$orientation}#{$type}#{$name}, var(--#{$name}, initial))
 
     @each $name in $gapNames
         .#{$orientation}#{$type}#{$name}gap
             @each $space in $spacingSizes
                 @if $space != auto
                     &--#{$space}
-                        #{$name}gap: spacePattern(#{$name}gap, $space) !important
+                        #{$name}gap: spacePattern(gap, $space)
+        .#{$name}gap
+            #{$name}gap: var(--#{$orientation}#{$type}gap, var(--gap, initial))
 
 
 
