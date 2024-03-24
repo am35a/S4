@@ -4,11 +4,11 @@ $shadowSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
     .#{$orientation}#{$type}box-shadow
         @each $value in $shadowSizes
             &--#{$value}, &--#{$value}\:hover:hover
-                box-shadow: 0 var(--bs-#{$value}) calc(var(--bs-#{$value}) * 2) calc(var(--bs-#{$value}) * .5) var(--bsc) !important
+                box-shadow: 0 var(--box-shadow--#{$value}) calc(var(--box-shadow--#{$value}) * 2) calc(var(--box-shadow--#{$value}) * .5) var(--bsc) !important
         &--none
             box-shadow: none !important
 
     // .#{$orientation}#{$type}ts
     //     @each $value in $shadowSizes
     //         &-#{$value}
-    //             text-shadow: calc(var(--ts-#{$value}) * .125) calc(var(--ts-#{$value}) * .125) calc(var(--ts-#{$value}) * .5) var(--tsc) !important
+    //             text-shadow: calc(var(--text-shadow--#{$value}) * .125) calc(var(--text-shadow--#{$value}) * .125) calc(var(--text-shadow--#{$value}) * .5) var(--tsc) !important

@@ -4,10 +4,54 @@ $spacingStep: 8
 // $spacingAxises: x, y
 // $spacingDirections: l, t, r, b
 
+$spacingNames: margin, padding
+$spacingSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl, auto, none
+
+
 /*
     spacing section: width, height, box-sizing and resize types contained in classes
+@function spacePattern($name, $space)
+    @if $space == auto
+        $space: auto
+    @else
+        @if $space == none
+            $space: unset
+        @else
+            $space: var(--#{$name}--#{$space})
+    @return $space
 
 @mixin _spacing($orientation, $type)
+    @each $name in $spacingNames
+        .#{$orientation}#{$type}#{$name}
+            @each $space in $spacingSizes
+                &--#{$space}
+                    #{$name}: spacePattern($name, $space) !important
+            @each $space in $spacingSizes
+                &-y--#{$space}, &-top--#{$space}
+                    #{$name}-top: spacePattern($name, $space) !important
+                &-x--#{$space}, &-right--#{$space}
+                    #{$name}-right: spacePattern($name, $space) !important
+                &-y--#{$space}, &-bottom--#{$space}
+                    #{$name}-bottom: spacePattern($name, $space) !important
+                &-x--#{$space}, &-left--#{$space}
+                    #{$name}-left: spacePattern($name, $space) !important
+        .#{$name}
+            #{$name}: var(--#{$orientation}#{$type}#{$name}, var(--#{$name}, initial))
+            &-y, &-top
+                #{$name}-top: var(--#{$orientation}#{$type}#{$name}-top, var(--#{$name}-top, initial))
+            &-x, &-right
+                #{$name}-right: var(--#{$orientation}#{$type}#{$name}-right, var(--#{$name}-right, initial))
+            &-y, &-bottom
+                #{$name}-bottom: var(--#{$orientation}#{$type}#{$name}-bottom, var(--#{$name}-bottom, initial))
+            &-x, &-left
+                #{$name}-left: var(--#{$orientation}#{$type}#{$name}-left, var(--#{$name}-left, initial))
+
+
+
+
+
+
+
     .#{$orientation}#{$type}m
         &-0
             margin: unset !important
