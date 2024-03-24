@@ -6,7 +6,7 @@ $spacingStep: 8
 
 $spacingNames: margin, padding
 $spacingSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl, auto, none
-
+$gapNames: '', row-, column-
 
 /*
     spacing section: width, height, box-sizing and resize types contained in classes
@@ -46,6 +46,12 @@ $spacingSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl, auto, none
             &-x, &-left
                 #{$name}-left: var(--#{$orientation}#{$type}#{$name}-left, var(--#{$name}-left, initial))
 
+    @each $name in $gapNames
+        .#{$orientation}#{$type}#{$name}gap
+            @each $space in $spacingSizes
+                @if $space != auto
+                    &--#{$space}
+                        #{$name}gap: spacePattern(#{$name}gap, $space) !important
 
 
 
