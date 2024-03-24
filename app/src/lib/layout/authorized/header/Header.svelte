@@ -22,19 +22,19 @@
 <header
     {...$$restProps}
 >
-    <div class="display--flex g-2 h-100">
+    <div class="display--flex g-2 height--100">
         <div class="display--flex align-items--center flex-grow--1 p-1 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30">
-            <div class="display--flex align-items--center flex-grow--1 g-2 h-100">
+            <div class="display--flex align-items--center flex-grow--1 g-2 height--100">
                 <!-- <Button
-                    class="w-auto h-100 p-0 {$path === '/home' ? 'active' : ''}"
+                    class="width--auto height--100 p-0 {$path === '/home' ? 'active' : ''}"
                     title="S4 - The lightweight Svelte UI library"
                     on:click={() => router.push('/home')}
                 >
-                    <img class="w-auto h-100" src="/images/logo.svg" alt="S4 logo" />
+                    <img class="width--auto height--100" src="/images/logo.svg" alt="S4 logo" />
                 </Button> -->
                 <img
                     on:click={() => router.push('/home')}
-                    class="w-auto h-100 btn p-0"
+                    class="width--auto height--100 btn p-0"
                     src="/images/logo.svg"
                     alt="S4 - The lightweight Svelte UI Kit"
                     role={'button'}

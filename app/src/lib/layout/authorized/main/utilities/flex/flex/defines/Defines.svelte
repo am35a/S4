@@ -80,7 +80,7 @@
                         type="range"
                     >
                 </div>
-                <div class="display--flex g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
+                <div class="display--flex g-2 background-color--negative-10 p-2 width" style="--width: {containerWidth}%">
                     <div class="flex--{define1} background-color--negative-10 px-2 py-1">{define1}</div>
                     <div class="flex--{define2} background-color--negative-10 px-2 py-1">{define2}</div>
                     <div class="flex--{define3} background-color--negative-10 px-2 py-1">{define3}</div>

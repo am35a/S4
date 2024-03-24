@@ -65,9 +65,9 @@
                     >
                 </div>
                 <div
-                    class="display--flex flex-wrap--{wrap} g-2 p-2 background-color--negative-10 overflow-x--hidden w"
+                    class="display--flex flex-wrap--{wrap} g-2 p-2 background-color--negative-10 overflow-x--hidden width"
                     class:ws-nowrap={!isCellShrinked}
-                    style="--w: {containerWidth}%"
+                    style="--width: {containerWidth}%"
                 >
                     {#each cellNamesArr as name}
                         <div

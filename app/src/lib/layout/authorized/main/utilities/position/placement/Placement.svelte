@@ -28,7 +28,7 @@
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="p-6 background-color--positive border-radius--md overflow--hidden">
-                <div class="position--relative background-color--negative-10 h" style="--h: 10em">
+                <div class="position--relative background-color--negative-10 height" style="--height: 10em">
                     <div class="position--absolute background-color--negative-10 px-2 py-1 {place}--0">0%</div>
                     <div class="position--absolute background-color--negative-10 px-2 py-1 {place}--50">50%</div>
                     <div class="position--absolute background-color--negative-10 px-2 py-1 {place}--100">100%</div>

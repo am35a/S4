@@ -14,7 +14,7 @@
         'large x': 'fs-xl',
         'large xx': 'fs-xxl',
         'large xxx': 'fs-xxxl',
-        'expand': 'w-100 h-100'
+        'expand': 'width--100 height--100'
     }
     let iconSize = '',
         iconBgColor = '',
@@ -103,7 +103,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md h" style="--h: 10em">
+            <div class="display--grid g-3 p-3 background-color--positive border-radius--md height" style="--height: 10em">
                 <Icon
                     class="{iconSize} m-auto {iconBgColor ? 'background-color' : ''} {iconColor ? 'c' : ''}"
                     style="{iconBgColor ? `--background-color:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"

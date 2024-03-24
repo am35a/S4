@@ -48,7 +48,7 @@
                     bind:value={defaultColorsObj.variablesObj['positive-lightness']}
                     min="0"
                     max="1"
-                    class="frm w-100"
+                    class="frm width--100"
                     type="range"
                     step=".01"
                 />
@@ -63,7 +63,7 @@
                 <Input
                     bind:value={defaultColorsObj.variablesObj['positive-chroma']}
                     min="0" max="0.37"
-                    class="frm w-100"
+                    class="frm width--100"
                     type="range"
                     step=".01"
                 />
@@ -78,7 +78,7 @@
                 <Input
                     bind:value={defaultColorsObj.variablesObj['positive-hue']}
                     min="0" max="360"
-                    class="frm w-100 background-image"
+                    class="frm width--100 background-image"
                     style="{bgiGradientVar('positive')}"
                     type="range"
                     step="1"
@@ -87,7 +87,7 @@
             <div>Colors:</div>
             <div class="display--grid g-3 justify-item--center p-4 border-radius--md flex background-color--negative" style="--flex-basis: 100%;">
                 <div class="ta-center fw-600 c-positive">Positive in negative</div>
-                <div class="display--grid grid-auto-flow--column w-100">
+                <div class="display--grid grid-auto-flow--column width--100">
                     <div class="background-color--positive-10 c-positive-90 py-4 color-negative ta-center">10</div>
                     <div class="background-color--positive-20 c-positive-80 py-4 color-negative ta-center">20</div>
                     <div class="background-color--positive-30 c-positive-70 py-4 color-negative ta-center">30</div>
@@ -113,7 +113,7 @@
                     bind:value={defaultColorsObj.variablesObj['negative-lightness']}
                     min="0"
                     max="1"
-                    class="frm w-100"
+                    class="frm width--100"
                     type="range"
                     step=".01"
                 />
@@ -128,7 +128,7 @@
                 <Input
                     bind:value={defaultColorsObj.variablesObj['negative-chroma']}
                     min="0" max="0.37"
-                    class="frm w-100"
+                    class="frm width--100"
                     type="range"
                     step=".01"
                 />
@@ -143,7 +143,7 @@
                 <Input
                     bind:value={defaultColorsObj.variablesObj['negative-hue']}
                     min="0" max="360"
-                    class="frm w-100 background-image"
+                    class="frm width--100 background-image"
                     style="{bgiGradientVar('negative')}"
                     type="range"
                     step="1"
@@ -152,7 +152,7 @@
             <div>Colors:</div>
             <div class="display--grid g-3 justify-item--center p-4 border-radius--md flex background-color--positive" style="--flex-basis: 100%;">
                 <div class="ta-center fw-600 c-negative">Negative in positive</div>
-                <div class="display--grid grid-auto-flow--column w-100">
+                <div class="display--grid grid-auto-flow--column width--100">
                     <div class="background-color--negative-10 c-negative-90 py-4 color-positive ta-center">10</div>
                     <div class="background-color--negative-20 c-negative-80 py-4 color-positive ta-center">20</div>
                     <div class="background-color--negative-30 c-negative-70 py-4 color-positive ta-center">30</div>

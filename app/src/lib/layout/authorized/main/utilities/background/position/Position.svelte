@@ -19,8 +19,8 @@
             <div class="display--grid grid-template-columns--3 g-3 p-2 background-color--positive border-radius--md">
                 {#each bgPositionsArr as position }
                     <div
-                        class="background-image background-color--negative-10 background-position--{position} background-repeat--no background-size h"
-                        style="--background-image: url(/images/logo.svg); --background-size: 4em auto; --h: 6em"
+                        class="background-image background-color--negative-10 background-position--{position} background-repeat--no background-size height"
+                        style="--background-image: url(/images/logo.svg); --background-size: 4em auto; --height: 6em"
                     ></div>
                 {/each}
             </div>

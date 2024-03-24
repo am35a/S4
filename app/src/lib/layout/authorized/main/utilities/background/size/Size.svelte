@@ -13,12 +13,12 @@
             <b>Preview</b>
             <div class="display--grid grid-template-columns--2 p_grid-template-columns--1 g-3 p-3 background-color--positive border-radius--md">
                 <div
-                class="background-image background-color--negative-10 background-size--cover h"
-                style="--background-image: url(/images/logo.svg); --h: 8em"
+                class="background-image background-color--negative-10 background-size--cover height"
+                style="--background-image: url(/images/logo.svg); --height: 8em"
             ></div>
             <div
-                class="background-image background-color--negative-10 background-size--contain h"
-                style="--background-image: url(/images/logo.svg); --h: 8em"
+                class="background-image background-color--negative-10 background-size--contain height"
+                style="--background-image: url(/images/logo.svg); --height: 8em"
             ></div>
             </div>
         </div>

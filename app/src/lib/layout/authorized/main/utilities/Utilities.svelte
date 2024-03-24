@@ -11,7 +11,7 @@
     import ArticleOverflow from './overflow/Overflow.svelte'
     import ArticlePosition from './position/Position.svelte'
     import ArticlePseudos from './pseudos/Pseudos.svelte'
-    import ArticleShadow from './shadow/Shadow.svelte'
+    import ArticleShadow, {anchorsObj as shadowObj} from './shadow/Shadow.svelte'
     import ArticleSizing from './sizing/Sizing.svelte'
     import ArticleSpacing from './spacing/Spacing.svelte'
     import ArticleTypography from './typography/Typography.svelte'
@@ -24,6 +24,7 @@
             borderObj: {modulePath: '/border', ...borderObj},
             displayObj: {modulePath: '/display', ...displayObj},
             flexObj: {modulePath: '/flex', ...flexObj},
+            shadowObj: {modulePath: '/shadow', ...shadowObj},
         }
 </script>
 
@@ -86,7 +87,7 @@
 <Route path="/pseudos">
     <svelte:component this={ArticlePseudos}/>
 </Route>
-<Route path="/shadow">
+<Route path={anchorsObj.shadowObj.modulePath}>
     <svelte:component this={ArticleShadow}/>
 </Route>
 <Route path="/sizing">

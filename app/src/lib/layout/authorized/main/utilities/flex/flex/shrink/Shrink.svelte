@@ -70,7 +70,7 @@
                         type="range"
                     >
                 </div>    
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 w" style="--w: {containerWidth}%">
+                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 width" style="--width: {containerWidth}%">
                     {#each Array(6) as _, i}
                         <div
                             class="background-color--negative-10 px-2 py-1"
@@ -78,18 +78,18 @@
                         >cell {isCellShrinked ? 'shrinked' : 'no shrink'}</div>
                     {/each}
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 overflow-x--hidden w" style="--w: {containerWidth}%">
+                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 overflow-x--hidden width" style="--width: {containerWidth}%">
                     <div
-                        class="background-color--negative-10 px-2 py-1 w"
-                        style="--w: 10em;"
+                        class="background-color--negative-10 px-2 py-1 width"
+                        style="--width: 10em;"
                     >1:1</div>
                     <div
-                        class="flex background-color--negative-10 px-2 py-1 w"
-                        style="--w: 10em; {isCellShrinked ? '--flex-shrink: 2' : ''}"
+                        class="flex background-color--negative-10 px-2 py-1 width"
+                        style="--width: 10em; {isCellShrinked ? '--flex-shrink: 2' : ''}"
                     >{isCellShrinked ? '1:2' : '1:1'}</div>
                     <div
-                        class="flex background-color--negative-10 px-2 py-1 w"
-                        style="--w: 10em; {isCellShrinked ? '--flex-shrink: 3' : ''}"
+                        class="flex background-color--negative-10 px-2 py-1 width"
+                        style="--width: 10em; {isCellShrinked ? '--flex-shrink: 3' : ''}"
                     >{isCellShrinked ? '1:3' : '1:1'}</div>
                 </div>
             </div>
@@ -103,9 +103,9 @@
     ...
 </div>
 <div class="display--flex ${containerClasses}">
-    <div class="w" style="--w: 10em;">1:1</div>
-    <div class="flex w" style="--w: 10em; ${isCellShrinked ? '--flex-shrink: 2' : ''}">${isCellShrinked ? '1:2' : '1:1'}</div>
-    <div class="flex w" style="--w: 10em; ${isCellShrinked ? '--flex-shrink: 3' : ''}">${isCellShrinked ? '1:3' : '1:1'}</div>
+    <div class="width" style="--width: 10em;">1:1</div>
+    <div class="flex width" style="--width: 10em; ${isCellShrinked ? '--flex-shrink: 2' : ''}">${isCellShrinked ? '1:2' : '1:1'}</div>
+    <div class="flex width" style="--width: 10em; ${isCellShrinked ? '--flex-shrink: 3' : ''}">${isCellShrinked ? '1:3' : '1:1'}</div>
 </div>
 `
                 }

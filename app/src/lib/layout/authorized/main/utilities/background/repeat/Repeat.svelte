@@ -36,7 +36,7 @@
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 <div
-                    class="background-image background-color--negative-10 background-repeat{repeatsObj[repeat]} background-size ar-16_9"
+                    class="background-image background-color--negative-10 background-repeat{repeatsObj[repeat]} background-size aspect-ratio-16_9"
                     style="--background-image: url(/images/logo.svg); --background-size: 25% auto"
                 ></div>
             </div>

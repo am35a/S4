@@ -44,7 +44,7 @@
                 bind:value={accentColorsObj.variablesObj['lightness']}
                 min={accentColorsObj.variablesObj['lightness-offset']}
                 max={1 - accentColorsObj.variablesObj['lightness-offset']}
-                class="frm w-100"
+                class="frm width--100"
                 type="range"
                 step=".01"
             />
@@ -53,7 +53,7 @@
         <Input
             bind:value={accentColorsObj.variablesObj['lightness-offset']}
             min="0" max="1"
-            class="frm w-100"
+            class="frm width--100"
             type="range"
             step=".01"
         /> -->
@@ -67,7 +67,7 @@
             <Input
                 bind:value={accentColorsObj.variablesObj['chroma']}
                 min="0" max="0.37"
-                class="frm w-100"
+                class="frm width--100"
                 type="range"
                 step=".01"
             />
@@ -82,7 +82,7 @@
             <Input
                 bind:value={accentColorsObj.variablesObj['alfa']}
                 min="0" max="1"
-                class="frm w-100"
+                class="frm width--100"
                 type="range"
                 step=".01"
             />
@@ -94,7 +94,7 @@
                     <Input
                         bind:value={accentColorsObj.variablesObj[`${value}-hue`]}
                         min="0" max="360"
-                        class="frm w-100 background-image"
+                        class="frm width--100 background-image"
                         style="{bgiGradientVar()}"
                         type="range"
                         step="1"

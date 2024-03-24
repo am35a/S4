@@ -16,8 +16,8 @@
 </script>
 
 <section
-    class="display--grid g-2 p-2 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30 m-auto w"
-    style="--w: 18em"
+    class="display--grid g-2 p-2 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30 m-auto width"
+    style="--width: 18em"
 >
     <div class="display--grid g-1">
         Forgot pass

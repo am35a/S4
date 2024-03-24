@@ -47,7 +47,7 @@
                     {/each}
                 </div>
             </div>
-            <hr class="grid-column--full w-100 my-0">
+            <hr class="grid-column--full width--100 my-0">
             <div>Landscape</div>        <div>l</div>    <div>{Object.values(breakpointsName)}l_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
             <div>Portrait</div>         <div>p</div>    <div>{Object.values(breakpointsName)}p_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
             <div class="grid-column--full"></div>
@@ -73,7 +73,7 @@
             <div class="fw-600">Breakpoint</div>
             <div class="fw-600">Count</div>
             <div class="fw-600">Class prefixes</div>
-            <hr class="grid-column--full w-100 my-0">
+            <hr class="grid-column--full width--100 my-0">
             <div>Landscape/Desktop</div><div>no one</div>   <div>l_d_</div>
             <div>Portrait/Desktop</div> <div>one</div>      <div>l_d_ & p_d_</div>
             <div>Landscape/Tablet</div> <div>two</div>      <div>l_d_ & l_t_</div>

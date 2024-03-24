@@ -17,8 +17,8 @@
                 <div class="display--flex flex-wrap--wrap g-2">
                     {#each radiusSizesArr as item}
                         <div
-                            class="background-color--negative-10 p-2 border-radius--{item} ta-center ar-4_3 w"
-                            style="--w: 6em"
+                            class="background-color--negative-10 p-2 border-radius--{item} ta-center aspect-ratio-4_3 width"
+                            style="--width: 6em"
                         >{item}</div>
                     {/each}
                 </div>
@@ -27,14 +27,14 @@
                 <div class="display--flex flex-wrap--wrap g-4">
                     <div>
                         <div
-                            class="background-color--negative-10 p-2 border-radius--oval ta-center w"
-                            style="--w: 6em"
+                            class="background-color--negative-10 p-2 border-radius--oval ta-center width"
+                            style="--width: 6em"
                         >oval</div>
                     </div>
                     <div>
                         <div
-                            class="background-color--negative-10 p-2 border-radius--pill ta-center w"
-                            style="--w: 6em"
+                            class="background-color--negative-10 p-2 border-radius--pill ta-center width"
+                            style="--width: 6em"
                         >pill</div>
                     </div>
                 </div>
@@ -42,20 +42,20 @@
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 <div class="display--flex flex-wrap--wrap g-4">
                     <div
-                        class="background-color--negative-10 p-2 border-radius--oval border-top-left-radius--sm ta-center ar-4_3 w"
-                        style="--w: 6em"
+                        class="background-color--negative-10 p-2 border-radius--oval border-top-left-radius--sm ta-center aspect-ratio-4_3 width"
+                        style="--width: 6em"
                     >top left</div>
                     <div
-                        class="background-color--negative-10 p-2 border-radius--pill border-top-right-radius--xl ta-center ar-4_3 w"
-                        style="--w: 6em"
+                        class="background-color--negative-10 p-2 border-radius--pill border-top-right-radius--xl ta-center aspect-ratio-4_3 width"
+                        style="--width: 6em"
                     >top right</div>
                     <div
-                        class="background-color--negative-10 p-2 border-bottom-right-radius--pill ta-center ar-4_3 w"
-                        style="--w: 6em"
+                        class="background-color--negative-10 p-2 border-bottom-right-radius--pill ta-center aspect-ratio-4_3 width"
+                        style="--width: 6em"
                     >bottom right</div>
                     <div
-                        class="background-color--negative-10 p-2 border-radius--xxxl border-bottom-left-radius--none ta-center ar-4_3 w"
-                        style="--w: 6em"
+                        class="background-color--negative-10 p-2 border-radius--xxxl border-bottom-left-radius--none ta-center aspect-ratio-4_3 width"
+                        style="--width: 6em"
                     >bottom left</div>
                 </div>
             </div>

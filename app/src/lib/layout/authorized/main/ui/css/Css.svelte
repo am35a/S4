@@ -36,8 +36,8 @@
     <SectionButtons />
     <SectionDetails />
     <SectionRadius />
-    <div class="position--sticky b-0 display--flex g-2 background-color--positive p-2 border-radius--md w-fit ms-auto box-shadow--sm">
-        <div class="display--flex flex-wrap--wrap g-1 w-fit ms-auto">
+    <div class="position--sticky bottom--0 display--flex g-2 background-color--positive p-2 border-radius--md width--fit ms-auto box-shadow--sm">
+        <div class="display--flex flex-wrap--wrap g-1 width--fit ms-auto">
             {#each Object.entries(cssOverviewObj) as [key, value]}
                 <Button
                     class="btn-xs btn-primary"

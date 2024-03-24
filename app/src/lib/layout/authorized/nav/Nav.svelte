@@ -5,7 +5,19 @@
 <nav
     {...$$restProps}
 >
-    <Segments class="display--grid g-2 p-2 background-color--positive border-radius--md box-shadow--xs align-items--start border-style--solid border-color--negative-30" />
+    <Segments
+        class="
+            display--grid
+            g-2
+            p-2
+            background-color--positive
+            border-radius--md
+            box-shadow--xs
+            align-items--start
+            border-style--solid
+            border-color--negative-30
+        "
+    />
 </nav>
 
 <style lang="sass">

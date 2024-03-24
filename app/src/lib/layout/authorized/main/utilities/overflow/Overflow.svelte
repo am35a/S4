@@ -28,8 +28,8 @@
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
                 <div
-                    class="overflow--{overflowProperty} mx-auto background-color--negative-10 p-2 w h"
-                    style="--w: 24em; --h: 16em;"
+                    class="overflow--{overflowProperty} mx-auto background-color--negative-10 p-2 width height"
+                    style="--width: 24em; --height: 16em;"
                 >
                     The Lancia Delta S4 is a Group B rally car manufactured by the Italian car company Lancia.
                     The Delta S4 competed in the World Rally Championship in 1985 and 1986, until Group B

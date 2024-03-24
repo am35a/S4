@@ -7,7 +7,7 @@
 <!-- добавить HOVER -->
 
 <section>
-    <h3 id="shadow">Shadow</h3>
+    <h3 id="size">Size</h3>
     <p>
         To add shadows to elements use <b>box-shadow--...</b> classes. The <b>box-shadow--none</b> class remove shadow.
     </p>

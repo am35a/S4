@@ -12,7 +12,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt">
@@ -25,7 +25,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline">
@@ -38,7 +38,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
         </div>
@@ -53,7 +53,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-secondary">
@@ -66,10 +66,10 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
-            <hr class="mw-75 mx-auto">
+            <hr class="min-width-75 mx-auto">
             <details class="dtl dtl-info">
                 <summary>
                     Expand block with this simple details tag.
@@ -80,7 +80,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-success">
@@ -93,7 +93,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-warning">
@@ -106,7 +106,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-error">
@@ -119,7 +119,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
         </div>
@@ -134,7 +134,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt-secondary">
@@ -147,10 +147,10 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
-            <hr class="mw-75 mx-auto">
+            <hr class="min-width-75 mx-auto">
             <details class="dtl dtl-alt-info">
                 <summary>
                     Expand block with this simple details tag.
@@ -161,7 +161,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt-success">
@@ -174,7 +174,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt-warning">
@@ -187,7 +187,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt-error">
@@ -200,7 +200,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
         </div>
@@ -215,7 +215,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline-secondary">
@@ -228,10 +228,10 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
-            <hr class="mw-75 mx-auto">
+            <hr class="min-width-75 mx-auto">
             <details class="dtl dtl-outline-info">
                 <summary>
                     Expand block with this simple details tag.
@@ -242,7 +242,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline-success">
@@ -255,7 +255,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline-warning">
@@ -268,7 +268,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline-error">
@@ -281,7 +281,7 @@
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="w-75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
         </div>

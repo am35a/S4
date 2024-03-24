@@ -4,7 +4,7 @@
         <div class="display--grid justify-item--center align-content--center p-4 background-color--positive border-radius--lg flex" style="--flex-grow: 4; --flex-basis: 0;">
             <div class="my-4 ta-center">
                 <span class="fs lh-1" style="--fs: 8em">Aa</span>
-                <hr class="my-8 w-100 bb">
+                <hr class="my-8 width--100 bb">
                 <span class="">system default</span>
             </div>
         </div>

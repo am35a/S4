@@ -42,10 +42,10 @@
         {/if}
         {title}
     </Button>
-    <div class="drp-content h-100">
+    <div class="drp-content height--100">
         <div
-            class="display--grid g-2 w p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30 box-shadow--sm h-100 overflow-y--auto align-content--start"
-            style="--w: 16em"
+            class="display--grid g-2 width p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30 box-shadow--sm height--100 overflow-y--auto align-content--start"
+            style="--width: 16em"
         >
             {#each items as item}
             <!-- active={$path === item.segment} -->

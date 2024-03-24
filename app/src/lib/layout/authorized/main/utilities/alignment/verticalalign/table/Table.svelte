@@ -19,7 +19,7 @@
         <div class="display--grid g-4">
             <b>Preview</b>
             <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <table class="h" style="--h: 6em">
+                <table class="height" style="--height: 6em">
                     <tr>
                         {#each Object.entries(verticalAlignObj) as [key, value]}
                             <td class="background-color--negative-10 vertical-align--{value}">{key}</td>

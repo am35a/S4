@@ -3,7 +3,7 @@
     import Details from 'component/Details.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let customClasses = 'display--grid g-4 w-100'
+    let customClasses = 'display--grid g-4 width--100'
 </script>
 
 <article>

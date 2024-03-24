@@ -45,7 +45,7 @@
         </div>
         <div class="display--grid g-4">
             <b>Preview</b>
-            <div class="{containerType} g-3 p-3 background-color--positive border-radius--md h" style="--h: 16em; --p_h: 24em;">
+            <div class="{containerType} g-3 p-3 background-color--positive border-radius--md height" style="--height: 16em; --p_h: 24em;">
                 <div class="background-color--negative-10 px-2 py-1 align-self--{alignSelf}">one</div>
                 <div class="background-color--negative-10 px-2 py-1">two</div>
                 <div class="background-color--negative-10 px-2 py-1">three</div>

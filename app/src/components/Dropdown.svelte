@@ -14,8 +14,8 @@
     >
         <slot name="content" />
         <!-- <div
-            class="display--grid g-2 w p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30"
-            style="--w: 16em"
+            class="display--grid g-2 width p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30"
+            style="--width: 16em"
         >
             <button class="btn justify-content--start px-1" type="reset">
                 <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>

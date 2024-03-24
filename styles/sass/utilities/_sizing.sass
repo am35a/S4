@@ -1,6 +1,6 @@
 @use "sass:math"
 
-$resizingDirection: none, both, horizontal, vertical
+$resizingDirection: both, horizontal, vertical, none
 $defaultSizingStep: 25
 $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9, 9 32)
 
@@ -8,94 +8,92 @@ $defaultAspectRatio: (1 1, 4 3, 3 4, 16 9, 9 16, 16 10, 10 16, 21 9, 9 21, 32 9,
     sizing section: width, height, aspect-ratio, box-sizing and resize types contained in classes
 
 @mixin _sizing($orientation, $type)
-
-    .mw
-        min-width: var(--#{$orientation}#{$type}mw, var(--mw, auto)) !important
-    .#{$orientation}#{$type}mw
+    .#{$orientation}#{$type}min-width
         @for $i from 0 through math.div(100, $defaultSizingStep)
-            &-#{$i * $defaultSizingStep}
+            &--#{$i * $defaultSizingStep}
                 min-width: #{$i * $defaultSizingStep + '%'} !important
-        &-fit
+        &--fit
             min-width: fit-content !important
-        &-min
+        &--min
             min-width: min-content !important
-        &-max
+        &--max
             min-width: max-content !important
-    .w
-        width: var(--#{$orientation}#{$type}w, var(--w, auto)) !important
-    .#{$orientation}#{$type}w
+    .#{$orientation}#{$type}width
         @for $i from 0 through math.div(100, $defaultSizingStep)
-            &-#{$i * $defaultSizingStep}
+            &--#{$i * $defaultSizingStep}
                 width: #{$i * $defaultSizingStep + '%'} !important
-        &-fit
+        &--fit
             width: fit-content !important
-        &-min
+        &--min
             width: min-content !important
-        &-max
+        &--max
             width: max-content !important
-    .wm
-        max-width: var(--#{$orientation}#{$type}wm, var(--wm, auto)) !important
-    .#{$orientation}#{$type}wm
+    .#{$orientation}#{$type}max-width
         @for $i from 0 through math.div(100, $defaultSizingStep)
-            &-#{$i * $defaultSizingStep}
+            &--#{$i * $defaultSizingStep}
                 max-width: #{$i * $defaultSizingStep + '%'} !important
-        &-fit
+        &--fit
             max-width: fit-content !important
-        &-min
+        &--min
             max-width: min-content !important
-        &-max
+        &--max
             max-width: max-content !important
+    .min-width
+        min-width: var(--#{$orientation}#{$type}min-width, var(--min-width, auto))
+    .width
+        width: var(--#{$orientation}#{$type}width, var(--width, auto))
+    .max-width
+        max-width: var(--#{$orientation}#{$type}max-width, var(--max-width, auto))
 
-    .mh
-        min-height: var(--#{$orientation}#{$type}mh, var(--mh, auto)) !important
-    .#{$orientation}#{$type}mh
+    .#{$orientation}#{$type}min-height
         @for $i from 0 through math.div(100, $defaultSizingStep)
-            &-#{$i * $defaultSizingStep}
+            &--#{$i * $defaultSizingStep}
                 min-height: #{$i * $defaultSizingStep + '%'} !important
-        &-fit
+        &--fit
             min-height: fit-content !important
-        &-min
+        &--min
             min-height: min-content !important
-        &-max
+        &--max
             min-height: max-content !important
-    .h
-        height: var(--#{$orientation}#{$type}h, var(--h, auto)) !important
-    .#{$orientation}#{$type}h
+    .#{$orientation}#{$type}height
         @for $i from 0 through math.div(100, $defaultSizingStep)
-            &-#{$i * $defaultSizingStep}
+            &--#{$i * $defaultSizingStep}
                 height: #{$i * $defaultSizingStep + '%'} !important
-        &-fit
+        &--fit
             height: fit-content !important
-        &-min
+        &--min
             height: min-content !important
-        &-max
+        &--max
             height: max-content !important
-    .hm
-        max-height: var(--#{$orientation}#{$type}hm, var(--hm, auto)) !important
-    .#{$orientation}#{$type}hm
+    .#{$orientation}#{$type}max-height
         @for $i from 0 through math.div(100, $defaultSizingStep)
-            &-#{$i * $defaultSizingStep}
+            &--#{$i * $defaultSizingStep}
                 max-height: #{$i * $defaultSizingStep + '%'} !important
-        &-fit
+        &--fit
             max-height: fit-content !important
-        &-min
+        &--min
             max-height: min-content !important
-        &-max
+        &--max
             max-height: max-content !important
-    
-    .#{$orientation}#{$type}rs
+    .min-height
+        min-height: var(--#{$orientation}#{$type}min-height, var(--min-height, auto))
+    .height
+        height: var(--#{$orientation}#{$type}height, var(--height, auto))
+    .max-height
+        max-height: var(--#{$orientation}#{$type}max-height, var(--max-height, auto))
+
+    .#{$orientation}#{$type}resize
         @each $item in $resizingDirection
-            &-#{$item}
+            &--#{$item}
                 resize: #{$item} !important
 
-    .#{$orientation}#{$type}ar
+    .#{$orientation}#{$type}aspect-ratio
         @each $v, $h in $defaultAspectRatio
-            &-#{$v}#{'_'}#{$h}
+            &--#{$v}#{'_'}#{$h}
                 aspect-ratio: #{$v + '/' + $h}
-        &-auto
-            aspect-ratio: auto
-    .ar
-        aspect-ratio: var(--#{$orientation}#{$type}ar, var(--ar, initial))
+    .aspect-ratio
+        aspect-ratio: var(--#{$orientation}#{$type}aspect-ratio, var(--aspect-ratio, initial))
+
     
 .bs-border
     box-sizing: border-box !important

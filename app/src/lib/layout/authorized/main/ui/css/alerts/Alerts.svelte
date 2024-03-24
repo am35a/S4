@@ -8,7 +8,7 @@
             <div class="alert alert-secondary">
                 Secondary alerts are likely to be rarely used.
             </div>
-            <hr class="mw-75 mx-auto">
+            <hr class="min-width-75 mx-auto">
             <div class="alert alert-info">
                 <span class="ico" style="--ico-image: url(/icons/info-circle.svg);">&nbsp;</span>
                 All servers are now running smoothly again! Thanks.
@@ -33,7 +33,7 @@
             <div class="alert alert-alt-secondary">
                 Secondary alerts are likely to be rarely used.
             </div>
-            <hr class="mw-75 mx-auto">
+            <hr class="min-width-75 mx-auto">
             <div class="alert alert-alt-info">
                 <span class="ico" style="--ico-image: url(/icons/info-circle.svg);">&nbsp;</span>
                 All servers are now running smoothly again! Thanks.
@@ -58,7 +58,7 @@
             <div class="alert alert-outline-secondary">
                 Secondary alerts are likely to be rarely used.
             </div>
-            <hr class="mw-75 mx-auto">
+            <hr class="min-width-75 mx-auto">
             <div class="alert alert-outline-info">
                 <span class="ico" style="--ico-image: url(/icons/info-circle.svg);">&nbsp;</span>
                 All servers are now running smoothly again! Thanks.

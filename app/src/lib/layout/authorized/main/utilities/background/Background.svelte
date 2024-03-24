@@ -42,7 +42,7 @@
     <SectionRepeat />
     <SectionSize />
 
-    <div class="position--sticky b-0 p-2">
+    <div class="position--sticky bottom--0 p-2">
         <AnchorNavigation anchorsObj={anchorsObj.subAnchorsObj} />
     </div>
 </article>
