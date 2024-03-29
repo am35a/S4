@@ -58,7 +58,7 @@
 
 <section>
     <h2 id="buttons">Icons</h2>
-    <div class="display--grid g-5">
+    <div class="display--grid gap--lg">
         <p>
             Lightweight <Icon /> responsive vector icons with cache available.
             The  icon sizes directly depend on the font size and the container in which the icon is placed.
@@ -69,7 +69,7 @@
             Pay attention! The <b>background-color--...</b> and <b>c-...</b> are incompatible in one case.
         </div>
 
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Background color</b>
             <div>
                 <Input
@@ -79,7 +79,7 @@
                 />
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Color</b>
             <div>
                 <Input
@@ -89,9 +89,9 @@
                 />
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Size</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(iconSizeObj) as [key, value]}
                     <Button
                         class={iconSize === value ? 'active' : ''}
@@ -101,17 +101,17 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md height" style="--height: 10em">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md height" style="--height: 10em">
                 <Icon
-                    class="{iconSize} m-auto {iconBgColor ? 'background-color' : ''} {iconColor ? 'c' : ''}"
+                    class="{iconSize} margin--auto {iconBgColor ? 'background-color' : ''} {iconColor ? 'c' : ''}"
                     style="{iconBgColor ? `--background-color:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"
                     name="ghost"
                 />
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Svelte</b>
             <Precode>
                     {
@@ -120,7 +120,7 @@
                     }
             </Precode>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                     {

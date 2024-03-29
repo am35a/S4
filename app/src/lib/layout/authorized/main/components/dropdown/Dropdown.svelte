@@ -75,10 +75,10 @@
     <p>
         ...
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
@@ -90,9 +90,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
@@ -104,9 +104,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Icon</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.iconObj) as [key, value]}
                     <Button
                         class="{value === 2 ? 'btn-ico' : ''} {buttonIcon === key ? 'active' : ''}"
@@ -123,9 +123,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Position</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each dropdownObj.positionObj as position, i}
                     <Button
                         on:click="{() => contentPosition = dropdownObj.positionObj[i]}"
@@ -135,8 +135,8 @@
                 {/each}
             </div>
         </div>
-        <div class="display--flex g-4 p-4 background-color--positive border-radius--md" style="height: 10em;">
-            <div class="display--grid g-3 m-auto">
+        <div class="display--flex gap--md padding--md background-color--positive border-radius--md" style="height: 10em;">
+            <div class="display--grid gap--sm margin--auto">
                 <Dropdown class="drpdwn-hover">
                     <Button 
                         slot="btn"
@@ -152,7 +152,7 @@
                     </Button>
                     <div
                         slot="content"
-                        class="display--grid g-2 width p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30"
+                        class="display--grid gap--xs width padding--xs background-color--positive border-radius--md border-style--solid border-color--negative-30"
                         style="--width: 16em"
                     >
                         Position:
@@ -174,18 +174,18 @@
                     class="drp-content"
                 >
                     <div
-                        class="display--grid g-2 width p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30"
+                        class="display--grid gap--xs width padding--xs background-color--positive border-radius--md border-style--solid border-color--negative-30"
                         style="--width: 16em"
                     >
-                        <button class="btn justify-content--start px-1" type="reset">
+                        <button class="btn justify-content--start padding-x--xxs" type="reset">
                             <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>
                             <span class="truncate">Color palette</span>
                         </button>
-                        <button class="btn justify-content--start px-1" type="reset">
+                        <button class="btn justify-content--start padding-x--xxs" type="reset">
                             <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>
                             <span class="truncate">Color palette</span>
                         </button>
-                        <button class="btn justify-content--start px-1" type="reset">
+                        <button class="btn justify-content--start padding-x--xxs" type="reset">
                             <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>
                             <span class="truncate">Color palette</span>
                         </button>

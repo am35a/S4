@@ -59,10 +59,10 @@
         S4 has a pretty looking and flexy HTML <b>details</b> element of the disclosure toggle widget with the included
         <b>summary</b> header inside the element. The addition of <b>dtl-...</b> classes makes the widget styles changeable.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(detailsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => detailsVariant = key}
@@ -73,73 +73,74 @@
                     >{key}</button>
                 {/each}
             </div>
-            <div class="display--grid g-4">
-                <b>Colors</b>
-                <div class="display--flex flex-wrap--wrap g-3">
-                    {#each Object.entries(detailsObj.colorsObj) as [key, value]}
-                        <button
-                            on:click={() => detailsColor = key}
-                            class="btn btn{value}"
-                            class:active={detailsColor === key}
-                            type="button"
-                            disabled={detailsColor === key}
-                        >{key}</button>
-                    {/each}
-                </div>
+        </div>
+        <div class="display--grid gap--md">
+            <b>Colors</b>
+            <div class="display--flex flex-wrap--wrap gap--sm">
+                {#each Object.entries(detailsObj.colorsObj) as [key, value]}
+                    <button
+                        on:click={() => detailsColor = key}
+                        class="btn btn{value}"
+                        class:active={detailsColor === key}
+                        type="button"
+                        disabled={detailsColor === key}
+                    >{key}</button>
+                {/each}
             </div>
-            <div class="display--grid g-4">
-                <b>State</b>
-                <div class="display--flex flex-wrap--wrap g-3">
-                    {#each Object.entries(detailsObj.stateObj) as [key, value]}
-                        <button
-                            on:click={() => detailsState = key}
-                            class="btn btn{value}"
-                            class:active={detailsState === key}
-                            type="button"
-                            disabled={detailsState === key}
-                        >{key}</button>
-                    {/each}
-                </div>
+        </div>
+        <div class="display--grid gap--md">
+            <b>State</b>
+            <div class="display--flex flex-wrap--wrap gap--sm">
+                {#each Object.entries(detailsObj.stateObj) as [key, value]}
+                    <button
+                        on:click={() => detailsState = key}
+                        class="btn btn{value}"
+                        class:active={detailsState === key}
+                        type="button"
+                        disabled={detailsState === key}
+                    >{key}</button>
+                {/each}
             </div>
-            <div class="display--grid g-4">
-                <b>Preview</b>
-                <div class="display--grid p-4 background-color--positive border-radius--md">
-                    <Details class="{detailsClass} mb-0" open={detailsObj.stateObj[detailsState]}>
-                        <svelte:fragment slot="title">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </svelte:fragment>
-                        <svelte:fragment slot="body">
-                            <div class="p-4">
-                                Eligendi quibusdam ut labore ex eius? Corrupti voluptates dicta ducimus mollitia. Reprehenderit debitis reiciendis, facere voluptatum odio neque perspiciatis laboriosam ullam laudantium repellat, qui quod sit alias voluptas impedit illum.
-                            </div>
-                        </svelte:fragment>
-                    </Details>
-                </div>
-            </div>
-            <div class="display--grid g-4">
-                <b>Custom</b>
-                <div class="display--grid p-4 background-color--positive border-radius--md">
-                    <Details class="background-color--negative-10" open>
-                        <summary class="px-2 py-1 justify-content--start background-color--transparent" slot="summary">
-                            <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
-                            <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
-                            <div class="truncate fw-600">
-                                Custom summary with truncated title.
-                            </div>
-                        </summary>
-                        <div class="px-3 pb-2 pt-1" slot="body">
-                            <hr class="mt-0 mb-1">
-                            It is possible to independently set styles for the <b>Details</b> block and
-                            also manage the contents of the <b>summary</b>, move, delete or replace
-                            <b>expand</b> and <b>contract</b> icons.
+        </div>
+        <div class="display--grid gap--md">
+            <b>Preview</b>
+            <div class="display--grid padding--md background-color--positive border-radius--md">
+                <Details class="{detailsClass} margin-bottom--none" open={detailsObj.stateObj[detailsState]}>
+                    <svelte:fragment slot="title">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </svelte:fragment>
+                    <svelte:fragment slot="body">
+                        <div class="padding--md">
+                            Eligendi quibusdam ut labore ex eius? Corrupti voluptates dicta ducimus mollitia. Reprehenderit debitis reiciendis, facere voluptatum odio neque perspiciatis laboriosam ullam laudantium repellat, qui quod sit alias voluptas impedit illum.
                         </div>
-                    </Details>
-                </div>        
+                    </svelte:fragment>
+                </Details>
             </div>
-            <div class="display--grid g-4">
-                <b>Svelte</b>
-                <Precode>
-                    {
+        </div>
+        <div class="display--grid gap--md">
+            <b>Custom</b>
+            <div class="display--grid padding--md background-color--positive border-radius--md">
+                <Details class="background-color--negative-10" open>
+                    <summary class="padding-x--xs padding-y--xxs justify-content--start background-color--transparent" slot="summary">
+                        <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
+                        <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
+                        <div class="truncate fw-600">
+                            Custom summary with truncated title.
+                        </div>
+                    </summary>
+                    <div class="padding-x--sm pb-2 pt-1" slot="body">
+                        <hr class="margin-top--none margin-bottom--xxs">
+                        It is possible to independently set styles for the <b>Details</b> block and
+                        also manage the contents of the <b>summary</b>, move, delete or replace
+                        <b>expand</b> and <b>contract</b> icons.
+                    </div>
+                </Details>
+            </div>        
+        </div>
+        <div class="display--grid gap--md">
+            <b>Svelte</b>
+            <Precode>
+                {
 `// before using the component, import as Details
 
 // сommon uses
@@ -154,26 +155,26 @@
 
 // custom uses
 <Details class="background-color--negative-10" open>
-    <summary class="px-2 py-1 justify-content--start background-color--transparent" slot="summary">
+    <summary class="padding-x--xs padding-y--xxs justify-content--start background-color--transparent" slot="summary">
         <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
         <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
         <div class="truncate fw-600">
             Title
         </div>
     </summary>
-    <div class="px-3 pb-2 pt-1" slot="body">
-        <hr class="mt-0 mb-1">
+    <div class="padding-x--sm pb-2 pt-1" slot="body">
+        <hr class="margin-top--none margin-bottom--xxs">
         Body content place here ...
     </div>
 </Details>
 `
-                    }
-                </Precode>
-            </div>
-            <div class="display--grid g-4">
-                <b>HTML</b>
-                <Precode>
-                    {
+                }
+            </Precode>
+        </div>
+        <div class="display--grid gap--md">
+            <b>HTML</b>
+            <Precode>
+                {
 `<details class="dtl ${detailsClass}">
     <summary>
         Title
@@ -183,22 +184,20 @@
     Content place here ...
 </details>
 `
-                    }
-                </Precode>
-            </div>
-
+                }
+            </Precode>
         </div>
     </div>
 
-    <!-- <div class="display--grid g-4">
+    <!-- <div class="display--grid gap--md">
         <Details class="dtl-primary">
             <svelte:fragment slot="title">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </svelte:fragment>
             <svelte:fragment slot="body">
-                <div class="background-color--positive- m-1-">
+                <div class="background-color--positive- margin--xxs-">
                     <hr class="mx-2 border-secondary">
-                    <div class="p-4">
+                    <div class="padding--md">
                         Eligendi quibusdam ut labore ex eius? Corrupti voluptates dicta ducimus mollitia. Reprehenderit debitis reiciendis, facere voluptatum odio neque perspiciatis laboriosam ullam laudantium repellat, qui quod sit alias voluptas impedit illum.
                     </div>
                 </div>
@@ -209,9 +208,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </svelte:fragment>
             <svelte:fragment slot="body">
-                <div class="background-color--positive- m-1-">
+                <div class="background-color--positive- margin--xxs-">
                     <hr class="mx-2 border-secondary">
-                    <div class="p-4">
+                    <div class="padding--md">
                         Eligendi quibusdam ut labore ex eius? Corrupti voluptates dicta ducimus mollitia. Reprehenderit debitis reiciendis, facere voluptatum odio neque perspiciatis laboriosam ullam laudantium repellat, qui quod sit alias voluptas impedit illum.
                     </div>
                 </div>

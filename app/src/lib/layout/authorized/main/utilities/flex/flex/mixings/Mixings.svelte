@@ -10,8 +10,8 @@
     <p>
         Mixing of using the flex container.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Customize container</b>
             <input
                 class="frm"
@@ -20,11 +20,11 @@
                 placeholder="Type utility classes to customizing the container"
             >
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--grid mb-2">
-                    <label for="mixContainerWidth" class="display--grid grid-template-columns--3 align-items--end px-2">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid margin-bottom--xs">
+                    <label for="mixContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>
@@ -39,23 +39,23 @@
                         type="range"
                     >
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 overflow-x--hidden width" style="--width: {containerWidth}%">
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1; --flex-shrink: 1; --flex-basis: 25em;">one</div>
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 2; --flex-shrink: 2; --flex-basis: 25em;">two</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs overflow-x--hidden width" style="--width: {containerWidth}%">
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-grow: 1; --flex-shrink: 1; --flex-basis: 25em;">one</div>
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-grow: 2; --flex-shrink: 2; --flex-basis: 25em;">two</div>
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 width" style="--width: {containerWidth}%">
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs width" style="--width: {containerWidth}%">
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-grow: 1; --flex-basis: 0; ">equal</div>
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 width" style="--width: {containerWidth}%">
-                    <div class="background-color--negative-10 px-2 py-1 width--100">one</div>
-                    <div class="background-color--negative-10 px-2 py-1 flex" style="--flex-shrink: 0;">shrink 0 two</div>
-                    <div class="background-color--negative-10 px-2 py-1">three</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs width" style="--width: {containerWidth}%">
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs width--100">one</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs flex" style="--flex-shrink: 0;">shrink 0 two</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

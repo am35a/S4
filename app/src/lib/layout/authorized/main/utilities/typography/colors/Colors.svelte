@@ -20,24 +20,24 @@
         The classes from <b>c-...-10</b> to <b>c-...-90</b> make color transparent in percentage which point
         in the end of.
     </p>
-    <div class="display--grid g-3 grid-template-columns--2 mb-4 p-3 background-color--positive border-radius--md">
-        <div class="display--flex flex-direction--column-reverse g-2 background-color--negative">
+    <div class="display--grid gap--sm grid-template-columns--2 margin-bottom--md padding--sm background-color--positive border-radius--md">
+        <div class="display--flex flex-direction--column-reverse gap--xs background-color--negative">
             {#each Array(9) as _, i}
-                <div class="c-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 ta-center">
+                <div class="c-{defaultColorsArr[0]}-{(i + 1) * 10} padding--md ta-center">
                     c-{defaultColorsArr[0]}-{(i + 1) * 10}
                 </div>
             {/each}
-            <div class="c-{defaultColorsArr[0]} p-4 ta-center">
+            <div class="c-{defaultColorsArr[0]} padding--md ta-center">
                 c-{defaultColorsArr[0]}
             </div>
         </div>
-        <div class="display--flex flex-direction--column-reverse g-2">
+        <div class="display--flex flex-direction--column-reverse gap--xs">
             {#each Array(9) as _, i}
-                <div class="c-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 ta-center">
+                <div class="c-{defaultColorsArr[1]}-{(i + 1) * 10} padding--md ta-center">
                     c-{defaultColorsArr[1]}-{(i + 1) * 10}
                 </div>
             {/each}
-            <div class="c-{defaultColorsArr[1]} p-4 ta-center">
+            <div class="c-{defaultColorsArr[1]} padding--md ta-center">
                 c-{defaultColorsArr[1]}
             </div>
         </div>
@@ -46,8 +46,8 @@
         The <b>c-...-l</b> and <b>c-...-d</b> classes set light or dark shades for accent colors.
         The <b>c-...-m</b> classes set partly transparent (mute) colors.
     </p>
-    <div class="display--grid g-3 grid-template-columns--4 mb-4 p-3 background-color--positive border-radius--md">
-        {#each accentColorsArr as item }
+    <div class="display--grid gap--sm grid-template-columns--4 margin-bottom--md padding--sm background-color--positive border-radius--md">
+        {#each accentColorsArr as item}
             {#each Object.entries(accentExtraColorsObj) as [key, value]}
                 <span class="c-{item}{value}">c-{item}{value}</span>
             {/each}

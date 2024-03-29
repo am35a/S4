@@ -10,19 +10,19 @@
     <p>
         ...
     </p>
-    <div class="display--grid g-2 p-2 background-color--positive border-radius--md">
-        <div class="display--flex g-2">
+    <div class="display--grid gap--xs padding--xs background-color--positive border-radius--md">
+        <div class="display--flex gap--xs">
             {#each displayGlobalArr as values }
                 <Button
                     class="btn-secondary {displayGlobal === values ? 'active' : ''}"
                     on:click={() => displayGlobal = values}
                     disabled={displayGlobal === values}
-                >d-{values}</Button>
+                >{values}</Button>
             {/each}
         </div>
-        <div class="display--grid g-2">
-            <span class="d-{displayGlobal} background-color--negative-10 p-4">span</span>
-            <div class="d-{displayGlobal} background-color--negative-10 p-4">div</div>
+        <div class="display--grid gap--xs">
+            <span class="display--{displayGlobal} background-color--negative-10 padding--md">span</span>
+            <div class="display--{displayGlobal} background-color--negative-10 padding--md">div</div>
         </div>
     </div>
 </section>

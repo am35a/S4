@@ -17,10 +17,10 @@
     <p>
         Add the <b>background-repeat{Object.values(repeatsObj).slice(1).join('/')}</b> classes to container to work with background-position.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Sizes</b>
-            <div class="display--flex flex-wrap--wrap g-3 align-items--center">
+            <div class="display--flex flex-wrap--wrap gap--sm align-items--center">
                 {#each Object.entries(repeatsObj) as [key, value]}
                     <button
                         on:click={() => repeat = key}
@@ -32,16 +32,16 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div
-                    class="background-image background-color--negative-10 background-repeat{repeatsObj[repeat]} background-size aspect-ratio-16_9"
+                    class="background-image background-color--negative-10 background-repeat{repeatsObj[repeat]} background-size aspect-ratio--16_9"
                     style="--background-image: url(/images/logo.svg); --background-size: 25% auto"
                 ></div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

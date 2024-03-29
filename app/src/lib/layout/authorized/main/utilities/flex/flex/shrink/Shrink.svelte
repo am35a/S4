@@ -13,15 +13,15 @@
         the elements in a flex container. There is an additional option via the <b>flex</b> class and the
         <b>--flex-shrink</b> variable to control flexible shrink.
     </p>
-    <div class="display--grid g-5">
+    <div class="display--grid gap--lg">
         <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
             Default value of <b>flex-shrink</b> is <b>1</b>.
             Class <b>flex-shrink--0</b> convert value to <b>0</b>.
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Shrink</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 <button
                     class="btn"
                     class:active={isCellShrinked}
@@ -36,7 +36,7 @@
                 >flex-shrink--0</button>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Customize container</b>
             <div class="display--grid">
                 <input
@@ -51,11 +51,11 @@
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--grid mb-2">
-                    <label for="shrinkContainerWidth" class="display--grid grid-template-columns--3 align-items--end px-2">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid margin-bottom--xs">
+                    <label for="shrinkContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>
@@ -70,31 +70,31 @@
                         type="range"
                     >
                 </div>    
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 width" style="--width: {containerWidth}%">
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs width" style="--width: {containerWidth}%">
                     {#each Array(6) as _, i}
                         <div
-                            class="background-color--negative-10 px-2 py-1"
+                            class="background-color--negative-10 padding-x--xs padding-y--xxs"
                             class:flex-shrink--0={!isCellShrinked}
                         >cell {isCellShrinked ? 'shrinked' : 'no shrink'}</div>
                     {/each}
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2 overflow-x--hidden width" style="--width: {containerWidth}%">
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs overflow-x--hidden width" style="--width: {containerWidth}%">
                     <div
-                        class="background-color--negative-10 px-2 py-1 width"
+                        class="background-color--negative-10 padding-x--xs padding-y--xxs width"
                         style="--width: 10em;"
                     >1:1</div>
                     <div
-                        class="flex background-color--negative-10 px-2 py-1 width"
+                        class="flex background-color--negative-10 padding-x--xs padding-y--xxs width"
                         style="--width: 10em; {isCellShrinked ? '--flex-shrink: 2' : ''}"
                     >{isCellShrinked ? '1:2' : '1:1'}</div>
                     <div
-                        class="flex background-color--negative-10 px-2 py-1 width"
+                        class="flex background-color--negative-10 padding-x--xs padding-y--xxs width"
                         style="--width: 10em; {isCellShrinked ? '--flex-shrink: 3' : ''}"
                     >{isCellShrinked ? '1:3' : '1:1'}</div>
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

@@ -8,7 +8,7 @@
             <img class="logo-full" src="../images/logo.svg" alt="{$appData.title}">
         </div>
         <div class="title">Демонстрационный стенд</div>
-        <form class="form display--grid g-4">
+        <form class="form display--grid gap--md">
             <div>
                 <label for="username" class="tf_form-label">Логин</label>
                 <input id="username" class="tf_form-control tf_form-control-secondary" name="username" placeholder="логин" type="text">

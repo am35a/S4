@@ -34,7 +34,7 @@
     <!-- <SectionGlobal /> -->
     <SectionBox />
 
-    <div class="position--sticky bottom--0 p-2">
+    <div class="position--sticky bottom--0 padding--xs">
         <AnchorNavigation anchorsObj={anchorsObj.subAnchorsObj} />
     </div>
 </article>

@@ -16,40 +16,40 @@
         <b>border-color--...-l</b> and <b>border-color--...-d</b> classes set <b>mute (-m)</b>, <b>light (-l)</b>
         or <b>dark (-d)</b> shades for accent colors of border.
     </p>
-    <div class="display--grid g-5">
+    <div class="display--grid gap--lg">
         <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
             Pay attentions! The <b>--border-color</b> variable of <b>border</b>, <b>border-color</b>,
             <b>border-...</b>, <b>border-...-color</b>  is adaptive. The list of prefixes available on the
             <a href="/core#map">Core</a> page.
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 grid-template-columns--2 mb-4 p-3 background-color--positive border-radius--md">
-                <div class="display--flex flex-direction--column-reverse g-2 p-2 background-color--negative">
+            <div class="display--grid gap--sm grid-template-columns--2 margin-bottom--md padding--sm background-color--positive border-radius--md">
+                <div class="display--flex flex-direction--column-reverse gap--xs padding--xs background-color--negative">
                     {#each {length: 9} as _, i}
-                        <div class="border-style--solid border-color--{defaultColorsArr[0]}-{(i + 1) * 10} p-4 ta-center c-positive">
+                        <div class="border-style--solid border-color--{defaultColorsArr[0]}-{(i + 1) * 10} padding--md ta-center c-positive">
                             border-color--{defaultColorsArr[0]}-{(i + 1) * 10}
                         </div>
                     {/each}
-                    <div class="border-style--solid border-color--{defaultColorsArr[0]} p-4 ta-center c-positive">
+                    <div class="border-style--solid border-color--{defaultColorsArr[0]} padding--md ta-center c-positive">
                         border-color--{defaultColorsArr[0]}
                     </div>
                 </div>
-                <div class="display--flex flex-direction--column-reverse g-2 p-2">
+                <div class="display--flex flex-direction--column-reverse gap--xs padding--xs">
                     {#each {length: 9} as _, i}
-                        <div class="border-style--solid border-color--{defaultColorsArr[1]}-{(i + 1) * 10} p-4 ta-center">
+                        <div class="border-style--solid border-color--{defaultColorsArr[1]}-{(i + 1) * 10} padding--md ta-center">
                             border-color--{defaultColorsArr[1]}-{(i + 1) * 10}
                         </div>
                     {/each}
-                    <div class="border-style--solid border-color--{defaultColorsArr[1]} p-4 ta-center">
+                    <div class="border-style--solid border-color--{defaultColorsArr[1]} padding--md ta-center">
                         border-color--{defaultColorsArr[1]}
                     </div>
                 </div>
-                {#each accentColorsArr as item }
-                    <div class="display--flex flex-direction--column-reverse g-2 p-2">
+                {#each accentColorsArr as item}
+                    <div class="display--flex flex-direction--column-reverse gap--xs padding--xs">
                         {#each Object.entries(accentExtraColorsObj) as [key, value]}
-                            <div class="border-style--solid border-color--{item}{value} p-4 ta-center">
+                            <div class="border-style--solid border-color--{item}{value} padding--md ta-center">
                                 border-color--{item}{value}
                             </div>
                         {/each}

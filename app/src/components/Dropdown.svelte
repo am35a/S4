@@ -14,18 +14,18 @@
     >
         <slot name="content" />
         <!-- <div
-            class="display--grid g-2 width p-2 background-color--positive border-radius--md border-style--solid border-color--negative-30"
+            class="display--grid gap--xs width padding--xs background-color--positive border-radius--md border-style--solid border-color--negative-30"
             style="--width: 16em"
         >
-            <button class="btn justify-content--start px-1" type="reset">
+            <button class="btn justify-content--start padding-x--xxs" type="reset">
                 <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>
                 <span class="truncate">Color palette</span>
             </button>
-            <button class="btn justify-content--start px-1" type="reset">
+            <button class="btn justify-content--start padding-x--xxs" type="reset">
                 <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>
                 <span class="truncate">Color palette</span>
             </button>
-            <button class="btn justify-content--start px-1" type="reset">
+            <button class="btn justify-content--start padding-x--xxs" type="reset">
                 <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>
                 <span class="truncate">Color palette</span>
             </button>

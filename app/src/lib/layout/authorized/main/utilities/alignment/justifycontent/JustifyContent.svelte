@@ -15,10 +15,10 @@
     <p>
         The <b>justify-content--{Object.values(justifyContentArr).join('/')}</b> classes defines how distributes space between and around content items along the main-axis of a <b>flex</b> container, and the inline axis of a <b>grid</b> container.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Display</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(containerTypeObj) as [key, value]}
                     <button
                         class="btn"
@@ -29,22 +29,22 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                {#each justifyContentArr as item }
-                    <div class="{containerType} g-2 background-color--negative-10 p-2 justify-content--{item}">
-                        <div class="background-color--negative-10 px-2 py-1">one</div>
-                        <div class="background-color--negative-10 px-2 py-1">two</div>
-                        <div class="background-color--negative-10 px-2 py-1">three</div>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                {#each justifyContentArr as item}
+                    <div class="{containerType} gap--xs background-color--negative-10 padding--xs justify-content--{item}">
+                        <div class="background-color--negative-10 padding-x--xs padding-y--xxs">one</div>
+                        <div class="background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                        <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                     </div>
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
-                {#each justifyContentArr as item }
+                {#each justifyContentArr as item}
                     {
 `<div class="${containerType} justify-content--${item}">
     ...

@@ -18,7 +18,7 @@
     {#if $$slots.body}
         <slot name="body"/>
     {:else}
-        <div class="p-3">
+        <div class="padding--sm">
             <div class="alert alert-error"> Error: details without details</div>
         </div>
     {/if}

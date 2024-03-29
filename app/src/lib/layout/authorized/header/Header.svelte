@@ -22,11 +22,11 @@
 <header
     {...$$restProps}
 >
-    <div class="display--flex g-2 height--100">
-        <div class="display--flex align-items--center flex-grow--1 p-1 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30">
-            <div class="display--flex align-items--center flex-grow--1 g-2 height--100">
+    <div class="display--flex gap--xs height--100">
+        <div class="display--flex align-items--center flex-grow--1 padding--xxs background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30">
+            <div class="display--flex align-items--center flex-grow--1 gap--xs height--100">
                 <!-- <Button
-                    class="width--auto height--100 p-0 {$path === '/home' ? 'active' : ''}"
+                    class="width--auto height--100 padding--none {$path === '/home' ? 'active' : ''}"
                     title="S4 - The lightweight Svelte UI library"
                     on:click={() => router.push('/home')}
                 >
@@ -34,12 +34,12 @@
                 </Button> -->
                 <img
                     on:click={() => router.push('/home')}
-                    class="width--auto height--100 btn p-0"
+                    class="width--auto height--100 btn padding--none"
                     src="/images/logo.svg"
                     alt="S4 - The lightweight Svelte UI Kit"
                     role={'button'}
                 />
-                <div class="display--inline-flex g-1 align-items--center">
+                <div class="display--inline-flex gap--xxs align-items--center">
                     {#each $path.slice(1).split('/') as segment}
                         {#if $path !== '/home'}
                             <Button
@@ -51,15 +51,15 @@
                     {/each}
                 </div>
             </div>
-            <!-- <div class="px-2"> -->
+            <!-- <div class="padding-x--xs"> -->
                 <!-- {getPathSegments($path).includes('/components') ? 'true' : 'false'} -->
                 <!-- {getPathSegments($path).at(-1)} -->
                 <!-- {$appSegment.split('/').length} -->
             <!-- </div> -->
         </div>
-        <div class="display--flex g-2 px-2 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30">
+        <div class="display--flex gap--xs padding-x--xs background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30">
             <Button
-                class="btn-ico my-auto"
+                class="btn-ico margin-y--auto"
                 on:click={() => themeChange()}
             >
                 {#if $user.settings.theme === 'light'}
@@ -69,7 +69,7 @@
                 {/if}
             </Button>
             <Button
-                class="btn-ico my-auto"
+                class="btn-ico margin-y--auto"
                 on:click={() => window.open('https://github.com/am35a/S4', '_blank')}
             >
                 <Icon name="github"/>

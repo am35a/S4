@@ -10,57 +10,57 @@
     <p>
         To add the default radius use the <b>br</b> class. For different round corners use the <b>border-radius--...</b> classes.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--flex flex-wrap--wrap g-2">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--flex flex-wrap--wrap gap--xs">
                     {#each radiusSizesArr as item}
                         <div
-                            class="background-color--negative-10 p-2 border-radius--{item} ta-center aspect-ratio-4_3 width"
+                            class="background-color--negative-10 padding--xs border-radius--{item} ta-center aspect-ratio--4_3 width"
                             style="--width: 6em"
                         >{item}</div>
                     {/each}
                 </div>
             </div>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--flex flex-wrap--wrap g-4">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--flex flex-wrap--wrap gap--md">
                     <div>
                         <div
-                            class="background-color--negative-10 p-2 border-radius--oval ta-center width"
+                            class="background-color--negative-10 padding--xs border-radius--oval ta-center width"
                             style="--width: 6em"
                         >oval</div>
                     </div>
                     <div>
                         <div
-                            class="background-color--negative-10 p-2 border-radius--pill ta-center width"
+                            class="background-color--negative-10 padding--xs border-radius--pill ta-center width"
                             style="--width: 6em"
                         >pill</div>
                     </div>
                 </div>
             </div>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--flex flex-wrap--wrap g-4">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--flex flex-wrap--wrap gap--md">
                     <div
-                        class="background-color--negative-10 p-2 border-radius--oval border-top-left-radius--sm ta-center aspect-ratio-4_3 width"
+                        class="background-color--negative-10 padding--xs border-radius--oval border-top-left-radius--sm ta-center aspect-ratio--4_3 width"
                         style="--width: 6em"
                     >top left</div>
                     <div
-                        class="background-color--negative-10 p-2 border-radius--pill border-top-right-radius--xl ta-center aspect-ratio-4_3 width"
+                        class="background-color--negative-10 padding--xs border-radius--pill border-top-right-radius--xl ta-center aspect-ratio--4_3 width"
                         style="--width: 6em"
                     >top right</div>
                     <div
-                        class="background-color--negative-10 p-2 border-bottom-right-radius--pill ta-center aspect-ratio-4_3 width"
+                        class="background-color--negative-10 padding--xs border-bottom-right-radius--pill ta-center aspect-ratio--4_3 width"
                         style="--width: 6em"
                     >bottom right</div>
                     <div
-                        class="background-color--negative-10 p-2 border-radius--xxxl border-bottom-left-radius--none ta-center aspect-ratio-4_3 width"
+                        class="background-color--negative-10 padding--xs border-radius--xxxl border-bottom-left-radius--none ta-center aspect-ratio--4_3 width"
                         style="--width: 6em"
                     >bottom left</div>
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {#each radiusSizesArr as item}

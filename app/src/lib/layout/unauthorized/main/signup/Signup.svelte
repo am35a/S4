@@ -16,13 +16,13 @@
 </script>
 
 <section
-    class="display--grid g-2 p-2 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30 m-auto width"
+    class="display--grid gap--xs padding--xs background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30 margin--auto width"
     style="--width: 18em"
 >
-    <div class="display--grid g-1">
+    <div class="display--grid gap--xxs">
         Sign up
     </div>
-    <div class="display--grid g-2 grid-template-columns--2">
+    <div class="display--grid gap--xs grid-template-columns--2">
         <Button
             class="fs-sm"
             on:click={() => router.push('/signin')}

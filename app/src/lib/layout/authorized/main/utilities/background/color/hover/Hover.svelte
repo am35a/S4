@@ -6,16 +6,16 @@
     <p>
         To change the background color by hover, just add <b>:hover</b> to any background color.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="p-4 background-color--success-m:hover">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="padding--md background-color--success-m:hover">
                     background-color--success-m:hover
                 </div>
             </div>
         </div>        
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

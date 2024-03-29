@@ -28,13 +28,12 @@
     <h2 id={Object.keys(anchorsObj.headAnchorObg)}>
         {Object.values(anchorsObj.headAnchorObg)}
     </h2>
-
     <SectionDisplay />
     <SectionDirection />
     <SectionWrap />
     <SectionFlex />
 
-    <div class="position--sticky bottom--0 p-2">
+    <div class="position--sticky bottom--0 padding--xs">
         <AnchorNavigation anchorsObj={anchorsObj.subAnchorsObj} />
     </div>
 </article>

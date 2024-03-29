@@ -51,10 +51,10 @@
     <p>
         S4 makes possible to combine various objects into groups. The classes are responsible for vertical grouping <b>grp-v</b> and horizontal <b>grp-h</b>.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
@@ -66,9 +66,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
@@ -80,9 +80,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Directions</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(groupObj) as [key, value]}
                     <button
                         on:click={() => groupVariant = key}
@@ -94,7 +94,7 @@
                 {/each}
             </div>
         </div>
-        <div class="display--flex g-4 flex-wrap--wrap justify-content--evenly align-items--center p-4 background-color--positive border-radius--md">
+        <div class="display--flex gap--md flex-wrap--wrap justify-content--evenly align-items--center padding--md background-color--positive border-radius--md">
             <div class="{groupObj[groupVariant]}">
                 <Button class="{buttonClass}">Default</Button>
                 <Button class="{buttonClass} active">Active</Button>
@@ -102,8 +102,8 @@
                 <Button class="{buttonClass} active" disabled>Act./Dis.</Button>
             </div>
         </div>
-        <div class="display--grid g-4">
-            <div class="display--grid g-4">
+        <div class="display--grid gap--md">
+            <div class="display--grid gap--md">
                 <b>HTML</b>
                 <Precode>
                     {

@@ -9,22 +9,22 @@
         Also <b>resize--both/horizontal/vertical</b> classes awaliable for other elements such as the
         editable div.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <textarea class="resize--horizontal rounded background-color--negative-10 border-radius--sm">resize--horizontal</textarea>
                 <textarea class="resize--vertical rounded background-color--negative-10 border-radius--sm">resize--vertical</textarea>
                 <textarea class="resize--none rounded background-color--negative-10 border-radius--sm">resize--none</textarea>
             </div>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div
                     class="resize--both rounded background-color--negative-10 border-radius--sm overflow--auto"
                     contenteditable="true"
                 >resize--both for div</div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

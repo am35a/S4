@@ -11,10 +11,10 @@
         The both <b>display--none</b> class and <b>:empty</b> pseudo-class hide any empty container. The parentheses
         of container must be closed "{'><'}"
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Actions</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 <button
                     class="btn"
                     class:active={defaultEmptyClass}
@@ -31,21 +31,21 @@
                 </button>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--grid g-2 grid-template-columns--2">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid gap--xs grid-template-columns--2">
                     <div
                         class:display--none:empty={defaultEmptyClass}
-                        class="background-color--negative-10 p-4 border-radius--md"
+                        class="background-color--negative-10 padding--md border-radius--md"
                     >{defaultEmptyContent ? 'content' : ''}</div>
                     <div
                         class:display--none:empty={defaultEmptyClass}
-                        class="background-color--negative-10 p-4 border-radius--md"
+                        class="background-color--negative-10 padding--md border-radius--md"
                     ></div>
                 </div>
             </div>
-            <div class="display--grid g-4">
+            <div class="display--grid gap--md">
                 <b>HTML</b>
                 <Precode>
                     {

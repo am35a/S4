@@ -32,16 +32,16 @@
 <!-- {#if getPathSegments($path).length === 1 && getPathSegments($path)[0] === jumpTo} -->
     <Route path="/">
         <h2>Index</h2>
-        <div class="display--grid g-3">
+        <div class="display--grid gap--sm">
             {#each Object.entries(anchorsObj) as [_, moduleObj], index}
-                <div class="display--grid g-2 px-2">
+                <div class="display--grid gap--xs padding-x--xs">
                     <div class="fs-lg">
                         <span>{index + 1}</span>
                         <Link
                             href="{$path}{moduleObj.modulePath}"
                         >{Object.values(moduleObj.headAnchorObg)}</Link>
                     </div>
-                    <div class="display--grid g-2 px-2">
+                    <div class="display--grid gap--xs padding-x--xs">
                         {#each Object.entries(moduleObj.subAnchorsObj) as [anchor, name], subIndex}
                             <div>
                                 <span>{index + 1}.{subIndex + 1}</span>

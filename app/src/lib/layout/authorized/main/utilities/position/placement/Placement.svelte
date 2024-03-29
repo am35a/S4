@@ -11,10 +11,10 @@
         The <b>{placementArr.join('/')}</b>classes are sets the horizontal and/or vertical position of
         a positioned element. To fine-tune positioning, you can use variables <b>--{placementArr.join('/--')}</b> that are adaptive.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Position</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each placementArr as value}
                     <button
                         class="btn"
@@ -25,17 +25,17 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="p-6 background-color--positive border-radius--md overflow--hidden">
+            <div class="padding--xl background-color--positive border-radius--md overflow--hidden">
                 <div class="position--relative background-color--negative-10 height" style="--height: 10em">
-                    <div class="position--absolute background-color--negative-10 px-2 py-1 {place}--0">0%</div>
-                    <div class="position--absolute background-color--negative-10 px-2 py-1 {place}--50">50%</div>
-                    <div class="position--absolute background-color--negative-10 px-2 py-1 {place}--100">100%</div>
+                    <div class="position--absolute background-color--negative-10 padding-x--xs padding-y--xxs {place}--0">0%</div>
+                    <div class="position--absolute background-color--negative-10 padding-x--xs padding-y--xxs {place}--50">50%</div>
+                    <div class="position--absolute background-color--negative-10 padding-x--xs padding-y--xxs {place}--100">100%</div>
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

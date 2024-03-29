@@ -8,12 +8,13 @@
 <section>
     <h3 id="display">Display</h3>
     <p>
-        To create a flex container select one of the following behaviors: <b>display--inline-flex</b> or <b>display--flex</b>.
+        To create a flex container select one of the following behaviors: <b>display--inline-flex</b> or
+        <b>display--flex</b>.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Display</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each displayArr as value}
                     <button
                         class="btn"
@@ -24,13 +25,13 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="p-3 background-color--positive border-radius--md">
-                <div class="display--{display} background-color--negative-10 p-2">{display}</div>
+            <div class="padding--sm background-color--positive border-radius--md">
+                <div class="display--{display} background-color--negative-10 padding--xs">{display}</div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

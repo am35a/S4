@@ -14,10 +14,10 @@
     <p>
         The <b>fw-{wrapArr.join('/')}</b> classes help to change wrap items in a flex container.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Wrap</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each wrapArr as values}
                     <button
                         class="btn"
@@ -28,9 +28,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Space</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 <button
                     class="btn"
                     class:active={isCellShrinked}
@@ -45,11 +45,11 @@
                 >ws-nowrap</button>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--grid mb-2">
-                    <label for="growContainerWidth" class="display--grid grid-template-columns--3 align-items--end px-2">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid margin-bottom--xs">
+                    <label for="growContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>
@@ -65,20 +65,20 @@
                     >
                 </div>
                 <div
-                    class="display--flex flex-wrap--{wrap} g-2 p-2 background-color--negative-10 overflow-x--hidden width"
+                    class="display--flex flex-wrap--{wrap} gap--xs padding--xs background-color--negative-10 overflow-x--hidden width"
                     class:ws-nowrap={!isCellShrinked}
                     style="--width: {containerWidth}%"
                 >
                     {#each cellNamesArr as name}
                         <div
-                            class="background-color--negative-10 px-2 py-1"
+                            class="background-color--negative-10 padding-x--xs padding-y--xxs"
                             class:flex-shrink--0={isCellShrinked}
                         >{name}</div>
                     {/each}
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

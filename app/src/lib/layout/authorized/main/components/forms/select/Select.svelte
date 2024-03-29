@@ -15,10 +15,10 @@
     <!-- <p>
         <b>FrmTxt</b>
     </p> -->
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Types</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(selectFeaturesObj) as [key, value]}
                     <button
                         on:click={() => selectFeature = key}
@@ -30,8 +30,8 @@
                 {/each}
             </div>
         </div>
-        <div class="display--flex g-4 flex-wrap--wrap justify-content--evenly p-4 background-color--positive border-radius--md">
-            <div class="display--grid grid-template-columns--2 g-3">
+        <div class="display--flex gap--md flex-wrap--wrap justify-content--evenly padding--md background-color--positive border-radius--md">
+            <div class="display--grid grid-template-columns--2 gap--sm">
                 <b class="justify-self--end align-self--center">Default</b>
                 <div>
                     <Select

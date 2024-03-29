@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import { Route, path, query, hash } from 'svelte-micro'
 
     import PageHome from './home/Home.svelte'

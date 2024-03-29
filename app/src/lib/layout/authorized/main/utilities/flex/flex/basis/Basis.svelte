@@ -15,10 +15,10 @@
         container. Also the basis set up avaliable after add <b>flex</b> class to elements into flex
         container ans using variable <b>--flex-basis</b> to manage width.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Basis</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each basisArr as values }
                     <button
                         class="btn"
@@ -29,7 +29,7 @@
                 {/each}
             </div>
         </div>        
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Customize container</b>
             <input
                 class="frm"
@@ -38,11 +38,11 @@
                 placeholder="Type utility classes to customizing the container"
             >
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--grid mb-2">
-                    <label for="basisContainerWidth" class="display--grid grid-template-columns--3 align-items--end px-2">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid margin-bottom--xs">
+                    <label for="basisContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
                         <small class="ta-start">min</small>
                         <div class="ta-center">Width {containerWidth}%</div>
                         <small class="ta-end">max</small>
@@ -57,29 +57,29 @@
                         type="range"
                     >
                 </div>
-                    <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="flex-basis--{basis} background-color--negative-10 px-2 py-1">{basis} one</div>
-                    <div class="background-color--negative-10 px-2 py-1">two</div>
-                    <div class="background-color--negative-10 px-2 py-1">three</div>
+                    <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs" style="width: {containerWidth}%;">
+                    <div class="flex-basis--{basis} background-color--negative-10 padding-x--xs padding-y--xxs">{basis} one</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 100%;">one</div>
-                    <div class="background-color--negative-10 px-2 py-1">two</div>
-                    <div class="background-color--negative-10 px-2 py-1">three</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs" style="width: {containerWidth}%;">
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-basis: 100%;">one</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 100%;">equal</div>
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 100%;">equal</div>
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 100%;">equal</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs" style="width: {containerWidth}%;">
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-basis: 100%;">equal</div>
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-basis: 100%;">equal</div>
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-basis: 100%;">equal</div>
                 </div>
-                <div class="display--flex {containerClasses} g-2 background-color--negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="flex background-color--negative-10 px-2 py-1" style="--flex-basis: 25%">one</div>
-                    <div class="background-color--negative-10 px-2 py-1">two</div>
-                    <div class="background-color--negative-10 px-2 py-1">three</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs" style="width: {containerWidth}%;">
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-basis: 25%">one</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

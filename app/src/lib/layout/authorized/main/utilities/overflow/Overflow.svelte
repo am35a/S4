@@ -1,34 +1,37 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let overflowPropertyArr = ['auto', 'hidden', 'visible', 'scroll'],
-        overflowProperty = overflowPropertyArr[0]
+    let propertiesArr = ['auto', 'hidden', 'visible', 'scroll'],
+        property = propertiesArr[0]
 </script>
 
 <section>
     <h2 class="overflow">Overflow</h2>
     <p>
-        The overflow property allow to clip content, set render scrollbars or how to just display content when it overflows its block level container.
+        The overflow property allow to clip content, set render scrollbars or how to just display content
+        when it overflows its block level container. All of the properties classes support axises
+        <b>...--x-...</b> and <b>...--y-...</b>. All classes of overflow can be combine, like
+        <b>overflow--x-hidden</b> with <b>overflow--y-scroll</b>.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
-            <b>Line height</b>
-            <div class="display--flex flex-wrap--wrap g-2">
-                {#each overflowPropertyArr as values }
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
+            <b>Property</b>
+            <div class="display--flex flex-wrap--wrap gap--xs">
+                {#each propertiesArr as values }
                     <button
                         class="btn"
-                        class:active={overflowProperty === values}
-                        on:click={() => overflowProperty = values}
-                        disabled={overflowProperty === values}
+                        class:active={property === values}
+                        on:click={() => property = values}
+                        disabled={property === values}
                     >{values}</button>
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div
-                    class="overflow--{overflowProperty} mx-auto background-color--negative-10 p-2 width height"
+                    class="overflow--{property} margin-x--auto background-color--negative-10 padding--xs width height"
                     style="--width: 24em; --height: 16em;"
                 >
                     The Lancia Delta S4 is a Group B rally car manufactured by the Italian car company Lancia.
@@ -41,11 +44,11 @@
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {
-`<div class="overflow--${overflowProperty}> ... </div>
+`<div class="overflow--${property}"> ... </div>
 `
                 }
             </Precode>

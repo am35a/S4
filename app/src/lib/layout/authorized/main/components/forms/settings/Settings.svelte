@@ -55,10 +55,10 @@
 
 <section>
     <h3>Settings</h3>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(inputsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => inputVariant = key}
@@ -70,9 +70,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(inputsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => inputColor = key}
@@ -84,9 +84,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Sizes</b>
-            <div class="display--flex flex-wrap--wrap g-3 align-items--center">
+            <div class="display--flex flex-wrap--wrap gap--sm align-items--center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}

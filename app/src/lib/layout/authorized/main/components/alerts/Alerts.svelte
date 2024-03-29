@@ -55,10 +55,10 @@
     <p>
         To create self destroyed alerts, add the class name - <b>alert-closable</b>.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(alertsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => alertVariant = key}
@@ -70,9 +70,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(alertsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => alertColor = key}
@@ -84,9 +84,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Type</b>
-            <div class="display--flex flex-wrap--wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(alertsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => alertType = key}
@@ -98,16 +98,16 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--flex p-4 background-color--positive border-radius--md">
-                <Alert class="{alertClass} mb-0">
+            <div class="display--flex padding--md background-color--positive border-radius--md">
+                <Alert class="{alertClass} margin-bottom--none">
                     Click the close icon in the top right corner to destroy the block of alert message.
                 </Alert>
             </div>        
         </div>
-        <div class="display--grid g-4">
-            <div class="display--grid g-4">
+        <div class="display--grid gap--md">
+            <div class="display--grid gap--md">
                 <b>Svelte</b>
                 <Precode>
                     {

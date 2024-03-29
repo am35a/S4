@@ -11,7 +11,7 @@
 >
     <!-- <div>
         <img
-            class=" btn p-0"
+            class=" btn padding--none"
             src="/images/logo.svg"
             alt="S4 - The lightweight Svelte UI Kit"
         />

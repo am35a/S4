@@ -12,9 +12,9 @@
         For custom sizes use the <b>fs</b> class with the <b>--fs</b> variable.
         Also available the standard <b>small</b> attribute to make any font small and <b>small</b> supports levels, the more attributes inside the smaller the font.
     </p>
-    <div class="display--grid g-3 mb-4 p-3 background-color--positive border-radius--md">
+    <div class="display--grid gap--sm margin-bottom--md padding--sm background-color--positive border-radius--md">
         <div>
-            {#each fontSizeArr as item }
+            {#each fontSizeArr as item}
                 <div class="fs-{item}">fs-{item}</div>
             {/each}
         </div>
@@ -32,8 +32,8 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="border-radius--top-0">
-                {#each fontSizeArr as item }
+            <Precode>
+                {#each fontSizeArr as item}
                     {
 `<div class="fs-${item}">fs-${item}</div>
 `

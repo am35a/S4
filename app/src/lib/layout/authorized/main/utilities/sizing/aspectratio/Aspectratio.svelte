@@ -2,7 +2,8 @@
     import Precode from 'component/Precode.svelte'
 
     let aspectRatioArr = ['1/1', '4/3', '3/4', '16/9', '9/16', '16/10', '10/16', '21/9', '9/21', '32/9', '9/32'],
-        aspectRatio = aspectRatioArr[0]
+        aspectRatio = aspectRatioArr[0],
+        containerWidth = 25
 </script>
 
 <section>
@@ -11,10 +12,10 @@
         The aspect ratio is set by the <b>aspect-ratio--...</b>. Variables <b>--aspect-ratio</b> are also
         available to set for different device type.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Aspect ratio</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each aspectRatioArr as values }
                     <button
                         class="btn"
@@ -25,23 +26,39 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid margin-bottom--xs">
+                    <label for="growContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
+                        <small class="ta-start">min</small>
+                        <div class="ta-center">Width {containerWidth}%</div>
+                        <small class="ta-end">max</small>
+                    </label>
+                    <input
+                        class="frm"
+                        id="growContainerWidth"
+                        min={0}
+                        max={100}
+                        step={1}
+                        bind:value={containerWidth}
+                        type="range"
+                    >
+                </div>                
                 <div class="
                         background-color--negative-10
-                        mx-auto
-                        px-2
-                        py-1
-                        width--50 p_width--100
+                        padding-x--xs
+                        padding-y--xxs
+                        width p_width--100
                         aspect-ratio--{aspectRatio.replace('/', '_')}
                     "
+                    style="--width:{containerWidth}%"
                 ></div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
-            <Precode class="border-radius--top-0">
+            <Precode>
                 {
 `<div class="aspect-ratio--${aspectRatio.replace('/', '_')}"> ... </div>
 `

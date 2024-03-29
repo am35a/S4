@@ -16,10 +16,10 @@
         shades for accent background colors. Also avaliable the mute - <b>background-color--...-m</b>
         background colors.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="display--flex flex-wrap--wrap g-2">
+            <div class="display--flex flex-wrap--wrap gap--xs">
                 {#each Object.entries(accentsExtraObj) as [key, value]}
                     <button
                         class="btn"
@@ -30,14 +30,14 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="display--grid g-3 grid-template-columns--2">
-                    {#each accentsArr as item }
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid gap--sm grid-template-columns--2">
+                    {#each accentsArr as item}
                         <div
                             class:c-negative={accentExtra === '-m'}
-                            class="background-color--{item}{accentExtra} p-4 c-positive"
+                            class="background-color--{item}{accentExtra} padding--md c-positive"
                         >
                             <!-- {item} {Object.keys(accentsExtraObj).find(key => accentsExtraObj[key] === accentExtra)} color -->
                             background-color--{item}{accentExtra}

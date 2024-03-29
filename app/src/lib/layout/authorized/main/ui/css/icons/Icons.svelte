@@ -1,6 +1,6 @@
-<section class="display--grid g-5">
+<section class="display--grid gap--lg">
     <h3 id="icons">Icons</h3>
-    <div class="display--grid g-4 p-4 background-color--positive border-radius--lg">
+    <div class="display--grid gap--md padding--md background-color--positive border-radius--lg">
         <div>
             <p>
                 The cash posible icon is the best way to take heart any front-end developer building deep data applications.
@@ -15,7 +15,7 @@
                 <span class="ico fs-xs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
                 <span class="ico fs-xxs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
             </div>
-            <hr class="mt-1">
+            <hr class="margin-top--xxs">
             <div class="display--grid grid-template-columns--8 justify-item--center align-items--top">
                 <span class="fs-xxxl">xxxl</span>
                 <span class="fs-xxl">xxl</span>

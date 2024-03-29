@@ -1879,9 +1879,6 @@
 .padding--xxxl {
   padding: var(--padding--xxxl) !important;
 }
-.padding--auto {
-  padding: auto !important;
-}
 .padding--none {
   padding: unset !important;
 }
@@ -1980,18 +1977,6 @@
 }
 .padding-x--xxxl, .padding-left--xxxl {
   padding-left: var(--padding--xxxl) !important;
-}
-.padding-y--auto, .padding-top--auto {
-  padding-top: auto !important;
-}
-.padding-x--auto, .padding-right--auto {
-  padding-right: auto !important;
-}
-.padding-y--auto, .padding-bottom--auto {
-  padding-bottom: auto !important;
-}
-.padding-x--auto, .padding-left--auto {
-  padding-left: auto !important;
 }
 .padding-y--none, .padding-top--none {
   padding-top: unset !important;

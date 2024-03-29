@@ -25,7 +25,7 @@
         classes in combination with border styles. The <b>border-width--min</b> is not directly available,
         it is set automatically with the border style.
     </p>
-    <div class="display--grid g-5">
+    <div class="display--grid gap--lg">
         <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
             Pay attentions! The classes <b>thin</b>, <b>medium</b> and <b>thick</b> are not dynamic, unlike <b>min</b>
@@ -41,9 +41,9 @@
             <b>border-...</b>, <b>border-...-width</b>  is adaptive. The list of prefixes available on the
             <a href="/core#map">Core</a> page.
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Sizes</b>
-            <div class="display--flex flex-wrap--wrap g-3 align-items--center">
+            <div class="display--flex flex-wrap--wrap gap--sm align-items--center">
                 {#each Object.entries(widthObj) as [key, value]}
                     <button
                         on:click={() => width = key}
@@ -54,9 +54,9 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Style</b>
-            <div class="display--flex flex-wrap--wrap g-3 align-items--center">
+            <div class="display--flex flex-wrap--wrap gap--sm align-items--center">
                 <button
                     on:click={() => isStyle = !isStyle}
                     class="btn"
@@ -71,34 +71,34 @@
                 >Without</button>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 -background-color--positive -border-radius--md">
-                <div class="display--flex flex-wrap--wrap g-2 align-items--baseline">
+            <div class="display--grid gap--sm padding--sm -background-color--positive -border-radius--md">
+                <div class="display--flex flex-wrap--wrap gap--xs align-items--baseline">
                     <div class="
-                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
+                        background-color--negative-10 padding--md border-width--{widthObj[width]}"
                         class:border-style--solid={isStyle}
                     >all sides</div>
                     <div class="
-                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
+                        background-color--negative-10 padding--md border-width--{widthObj[width]}"
                         class:border-top-style--solid={isStyle}
                     >top side</div>
                     <div class="
-                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
+                        background-color--negative-10 padding--md border-width--{widthObj[width]}"
                         class:border-right-style--solid={isStyle}
                     >right side</div>
                     <div class="
-                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
+                        background-color--negative-10 padding--md border-width--{widthObj[width]}"
                         class:border-bottom-style--solid={isStyle}
                     >bottom side</div>
                     <div class="
-                        background-color--negative-10 p-4 border-width--{widthObj[width]}"
+                        background-color--negative-10 padding--md border-width--{widthObj[width]}"
                         class:border-left-style--solid={isStyle}
                     >left side</div>
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

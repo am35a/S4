@@ -4,19 +4,19 @@
 <section>
     <h3 id="hover">Hover</h3>
     <p>
-        To change the size or add box shadow by hover, just add <b>:hover</b> to any
-        <b>box-shadow--...</b> class.
+        To change by hover the sizes or add box shadow, just add <b>:hover</b> to any <b>box-shadow--...</b>
+        classes.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
-                <div class="p-4 box-shadow--md:hover">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="padding--md box-shadow--md:hover">
                     box-shadow--md:hover
                 </div>
             </div>
         </div>        
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {

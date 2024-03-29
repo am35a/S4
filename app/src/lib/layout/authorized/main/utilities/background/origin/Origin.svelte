@@ -11,8 +11,8 @@
         Change the background`s origin from the border start, inside the border, or inside the padding
         by the classes <b>background-origin--{originsArr.join('/')}</b>.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Customize container</b>
             <div class="display--grid">
                 <input
@@ -26,18 +26,18 @@
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 {#each originsArr as origin}
                     <div
-                        class="p-4 fs-xxxl fw-700 background-image background-color--negative-10 background-origin--{origin} {containerClasses}"
+                        class="padding--md fs-xxxl fw-700 background-image background-color--negative-10 background-origin--{origin} {containerClasses}"
                         style="--background-image: url(/images/logo.svg); border: 1em dashed;"
                     >Lorem ipsum dolor sit amet.</div>
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {#each originsArr as origin}

@@ -21,7 +21,7 @@
 <!-- https://dribbble.com/shots/16029811/attachments/7872308?mode=media -->
 
 <section
-    class="display--grid g-4 p-4 background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30 m-auto width"
+    class="display--grid gap--md padding--md background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30 margin--auto width"
     style="--width: 18em"
 >
     <div class="display--grid">
@@ -30,10 +30,10 @@
             to manage your account
         </small>
     </div>
-    <div class="display--grid g-2">
-        <div class="display--grid g-1">
+    <div class="display--grid gap--xs">
+        <div class="display--grid gap--xxs">
             <label
-                class="fs-sm fw-600 px-1"
+                class="fs-sm fw-600 padding-x--xxs"
                 for="bindLoginEmailOrName"
             >
                 Email
@@ -46,9 +46,9 @@
                 type={'email'}
             />
         </div>
-        <div class="display--grid g-1">
+        <div class="display--grid gap--xxs">
             <label
-                class="fs-sm fw-600 px-1"
+                class="fs-sm fw-600 padding-x--xxs"
                 for="bindLoginPassword"
             >
                 Password
@@ -61,12 +61,12 @@
             />
         </div>
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label class="display--inline-grid g-1 grid-auto-flow--column justify-content--start align-items--center lh-1">
+        <label class="display--inline-grid gap--xxs grid-auto-flow--column justify-content--start align-items--center lh-1">
             <Input type={'checkbox'}/> Remember me
         </label>
     </div>
-    <div class="display--grid g-2">
-        <div class="display--grid g-2 grid-template-columns--2">
+    <div class="display--grid gap--xs">
+        <div class="display--grid gap--xs grid-template-columns--2">
             <Button
                 class="fs-sm"
                 on:click={() => router.push('/forgotpass')}

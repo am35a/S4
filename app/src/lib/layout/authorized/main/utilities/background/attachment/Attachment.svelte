@@ -7,15 +7,16 @@
 <section>
     <h3 id="attachment">Attachment</h3>
     <p>
-        Add the <b>background-attachment--{attachmentsArr.join('/')}</b> classes to container to work with background-attachment.
+        Add the <b>background-attachment--{attachmentsArr.join('/')}</b> classes to container to work with
+        background-attachment.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 {#each attachmentsArr as attachment}
                     <div
-                        class="p-2 height overflow--auto background-image background-color--negative-10 background-attachment--{attachment}"
+                        class="padding--xs height overflow--auto background-image background-color--negative-10 background-attachment--{attachment}"
                         style="--background-image: url(/images/logo.svg); --height: 5em"
                     >
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur et optio eveniet tempora molestiae animi possimus, dolorem voluptatem itaque error odio tempore expedita iusto consequatur vitae sapiente inventore incidunt voluptatum.</p>
@@ -27,7 +28,7 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {#each attachmentsArr as attachment}

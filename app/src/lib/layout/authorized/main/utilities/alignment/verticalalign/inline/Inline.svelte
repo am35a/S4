@@ -27,10 +27,10 @@
         The <b>vertical-align--{Object.values(verticalAlignObj).join('/')}</b> classes sets vertical
         alignment of an <b>inline</b> or <b>inline-block</b> blocks.
     </p>
-    <div class="display--grid g-5">
-        <div class="display--grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Line height</b>
-            <div class="display--inline-flex flex-wrap--wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(lineHeightObj) as [key, value]}
                     <button
                         class="btn"
@@ -41,21 +41,21 @@
                 {/each}
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="display--grid g-3 p-3 background-color--positive border-radius--md">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div class="display--grid ws-nowrap overflow-x--auto" style="--lh: {lineHeight}">
-                    <div class="lh grid-column--full grid-row--full my-auto border-top-style--solid border-bottom-style--solid c-negative-10">&nbsp;<!-- base line indicator--></div>
-                    <div class="lh grid-column--full grid-row--full my-auto border-top-style--solid border-bottom-style--solid c-negative-20"><!-- base line indicator--></div>
-                    <div class="lh grid-column--full grid-row--full py-4">
+                    <div class="lh grid-column--full grid-row--full margin-y--auto border-top-style--solid border-bottom-style--solid c-negative-10">&nbsp;<!-- base line indicator--></div>
+                    <div class="lh grid-column--full grid-row--full margin-y--auto border-top-style--solid border-bottom-style--solid c-negative-20"><!-- base line indicator--></div>
+                    <div class="lh grid-column--full grid-row--full padding-y--md">
                         {#each Object.entries(verticalAlignObj) as [key, value]}
-                            <span class="background-color--negative-10 px-1 me-1 vertical-align--{value}">{key}</span>
+                            <span class="background-color--negative-10 padding-x--xxs margin-right--xxs vertical-align--{value}">{key}</span>
                         {/each}
                     </div>
                 </div>
             </div>
         </div>
-        <div class="display--grid g-4">
+        <div class="display--grid gap--md">
             <b>HTML</b>
             <Precode>
                 {#each Object.entries(verticalAlignObj) as [key, value]}

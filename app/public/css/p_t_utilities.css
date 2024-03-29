@@ -1842,9 +1842,6 @@
 .p_t_padding--xxxl {
   padding: var(--padding--xxxl) !important;
 }
-.p_t_padding--auto {
-  padding: auto !important;
-}
 .p_t_padding--none {
   padding: unset !important;
 }
@@ -1943,18 +1940,6 @@
 }
 .p_t_padding-x--xxxl, .p_t_padding-left--xxxl {
   padding-left: var(--padding--xxxl) !important;
-}
-.p_t_padding-y--auto, .p_t_padding-top--auto {
-  padding-top: auto !important;
-}
-.p_t_padding-x--auto, .p_t_padding-right--auto {
-  padding-right: auto !important;
-}
-.p_t_padding-y--auto, .p_t_padding-bottom--auto {
-  padding-bottom: auto !important;
-}
-.p_t_padding-x--auto, .p_t_padding-left--auto {
-  padding-left: auto !important;
 }
 .p_t_padding-y--none, .p_t_padding-top--none {
   padding-top: unset !important;

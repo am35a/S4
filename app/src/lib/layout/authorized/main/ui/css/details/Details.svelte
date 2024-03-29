@@ -1,18 +1,18 @@
-<section class="display--grid g-5">
+<section class="display--grid gap--lg">
     <h3 id="details">Details</h3>
-    <div class="display--flex flex-wrap--wrap g-4">
-        <div class="display--grid p-4 g-4 background-color--positive border-radius--lg align-content--start flex" style="--flex-grow: 1;">
+    <div class="display--flex flex-wrap--wrap gap--md">
+        <div class="display--grid padding--md gap--md background-color--positive border-radius--lg align-content--start flex" style="--flex-grow: 1;">
             <details class="dtl">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt">
@@ -21,11 +21,11 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline">
@@ -34,26 +34,26 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
         </div>
-        <div class="display--grid p-4 g-4 background-color--positive border-radius--lg align-content--start flex" style="--flex-grow: 1;">
+        <div class="display--grid padding--md gap--md background-color--positive border-radius--lg align-content--start flex" style="--flex-grow: 1;">
             <details class="dtl dtl-primary">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-secondary">
@@ -62,25 +62,25 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
-            <hr class="min-width-75 mx-auto">
+            <hr class="min-width-75 margin-x--auto">
             <details class="dtl dtl-info">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-success">
@@ -89,11 +89,11 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-warning">
@@ -102,11 +102,11 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-error">
@@ -115,26 +115,26 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
         </div>
-        <div class="display--grid p-4 g-4 background-color--positive border-radius--lg align-content--start flex" style="--flex-grow: 1;">
+        <div class="display--grid padding--md gap--md background-color--positive border-radius--lg align-content--start flex" style="--flex-grow: 1;">
             <details class="dtl dtl-alt-primary">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt-secondary">
@@ -143,25 +143,25 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
-            <hr class="min-width-75 mx-auto">
+            <hr class="min-width-75 margin-x--auto">
             <details class="dtl dtl-alt-info">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt-success">
@@ -170,11 +170,11 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt-warning">
@@ -183,11 +183,11 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-alt-error">
@@ -196,26 +196,26 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
         </div>
-        <div class="display--grid p-4 g-4 background-color--positive border-radius--lg align-content--start flex" style="--flex-grow: 1;">
+        <div class="display--grid padding--md gap--md background-color--positive border-radius--lg align-content--start flex" style="--flex-grow: 1;">
             <details class="dtl dtl-outline-primary">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline-secondary">
@@ -224,25 +224,25 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
-            <hr class="min-width-75 mx-auto">
+            <hr class="min-width-75 margin-x--auto">
             <details class="dtl dtl-outline-info">
                 <summary>
                     Expand block with this simple details tag.
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline-success">
@@ -251,11 +251,11 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline-warning">
@@ -264,11 +264,11 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
             <details class="dtl dtl-outline-error">
@@ -277,11 +277,11 @@
                     <span class="ico" style="--ico-image: url(/icons/chevron-down.svg);" expand>&nbsp;</span>
                     <span class="ico" style="--ico-image: url(/icons/chevron-up.svg);" contract>&nbsp;</span>
                 </summary>
-                <div class="p-2 display--grid">
+                <div class="padding--xs display--grid">
                     <div>
                         Any content can be here. Including pictures.
                     </div>
-                    <img class="width--75 mx-auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
+                    <img class="width--75 margin-x--auto" src="/images/logo.svg" alt="S4 - The lightweight Svelte UI Kit">
                 </div>
             </details>
         </div>

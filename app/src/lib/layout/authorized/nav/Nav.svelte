@@ -8,8 +8,8 @@
     <Segments
         class="
             display--grid
-            g-2
-            p-2
+            gap--xs
+            padding--xs
             background-color--positive
             border-radius--md
             box-shadow--xs

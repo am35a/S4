@@ -24,17 +24,19 @@ $gapNames: '', row-, column-
     @each $name in $spacingNames
         .#{$orientation}#{$type}#{$name}
             @each $space in $spacingSizes
-                &--#{$space}
-                    #{$name}: spacePattern($name, $space) !important
+                @if $name == margin or ($name == padding and $space != auto)
+                    &--#{$space}
+                        #{$name}: spacePattern($name, $space) !important
             @each $space in $spacingSizes
-                &-y--#{$space}, &-top--#{$space}
-                    #{$name}-top: spacePattern($name, $space) !important
-                &-x--#{$space}, &-right--#{$space}
-                    #{$name}-right: spacePattern($name, $space) !important
-                &-y--#{$space}, &-bottom--#{$space}
-                    #{$name}-bottom: spacePattern($name, $space) !important
-                &-x--#{$space}, &-left--#{$space}
-                    #{$name}-left: spacePattern($name, $space) !important
+                @if $name == margin or ($name == padding and $space != auto)
+                    &-y--#{$space}, &-top--#{$space}
+                        #{$name}-top: spacePattern($name, $space) !important
+                    &-x--#{$space}, &-right--#{$space}
+                        #{$name}-right: spacePattern($name, $space) !important
+                    &-y--#{$space}, &-bottom--#{$space}
+                        #{$name}-bottom: spacePattern($name, $space) !important
+                    &-x--#{$space}, &-left--#{$space}
+                        #{$name}-left: spacePattern($name, $space) !important
         .#{$name}
             #{$name}: var(--#{$orientation}#{$type}#{$name}, var(--#{$name}, initial))
             &-y, &-top
@@ -60,98 +62,6 @@ $gapNames: '', row-, column-
 
 
 //
-    .#{$orientation}#{$type}m
-        &-0
-            margin: unset !important
-        @for $i from 1 through $spacingStep
-            &-#{$i}
-                margin: #{$i * .25}em !important
-        &-auto
-            margin: auto !important
-
-        &x-0
-            margin-left: unset !important
-            margin-right: unset !important
-        &y-0
-            margin-top: unset !important
-            margin-bottom: unset !important
-        @for $i from 1 through $spacingStep
-            &x-#{$i}
-                margin-left: #{$i * .25}em !important
-                margin-right: #{$i * .25}em !important
-            &y-#{$i}
-                margin-top: #{$i * .25}em !important
-                margin-bottom: #{$i * .25}em !important
-        &x-auto
-            margin-left: auto !important
-            margin-right: auto !important
-        &y-auto
-            margin-top: auto !important
-            margin-bottom: auto !important
-        
-        &s-0
-            margin-#{$startDirection}: unset !important
-        &t-0
-            margin-top: unset !important
-        &e-0
-            margin-#{$endDirection}: unset !important
-        &b-0
-            margin-bottom: unset !important
-        @for $i from 1 through $spacingStep
-            &s-#{$i}
-                margin-#{$startDirection}: #{$i * .25}em !important
-            &t-#{$i}
-                margin-top: #{$i * .25}em !important
-            &e-#{$i}
-                margin-#{$endDirection}: #{$i * .25}em !important
-            &b-#{$i}
-                margin-bottom: #{$i * .25}em !important
-        &s-auto
-            margin-#{$startDirection}: auto !important
-        &t-auto
-            margin-top: auto !important
-        &e-auto
-            margin-#{$endDirection}: auto !important
-        &b-auto
-            margin-bottom: auto !important
-
-    .#{$orientation}#{$type}p
-        &-0
-            padding: unset !important
-        @for $i from 1 through $spacingStep
-            &-#{$i}
-                padding: #{$i * .25}em !important
-
-        &x-0
-            padding-left: unset !important
-            padding-right: unset !important
-        &y-0
-            padding-top: unset !important
-            padding-bottom: unset !important
-        @for $i from 1 through $spacingStep
-            &x-#{$i}
-                padding-left: #{$i * .25}em !important
-                padding-right: #{$i * .25}em !important
-            &y-#{$i}
-                padding-top: #{$i * .25}em !important
-                padding-bottom: #{$i * .25}em !important
-        @for $i from 1 through $spacingStep
-            &s-#{$i}
-                padding-#{$startDirection}: #{$i * .25}em !important
-            &t-#{$i}
-                padding-top: #{$i * .25}em !important
-            &e-#{$i}
-                padding-#{$endDirection}: #{$i * .25}em !important
-            &b-#{$i}
-                padding-bottom: #{$i * .25}em !important
-        &x-0
-            padding-#{$startDirection}: unset !important
-        &t-0
-            padding-top: unset !important
-        &e-0
-            padding-#{$endDirection}: unset !important
-        &b-0
-            padding-bottom: unset !important
 
     .#{$orientation}#{$type}g,
     .#{$orientation}#{$type}cg

@@ -35,7 +35,7 @@
     <div>
         <div>Lightness:</div>
         <div>
-            <div class="display--grid grid-template-columns--3 align-items--end px-2">
+            <div class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
                 <small class="ta-start">{accentColorsObj.variablesObj['lightness-offset']}</small>
                 <div class="ta-center">{accentColorsObj.variablesObj['lightness']}</div>
                 <small class="ta-end">{1 - accentColorsObj.variablesObj['lightness-offset']}</small>
@@ -59,7 +59,7 @@
         /> -->
         <div>Chroma:</div>
         <div>
-            <div class="display--grid grid-template-columns--3 align-items--end px-2">
+            <div class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
                 <small class="ta-start">0</small>
                 <div class="ta-center">{accentColorsObj.variablesObj['chroma']}</div>
                 <small class="ta-end">0.37</small>
@@ -74,7 +74,7 @@
         </div>
         <div>Alfa (mute):</div>
         <div>
-            <div class="display--grid grid-template-columns--3 align-items--end px-2">
+            <div class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
                 <small class="ta-start">0</small>
                 <div class="ta-center">{accentColorsObj.variablesObj['alfa']}</div>
                 <small class="ta-end">1</small>
@@ -88,9 +88,9 @@
             />
         </div>
         <div>Colors</div>
-        <div class="display--flex flex-wrap--wrap g-2">
+        <div class="display--flex flex-wrap--wrap gap--xs">
             {#each accentColorsObj.namesArr as value}
-                <div class="display--grid rg-2 justify-item--center p-4 background-color--positive border-radius--md flex" style="--flex-grow: 1; --flex-basis: 0;">
+                <div class="display--grid rg-2 justify-item--center padding--md background-color--positive border-radius--md flex" style="--flex-grow: 1; --flex-basis: 0;">
                     <Input
                         bind:value={accentColorsObj.variablesObj[`${value}-hue`]}
                         min="0" max="360"

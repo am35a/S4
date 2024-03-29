@@ -1842,9 +1842,6 @@
 .t_padding--xxxl {
   padding: var(--padding--xxxl) !important;
 }
-.t_padding--auto {
-  padding: auto !important;
-}
 .t_padding--none {
   padding: unset !important;
 }
@@ -1943,18 +1940,6 @@
 }
 .t_padding-x--xxxl, .t_padding-left--xxxl {
   padding-left: var(--padding--xxxl) !important;
-}
-.t_padding-y--auto, .t_padding-top--auto {
-  padding-top: auto !important;
-}
-.t_padding-x--auto, .t_padding-right--auto {
-  padding-right: auto !important;
-}
-.t_padding-y--auto, .t_padding-bottom--auto {
-  padding-bottom: auto !important;
-}
-.t_padding-x--auto, .t_padding-left--auto {
-  padding-left: auto !important;
 }
 .t_padding-y--none, .t_padding-top--none {
   padding-top: unset !important;
