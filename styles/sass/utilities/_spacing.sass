@@ -1,12 +1,13 @@
 // @use "sass:math"
 
 $spacingStep: 8
-// $spacingAxises: x, y
+// $spacingAxes: x, y
 // $spacingDirections: l, t, r, b
 
 $spacingNames: margin, padding
 $spacingSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl, auto, none
 $gapNames: '', row-, column-
+$gapAxes: row, column
 
 /*
     spacing section: width, height, box-sizing and resize types contained in classes
@@ -48,33 +49,12 @@ $gapNames: '', row-, column-
             &-x, &-left
                 #{$name}-left: var(--#{$orientation}#{$type}#{$name}, var(--#{$name}, initial))
 
-    @each $name in $gapNames
-        .#{$orientation}#{$type}#{$name}gap
+    @each $name in $gapAxes
+        .#{$orientation}#{$type}gap, .#{$orientation}#{$type}#{$name}-gap
             @each $space in $spacingSizes
                 @if $space != auto
                     &--#{$space}
-                        #{$name}gap: spacePattern(gap, $space)
-        .#{$name}gap
-            #{$name}gap: var(--#{$orientation}#{$type}gap, var(--gap, initial))
+                        #{$name}-gap: spacePattern(gap, $space)
 
-
-
-
-
-//
-
-    .#{$orientation}#{$type}g,
-    .#{$orientation}#{$type}cg
-        &-0
-            column-gap: unset !important
-        @for $i from 1 through $spacingStep
-            &-#{$i}
-                column-gap: #{$i * .25}em !important
-
-    .#{$orientation}#{$type}g,
-    .#{$orientation}#{$type}rg
-        &-0
-            row-gap: unset !important
-        @for $i from 1 through $spacingStep
-            &-#{$i}
-                row-gap: #{$i * .25}em !important
+        .gap, .#{$name}-gap
+            #{$name}-gap: var(--#{$orientation}#{$type}gap, var(--gap, initial))

@@ -2007,99 +2007,67 @@
   padding-left: var(--padding, var(--padding, initial));
 }
 
-.gap--xxs {
-  gap: var(--gap--xxs);
-}
-.gap--xs {
-  gap: var(--gap--xs);
-}
-.gap--sm {
-  gap: var(--gap--sm);
-}
-.gap--md {
-  gap: var(--gap--md);
-}
-.gap--lg {
-  gap: var(--gap--lg);
-}
-.gap--xl {
-  gap: var(--gap--xl);
-}
-.gap--xxl {
-  gap: var(--gap--xxl);
-}
-.gap--xxxl {
-  gap: var(--gap--xxxl);
-}
-.gap--none {
-  gap: unset;
-}
-
-.gap {
-  gap: var(--gap, var(--gap, initial));
-}
-
-.row-gap--xxs {
+.gap--xxs, .row-gap--xxs {
   row-gap: var(--gap--xxs);
 }
-.row-gap--xs {
+.gap--xs, .row-gap--xs {
   row-gap: var(--gap--xs);
 }
-.row-gap--sm {
+.gap--sm, .row-gap--sm {
   row-gap: var(--gap--sm);
 }
-.row-gap--md {
+.gap--md, .row-gap--md {
   row-gap: var(--gap--md);
 }
-.row-gap--lg {
+.gap--lg, .row-gap--lg {
   row-gap: var(--gap--lg);
 }
-.row-gap--xl {
+.gap--xl, .row-gap--xl {
   row-gap: var(--gap--xl);
 }
-.row-gap--xxl {
+.gap--xxl, .row-gap--xxl {
   row-gap: var(--gap--xxl);
 }
-.row-gap--xxxl {
+.gap--xxxl, .row-gap--xxxl {
   row-gap: var(--gap--xxxl);
 }
-.row-gap--none {
+.gap--none, .row-gap--none {
   row-gap: unset;
 }
 
-.row-gap {
+.gap, .row-gap {
   row-gap: var(--gap, var(--gap, initial));
 }
 
-.column-gap--xxs {
+.gap--xxs, .column-gap--xxs {
   column-gap: var(--gap--xxs);
 }
-.column-gap--xs {
+.gap--xs, .column-gap--xs {
   column-gap: var(--gap--xs);
 }
-.column-gap--sm {
+.gap--sm, .column-gap--sm {
   column-gap: var(--gap--sm);
 }
-.column-gap--md {
+.gap--md, .column-gap--md {
   column-gap: var(--gap--md);
 }
-.column-gap--lg {
+.gap--lg, .column-gap--lg {
   column-gap: var(--gap--lg);
 }
-.column-gap--xl {
+.gap--xl, .column-gap--xl {
   column-gap: var(--gap--xl);
 }
-.column-gap--xxl {
+.gap--xxl, .column-gap--xxl {
   column-gap: var(--gap--xxl);
 }
-.column-gap--xxxl {
+.gap--xxxl, .column-gap--xxxl {
   column-gap: var(--gap--xxxl);
 }
-.column-gap--none {
+.gap--none, .column-gap--none {
   column-gap: unset;
 }
 
-.column-gap {
+.gap, .column-gap {
   column-gap: var(--gap, var(--gap, initial));
 }
 

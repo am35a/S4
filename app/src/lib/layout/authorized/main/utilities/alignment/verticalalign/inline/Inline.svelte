@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
 
     let lineHeightObj={
@@ -7,7 +7,7 @@
             '1': '1',
             '4': '4'
         },
-        lineHeight:string = '4'
+        lineHeight = '4'
     
     let verticalAlignObj={
             'Baseline': 'baseline',

@@ -9,7 +9,7 @@
     <h2 class="overflow">Overflow</h2>
     <p>
         The overflow property allow to clip content, set render scrollbars or how to just display content
-        when it overflows its block level container. All of the properties classes support axises
+        when it overflows its block level container. All of the properties classes support axes
         <b>...--x-...</b> and <b>...--y-...</b>. All classes of overflow can be combine, like
         <b>overflow--x-hidden</b> with <b>overflow--y-scroll</b>.
     </p>

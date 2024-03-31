@@ -1970,99 +1970,67 @@
   padding-left: var(--l_m_padding, var(--padding, initial));
 }
 
-.l_m_gap--xxs {
-  gap: var(--gap--xxs);
-}
-.l_m_gap--xs {
-  gap: var(--gap--xs);
-}
-.l_m_gap--sm {
-  gap: var(--gap--sm);
-}
-.l_m_gap--md {
-  gap: var(--gap--md);
-}
-.l_m_gap--lg {
-  gap: var(--gap--lg);
-}
-.l_m_gap--xl {
-  gap: var(--gap--xl);
-}
-.l_m_gap--xxl {
-  gap: var(--gap--xxl);
-}
-.l_m_gap--xxxl {
-  gap: var(--gap--xxxl);
-}
-.l_m_gap--none {
-  gap: unset;
-}
-
-.gap {
-  gap: var(--l_m_gap, var(--gap, initial));
-}
-
-.l_m_row-gap--xxs {
+.l_m_gap--xxs, .l_m_row-gap--xxs {
   row-gap: var(--gap--xxs);
 }
-.l_m_row-gap--xs {
+.l_m_gap--xs, .l_m_row-gap--xs {
   row-gap: var(--gap--xs);
 }
-.l_m_row-gap--sm {
+.l_m_gap--sm, .l_m_row-gap--sm {
   row-gap: var(--gap--sm);
 }
-.l_m_row-gap--md {
+.l_m_gap--md, .l_m_row-gap--md {
   row-gap: var(--gap--md);
 }
-.l_m_row-gap--lg {
+.l_m_gap--lg, .l_m_row-gap--lg {
   row-gap: var(--gap--lg);
 }
-.l_m_row-gap--xl {
+.l_m_gap--xl, .l_m_row-gap--xl {
   row-gap: var(--gap--xl);
 }
-.l_m_row-gap--xxl {
+.l_m_gap--xxl, .l_m_row-gap--xxl {
   row-gap: var(--gap--xxl);
 }
-.l_m_row-gap--xxxl {
+.l_m_gap--xxxl, .l_m_row-gap--xxxl {
   row-gap: var(--gap--xxxl);
 }
-.l_m_row-gap--none {
+.l_m_gap--none, .l_m_row-gap--none {
   row-gap: unset;
 }
 
-.row-gap {
+.gap, .row-gap {
   row-gap: var(--l_m_gap, var(--gap, initial));
 }
 
-.l_m_column-gap--xxs {
+.l_m_gap--xxs, .l_m_column-gap--xxs {
   column-gap: var(--gap--xxs);
 }
-.l_m_column-gap--xs {
+.l_m_gap--xs, .l_m_column-gap--xs {
   column-gap: var(--gap--xs);
 }
-.l_m_column-gap--sm {
+.l_m_gap--sm, .l_m_column-gap--sm {
   column-gap: var(--gap--sm);
 }
-.l_m_column-gap--md {
+.l_m_gap--md, .l_m_column-gap--md {
   column-gap: var(--gap--md);
 }
-.l_m_column-gap--lg {
+.l_m_gap--lg, .l_m_column-gap--lg {
   column-gap: var(--gap--lg);
 }
-.l_m_column-gap--xl {
+.l_m_gap--xl, .l_m_column-gap--xl {
   column-gap: var(--gap--xl);
 }
-.l_m_column-gap--xxl {
+.l_m_gap--xxl, .l_m_column-gap--xxl {
   column-gap: var(--gap--xxl);
 }
-.l_m_column-gap--xxxl {
+.l_m_gap--xxxl, .l_m_column-gap--xxxl {
   column-gap: var(--gap--xxxl);
 }
-.l_m_column-gap--none {
+.l_m_gap--none, .l_m_column-gap--none {
   column-gap: unset;
 }
 
-.column-gap {
+.gap, .column-gap {
   column-gap: var(--l_m_gap, var(--gap, initial));
 }
 
