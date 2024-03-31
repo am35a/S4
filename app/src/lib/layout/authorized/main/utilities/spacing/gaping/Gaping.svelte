@@ -57,7 +57,7 @@
             <b>HTML</b>
             <Precode>
                 {
-`<div class="gap--${spaceSize}">
+`<div class="${gapAxis}gap--${spaceSize}">
     ...
 </div>
 `
