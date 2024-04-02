@@ -21,23 +21,23 @@
 <!-- https://dribbble.com/shots/16029811/attachments/7872308?mode=media -->
 
 <section
-    class="d-grid g-4 p-4 bgc-positive br-md bs-xs border border-negative-30 m-auto w"
-    style="--w: 18em"
+    class="display--grid gap--md padding--md background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30 margin--auto width"
+    style="--width: 18em"
 >
-    <div class="d-grid">
-        <h1 class="fs-xxl">Sign In</h1>
-        <small class="c-negative-50">
+    <div class="display--grid">
+        <h1 class="font-size--xxl">Sign In</h1>
+        <small class="color--negative-50">
             to manage your account
         </small>
     </div>
-    <div class="d-grid g-2">
-        <div class="d-grid g-1">
+    <div class="display--grid gap--xs">
+        <div class="display--grid gap--xxs">
             <label
-                class="fs-sm fw-600 px-1"
+                class="font-size--sm font-weight--600 padding-x--xxs"
                 for="bindLoginEmailOrName"
             >
                 Email
-                <span class="c-error">*</span>
+                <span class="color--error">*</span>
             </label>
             <Input
                 id="bindLoginEmailOrName"
@@ -46,13 +46,13 @@
                 type={'email'}
             />
         </div>
-        <div class="d-grid g-1">
+        <div class="display--grid gap--xxs">
             <label
-                class="fs-sm fw-600 px-1"
+                class="font-size--sm font-weight--600 padding-x--xxs"
                 for="bindLoginPassword"
             >
                 Password
-                <span class="c-error">*</span>
+                <span class="color--error">*</span>
             </label>
             <Input
                 id="bindLoginPassword"
@@ -61,21 +61,21 @@
             />
         </div>
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label class="d-inline-grid g-1 gaf-column jc-start ai-center lh-1">
+        <label class="display--inline-grid gap--xxs grid-auto-flow--column justify-content--start align-items--center line-height--1">
             <Input type={'checkbox'}/> Remember me
         </label>
     </div>
-    <div class="d-grid g-2">
-        <div class="d-grid g-2 gtc-2">
+    <div class="display--grid gap--xs">
+        <div class="display--grid gap--xs grid-template-columns--2">
             <Button
-                class="fs-sm"
+                class="font-size--sm"
                 on:click={() => router.push('/forgotpass')}
             >
                 Forgotten pass?
                 <!-- <Icon name="refresh" /> -->
             </Button>
             <Button
-                class="fs-sm"
+                class="font-size--sm"
                 on:click={() => router.push('/signup')}
             >
                 Sign Up

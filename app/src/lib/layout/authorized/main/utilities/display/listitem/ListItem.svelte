@@ -3,7 +3,7 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br-md">
-        <div class="bgc-negative-10 p-4 d-list-item" style="list-style-position: inside;">span</div>
+    <div class="display--grid gap--xs padding--xs background-color--positive border-radius--md">
+        <div class="background-color--negative-10 padding--md d-list-item" style="list-style-position: inside;">span</div>
     </div>
 </section>

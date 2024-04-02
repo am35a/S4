@@ -2,13 +2,13 @@
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let groupObj = {
+    let groupObj={
         Horizontal: 'grp-h',
         Vertical: 'grp-v',
     }
     let groupVariant = 'Horizontal'
 
-    let buttonsObj = {
+    let buttonsObj={
         variantsObj: {
             Default: '',
             Alt: 'alt',
@@ -49,52 +49,52 @@
 <article>
     <h2 class="ButtonGroup">Group</h2>
     <p>
-        S4 makes possible to combine various objects into groups. The classes are responsible for vertical grouping <b>.grp-v</b> and horizontal <b>.grp-h</b>.
+        S4 makes possible to combine various objects into groups. The classes are responsible for vertical grouping <b>grp-v</b> and horizontal <b>grp-h</b>.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
                         class="btn btn-{value}"
-                        class:active = {buttonVariant === key}
+                        class:active={buttonVariant === key}
                         type="button"
-                        disabled = {buttonVariant === key}
+                        disabled={buttonVariant === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
                         class="btn btn{value}"
-                        class:active = {buttonColor === key}
+                        class:active={buttonColor === key}
                         type="button"
-                        disabled = {buttonColor === key}
+                        disabled={buttonColor === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Directions</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(groupObj) as [key, value]}
                     <button
                         on:click={() => groupVariant = key}
                         class="btn btn{value}"
-                        class:active = {groupVariant === key}
+                        class:active={groupVariant === key}
                         type="button"
-                        disabled = {groupVariant === key}
+                        disabled={groupVariant === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly ai-center p-4 bgc-positive br-md">
+        <div class="display--flex gap--md flex-wrap--wrap justify-content--evenly align-items--center padding--md background-color--positive border-radius--md">
             <div class="{groupObj[groupVariant]}">
                 <Button class="{buttonClass}">Default</Button>
                 <Button class="{buttonClass} active">Active</Button>
@@ -102,9 +102,9 @@
                 <Button class="{buttonClass} active" disabled>Act./Dis.</Button>
             </div>
         </div>
-        <div class="d-grid g-4">
-            <div class="d-grid g-4">
-                <b>HTML</b>
+        <div class="display--grid gap--md">
+            <div class="display--grid gap--md">
+                <b>Code</b>
                 <Precode>
                     {
 `<div class="${groupObj[groupVariant]}">

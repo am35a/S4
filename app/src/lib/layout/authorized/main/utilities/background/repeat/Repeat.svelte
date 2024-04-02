@@ -1,53 +1,54 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let bgRepeatObj = {
+    let repeatsObj={
             'default': '',
-            'repeat-x': '-x',
-            'repeat-y': '-y',
-            'space': '-space',
-            'round': '-round',
-            'no-repeat': '-no'
+            'repeat-x': '--x',
+            'repeat-y': '--y',
+            'space': '--space',
+            'round': '--round',
+            'no-repeat': '--no'
         },
-        bgRepeat = 'default'
+        repeat = 'default'
 </script>
 
 <section>
-    <h3 id="backgroundRepeat">Repeat</h3>
+    <h3 id="repeat">Repeat</h3>
     <p>
-        Add the <b>bgr{Object.values(bgRepeatObj).slice(1).join('/')}</b> classes to container to work with background-position.
+        Add the <b>background-repeat{Object.values(repeatsObj).slice(1).join('/')}</b> classes to container to work with background-position.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Sizes</b>
-            <div class="d-flex fw-wrap g-3 ai-center">
-                {#each Object.entries(bgRepeatObj) as [key, value]}
+            <div class="display--flex flex-wrap--wrap gap--sm align-items--center">
+                {#each Object.entries(repeatsObj) as [key, value]}
                     <button
-                        on:click={() => bgRepeat = key}
+                        on:click={() => repeat = key}
                         class="btn {value}"
-                        class:active = {bgRepeat === key}
+                        class:active={repeat === key}
                         type="button"
-                        disabled = {bgRepeat === key}
+                        disabled={repeat === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div
-                    class="bgi bgc-negative-10 bgr{bgRepeatObj[bgRepeat]} bgs ar-16_9"
-                    style="--bgi: url(/images/logo.svg); --bgs: 10em auto"
+                    class="background-image background-color--negative-10 background-repeat{repeatsObj[repeat]} background-size aspect-ratio--16_9"
+                    style="--background-image: url(/images/logo.svg); --background-size: 25% auto"
                 ></div>
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                 {
-`<div class="bgi bgr${bgRepeatObj[bgRepeat]}" style="--bgi: url(...)">
-    // ...
-</div>
+`<div
+    class="background-image background-repeat${repeatsObj[repeat]}"
+    style="--background-image: url(...)"
+> ... </div>
 `
                 }
             </Precode>

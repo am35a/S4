@@ -1,54 +1,68 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
 
-    let widthParamsArr: string[] = [ '', '-0', '-25', '-50', '-75', '-100', '-fit', '-min', '-max' ]
-    let width: number = 100
+    let widthParamsArr = [ '', '--0', '--25', '--50', '--75', '--100', '--fit', '--min', '--max' ],
+        containerWidth = 100
 </script>
 
 <section>
     <h3 id="width">Width</h3>
     <p>
-        The <b>w</b> classes are used to set the width. The prefix <b>m</b> before <b>w</b> sets the minimum value and after <b>w</b> the maximum value of the width.
-        Using <b>--mw/w/wm</b> variable sets custon width. 
-        Full list of the width classes:
+        The <b>width</b> classes are used to set the width. Using <b>--min-width/width/max-width</b> variable
+        sets custon width. Full list of the width classes:
         <br>
-        <span class="d-inline-flex g-4">
-            <span class="d-grid g-2">
+        <span class="display--inline-flex gap--md">
+            <span class="display--grid gap--xs">
                 {#each widthParamsArr as param}
-                    <span class="fw-600">mw{param}</span>
+                    <span class="font-weight--600">min-width{param}</span>
                 {/each}
             </span>
-            <span class="d-grid g-2">
+            <span class="display--grid gap--xs">
                 {#each widthParamsArr as param}
-                    <span class="fw-600">w{param}</span>
+                    <span class="font-weight--600">width{param}</span>
                 {/each}
             </span>
-            <span class="d-grid g-2">
+            <span class="display--grid gap--xs">
                 {#each widthParamsArr as param}
-                    <span class="fw-600">wm{param}</span>
+                    <span class="font-weight--600">max-width{param}</span>
                 {/each}
             </span>
         </span>
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
-        <div class="d-grid">
-            <label for="containerWidth">Width {width}%:</label>
-            <input type="range" name="containerWidth" min={0} max={100} step={1} bind:value={width}>
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
+            <b>Preview</b>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid margin-bottom--xs">
+                    <label for="growContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
+                        <small class="text-align--start">min</small>
+                        <div class="text-align--center">Width {containerWidth}%</div>
+                        <small class="text-align--end">max</small>
+                    </label>
+                    <input
+                        class="frm"
+                        id="growContainerWidth"
+                        min={0}
+                        max={100}
+                        step={1}
+                        bind:value={containerWidth}
+                        type="range"
+                    >
+                </div>
+                <div
+                    class="background-color--negative-10 width"
+                    style="--width: {containerWidth}%"
+                >&nbsp;</div>
+            </div>
         </div>
-        <div class="bgc-negative-10 ta-center py-1 ws-nowrap w" style="--w: {width}%">--w: {width}%</div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+        <div class="display--grid gap--md">
+            <b>Code</b>
+            <Precode>
                 {
-`div class="w" style="--w: ${width}%">--w: ${width}%</div>
+`div class="width" style="--width: ${containerWidth}%"> ... </div>
 `
                 }
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>

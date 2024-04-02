@@ -1,48 +1,75 @@
-<script lang="ts">
-    import { Route, getPathSegments, path, query, hash } from 'svelte-micro'
+<script>
+    import { Route, getPathSegments, path, query, hash, Link } from 'svelte-micro'
 
-    import ArticleAlignment from './alignment/Alignment.svelte'
-    import ArticleColors from './colors/Colors.svelte'
-    import ArticleBackground from './background/Background.svelte'
-    import ArticleBorder from './border/Border.svelte'
-    import ArticleDisplay from './display/Display.svelte'
-    import ArticleFlex from './flex/Flex.svelte'
+    import ArticleAlignment, {anchorsObj as alignmentObj} from './alignment/Alignment.svelte'
+    import ArticleBackground, {anchorsObj as backgroundObj} from './background/Background.svelte'
+    import ArticleBorder, {anchorsObj as borderObj} from './border/Border.svelte'
+    import ArticleDisplay, {anchorsObj as displayObj} from './display/Display.svelte'
+    import ArticleFlex, {anchorsObj as flexObj} from './flex/Flex.svelte'
     import ArticleFloat from './float/Float.svelte'
     import ArticleGrid from './grid/Grid.svelte'
     import ArticleOverflow from './overflow/Overflow.svelte'
     import ArticlePosition from './position/Position.svelte'
     import ArticlePseudos from './pseudos/Pseudos.svelte'
-    import ArticleShadow from './shadow/Shadow.svelte'
+    import ArticleShadow, {anchorsObj as shadowObj} from './shadow/Shadow.svelte'
     import ArticleSizing from './sizing/Sizing.svelte'
     import ArticleSpacing from './spacing/Spacing.svelte'
     import ArticleTypography from './typography/Typography.svelte'
 
-    export let jumpTo: string = ''
+    // export let jumpTo = ''
+
+    let anchorsObj = {
+            alignmentObj: {modulePath: '/alignment', ...alignmentObj},
+            backgroundObj: {modulePath: '/background', ...backgroundObj},
+            borderObj: {modulePath: '/border', ...borderObj},
+            displayObj: {modulePath: '/display', ...displayObj},
+            flexObj: {modulePath: '/flex', ...flexObj},
+            shadowObj: {modulePath: '/shadow', ...shadowObj},
+        }
 </script>
 
 <h1>Utilities</h1>
-{#if getPathSegments($path).length === 1 && getPathSegments($path)[0] === jumpTo}
-    <p>
-        Here will be the utilities description.
-    </p>
-{/if}
+<!-- {#if getPathSegments($path).length === 1 && getPathSegments($path)[0] === jumpTo} -->
+    <Route path="/">
+        <h2>Index</h2>
+        <div class="display--grid gap--sm">
+            {#each Object.entries(anchorsObj) as [_, moduleObj], index}
+                <div class="display--grid gap--xs padding-x--xs">
+                    <div class="font-size--lg">
+                        <span>{index + 1}</span>
+                        <Link
+                            href="{$path}{moduleObj.modulePath}"
+                        >{Object.values(moduleObj.headAnchorObg)}</Link>
+                    </div>
+                    <div class="display--grid gap--xs padding-x--xs">
+                        {#each Object.entries(moduleObj.subAnchorsObj) as [anchor, name], subIndex}
+                            <div>
+                                <span>{index + 1}.{subIndex + 1}</span>
+                                <Link
+                                    href="{$path}{moduleObj.modulePath}#{anchor}"
+                                >{name}</Link>
+                            </div>
+                        {/each}
+                    </div>
+                </div>
+            {/each}
+        </div>
+    </Route>
+<!-- {/if} -->
 
-<Route path="/alignment">
+<Route path={anchorsObj.alignmentObj.modulePath}>
     <svelte:component this={ArticleAlignment}/>
 </Route>
-<Route path="/colors">
-    <svelte:component this={ArticleColors}/>
-</Route>
-<Route path="/background">
+<Route path={anchorsObj.backgroundObj.modulePath}>
     <svelte:component this={ArticleBackground}/>
 </Route>
-<Route path="/border">
+<Route path={anchorsObj.borderObj.modulePath}>
     <svelte:component this={ArticleBorder}/>
 </Route>
-<Route path="/display">
+<Route path={anchorsObj.displayObj.modulePath}>
     <svelte:component this={ArticleDisplay}/>
 </Route>
-<Route path="/flex">
+<Route path={anchorsObj.flexObj.modulePath}>
     <svelte:component this={ArticleFlex}/>
 </Route>
 <Route path="/float">
@@ -60,7 +87,7 @@
 <Route path="/pseudos">
     <svelte:component this={ArticlePseudos}/>
 </Route>
-<Route path="/shadow">
+<Route path={anchorsObj.shadowObj.modulePath}>
     <svelte:component this={ArticleShadow}/>
 </Route>
 <Route path="/sizing">

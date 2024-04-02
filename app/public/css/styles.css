@@ -220,10 +220,10 @@
     color: var(--body-c);
   }
   [theme] body {
-    background-color: var(--body-bgc);
+    background-color: var(--body-background-color);
   }
   html[theme] {
-    background-color: var(--html-bgc);
+    background-color: var(--html-background-color);
   }
   [theme] {
     --size-0: 0;
@@ -253,22 +253,50 @@
     --fs-h4: 1.5em;
     --fs-h5: 1.25em;
     --fs-h6: 1em;
-    --br-xxs: .0625em;
-    --br-xs: .125em;
-    --br-sm: .25em;
-    --br-md: .5em;
-    --br-lg: .75em;
-    --br-xl: 1em;
-    --br-xxl: 1.25em;
-    --br-xxxl: 1.5em;
-    --bs-xxs: .0625em;
-    --bs-xs: .125em;
-    --bs-sm: .25em;
-    --bs-md: .5em;
-    --bs-lg: .75em;
-    --bs-xl: 1em;
-    --bs-xxl: 1.25em;
-    --bs-xxxl: 1.5em;
+    --margin--xxs: .25em;
+    --margin--xs: .5em;
+    --margin--sm: .75em;
+    --margin--md: 1em;
+    --margin--lg: 1.25em;
+    --margin--xl: 1.5em;
+    --margin--xxl: 1.75em;
+    --margin--xxxl: 2em;
+    --padding--xxs: .25em;
+    --padding--xs: .5em;
+    --padding--sm: .75em;
+    --padding--md: 1em;
+    --padding--lg: 1.25em;
+    --padding--xl: 1.5em;
+    --padding--xxl: 1.75em;
+    --padding--xxxl: 2em;
+    --gap--xxs: .25em;
+    --gap--xs: .5em;
+    --gap--sm: .75em;
+    --gap--md: 1em;
+    --gap--lg: 1.25em;
+    --gap--xl: 1.5em;
+    --gap--xxl: 1.75em;
+    --gap--xxxl: 2em;
+    --border-width--min: .0625em;
+    --border-width--thin: thin;
+    --border-width--medium: medium;
+    --border-width--thick: thick;
+    --border-radius--xxs: .0625em;
+    --border-radius--xs: .125em;
+    --border-radius--sm: .25em;
+    --border-radius--md: .5em;
+    --border-radius--lg: .75em;
+    --border-radius--xl: 1em;
+    --border-radius--xxl: 1.25em;
+    --border-radius--xxxl: 1.5em;
+    --box-shadow--xxs: .0625em;
+    --box-shadow--xs: .125em;
+    --box-shadow--sm: .25em;
+    --box-shadow--md: .5em;
+    --box-shadow--lg: .75em;
+    --box-shadow--xl: 1em;
+    --box-shadow--xxl: 1.25em;
+    --box-shadow--xxxl: 1.5em;
     --positive-color: oklch(var(--positive-lightness) var(--positive-chroma) var(--positive-hue));
     --positive-color-90: oklch(var(--positive-lightness) var(--positive-chroma) var(--positive-hue) / 0.9);
     --positive-color-80: oklch(var(--positive-lightness) var(--positive-chroma) var(--positive-hue) / 0.8);
@@ -331,8 +359,8 @@
     --lightness-offset: 0.15;
     --chroma: 0.2;
     --alfa: 0.25;
-    --html-bgc: var(--negative-color);
-    --body-bgc: var(--positive-color-90);
+    --html-background-color: var(--negative-color);
+    --body-background-color: var(--positive-color-90);
     --body-c: var(--negative-color-90);
     --bsc: var(--negative-color-10);
   }
@@ -353,8 +381,8 @@
     --success-hue: 145;
     --warning-hue: 85;
     --error-hue: 25;
-    --html-bgc: var(--negative-color);
-    --body-bgc: var(--positive-color-90);
+    --html-background-color: var(--negative-color);
+    --body-background-color: var(--positive-color-90);
     --body-c: var(--negative-color-90);
     --bsc: var(--positive-color-10);
   }

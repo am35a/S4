@@ -3,30 +3,31 @@
 </script>
 
 <section>
-    <h3 id="backgroundSize">Size</h3>
+    <h3 id="size">Size</h3>
     <p>
-        Add the <b>bgr-cover</b> or <b>bgs-contain</b> classes to container to change background size.
+        Add the <b>background-repeat--cover</b> or <b>background-size--contain</b> classes to container
+        to change background size.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-grid gtc-2 g-3 p-3 bgc-positive br-md">
+            <div class="display--grid grid-template-columns--2 p_grid-template-columns--1 gap--sm padding--sm background-color--positive border-radius--md">
                 <div
-                class="bgi bgc-negative-10 bgs-cover h"
-                style="--bgi: url(/images/logo.svg); --h: 8em"
+                class="background-image background-color--negative-10 background-size--cover height"
+                style="--background-image: url(/images/logo.svg); --height: 8em"
             ></div>
             <div
-                class="bgi bgc-negative-10 bgs-contain h"
-                style="--bgi: url(/images/logo.svg); --h: 8em"
+                class="background-image background-color--negative-10 background-size--contain height"
+                style="--background-image: url(/images/logo.svg); --height: 8em"
             ></div>
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                 {
-`<div class="bgi bgs-cover" style="--bgi: url(...)"></div>
-<div class="bgi bgs-contain" style="--bgi: url(...)"></div>
+`<div class="background-size--cover"> ... </div>
+<div class="background-size--contain"> ... </div>
 `
                 }
             </Precode>

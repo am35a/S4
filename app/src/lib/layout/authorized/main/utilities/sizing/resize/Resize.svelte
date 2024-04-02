@@ -1,32 +1,41 @@
 <script lang="ts">
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
-
 </script>
 
 <section>
     <h3 id="resize">Resize</h3>
     <p>
-        The <b>rs-both</b> class set as default for textarea resizing.
+        The <b>resize--horizontal/vertical/none</b> class can change the resizing options for a text area.
+        Also <b>resize--both/horizontal/vertical</b> classes awaliable for other elements such as the
+        editable div.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
-        <textarea class="rs-horizontal rounded bgc-negative-10 br-md">rs-horizontal</textarea>
-        <textarea class="rs-vertical rounded bgc-negative-10 br-md">rs-vertical</textarea>
-        <textarea class="rs-none rounded bgc-negative-10 br-md">rs-none</textarea>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
+            <b>Preview</b>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <textarea class="resize--horizontal rounded background-color--negative-10 border-radius--sm">resize--horizontal</textarea>
+                <textarea class="resize--vertical rounded background-color--negative-10 border-radius--sm">resize--vertical</textarea>
+                <textarea class="resize--none rounded background-color--negative-10 border-radius--sm">resize--none</textarea>
+            </div>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div
+                    class="resize--both rounded background-color--negative-10 border-radius--sm overflow--auto"
+                    contenteditable="true"
+                >resize--both for div</div>
+            </div>
+        </div>
+        <div class="display--grid gap--md">
+            <b>Code</b>
+            <Precode>
                 {
-`<textarea class="rs-horizontal">rs-horizontal</textarea>
-<textarea class="rs-vertical">rs-vertical</textarea>
-<textarea class="rs-none">rs-none</textarea>
+`<textarea class="resize--horizontal"> ... </textarea>
+<textarea class="resize--vertical"> ... </textarea>
+<textarea class="resize--none"> ... </textarea>
+
+div class="resize--both overflow--auto"> ... </div>
 `
                 }
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>

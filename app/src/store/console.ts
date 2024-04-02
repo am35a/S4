@@ -1,7 +1,7 @@
 import { writable } from "svelte/store"
 
 function f() {
-    let data = {
+    let data={
         isWindowLoad: false as boolean,
         history: [
             {

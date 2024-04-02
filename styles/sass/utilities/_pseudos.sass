@@ -1,5 +1,5 @@
 @mixin _pseudos($orientation, $type)
 
-    // hide container if empty
-    .#{$orientation}#{$type}empty-none:empty
+    // hide container if empty and parentheses must be closed "><"
+    .#{$orientation}#{$type}display--none\:empty:empty
         display: none !important

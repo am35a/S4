@@ -1,22 +1,23 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let bgAttachmentArr = ['scroll', 'fixed', 'local']
+    let attachmentsArr = ['scroll', 'fixed', 'local']
 </script>
 
 <section>
     <h3 id="attachment">Attachment</h3>
     <p>
-        Add the <b>bga-{bgAttachmentArr.join('/')}</b> classes to container to work with background-attachment.
+        Add the <b>background-attachment--{attachmentsArr.join('/')}</b> classes to container to work with
+        background-attachment.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
-                {#each bgAttachmentArr as attachment}
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                {#each attachmentsArr as attachment}
                     <div
-                        class="p-2 h o-auto bgi bgc-negative-10 bga-{attachment}"
-                        style="--bgi: url(/images/logo.svg); --h: 5em"
+                        class="padding--xs height overflow--auto background-image background-color--negative-10 background-attachment--{attachment}"
+                        style="--background-image: url(/images/logo.svg); --height: 5em"
                     >
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur et optio eveniet tempora molestiae animi possimus, dolorem voluptatem itaque error odio tempore expedita iusto consequatur vitae sapiente inventore incidunt voluptatum.</p>
                         <p>Ducimus sit voluptatibus quaerat maxime accusamus, earum similique facere totam voluptas est, dolorum molestias eligendi incidunt nisi? Atque explicabo a neque animi odio veritatis quia quos libero, aspernatur nesciunt laudantium?</p>
@@ -27,14 +28,15 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
-                {#each bgAttachmentArr as attachment}
+                {#each attachmentsArr as attachment}
                     {
-`<div class="bgi bga-${attachment}" style="--bgi: url(...)">
-    // ...
-</div>
+`<div
+    class="background-image background-attachment--${attachment}"
+    style="--background-image: url(...)"
+> ... </div>
 `
                     }
                 {/each}

@@ -1,48 +1,49 @@
-<script lang="ts">
-    import Button from 'component/Button.svelte'
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
 
-    let displayLegacyArr: string[] = ['inline-block', 'inline-flex', 'inline-grid']
-    let displayLegacy: string = displayLegacyArr[0]
+    let legacysArr = ['inline-block', 'inline-flex', 'inline-grid']
+    let legacy = legacysArr[0]
 </script>
 
-<section class="d-grid g-2">
-    <h3 id="displayLegacy">Legacy</h3>
+<section class="display--grid gap--xs">
+    <h3 id="legacy">Legacy</h3>
     <p>
         From CSS 2 the legasy display values welcome still here and set control element of their both side. Equared to two modern two words value: "inline-flex" = "inline flex" and ect.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br-md">
-        <div class="d-flex g-2">
-            {#each displayLegacyArr as values }
-                <Button
-                    class="btn-secondary {displayLegacy === values ? 'active' : ''}"
-                    on:click = {() => displayLegacy = values}
-                    disabled = {displayLegacy === values}
-                >d-{values}</Button>
-            {/each}
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
+            <b>Display</b>
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
+                {#each legacysArr as values }
+                    <button
+                        class="btn"
+                        class:active={legacy === values}
+                        on:click={() => legacy = values}
+                        disabled={legacy === values}
+                    >{values}</button>
+                {/each}
+            </div>
         </div>
-        <div class="d-grid g-2">
-            <div class="d-{displayLegacy}">
-                <span class="bgc-negative-10 p-4">span</span>
-                <div class="bgc-negative-10 p-4">div</div>
+        <div class="display--grid gap--md">
+            <b>Preview</b>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--{legacy}">
+                    <span class="background-color--negative-10 padding--md">span</span>
+                    <div class="background-color--negative-10 padding--md">div</div>
+                </div>
             </div>
         </div>
     </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
-                {
-`<div class="d-${displayLegacy}">
-    <span>span</span>
-    <div>div</div>
+    <div class="display--grid gap--md">
+        <b>Code</b>
+        <Precode>
+            {
+`<div class="display--${legacy}">
+    <span> ... </span>
+    <div> ... </div>
 </div>
 `
-                }
-            </Precode>
-        </svelte:fragment>
-    </Details>
+            }
+        </Precode>
+    </div>
 </section>

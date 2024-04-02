@@ -1,27 +1,22 @@
+$positionProps: static, relative, absolute, fixed, sticky
+
 /*
     position section: position, ltrb and translate contained in classes
     
 @mixin _position($orientation, $type)
-    .#{$orientation}#{$type}p
-        &-static
-            position: static !important
-        &-relative
-            position: relative !important
-        &-absolute
-            position: absolute !important
-        &-fixed
-            position: fixed !important
-        &-sticky
-            position: sticky !important
 
-    @each $item, $value in $placementPositions
-        .#{$orientation}#{$type}#{$item}
+    .#{$orientation}#{$type}position
+        @each $value in $positionProps
+            &--#{$value}
+               position: #{$value} !important
+
+    @each $value in $placementDirections
+        .#{$orientation}#{$type}#{$value}
             @for $i from 0 through 2
-                &-#{$i * 50}
+                &--#{$i * 50}
                     #{$value}: $i * 50% !important
-        .#{$item}
-            #{$value}: var(--#{$orientation}#{$type}#{$item}, var(--#{$item}, initial)) !important
-
+        .#{$value}
+            #{$value}: var(--#{$orientation}#{$type}#{$value}, var(--#{$value}, initial))
         
     // .#{$orientation}#{$type}translate
     //     &-middle

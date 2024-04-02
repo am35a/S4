@@ -3,7 +3,7 @@
     const UID: string = self.crypto.randomUUID()
 </script>
 
-<div class="d-contents">
+<div class="display--contents">
 {#if $$slots.label}
     <label
         for={UID}
@@ -13,7 +13,7 @@
 {/if}
 <input
     id={UID}
-    class:frm = {true}
+    class:frm={true}
     {...$$restProps}
     bind:value
     type="text"

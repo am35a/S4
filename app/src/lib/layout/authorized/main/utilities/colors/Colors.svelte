@@ -1,53 +1,55 @@
-<script lang="ts">
-    let defaultColorsArr: string[] = [ 'positive', 'negative' ]
-    let accentColorsArr: string[] = [ 'primary', 'secondary', 'info', 'success', 'warning', 'error' ]
-    let accentExtraColorsObj = {
-        light: '-l',
-        default: '',
-        dark: '-d',
-        mute: '-m'
-    }
+<script>
+    let defaultColorsArr = [ 'positive', 'negative' ],
+        accentColorsArr = [ 'primary', 'secondary', 'info', 'success', 'warning', 'error' ],
+        accentExtraColorsObj={
+            light: '-l',
+            default: '',
+            dark: '-d',
+            mute: '-m'
+        }
 </script>
 
 <section>
     <h2 id="color">Colors</h2>
     <p>
-        The <b>c-...</b> classes allow you to set default colors for text, strokes, and other default states which use <b>currentColor</b> value.
-        Use <b>c-transparent</b> class to make color or other dependencies transparent.
+        The <b>color--...</b> classes allow you to set default colors for text, strokes, and other default states
+        which use <b>currentColor</b> value. Use <b>color--transparent</b> class to make color or other
+        dependencies transparent.
     </p>
     <p>
-        The classes from <b>c-...-10</b> to <b>c-...-90</b> make color transparent in percentage which point in the end of.
+        The classes from <b>color--...-10</b> to <b>color--...-90</b> make color transparent in percentage which point
+        in the end of.
     </p>
-    <div class="d-grid g-3 gtc-2 mb-4 p-3 bgc-positive br-md">
-        <div class="d-flex fd-column-reverse g-2 bgc-negative">
+    <div class="display--grid gap--sm grid-template-columns--2 margin-bottom--md padding--sm background-color--positive border-radius--md">
+        <div class="display--flex flex-direction--column-reverse gap--xs background-color--negative">
             {#each Array(9) as _, i}
-                <div class="c-{defaultColorsArr[0]}-{(i + 1) * 10} p-4 ta-center">
-                    c-{defaultColorsArr[0]}-{(i + 1) * 10}
+                <div class="color--{defaultColorsArr[0]}-{(i + 1) * 10} padding--md text-align--center">
+                    color--{defaultColorsArr[0]}-{(i + 1) * 10}
                 </div>
             {/each}
-            <div class="c-{defaultColorsArr[0]} p-4 ta-center">
-                c-{defaultColorsArr[0]}
+            <div class="color--{defaultColorsArr[0]} padding--md text-align--center">
+                color--{defaultColorsArr[0]}
             </div>
         </div>
-        <div class="d-flex fd-column-reverse g-2">
+        <div class="display--flex flex-direction--column-reverse gap--xs">
             {#each Array(9) as _, i}
-                <div class="c-{defaultColorsArr[1]}-{(i + 1) * 10} p-4 ta-center">
-                    c-{defaultColorsArr[1]}-{(i + 1) * 10}
+                <div class="color--{defaultColorsArr[1]}-{(i + 1) * 10} padding--md text-align--center">
+                    color--{defaultColorsArr[1]}-{(i + 1) * 10}
                 </div>
             {/each}
-            <div class="c-{defaultColorsArr[1]} p-4 ta-center">
-                c-{defaultColorsArr[1]}
+            <div class="color--{defaultColorsArr[1]} padding--md text-align--center">
+                color--{defaultColorsArr[1]}
             </div>
         </div>
     </div>    
     <p>
-        The <b>c-...-l</b> and <b>c-...-d</b> classes set light or dark shades for accent colors.
-        The <b>c-...-m</b> classes set partly transparent (mute) colors.
+        The <b>color--...-l</b> and <b>color--...-d</b> classes set light or dark shades for accent colors.
+        The <b>color--...-m</b> classes set partly transparent (mute) colors.
     </p>
-    <div class="d-grid g-3 gtc-4 mb-4 p-3 bgc-positive br-md">
-        {#each accentColorsArr as item }
+    <div class="display--grid gap--sm grid-template-columns--4 margin-bottom--md padding--sm background-color--positive border-radius--md">
+        {#each accentColorsArr as item}
             {#each Object.entries(accentExtraColorsObj) as [key, value]}
-                <span class="c-{item}{value}">c-{item}{value}</span>
+                <span class="color--{item}{value}">color--{item}{value}</span>
             {/each}
         {/each}
     </div>

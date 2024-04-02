@@ -5,7 +5,7 @@
 
 <section>
     <h3 id="headings">Headings</h3>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
+    <div class="display--grid gap--sm margin-bottom--md padding--sm background-color--positive border-radius--md">
         <div>
             <h1>Heading - 1</h1>
             <h2>Heading - 2</h2>
@@ -20,7 +20,7 @@
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+            <Precode>
                 {#each {length: 6} as _, i}
                     {
 `<h${i + 1}>Heading - ${i + 1}<h${i + 1}>

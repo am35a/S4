@@ -15,7 +15,7 @@
 </script>
 
 <span
-    class:ico = {true}
+    class:ico={true}
     {...$$restProps}
 ></span>
 

@@ -1,8 +1,8 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let flexWrapArr = ['nowrap', 'wrap', 'wrap-reverse'],
-        flexWrap = flexWrapArr[0]
+    let wrapArr = ['nowrap', 'wrap', 'wrap-reverse'],
+        wrap = wrapArr[0]
 
     let cellNamesArr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'],
         containerWidth = 100,
@@ -12,47 +12,47 @@
 <section>
     <h3 id="wrap">Wrap</h3>
     <p>
-        The <b>fw-{flexWrapArr.join('/')}</b> classes help to change wrap items in a flex container.
+        The <b>font-weight--{wrapArr.join('/')}</b> classes help to change wrap items in a flex container.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Wrap</b>
-            <div class="d-inline-flex fw-wrap g-3">
-                {#each flexWrapArr as values }
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
+                {#each wrapArr as values}
                     <button
                         class="btn"
-                        class:active ={flexWrap === values}
-                        on:click = {() => flexWrap = values}
-                        disabled = {flexWrap === values}
-                    >fw-{values}</button>
+                        class:active={wrap === values}
+                        on:click={() => wrap = values}
+                        disabled={wrap === values}
+                    >font-weight--{values}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Space</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 <button
                     class="btn"
-                    class:active = {isCellShrinked}
-                    on:click = {() => isCellShrinked = !isCellShrinked}
-                    disabled = {isCellShrinked}
-                >fxs-0</button>
+                    class:active={isCellShrinked}
+                    on:click={() => isCellShrinked = !isCellShrinked}
+                    disabled={isCellShrinked}
+                >flex-shrink--0</button>
                 <button
                     class="btn"
-                    class:active = {!isCellShrinked}
-                    on:click = {() => isCellShrinked = !isCellShrinked}
-                    disabled = {!isCellShrinked}
-                >ws-nowrap</button>
+                    class:active={!isCellShrinked}
+                    on:click={() => isCellShrinked = !isCellShrinked}
+                    disabled={!isCellShrinked}
+                >white-space--nowrap</button>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
-                <div class="d-grid mb-2">
-                    <label for="growContainerWidth" class="d-grid gtc-3 ai-end px-2">
-                        <small class="ta-start">min</small>
-                        <div class="ta-center">Width {containerWidth}%</div>
-                        <small class="ta-end">max</small>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid margin-bottom--xs">
+                    <label for="growContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
+                        <small class="text-align--start">min</small>
+                        <div class="text-align--center">Width {containerWidth}%</div>
+                        <small class="text-align--end">max</small>
                     </label>
                     <input
                         class="frm"
@@ -65,29 +65,29 @@
                     >
                 </div>
                 <div
-                    class="d-flex fw-{flexWrap} g-2 p-2 bgc-negative-10 ox-hidden w"
-                    class:ws-nowrap={!isCellShrinked}
-                    style="--w: {containerWidth}%"
+                    class="display--flex flex-wrap--{wrap} gap--xs padding--xs background-color--negative-10 overflow-x--hidden width"
+                    class:white-space--nowrap={!isCellShrinked}
+                    style="--width: {containerWidth}%"
                 >
-                    {#each cellNamesArr as name }
+                    {#each cellNamesArr as name}
                         <div
-                            class="bgc-negative-10 px-2 py-1"
-                            class:fxs-0={isCellShrinked}
+                            class="background-color--negative-10 padding-x--xs padding-y--xxs"
+                            class:flex-shrink--0={isCellShrinked}
                         >{name}</div>
                     {/each}
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                 {
-`<div class="d-flex fw-${flexWrap} ${isCellShrinked ? '' : 'ws-nowrap'}">
-    <div ${isCellShrinked ? 'class="fxs-0"' : ''}>...</div>
-    // ...
+`<div class="display--flex flex-wrap--${wrap} ${isCellShrinked ? '' : 'white-space--nowrap'}">
+    <div ${isCellShrinked ? 'class="flex-shrink--0"' : ''}> ... </div>
+    ...
 </div>
 `
-                }
+               }
             </Precode>
         </div>
     </div>

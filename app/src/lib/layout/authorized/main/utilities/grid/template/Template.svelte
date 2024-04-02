@@ -6,7 +6,7 @@
     import Precode from 'component/Precode.svelte'
     import Details from 'component/Details.svelte'
 
-    let templateObj = {
+    let templateObj={
         rows: 4,
         columns: 4,
         items: 4
@@ -26,11 +26,11 @@
     <Rows />
  
     <!-- <h4 id="template">Template playground</h4> -->
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md d-none">
-        <!-- <input class="h-100" type="range" name="containerHeight" orient="vertical" min="0" max="100" step="1"> -->
+    <div class="display--grid gap--sm margin-bottom--md padding--sm background-color--positive border-radius--md display--none">
+        <!-- <input class="height--100" type="range" name="containerHeight" orient="vertical" min="0" max="100" step="1"> -->
 
         <div></div>
-        <div class="d-grid">
+        <div class="display--grid">
             <!-- <label for="containerWidth">Columns {templateObj.columns}:</label> -->
             <Input
                 name="containerWidth"
@@ -39,7 +39,7 @@
                 type="range"
             />
         </div>
-        <div class="d-grid">
+        <div class="display--grid">
             <!-- <label for="containerWidth">Columns {templateObj.columns}:</label> -->
             <Input
                 name="containerWidth"
@@ -50,19 +50,19 @@
             <!-- orient="vertical" -->
         </div>
         <div>
-            <div class="d-grid gtc-{templateObj.columns} g-4 bgc-negative-10 p-4">
+            <div class="display--grid grid-template-columns--{templateObj.columns} gap--md background-color--negative-10 padding--md">
                 {#each Array(templateObj.items) as _, i}
-                    <div class="bgc-negative-10 px-2 py-1">{i + 1}</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">{i + 1}</div>
                 {/each}
             </div>
         </div>
     </div>
-    <Details class="d-none">
+    <Details class="display--none">
         <svelte:fragment slot="title">
             Code example
         </svelte:fragment>
         <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+            <Precode>
                 {
 `...
 `

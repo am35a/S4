@@ -4,7 +4,7 @@
 
     import Input from 'component/Input.svelte'
 
-    export let accentColorsObj = {}
+    export let accentColorsObj={}
 
     var root = document.querySelector('html')
     let computedRoot = getComputedStyle(root)
@@ -26,7 +26,7 @@
         let oklchCircle = ''
         for (let index = 0; index < 360; index+=10)
             oklchCircle += `, oklch(${accentColorsObj.variablesObj['lightness']} ${accentColorsObj.variablesObj['chroma']} ${index})`
-        return `--bgi: linear-gradient(to right${oklchCircle})`
+        return `--background-image: linear-gradient(to right${oklchCircle})`
     }
 </script>
 
@@ -35,16 +35,16 @@
     <div>
         <div>Lightness:</div>
         <div>
-            <div class="d-grid gtc-3 ai-end px-2">
-                <small class="ta-start">{accentColorsObj.variablesObj['lightness-offset']}</small>
-                <div class="ta-center">{accentColorsObj.variablesObj['lightness']}</div>
-                <small class="ta-end">{1 - accentColorsObj.variablesObj['lightness-offset']}</small>
+            <div class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
+                <small class="text-align--start">{accentColorsObj.variablesObj['lightness-offset']}</small>
+                <div class="text-align--center">{accentColorsObj.variablesObj['lightness']}</div>
+                <small class="text-align--end">{1 - accentColorsObj.variablesObj['lightness-offset']}</small>
             </div>
             <Input
                 bind:value={accentColorsObj.variablesObj['lightness']}
                 min={accentColorsObj.variablesObj['lightness-offset']}
                 max={1 - accentColorsObj.variablesObj['lightness-offset']}
-                class="frm w-100"
+                class="frm width--100"
                 type="range"
                 step=".01"
             />
@@ -53,63 +53,63 @@
         <Input
             bind:value={accentColorsObj.variablesObj['lightness-offset']}
             min="0" max="1"
-            class="frm w-100"
+            class="frm width--100"
             type="range"
             step=".01"
         /> -->
         <div>Chroma:</div>
         <div>
-            <div class="d-grid gtc-3 ai-end px-2">
-                <small class="ta-start">0</small>
-                <div class="ta-center">{accentColorsObj.variablesObj['chroma']}</div>
-                <small class="ta-end">0.37</small>
+            <div class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
+                <small class="text-align--start">0</small>
+                <div class="text-align--center">{accentColorsObj.variablesObj['chroma']}</div>
+                <small class="text-align--end">0.37</small>
             </div>
             <Input
                 bind:value={accentColorsObj.variablesObj['chroma']}
                 min="0" max="0.37"
-                class="frm w-100"
+                class="frm width--100"
                 type="range"
                 step=".01"
             />
         </div>
         <div>Alfa (mute):</div>
         <div>
-            <div class="d-grid gtc-3 ai-end px-2">
-                <small class="ta-start">0</small>
-                <div class="ta-center">{accentColorsObj.variablesObj['alfa']}</div>
-                <small class="ta-end">1</small>
+            <div class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
+                <small class="text-align--start">0</small>
+                <div class="text-align--center">{accentColorsObj.variablesObj['alfa']}</div>
+                <small class="text-align--end">1</small>
             </div>
             <Input
                 bind:value={accentColorsObj.variablesObj['alfa']}
                 min="0" max="1"
-                class="frm w-100"
+                class="frm width--100"
                 type="range"
                 step=".01"
             />
         </div>
         <div>Colors</div>
-        <div class="d-flex fw-wrap g-2">
+        <div class="display--flex flex-wrap--wrap gap--xs">
             {#each accentColorsObj.namesArr as value}
-                <div class="d-grid rg-2 ji-center p-4 bgc-positive br-md fx" style="--fxg: 1; --fxb: 0;">
+                <div class="display--grid rg-2 justify-items--center padding--md background-color--positive border-radius--md flex" style="--flex-grow: 1; --flex-basis: 0;">
                     <Input
                         bind:value={accentColorsObj.variablesObj[`${value}-hue`]}
                         min="0" max="360"
-                        class="frm w-100 bgi"
+                        class="frm width--100 background-image"
                         style="{bgiGradientVar()}"
                         type="range"
                         step="1"
                     />
                     <div>
-                        <div class="ta-center fw-600 text c-{value}">{value}</div>
+                        <div class="text-align--center font-weight--600 text color--{value}">{value}</div>
                         oklch(
                             {accentColorsObj.variablesObj['lightness']}
                             {accentColorsObj.variablesObj['chroma']}
                             {accentColorsObj.variablesObj[`${value}-hue`]}
                         )
                     </div>
-                    <div class="d-flex fw-nowrap ji-center">
-                        <div class="ws-nowrap as-end">
-                            <div class="ta-center fw-600 c-{value}-l">light</div>
+                    <div class="display--flex flex-wrap--nowrap justify-items--center">
+                        <div class="white-space--nowrap align-self--end">
+                            <div class="text-align--center font-weight--600 color--{value}-l">light</div>
                             oklch(
                                 {(+(accentColorsObj.variablesObj['lightness']) + ~~accentColorsObj.variablesObj['lightness-offset'])}
                                 {accentColorsObj.variablesObj['chroma']}
@@ -119,8 +119,8 @@
                         <div>
                             <ColorBox colorName={value} />
                         </div>
-                        <div class="ws-nowrap as-end">
-                            <div class="ta-center fw-600 c-{value}-d">dark</div>
+                        <div class="white-space--nowrap align-self--end">
+                            <div class="text-align--center font-weight--600 color--{value}-d">dark</div>
                             oklch(
                                 {(+(accentColorsObj.variablesObj['lightness']) - ~~accentColorsObj.variablesObj['lightness-offset'])}
                                 {accentColorsObj.variablesObj['chroma']}
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="ta-center fw-600 c-{value}-m">mute</div>
+                        <div class="text-align--center font-weight--600 color--{value}-m">mute</div>
                         oklch(
                             {accentColorsObj.variablesObj['lightness']}
                             {accentColorsObj.variablesObj['chroma']}

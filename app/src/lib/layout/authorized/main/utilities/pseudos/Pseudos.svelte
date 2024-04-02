@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import Empty from './empty/Empty.svelte'
 </script>
 

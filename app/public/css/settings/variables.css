@@ -1,15 +1,15 @@
 :root {
 
-    /* --bgc: oklch(0.9 0.01 255);
+    /* --background-color: oklch(0.9 0.01 255);
     --color: oklch(0.15 0.01 255); */
     /*
-    --body-bgc: oklch(0.9 0.01 255);
+    --body-background-color: oklch(0.9 0.01 255);
     --body-c: oklch(0.15 0.01 255);
 
-    --header-bgc: oklch(0.4 0.03 270); /* oklch(0.30 0.01 255); * /
-    --header-color: var(--body-bgc);
+    --header-background-color: oklch(0.4 0.03 270); /* oklch(0.30 0.01 255); * /
+    --header-color: var(--body-background-color);
     
-    --aside-bgc: oklch(0.3 0.02 270); /* oklch(0.15 0.01 255); * /
-    --aside-submenu-bgc: var(--negative-color-10);
+    --aside-background-color: oklch(0.3 0.02 270); /* oklch(0.15 0.01 255); * /
+    --aside-submenu-background-color: var(--negative-color-10);
     */
 }

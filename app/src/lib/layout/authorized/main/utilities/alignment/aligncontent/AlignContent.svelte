@@ -1,9 +1,9 @@
 <script>
     import Precode from 'component/Precode.svelte'
     
-    let containerTypesObj = {
-        grid: 'd-grid gtc-2',
-        flex: 'd-flex fw-wrap'
+    let containerTypesObj={
+        grid: 'display--grid grid-template-columns--2',
+        flex: 'display--flex flex-wrap--wrap'
     },
         containerType = containerTypesObj.grid
 
@@ -15,68 +15,68 @@
 <section>
     <h3 id="alignContent">Align content</h3>
     <p>
-        The <b>ac-{alignContentArr.join('/')}</b> classes sets the distribution of space between
+        The <b>align-content--{alignContentArr.join('/')}</b> classes sets the distribution of space between
         and around content item of <b>grid</b> and <b>flex</b> containers.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Display</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <button
                         class="btn"
-                        class:active = {containerType === value}
-                        on:click = {() => containerType = value}
-                        disabled = {containerType === value}
+                        class:active={containerType === value}
+                        on:click={() => containerType = value}
+                        disabled={containerType === value}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Align</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each alignContentArr as value}
                     <button
                         class="btn"
-                        class:active = {alignContent === value}
-                        on:click = {() => alignContent = value}
-                        disabled = {alignContent === value}
-                    >ac-{value}</button>
+                        class:active={alignContent === value}
+                        on:click={() => alignContent = value}
+                        disabled={alignContent === value}
+                    >align-content--{value}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="{containerType} g-3 p-3 ac-{alignContent} bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
-                <div class="bgc-negative-10 px-2 py-1">one</div>
-                <div class="bgc-negative-10 px-2 py-1">two</div>
-                <div class="bgc-negative-10 px-2 py-1">three</div>
-                {#if containerType.includes('d-flex')}
-                    <div class="bgc-negative-10 px-2 py-1">four</div>
-                    <div class="bgc-negative-10 px-2 py-1">five</div>
-                    <div class="bgc-negative-10 px-2 py-1">six</div>
-                    <div class="bgc-negative-10 px-2 py-1">seven</div>
-                    <div class="bgc-negative-10 px-2 py-1">eight</div>
-                    <div class="bgc-negative-10 px-2 py-1">nine</div>
-                    <div class="bgc-negative-10 px-2 py-1">ten</div>
-                    <div class="bgc-negative-10 px-2 py-1">eleven</div>
-                    <div class="bgc-negative-10 px-2 py-1">twelve</div>
-                    <div class="bgc-negative-10 px-2 py-1">thirteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">fourteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">fifteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">sixteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">seventeen</div>
-                    <div class="bgc-negative-10 px-2 py-1">eighteen</div>
-                    <div class="bgc-negative-10 px-2 py-1">nineteen</div>
+            <div class="{containerType} gap--sm padding--sm align-content--{alignContent} background-color--positive border-radius--md height" style="--height: 16em; --p_height: 24em;">
+                <div class="background-color--negative-10 padding-x--xs padding-y--xxs">one</div>
+                <div class="background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
+                {#if containerType.includes('display--flex')}
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">four</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">five</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">six</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">seven</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">eight</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">nine</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">ten</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">eleven</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">twelve</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">thirteen</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">fourteen</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">fifteen</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">sixteen</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">seventeen</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">eighteen</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">nineteen</div>
                 {/if}
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                 {
-`<div class="${containerType} ac-${alignContent}">
-    // ...
+`<div class="${containerType} align-content--${alignContent}">
+    ...
 </div>
 `
                 }

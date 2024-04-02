@@ -21,9 +21,9 @@ $displayList: join( $displayList, $displayBox )
     display section: display variants contained in classes
 
 @mixin _display($orientation, $type)
-    .#{$orientation}#{$type}d
+    .#{$orientation}#{$type}display
         @each $item in $displayList
-            &-#{$item}
+            &--#{$item}
                display: #{$item} !important
 
         // @each $item-name, $item-value in $displayModern

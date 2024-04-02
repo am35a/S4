@@ -4,17 +4,17 @@
     import Button from 'component/Button.svelte'
     import Input from 'component/Input.svelte'
 
-    let iconSizeObj = {
+    let iconSizeObj={
         'none': '',
-        'small xx': 'fs-xxs',
-        'small x': 'fs-xs',
-        'small': 'fs-sm',
-        'medium': 'fs-md',
-        'large': 'fs-lg',
-        'large x': 'fs-xl',
-        'large xx': 'fs-xxl',
-        'large xxx': 'fs-xxxl',
-        'expand': 'w-100 h-100'
+        'small xx': 'font-size--xxs',
+        'small x': 'font-size--xs',
+        'small': 'font-size--sm',
+        'medium': 'font-size--md',
+        'large': 'font-size--lg',
+        'large x': 'font-size--xl',
+        'large xx': 'font-size--xxl',
+        'large xxx': 'font-size--xxxl',
+        'expand': 'width--100 height--100'
     }
     let iconSize = '',
         iconBgColor = '',
@@ -31,7 +31,7 @@
         }
     }
 
-    let preCodeObj = {
+    let preCodeObj={
         classes: '',
         styles: ''
     }
@@ -45,31 +45,31 @@
             preCodeObj.classes += ` ${iconSize}`
 
         if (iconBgColor) {
-            preCodeObj.classes += ` bgc`
-            preCodeObj.styles += ` --bgc:${iconBgColor};`
+            preCodeObj.classes += ` background-color`
+            preCodeObj.styles += ` --background-color:${iconBgColor};`
         }
 
         if (iconColor) {
-            preCodeObj.classes += ` c`
-            preCodeObj.styles += ` --c:${iconColor};`
+            preCodeObj.classes += ` color`
+            preCodeObj.styles += ` --color:${iconColor};`
         }
     }
 </script>
 
 <section>
     <h2 id="buttons">Icons</h2>
-    <div class="d-grid g-5">
+    <div class="display--grid gap--lg">
         <p>
             Lightweight <Icon /> responsive vector icons with cache available.
             The  icon sizes directly depend on the font size and the container in which the icon is placed.
-            Colors are changed in two ways - using the <b>bgc-...</b> or <b>c-...</b> classes.
+            Colors are changed in two ways - using the <b>background-color--...</b> or <b>color--...</b> classes.
         </p>
-        <div class="alert alert-warning js-start">
-            <span class="ico fs-xl" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
-            Pay attention! The <b>bgc-...</b> and <b>c-...</b> are incompatible in one case.
+        <div class="alert alert-warning justify-self--start">
+            <span class="ico font-size--xl" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
+            Pay attention! The <b>background-color--...</b> and <b>color--...</b> are incompatible in one case.
         </div>
 
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Background color</b>
             <div>
                 <Input
@@ -79,7 +79,7 @@
                 />
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Color</b>
             <div>
                 <Input
@@ -89,29 +89,29 @@
                 />
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Size</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(iconSizeObj) as [key, value]}
                     <Button
                         class={iconSize === value ? 'active' : ''}
-                        on:click = {() => iconSize = value}
+                        on:click={() => iconSize = value}
                         disabled={iconSize === value}
                     >{key}</Button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md h" style="--h: 10em">
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md height" style="--height: 10em">
                 <Icon
-                    class="{iconSize} m-auto {iconBgColor ? 'bgc' : ''} {iconColor ? 'c' : ''}"
-                    style="{iconBgColor ? `--bgc:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"
+                    class="{iconSize} margin--auto {iconBgColor ? 'background-color' : ''} {iconColor ? 'color' : ''}"
+                    style="{iconBgColor ? `--background-color:${iconBgColor};` : ''} {iconColor ? `--color:${iconColor};` : ''}"
                     name="ghost"
                 />
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Svelte</b>
             <Precode>
                     {
@@ -120,8 +120,8 @@
                     }
             </Precode>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                     {
 `<span

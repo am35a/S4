@@ -1,48 +1,49 @@
-<script lang="ts">
-    import Button from 'component/Button.svelte'
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
 
-    let displayOutsideArr: string[] = ['inline', 'block']
-    let displayOutside: string = displayOutsideArr[0]
+    let displaysArr = ['inline', 'block']
+    let display = displaysArr[1]
 </script>
 
-<section class="d-grid g-2">
-    <h3 id="displayOutside">Outside</h3>
+<section class="display--grid gap--xs">
+    <h3 id="outside">Outside</h3>
     <p>
         These display values override the outside behavior of the elements.
     </p>
-    <div class="d-grid g-2 p-2 bgc-positive br-md">
-        <div class="d-flex g-2">
-            {#each displayOutsideArr as values }
-                <Button
-                    class="btn-secondary {displayOutside === values ? 'active' : ''}"
-                    on:click = {() => displayOutside = values}
-                    disabled = {displayOutside === values}
-                >d-{values}</Button>
-            {/each}
-        </div>
-        <div class="d-grid g-2">
-            <div>
-                <span class="d-{displayOutside} bgc-negative-10 p-4">span</span>
-                <div class="d-{displayOutside} bgc-negative-10 p-4">div</div>
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
+            <b>Display</b>
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
+                {#each displaysArr as values }
+                    <button
+                        class="btn"
+                        class:active={display === values}
+                        on:click={() => display = values}
+                        disabled={display === values}
+                    >{values}</button>
+                {/each}
             </div>
         </div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+        <div class="display--grid gap--md">
+            <b>Preview</b>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div>
+                    <span class="display--{display} background-color--negative-10 padding--md">span</span>
+                    <div class="display--{display} background-color--negative-10 padding--md">div</div>
+                </div>
+            </div>
+        </div>
+        <div class="display--grid gap--md">
+            <b>Code</b>
+            <Precode>
                 {
 `<div>
-    <span class="d-${displayOutside}">span</span>
-    <div class="d-${displayOutside}">div</div>
+    <span class="display--${display}">span</span>
+    <div class="display--${display}">div</div>
 </div>
 `
                 }
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>

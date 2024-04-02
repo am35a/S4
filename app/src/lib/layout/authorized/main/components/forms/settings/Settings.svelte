@@ -1,18 +1,18 @@
 <script>
-    let fontSizesObj = {
+    let fontSizesObj={
         Default: '',
-        xxs: 'fs-xxs',
-        xs: 'fs-xs',
-        sm: 'fs-sm',
-        md: 'fs-md',
-        lg: 'fs-lg',
-        xl: 'fs-xl',
-        xxl: 'fs-xxl',
-        xxxl: 'fs-xxxl'
+        xxs: 'font-size--xxs',
+        xs: 'font-size--xs',
+        sm: 'font-size--sm',
+        md: 'font-size--md',
+        lg: 'font-size--lg',
+        xl: 'font-size--xl',
+        xxl: 'font-size--xxl',
+        xxxl: 'font-size--xxxl'
     }
     let fontSize = 'Default'
 
-    let inputsObj = {
+    let inputsObj={
         variantsObj: {
             Default: '',
             Alt: 'alt',
@@ -55,45 +55,45 @@
 
 <section>
     <h3>Settings</h3>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(inputsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => inputVariant = key}
                         class="btn btn-{value}"
-                        class:active = {inputVariant === key}
+                        class:active={inputVariant === key}
                         type="button"
-                        disabled = {inputVariant === key}
+                        disabled={inputVariant === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(inputsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => inputColor = key}
                         class="btn btn{value}"
-                        class:active = {inputColor === key}
+                        class:active={inputColor === key}
                         type="button"
-                        disabled = {inputColor === key}
+                        disabled={inputColor === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Sizes</b>
-            <div class="d-flex fw-wrap g-3 ai-center">
+            <div class="display--flex flex-wrap--wrap gap--sm align-items--center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}
                         class="btn {value}"
-                        class:active = {fontSize === key}
+                        class:active={fontSize === key}
                         type="button"
-                        disabled = {fontSize === key}
+                        disabled={fontSize === key}
                     >{key}</button>
                 {/each}
             </div>

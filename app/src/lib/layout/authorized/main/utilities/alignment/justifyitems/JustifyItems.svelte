@@ -7,32 +7,32 @@
 <section>
     <h3 id="justifyItems">Justify items</h3>
     <p>
-        The <b>ji-{Object.values(justifyItemsArr).join('/')}</b> classes work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.
+        The <b>justify-items--{Object.values(justifyItemsArr).join('/')}</b> classes work for all items inside container, giving them all a default way of justifying each box along the appropriate axis.
     </p>
-    <div class="d-grid g-5">
-        <div class="alert alert-warning js-start">
-            <span class="ico fs-xl" style="--ico-image: url(/icons/alert-triangle.svg)"></span>
+    <div class="display--grid gap--lg">
+        <div class="alert alert-warning justify-self--start">
+            <span class="ico font-size--xl" style="--ico-image: url(/icons/alert-triangle.svg)"></span>
             The properties works only for <b>grid</b> containers!
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
-                {#each justifyItemsArr as item }
-                    <div class="d-grid gtc-2 g-2 bgc-negative-10 p-2 ji-{item}">
-                        <div class="bgc-negative-10 px-2 py-1">one</div>
-                        <div class="bgc-negative-10 px-2 py-1">two</div>
-                        <div class="bgc-negative-10 px-2 py-1">three</div>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                {#each justifyItemsArr as item}
+                    <div class="display--grid grid-template-columns--2 gap--xs background-color--negative-10 padding--xs justify-items--{item}">
+                        <div class="background-color--negative-10 padding-x--xs padding-y--xxs">one</div>
+                        <div class="background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                        <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                     </div>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
-                {#each justifyItemsArr as item }
+                {#each justifyItemsArr as item}
                     {
-`<div class="d-grid ji-${item}">
-    // ...
+`<div class="display--grid justify-items--${item}">
+    ...
 </div>
 `
                     }

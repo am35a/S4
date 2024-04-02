@@ -4,7 +4,7 @@
     import Dropdown from 'component/Dropdown.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let dropdownObj = {
+    let dropdownObj={
         positionObj: [
             'right top',
             'right center',
@@ -23,7 +23,7 @@
     }
     let contentPosition = dropdownObj.positionObj[6]
 
-    let buttonsObj = {
+    let buttonsObj={
         variantsObj: {
             Default: '',
             Alt: 'alt',
@@ -75,43 +75,43 @@
     <p>
         ...
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
                         class="btn btn-{value}"
-                        class:active = {buttonVariant === key}
+                        class:active={buttonVariant === key}
                         type="button"
-                        disabled = {buttonVariant === key}
+                        disabled={buttonVariant === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
                         class="btn btn{value}"
-                        class:active = {buttonColor === key}
+                        class:active={buttonColor === key}
                         type="button"
-                        disabled = {buttonColor === key}
+                        disabled={buttonColor === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Icon</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.iconObj) as [key, value]}
                     <Button
                         class="{value === 2 ? 'btn-ico' : ''} {buttonIcon === key ? 'active' : ''}"
                         on:click={() => buttonIcon = key}
-                        disabled = {buttonIcon === key}
+                        disabled={buttonIcon === key}
                     >
                         {#if value}
                             <Icon name="ghost"/>
@@ -123,9 +123,9 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Position</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each dropdownObj.positionObj as position, i}
                     <Button
                         on:click="{() => contentPosition = dropdownObj.positionObj[i]}"
@@ -135,8 +135,8 @@
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 p-4 bgc-positive br-md" style="height: 10em;">
-            <div class="d-grid g-3 m-auto">
+        <div class="display--flex gap--md padding--md background-color--positive border-radius--md" style="height: 10em;">
+            <div class="display--grid gap--sm margin--auto">
                 <Dropdown class="drpdwn-hover">
                     <Button 
                         slot="btn"
@@ -152,8 +152,8 @@
                     </Button>
                     <div
                         slot="content"
-                        class="d-grid g-2 w p-2 bgc-positive br-md border border-negative-30"
-                        style="--w: 16em"
+                        class="display--grid gap--xs width padding--xs background-color--positive border-radius--md border-style--solid border-color--negative-30"
+                        style="--width: 16em"
                     >
                         Position:
                         <div>{contentPosition}</div>
@@ -174,18 +174,18 @@
                     class="drp-content"
                 >
                     <div
-                        class="d-grid g-2 w p-2 bgc-positive br-md border border-negative-30"
-                        style="--w: 16em"
+                        class="display--grid gap--xs width padding--xs background-color--positive border-radius--md border-style--solid border-color--negative-30"
+                        style="--width: 16em"
                     >
-                        <button class="btn jc-start px-1" type="reset">
+                        <button class="btn justify-content--start padding-x--xxs" type="reset">
                             <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>
                             <span class="truncate">Color palette</span>
                         </button>
-                        <button class="btn jc-start px-1" type="reset">
+                        <button class="btn justify-content--start padding-x--xxs" type="reset">
                             <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>
                             <span class="truncate">Color palette</span>
                         </button>
-                        <button class="btn jc-start px-1" type="reset">
+                        <button class="btn justify-content--start padding-x--xxs" type="reset">
                             <span class="ico ico-ghost" style="--ico-image: url(/icons/palette.svg);">&nbsp;</span>
                             <span class="truncate">Color palette</span>
                         </button>

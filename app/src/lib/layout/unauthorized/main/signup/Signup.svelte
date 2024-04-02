@@ -16,21 +16,21 @@
 </script>
 
 <section
-    class="d-grid g-2 p-2 bgc-positive br-md bs-xs border border-negative-30 m-auto w"
-    style="--w: 18em"
+    class="display--grid gap--xs padding--xs background-color--positive border-radius--md box-shadow--xs border-style--solid border-color--negative-30 margin--auto width"
+    style="--width: 18em"
 >
-    <div class="d-grid g-1">
+    <div class="display--grid gap--xxs">
         Sign up
     </div>
-    <div class="d-grid g-2 gtc-2">
+    <div class="display--grid gap--xs grid-template-columns--2">
         <Button
-            class="fs-sm"
+            class="font-size--sm"
             on:click={() => router.push('/signin')}
         >
             Sign In
         </Button>
         <Button
-            class="fs-sm"
+            class="font-size--sm"
             on:click={() => router.push('/forgotpass')}
         >
             Forgotten pass?

@@ -1,51 +1,52 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let bgClipArr = ['border', 'padding', 'content', 'text']
-    let containerClasses = 'bgr-round'
+    let clipsArr = ['border', 'padding', 'content', 'text'],
+        containerClasses = 'background-repeat--round'
 </script>
 
 <section>
     <h3 id="clip">Clip</h3>
     <p>
-        The <b>bga-{bgClipArr.join('/')}</b> property sets made the background extends underneath its
-        border box, padding box, content box or text border cliping.
+        The <b>background-clip--{clipsArr.join('/')}</b> property sets made the background extends
+        underneath its border box, padding box, content box or text border cliping.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Customize container</b>
-            <div class="d-grid">
+            <div class="display--grid">
                 <input
                     class="frm"
                     bind:value={containerClasses}
                     type="text"
                     placeholder="Type utility classes to customizing the container"
                 >
-                <div class="fs-sm">
-                    Play with the <b>bgr-no</b>, <b>bgo-border</b> or other background classes
-                    to view different results.
+                <div class="font-size--sm">
+                    Play with the <b>background-repeat--no</b>, <b>background-origin--border</b> or
+                    other background classes to view different results.
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
-                {#each bgClipArr as clip}
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                {#each clipsArr as clip}
                     <div
-                        class="p-4 fs-xxxl fw-700 bgi bgc-negative-10 bgc-{clip} {containerClasses}"
-                        style="--bgi: url(/images/logo.svg); border: 1em dashed;"
+                        class="padding--md font-size--xxxl font-weight--700 background-image background-color--negative-10 background-clip--{clip} {containerClasses}"
+                        style="--background-image: url(/images/logo.svg); border: 1em dashed;"
                     >Lorem ipsum dolor sit amet.</div>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
-                {#each bgClipArr as clip}
+                {#each clipsArr as clip}
                     {
-`<div class="bgi bgc-${clip} ${containerClasses}" style="--bgi: url(...)">
-    // ...
-</div>
+`<div
+    class="background-image background-clip--${clip} ${containerClasses}"
+    style="--background-image: url(...)"
+> ... </div>
 `
                     }
                 {/each}

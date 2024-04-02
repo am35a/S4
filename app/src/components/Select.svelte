@@ -3,9 +3,9 @@
 </script>
 
 <select
-    class:frm = {true}
+    class:frm={true}
     {...$$restProps}
-    placeholder = {$$restProps.placeholder ? $$restProps.placeholder : `Select the ${$$restProps.name}`}
+    placeholder={$$restProps.placeholder ? $$restProps.placeholder : `Select the ${$$restProps.name}`}
 >
     <slot></slot>
 </select>
@@ -21,7 +21,7 @@
             min-width: 0
             background-color: var(--positive-color)
             border: none
-            border-radius: var(--br-sm)
+            border-radius: var(--border-radius--sm)
             color: currentColor
             line-height: var(--lh)
             outline-width: calc(var(--size-1) * .25)
@@ -40,7 +40,7 @@
                     display: inline-grid
                     align-content: center
                     padding: 0 var(--size-2)
-                    border-radius: var(--br-xs)
+                    border-radius: var(--border-radius--xs)
                     background-color: var(--positive-color)
                 &:not(:disabled) > option
                     &:checked

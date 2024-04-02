@@ -3,20 +3,20 @@
     import Button from 'component/Button.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let fontSizesObj = {
+    let fontSizesObj={
         Default: '',
-        xxs: 'fs-xxs',
-        xs: 'fs-xs',
-        sm: 'fs-sm',
-        md: 'fs-md',
-        lg: 'fs-lg',
-        xl: 'fs-xl',
-        xxl: 'fs-xxl',
-        xxxl: 'fs-xxxl'
+        xxs: 'font-size--xxs',
+        xs: 'font-size--xs',
+        sm: 'font-size--sm',
+        md: 'font-size--md',
+        lg: 'font-size--lg',
+        xl: 'font-size--xl',
+        xxl: 'font-size--xxl',
+        xxxl: 'font-size--xxxl'
     }
     let fontSize = 'Default'
 
-    let buttonsObj = {
+    let buttonsObj={
         typeObj: {
             Default: '',
             Submit: 'submit',
@@ -76,43 +76,43 @@
     <h2 id="buttons">Buttons</h2>
     <p>S4 buttons have three variants and seven colors. From these views, you can get any other kind of buttons.</p>
 
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => buttonVariant = key}
                         class="btn btn-{value}"
-                        class:active = {buttonVariant === key}
+                        class:active={buttonVariant === key}
                         type="button"
-                        disabled = {buttonVariant === key}
+                        disabled={buttonVariant === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => buttonColor = key}
                         class="btn btn{value}"
-                        class:active = {buttonColor === key}
+                        class:active={buttonColor === key}
                         type="button"
-                        disabled = {buttonColor === key}
+                        disabled={buttonColor === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Icon</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.iconObj) as [key, value]}
                     <Button
                         class="{value === 2 ? 'btn-ico' : ''} {buttonIcon === key ? 'active' : ''}"
                         on:click={() => buttonIcon = key}
-                        disabled = {buttonIcon === key}
+                        disabled={buttonIcon === key}
                     >
                         {#if value}
                             <Icon name="ghost"/>
@@ -124,37 +124,37 @@
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Sizes</b>
-            <div class="d-flex fw-wrap g-3 ai-center">
+            <div class="display--flex flex-wrap--wrap gap--sm align-items--center">
                 {#each Object.entries(fontSizesObj) as [key, value]}
                     <button
                         on:click={() => fontSize = key}
                         class="btn {value}"
-                        class:active = {fontSize === key}
+                        class:active={fontSize === key}
                         type="button"
-                        disabled = {fontSize === key}
+                        disabled={fontSize === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Types</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(buttonsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => buttonType = key}
                         class="btn btn{value}"
-                        class:active = {buttonType === key}
+                        class:active={buttonType === key}
                         type="button"
-                        disabled = {buttonType === key}
+                        disabled={buttonType === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-flex g-4 fw-wrap jc-evenly p-4 bgc-positive br-md">
-            <div class="d-grid gtc-2 g-3">
-                <b class="js-end as-center">Default</b>
+        <div class="display--flex gap--md flex-wrap--wrap justify-content--evenly padding--md background-color--positive border-radius--md">
+            <div class="display--grid grid-template-columns--2 gap--sm">
+                <b class="justify-self--end align-self--center">Default</b>
                 <div>
                     <button class="btn {buttonClass}" type="button">
                         {#if buttonsObj.iconObj[buttonIcon]}
@@ -165,7 +165,7 @@
                         {/if}
                     </button>
                 </div>
-                <b class="js-end as-center">Active</b>
+                <b class="justify-self--end align-self--center">Active</b>
                 <div>
                     <button class="btn {buttonClass} active">
                         {#if buttonsObj.iconObj[buttonIcon]}
@@ -176,7 +176,7 @@
                         {/if}
                     </button>
                 </div>
-                <b class="js-end as-center">Disabled</b>
+                <b class="justify-self--end align-self--center">Disabled</b>
                 <div>
                     <button class="btn {buttonClass}" type="button" disabled>
                         {#if buttonsObj.iconObj[buttonIcon]}
@@ -187,7 +187,7 @@
                         {/if}
                     </button>
                 </div>
-                <b class="js-end as-center">Active & Disabled</b>
+                <b class="justify-self--end align-self--center">Active & Disabled</b>
                 <div>
                     <button class="btn {buttonClass} active" type="button" disabled>
                         {#if buttonsObj.iconObj[buttonIcon]}
@@ -200,8 +200,8 @@
                 </div>
             </div>
         </div>        
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                 {
 `// Default
@@ -219,7 +219,7 @@
                 }
             </Precode>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Svelte</b>
             <Precode>
                 {

@@ -7,19 +7,30 @@
     import SectionAlignItems from './alignitems/AlignItems.svelte'
     import SectionAlignSelf from './alignself/AlignSelf.svelte'
 
-    let alignmentsObj = {
-        verticalAlignment: 'Vertical alignment',
-        justifyContent: 'Justify content',
-        justifyItems: 'Justify items',
-        justifySelf: 'Justify self',
-        alignContent: 'Align content',
-        alignItems: 'Align items',
-        alignSelf: 'Align self'
-    }
+    import AnchorNavigation from 'src/lib/layout/components/AnchorNavigation.svelte'
+</script>
+
+<script context="module">
+    export const anchorsObj = {
+        headAnchorObg: {
+            alignment: 'Alignment'
+        },
+        subAnchorsObj: {
+            verticalAlignment: 'Vertical alignment',
+            justifyContent: 'Justify content',
+            justifyItems: 'Justify items',
+            justifySelf: 'Justify self',
+            alignContent: 'Align content',
+            alignItems: 'Align items',
+            alignSelf: 'Align self'
+        }
+	}
 </script>
 
 <article>
-    <h2 id="alignment">Alignment</h2>
+    <h2 id={Object.keys(anchorsObj.headAnchorObg)}>
+        {Object.values(anchorsObj.headAnchorObg)}
+    </h2>
     <SectionVerticalAlign />
     <SectionJustifyContent />
     <SectionJustifyItems />
@@ -27,20 +38,8 @@
     <SectionAlignContent />
     <SectionAlignItems />
     <SectionAlignSelf />
-    <div class="p-sticky b-0 p-2">
-        <div class="d-flex g-1 bgc-positive p-2 w-fit ms-auto br-md bs-sm border border-negative-30 fs-sm">
-            <div class="d-flex fw-wrap g-1 w-fit ms-auto fs-sm">
-                {#each Object.entries(alignmentsObj) as [key, value]}
-                    <button
-                        class="btn btn-primary btn-alt"
-                        on:click={() => window.open(`#${key}`, '_self')}
-                    >{value}</button>
-                {/each}
-            </div>
-            <button
-                class="btn btn-ico fs-sm"
-                on:click={() => window.open('#alignment', '_self')}
-            ><span class="ico" style="--ico-image: url(/icons/arrow-top-big.svg);"></span></button>
-        </div>
+
+    <div class="position--sticky bottom--0 padding--xs">
+        <AnchorNavigation anchorsObj={anchorsObj.subAnchorsObj} />
     </div>
 </article>

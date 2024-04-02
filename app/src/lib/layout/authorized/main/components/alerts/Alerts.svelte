@@ -2,7 +2,7 @@
     import Alert from 'component/Alert.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let alertsObj = {
+    let alertsObj={
         variantsObj: {
             Default: '',
             Alt: 'alt',
@@ -55,59 +55,59 @@
     <p>
         To create self destroyed alerts, add the class name - <b>alert-closable</b>.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(alertsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => alertVariant = key}
                         class="btn btn-{value}"
-                        class:active = {alertVariant === key}
+                        class:active={alertVariant === key}
                         type="button"
-                        disabled = {alertVariant === key}
+                        disabled={alertVariant === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(alertsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => alertColor = key}
                         class="btn btn{value}"
-                        class:active = {alertColor === key}
+                        class:active={alertColor === key}
                         type="button"
-                        disabled = {alertColor === key}
+                        disabled={alertColor === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Type</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(alertsObj.typeObj) as [key, value]}
                     <button
                         on:click={() => alertType = key}
                         class="btn btn{value}"
-                        class:active = {alertType === key}
+                        class:active={alertType === key}
                         type="button"
-                        disabled = {alertType === key}
+                        disabled={alertType === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-flex p-4 bgc-positive br-md">
-                <Alert class="{alertClass} mb-0">
+            <div class="display--flex padding--md background-color--positive border-radius--md">
+                <Alert class="{alertClass} margin-bottom--none">
                     Click the close icon in the top right corner to destroy the block of alert message.
                 </Alert>
             </div>        
         </div>
-        <div class="d-grid g-4">
-            <div class="d-grid g-4">
+        <div class="display--grid gap--md">
+            <div class="display--grid gap--md">
                 <b>Svelte</b>
                 <Precode>
                     {

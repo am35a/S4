@@ -8,7 +8,7 @@
             <img class="logo-full" src="../images/logo.svg" alt="{$appData.title}">
         </div>
         <div class="title">Демонстрационный стенд</div>
-        <form class="form d-grid g-4">
+        <form class="form display--grid gap--md">
             <div>
                 <label for="username" class="tf_form-label">Логин</label>
                 <input id="username" class="tf_form-control tf_form-control-secondary" name="username" placeholder="логин" type="text">
@@ -17,7 +17,7 @@
                 <label for="password" class="tf_form-label">Пароль</label>
                 <input id="password" class="tf_form-control tf_form-control-secondary" name="password" placeholder="пароль" type="password">
             </div>
-            <!-- <div class="c-error"><i class="fas fa-exclamation-circle"></i> Некорректные данные для входа в систему</div> -->
+            <!-- <div class="color--error"><i class="fas fa-exclamation-circle"></i> Некорректные данные для входа в систему</div> -->
             <button class="tf_btn tf_btn-primary" type="submit">Войти</button>
         </form>
     </div>

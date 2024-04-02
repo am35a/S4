@@ -7,34 +7,34 @@
 <section>
     <h3 id="justifySelf">Justify self</h3>
     <p>
-        The <b>js-{Object.values(justifySelfArr).join('/')}</b> utilities sets the way a box is
+        The <b>justify-self--{Object.values(justifySelfArr).join('/')}</b> utilities sets the way a box is
         justified inside its alignment container along the appropriate axis.
     </p>
-    <div class="d-grid g-5">
-        <div class="alert alert-warning js-start">
-            <span class="ico fs-xl" style="--ico-image: url(/icons/alert-triangle.svg)"></span>
+    <div class="display--grid gap--lg">
+        <div class="alert alert-warning justify-self--start">
+            <span class="ico font-size--xl" style="--ico-image: url(/icons/alert-triangle.svg)"></span>
             The properties works only for <b>grid</b> containers!
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
-                {#each justifySelfArr as item }
-                    <div class="d-grid gtc-2 g-2 bgc-negative-10 p-2">
-                        <div class="bgc-negative-10 px-2 py-1 js-{item}">one</div>
-                        <div class="bgc-negative-10 px-2 py-1">two</div>
-                        <div class="bgc-negative-10 px-2 py-1">three</div>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                {#each justifySelfArr as item}
+                    <div class="display--grid grid-template-columns--2 gap--xs background-color--negative-10 padding--xs">
+                        <div class="background-color--negative-10 padding-x--xs padding-y--xxs justify-self--{item}">one</div>
+                        <div class="background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                        <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                     </div>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
-                {#each justifySelfArr as item }
+                {#each justifySelfArr as item}
                     {
-`<div class="d-grid">
-    <div class="js-${item}">one</div>
-    // ...
+`<div class="display--grid">
+    <div class="justify-self--${item}">one</div>
+    ...
 </div>
 `
                     }

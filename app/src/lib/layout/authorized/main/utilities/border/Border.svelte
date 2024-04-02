@@ -1,46 +1,39 @@
-<script lang="ts">
+<script>
     import SectionWidth from './width/Width.svelte'
+    import SectionStyle from './style/Style.svelte'
     import SectionColor from './color/Color.svelte'
     import SectionRadius from './radius/Radius.svelte'
+    import SectionSpacing from './spacing/Spacing.svelte'
+
+    import AnchorNavigation from 'src/lib/layout/components/AnchorNavigation.svelte'
+</script>
+
+<script context="module">
+    export const anchorsObj = {
+        headAnchorObg: {
+            border: 'Border'
+        },
+        subAnchorsObj: {
+            width: 'Width',
+            style: 'Style',
+            color: 'Color',
+            radius: 'Radius',
+            spacing: 'Spacing'
+        }
+	}
 </script>
 
 <article>
-
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
-        <div class="d-flex fw-wrap g-2">
-            <div
-                class="bgc-negative-10 p-4
-                    brdr
-                "
-            >border</div>
-            <div
-                class="bgc-negative-10 p-4
-                    brdr-top
-                "
-            >border-top</div>
-            <div
-                class="bgc-negative-10 p-4
-                    brdr-right
-                "
-            >border-right</div>
-            <div
-                class="bgc-negative-10 p-4
-                    brdr-bottom
-                "
-            >border-bottom</div>
-            <div
-                class="bgc-negative-10 p-4
-                    brdr-left
-                "
-            >border-left</div>
-        </div>
-    </div>
-
-
-
-    <hr>
-    <h2 id="border">Border</h2>
+    <h2 id={Object.keys(anchorsObj.headAnchorObg)}>
+        {Object.values(anchorsObj.headAnchorObg)}
+    </h2>
     <SectionWidth />
+    <SectionStyle />
     <SectionColor />
     <SectionRadius />
+    <SectionSpacing />
+
+    <div class="position--sticky bottom--0 padding--xs">
+        <AnchorNavigation anchorsObj={anchorsObj.subAnchorsObj} />
+    </div>
 </article>

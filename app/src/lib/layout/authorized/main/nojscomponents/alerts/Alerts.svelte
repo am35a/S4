@@ -1,7 +1,7 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let alertsObj = {
+    let alertsObj={
         variantsObj: {
             Default: '',
             Alt: 'alt',
@@ -45,40 +45,40 @@
     <p>
         S4 alerts are available in classes <b>alert alert-...</b>, <b>alert alert-alt...</b> and <b>alert alert-outline...</b> in various visual solutions.
     </p>
-    <div class="d-grid g-5">
+    <div class="display--grid gap--lg">
         <div class="alert alert-info">
             <span class="ico" style="--ico-image:url(/icons/info-circle.svg);">&nbsp;</span>
             Pay attention: Self-closing alerts are available as svelte components. Learn more about them by the <a href="/components/alerts">link</a>.
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Variants</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(alertsObj.variantsObj) as [key, value]}
                     <button
                         on:click={() => alertVariant = key}
                         class="btn btn-{value}"
-                        class:active = {alertVariant === key}
+                        class:active={alertVariant === key}
                         type="button"
-                        disabled = {alertVariant === key}
+                        disabled={alertVariant === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Colors</b>
-            <div class="d-flex fw-wrap g-3">
+            <div class="display--flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(alertsObj.colorsObj) as [key, value]}
                     <button
                         on:click={() => alertColor = key}
                         class="btn btn{value}"
-                        class:active = {alertColor === key}
+                        class:active={alertColor === key}
                         type="button"
-                        disabled = {alertColor === key}
+                        disabled={alertColor === key}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Customize</b>
             <input
                 id="customClasses"
@@ -87,17 +87,17 @@
                 placeholder="Type utility classes to customizing the component"
             >
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-flex p-4 bgc-positive br-md">
+            <div class="display--flex padding--md background-color--positive border-radius--md">
                 <div class="alert {alertClass} {customClasses}">
                     {alertVariant} {customClasses ? 'custom' : ''} variant of alert in {alertColor} color with <a href={'#'}>link</a>.
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
-            <div class="d-grid g-4">
-                <b>HTML</b>
+        <div class="display--grid gap--md">
+            <div class="display--grid gap--md">
+                <b>Code</b>
                 <Precode>
                     {
 `<div class="alert ${alertClass} ${customClasses}">

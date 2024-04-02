@@ -1,56 +1,68 @@
-<script lang="ts">
+<script>
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
-    import Button from 'component/Button.svelte'
 
-    let marginPropertyObj = {
-        'all': '-',
-        'x axis': 'x-',
-        'y axis': 'y-',
-        'start': 's-',
-        'top': 't-',
-        'end': 'e-',
-        'bottom': 'b-',
-    }
-    let marginProperty: string = marginPropertyObj['all']
+    let spacingPropertiesObj={
+            'all': '--',
+            'x axis': '-x--',
+            'y axis': '-y--',
+            'top': '-top--',
+            'right': '-right--',
+            'bottom': '-bottom--',
+            'left': '-left--',
+        },
+        spacingProperty = spacingPropertiesObj['all'],
+        spacingSizes = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl']
 </script>
 
 <section>
     <h3 id="margin">Margin</h3>
     <p>
-        The <b>m</b> classes are used to set the margin.
-        The prefix <b>x</b>, <b>y</b> after <b>m</b> sets the axios value and <b>l</b>, <b>t</b>, <b>r</b> and <b>b</b> the direction value.
-        To disable margin use the <b>m...-0</b> classes.
+        Classes with the <b>margin(-side)--(axis-)(size)</b> pattern set the margin area on all four sides
+        of the element, the axes, and on each side separately. To disable margin use the
+        <b>margin(-side)--(axis-)none</b> classes and for auto margin use the 
+        <b>margin(-side)--(axis-)auto</b> classes.
     </p>
-    <div class="d-grid g-3 mb-4 p-3 bgc-positive br-md">
-        <div class="d-flex g-2">
-            {#each Object.entries(marginPropertyObj) as [key, value]}
-                <Button
-                    class="btn-secondary {marginProperty === value ? 'active' : ''}"
-                    on:click = {() => marginProperty = value}
-                    disabled = {marginProperty === value}
-                >{key}</Button>
-            {/each}
+    <div class="display--grid gap--lg">
+        <div class="alert alert-info justify-self--start">
+            <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
+            Pay attentions! The <b>--margin(-side)(--axis)</b> variables is adaptive for <b>margin(-side)(--axis)</b>.
+            The list of prefixes available on the <a href="/core#map">Core</a> page.
         </div>
-        <div class="d-grid gtc-4 ai-start g-2">
-            {#each Array(8) as _, i}
-                <div class="bgc-negative-10">
-                    <div class="bgc-negative-10 px-2 py-1 m{marginProperty}{i + 1}">m{marginProperty}{i + 1}</div>
+        <div class="display--grid gap--md">
+            <b>Size</b>
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
+                {#each Object.entries(spacingPropertiesObj) as [key, value]}
+                    <button
+                        class="btn"
+                        class:active={spacingProperty === value}
+                        on:click={() => spacingProperty = value}
+                        disabled={spacingProperty === value}
+                    >{key}</button>
+                {/each}
+            </div>
+        </div>
+        <div class="display--grid gap--lg">
+            <div class="display--grid gap--md">
+                <b>Preview</b>
+                <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                    <div class="display--grid grid-template-columns--4 align-items--start gap--xs">
+                        {#each spacingSizes as value}
+                            <div class="background-color--negative-10">
+                                <div class="background-color--negative-10 padding-x--xs padding-y--xxs margin{spacingProperty}{value}">#{spacingProperty}{value}</div>
+                            </div>
+                        {/each}
+                    </div>
                 </div>
-            {/each}
+            </div>
         </div>
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
+        <div class="display--grid gap--md">
+            <b>Code</b>
+            <Precode>
                 {
-`<div class="m${marginProperty}#">...</div>
+`<div class="margin${spacingProperty}#"> ... </div>
 `
                 }
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </section>

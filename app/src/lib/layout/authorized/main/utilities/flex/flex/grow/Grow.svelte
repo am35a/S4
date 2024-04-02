@@ -1,23 +1,23 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let containerClasses = 'o-hidden fw-wrap',
+    let containerClasses = 'overflow--hidden flex-wrap--wrap',
         containerWidth = 100
 </script>
 
 <div>
-    <h4 id="flexGrow">Grow</h4>
+    <h4 id="grow">Grow</h4>
     <p>
-        Growth settings are available after adding the <b>fg-1</b> class to the elements in a flex
-        container. There is an additional option via the <b>fx</b> class and the <b>--fxg</b> variable
+        Growth settings will available after adding the <b>flex-grow--1</b> class to the elements in a flex
+        container. There is an additional option via the <b>flex</b> class and the <b>--flex-grow</b> variable
         to control flexible growth.
     </p>
-    <div class="d-grid g-5">
-        <div class="alert alert-info js-start">
+    <div class="display--grid gap--lg">
+        <div class="alert alert-info justify-self--start">
             <span class="ico" style="--ico-image: url(/icons/info-circle.svg);"></span>
-            Default value of <b>flex-grow</b> is <b>0</b>. Class <b>fg-1</b> convert value to 1.
+            Default value of <b>flex-grow</b> is <b>0</b>. Class <b>flex-grow--1</b> convert value to 1.
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Customize container</b>
             <input
                 class="frm"
@@ -26,14 +26,14 @@
                 placeholder="Type utility classes to customizing the container"
             >
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-grid g-3 p-3 bgc-positive br-md">
-                <div class="d-grid mb-2">
-                    <label for="growContainerWidth" class="d-grid gtc-3 ai-end px-2">
-                        <small class="ta-start">min</small>
-                        <div class="ta-center">Width {containerWidth}%</div>
-                        <small class="ta-end">max</small>
+            <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
+                <div class="display--grid margin-bottom--xs">
+                    <label for="growContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
+                        <small class="text-align--start">min</small>
+                        <div class="text-align--center">Width {containerWidth}%</div>
+                        <small class="text-align--end">max</small>
                     </label>
                     <input
                         class="frm"
@@ -45,51 +45,51 @@
                         type="range"
                     >
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">one</div>
-                    <div class="bgc-negative-10 px-2 py-1">two</div>
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">three</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs" style="width: {containerWidth}%;">
+                    <div class="flex-grow--1 background-color--negative-10 padding-x--xs padding-y--xxs">one</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                    <div class="flex-grow--1 background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="bgc-negative-10 px-2 py-1">one</div>
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">two</div>
-                    <div class="bgc-negative-10 px-2 py-1">three</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs" style="width: {containerWidth}%;">
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">one</div>
+                    <div class="flex-grow--1 background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                    <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">one</div>
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">two</div>
-                    <div class="fg-1 bgc-negative-10 px-2 py-1">three</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs" style="width: {containerWidth}%;">
+                    <div class="flex-grow--1 background-color--negative-10 padding-x--xs padding-y--xxs">one</div>
+                    <div class="flex-grow--1 background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                    <div class="flex-grow--1 background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
                 </div>
-                <div class="d-flex {containerClasses} g-2 bgc-negative-10 p-2" style="width: {containerWidth}%;">
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 1">one</div>
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 2">two</div>
-                    <div class="fx bgc-negative-10 px-2 py-1" style="--fxg: 3">three</div>
+                <div class="display--flex {containerClasses} gap--xs background-color--negative-10 padding--xs" style="width: {containerWidth}%;">
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-grow: 1">one</div>
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-grow: 2">two</div>
+                    <div class="flex background-color--negative-10 padding-x--xs padding-y--xxs" style="--flex-grow: 3">three</div>
                 </div>
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                 {
-`<div class="d-flex">
-    <div class="fg-1">one</div>
+`<div class="display--flex">
+    <div class="flex-grow--1">one</div>
     <div>simple two</div>
-    <div class="fg-1">three</div>
+    <div class="flex-grow--1">three</div>
 </div>
-<div class="d-flex">
+<div class="display--flex">
     <div>simple one</div>
-    <div class="fg-1">two</div>
+    <div class="flex-grow--1">two</div>
     <div>simple three</div>
 </div>
-<div class="d-flex">
-    <div class="fg-1">one</div>
-    <div class="fg-1">two</div>
-    <div class="fg-1">three</div>
+<div class="display--flex">
+    <div class="flex-grow--1">one</div>
+    <div class="flex-grow--1">two</div>
+    <div class="flex-grow--1">three</div>
 </div>
-<div class="d-flex">
-    <div class="fx" style="--fxg: 1">one</div>
-    <div class="fx" style="--fxg: 2">two</div>
-    <div class="fx" style="--fxg: 3">three</div>
+<div class="display--flex">
+    <div class="flex" style="--flex-grow: 1">one</div>
+    <div class="flex" style="--flex-grow: 2">two</div>
+    <div class="flex" style="--flex-grow: 3">three</div>
 </div>
 `
                 }

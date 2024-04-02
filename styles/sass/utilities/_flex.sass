@@ -1,36 +1,36 @@
 $directions: row, row-reverse, column, column-reverse
 $wraps: wrap, wrap-reverse, nowrap
-$basis: (auto: auto, fill: fill, max: max-content, min: min-content, fit: fit-content, 100: 100%)
-$flexDefines: none, initial, auto
+$basis: (auto: auto, max: max-content, min: min-content, fit: fit-content, 100: 100%)
+$defines: none, initial, auto
 
 /*
     flex section: fill, equal and other sets to flex container items
 
 @mixin _flex($orientation, $type)
-    .#{$orientation}#{$type}f
+    .#{$orientation}#{$type}flex
         @each $value in $directions
-            &d-#{$value}
+            &-direction--#{$value}
                 flex-direction: $value !important
         @each $value in $wraps
-            &w-#{$value}
+            &-wrap--#{$value}
                 flex-wrap: $value !important
-        @each $value in $flexDefines
-            &x-#{$value}
+        @each $value in $defines
+            &--#{$value}
                 flex: $value !important
-        &g-0
+        &-grow--0
             flex-grow: 0
-        &g-1
+        &-grow--1
             flex-grow: 1
-        &s-0
+        &-shrink--0
             flex-shrink: 0
-        &s-1
+        &-shrink--1
             flex-shrink: 1
         @each $name, $value in $basis
-            &b-#{$name}
+            &-basis--#{$name}
                 flex-basis: $value !important
-    .fx, .fxg
-        flex-grow: var(--#{$orientation}#{$type}fxg, var(--fxg, initial)) !important
-    .fx, .fxs
-        flex-shrink: var(--#{$orientation}#{$type}fxs, var(--fxs, initial)) !important
-    .fx, .fxb
-        flex-basis: var(--#{$orientation}#{$type}fxb, var(--fxb, initial)) !important
+    .flex, .flex-grow
+        flex-grow: var(--#{$orientation}#{$type}flex-grow, var(--flex-grow, initial)) !important
+    .flex, .flex-shrink
+        flex-shrink: var(--#{$orientation}#{$type}flex-shrink, var(--flex-shrink, initial)) !important
+    .flex, .flex-basis
+        flex-basis: var(--#{$orientation}#{$type}flex-basis, var(--flex-basis, initial)) !important

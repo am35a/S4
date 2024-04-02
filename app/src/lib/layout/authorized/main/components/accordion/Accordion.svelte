@@ -3,7 +3,7 @@
     import Details from 'component/Details.svelte'
     import Precode from 'component/Precode.svelte'
 
-    let customClasses = 'd-grid g-4 w-100'
+    let customClasses = 'display--grid gap--md width--100'
 </script>
 
 <article>
@@ -11,8 +11,8 @@
     <p>
         The Accordion сomponent is a watcher wrapper for containers <a href="/components/details"><b>Details</b> components</a> or <b>details</b> tags within it.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Customize</b>
             <input
                 id="customClasses"
@@ -22,9 +22,9 @@
                 placeholder="Type utility classes to customizing the component"
             >
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="d-flex p-4 bgc-positive br-md">
+            <div class="display--flex padding--md background-color--positive border-radius--md">
                 <Accordion class="{customClasses}">
                     {#each Array(3) as _, i}
                         <Details>
@@ -32,7 +32,7 @@
                                 Section title {i + 1}
                             </svelte:fragment>
                             <svelte:fragment slot="body">
-                                <div class="p-4">
+                                <div class="padding--md">
                                     Content for section {i + 1} goes here.
                                 </div>
                             </svelte:fragment>
@@ -41,8 +41,8 @@
                 </Accordion>
             </div>        
         </div>
-        <div class="d-grid g-4">
-            <div class="d-grid g-4">
+        <div class="display--grid gap--md">
+            <div class="display--grid gap--md">
                 <b>Svelte</b>
                 <Precode>
                     {

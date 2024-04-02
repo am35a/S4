@@ -1,9 +1,9 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let containerTypesObj = {
-        grid: 'd-grid gtc-2',
-        flex: 'd-flex'
+    let containerTypesObj={
+        grid: 'display--grid grid-template-columns--2',
+        flex: 'display--flex'
     },
         containerType = containerTypesObj.grid
 
@@ -14,50 +14,50 @@
 <section>
     <h3 id="alignSelf">Align self</h3>
     <p>
-        The <b>as-{alignSelfArr.join('/')}</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>ai-</b> classes value.
+        The <b>align-self--{alignSelfArr.join('/')}</b> classes overrides a <b>grid</b> or <b>flex</b> item's <b>align-items--</b> classes value.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Display</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each Object.entries(containerTypesObj) as [key, value]}
                     <button
                         class="btn"
-                        class:active = {containerType === value}
-                        on:click = {() => containerType = value}
-                        disabled = {containerType === value}
+                        class:active={containerType === value}
+                        on:click={() => containerType = value}
+                        disabled={containerType === value}
                     >{key}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Align</b>
-            <div class="d-inline-flex fw-wrap g-3">
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
                 {#each alignSelfArr as value}
                     <button
                         class="btn"
                         class:active={alignSelf === value}
-                        on:click = {() => alignSelf = value}
-                        disabled = {alignSelf === value}
-                    >as-{value}</button>
+                        on:click={() => alignSelf = value}
+                        disabled={alignSelf === value}
+                    >align-self--{value}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="{containerType} g-3 p-3 bgc-positive br-md h" style="--h: 16em; --p_h: 24em;">
-                <div class="bgc-negative-10 px-2 py-1 as-{alignSelf}">one</div>
-                <div class="bgc-negative-10 px-2 py-1">two</div>
-                <div class="bgc-negative-10 px-2 py-1">three</div>
+            <div class="{containerType} gap--sm padding--sm background-color--positive border-radius--md height" style="--height: 16em; --p_height: 24em;">
+                <div class="background-color--negative-10 padding-x--xs padding-y--xxs align-self--{alignSelf}">one</div>
+                <div class="background-color--negative-10 padding-x--xs padding-y--xxs">two</div>
+                <div class="background-color--negative-10 padding-x--xs padding-y--xxs">three</div>
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                 {
 `<div class="${containerType}">
-    <div class="as-${alignSelf}">one</div>
-    // ...
+    <div class="align-self--${alignSelf}">one</div>
+    ...
 </div>
 `
                 }

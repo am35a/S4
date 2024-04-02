@@ -3,7 +3,7 @@
     import { appConsole } from 'src/store/console'
     import device from 'current-device'
 
-    const styleDependencyMap = {
+    const styleDependencyMap={
         'l_d_': [ 'l_d_' ],
         'p_d_': [ 'l_d_', 'p_d_' ],
         'l_t_': [ 'l_d_', 'l_t_' ],

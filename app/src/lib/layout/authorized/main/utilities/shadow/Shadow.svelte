@@ -1,35 +1,30 @@
-<script lang="ts">
-    import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
+<script>
+    import SectionSize from './size/Size.svelte'
+    import SectionHover from './hover/Hover.svelte'
 
-    let shadowSizesArr: string[] = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl']
+    import AnchorNavigation from 'src/lib/layout/components/AnchorNavigation.svelte'
+</script>
+
+<script context="module">
+    export const anchorsObj = {
+        headAnchorObg: {
+            shadow: 'Shadow'
+        },
+        subAnchorsObj: {
+            size: 'Size',
+            hover: 'Hover'
+        }
+	}
 </script>
 
 <article>
-    <h2 id="shadow">Shadow</h2>
-    <p>
-        To add shadows to elements use <b>bs-...</b> classes. The <b>bs-none</b> class remove shadow.
-    </p>
-    <div class="d-grid g-3 gtc-2 mb-4 p-3 bgc-positive br-md o-hidden">
-        {#each shadowSizesArr as size}
-            <div class="bgc-positive p-2 rounded bs-{size}">
-                bs-{size}
-            </div>
-        {/each}
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
-            <Precode class="br-top-0">
-                {#each shadowSizesArr as size}
-                    {
-`<div class="bgc-positive p-2 bs-${size}">...</div>
-`
-                    }
-                {/each}
-            </Precode>
-        </svelte:fragment>
-    </Details>
+    <h2 id={Object.keys(anchorsObj.headAnchorObg)}>
+        {Object.values(anchorsObj.headAnchorObg)}
+    </h2>
+    <SectionSize />
+    <SectionHover />
+
+    <div class="position--sticky bottom--0 padding--xs">
+        <AnchorNavigation anchorsObj={anchorsObj.subAnchorsObj} />
+    </div>    
 </article>

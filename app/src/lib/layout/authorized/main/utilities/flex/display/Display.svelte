@@ -1,42 +1,41 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let displayFlexArr = ['inline-flex', 'flex'],
-        displayFlex = displayFlexArr[0]
+    let displayArr = ['inline-flex', 'flex'],
+        display = displayArr[0]
 </script>
 
 <section>
     <h3 id="display">Display</h3>
     <p>
-        To create a flex container select one of the following behaviors: <b>d-inline-flex</b> or <b>d-flex</b>.
+        To create a flex container select one of the following behaviors: <b>display--inline-flex</b> or
+        <b>display--flex</b>.
     </p>
-    <div class="d-grid g-5">
-        <div class="d-grid g-4">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
             <b>Display</b>
-            <div class="d-inline-flex fw-wrap g-3">
-                {#each displayFlexArr as values }
+            <div class="display--inline-flex flex-wrap--wrap gap--sm">
+                {#each displayArr as value}
                     <button
                         class="btn"
-                        class:active = {displayFlex === values}
-                        on:click = {() => displayFlex = values}
-                        disabled = {displayFlex === values}
-                    >d-{values}</button>
+                        class:active={display === value}
+                        on:click={() => display = value}
+                        disabled={display === value}
+                    >{value}</button>
                 {/each}
             </div>
         </div>
-        <div class="d-grid g-4">
+        <div class="display--grid gap--md">
             <b>Preview</b>
-            <div class="p-3 bgc-positive br-md">
-                <div class="d-{displayFlex} bgc-negative-10 p-2">{displayFlex} container</div>
+            <div class="padding--sm background-color--positive border-radius--md">
+                <div class="display--{display} background-color--negative-10 padding--xs">{display}</div>
             </div>
         </div>
-        <div class="d-grid g-4">
-            <b>HTML</b>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                 {
-`<div class="d-${displayFlex}">
-    // ...
-</div>
+`<div class="display--${display}"> ... </div>
 `
                 }
             </Precode>
