@@ -21,7 +21,7 @@
                     type="text"
                     placeholder="Type utility classes to customizing the container"
                 >
-                <div class="fs-sm">
+                <div class="font-size--sm">
                     Play with the <b>background-repeat--no</b>, <b>background-origin--border</b> or
                     other background classes to view different results.
                 </div>
@@ -32,14 +32,14 @@
             <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 {#each clipsArr as clip}
                     <div
-                        class="padding--md fs-xxxl fw-700 background-image background-color--negative-10 background-clip--{clip} {containerClasses}"
+                        class="padding--md font-size--xxxl font-weight--700 background-image background-color--negative-10 background-clip--{clip} {containerClasses}"
                         style="--background-image: url(/images/logo.svg); border: 1em dashed;"
                     >Lorem ipsum dolor sit amet.</div>
                 {/each}
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {#each clipsArr as clip}
                     {

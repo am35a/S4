@@ -43,9 +43,9 @@
             <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div class="display--grid margin-bottom--xs">
                     <label for="basisContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
-                        <small class="ta-start">min</small>
-                        <div class="ta-center">Width {containerWidth}%</div>
-                        <small class="ta-end">max</small>
+                        <small class="text-align--start">min</small>
+                        <div class="text-align--center">Width {containerWidth}%</div>
+                        <small class="text-align--end">max</small>
                     </label>
                     <input
                         class="frm"
@@ -80,7 +80,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<div class="display--flex">

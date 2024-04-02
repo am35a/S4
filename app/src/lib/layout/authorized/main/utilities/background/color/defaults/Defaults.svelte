@@ -40,11 +40,11 @@
                         {#if defaultsInterval}
                             {#each Array(9) as _, i}
                                 <div
-                                    class="background-color--{defaultsArr[0]}-{(i + 1) * 10} padding--md c-{defaultsArr[i < 5 ? 0 : 1]} ta-center"
+                                    class="background-color--{defaultsArr[0]}-{(i + 1) * 10} padding--md c-{defaultsArr[i < 5 ? 0 : 1]} text-align--center"
                                 >background-color--{defaultsArr[0]}-{(i + 1) * 10}</div>
                             {/each}
                         {/if}
-                        <div class="background-color--{defaultsArr[0]} padding--md c-{defaultsArr[1]} ta-center">
+                        <div class="background-color--{defaultsArr[0]} padding--md c-{defaultsArr[1]} text-align--center">
                             background-color--{defaultsArr[0]}
                         </div>
                     </div>
@@ -52,13 +52,13 @@
                         {#if defaultsInterval}
                             {#each Array(9) as _, i}
                                 <div
-                                    class="background-color--{defaultsArr[1]}-{(i + 1) * 10} padding--md c-{defaultsArr[i < 4 ? 1 : 0]} ta-center"
+                                    class="background-color--{defaultsArr[1]}-{(i + 1) * 10} padding--md c-{defaultsArr[i < 4 ? 1 : 0]} text-align--center"
                                 >
                                     background-color--{defaultsArr[0]}-{(i + 1) * 10}
                                 </div>
                             {/each}
                         {/if}
-                        <div class="background-color--{defaultsArr[1]} padding--md c-{defaultsArr[0]} ta-center">
+                        <div class="background-color--{defaultsArr[1]} padding--md c-{defaultsArr[0]} text-align--center">
                             background-color--{defaultsArr[1]}
                         </div>
                     </div>

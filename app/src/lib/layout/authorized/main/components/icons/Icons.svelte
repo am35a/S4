@@ -6,14 +6,14 @@
 
     let iconSizeObj={
         'none': '',
-        'small xx': 'fs-xxs',
-        'small x': 'fs-xs',
-        'small': 'fs-sm',
-        'medium': 'fs-md',
-        'large': 'fs-lg',
-        'large x': 'fs-xl',
-        'large xx': 'fs-xxl',
-        'large xxx': 'fs-xxxl',
+        'small xx': 'font-size--xxs',
+        'small x': 'font-size--xs',
+        'small': 'font-size--sm',
+        'medium': 'font-size--md',
+        'large': 'font-size--lg',
+        'large x': 'font-size--xl',
+        'large xx': 'font-size--xxl',
+        'large xxx': 'font-size--xxxl',
         'expand': 'width--100 height--100'
     }
     let iconSize = '',
@@ -65,7 +65,7 @@
             Colors are changed in two ways - using the <b>background-color--...</b> or <b>c-...</b> classes.
         </p>
         <div class="alert alert-warning justify-self--start">
-            <span class="ico fs-xl" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
+            <span class="ico font-size--xl" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
             Pay attention! The <b>background-color--...</b> and <b>c-...</b> are incompatible in one case.
         </div>
 
@@ -121,7 +121,7 @@
             </Precode>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                     {
 `<span

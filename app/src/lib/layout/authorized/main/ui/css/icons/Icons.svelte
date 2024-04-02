@@ -5,26 +5,26 @@
             <p>
                 The cash posible icon is the best way to take heart any front-end developer building deep data applications.
             </p>
-            <div class="display--grid grid-template-columns--8 justify-item--center align-items--end">
-                <span class="ico fs-xxxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
-                <span class="ico fs-xxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
-                <span class="ico fs-xl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
-                <span class="ico fs-lg" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+            <div class="display--grid grid-template-columns--8 justify-items--center align-items--end">
+                <span class="ico font-size--xxxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                <span class="ico font-size--xxl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                <span class="ico font-size--xl" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                <span class="ico font-size--lg" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
                 <span class="ico" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
-                <span class="ico fs-sm" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
-                <span class="ico fs-xs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
-                <span class="ico fs-xxs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                <span class="ico font-size--sm" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                <span class="ico font-size--xs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
+                <span class="ico font-size--xxs" style="--ico-image: url(/icons/ghost.svg);">&nbsp;</span>
             </div>
             <hr class="margin-top--xxs">
-            <div class="display--grid grid-template-columns--8 justify-item--center align-items--top">
-                <span class="fs-xxxl">xxxl</span>
-                <span class="fs-xxl">xxl</span>
-                <span class="fs-xl">xl</span>
-                <span class="fs-lg">lg</span>
+            <div class="display--grid grid-template-columns--8 justify-items--center align-items--top">
+                <span class="font-size--xxxl">xxxl</span>
+                <span class="font-size--xxl">xxl</span>
+                <span class="font-size--xl">xl</span>
+                <span class="font-size--lg">lg</span>
                 <span>md</span>
-                <span class="fs-sm">sm</span>
-                <span class="fs-xs">xs</span>
-                <span class="fs-xxs">xxs</span>
+                <span class="font-size--sm">sm</span>
+                <span class="font-size--xs">xs</span>
+                <span class="font-size--xxs">xxs</span>
             </div>
 
         </div>

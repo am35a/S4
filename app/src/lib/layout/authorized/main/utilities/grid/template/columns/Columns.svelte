@@ -15,7 +15,7 @@
         <b>grid-template-columns--1/.../12</b> classes. If need to set different number of columns, use a
         variable for <b>--grid-template-columns</b> with the required number of columns
         <b>--grid-template-columns: 20</b>, like the example
-        <Precode class="display--inline padding-x--xs padding-y--xxs ws-normal">
+        <Precode class="display--inline padding-x--xs padding-y--xxs white-space--normal">
             class="grid-template-columns"
             style="--p_grid-template-columns: 16rem auto 10rem; --grid-template-columns: auto 10rem;"
         </Precode>.
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<div class="${containerType} grid-template-columns--3">

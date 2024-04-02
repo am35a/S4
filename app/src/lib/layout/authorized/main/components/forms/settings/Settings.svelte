@@ -1,14 +1,14 @@
 <script>
     let fontSizesObj={
         Default: '',
-        xxs: 'fs-xxs',
-        xs: 'fs-xs',
-        sm: 'fs-sm',
-        md: 'fs-md',
-        lg: 'fs-lg',
-        xl: 'fs-xl',
-        xxl: 'fs-xxl',
-        xxxl: 'fs-xxxl'
+        xxs: 'font-size--xxs',
+        xs: 'font-size--xs',
+        sm: 'font-size--sm',
+        md: 'font-size--md',
+        lg: 'font-size--lg',
+        xl: 'font-size--xl',
+        xxl: 'font-size--xxl',
+        xxxl: 'font-size--xxxl'
     }
     let fontSize = 'Default'
 

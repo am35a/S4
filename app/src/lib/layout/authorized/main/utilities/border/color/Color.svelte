@@ -28,28 +28,28 @@
             <div class="display--grid gap--sm grid-template-columns--2 margin-bottom--md padding--sm background-color--positive border-radius--md">
                 <div class="display--flex flex-direction--column-reverse gap--xs padding--xs background-color--negative">
                     {#each {length: 9} as _, i}
-                        <div class="border-style--solid border-color--{defaultColorsArr[0]}-{(i + 1) * 10} padding--md ta-center c-positive">
+                        <div class="border-style--solid border-color--{defaultColorsArr[0]}-{(i + 1) * 10} padding--md text-align--center c-positive">
                             border-color--{defaultColorsArr[0]}-{(i + 1) * 10}
                         </div>
                     {/each}
-                    <div class="border-style--solid border-color--{defaultColorsArr[0]} padding--md ta-center c-positive">
+                    <div class="border-style--solid border-color--{defaultColorsArr[0]} padding--md text-align--center c-positive">
                         border-color--{defaultColorsArr[0]}
                     </div>
                 </div>
                 <div class="display--flex flex-direction--column-reverse gap--xs padding--xs">
                     {#each {length: 9} as _, i}
-                        <div class="border-style--solid border-color--{defaultColorsArr[1]}-{(i + 1) * 10} padding--md ta-center">
+                        <div class="border-style--solid border-color--{defaultColorsArr[1]}-{(i + 1) * 10} padding--md text-align--center">
                             border-color--{defaultColorsArr[1]}-{(i + 1) * 10}
                         </div>
                     {/each}
-                    <div class="border-style--solid border-color--{defaultColorsArr[1]} padding--md ta-center">
+                    <div class="border-style--solid border-color--{defaultColorsArr[1]} padding--md text-align--center">
                         border-color--{defaultColorsArr[1]}
                     </div>
                 </div>
                 {#each accentColorsArr as item}
                     <div class="display--flex flex-direction--column-reverse gap--xs padding--xs">
                         {#each Object.entries(accentExtraColorsObj) as [key, value]}
-                            <div class="border-style--solid border-color--{item}{value} padding--md ta-center">
+                            <div class="border-style--solid border-color--{item}{value} padding--md text-align--center">
                                 border-color--{item}{value}
                             </div>
                         {/each}

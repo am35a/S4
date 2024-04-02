@@ -44,7 +44,7 @@
         <div class="display--grid gap--md">
             <b>Preview</b>
             <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
-                <div class="display--grid ws-nowrap overflow-x--auto" style="--lh: {lineHeight}">
+                <div class="display--grid white-space--nowrap overflow-x--auto" style="--lh: {lineHeight}">
                     <div class="lh grid-column--full grid-row--full margin-y--auto border-top-style--solid border-bottom-style--solid c-negative-10">&nbsp;<!-- base line indicator--></div>
                     <div class="lh grid-column--full grid-row--full margin-y--auto border-top-style--solid border-bottom-style--solid c-negative-20"><!-- base line indicator--></div>
                     <div class="lh grid-column--full grid-row--full padding-y--md">
@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {#each Object.entries(verticalAlignObj) as [key, value]}
                     {

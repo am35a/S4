@@ -16,7 +16,7 @@
             </div>
         </div>        
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<div class="background-color--success-m:hover"> ... </div>

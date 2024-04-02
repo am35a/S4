@@ -3,15 +3,15 @@
 </script>
 
 <h1>Lancia Delta S4</h1>
-<div class="border-top-style--solid ta-end fs-xs c-negative-50">
+<div class="border-top-style--solid text-align--end font-size--xs c-negative-50">
     The example from Wikipedia, <a href="https://en.wikipedia.org/wiki/Lancia_Delta_S4">the free encyclopedia</a>.
 </div>
 <table class="float--end" style="width:290px;">
     <caption>Lancia Delta S4</caption>
-    <tbody class="fs-xs">
+    <tbody class="font-size--xs">
         <tr>
             <td colspan="2">
-                <div class="ta-center">
+                <div class="text-align--center">
                     <div>
                         <a href="https://en.wikipedia.org/wiki/File:R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg" class="image"><img alt="Rétromobile 2017 - Lancia Delta S4 - circa 1986 - 001.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6d/R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg/220px-R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg" decoding="async" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6d/R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg/330px-R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6d/R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg/440px-R%C3%A9tromobile_2017_-_Lancia_Delta_S4_-_circa_1986_-_001.jpg 2x" data-file-width="5472" data-file-height="3648" width="220" height="147"></a>
                     </div>

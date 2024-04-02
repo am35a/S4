@@ -23,21 +23,21 @@
     <div class="display--grid gap--sm grid-template-columns--2 margin-bottom--md padding--sm background-color--positive border-radius--md">
         <div class="display--flex flex-direction--column-reverse gap--xs background-color--negative">
             {#each Array(9) as _, i}
-                <div class="c-{defaultColorsArr[0]}-{(i + 1) * 10} padding--md ta-center">
+                <div class="c-{defaultColorsArr[0]}-{(i + 1) * 10} padding--md text-align--center">
                     c-{defaultColorsArr[0]}-{(i + 1) * 10}
                 </div>
             {/each}
-            <div class="c-{defaultColorsArr[0]} padding--md ta-center">
+            <div class="c-{defaultColorsArr[0]} padding--md text-align--center">
                 c-{defaultColorsArr[0]}
             </div>
         </div>
         <div class="display--flex flex-direction--column-reverse gap--xs">
             {#each Array(9) as _, i}
-                <div class="c-{defaultColorsArr[1]}-{(i + 1) * 10} padding--md ta-center">
+                <div class="c-{defaultColorsArr[1]}-{(i + 1) * 10} padding--md text-align--center">
                     c-{defaultColorsArr[1]}-{(i + 1) * 10}
                 </div>
             {/each}
-            <div class="c-{defaultColorsArr[1]} padding--md ta-center">
+            <div class="c-{defaultColorsArr[1]} padding--md text-align--center">
                 c-{defaultColorsArr[1]}
             </div>
         </div>

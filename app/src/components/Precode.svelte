@@ -12,7 +12,7 @@
         background-color: var(--negative-color)
         border-radius: var(--border-radius--md)
         color: var(--success-color)
-        font-size: var(--fs-md)
+        font-size: var(--font-size-md)
         text-wrap: unset
         &:not(.inline)
             display: grid

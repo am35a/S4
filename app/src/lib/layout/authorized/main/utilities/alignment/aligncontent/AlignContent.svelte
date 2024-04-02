@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<div class="${containerType} align-content--${alignContent}">

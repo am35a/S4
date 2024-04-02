@@ -15,7 +15,7 @@
     box-shadow--sm
     border-style--solid
     border-color--negative-30
-    fs-xs"
+    font-size--xs"
 >
     {#if Object.keys(anchorsObj).length}
         <div class="display--flex flex-wrap--wrap gap--xxs width--fit margin-left--auto">

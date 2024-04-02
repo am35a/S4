@@ -3,14 +3,14 @@
 
     let fontSizesObj: { [key: string]: any }={
         Default: '' as string,
-        xxs: 'fs-xxs' as string,
-        xs: 'fs-xs' as string,
-        sm: 'fs-sm' as string,
-        md: 'fs-md' as string,
-        lg: 'fs-lg' as string,
-        xl: 'fs-xl' as string,
-        xxl: 'fs-xxl' as string,
-        xxxl: 'fs-xxxl' as string
+        xxs: 'font-size--xxs' as string,
+        xs: 'font-size--xs' as string,
+        sm: 'font-size--sm' as string,
+        md: 'font-size--md' as string,
+        lg: 'font-size--lg' as string,
+        xl: 'font-size--xl' as string,
+        xxl: 'font-size--xxl' as string,
+        xxxl: 'font-size--xxxl' as string
     }
     let fontSize: string = 'Default'
 

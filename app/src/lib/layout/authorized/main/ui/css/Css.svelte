@@ -56,10 +56,10 @@
                 box-shadow--sm
                 border-style--solid
                 border-color--negative-30
-                fs-xs"
+                font-size--xs"
         >
             <div class="display--flex flex-wrap--wrap gap--xs width--fit margin-left--auto">
-                <div class="fs-lg margin-y--auto">
+                <div class="font-size--lg margin-y--auto">
                     Scale:
                 </div>
                 <button
@@ -90,10 +90,10 @@
                 box-shadow--sm
                 border-style--solid
                 border-color--negative-30
-                fs-xs"
+                font-size--xs"
         >
             <div class="display--flex flex-wrap--wrap gap--xs width--fit margin-left--auto">
-                <div class="fs-lg margin-y--auto">
+                <div class="font-size--lg margin-y--auto">
                     Gravity:
                 </div>
                 <button
@@ -125,7 +125,7 @@
                 box-shadow--sm
                 border-style--solid
                 border-color--negative-30
-                fs-xs"
+                font-size--xs"
         >
             <div class="display--flex flex-wrap--wrap gap--xxs width--fit margin-left--auto">
                 {#each Object.entries(cssOverviewObj) as [key, value]}

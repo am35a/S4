@@ -48,13 +48,13 @@
             <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div class="background-color--negative-10 display--grid grid-template-columns--3 {gapAxis}gap--{spaceSize}">
                     {#each {length: 9} as _}
-                        <div class="background-color--negative-10 padding-y--xxl ta-center">cell</div>
+                        <div class="background-color--negative-10 padding-y--xxl text-align--center">cell</div>
                     {/each}
                 </div>
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<div class="${gapAxis}gap--${spaceSize}">

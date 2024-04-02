@@ -17,11 +17,11 @@
         breakpoints dependencies.
     </p>
     <div class="display--inline-grid grid-template-columns gap--xs" style="--grid-template-columns: auto 1fr">
-        <div class="ta-end fw-600">Device type:</div>
+        <div class="text-align--end font-weight--600">Device type:</div>
         <div>'mobile', 'tablet', 'desktop', or 'unknown'</div>
-        <div class="ta-end fw-600">Device orientation:</div>
+        <div class="text-align--end font-weight--600">Device orientation:</div>
         <div>'landscape', 'portrait', or 'unknown'</div>
-        <div class="ta-end fw-600">Device OS:</div>
+        <div class="text-align--end font-weight--600">Device OS:</div>
         <div>
             'ios', 'iphone', 'ipad', 'ipod', 'android', 'blackberry', 'windows',
             'macos', 'fxos', 'meego', 'television', or 'unknown'
@@ -33,11 +33,11 @@
     <div>
         <h3>Device type</h3>
         <div class="display--grid grid-template-columns--3 gap--xs">
-            <div class="fw-600">Breakpoint</div>
-            <div class="fw-600">Class prefix</div>
-            <div class="fw-600">
+            <div class="font-weight--600">Breakpoint</div>
+            <div class="font-weight--600">Class prefix</div>
+            <div class="font-weight--600">
                 Pattern
-                <div class="display--inline-grid grid-template-columns gap--xxs fs-xxs" style="--grid-template-columns: auto auto">
+                <div class="display--inline-grid grid-template-columns gap--xxs font-size--xxs" style="--grid-template-columns: auto auto">
                     {#each breakpointsNamesArr as object }
                         <Button
                             on:click={() => breakpointsName = object}
@@ -70,9 +70,9 @@
         </p>
         <p>The S4 style gist panel breakpoint map:</p>
         <div class="display--grid grid-template-columns--3 gap--xs">
-            <div class="fw-600">Breakpoint</div>
-            <div class="fw-600">Count</div>
-            <div class="fw-600">Class prefixes</div>
+            <div class="font-weight--600">Breakpoint</div>
+            <div class="font-weight--600">Count</div>
+            <div class="font-weight--600">Class prefixes</div>
             <hr class="grid-column--full width--100 margin-y--none">
             <div>Landscape/Desktop</div>    <div>no one</div>   <div>l_d_</div>
             <div>Portrait/Desktop</div>     <div>one</div>      <div>l_d_ & p_d_</div>

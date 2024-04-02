@@ -104,7 +104,7 @@
         </div>
         <div class="display--grid gap--md">
             <div class="display--grid gap--md">
-                <b>HTML</b>
+                <b>Code</b>
                 <Precode>
                     {
 `<div class="${groupObj[groupVariant]}">

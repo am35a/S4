@@ -12,7 +12,7 @@
 <section>
     <h3 id="wrap">Wrap</h3>
     <p>
-        The <b>fw-{wrapArr.join('/')}</b> classes help to change wrap items in a flex container.
+        The <b>font-weight--{wrapArr.join('/')}</b> classes help to change wrap items in a flex container.
     </p>
     <div class="display--grid gap--lg">
         <div class="display--grid gap--md">
@@ -24,7 +24,7 @@
                         class:active={wrap === values}
                         on:click={() => wrap = values}
                         disabled={wrap === values}
-                    >fw-{values}</button>
+                    >font-weight--{values}</button>
                 {/each}
             </div>
         </div>
@@ -42,7 +42,7 @@
                     class:active={!isCellShrinked}
                     on:click={() => isCellShrinked = !isCellShrinked}
                     disabled={!isCellShrinked}
-                >ws-nowrap</button>
+                >white-space--nowrap</button>
             </div>
         </div>
         <div class="display--grid gap--md">
@@ -50,9 +50,9 @@
             <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div class="display--grid margin-bottom--xs">
                     <label for="growContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
-                        <small class="ta-start">min</small>
-                        <div class="ta-center">Width {containerWidth}%</div>
-                        <small class="ta-end">max</small>
+                        <small class="text-align--start">min</small>
+                        <div class="text-align--center">Width {containerWidth}%</div>
+                        <small class="text-align--end">max</small>
                     </label>
                     <input
                         class="frm"
@@ -66,7 +66,7 @@
                 </div>
                 <div
                     class="display--flex flex-wrap--{wrap} gap--xs padding--xs background-color--negative-10 overflow-x--hidden width"
-                    class:ws-nowrap={!isCellShrinked}
+                    class:white-space--nowrap={!isCellShrinked}
                     style="--width: {containerWidth}%"
                 >
                     {#each cellNamesArr as name}
@@ -79,10 +79,10 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
-`<div class="display--flex flex-wrap--${wrap} ${isCellShrinked ? '' : 'ws-nowrap'}">
+`<div class="display--flex flex-wrap--${wrap} ${isCellShrinked ? '' : 'white-space--nowrap'}">
     <div ${isCellShrinked ? 'class="flex-shrink--0"' : ''}> ... </div>
     ...
 </div>

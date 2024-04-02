@@ -11,7 +11,7 @@
     </p>
     <div class="display--grid gap--lg">
         <div class="alert alert-info justify-self--start">
-            <span class="ico fs-xl" style="--ico-image: url(/icons/info-circle.svg)"></span>
+            <span class="ico font-size--xl" style="--ico-image: url(/icons/info-circle.svg)"></span>
             By wrapping a container in a container with <b>display--contents</b> class, you create a container
             with the properties of a non-existent parent, which has no effect on the child element.
             The <b>display--contents</b> works well with defining variables for child content.
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<div ${boxNone ? 'class="display--none"' : ''}> ... </div>

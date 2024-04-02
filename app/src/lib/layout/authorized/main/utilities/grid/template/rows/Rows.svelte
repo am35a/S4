@@ -15,7 +15,7 @@
         <b>grid-template-rows--1/.../12</b> classes. If need to set different number of rows, use a
         variable for <b>--grid-template-rows</b> with the required number of rows
         <b>--grid-template-rows: 15</b>, like the example
-        <Precode class="display--inline padding-x--xs padding-y--xxs ws-normal">
+        <Precode class="display--inline padding-x--xs padding-y--xxs white-space--normal">
             class="grid-template-rows"
             style="--p_grid-template-rows: 16rem auto 10rem; --grid-template-rows: auto 10rem;"
         </Precode>.
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<div class="${containerType} grid-template-rows--3">

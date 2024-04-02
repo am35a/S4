@@ -25,7 +25,7 @@
     style="--width: 18em"
 >
     <div class="display--grid">
-        <h1 class="fs-xxl">Sign In</h1>
+        <h1 class="font-size--xxl">Sign In</h1>
         <small class="c-negative-50">
             to manage your account
         </small>
@@ -33,7 +33,7 @@
     <div class="display--grid gap--xs">
         <div class="display--grid gap--xxs">
             <label
-                class="fs-sm fw-600 padding-x--xxs"
+                class="font-size--sm font-weight--600 padding-x--xxs"
                 for="bindLoginEmailOrName"
             >
                 Email
@@ -48,7 +48,7 @@
         </div>
         <div class="display--grid gap--xxs">
             <label
-                class="fs-sm fw-600 padding-x--xxs"
+                class="font-size--sm font-weight--600 padding-x--xxs"
                 for="bindLoginPassword"
             >
                 Password
@@ -61,21 +61,21 @@
             />
         </div>
         <!-- svelte-ignore a11y-label-has-associated-control -->
-        <label class="display--inline-grid gap--xxs grid-auto-flow--column justify-content--start align-items--center lh-1">
+        <label class="display--inline-grid gap--xxs grid-auto-flow--column justify-content--start align-items--center line-height--1">
             <Input type={'checkbox'}/> Remember me
         </label>
     </div>
     <div class="display--grid gap--xs">
         <div class="display--grid gap--xs grid-template-columns--2">
             <Button
-                class="fs-sm"
+                class="font-size--sm"
                 on:click={() => router.push('/forgotpass')}
             >
                 Forgotten pass?
                 <!-- <Icon name="refresh" /> -->
             </Button>
             <Button
-                class="fs-sm"
+                class="font-size--sm"
                 on:click={() => router.push('/signup')}
             >
                 Sign Up

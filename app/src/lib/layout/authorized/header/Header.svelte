@@ -44,7 +44,7 @@
                         {#if $path !== '/home'}
                             <Button
                                 on:click={() => router.push(`/${segment}`)}
-                                class="fs-xs fw-600 tt-capitalize tw-nowrap"
+                                class="font-size--xs font-weight--600 text-transform--capitalize tw-nowrap"
                                 disabled={segment === $path.split('/').at(-1)}
                             >{segment}</Button>
                         {/if}

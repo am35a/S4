@@ -122,9 +122,9 @@
             <div class="display--grid padding--md background-color--positive border-radius--md">
                 <Details class="background-color--negative-10" open>
                     <summary class="padding-x--xs padding-y--xxs justify-content--start background-color--transparent" slot="summary">
-                        <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
-                        <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
-                        <div class="truncate fw-600">
+                        <span class="ico font-size--sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
+                        <span class="ico font-size--sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
+                        <div class="truncate font-weight--600">
                             Custom summary with truncated title.
                         </div>
                     </summary>
@@ -156,9 +156,9 @@
 // custom uses
 <Details class="background-color--negative-10" open>
     <summary class="padding-x--xs padding-y--xxs justify-content--start background-color--transparent" slot="summary">
-        <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
-        <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
-        <div class="truncate fw-600">
+        <span class="ico font-size--sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
+        <span class="ico font-size--sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
+        <div class="truncate font-weight--600">
             Title
         </div>
     </summary>
@@ -172,14 +172,14 @@
             </Precode>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<details class="dtl ${detailsClass}">
     <summary>
         Title
-        <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
-        <span class="ico fs-sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
+        <span class="ico font-size--sm" style="--ico-image: url(/icons/chevron-down.svg)" expand></span>
+        <span class="ico font-size--sm" style="--ico-image: url(/icons/chevron-up.svg)" contract></span>
     </summary>
     Content place here ...
 </details>

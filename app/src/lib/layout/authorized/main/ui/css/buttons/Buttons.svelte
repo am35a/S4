@@ -6,7 +6,7 @@
     //     outline: '-d'
     // }
 
-    let buttonSizeArr = ['fs-xxxl', 'fs-xxl', 'fs-xl', 'fs-lg', 'fs-md', 'fs-sm', 'fs-xs', 'fs-xxs']
+    let buttonSizeArr = ['font-size--xxxl', 'font-size--xxl', 'font-size--xl', 'font-size--lg', 'font-size--md', 'font-size--sm', 'font-size--xs', 'font-size--xxs']
     let buttonSize = buttonSizeArr[3]
 
     let buttonBorderArr = ['border-radius--xxs', 'border-radius--xs', 'border-radius--sm', 'border-radius--md', 'border-radius--lg', 'border-radius--xl', 'border-radius--xxl', 'border-radius--xxxl', 'border-radius--none', 'border-radius--pill' , 'border-radius--oval']
@@ -23,7 +23,7 @@
         </p>
     </div>
 
-    <div class="display--grid gap--md justify-item--center pb-4 border-bottom">
+    <div class="display--grid gap--md justify-items--center pb-4 border-bottom">
         <div class="display--flex gap--md flex-wrap--wrap justify-content--center align-items--center">
             {#each buttonSizeArr as values }
                 <button

@@ -12,7 +12,7 @@
     </p>
     <div class="display--grid gap--lg">
         <div class="alert alert-warning justify-self--start">
-            <span class="ico fs-xl" style="--ico-image: url(/icons/alert-triangle.svg)"></span>
+            <span class="ico font-size--xl" style="--ico-image: url(/icons/alert-triangle.svg)"></span>
             The properties works only for <b>grid</b> containers!
         </div>
         <div class="display--grid gap--md">
@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {#each justifySelfArr as item}
                     {

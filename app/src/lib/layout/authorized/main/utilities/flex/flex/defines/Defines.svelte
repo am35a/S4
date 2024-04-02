@@ -14,7 +14,7 @@
     <p>
         The <b>flex</b> class do nothing with items into clear flex container, only sets container items as
         initial parameters for modification items -
-        <Precode class="display--inline padding-x--xs padding-y--xxs ws-normal">
+        <Precode class="display--inline padding-x--xs padding-y--xxs white-space--normal">
             flex: 0 1 auto;
         </Precode>.
         There are variables can be used to control the flex class <b>--flex-grow</b>, <b>--flex-shrink</b>
@@ -70,9 +70,9 @@
             <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div class="display--grid margin-bottom--xs">
                     <label for="mixContainerWidth" class="display--grid grid-template-columns--3 align-items--end padding-x--xs">
-                        <small class="ta-start">min</small>
-                        <div class="ta-center">Width {containerWidth}%</div>
-                        <small class="ta-end">max</small>
+                        <small class="text-align--start">min</small>
+                        <div class="text-align--center">Width {containerWidth}%</div>
+                        <small class="text-align--end">max</small>
                     </label>
                     <input
                         class="frm"
@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<div class="display--flex">

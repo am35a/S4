@@ -1,8 +1,8 @@
 <script>
     import Precode from 'component/Precode.svelte'
 
-    let displaysArr = ['flow-root', 'flex', 'grid']
-    let display = displaysArr[0]
+    let displaysArr = ['flow-root', 'flex', 'grid'],
+        display = displaysArr[0]
 </script>
 
 <section class="display--grid gap--xs">
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {#if display === displaysArr[0]}
                     {

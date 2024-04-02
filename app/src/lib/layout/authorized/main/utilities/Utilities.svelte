@@ -35,7 +35,7 @@
         <div class="display--grid gap--sm">
             {#each Object.entries(anchorsObj) as [_, moduleObj], index}
                 <div class="display--grid gap--xs padding-x--xs">
-                    <div class="fs-lg">
+                    <div class="font-size--lg">
                         <span>{index + 1}</span>
                         <Link
                             href="{$path}{moduleObj.modulePath}"

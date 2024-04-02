@@ -24,13 +24,13 @@
     </div>
     <div class="display--grid gap--xs grid-template-columns--2">
         <Button
-            class="fs-sm"
+            class="font-size--sm"
             on:click={() => router.push('/signin')}
         >
             Sign In
         </Button>
         <Button
-            class="fs-sm"
+            class="font-size--sm"
             on:click={() => router.push('/forgotpass')}
         >
             Forgotten pass?

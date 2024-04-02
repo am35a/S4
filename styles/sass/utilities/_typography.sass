@@ -6,29 +6,73 @@ $fontSizes: xxs, xs, sm, md, lg, xl, xxl, xxxl
 $textAligns: start, center, end, justify
 $textTransforms: lowercase, uppercase, capitalize
 $textDecorations: none, underline, line-through
+$lineHeight: 0, 1, normal, unset
+$whiteSpaces: normal, nowrap, pre, pre-wrap, pre-line, break-spaces
+$writingModes: vertical-rl, vertical-lr
+$directions: ltr, rtl
 
 /*
     typography section: ... contained in classes
 
 @mixin _typography($orientation, $type)
-    .#{$orientation}#{$type}t
+    .#{$orientation}#{$type}text
         @each $item in $textAligns
-            &a-#{$item}
-               text-align: #{$item} !important
+            &-align--#{$item}
+               text-align: $item !important
         @each $item in $textTransforms
-            &t-#{$item}
-               text-transform: #{$item} !important
+            &-transform--#{$item}
+               text-transform: $item !important
         @each $item in $textDecorations
-            &t-#{$item}
-                text-decoration: #{$item} !important
+            &-decoration--#{$item}
+                text-decoration: $item !important
 
-    .#{$orientation}#{$type}us-none
-            user-select: none !important
 
-    .#{$orientation}#{$type}truncate
-            overflow: hidden !important
-            text-overflow: ellipsis !important
-            white-space: nowrap !important
+    .#{$orientation}#{$type}font-size
+        @each $size in $fontSizes
+            &--#{$size}
+                font-size: var(--fs-#{$size}) !important
+    .font-size
+            font-size: var(--#{$orientation}#{$type}font-size)
+    .#{$orientation}#{$type}font-weight
+        @for $i from 1 through 9
+            &--#{$i * 100}
+                font-weight: #{$i * 100} !important
+
+    .#{$orientation}#{$type}line-height
+        @each $height in $lineHeight
+            &--#{$height}
+                line-height: $height !important
+    .line-height
+        line-height: var(--#{$orientation}#{$type}line-height)
+
+    .#{$orientation}#{$type}white-space
+        @each $space in $whiteSpaces
+            &--#{$space}
+               white-space: $space !important
+
+    .user-select--none
+        user-select: none !important
+
+    .truncate
+        overflow: hidden !important
+        text-overflow: ellipsis !important
+        white-space: nowrap !important
+
+    .#{$orientation}#{$type}writing-mode
+        @each $item in $writingModes
+            &--#{$item}
+                writing-mode: $item !important
+
+    .#{$orientation}#{$type}direction
+        @each $item in $directions
+            &--#{$item}
+                direction: $item !important
+
+
+
+
+
+
 
     .#{$orientation}#{$type}c
         color: var(--c) !important
@@ -71,59 +115,7 @@ $textDecorations: none, underline, line-through
     // #{$orientation}#{$type}p
     //     margin-bottom: var(--size-2) !important
 
-    .#{$orientation}#{$type}f
-        &s
-            font-size: var(--fs) !important
-            @each $size in $fontSizes
-                &-#{$size}
-                    font-size: var(--fs-#{$size}) !important
-        &w
-            @for $i from 1 through 9
-                &-#{$i * 100}
-                    font-weight: #{$i * 100} !important
-            &-unset
-                font-weight: unset !important
 
-    .#{$orientation}#{$type}lh
-        line-height: var(--lh) !important
-        &-0
-            line-height: 0 !important
-        &-1
-            line-height: 1 !important
-        &-normal
-            line-height: normal !important
-        &-unset
-            line-height: unset !important
-
-    .#{$orientation}#{$type}ws
-        &-normal
-            white-space: normal !important
-        &-nowrap
-            white-space: nowrap !important
-        &-pre
-            white-space: pre !important
-        &-pre-wrap
-            white-space: pre-wrap !important
-        &-pre-line
-            white-space: pre-line !important
-        &-break-spaces
-            white-space: break-spaces !important
-
-    .#{$orientation}#{$type}wm
-        &-horizontal-tb
-            writing-mode: horizontal-tb
-        &-horizontal-bt
-            writing-mode: horizontal-bt
-        &-vertical-rl
-            writing-mode: vertical-rl
-        &-vertical-lr
-            writing-mode: vertical-lr
-
-    .#{$orientation}#{$type}d
-        &-ltr
-            direction: ltr
-        &-rtl
-            direction: rtl
 
 h
     &1, &2, &3, &4, &5, &6

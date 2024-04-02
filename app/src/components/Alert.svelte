@@ -28,7 +28,7 @@
     >
         {#if classesList.includes('alert-closable')}
             <Button
-                class="btn-close fs-xs"
+                class="btn-close font-size--xs"
                 on:click={() => isAlert = false}
                 title="Close alert"
             ><Icon name="close"/></Button>

@@ -13,7 +13,7 @@
             available on the <a href="/core#map">Core</a> page.
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `<div

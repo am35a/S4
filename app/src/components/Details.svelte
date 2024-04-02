@@ -9,8 +9,8 @@
     {#if $$slots.title}
         <summary>
             <slot name="title"/>
-            <Icon name="chevron-down" class="fs-sm" expand/>
-            <Icon name="chevron-up" class="fs-sm" contract/>
+            <Icon name="chevron-down" class="font-size--sm" expand/>
+            <Icon name="chevron-up" class="font-size--sm" contract/>
         </summary>
     {:else}
         <slot name="summary"></slot>

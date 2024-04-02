@@ -96,7 +96,7 @@
 
         @each $size in $fontSizes
             &-#{$size}
-                font-size: var(--fs-#{$size})
+                font-size: var(--font-size-#{$size})
         &-ico
             padding: var(--size-1)
 </style>

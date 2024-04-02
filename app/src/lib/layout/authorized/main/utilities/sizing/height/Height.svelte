@@ -15,17 +15,17 @@
         <span class="display--inline-flex gap--md">
             <span class="display--grid gap--xs">
                 {#each heightParamsArr as param}
-                    <span class="fw-600">min-height{param}</span>
+                    <span class="font-weight--600">min-height{param}</span>
                 {/each}
             </span>
             <span class="display--grid gap--xs">
                 {#each heightParamsArr as param}
-                    <span class="fw-600">height{param}</span>
+                    <span class="font-weight--600">height{param}</span>
                 {/each}
             </span>
             <span class="display--grid gap--xs">
                 {#each heightParamsArr as param}
-                    <span class="fw-600">max-height{param}</span>
+                    <span class="font-weight--600">max-height{param}</span>
                 {/each}
             </span>
         </span>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="display--grid gap--md">
-            <b>HTML</b>
+            <b>Code</b>
             <Precode>
                 {
 `div class="height" style="--height: ${containerHeight}%"> ... </div>

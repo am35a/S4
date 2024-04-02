@@ -1,31 +1,40 @@
 <script lang="ts">
     import Precode from 'component/Precode.svelte'
-    import Details from 'component/Details.svelte'
 </script>
 
 <div>
     <h4 id="weight">Weight</h4>
     <p>
-        To set a font weight have to use the <b>fw-...</b> classes.
+        To set a font weight have to use the <b>font-weight--...</b> classes.
     </p>
-    <div class="display--grid gap--sm margin-bottom--md padding--sm background-color--positive border-radius--md">
-        {#each {length: 9} as _, i}
-            <div class="fw-{i + 1}00">fw-{i + 1}00</div>
-        {/each}
-    </div>
-    <Details>
-        <svelte:fragment slot="title">
-            Code example
-        </svelte:fragment>
-        <svelte:fragment slot="body">
+    <div class="display--grid gap--lg">
+        <div class="display--grid gap--md">
+            <b>Preview</b>
+            <div class="
+                display--grid
+                grid-template-columns--3
+                gap--sm
+                padding--sm
+                background-color--positive
+                border-radius--md
+                justify-items--center
+                align-items--center"
+            >
+                {#each {length: 9} as _, i}
+                    <div class="font-weight--{i + 1}00">{i + 1}00</div>
+                {/each}
+            </div>
+        </div>
+        <div class="display--grid gap--md">
+            <b>Code</b>
             <Precode>
                 {#each {length: 9} as _, i}
                     {
-`<div class="fw-${i + 1}00">fw-${i + 1}00</div>
+`<div class="font-weight--${i + 1}00"> ... </div>
 `
                     }
                 {/each}
             </Precode>
-        </svelte:fragment>
-    </Details>
+        </div>
+    </div>
 </div>
