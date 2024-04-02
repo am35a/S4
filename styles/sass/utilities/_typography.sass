@@ -68,29 +68,27 @@ $directions: ltr, rtl
             &--#{$item}
                 direction: $item !important
 
-
-
-
-
-
-
-    .#{$orientation}#{$type}c
-        color: var(--c) !important
+    .#{$orientation}#{$type}color
         @each $item in $defaultColors
-            &-#{$item}
+            &--#{$item}
                color: var(--#{$item}-color) !important
         @each $item in $defaultColors
             @for $i from 1 through math.div(100, $defaultExtraColorsInterval) - 1
-                &#{'-' + $item + '-' + $i * $defaultExtraColorsInterval}
+                &#{'--' + $item + '-' + $i * $defaultExtraColorsInterval}
                     color: var(--#{$item}-color-#{$i * $defaultExtraColorsInterval}) !important
         @each $item in $accentColors
-            &-#{$item}
+            &--#{$item}
                color: var(--#{$item}-color) !important
             @each $pref in $accentExtraColorsPrefs
-                &-#{$item + '-' + $pref}
+                &--#{$item + '-' + $pref}
                     color: var(--#{$item}-color-#{$pref}) !important
-        &-transparent
+        &--transparent
             color: transparent !important
+    .color
+        color: var(--#{$orientation}#{$type}color, var(--color, initial)) !important
+
+
+
 
     // .#{$orientation}#{$type}h
     //     &1, &2, &3, &4, &5, &6

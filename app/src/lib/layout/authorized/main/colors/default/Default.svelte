@@ -86,18 +86,18 @@
             </div>
             <div>Colors:</div>
             <div class="display--grid gap--sm justify-items--center padding--md border-radius--md flex background-color--negative" style="--flex-basis: 100%;">
-                <div class="text-align--center font-weight--600 c-positive">Positive in negative</div>
+                <div class="text-align--center font-weight--600 color--positive">Positive in negative</div>
                 <div class="display--grid grid-auto-flow--column width--100">
-                    <div class="background-color--positive-10 c-positive-90 padding-y--md color-negative text-align--center">10</div>
-                    <div class="background-color--positive-20 c-positive-80 padding-y--md color-negative text-align--center">20</div>
-                    <div class="background-color--positive-30 c-positive-70 padding-y--md color-negative text-align--center">30</div>
-                    <div class="background-color--positive-40 c-positive-60 padding-y--md color-negative text-align--center">40</div>
-                    <div class="background-color--positive-50 c-positive-50 padding-y--md color-negative text-align--center">50</div>
-                    <div class="background-color--positive-60 c-negative-60 padding-y--md color-negative text-align--center">60</div>
-                    <div class="background-color--positive-70 c-negative-70 padding-y--md color-negative text-align--center">70</div>
-                    <div class="background-color--positive-80 c-negative-80 padding-y--md color-negative text-align--center">80</div>
-                    <div class="background-color--positive-90 c-negative-90 padding-y--md color-negative text-align--center">90</div>
-                    <div class="background-color--positive c-negative padding-y--md color-negative text-align--center">100</div>
+                    <div class="background-color--positive-10 color--positive-90 padding-y--md color-negative text-align--center">10</div>
+                    <div class="background-color--positive-20 color--positive-80 padding-y--md color-negative text-align--center">20</div>
+                    <div class="background-color--positive-30 color--positive-70 padding-y--md color-negative text-align--center">30</div>
+                    <div class="background-color--positive-40 color--positive-60 padding-y--md color-negative text-align--center">40</div>
+                    <div class="background-color--positive-50 color--positive-50 padding-y--md color-negative text-align--center">50</div>
+                    <div class="background-color--positive-60 color--negative-60 padding-y--md color-negative text-align--center">60</div>
+                    <div class="background-color--positive-70 color--negative-70 padding-y--md color-negative text-align--center">70</div>
+                    <div class="background-color--positive-80 color--negative-80 padding-y--md color-negative text-align--center">80</div>
+                    <div class="background-color--positive-90 color--negative-90 padding-y--md color-negative text-align--center">90</div>
+                    <div class="background-color--positive color--negative padding-y--md color-negative text-align--center">100</div>
                 </div>
             </div>
         </div>
@@ -151,18 +151,18 @@
             </div>
             <div>Colors:</div>
             <div class="display--grid gap--sm justify-items--center padding--md border-radius--md flex background-color--positive" style="--flex-basis: 100%;">
-                <div class="text-align--center font-weight--600 c-negative">Negative in positive</div>
+                <div class="text-align--center font-weight--600 color--negative">Negative in positive</div>
                 <div class="display--grid grid-auto-flow--column width--100">
-                    <div class="background-color--negative-10 c-negative-90 padding-y--md color-positive text-align--center">10</div>
-                    <div class="background-color--negative-20 c-negative-80 padding-y--md color-positive text-align--center">20</div>
-                    <div class="background-color--negative-30 c-negative-70 padding-y--md color-positive text-align--center">30</div>
-                    <div class="background-color--negative-40 c-negative-60 padding-y--md color-positive text-align--center">40</div>
-                    <div class="background-color--negative-50 c-negative-50 padding-y--md color-positive text-align--center">50</div>
-                    <div class="background-color--negative-60 c-positive-60 padding-y--md color-positive text-align--center">60</div>
-                    <div class="background-color--negative-70 c-positive-70 padding-y--md color-positive text-align--center">70</div>
-                    <div class="background-color--negative-80 c-positive-80 padding-y--md color-positive text-align--center">80</div>
-                    <div class="background-color--negative-90 c-positive-90 padding-y--md color-positive text-align--center">90</div>
-                    <div class="background-color--negative c-positive padding-y--md color-positive text-align--center">100</div>
+                    <div class="background-color--negative-10 color--negative-90 padding-y--md color-positive text-align--center">10</div>
+                    <div class="background-color--negative-20 color--negative-80 padding-y--md color-positive text-align--center">20</div>
+                    <div class="background-color--negative-30 color--negative-70 padding-y--md color-positive text-align--center">30</div>
+                    <div class="background-color--negative-40 color--negative-60 padding-y--md color-positive text-align--center">40</div>
+                    <div class="background-color--negative-50 color--negative-50 padding-y--md color-positive text-align--center">50</div>
+                    <div class="background-color--negative-60 color--positive-60 padding-y--md color-positive text-align--center">60</div>
+                    <div class="background-color--negative-70 color--positive-70 padding-y--md color-positive text-align--center">70</div>
+                    <div class="background-color--negative-80 color--positive-80 padding-y--md color-positive text-align--center">80</div>
+                    <div class="background-color--negative-90 color--positive-90 padding-y--md color-positive text-align--center">90</div>
+                    <div class="background-color--negative color--positive padding-y--md color-positive text-align--center">100</div>
                 </div>
             </div>
         </div>

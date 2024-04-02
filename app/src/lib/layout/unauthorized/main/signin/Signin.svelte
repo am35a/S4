@@ -26,7 +26,7 @@
 >
     <div class="display--grid">
         <h1 class="font-size--xxl">Sign In</h1>
-        <small class="c-negative-50">
+        <small class="color--negative-50">
             to manage your account
         </small>
     </div>
@@ -37,7 +37,7 @@
                 for="bindLoginEmailOrName"
             >
                 Email
-                <span class="c-error">*</span>
+                <span class="color--error">*</span>
             </label>
             <Input
                 id="bindLoginEmailOrName"
@@ -52,7 +52,7 @@
                 for="bindLoginPassword"
             >
                 Password
-                <span class="c-error">*</span>
+                <span class="color--error">*</span>
             </label>
             <Input
                 id="bindLoginPassword"

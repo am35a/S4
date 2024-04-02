@@ -48,19 +48,19 @@
                 </div>
             </div>
             <hr class="grid-column--full width--100 margin-y--none">
-            <div>Landscape</div>            <div>l</div>    <div>{Object.values(breakpointsName)}l_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
-            <div>Portrait</div>             <div>p</div>    <div>{Object.values(breakpointsName)}p_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Landscape</div>            <div>l</div>    <div>{Object.values(breakpointsName)}l_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Portrait</div>             <div>p</div>    <div>{Object.values(breakpointsName)}p_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
             <div class="grid-column--full"></div>
-            <div>Desktop</div>              <div>d</div>    <div>{Object.values(breakpointsName)}d_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
-            <div>Tablet</div>               <div>t</div>    <div>{Object.values(breakpointsName)}t_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
-            <div>Mobile</div>               <div>m</div>    <div>{Object.values(breakpointsName)}m_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Desktop</div>              <div>d</div>    <div>{Object.values(breakpointsName)}d_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Tablet</div>               <div>t</div>    <div>{Object.values(breakpointsName)}t_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Mobile</div>               <div>m</div>    <div>{Object.values(breakpointsName)}m_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
             <div class="grid-column--full"></div>
-            <div>Landscape/Desktop</div>    <div>l/d</div>  <div>{Object.values(breakpointsName)}l_d_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
-            <div>Portrait/Desktop</div>     <div>p/d</div>  <div>{Object.values(breakpointsName)}p_d_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
-            <div>Landscape/Tablet</div>     <div>l/t</div>  <div>{Object.values(breakpointsName)}l_t_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
-            <div>Portrait/Tablet</div>      <div>p/t</div>  <div>{Object.values(breakpointsName)}p_t_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
-            <div>Landscape/Mobile</div>     <div>l/m</div>  <div>{Object.values(breakpointsName)}l_m_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
-            <div>Portrait/Mobile</div>      <div>p/m</div>  <div>{Object.values(breakpointsName)}p_m_<span class="c-secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Landscape/Desktop</div>    <div>l/d</div>  <div>{Object.values(breakpointsName)}l_d_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Portrait/Desktop</div>     <div>p/d</div>  <div>{Object.values(breakpointsName)}p_d_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Landscape/Tablet</div>     <div>l/t</div>  <div>{Object.values(breakpointsName)}l_t_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Portrait/Tablet</div>      <div>p/t</div>  <div>{Object.values(breakpointsName)}p_t_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Landscape/Mobile</div>     <div>l/m</div>  <div>{Object.values(breakpointsName)}l_m_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
+            <div>Portrait/Mobile</div>      <div>p/m</div>  <div>{Object.values(breakpointsName)}p_m_<span class="color--secondary">{Object.keys(breakpointsName)}-name</span></div>
         </div>
     </div>
     <div>

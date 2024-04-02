@@ -36,8 +36,8 @@
                 <div class="display--grid gap--sm grid-template-columns--2">
                     {#each accentsArr as item}
                         <div
-                            class:c-negative={accentExtra === '-m'}
-                            class="background-color--{item}{accentExtra} padding--md c-positive"
+                            class:color--negative={accentExtra === '-m'}
+                            class="background-color--{item}{accentExtra} padding--md color--positive"
                         >
                             <!-- {item} {Object.keys(accentsExtraObj).find(key => accentsExtraObj[key] === accentExtra)} color -->
                             background-color--{item}{accentExtra}

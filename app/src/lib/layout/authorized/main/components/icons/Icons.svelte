@@ -50,8 +50,8 @@
         }
 
         if (iconColor) {
-            preCodeObj.classes += ` c`
-            preCodeObj.styles += ` --c:${iconColor};`
+            preCodeObj.classes += ` color`
+            preCodeObj.styles += ` --color:${iconColor};`
         }
     }
 </script>
@@ -62,11 +62,11 @@
         <p>
             Lightweight <Icon /> responsive vector icons with cache available.
             The  icon sizes directly depend on the font size and the container in which the icon is placed.
-            Colors are changed in two ways - using the <b>background-color--...</b> or <b>c-...</b> classes.
+            Colors are changed in two ways - using the <b>background-color--...</b> or <b>color--...</b> classes.
         </p>
         <div class="alert alert-warning justify-self--start">
             <span class="ico font-size--xl" style="--ico-image: url(/icons/alert-triangle.svg);"></span>
-            Pay attention! The <b>background-color--...</b> and <b>c-...</b> are incompatible in one case.
+            Pay attention! The <b>background-color--...</b> and <b>color--...</b> are incompatible in one case.
         </div>
 
         <div class="display--grid gap--md">
@@ -105,8 +105,8 @@
             <b>Preview</b>
             <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md height" style="--height: 10em">
                 <Icon
-                    class="{iconSize} margin--auto {iconBgColor ? 'background-color' : ''} {iconColor ? 'c' : ''}"
-                    style="{iconBgColor ? `--background-color:${iconBgColor};` : ''} {iconColor ? `--c:${iconColor};` : ''}"
+                    class="{iconSize} margin--auto {iconBgColor ? 'background-color' : ''} {iconColor ? 'color' : ''}"
+                    style="{iconBgColor ? `--background-color:${iconBgColor};` : ''} {iconColor ? `--color:${iconColor};` : ''}"
                     name="ghost"
                 />
             </div>

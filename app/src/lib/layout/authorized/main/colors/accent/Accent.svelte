@@ -100,7 +100,7 @@
                         step="1"
                     />
                     <div>
-                        <div class="text-align--center font-weight--600 text c-{value}">{value}</div>
+                        <div class="text-align--center font-weight--600 text color--{value}">{value}</div>
                         oklch(
                             {accentColorsObj.variablesObj['lightness']}
                             {accentColorsObj.variablesObj['chroma']}
@@ -109,7 +109,7 @@
                     </div>
                     <div class="display--flex flex-wrap--nowrap justify-items--center">
                         <div class="white-space--nowrap align-self--end">
-                            <div class="text-align--center font-weight--600 c-{value}-l">light</div>
+                            <div class="text-align--center font-weight--600 color--{value}-l">light</div>
                             oklch(
                                 {(+(accentColorsObj.variablesObj['lightness']) + ~~accentColorsObj.variablesObj['lightness-offset'])}
                                 {accentColorsObj.variablesObj['chroma']}
@@ -120,7 +120,7 @@
                             <ColorBox colorName={value} />
                         </div>
                         <div class="white-space--nowrap align-self--end">
-                            <div class="text-align--center font-weight--600 c-{value}-d">dark</div>
+                            <div class="text-align--center font-weight--600 color--{value}-d">dark</div>
                             oklch(
                                 {(+(accentColorsObj.variablesObj['lightness']) - ~~accentColorsObj.variablesObj['lightness-offset'])}
                                 {accentColorsObj.variablesObj['chroma']}
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="text-align--center font-weight--600 c-{value}-m">mute</div>
+                        <div class="text-align--center font-weight--600 color--{value}-m">mute</div>
                         oklch(
                             {accentColorsObj.variablesObj['lightness']}
                             {accentColorsObj.variablesObj['chroma']}

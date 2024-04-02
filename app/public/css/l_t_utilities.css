@@ -2214,141 +2214,142 @@ p {
   direction: rtl !important;
 }
 
-.t_c {
-  color: var(--c) !important;
-}
-.t_c-positive {
+.t_color--positive {
   color: var(--positive-color) !important;
 }
-.t_c-negative {
+.t_color--negative {
   color: var(--negative-color) !important;
 }
-.t_c-positive-10 {
+.t_color--positive-10 {
   color: var(--positive-color-10) !important;
 }
-.t_c-positive-20 {
+.t_color--positive-20 {
   color: var(--positive-color-20) !important;
 }
-.t_c-positive-30 {
+.t_color--positive-30 {
   color: var(--positive-color-30) !important;
 }
-.t_c-positive-40 {
+.t_color--positive-40 {
   color: var(--positive-color-40) !important;
 }
-.t_c-positive-50 {
+.t_color--positive-50 {
   color: var(--positive-color-50) !important;
 }
-.t_c-positive-60 {
+.t_color--positive-60 {
   color: var(--positive-color-60) !important;
 }
-.t_c-positive-70 {
+.t_color--positive-70 {
   color: var(--positive-color-70) !important;
 }
-.t_c-positive-80 {
+.t_color--positive-80 {
   color: var(--positive-color-80) !important;
 }
-.t_c-positive-90 {
+.t_color--positive-90 {
   color: var(--positive-color-90) !important;
 }
-.t_c-negative-10 {
+.t_color--negative-10 {
   color: var(--negative-color-10) !important;
 }
-.t_c-negative-20 {
+.t_color--negative-20 {
   color: var(--negative-color-20) !important;
 }
-.t_c-negative-30 {
+.t_color--negative-30 {
   color: var(--negative-color-30) !important;
 }
-.t_c-negative-40 {
+.t_color--negative-40 {
   color: var(--negative-color-40) !important;
 }
-.t_c-negative-50 {
+.t_color--negative-50 {
   color: var(--negative-color-50) !important;
 }
-.t_c-negative-60 {
+.t_color--negative-60 {
   color: var(--negative-color-60) !important;
 }
-.t_c-negative-70 {
+.t_color--negative-70 {
   color: var(--negative-color-70) !important;
 }
-.t_c-negative-80 {
+.t_color--negative-80 {
   color: var(--negative-color-80) !important;
 }
-.t_c-negative-90 {
+.t_color--negative-90 {
   color: var(--negative-color-90) !important;
 }
-.t_c-primary {
+.t_color--primary {
   color: var(--primary-color) !important;
 }
-.t_c-primary-l {
+.t_color--primary-l {
   color: var(--primary-color-l) !important;
 }
-.t_c-primary-d {
+.t_color--primary-d {
   color: var(--primary-color-d) !important;
 }
-.t_c-primary-m {
+.t_color--primary-m {
   color: var(--primary-color-m) !important;
 }
-.t_c-secondary {
+.t_color--secondary {
   color: var(--secondary-color) !important;
 }
-.t_c-secondary-l {
+.t_color--secondary-l {
   color: var(--secondary-color-l) !important;
 }
-.t_c-secondary-d {
+.t_color--secondary-d {
   color: var(--secondary-color-d) !important;
 }
-.t_c-secondary-m {
+.t_color--secondary-m {
   color: var(--secondary-color-m) !important;
 }
-.t_c-info {
+.t_color--info {
   color: var(--info-color) !important;
 }
-.t_c-info-l {
+.t_color--info-l {
   color: var(--info-color-l) !important;
 }
-.t_c-info-d {
+.t_color--info-d {
   color: var(--info-color-d) !important;
 }
-.t_c-info-m {
+.t_color--info-m {
   color: var(--info-color-m) !important;
 }
-.t_c-success {
+.t_color--success {
   color: var(--success-color) !important;
 }
-.t_c-success-l {
+.t_color--success-l {
   color: var(--success-color-l) !important;
 }
-.t_c-success-d {
+.t_color--success-d {
   color: var(--success-color-d) !important;
 }
-.t_c-success-m {
+.t_color--success-m {
   color: var(--success-color-m) !important;
 }
-.t_c-warning {
+.t_color--warning {
   color: var(--warning-color) !important;
 }
-.t_c-warning-l {
+.t_color--warning-l {
   color: var(--warning-color-l) !important;
 }
-.t_c-warning-d {
+.t_color--warning-d {
   color: var(--warning-color-d) !important;
 }
-.t_c-warning-m {
+.t_color--warning-m {
   color: var(--warning-color-m) !important;
 }
-.t_c-error {
+.t_color--error {
   color: var(--error-color) !important;
 }
-.t_c-error-l {
+.t_color--error-l {
   color: var(--error-color-l) !important;
 }
-.t_c-error-d {
+.t_color--error-d {
   color: var(--error-color-d) !important;
 }
-.t_c-error-m {
+.t_color--error-m {
   color: var(--error-color-m) !important;
 }
-.t_c-transparent {
+.t_color--transparent {
   color: transparent !important;
+}
+
+.color {
+  color: var(--t_color, var(--color, initial)) !important;
 }

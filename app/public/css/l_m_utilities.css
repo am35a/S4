@@ -2214,141 +2214,142 @@ p {
   direction: rtl !important;
 }
 
-.l_m_c {
-  color: var(--c) !important;
-}
-.l_m_c-positive {
+.l_m_color--positive {
   color: var(--positive-color) !important;
 }
-.l_m_c-negative {
+.l_m_color--negative {
   color: var(--negative-color) !important;
 }
-.l_m_c-positive-10 {
+.l_m_color--positive-10 {
   color: var(--positive-color-10) !important;
 }
-.l_m_c-positive-20 {
+.l_m_color--positive-20 {
   color: var(--positive-color-20) !important;
 }
-.l_m_c-positive-30 {
+.l_m_color--positive-30 {
   color: var(--positive-color-30) !important;
 }
-.l_m_c-positive-40 {
+.l_m_color--positive-40 {
   color: var(--positive-color-40) !important;
 }
-.l_m_c-positive-50 {
+.l_m_color--positive-50 {
   color: var(--positive-color-50) !important;
 }
-.l_m_c-positive-60 {
+.l_m_color--positive-60 {
   color: var(--positive-color-60) !important;
 }
-.l_m_c-positive-70 {
+.l_m_color--positive-70 {
   color: var(--positive-color-70) !important;
 }
-.l_m_c-positive-80 {
+.l_m_color--positive-80 {
   color: var(--positive-color-80) !important;
 }
-.l_m_c-positive-90 {
+.l_m_color--positive-90 {
   color: var(--positive-color-90) !important;
 }
-.l_m_c-negative-10 {
+.l_m_color--negative-10 {
   color: var(--negative-color-10) !important;
 }
-.l_m_c-negative-20 {
+.l_m_color--negative-20 {
   color: var(--negative-color-20) !important;
 }
-.l_m_c-negative-30 {
+.l_m_color--negative-30 {
   color: var(--negative-color-30) !important;
 }
-.l_m_c-negative-40 {
+.l_m_color--negative-40 {
   color: var(--negative-color-40) !important;
 }
-.l_m_c-negative-50 {
+.l_m_color--negative-50 {
   color: var(--negative-color-50) !important;
 }
-.l_m_c-negative-60 {
+.l_m_color--negative-60 {
   color: var(--negative-color-60) !important;
 }
-.l_m_c-negative-70 {
+.l_m_color--negative-70 {
   color: var(--negative-color-70) !important;
 }
-.l_m_c-negative-80 {
+.l_m_color--negative-80 {
   color: var(--negative-color-80) !important;
 }
-.l_m_c-negative-90 {
+.l_m_color--negative-90 {
   color: var(--negative-color-90) !important;
 }
-.l_m_c-primary {
+.l_m_color--primary {
   color: var(--primary-color) !important;
 }
-.l_m_c-primary-l {
+.l_m_color--primary-l {
   color: var(--primary-color-l) !important;
 }
-.l_m_c-primary-d {
+.l_m_color--primary-d {
   color: var(--primary-color-d) !important;
 }
-.l_m_c-primary-m {
+.l_m_color--primary-m {
   color: var(--primary-color-m) !important;
 }
-.l_m_c-secondary {
+.l_m_color--secondary {
   color: var(--secondary-color) !important;
 }
-.l_m_c-secondary-l {
+.l_m_color--secondary-l {
   color: var(--secondary-color-l) !important;
 }
-.l_m_c-secondary-d {
+.l_m_color--secondary-d {
   color: var(--secondary-color-d) !important;
 }
-.l_m_c-secondary-m {
+.l_m_color--secondary-m {
   color: var(--secondary-color-m) !important;
 }
-.l_m_c-info {
+.l_m_color--info {
   color: var(--info-color) !important;
 }
-.l_m_c-info-l {
+.l_m_color--info-l {
   color: var(--info-color-l) !important;
 }
-.l_m_c-info-d {
+.l_m_color--info-d {
   color: var(--info-color-d) !important;
 }
-.l_m_c-info-m {
+.l_m_color--info-m {
   color: var(--info-color-m) !important;
 }
-.l_m_c-success {
+.l_m_color--success {
   color: var(--success-color) !important;
 }
-.l_m_c-success-l {
+.l_m_color--success-l {
   color: var(--success-color-l) !important;
 }
-.l_m_c-success-d {
+.l_m_color--success-d {
   color: var(--success-color-d) !important;
 }
-.l_m_c-success-m {
+.l_m_color--success-m {
   color: var(--success-color-m) !important;
 }
-.l_m_c-warning {
+.l_m_color--warning {
   color: var(--warning-color) !important;
 }
-.l_m_c-warning-l {
+.l_m_color--warning-l {
   color: var(--warning-color-l) !important;
 }
-.l_m_c-warning-d {
+.l_m_color--warning-d {
   color: var(--warning-color-d) !important;
 }
-.l_m_c-warning-m {
+.l_m_color--warning-m {
   color: var(--warning-color-m) !important;
 }
-.l_m_c-error {
+.l_m_color--error {
   color: var(--error-color) !important;
 }
-.l_m_c-error-l {
+.l_m_color--error-l {
   color: var(--error-color-l) !important;
 }
-.l_m_c-error-d {
+.l_m_color--error-d {
   color: var(--error-color-d) !important;
 }
-.l_m_c-error-m {
+.l_m_color--error-m {
   color: var(--error-color-m) !important;
 }
-.l_m_c-transparent {
+.l_m_color--transparent {
   color: transparent !important;
+}
+
+.color {
+  color: var(--l_m_color, var(--color, initial)) !important;
 }

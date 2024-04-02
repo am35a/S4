@@ -45,8 +45,8 @@
             <b>Preview</b>
             <div class="display--grid gap--sm padding--sm background-color--positive border-radius--md">
                 <div class="display--grid white-space--nowrap overflow-x--auto" style="--lh: {lineHeight}">
-                    <div class="lh grid-column--full grid-row--full margin-y--auto border-top-style--solid border-bottom-style--solid c-negative-10">&nbsp;<!-- base line indicator--></div>
-                    <div class="lh grid-column--full grid-row--full margin-y--auto border-top-style--solid border-bottom-style--solid c-negative-20"><!-- base line indicator--></div>
+                    <div class="lh grid-column--full grid-row--full margin-y--auto border-top-style--solid border-bottom-style--solid color--negative-10">&nbsp;<!-- base line indicator--></div>
+                    <div class="lh grid-column--full grid-row--full margin-y--auto border-top-style--solid border-bottom-style--solid color--negative-20"><!-- base line indicator--></div>
                     <div class="lh grid-column--full grid-row--full padding-y--md">
                         {#each Object.entries(verticalAlignObj) as [key, value]}
                             <span class="background-color--negative-10 padding-x--xxs margin-right--xxs vertical-align--{value}">{key}</span>

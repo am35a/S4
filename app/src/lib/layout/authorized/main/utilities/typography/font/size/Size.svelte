@@ -69,7 +69,8 @@
                         }
                     {/each}
                     {
-`<small>small</small>
+`
+<small>small</small>
 <small><small>bouble small</small></small>
 <small><small><small>triple small</small></small></small>
 
