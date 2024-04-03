@@ -20,6 +20,6 @@
     body
         display: grid
         // background-color: var(--body-background-color)
-        // color: var(--body-c)
+        // color: var(--body-color)
         // overflow: hidden
 </style>

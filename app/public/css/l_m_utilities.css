@@ -1623,28 +1623,28 @@
 }
 
 .l_m_box-shadow--xxs, .l_m_box-shadow--xxs\:hover:hover {
-  box-shadow: 0 var(--box-shadow--xxs) calc(var(--box-shadow--xxs) * 2) calc(var(--box-shadow--xxs) * 0.5) var(--bsc) !important;
+  box-shadow: 0 var(--box-shadow--xxs) calc(var(--box-shadow--xxs) * 2) calc(var(--box-shadow--xxs) * 0.5) var(--box-shadow--color) !important;
 }
 .l_m_box-shadow--xs, .l_m_box-shadow--xs\:hover:hover {
-  box-shadow: 0 var(--box-shadow--xs) calc(var(--box-shadow--xs) * 2) calc(var(--box-shadow--xs) * 0.5) var(--bsc) !important;
+  box-shadow: 0 var(--box-shadow--xs) calc(var(--box-shadow--xs) * 2) calc(var(--box-shadow--xs) * 0.5) var(--box-shadow--color) !important;
 }
 .l_m_box-shadow--sm, .l_m_box-shadow--sm\:hover:hover {
-  box-shadow: 0 var(--box-shadow--sm) calc(var(--box-shadow--sm) * 2) calc(var(--box-shadow--sm) * 0.5) var(--bsc) !important;
+  box-shadow: 0 var(--box-shadow--sm) calc(var(--box-shadow--sm) * 2) calc(var(--box-shadow--sm) * 0.5) var(--box-shadow--color) !important;
 }
 .l_m_box-shadow--md, .l_m_box-shadow--md\:hover:hover {
-  box-shadow: 0 var(--box-shadow--md) calc(var(--box-shadow--md) * 2) calc(var(--box-shadow--md) * 0.5) var(--bsc) !important;
+  box-shadow: 0 var(--box-shadow--md) calc(var(--box-shadow--md) * 2) calc(var(--box-shadow--md) * 0.5) var(--box-shadow--color) !important;
 }
 .l_m_box-shadow--lg, .l_m_box-shadow--lg\:hover:hover {
-  box-shadow: 0 var(--box-shadow--lg) calc(var(--box-shadow--lg) * 2) calc(var(--box-shadow--lg) * 0.5) var(--bsc) !important;
+  box-shadow: 0 var(--box-shadow--lg) calc(var(--box-shadow--lg) * 2) calc(var(--box-shadow--lg) * 0.5) var(--box-shadow--color) !important;
 }
 .l_m_box-shadow--xl, .l_m_box-shadow--xl\:hover:hover {
-  box-shadow: 0 var(--box-shadow--xl) calc(var(--box-shadow--xl) * 2) calc(var(--box-shadow--xl) * 0.5) var(--bsc) !important;
+  box-shadow: 0 var(--box-shadow--xl) calc(var(--box-shadow--xl) * 2) calc(var(--box-shadow--xl) * 0.5) var(--box-shadow--color) !important;
 }
 .l_m_box-shadow--xxl, .l_m_box-shadow--xxl\:hover:hover {
-  box-shadow: 0 var(--box-shadow--xxl) calc(var(--box-shadow--xxl) * 2) calc(var(--box-shadow--xxl) * 0.5) var(--bsc) !important;
+  box-shadow: 0 var(--box-shadow--xxl) calc(var(--box-shadow--xxl) * 2) calc(var(--box-shadow--xxl) * 0.5) var(--box-shadow--color) !important;
 }
 .l_m_box-shadow--xxxl, .l_m_box-shadow--xxxl\:hover:hover {
-  box-shadow: 0 var(--box-shadow--xxxl) calc(var(--box-shadow--xxxl) * 2) calc(var(--box-shadow--xxxl) * 0.5) var(--bsc) !important;
+  box-shadow: 0 var(--box-shadow--xxxl) calc(var(--box-shadow--xxxl) * 2) calc(var(--box-shadow--xxxl) * 0.5) var(--box-shadow--color) !important;
 }
 .l_m_box-shadow--none {
   box-shadow: none !important;

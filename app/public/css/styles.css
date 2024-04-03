@@ -217,7 +217,7 @@
 }
 @layer themes {
   [theme] {
-    color: var(--body-c);
+    color: var(--body-color);
   }
   [theme] body {
     background-color: var(--body-background-color);
@@ -361,8 +361,8 @@
     --alfa: 0.25;
     --html-background-color: var(--negative-color);
     --body-background-color: var(--positive-color-90);
-    --body-c: var(--negative-color-90);
-    --bsc: var(--negative-color-10);
+    --body-color: var(--negative-color-90);
+    --box-shadow--color: var(--negative-color-10);
   }
   [theme=dark] {
     --positive-lightness: 0;
@@ -383,7 +383,7 @@
     --error-hue: 25;
     --html-background-color: var(--negative-color);
     --body-background-color: var(--positive-color-90);
-    --body-c: var(--negative-color-90);
-    --bsc: var(--positive-color-10);
+    --body-color: var(--negative-color-90);
+    --box-shadow--color: var(--positive-color-10);
   }
 }
